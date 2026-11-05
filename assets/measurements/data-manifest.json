@@ -1,0 +1,20 @@
+{
+  "data_kind": "Measured runtime observations on existing STL-derived point subsets, not mock/planning data",
+  "source": "validation/2026-11-05/measurement-summary.json",
+  "source_sha256": "6f66ce0b737116d3f5a6e1bf91b66e4ccd01f869cfaea5d4164403a0d15a9d4d",
+  "script": "tools/render-measurements.py",
+  "script_sha256": "7d12036553275250833b24cefe18c70af263fd45753576b8e588e9993676c595",
+  "data_file": "scale-data.csv",
+  "data_sha256": "a9d1a520c00425badc91b67be3affd211c12354deb7cb826814076a5730b1904",
+  "error_bars": "observed min/max of three repetitions; not confidence intervals",
+  "outputs": [
+    {
+      "path": "scaling.png",
+      "sha256": "e21651082d611d164d91001d31b9542b635e7e3a4264421e201cd2dea7119010"
+    },
+    {
+      "path": "scaling.svg",
+      "sha256": "3f61f3e3a25cee6f95e91406a1cd4b94cd54141d39363bd8ce9803408faff339"
+    }
+  ]
+}

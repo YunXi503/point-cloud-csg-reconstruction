@@ -1,0 +1,34 @@
+{
+  "scope": "Harness debugging before the measured cohort; rejected launcher readings are not benchmark data",
+  "initial_probe_allocation_bytes": 67108864,
+  "preserved_invalid_launcher_probe": {
+    "fixture_bytes": 67108864,
+    "struct_bytes": 72,
+    "live_peak_bytes": 4349952,
+    "after_exit_peak_bytes": 4849664,
+    "returncode": 0
+  },
+  "identity_diagnosis": {
+    "launcher_pid": 29680,
+    "runtime_reported_pid": 30204,
+    "native_and_dotnet_launcher_peak_bytes": 4349952,
+    "pid_equal": false
+  },
+  "corrected_probe": {
+    "wall_seconds": 0.2967173,
+    "peak_working_set_bytes": 95305728,
+    "returncode": 0,
+    "timed_out": false,
+    "memory_error": null,
+    "pid": 28844,
+    "python_redirector_bypassed": true,
+    "child": {
+      "pid": 28844,
+      "numpy": "2.4.1",
+      "bytes": 67108864
+    },
+    "prefix_matches": true,
+    "pid_matches": true
+  },
+  "mechanism_source": "https://github.com/python/cpython/blob/v3.14.2/PC/venvlauncher.c"
+}

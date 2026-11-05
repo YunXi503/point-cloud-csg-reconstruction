@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-05",
+  "command": "python -m unittest discover -s tests -v",
+  "python_version": "3.14.2",
+  "tests_run": 23,
+  "skipped": 0,
+  "failures": 0,
+  "exit_code": 0,
+  "scope": "Observed local unit run: 17 engineering guards, 4 analytic baselines, 2 process-metric fixtures; does not label all degeneracy/convergence observations as passed",
+  "test_sources": [
+    {
+      "path": "tests/test_tool_guards.py",
+      "sha256": "69aaf09a1da247833875b73da66c1311d77572d33fccea81f68faa3e5bec8803"
+    },
+    {
+      "path": "tests/test_geometry_contracts.py",
+      "sha256": "e37dad76dd6563af60cf138b6f0cb829aace633d6f546ddc23318517d81dca43"
+    },
+    {
+      "path": "tests/test_process_metrics.py",
+      "sha256": "4fa2493dc5db44dfd2baf7fd41ae3d313962285a77add8c1a76bf6d7a689e0b3"
+    }
+  ]
+}

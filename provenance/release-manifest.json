@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-interview-2026-11-05",
+  "packaging_version": "portfolio-measurements-2026-11-05",
   "date": "2026-11-05",
   "manifest_excludes": [
     "provenance/release-manifest.json"
@@ -2196,6 +2196,26 @@
       "sha256": "896c6425d9559afe6fdbb4bb199f7b3aa4c0ead7c7cea347e81a44c5ef043cd0"
     },
     {
+      "path": "assets/measurements/data-manifest.json",
+      "bytes": 863,
+      "sha256": "68198aaa154b2ea2404d0183354111cd3050e1c4a23e0ac54105c4a2465adde7"
+    },
+    {
+      "path": "assets/measurements/scale-data.csv",
+      "bytes": 398,
+      "sha256": "a9d1a520c00425badc91b67be3affd211c12354deb7cb826814076a5730b1904"
+    },
+    {
+      "path": "assets/measurements/scaling.png",
+      "bytes": 203103,
+      "sha256": "e21651082d611d164d91001d31b9542b635e7e3a4264421e201cd2dea7119010"
+    },
+    {
+      "path": "assets/measurements/scaling.svg",
+      "bytes": 63375,
+      "sha256": "3f61f3e3a25cee6f95e91406a1cd4b94cd54141d39363bd8ce9803408faff339"
+    },
+    {
       "path": "assets/model-a.png",
       "bytes": 175688,
       "sha256": "2b06a3c4c75d9f82a7604b17fc4ed34e4872b43d72430f2800dffddf1800ef62"
@@ -2377,8 +2397,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 4344,
-      "sha256": "6f8588eb8b6b51f3cec2aab305f1a85e8c6658626ecdcb217cc916e4f552035e"
+      "bytes": 4987,
+      "sha256": "7bdc462a153685a90179c0b2c0085ea38bb78317ab8ff33daf4b6cbb6dccda4d"
     },
     {
       "path": "data/recovered/README.md",
@@ -2466,14 +2486,34 @@
       "sha256": "a6bf6e34c0122186bd73432911a0de9e035c74e1f1b3d547a856f7bb6b7084d3"
     },
     {
+      "path": "docs/geometry-diagnostics.md",
+      "bytes": 5636,
+      "sha256": "832a694baa6620bdaaa058701819be22727ccfdd41ab0d3c1eca2e95c219939a"
+    },
+    {
       "path": "docs/interview-guide.md",
-      "bytes": 8358,
-      "sha256": "fafcc7c1ad755478f8fac751ebf6d9e8442acf3b7181882591fcce6b2ffdbd71"
+      "bytes": 8901,
+      "sha256": "099afcee898eb030cf92e863cc4986219fd12bde8712d37200dbb13e7438560d"
     },
     {
       "path": "docs/maintaining.md",
       "bytes": 1808,
       "sha256": "8fe035a6ab6f8ec06ebead44cd5ba4cb517d5f9da1d7d665f27a021f690167a8"
+    },
+    {
+      "path": "docs/measurement-protocol.md",
+      "bytes": 7456,
+      "sha256": "eee14fc5a44665007c884acf47f2c00d4d2c28c816c18530a1b6e64d02165fc9"
+    },
+    {
+      "path": "docs/measurement-review.md",
+      "bytes": 2655,
+      "sha256": "8f137529db919e4a18173fd75dc0ae0786d8128c28f25a69ba0d01a17c8fa590"
+    },
+    {
+      "path": "docs/measurements.md",
+      "bytes": 6008,
+      "sha256": "34c394c45173349a92b529b529e33ffef5e6f4b8958a6056a3d468b25aaa41f7"
     },
     {
       "path": "docs/method-scope.md",
@@ -2487,13 +2527,13 @@
     },
     {
       "path": "docs/missing-information.md",
-      "bytes": 3225,
-      "sha256": "a01d998c440fe8753e627fe5a9b33d8680abca01e62cc4e513f00ae0d24a2c4a"
+      "bytes": 3471,
+      "sha256": "f2bcc9567b6be53e7abe8376ab1a59d0a711cba6b0c491c73ef0160eec102ff9"
     },
     {
       "path": "docs/packaging-qa.md",
-      "bytes": 3726,
-      "sha256": "d5fb9faa35a66679988037f42eedb8064bbf4f170a17548a21b43daeaf8c3c97"
+      "bytes": 4081,
+      "sha256": "838cfc63e8a815bc45455db376fce1219b6b82f4f2a02807dc5db4304b688ef5"
     },
     {
       "path": "docs/parameter-evidence.md",
@@ -2522,13 +2562,13 @@
     },
     {
       "path": "docs/source-versions.md",
-      "bytes": 3273,
-      "sha256": "bba8e51d7810e805b1c0950d99bb38b3babc4a767b38cf3a0997b6c0ba5254f4"
+      "bytes": 3272,
+      "sha256": "701ae0599961ae8b98291d69086866e2bf20a1a6982fa5fcf0f9bc2b004fe4a7"
     },
     {
       "path": "docs/validation.md",
-      "bytes": 3368,
-      "sha256": "f6454f4b60f435d3c8431e31d181a2badaaa77c60a7b17ca2953c1b11bb66aa2"
+      "bytes": 3772,
+      "sha256": "114affe7cd1a559ced8ee83722e7fc0fd3189f3127c9a213e3252a0f69be08b3"
     },
     {
       "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_1.50.json",
@@ -2702,8 +2742,8 @@
     },
     {
       "path": "EXPERIMENT_LOG.md",
-      "bytes": 10873,
-      "sha256": "b52d55a1027ce5f81ae0c63e3d382da6a1e7c8469c37152be9a1aa78563be712"
+      "bytes": 12134,
+      "sha256": "d3b7cdda52aaee83bdc9e543111e170859ed46230974608356e238efdc7d66cc"
     },
     {
       "path": "LICENSE",
@@ -2746,6 +2786,11 @@
       "sha256": "2077f8fde0d584f167b1573f13f0d17952ede77496673aa76c9cdab5720054d3"
     },
     {
+      "path": "provenance/geometry-conditioning-audit.json",
+      "bytes": 3440,
+      "sha256": "feff401c0e614ac5193d05ab52615803a59817b553e055d890d3503f72e5b911"
+    },
+    {
       "path": "provenance/historical-json-notes.json",
       "bytes": 4245,
       "sha256": "90185cef0d0a329069cffcc4ca767f6749210ca81f786687fe3622cb733e06e9"
@@ -2774,6 +2819,11 @@
       "path": "provenance/history/source-versions-portfolio-figures-2026-11-05.json",
       "bytes": 20669,
       "sha256": "1aad46a14bde5ead65e1c3706be4a509c22fd6618c877eab7a6c78d36d3a6e6b"
+    },
+    {
+      "path": "provenance/history/source-versions-portfolio-interview-2026-11-05.json",
+      "bytes": 22518,
+      "sha256": "05b5d8c4c14c13ecec472ceb895e73280f22e30a0c15a5beb3091cc5244fb391"
     },
     {
       "path": "provenance/history/source-versions-portfolio-review-2026-11-05.json",
@@ -2847,8 +2897,8 @@
     },
     {
       "path": "provenance/source-versions.json",
-      "bytes": 22518,
-      "sha256": "05b5d8c4c14c13ecec472ceb895e73280f22e30a0c15a5beb3091cc5244fb391"
+      "bytes": 23136,
+      "sha256": "fe9e7c7f260e7560221308832c528527a11990f3c31dde2ea78db7f818cefd22"
     },
     {
       "path": "provenance/thesis-figures.json",
@@ -2857,8 +2907,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9342,
-      "sha256": "6d27ec2731cb696cc9faeb5852eb2efd2ba4f3d19392ead7818ea44a64ac58c4"
+      "bytes": 9667,
+      "sha256": "93dfaead469c7342d789238f210d99dcc435354ad5c183adbb7767b96667b158"
     },
     {
       "path": "requirements-observed.txt",
@@ -3746,6 +3796,16 @@
       "sha256": "9545b74a939988929509da4b0cddc2ebcbbf8eb9f474101d59b8a34a0f1812aa"
     },
     {
+      "path": "tests/test_geometry_contracts.py",
+      "bytes": 2432,
+      "sha256": "e37dad76dd6563af60cf138b6f0cb829aace633d6f546ddc23318517d81dca43"
+    },
+    {
+      "path": "tests/test_process_metrics.py",
+      "bytes": 1789,
+      "sha256": "4fa2493dc5db44dfd2baf7fd41ae3d313962285a77add8c1a76bf6d7a689e0b3"
+    },
+    {
       "path": "tests/test_tool_guards.py",
       "bytes": 12123,
       "sha256": "69aaf09a1da247833875b73da66c1311d77572d33fccea81f68faa3e5bec8803"
@@ -3761,14 +3821,39 @@
       "sha256": "1cf4816358263703d34c39e7e7edff2b420dc6e0293097e66cb3550673a38e3d"
     },
     {
+      "path": "tools/geometry_fixtures.py",
+      "bytes": 2252,
+      "sha256": "508cc5069d0738cba24bf8d053d0a237bb31a57f823f4d1ae85c58be678a5bd8"
+    },
+    {
       "path": "tools/inference_sources.py",
       "bytes": 1412,
       "sha256": "ffaede79f66fd92e1fd2c805108da47256bf31f41af6e2b28f9b708dc06114a4"
     },
     {
+      "path": "tools/measurement_worker.py",
+      "bytes": 7935,
+      "sha256": "c21a69460081459da828ea192e18ffafa560b273b19fcfd743e418eaeab869aa"
+    },
+    {
+      "path": "tools/process_metrics.py",
+      "bytes": 3078,
+      "sha256": "9339765d5401929a85a4e2b7cff94f9d2620a9f0940eaf332ac27e952f791c51"
+    },
+    {
       "path": "tools/render-gallery.py",
       "bytes": 4032,
       "sha256": "b40199350ac145790c997a6d65ed77ca10d7f1670fb16c5a45865ab0f977602b"
+    },
+    {
+      "path": "tools/render-measurements.py",
+      "bytes": 3611,
+      "sha256": "7d12036553275250833b24cefe18c70af263fd45753576b8e588e9993676c595"
+    },
+    {
+      "path": "tools/run-engineering-measurements.py",
+      "bytes": 12294,
+      "sha256": "4558920bcb44257ab2e7c98e7b240708007823f340901e6e90f144332b8c608e"
     },
     {
       "path": "tools/run-from-point-cloud.py",
@@ -3779,6 +3864,11 @@
       "path": "tools/seal-release.mjs",
       "bytes": 2066,
       "sha256": "da8593e399f2ea9d4bbba01593d7c1cad12f3b72c6fc78a49f3b277d45db6cef"
+    },
+    {
+      "path": "tools/summarize-measurements.py",
+      "bytes": 5601,
+      "sha256": "c6ae7efbec48cd4593847a7b21d774f8231bceeddc5f3169711628fb6edd68fd"
     },
     {
       "path": "tools/verify-package.mjs",
@@ -3841,6 +3931,16 @@
       "sha256": "d335ffa22fab5fbdd693ff2c36f79e883ca63b4842199cd35973e9252ca28e15"
     },
     {
+      "path": "validation/2026-11-05/geometry-circle-observations.csv",
+      "bytes": 1985,
+      "sha256": "360d3a9886a7258131be202a7e21af8cbdbdb0205191c14296fdccae7844b824"
+    },
+    {
+      "path": "validation/2026-11-05/geometry-surface-observations.csv",
+      "bytes": 1691,
+      "sha256": "88554dc7b8d4bd10fce49cbe5883eef83eaa17555b365592917ba142eb708b29"
+    },
+    {
       "path": "validation/2026-11-05/initial-source-binding-attempt.json",
       "bytes": 6885,
       "sha256": "079212ede251f1ddbc8d30468a78133241607c041dfae07b74367e38334d4560"
@@ -3864,6 +3964,41 @@
       "path": "validation/2026-11-05/interview-review-plan.md",
       "bytes": 1636,
       "sha256": "d938e28b07b4d453de2cc37c87ad95d87e9ef1d0a8674797f8beca604c1e21f4"
+    },
+    {
+      "path": "validation/2026-11-05/measurement-audit.json",
+      "bytes": 830,
+      "sha256": "f026b7cfe4c32af6de1597ecc53fae5e14bb6cb9db33e7cbcf7aaad62a19621c"
+    },
+    {
+      "path": "validation/2026-11-05/measurement-harness-probes.json",
+      "bytes": 979,
+      "sha256": "22b634ce1200745d9aa86dc86c176c913251a6dacceb6f5e5a413506aa704f35"
+    },
+    {
+      "path": "validation/2026-11-05/measurement-results.json",
+      "bytes": 132249,
+      "sha256": "5dae4578e29c3e51f59970357e58286286c04452bc7896e2c8463ba40be56cb6"
+    },
+    {
+      "path": "validation/2026-11-05/measurement-scale-runs.csv",
+      "bytes": 2154,
+      "sha256": "9a0443056d5cbeb922b5103a0b2266ffe98f4358e3d404dde0f6ff298b3be0f4"
+    },
+    {
+      "path": "validation/2026-11-05/measurement-stage-runs.csv",
+      "bytes": 1366,
+      "sha256": "2ea5af42f216c795913ed6f363ca55b044d45008d00db41e5be7f2604a9ac1e6"
+    },
+    {
+      "path": "validation/2026-11-05/measurement-summary.json",
+      "bytes": 5657,
+      "sha256": "6f66ce0b737116d3f5a6e1bf91b66e4ccd01f869cfaea5d4164403a0d15a9d4d"
+    },
+    {
+      "path": "validation/2026-11-05/measurement-test-results.json",
+      "bytes": 811,
+      "sha256": "cef8607b761d4ab8657da954233025dcda2e13bc533c47af0fbf3ec4a83488aa"
     },
     {
       "path": "validation/2026-11-05/portfolio-completion-audit.json",

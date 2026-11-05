@@ -1,0 +1,3711 @@
+{
+  "schema_version": "1",
+  "date": "2026-11-05",
+  "timezone": "Asia/Taipei",
+  "status": "completed",
+  "scope": "Engineering measurements / analytic fixtures, not thesis experiments or accuracy generalization",
+  "research_base_commit": "2362965ca46d2c31d085a82f18ae1164ef2cf5ef",
+  "protocol": {
+    "path": "docs/measurement-protocol.md",
+    "sha256": "eee14fc5a44665007c884acf47f2c00d4d2c28c816c18530a1b6e64d02165fc9"
+  },
+  "tool_sources": [
+    {
+      "path": "tools/run-engineering-measurements.py",
+      "sha256": "4558920bcb44257ab2e7c98e7b240708007823f340901e6e90f144332b8c608e"
+    },
+    {
+      "path": "tools/measurement_worker.py",
+      "sha256": "c21a69460081459da828ea192e18ffafa560b273b19fcfd743e418eaeab869aa"
+    },
+    {
+      "path": "tools/process_metrics.py",
+      "sha256": "9339765d5401929a85a4e2b7cff94f9d2620a9f0940eaf332ac27e952f791c51"
+    },
+    {
+      "path": "tools/geometry_fixtures.py",
+      "sha256": "508cc5069d0738cba24bf8d053d0a237bb31a57f823f4d1ae85c58be678a5bd8"
+    }
+  ],
+  "case_binding_files": [
+    {
+      "path": "examples/cases.json",
+      "sha256": "86fd78b2bdc3a0e9fe1fadd68f9a7bcc650c453f775d728f5210b283d857b844"
+    },
+    {
+      "path": "examples/segmentation.json",
+      "sha256": "767724e71c784551b8434665f5f3e42a43a962c76867b5a9bbe0094595534175"
+    }
+  ],
+  "protected_sources": 241,
+  "sources_verified_before": true,
+  "runtime": {
+    "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "threads_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null
+    },
+    "packages": {
+      "contourpy": {
+        "expected": "1.4.0",
+        "actual": "1.4.0"
+      },
+      "cycler": {
+        "expected": "0.12.1",
+        "actual": "0.12.1"
+      },
+      "fonttools": {
+        "expected": "4.68.0",
+        "actual": "4.68.0"
+      },
+      "kiwisolver": {
+        "expected": "1.5.1",
+        "actual": "1.5.1"
+      },
+      "matplotlib": {
+        "expected": "3.10.8",
+        "actual": "3.10.8"
+      },
+      "numpy": {
+        "expected": "2.4.1",
+        "actual": "2.4.1"
+      },
+      "packaging": {
+        "expected": "26.3",
+        "actual": "26.3"
+      },
+      "pandas": {
+        "expected": "3.0.3",
+        "actual": "3.0.3"
+      },
+      "pillow": {
+        "expected": "12.1.0",
+        "actual": "12.1.0"
+      },
+      "pyparsing": {
+        "expected": "3.3.3",
+        "actual": "3.3.3"
+      },
+      "python-dateutil": {
+        "expected": "4.0.0",
+        "actual": "4.0.0"
+      },
+      "scipy": {
+        "expected": "1.16.3",
+        "actual": "1.16.3"
+      },
+      "tzdata": {
+        "expected": "2026.6",
+        "actual": "2026.6"
+      }
+    },
+    "prefix_matches": true,
+    "pid_matches": true,
+    "identity_metrics": {
+      "wall_seconds": 1.0841294,
+      "peak_working_set_bytes": 98672640,
+      "returncode": 0,
+      "timed_out": false,
+      "memory_error": null,
+      "pid": 12968,
+      "python_redirector_bypassed": true,
+      "stdout": "runs/engineering-measurements-20261105/identity/stdout.log",
+      "stderr": "runs/engineering-measurements-20261105/identity/stderr.log"
+    }
+  },
+  "stage_runs": [
+    {
+      "phase": "csharp-classification",
+      "case": "stepped-cylinder",
+      "repeat": 1,
+      "metrics": {
+        "wall_seconds": 6.8137232,
+        "peak_working_set_bytes": 26386432,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 19464,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/stepped-cylinder/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/stepped-cylinder/1/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+          "actual_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net48",
+      "observed_runtime_line": "Runtime: 4.0.30319.42000"
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "l-bracket",
+      "repeat": 1,
+      "metrics": {
+        "wall_seconds": 6.767428,
+        "peak_working_set_bytes": 27254784,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 25080,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/l-bracket/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/l-bracket/1/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+          "actual_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net48",
+      "observed_runtime_line": "Runtime: 4.0.30319.42000"
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "model-a",
+      "repeat": 1,
+      "metrics": {
+        "wall_seconds": 0.2010234,
+        "peak_working_set_bytes": 29392896,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12676,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/model-a/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/model-a/1/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+          "actual_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net48",
+      "observed_runtime_line": "Runtime: 4.0.30319.42000"
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "blind-hole-hex-base",
+      "repeat": 1,
+      "metrics": {
+        "wall_seconds": 0.4118375,
+        "peak_working_set_bytes": 47124480,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 13640,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/blind-hole-hex-base/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/blind-hole-hex-base/1/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+          "actual_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net8.0",
+      "observed_runtime_line": "Runtime: 8.0.20"
+    },
+    {
+      "phase": "python-inference",
+      "case": "stepped-cylinder",
+      "repeat": 1,
+      "metrics": {
+        "wall_seconds": 1.3267161,
+        "peak_working_set_bytes": 107909120,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 7236,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/stepped-cylinder/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/stepped-cylinder/1/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "actual_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "actual_sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "actual_sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "actual_sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "expected_sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "actual_sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "expected_sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "actual_sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "python-inference",
+      "case": "l-bracket",
+      "repeat": 1,
+      "metrics": {
+        "wall_seconds": 1.4270965,
+        "peak_working_set_bytes": 122036224,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 1460,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/l-bracket/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/l-bracket/1/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "actual_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "actual_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "actual_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "actual_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_L_Bracket_chapter3_verified.json",
+          "expected_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "actual_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_L_Bracket_chapter3.csv",
+          "expected_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "actual_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "python-inference",
+      "case": "model-a",
+      "repeat": 1,
+      "metrics": {
+        "wall_seconds": 1.3761475,
+        "peak_working_set_bytes": 109244416,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 29892,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/model-a/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/model-a/1/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_Model_A_chapter3_verified.csv",
+          "expected_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "actual_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Model_A_chapter3_verified.csv",
+          "expected_sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "actual_sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Model_A_chapter3_verified.csv",
+          "expected_sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "actual_sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "expected_sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "actual_sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Model_A_chapter3_verified.json",
+          "expected_sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "actual_sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Model_A_chapter3.csv",
+          "expected_sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "actual_sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "python-inference",
+      "case": "blind-hole-hex-base",
+      "repeat": 1,
+      "metrics": {
+        "wall_seconds": 1.2897898,
+        "peak_working_set_bytes": 107384832,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 28572,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/blind-hole-hex-base/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/blind-hole-hex-base/1/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+          "actual_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "actual_sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "actual_sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "actual_sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "expected_sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "actual_sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "expected_sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "actual_sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "stepped-cylinder",
+      "repeat": 2,
+      "metrics": {
+        "wall_seconds": 6.8021369,
+        "peak_working_set_bytes": 26353664,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 26812,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/stepped-cylinder/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/stepped-cylinder/2/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+          "actual_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net48",
+      "observed_runtime_line": "Runtime: 4.0.30319.42000"
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "l-bracket",
+      "repeat": 2,
+      "metrics": {
+        "wall_seconds": 6.8825943,
+        "peak_working_set_bytes": 27267072,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 11644,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/l-bracket/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/l-bracket/2/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+          "actual_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net48",
+      "observed_runtime_line": "Runtime: 4.0.30319.42000"
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "model-a",
+      "repeat": 2,
+      "metrics": {
+        "wall_seconds": 0.1871215,
+        "peak_working_set_bytes": 29462528,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 8804,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/model-a/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/model-a/2/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+          "actual_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net48",
+      "observed_runtime_line": "Runtime: 4.0.30319.42000"
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "blind-hole-hex-base",
+      "repeat": 2,
+      "metrics": {
+        "wall_seconds": 0.3645438,
+        "peak_working_set_bytes": 47104000,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 17264,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/blind-hole-hex-base/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/blind-hole-hex-base/2/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+          "actual_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net8.0",
+      "observed_runtime_line": "Runtime: 8.0.20"
+    },
+    {
+      "phase": "python-inference",
+      "case": "stepped-cylinder",
+      "repeat": 2,
+      "metrics": {
+        "wall_seconds": 1.2364865,
+        "peak_working_set_bytes": 107745280,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 19504,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/stepped-cylinder/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/stepped-cylinder/2/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "actual_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "actual_sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "actual_sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "actual_sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "expected_sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "actual_sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "expected_sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "actual_sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "python-inference",
+      "case": "l-bracket",
+      "repeat": 2,
+      "metrics": {
+        "wall_seconds": 1.5456307,
+        "peak_working_set_bytes": 121925632,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 19384,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/l-bracket/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/l-bracket/2/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "actual_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "actual_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "actual_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "actual_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_L_Bracket_chapter3_verified.json",
+          "expected_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "actual_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_L_Bracket_chapter3.csv",
+          "expected_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "actual_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "python-inference",
+      "case": "model-a",
+      "repeat": 2,
+      "metrics": {
+        "wall_seconds": 1.3133368,
+        "peak_working_set_bytes": 109535232,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 3836,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/model-a/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/model-a/2/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_Model_A_chapter3_verified.csv",
+          "expected_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "actual_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Model_A_chapter3_verified.csv",
+          "expected_sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "actual_sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Model_A_chapter3_verified.csv",
+          "expected_sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "actual_sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "expected_sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "actual_sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Model_A_chapter3_verified.json",
+          "expected_sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "actual_sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Model_A_chapter3.csv",
+          "expected_sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "actual_sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "python-inference",
+      "case": "blind-hole-hex-base",
+      "repeat": 2,
+      "metrics": {
+        "wall_seconds": 1.1938888,
+        "peak_working_set_bytes": 107368448,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12792,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/blind-hole-hex-base/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/blind-hole-hex-base/2/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+          "actual_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "actual_sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "actual_sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "actual_sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "expected_sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "actual_sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "expected_sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "actual_sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "stepped-cylinder",
+      "repeat": 3,
+      "metrics": {
+        "wall_seconds": 6.7722349,
+        "peak_working_set_bytes": 26451968,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 28968,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/stepped-cylinder/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/stepped-cylinder/3/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+          "actual_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net48",
+      "observed_runtime_line": "Runtime: 4.0.30319.42000"
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "l-bracket",
+      "repeat": 3,
+      "metrics": {
+        "wall_seconds": 6.8267818,
+        "peak_working_set_bytes": 27320320,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 14148,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/l-bracket/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/l-bracket/3/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+          "actual_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net48",
+      "observed_runtime_line": "Runtime: 4.0.30319.42000"
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "model-a",
+      "repeat": 3,
+      "metrics": {
+        "wall_seconds": 0.2103896,
+        "peak_working_set_bytes": 29425664,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 14444,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/model-a/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/model-a/3/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+          "actual_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net48",
+      "observed_runtime_line": "Runtime: 4.0.30319.42000"
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "blind-hole-hex-base",
+      "repeat": 3,
+      "metrics": {
+        "wall_seconds": 0.4714908,
+        "peak_working_set_bytes": 47116288,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 14756,
+        "python_redirector_bypassed": false,
+        "stdout": "runs/engineering-measurements-20261105/csharp-classification/blind-hole-hex-base/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/csharp-classification/blind-hole-hex-base/3/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "initial.csv",
+          "expected_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+          "actual_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "net8.0",
+      "observed_runtime_line": "Runtime: 8.0.20"
+    },
+    {
+      "phase": "python-inference",
+      "case": "stepped-cylinder",
+      "repeat": 3,
+      "metrics": {
+        "wall_seconds": 1.4080283,
+        "peak_working_set_bytes": 108195840,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 30980,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/stepped-cylinder/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/stepped-cylinder/3/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "actual_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "actual_sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "actual_sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "expected_sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "actual_sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "expected_sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "actual_sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "expected_sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "actual_sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "python-inference",
+      "case": "l-bracket",
+      "repeat": 3,
+      "metrics": {
+        "wall_seconds": 1.4632481,
+        "peak_working_set_bytes": 122216448,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 16640,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/l-bracket/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/l-bracket/3/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "actual_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "actual_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "actual_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+          "expected_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "actual_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_L_Bracket_chapter3_verified.json",
+          "expected_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "actual_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_L_Bracket_chapter3.csv",
+          "expected_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "actual_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "python-inference",
+      "case": "model-a",
+      "repeat": 3,
+      "metrics": {
+        "wall_seconds": 1.4231934,
+        "peak_working_set_bytes": 109268992,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 19384,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/model-a/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/model-a/3/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_Model_A_chapter3_verified.csv",
+          "expected_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "actual_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Model_A_chapter3_verified.csv",
+          "expected_sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "actual_sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Model_A_chapter3_verified.csv",
+          "expected_sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "actual_sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "expected_sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "actual_sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Model_A_chapter3_verified.json",
+          "expected_sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "actual_sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Model_A_chapter3.csv",
+          "expected_sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "actual_sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    },
+    {
+      "phase": "python-inference",
+      "case": "blind-hole-hex-base",
+      "repeat": 3,
+      "metrics": {
+        "wall_seconds": 1.339926,
+        "peak_working_set_bytes": 107343872,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 13012,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/python-inference/blind-hole-hex-base/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/python-inference/blind-hole-hex-base/3/stderr.log"
+      },
+      "outputs": [
+        {
+          "filename": "Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+          "actual_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "actual_sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "actual_sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "actual_sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "expected_sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "actual_sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "expected_sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "actual_sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "matches": true
+        }
+      ],
+      "valid_measurement": true,
+      "runtime_target": "Python 3.14.2",
+      "observed_runtime_line": null
+    }
+  ],
+  "scale_counts": [
+    {
+      "metrics": {
+        "wall_seconds": 1.0453012,
+        "peak_working_set_bytes": 107515904,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12572,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale-count/1000/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale-count/1000/stderr.log"
+      },
+      "observation": {
+        "pid": 12572,
+        "operation": "scale-count",
+        "n": 1000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "a4c1875c08ecc78163b77e6092d68cbe1cf92ea80151a81e3fcbe051e674e91c",
+        "points_sha256": "e3475bad9ca66da83d9c70865b77fb5697650a93c9c77f36696eb6688eab45c5",
+        "normals_sha256": "0dce846a5e7e8d92d9174aad97bffef26a2ff345d6510e3b43f9a66dedf251ad",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "distance_pairs": 518
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1394214,
+        "peak_working_set_bytes": 107474944,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 25296,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale-count/2500/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale-count/2500/stderr.log"
+      },
+      "observation": {
+        "pid": 25296,
+        "operation": "scale-count",
+        "n": 2500,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "70b400722314a610df8b1b4bf1f8d75b5f6c3aeae853e5df65cb1ff9dcdef008",
+        "points_sha256": "92ce64f6c4238dbe84bf5927c9a37e614e3f821cfbf20f18b0cc9a2469af7e55",
+        "normals_sha256": "9a66c6a464abb12c223ba7469fff295d0d0cabf35aa251802bc86535493ad694",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "distance_pairs": 3222
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1372873,
+        "peak_working_set_bytes": 107597824,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12340,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale-count/5000/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale-count/5000/stderr.log"
+      },
+      "observation": {
+        "pid": 12340,
+        "operation": "scale-count",
+        "n": 5000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "ebdc2f10288b17123b8b7345e9669c3d0c276505ca53f19045dbd173f2913c28",
+        "points_sha256": "9c7210d2a6fbd7567e49b2946ae82692f4fc2f0220ecda6dfec8d8bf1fd7677b",
+        "normals_sha256": "5d0ce4161351e4bfff0d9dec66cf8daa039e82e984b838e00502f97f9cfa8956",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "distance_pairs": 12693
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0891599,
+        "peak_working_set_bytes": 113225728,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 19636,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale-count/10000/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale-count/10000/stderr.log"
+      },
+      "observation": {
+        "pid": 19636,
+        "operation": "scale-count",
+        "n": 10000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099",
+        "points_sha256": "5e2ab2b12851978a34fb9b750263964608dd3558faac340ddf801a429495c025",
+        "normals_sha256": "c0c1ab2ae90fcc1cfb6fbbdf645754d0a081db5a8e17b6b2453c7a50ad13f910",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "distance_pairs": 50958
+      }
+    }
+  ],
+  "scale_runs": [
+    {
+      "metrics": {
+        "wall_seconds": 1.0544879,
+        "peak_working_set_bytes": 107343872,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 15636,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/1000/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/1000/1/stderr.log"
+      },
+      "observation": {
+        "pid": 15636,
+        "operation": "scale",
+        "n": 1000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "a4c1875c08ecc78163b77e6092d68cbe1cf92ea80151a81e3fcbe051e674e91c",
+        "points_sha256": "e3475bad9ca66da83d9c70865b77fb5697650a93c9c77f36696eb6688eab45c5",
+        "normals_sha256": "0dce846a5e7e8d92d9174aad97bffef26a2ff345d6510e3b43f9a66dedf251ad",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0038272,
+        "components": 620,
+        "labels_sha256": "d6f54336807e1f35ba77d58828b043527ce6cba28fccb1a37018eb48364bd710"
+      },
+      "repeat": 1
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.3515863,
+        "peak_working_set_bytes": 107716608,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 1788,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/1000/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/1000/2/stderr.log"
+      },
+      "observation": {
+        "pid": 1788,
+        "operation": "scale",
+        "n": 1000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "a4c1875c08ecc78163b77e6092d68cbe1cf92ea80151a81e3fcbe051e674e91c",
+        "points_sha256": "e3475bad9ca66da83d9c70865b77fb5697650a93c9c77f36696eb6688eab45c5",
+        "normals_sha256": "0dce846a5e7e8d92d9174aad97bffef26a2ff345d6510e3b43f9a66dedf251ad",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.001503,
+        "components": 620,
+        "labels_sha256": "d6f54336807e1f35ba77d58828b043527ce6cba28fccb1a37018eb48364bd710"
+      },
+      "repeat": 2
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0721507,
+        "peak_working_set_bytes": 107315200,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 26040,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/1000/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/1000/3/stderr.log"
+      },
+      "observation": {
+        "pid": 26040,
+        "operation": "scale",
+        "n": 1000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "a4c1875c08ecc78163b77e6092d68cbe1cf92ea80151a81e3fcbe051e674e91c",
+        "points_sha256": "e3475bad9ca66da83d9c70865b77fb5697650a93c9c77f36696eb6688eab45c5",
+        "normals_sha256": "0dce846a5e7e8d92d9174aad97bffef26a2ff345d6510e3b43f9a66dedf251ad",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0018878,
+        "components": 620,
+        "labels_sha256": "d6f54336807e1f35ba77d58828b043527ce6cba28fccb1a37018eb48364bd710"
+      },
+      "repeat": 3
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1866505,
+        "peak_working_set_bytes": 107421696,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12652,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/2500/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/2500/1/stderr.log"
+      },
+      "observation": {
+        "pid": 12652,
+        "operation": "scale",
+        "n": 2500,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "70b400722314a610df8b1b4bf1f8d75b5f6c3aeae853e5df65cb1ff9dcdef008",
+        "points_sha256": "92ce64f6c4238dbe84bf5927c9a37e614e3f821cfbf20f18b0cc9a2469af7e55",
+        "normals_sha256": "9a66c6a464abb12c223ba7469fff295d0d0cabf35aa251802bc86535493ad694",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0032244,
+        "components": 692,
+        "labels_sha256": "cc2152604eb9d870b9211b8c2a7315071bbe41e4efec5bc86d878ed5cb2b42a6"
+      },
+      "repeat": 1
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.2037296,
+        "peak_working_set_bytes": 107720704,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 29160,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/2500/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/2500/2/stderr.log"
+      },
+      "observation": {
+        "pid": 29160,
+        "operation": "scale",
+        "n": 2500,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "70b400722314a610df8b1b4bf1f8d75b5f6c3aeae853e5df65cb1ff9dcdef008",
+        "points_sha256": "92ce64f6c4238dbe84bf5927c9a37e614e3f821cfbf20f18b0cc9a2469af7e55",
+        "normals_sha256": "9a66c6a464abb12c223ba7469fff295d0d0cabf35aa251802bc86535493ad694",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0033543,
+        "components": 692,
+        "labels_sha256": "cc2152604eb9d870b9211b8c2a7315071bbe41e4efec5bc86d878ed5cb2b42a6"
+      },
+      "repeat": 2
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0933149,
+        "peak_working_set_bytes": 107581440,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12676,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/2500/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/2500/3/stderr.log"
+      },
+      "observation": {
+        "pid": 12676,
+        "operation": "scale",
+        "n": 2500,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "70b400722314a610df8b1b4bf1f8d75b5f6c3aeae853e5df65cb1ff9dcdef008",
+        "points_sha256": "92ce64f6c4238dbe84bf5927c9a37e614e3f821cfbf20f18b0cc9a2469af7e55",
+        "normals_sha256": "9a66c6a464abb12c223ba7469fff295d0d0cabf35aa251802bc86535493ad694",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0032235,
+        "components": 692,
+        "labels_sha256": "cc2152604eb9d870b9211b8c2a7315071bbe41e4efec5bc86d878ed5cb2b42a6"
+      },
+      "repeat": 3
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1000865,
+        "peak_working_set_bytes": 107503616,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 24316,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/5000/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/5000/1/stderr.log"
+      },
+      "observation": {
+        "pid": 24316,
+        "operation": "scale",
+        "n": 5000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "ebdc2f10288b17123b8b7345e9669c3d0c276505ca53f19045dbd173f2913c28",
+        "points_sha256": "9c7210d2a6fbd7567e49b2946ae82692f4fc2f0220ecda6dfec8d8bf1fd7677b",
+        "normals_sha256": "5d0ce4161351e4bfff0d9dec66cf8daa039e82e984b838e00502f97f9cfa8956",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0092577,
+        "components": 239,
+        "labels_sha256": "c71a466ac42949c4b653aa30f7de256e351821d0ec3d39d5ec8040f9e4a24573"
+      },
+      "repeat": 1
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.2021718,
+        "peak_working_set_bytes": 107048960,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 18112,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/5000/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/5000/2/stderr.log"
+      },
+      "observation": {
+        "pid": 18112,
+        "operation": "scale",
+        "n": 5000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "ebdc2f10288b17123b8b7345e9669c3d0c276505ca53f19045dbd173f2913c28",
+        "points_sha256": "9c7210d2a6fbd7567e49b2946ae82692f4fc2f0220ecda6dfec8d8bf1fd7677b",
+        "normals_sha256": "5d0ce4161351e4bfff0d9dec66cf8daa039e82e984b838e00502f97f9cfa8956",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0124506,
+        "components": 239,
+        "labels_sha256": "c71a466ac42949c4b653aa30f7de256e351821d0ec3d39d5ec8040f9e4a24573"
+      },
+      "repeat": 2
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.13215,
+        "peak_working_set_bytes": 107454464,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 24004,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/5000/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/5000/3/stderr.log"
+      },
+      "observation": {
+        "pid": 24004,
+        "operation": "scale",
+        "n": 5000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "ebdc2f10288b17123b8b7345e9669c3d0c276505ca53f19045dbd173f2913c28",
+        "points_sha256": "9c7210d2a6fbd7567e49b2946ae82692f4fc2f0220ecda6dfec8d8bf1fd7677b",
+        "normals_sha256": "5d0ce4161351e4bfff0d9dec66cf8daa039e82e984b838e00502f97f9cfa8956",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0137994,
+        "components": 239,
+        "labels_sha256": "c71a466ac42949c4b653aa30f7de256e351821d0ec3d39d5ec8040f9e4a24573"
+      },
+      "repeat": 3
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.3035202,
+        "peak_working_set_bytes": 118165504,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 24892,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/10000/1/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/10000/1/stderr.log"
+      },
+      "observation": {
+        "pid": 24892,
+        "operation": "scale",
+        "n": 10000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099",
+        "points_sha256": "5e2ab2b12851978a34fb9b750263964608dd3558faac340ddf801a429495c025",
+        "normals_sha256": "c0c1ab2ae90fcc1cfb6fbbdf645754d0a081db5a8e17b6b2453c7a50ad13f910",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0568367,
+        "components": 20,
+        "labels_sha256": "6cf3e2ea3d6fd04fe4dc330bfb796fa0975849b6095fe0b40dba1bf4baaba4c1"
+      },
+      "repeat": 1
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.2717086,
+        "peak_working_set_bytes": 118476800,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 4724,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/10000/2/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/10000/2/stderr.log"
+      },
+      "observation": {
+        "pid": 4724,
+        "operation": "scale",
+        "n": 10000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099",
+        "points_sha256": "5e2ab2b12851978a34fb9b750263964608dd3558faac340ddf801a429495c025",
+        "normals_sha256": "c0c1ab2ae90fcc1cfb6fbbdf645754d0a081db5a8e17b6b2453c7a50ad13f910",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0571184,
+        "components": 20,
+        "labels_sha256": "6cf3e2ea3d6fd04fe4dc330bfb796fa0975849b6095fe0b40dba1bf4baaba4c1"
+      },
+      "repeat": 2
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.2621071,
+        "peak_working_set_bytes": 118034432,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 24072,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/scale/10000/3/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/scale/10000/3/stderr.log"
+      },
+      "observation": {
+        "pid": 24072,
+        "operation": "scale",
+        "n": 10000,
+        "seed": 42,
+        "source": "research/零件/Result_L Bracket.csv",
+        "source_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+        "indices_sha256": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099",
+        "points_sha256": "5e2ab2b12851978a34fb9b750263964608dd3558faac340ddf801a429495c025",
+        "normals_sha256": "c0c1ab2ae90fcc1cfb6fbbdf645754d0a081db5a8e17b6b2453c7a50ad13f910",
+        "parameters": {
+          "distance_mm": 2.0,
+          "normal_dot": 0.93
+        },
+        "function_seconds": 0.0803305,
+        "components": 20,
+        "labels_sha256": "6cf3e2ea3d6fd04fe4dc330bfb796fa0975849b6095fe0b40dba1bf4baaba4c1"
+      },
+      "repeat": 3
+    }
+  ],
+  "surface_diagnostics": [
+    {
+      "metrics": {
+        "wall_seconds": 1.1401848,
+        "peak_working_set_bytes": 96882688,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12440,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/stepped/plane/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/stepped/plane/stderr.log"
+      },
+      "observation": {
+        "pid": 12440,
+        "operation": "surface",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "plane",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 25,
+        "position_rank": 2,
+        "points_sha256": "7e4be86f1ad68a3a5b010aac66227da268fa6207c39f294f9d944577f6f5cd63",
+        "normals_sha256": "bd287db3ec433fa7a770011f018e59317e61a50794a5229d86db988968969918",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              0.0,
+              0.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              0.0,
+              -0.0013884064506298705,
+              -17018238.070325077
+            ],
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius": 17018241.070325136,
+            "residual_max": 5.960464477539063e-08,
+            "alignment_min": 0.9999999999999932,
+            "iterations": 100,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              0.0,
+              0.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1943227,
+        "peak_working_set_bytes": 97234944,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 30976,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/stepped/cylinder/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/stepped/cylinder/stderr.log"
+      },
+      "observation": {
+        "pid": 30976,
+        "operation": "surface",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "cylinder",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 160,
+        "position_rank": 3,
+        "points_sha256": "04825b08e58d4ba896bda96b9a6dfb998318cabe710b25e53bd1a33c67704c1f",
+        "normals_sha256": "08f9b3bd54a067f70d9ef0473ea2a71c9edc521a0c9975beeed00e9d2c131898",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              1.9999999999999993,
+              -3.000000000000001,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 5.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              1.9999999999999998,
+              -3.0000000000000004,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": 10.0,
+            "residual_max": 1.7763568394002505e-15,
+            "alignment_min": 0.9999999999999998,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              1.9999999999999998,
+              -3.0000000000000004,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": 10.0,
+            "residual_max": 1.7763568394002505e-15,
+            "alignment_min": 0.9999999999999998,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0662553,
+        "peak_working_set_bytes": 96759808,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 30660,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/stepped/empty/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/stepped/empty/stderr.log"
+      },
+      "observation": {
+        "pid": 30660,
+        "operation": "surface",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "empty",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 0,
+        "position_rank": null,
+        "points_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "normals_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_plane": {
+          "outcome": "exception",
+          "exception_type": "IndexError",
+          "message": "index -1 is out of bounds for axis 0 with size 0",
+          "warnings": [
+            {
+              "category": "RuntimeWarning",
+              "message": "Mean of empty slice"
+            },
+            {
+              "category": "RuntimeWarning",
+              "message": "invalid value encountered in divide"
+            }
+          ]
+        },
+        "fit_cylinder": {
+          "outcome": "exception",
+          "exception_type": "IndexError",
+          "message": "index -1 is out of bounds for axis 0 with size 0",
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "selection": "rejected-with-none"
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0531809,
+        "peak_working_set_bytes": 97222656,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 17840,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/stepped/single/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/stepped/single/stderr.log"
+      },
+      "observation": {
+        "pid": 17840,
+        "operation": "surface",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "single",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 1,
+        "position_rank": 0,
+        "points_sha256": "4b6f48ac8fb2b249b3d1a3681f1e88deb7e1a00e30a07d0d066aafe563e307f8",
+        "normals_sha256": "04ae04134c8318578c932394683055fea108f3f586ff5b055613752c5f03e6f5",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              -2.0,
+              -2.0,
+              3.0
+            ],
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              -0.9696969696969697,
+              -0.9696969696969696,
+              3.0
+            ],
+            "direction": [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            "radius": 1.4570685188086434,
+            "residual_max": 0.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "selection": "rejected-with-none"
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1507217,
+        "peak_working_set_bytes": 97386496,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 28200,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/stepped/two/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/stepped/two/stderr.log"
+      },
+      "observation": {
+        "pid": 28200,
+        "operation": "surface",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "two",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 2,
+        "position_rank": 1,
+        "points_sha256": "b1bd0e7a1a994ba8ee9abbf323c4103d594e0f8ffb7714945d23fd8c36745eb9",
+        "normals_sha256": "b76a51d51658b8961adb4b08f1563f132b3152f68e705e85cb3b0047239de35a",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              -1.5,
+              -2.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              -1.5,
+              -2.0,
+              1.1351351351351355
+            ],
+            "direction": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "radius": 1.930730681428005,
+            "residual_max": 2.220446049250313e-16,
+            "alignment_min": 0.9658855493432025,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "selection": "rejected-with-none"
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1177359,
+        "peak_working_set_bytes": 97030144,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 2884,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/stepped/collinear/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/stepped/collinear/stderr.log"
+      },
+      "observation": {
+        "pid": 2884,
+        "operation": "surface",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "collinear",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 25,
+        "position_rank": 1,
+        "points_sha256": "6c5855c6767acdcb88f779ca6ccd95992a7944ed03ebdf131c3f713feeb63730",
+        "normals_sha256": "bd287db3ec433fa7a770011f018e59317e61a50794a5229d86db988968969918",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              -5.329070518200751e-17,
+              0.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              -1.0658141036401502e-16,
+              0.0,
+              1.4594594594594594
+            ],
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius": 1.5405405405405406,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              -1.0658141036401502e-16,
+              0.0,
+              1.4594594594594594
+            ],
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius": 1.5405405405405406,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0802352,
+        "peak_working_set_bytes": 97042432,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 16760,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/stepped/coincident/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/stepped/coincident/stderr.log"
+      },
+      "observation": {
+        "pid": 16760,
+        "operation": "surface",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "coincident",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 25,
+        "position_rank": 0,
+        "points_sha256": "322426a4069e3bc0092225f811e54289cd3a54775f6d374573ebb5e97139578f",
+        "normals_sha256": "bd287db3ec433fa7a770011f018e59317e61a50794a5229d86db988968969918",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              0.0,
+              0.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              0.0,
+              0.0,
+              1.4594594594594594
+            ],
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius": 1.5405405405405406,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              0.0,
+              0.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.150145,
+        "peak_working_set_bytes": 96817152,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 10276,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/stepped/zero_normals/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/stepped/zero_normals/stderr.log"
+      },
+      "observation": {
+        "pid": 10276,
+        "operation": "surface",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "zero_normals",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 160,
+        "position_rank": 3,
+        "points_sha256": "04825b08e58d4ba896bda96b9a6dfb998318cabe710b25e53bd1a33c67704c1f",
+        "normals_sha256": "a8eac8b0d3b1fde368813438dd5ba415a796fd6dd0a2a42fb6a5a2dfb2429576",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              1.9999999999999993,
+              -3.000000000000001,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 5.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              1.9999999999999998,
+              -3.0000000000000004,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": 10.0,
+            "residual_max": 1.7763568394002505e-15,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "selection": "rejected-with-none"
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1247525,
+        "peak_working_set_bytes": 97181696,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 16580,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/stepped/nan/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/stepped/nan/stderr.log"
+      },
+      "observation": {
+        "pid": 16580,
+        "operation": "surface",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "nan",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 160,
+        "position_rank": null,
+        "points_sha256": "809c58811654fac4d6d58154868201f0ec6cc6d7cdb797920cd5ce6d396d2f8e",
+        "normals_sha256": "08f9b3bd54a067f70d9ef0473ea2a71c9edc521a0c9975beeed00e9d2c131898",
+        "fit_plane": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge",
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge in Linear Least Squares",
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge",
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1400873,
+        "peak_working_set_bytes": 97374208,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 29192,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/stepped/inf/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/stepped/inf/stderr.log"
+      },
+      "observation": {
+        "pid": 29192,
+        "operation": "surface",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "inf",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 160,
+        "position_rank": null,
+        "points_sha256": "1b28835562243e379db6ddd536b1357042883a22894dd37c1c6e025f9b825d31",
+        "normals_sha256": "08f9b3bd54a067f70d9ef0473ea2a71c9edc521a0c9975beeed00e9d2c131898",
+        "fit_plane": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge",
+          "warnings": [
+            {
+              "category": "RuntimeWarning",
+              "message": "invalid value encountered in subtract"
+            }
+          ]
+        },
+        "fit_cylinder": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge in Linear Least Squares",
+          "warnings": [
+            {
+              "category": "RuntimeWarning",
+              "message": "invalid value encountered in matmul"
+            }
+          ]
+        },
+        "surface_selector": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge",
+          "warnings": [
+            {
+              "category": "RuntimeWarning",
+              "message": "invalid value encountered in subtract"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1832835,
+        "peak_working_set_bytes": 100954112,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 29728,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/lbracket/plane/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/lbracket/plane/stderr.log"
+      },
+      "observation": {
+        "pid": 29728,
+        "operation": "surface",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "plane",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 25,
+        "position_rank": 2,
+        "points_sha256": "7e4be86f1ad68a3a5b010aac66227da268fa6207c39f294f9d944577f6f5cd63",
+        "normals_sha256": "bd287db3ec433fa7a770011f018e59317e61a50794a5229d86db988968969918",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              0.0,
+              0.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              0.0,
+              -0.0013884064506298705,
+              -17018238.070325077
+            ],
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius": 17018241.070325136,
+            "residual_max": 5.960464477539063e-08,
+            "alignment_min": 0.9999999999999932,
+            "iterations": 100,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              0.0,
+              0.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1661366,
+        "peak_working_set_bytes": 101027840,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 18596,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/lbracket/cylinder/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/lbracket/cylinder/stderr.log"
+      },
+      "observation": {
+        "pid": 18596,
+        "operation": "surface",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "cylinder",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 160,
+        "position_rank": 3,
+        "points_sha256": "04825b08e58d4ba896bda96b9a6dfb998318cabe710b25e53bd1a33c67704c1f",
+        "normals_sha256": "08f9b3bd54a067f70d9ef0473ea2a71c9edc521a0c9975beeed00e9d2c131898",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              1.9999999999999993,
+              -3.000000000000001,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 5.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              1.9999999999999998,
+              -3.0000000000000004,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": 10.0,
+            "residual_max": 1.7763568394002505e-15,
+            "alignment_min": 0.9999999999999998,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              1.9999999999999998,
+              -3.0000000000000004,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": 10.0,
+            "residual_max": 1.7763568394002505e-15,
+            "alignment_min": 0.9999999999999998,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.120452,
+        "peak_working_set_bytes": 100802560,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 30908,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/lbracket/empty/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/lbracket/empty/stderr.log"
+      },
+      "observation": {
+        "pid": 30908,
+        "operation": "surface",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "empty",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 0,
+        "position_rank": null,
+        "points_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "normals_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_plane": {
+          "outcome": "exception",
+          "exception_type": "IndexError",
+          "message": "index -1 is out of bounds for axis 0 with size 0",
+          "warnings": [
+            {
+              "category": "RuntimeWarning",
+              "message": "Mean of empty slice"
+            },
+            {
+              "category": "RuntimeWarning",
+              "message": "invalid value encountered in divide"
+            }
+          ]
+        },
+        "fit_cylinder": {
+          "outcome": "exception",
+          "exception_type": "IndexError",
+          "message": "index -1 is out of bounds for axis 0 with size 0",
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "selection": "rejected-with-none"
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.3313902,
+        "peak_working_set_bytes": 100941824,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12868,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/lbracket/single/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/lbracket/single/stderr.log"
+      },
+      "observation": {
+        "pid": 12868,
+        "operation": "surface",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "single",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 1,
+        "position_rank": 0,
+        "points_sha256": "4b6f48ac8fb2b249b3d1a3681f1e88deb7e1a00e30a07d0d066aafe563e307f8",
+        "normals_sha256": "04ae04134c8318578c932394683055fea108f3f586ff5b055613752c5f03e6f5",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              -2.0,
+              -2.0,
+              3.0
+            ],
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              -0.9696969696969697,
+              -0.9696969696969696,
+              3.0
+            ],
+            "direction": [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            "radius": 1.4570685188086434,
+            "residual_max": 0.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "selection": "rejected-with-none"
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0888419,
+        "peak_working_set_bytes": 101203968,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12668,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/lbracket/two/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/lbracket/two/stderr.log"
+      },
+      "observation": {
+        "pid": 12668,
+        "operation": "surface",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "two",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 2,
+        "position_rank": 1,
+        "points_sha256": "b1bd0e7a1a994ba8ee9abbf323c4103d594e0f8ffb7714945d23fd8c36745eb9",
+        "normals_sha256": "b76a51d51658b8961adb4b08f1563f132b3152f68e705e85cb3b0047239de35a",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              -1.5,
+              -2.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              -1.5,
+              -2.0,
+              1.1351351351351355
+            ],
+            "direction": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "radius": 1.930730681428005,
+            "residual_max": 2.220446049250313e-16,
+            "alignment_min": 0.9658855493432025,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "selection": "rejected-with-none"
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1608854,
+        "peak_working_set_bytes": 101212160,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12480,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/lbracket/collinear/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/lbracket/collinear/stderr.log"
+      },
+      "observation": {
+        "pid": 12480,
+        "operation": "surface",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "collinear",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 25,
+        "position_rank": 1,
+        "points_sha256": "6c5855c6767acdcb88f779ca6ccd95992a7944ed03ebdf131c3f713feeb63730",
+        "normals_sha256": "bd287db3ec433fa7a770011f018e59317e61a50794a5229d86db988968969918",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              -5.329070518200751e-17,
+              0.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              -1.0658141036401502e-16,
+              0.0,
+              1.4594594594594594
+            ],
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius": 1.5405405405405406,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              -1.0658141036401502e-16,
+              0.0,
+              1.4594594594594594
+            ],
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius": 1.5405405405405406,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0841198,
+        "peak_working_set_bytes": 100421632,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 12016,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/lbracket/coincident/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/lbracket/coincident/stderr.log"
+      },
+      "observation": {
+        "pid": 12016,
+        "operation": "surface",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "coincident",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 25,
+        "position_rank": 0,
+        "points_sha256": "322426a4069e3bc0092225f811e54289cd3a54775f6d374573ebb5e97139578f",
+        "normals_sha256": "bd287db3ec433fa7a770011f018e59317e61a50794a5229d86db988968969918",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              0.0,
+              0.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              0.0,
+              0.0,
+              1.4594594594594594
+            ],
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius": 1.5405405405405406,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              0.0,
+              0.0,
+              3.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 0.0,
+            "alignment_min": 1.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.189466,
+        "peak_working_set_bytes": 101085184,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 460,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/lbracket/zero_normals/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/lbracket/zero_normals/stderr.log"
+      },
+      "observation": {
+        "pid": 460,
+        "operation": "surface",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "zero_normals",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 160,
+        "position_rank": 3,
+        "points_sha256": "04825b08e58d4ba896bda96b9a6dfb998318cabe710b25e53bd1a33c67704c1f",
+        "normals_sha256": "a8eac8b0d3b1fde368813438dd5ba415a796fd6dd0a2a42fb6a5a2dfb2429576",
+        "fit_plane": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "plane",
+            "center": [
+              1.9999999999999993,
+              -3.000000000000001,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": null,
+            "residual_max": 5.0,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "returned",
+          "result": {
+            "geometry": "cylinder",
+            "center": [
+              1.9999999999999998,
+              -3.0000000000000004,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius": 10.0,
+            "residual_max": 1.7763568394002505e-15,
+            "alignment_min": 0.0,
+            "iterations": 1,
+            "active_geometry_finite": true
+          },
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "returned",
+          "result": {
+            "selection": "rejected-with-none"
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.2373466,
+        "peak_working_set_bytes": 100831232,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 21040,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/lbracket/nan/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/lbracket/nan/stderr.log"
+      },
+      "observation": {
+        "pid": 21040,
+        "operation": "surface",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "nan",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 160,
+        "position_rank": null,
+        "points_sha256": "809c58811654fac4d6d58154868201f0ec6cc6d7cdb797920cd5ce6d396d2f8e",
+        "normals_sha256": "08f9b3bd54a067f70d9ef0473ea2a71c9edc521a0c9975beeed00e9d2c131898",
+        "fit_plane": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge",
+          "warnings": []
+        },
+        "fit_cylinder": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge in Linear Least Squares",
+          "warnings": []
+        },
+        "surface_selector": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge",
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0823564,
+        "peak_working_set_bytes": 100839424,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 14948,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/surface/lbracket/inf/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/surface/lbracket/inf/stderr.log"
+      },
+      "observation": {
+        "pid": 14948,
+        "operation": "surface",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "inf",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "points": 160,
+        "position_rank": null,
+        "points_sha256": "1b28835562243e379db6ddd536b1357042883a22894dd37c1c6e025f9b825d31",
+        "normals_sha256": "08f9b3bd54a067f70d9ef0473ea2a71c9edc521a0c9975beeed00e9d2c131898",
+        "fit_plane": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge",
+          "warnings": [
+            {
+              "category": "RuntimeWarning",
+              "message": "invalid value encountered in subtract"
+            }
+          ]
+        },
+        "fit_cylinder": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge in Linear Least Squares",
+          "warnings": [
+            {
+              "category": "RuntimeWarning",
+              "message": "invalid value encountered in matmul"
+            }
+          ]
+        },
+        "surface_selector": {
+          "outcome": "exception",
+          "exception_type": "LinAlgError",
+          "message": "SVD did not converge",
+          "warnings": [
+            {
+              "category": "RuntimeWarning",
+              "message": "invalid value encountered in subtract"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "circle_diagnostics": [
+    {
+      "metrics": {
+        "wall_seconds": 1.0504272,
+        "peak_working_set_bytes": 96772096,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 20784,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/stepped/arc_360/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/stepped/arc_360/stderr.log"
+      },
+      "observation": {
+        "pid": 20784,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "arc_360",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              1.9999999999999996,
+              -3.0
+            ],
+            "radius": 10.0,
+            "residual_max": 1.7763568394002505e-15,
+            "iterations": 1,
+            "last_step_norm": 3.745478245071823e-15,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 0.0,
+            "center_error": 4.440892098500626e-16
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0932223,
+        "peak_working_set_bytes": 96837632,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 15076,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/stepped/arc_10/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/stepped/arc_10/stderr.log"
+      },
+      "observation": {
+        "pid": 15076,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "arc_10",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              2.0000000000000306,
+              -2.9999999999999996
+            ],
+            "radius": 9.99999999999997,
+            "residual_max": 1.7763568394002505e-15,
+            "iterations": 2,
+            "last_step_norm": 1.725537996329829e-15,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 3.019806626980426e-14,
+            "center_error": 3.064537334844551e-14
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0782667,
+        "peak_working_set_bytes": 96854016,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 16516,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/stepped/arc_0.001/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/stepped/arc_0.001/stderr.log"
+      },
+      "observation": {
+        "pid": 16516,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "arc_0.001",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              2.0000134973702,
+              -2.9999999999987157
+            ],
+            "radius": 9.9999865026298,
+            "residual_max": 3.552713678800501e-15,
+            "iterations": 100,
+            "last_step_norm": 2.0442546018542205e-06,
+            "recorded_step_threshold_met": false,
+            "reached_iteration_limit": true,
+            "radius_error": 1.3497370199289094e-05,
+            "center_error": 1.3497370200177333e-05
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.2103081,
+        "peak_working_set_bytes": 97112064,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 31488,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/stepped/arc_0.00001/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/stepped/arc_0.00001/stderr.log"
+      },
+      "observation": {
+        "pid": 31488,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "arc_0.00001",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              5.615251300961332,
+              -2.9999999999774953
+            ],
+            "radius": 6.384748699038675,
+            "residual_max": 1.509903313490213e-14,
+            "iterations": 2,
+            "last_step_norm": 2.747661802696544e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 3.615251300961325,
+            "center_error": 3.615251300961332
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1446609,
+        "peak_working_set_bytes": 96788480,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 13144,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/stepped/collinear/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/stepped/collinear/stderr.log"
+      },
+      "observation": {
+        "pid": 13144,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "collinear",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88",
+        "analytic_truth": null,
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              -3.7555860735183894e-17,
+              0.0
+            ],
+            "radius": 1.0158730158730158,
+            "residual_max": 0.9841269841269842,
+            "iterations": 2,
+            "last_step_norm": 1.2547499438650175e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": null,
+            "center_error": null
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.2308088,
+        "peak_working_set_bytes": 96944128,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 7408,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/stepped/coincident/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/stepped/coincident/stderr.log"
+      },
+      "observation": {
+        "pid": 7408,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "coincident",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c",
+        "analytic_truth": null,
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              0.981132075471698,
+              -1.4716981132075473
+            ],
+            "radius": 1.836790272406183,
+            "residual_max": 2.220446049250313e-16,
+            "iterations": 1,
+            "last_step_norm": 1.570092458683775e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": null,
+            "center_error": null
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 0.9943029,
+        "peak_working_set_bytes": 96763904,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 3856,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/lbracket/arc_360/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/lbracket/arc_360/stderr.log"
+      },
+      "observation": {
+        "pid": 3856,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "arc_360",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              1.9999999999999996,
+              -3.0
+            ],
+            "radius": 10.0,
+            "residual_max": 1.7763568394002505e-15,
+            "iterations": 1,
+            "last_step_norm": 3.745478245071823e-15,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 0.0,
+            "center_error": 4.440892098500626e-16
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1963739,
+        "peak_working_set_bytes": 96788480,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 29204,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/lbracket/arc_10/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/lbracket/arc_10/stderr.log"
+      },
+      "observation": {
+        "pid": 29204,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "arc_10",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              2.0000000000000306,
+              -2.9999999999999996
+            ],
+            "radius": 9.99999999999997,
+            "residual_max": 1.7763568394002505e-15,
+            "iterations": 2,
+            "last_step_norm": 1.725537996329829e-15,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 3.019806626980426e-14,
+            "center_error": 3.064537334844551e-14
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1572952,
+        "peak_working_set_bytes": 97038336,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 1764,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/lbracket/arc_0.001/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/lbracket/arc_0.001/stderr.log"
+      },
+      "observation": {
+        "pid": 1764,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "arc_0.001",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              2.0000134973702,
+              -2.9999999999987157
+            ],
+            "radius": 9.9999865026298,
+            "residual_max": 3.552713678800501e-15,
+            "iterations": 100,
+            "last_step_norm": 2.0442546018542205e-06,
+            "recorded_step_threshold_met": false,
+            "reached_iteration_limit": true,
+            "radius_error": 1.3497370199289094e-05,
+            "center_error": 1.3497370200177333e-05
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1072588,
+        "peak_working_set_bytes": 96800768,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 21468,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/lbracket/arc_0.00001/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/lbracket/arc_0.00001/stderr.log"
+      },
+      "observation": {
+        "pid": 21468,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "arc_0.00001",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              5.615251300961332,
+              -2.9999999999774953
+            ],
+            "radius": 6.384748699038675,
+            "residual_max": 1.509903313490213e-14,
+            "iterations": 2,
+            "last_step_norm": 2.747661802696544e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 3.615251300961325,
+            "center_error": 3.615251300961332
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.0410565,
+        "peak_working_set_bytes": 96870400,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 25280,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/lbracket/collinear/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/lbracket/collinear/stderr.log"
+      },
+      "observation": {
+        "pid": 25280,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "collinear",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88",
+        "analytic_truth": null,
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              -3.7555860735183894e-17,
+              0.0
+            ],
+            "radius": 1.0158730158730158,
+            "residual_max": 0.9841269841269842,
+            "iterations": 2,
+            "last_step_norm": 1.2547499438650175e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": null,
+            "center_error": null
+          },
+          "warnings": []
+        }
+      }
+    },
+    {
+      "metrics": {
+        "wall_seconds": 1.1011687,
+        "peak_working_set_bytes": 96694272,
+        "returncode": 0,
+        "timed_out": false,
+        "memory_error": null,
+        "pid": 28888,
+        "python_redirector_bypassed": true,
+        "stdout": "runs/engineering-measurements-20261105/circle/lbracket/coincident/stdout.log",
+        "stderr": "runs/engineering-measurements-20261105/circle/lbracket/coincident/stderr.log"
+      },
+      "observation": {
+        "pid": 28888,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "coincident",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c",
+        "analytic_truth": null,
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              0.981132075471698,
+              -1.4716981132075473
+            ],
+            "radius": 1.836790272406183,
+            "residual_max": 2.220446049250313e-16,
+            "iterations": 1,
+            "last_step_norm": 1.570092458683775e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": null,
+            "center_error": null
+          },
+          "warnings": []
+        }
+      }
+    }
+  ],
+  "memory_collector_probe": {
+    "wall_seconds": 0.1026649,
+    "peak_working_set_bytes": 79953920,
+    "returncode": 0,
+    "timed_out": false,
+    "memory_error": null,
+    "pid": 19272,
+    "python_redirector_bypassed": true,
+    "stdout": "runs/engineering-measurements-20261105/allocation-probe/stdout.log",
+    "stderr": "runs/engineering-measurements-20261105/allocation-probe/stderr.log",
+    "pid_matches": true,
+    "prefix_matches": true,
+    "allocated_bytes": 67108864
+  },
+  "hardware": {
+    "processors": [
+      {
+        "Name": "Intel(R) Xeon(R) w3-2435",
+        "NumberOfCores": 8,
+        "NumberOfLogicalProcessors": 16
+      }
+    ],
+    "physical_memory_bytes": 137060847616,
+    "os": "Microsoft Windows 11 專業工作站版",
+    "version": "10.0.26300",
+    "build": "26300"
+  },
+  "preparation": {
+    "included_in_stage_timing": false,
+    "status": "pass",
+    "pipeline_report_sha256": "7197cc901331921b2cb758816fdea8d0ecd240989d8c25b5cf956b054bdd800c"
+  },
+  "compiled_artifacts": [
+    {
+      "path": "runs/engineering-measurements-20261105/prepared/blind-hole-hex-base/classifier/bin/CoreResearchClassifier.dll",
+      "sha256": "89e4647d3b9302ac0c4fd9fdfe2fccd3f725e5ebb420d7a96c7d28fa37dc1d2e"
+    },
+    {
+      "path": "runs/engineering-measurements-20261105/prepared/core-runner/bin/CoreClassifierRunner.dll",
+      "sha256": "bad62767470ece26b4fb01add3a8387c8274b99277c87a08d93ef9daafee0332"
+    },
+    {
+      "path": "runs/engineering-measurements-20261105/prepared/l-bracket/classifier/bin/ResearchClassifier.dll",
+      "sha256": "2f554b875b62849c7034f04d5b146dd0cea704de264d017711701eed542313b8"
+    },
+    {
+      "path": "runs/engineering-measurements-20261105/prepared/model-a/classifier/bin/ResearchClassifier.dll",
+      "sha256": "74ecdedc4a062939b649199457394424eef4887666f7074b6fe8cdaadd624d62"
+    },
+    {
+      "path": "runs/engineering-measurements-20261105/prepared/stepped-cylinder/classifier/bin/ResearchClassifier.dll",
+      "sha256": "87987ba7ba381c4e8609fd59967ff5fbd9b899388228999722118f37d2339b99"
+    },
+    {
+      "path": "runs/engineering-measurements-20261105/prepared/runner/bin/ClassifierRunner.exe",
+      "sha256": "51d9cf25448e5370a38a9ec0c9b48d10684467bbc7a0e191d12834509cd25ed6"
+    }
+  ],
+  "full_pipeline_size_contract": {
+    "input_rows": 5000,
+    "input_sha256": "fae50f2977628ef990ad7862b90787cf85a96d6cf13ddd75b90b11a1a8360a7e",
+    "metrics": {
+      "wall_seconds": 1.0892124,
+      "peak_working_set_bytes": 108916736,
+      "returncode": 1,
+      "timed_out": false,
+      "memory_error": null,
+      "pid": 5856,
+      "python_redirector_bypassed": true
+    },
+    "expected_rejection_observed": true,
+    "last_error_line": "ValueError: L 型板輸入不符合第三章資料結構：missing=[], rows=5000"
+  },
+  "sources_verified_after": true
+}

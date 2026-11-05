@@ -1,0 +1,243 @@
+{
+  "date": "2026-11-05",
+  "scope": "Descriptive min/median/max, three repetitions; not confidence intervals or a method superiority claim",
+  "source": "validation/2026-11-05/measurement-results.json",
+  "source_sha256": "5dae4578e29c3e51f59970357e58286286c04452bc7896e2c8463ba40be56cb6",
+  "summary_script_sha256": "c6ae7efbec48cd4593847a7b21d774f8231bceeddc5f3169711628fb6edd68fd",
+  "stage_runs": 24,
+  "output_hash_checks": 84,
+  "stages": [
+    {
+      "phase": "csharp-classification",
+      "case": "stepped-cylinder",
+      "wall_seconds": {
+        "n": 3,
+        "min": 6.7722349,
+        "median": 6.8021369,
+        "max": 6.8137232
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 25.1328125,
+        "median": 25.1640625,
+        "max": 25.2265625
+      }
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "l-bracket",
+      "wall_seconds": {
+        "n": 3,
+        "min": 6.767428,
+        "median": 6.8267818,
+        "max": 6.8825943
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 25.9921875,
+        "median": 26.00390625,
+        "max": 26.0546875
+      }
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "model-a",
+      "wall_seconds": {
+        "n": 3,
+        "min": 0.1871215,
+        "median": 0.2010234,
+        "max": 0.2103896
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 28.03125,
+        "median": 28.0625,
+        "max": 28.09765625
+      }
+    },
+    {
+      "phase": "csharp-classification",
+      "case": "blind-hole-hex-base",
+      "wall_seconds": {
+        "n": 3,
+        "min": 0.3645438,
+        "median": 0.4118375,
+        "max": 0.4714908
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 44.921875,
+        "median": 44.93359375,
+        "max": 44.94140625
+      }
+    },
+    {
+      "phase": "python-inference",
+      "case": "stepped-cylinder",
+      "wall_seconds": {
+        "n": 3,
+        "min": 1.2364865,
+        "median": 1.3267161,
+        "max": 1.4080283
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 102.75390625,
+        "median": 102.91015625,
+        "max": 103.18359375
+      }
+    },
+    {
+      "phase": "python-inference",
+      "case": "l-bracket",
+      "wall_seconds": {
+        "n": 3,
+        "min": 1.4270965,
+        "median": 1.4632481,
+        "max": 1.5456307
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 116.27734375,
+        "median": 116.3828125,
+        "max": 116.5546875
+      }
+    },
+    {
+      "phase": "python-inference",
+      "case": "model-a",
+      "wall_seconds": {
+        "n": 3,
+        "min": 1.3133368,
+        "median": 1.3761475,
+        "max": 1.4231934
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 104.18359375,
+        "median": 104.20703125,
+        "max": 104.4609375
+      }
+    },
+    {
+      "phase": "python-inference",
+      "case": "blind-hole-hex-base",
+      "wall_seconds": {
+        "n": 3,
+        "min": 1.1938888,
+        "median": 1.2897898,
+        "max": 1.339926
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 102.37109375,
+        "median": 102.39453125,
+        "max": 102.41015625
+      }
+    }
+  ],
+  "scale_runs": 12,
+  "scales": [
+    {
+      "n": 1000,
+      "distance_pairs": 518,
+      "components": 620,
+      "function_ms": {
+        "n": 3,
+        "min": 1.503,
+        "median": 1.8878,
+        "max": 3.8272
+      },
+      "process_seconds": {
+        "n": 3,
+        "min": 1.0544879,
+        "median": 1.0721507,
+        "max": 1.3515863
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 102.34375,
+        "median": 102.37109375,
+        "max": 102.7265625
+      },
+      "repeated_inputs_and_labels_identical": true
+    },
+    {
+      "n": 2500,
+      "distance_pairs": 3222,
+      "components": 692,
+      "function_ms": {
+        "n": 3,
+        "min": 3.2234999999999996,
+        "median": 3.2244,
+        "max": 3.3543000000000003
+      },
+      "process_seconds": {
+        "n": 3,
+        "min": 1.0933149,
+        "median": 1.1866505,
+        "max": 1.2037296
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 102.4453125,
+        "median": 102.59765625,
+        "max": 102.73046875
+      },
+      "repeated_inputs_and_labels_identical": true
+    },
+    {
+      "n": 5000,
+      "distance_pairs": 12693,
+      "components": 239,
+      "function_ms": {
+        "n": 3,
+        "min": 9.2577,
+        "median": 12.4506,
+        "max": 13.7994
+      },
+      "process_seconds": {
+        "n": 3,
+        "min": 1.1000865,
+        "median": 1.13215,
+        "max": 1.2021718
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 102.08984375,
+        "median": 102.4765625,
+        "max": 102.5234375
+      },
+      "repeated_inputs_and_labels_identical": true
+    },
+    {
+      "n": 10000,
+      "distance_pairs": 50958,
+      "components": 20,
+      "function_ms": {
+        "n": 3,
+        "min": 56.8367,
+        "median": 57.1184,
+        "max": 80.3305
+      },
+      "process_seconds": {
+        "n": 3,
+        "min": 1.2621071,
+        "median": 1.2717086,
+        "max": 1.3035202
+      },
+      "peak_working_set_mib": {
+        "n": 3,
+        "min": 112.56640625,
+        "median": 112.69140625,
+        "max": 112.98828125
+      },
+      "repeated_inputs_and_labels_identical": true
+    }
+  ],
+  "surface_diagnostics": 20,
+  "circle_diagnostics": 12,
+  "circle_limit_without_step_threshold": 2,
+  "surface_selector_exceptions": 4,
+  "characterization_is_not_all_inputs_accepted_or_correct": true
+}

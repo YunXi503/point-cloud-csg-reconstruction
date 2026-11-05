@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-05",
+  "scope": "Post hoc analysis of the already observed fixtures; does not change the predeclared tests or method parameters",
+  "source_measurements_sha256": "5dae4578e29c3e51f59970357e58286286c04452bc7896e2c8463ba40be56cb6",
+  "matrix": "[2*x,2*y,1], exactly the preserved initial_circle linear system",
+  "rank_convention": "numpy.linalg.matrix_rank default tolerance on the recorded NumPy 2.4.1 runtime",
+  "rows": [
+    {
+      "fixture": "arc_360",
+      "initial_design_singular_values": [
+        127.04821147280504,
+        113.13708498984758,
+        7.124041097678254
+      ],
+      "initial_design_rank": 3,
+      "condition_number": 17.8337280387406,
+      "initial_center": [
+        1.9999999999999993,
+        -2.9999999999999964
+      ],
+      "initial_radius": 10.0,
+      "fixture_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8"
+    },
+    {
+      "fixture": "arc_10",
+      "initial_design_singular_values": [
+        197.87773122954925,
+        7.937195635650266,
+        0.007802909365674233
+      ],
+      "initial_design_rank": 3,
+      "condition_number": 25359.480926439166,
+      "initial_center": [
+        1.9999999999997509,
+        -3.000000000000014
+      ],
+      "initial_radius": 10.000000000000249,
+      "fixture_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411"
+    },
+    {
+      "fixture": "arc_0.001",
+      "initial_design_singular_values": [
+        198.07069444830753,
+        0.0007944211540214424,
+        7.798928828477502e-11
+      ],
+      "initial_design_rank": 3,
+      "condition_number": 2539716656024.09,
+      "initial_center": [
+        1.9999903206390701,
+        -3.0000000000119265
+      ],
+      "initial_radius": 10.000009679360934,
+      "fixture_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29"
+    },
+    {
+      "fixture": "arc_0.00001",
+      "initial_design_singular_values": [
+        198.07069445023896,
+        7.94421154185096e-06,
+        7.525189493967363e-15
+      ],
+      "initial_design_rank": 2,
+      "condition_number": 2.6321024156139076e+16,
+      "initial_center": [
+        5.615251300961335,
+        -2.999999995478704
+      ],
+      "initial_radius": 6.384748699038678,
+      "fixture_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd"
+    },
+    {
+      "fixture": "collinear",
+      "initial_design_singular_values": [
+        18.766174681306577,
+        8.000000000000002,
+        0.0
+      ],
+      "initial_design_rank": 2,
+      "condition_number": null,
+      "initial_center": [
+        -2.0408931442895735e-16,
+        0.0
+      ],
+      "initial_radius": 1.1728859175816608,
+      "fixture_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88"
+    },
+    {
+      "fixture": "coincident",
+      "initial_design_singular_values": [
+        58.240879114244144,
+        1.7298580889380321e-15,
+        7.810426288386926e-32
+      ],
+      "initial_design_rank": 1,
+      "condition_number": 7.456811826115132e+32,
+      "initial_center": [
+        0.9811320754716979,
+        -1.4716981132075473
+      ],
+      "initial_radius": 1.836790272406183,
+      "fixture_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c"
+    }
+  ],
+  "causal_limit": "Conditioning/rank observations are consistent with limited numerical support; no internal algorithm ablation was performed."
+}

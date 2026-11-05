@@ -1,6 +1,6 @@
 # 發布封裝與公開論文 QA
 
-版本：0.1.5／portfolio-interview-2026-11-05。原始來源、兩條執行路徑與研究證據邊界見 [查驗紀錄](validation.md)，本輪三項補全的再次審查見 [completion-review.md](completion-review.md)。
+版本：0.1.6／portfolio-measurements-2026-11-05。原始來源、兩條執行路徑與研究證據邊界見 [查驗紀錄](validation.md)，本輪三項補全的再次審查見 [completion-review.md](completion-review.md)。
 
 ## 檔案與程式
 
@@ -37,3 +37,7 @@ Microsoft Word 實際以唯讀副本開啟，來源及副本關閉後 SHA-256 �
 ## 面試審查補強
 
 [面試導讀](interview-guide.md)與[L型板資料流](case-walkthrough.md)只使用現有來源；預檢改動限於工程入口。原 241 份來源與幾何品質結果保留，17 項防護測試及本版兩種重現路徑的結果見[查核](../validation/2026-11-05/interview-review-audit.json)。
+
+## 效能與數值診斷
+
+本輪新增量測工具、解析fixture、原始觀察、統計與圖表。原研究、參數、期望輸出與論文圖件不變；原生峰值計數先驗PID與64 MiB配置探針，排除錯誤啟動器數字。圖表使用實測數據，450 DPI PNG／SVG與來源manifest均保留。[量測審查](measurement-review.md)
