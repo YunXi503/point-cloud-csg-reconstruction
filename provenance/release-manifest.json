@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-figures-2026-11-05",
+  "packaging_version": "portfolio-review-2026-11-05",
   "date": "2026-11-05",
   "manifest_excludes": [
     "provenance/release-manifest.json"
@@ -2137,8 +2137,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2270,
-      "sha256": "8dfe128656838aad589325829c5bafa9c29a10117ba5196a285a302aa71f84ec"
+      "bytes": 2606,
+      "sha256": "d7bb79658cac67e7906f61f0a9f08887525433e6e7c04133cda71ce399234a87"
     },
     {
       "path": "data/recovered/README.md",
@@ -2152,13 +2152,18 @@
     },
     {
       "path": "docs/architecture.md",
-      "bytes": 2383,
-      "sha256": "ad3b92c2685d3ac20c61e2aa8ca4260bcd0aa0d8c41fb74300071febd5691855"
+      "bytes": 2684,
+      "sha256": "554ba3c24f41284c05ef1fb4ba372d8e57d6cb19af912dfb4b5ddf90ac4043e4"
     },
     {
       "path": "docs/build-status.md",
       "bytes": 1222,
       "sha256": "4dfcb59bcaa0799109e3bfa43248777942891b43c80637b778ac6aaea3faae92"
+    },
+    {
+      "path": "docs/csg-representation.md",
+      "bytes": 3482,
+      "sha256": "f746f4b717e1835f8a16fcc59c01b33c1ac4e8c1c46f3759aa60eeeae1c86419"
     },
     {
       "path": "docs/development-notes.md",
@@ -2192,8 +2197,8 @@
     },
     {
       "path": "docs/figures/README.md",
-      "bytes": 2379,
-      "sha256": "c43d339e97b3d70c3a601ab935818b7711acb057dd3e8992eba5c254b85c75d7"
+      "bytes": 2575,
+      "sha256": "299af46b2ba95649eaee7fa55e073b67b2f2101052b3690c67d0d21cdf723dc2"
     },
     {
       "path": "docs/figures/stepped-cylinder.md",
@@ -2207,8 +2212,13 @@
     },
     {
       "path": "docs/packaging-qa.md",
-      "bytes": 2729,
-      "sha256": "aa0d3a9939dec889331eed770d7750c5217c16c43b2029c934c80b5eba88ac40"
+      "bytes": 2990,
+      "sha256": "7f66c57572c063185cde5887d4be4eb013ede2f28af53b98bfd15473af0dd015"
+    },
+    {
+      "path": "docs/portfolio-review.md",
+      "bytes": 3353,
+      "sha256": "9d5dcbbc51d395a8dbfdcd580752903527bfa23f9449c3ffbb13feecdb1540b4"
     },
     {
       "path": "docs/second-pass-review.md",
@@ -2217,8 +2227,8 @@
     },
     {
       "path": "docs/source-versions.md",
-      "bytes": 2829,
-      "sha256": "0909403aa34913f818817b7445091169b1c96d16ef3c29606096a85a5fa818b0"
+      "bytes": 2827,
+      "sha256": "b918e25df7192ee5015101e967dbcb3b79d4a04b85b57a85228b8d39bd2ed963"
     },
     {
       "path": "docs/validation.md",
@@ -2296,6 +2306,11 @@
       "sha256": "7b664fe780b5f49e8a4cfbb7fddeb5e6bc8915bc10d23b4af94c390410e8bce7"
     },
     {
+      "path": "provenance/history/source-versions-portfolio-figures-2026-11-05.json",
+      "bytes": 20669,
+      "sha256": "1aad46a14bde5ead65e1c3706be4a509c22fd6618c877eab7a6c78d36d3a6e6b"
+    },
+    {
       "path": "provenance/history/source-versions-preparation-2026-11-05.json",
       "bytes": 17405,
       "sha256": "5e1ee6d5eb162a0f54d801cc8fc8fa05fc4e5370ae40b6a22122116d8620d07b"
@@ -2322,8 +2337,8 @@
     },
     {
       "path": "provenance/source-versions.json",
-      "bytes": 20288,
-      "sha256": "729c587596ad248fc2040c817f763c40ff529ca07e7ca7333199bf87b7f6d58b"
+      "bytes": 20983,
+      "sha256": "afbbe0bf3c9c8daa2cff5f11fcb0467f7a9d9720abd9b7f37d12c1acb77c0788"
     },
     {
       "path": "provenance/thesis-figures.json",
@@ -2332,8 +2347,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6952,
-      "sha256": "fff843daec422c22b69998da51860b612754c276348497c0cb2999f43c6e0148"
+      "bytes": 7311,
+      "sha256": "10d529b23ac105d80bac845a5504596c1b0956c81d8bca3720518b7313613a54"
     },
     {
       "path": "requirements-observed.txt",
@@ -3284,6 +3299,11 @@
       "path": "validation/2026-11-05/clean-environment-numpy241.json",
       "bytes": 10110,
       "sha256": "318cd9eb621b347e5b397ddcba8e604ecac28006f067ed532f0f6592979d23a5"
+    },
+    {
+      "path": "validation/2026-11-05/csg-contract-review.json",
+      "bytes": 1779,
+      "sha256": "9fd3030ce988bba2defe877edb66f058837cc38a05355945338ad3b8256bd641"
     },
     {
       "path": "validation/2026-11-05/environment-transition.json",

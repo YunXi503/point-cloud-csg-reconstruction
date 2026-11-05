@@ -22,6 +22,8 @@ Rule-based geometric inference from sampled point normals, with preserved resear
 
 圖 4.10 呈現模型A的階層式 CSG 推論。葉節點對應候選編號，∪ 與 − 分別表示聯集與差集。
 
+論文圖採二元展開；前三個案例的 JSON 以清單分組保存候選，盲孔六角座則使用巢狀二元格式。[圖與 JSON 的表示對照](docs/csg-representation.md) 說明其順序及欄位。
+
 ![圖 4.10 模型A階層式 CSG 推論](assets/thesis/fig-4-10.png)
 
 [完整論文圖庫](docs/figures/README.md) 收錄 **22 個正式圖號與四個候選單元表**，可依分割、拓樸、候選及 CSG 樹閱讀，並連到對應 CSV／JSON：
@@ -70,7 +72,7 @@ flowchart LR
 | 幾何特徵分割與面型查驗 | 點級 ClusterID、FeatureType（依來源）、修正紀錄 |
 | 語義拓樸建構 | FaceSummary、TopologyEdges |
 | 候選幾何單元推論 | PrimitiveCandidates、來源群集與 BooleanType |
-| 階層式 CSG 推論 | 二元 CSG 樹及 Union／Difference 組合關係 |
+| 階層式 CSG 推論 | CSG 推論 JSON、候選編號及 Union／Difference 組合關係 |
 
 | 實作範例 | 點雲→C#→Python | 既有分割 CSV→Python |
 |---|---|---|
@@ -104,6 +106,8 @@ node tools/verify-package.mjs
 ```
 
 [GitHub Actions](https://github.com/YunXi503/point-cloud-csg-reconstruction/actions/workflows/verify.yml) 檢查封裝、錯誤防護及兩種重現路徑。[維護說明](docs/maintaining.md) · [第二輪審查與改善](docs/second-pass-review.md)
+
+[作品補全審查](docs/portfolio-review.md) 記錄個人分工、案例假設、品質摘要與效能量測等後續項目。
 
 ## 研究範圍
 

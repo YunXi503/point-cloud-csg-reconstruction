@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-05",
+  "release": "0.1.2",
+  "scope": "Read-only comparison of existing serialization, candidate CSVs and thesis method text; not a new geometry experiment",
+  "case_checks": [
+    {
+      "case": "stepped-cylinder",
+      "serialized_format": "grouped-operands",
+      "union_candidate_ids": [
+        "SC_U01",
+        "SC_U02"
+      ],
+      "difference_candidate_ids": [
+        "SC_D01"
+      ],
+      "candidate_csv_groups_match": true
+    },
+    {
+      "case": "l-bracket",
+      "serialized_format": "grouped-operands",
+      "union_candidate_ids": [
+        "LB_U01",
+        "LB_U02",
+        "LB_U03"
+      ],
+      "difference_candidate_ids": [
+        "LB_D01",
+        "LB_D02"
+      ],
+      "candidate_csv_groups_match": true
+    },
+    {
+      "case": "model-a",
+      "serialized_format": "grouped-operands",
+      "union_candidate_ids": [
+        "MA_U01",
+        "MA_U02",
+        "MA_U03",
+        "MA_U04"
+      ],
+      "difference_candidate_ids": [
+        "MA_D01",
+        "MA_D02"
+      ],
+      "candidate_csv_groups_match": true
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "serialized_format": "nested-binary",
+      "union_candidate_ids": [
+        "BH_U01",
+        "BH_U02"
+      ],
+      "difference_candidate_ids": [
+        "BH_D01"
+      ],
+      "candidate_csv_groups_match": true
+    }
+  ],
+  "thesis_source_unchanged": true,
+  "thesis_source_sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+  "thesis_left_fold_ordering_found": true,
+  "source_omath_count": 97,
+  "local_documentation_links_checked": 173,
+  "nested_binary_json_export_added": false,
+  "research_algorithms_changed": false,
+  "failures": []
+}

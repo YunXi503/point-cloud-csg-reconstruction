@@ -9,11 +9,13 @@ flowchart TD
     C --> A[轉接器呼叫既有 Execute]
     A --> S[初始 CSV 與歷史雜湊比對]
     S --> I[原樣 Python 面型與拓樸推論]
-    I --> O[候選單元與二元 CSG 樹]
+    I --> O[候選單元與 CSG 推論 JSON]
     O --> V[6 個核心輸出雜湊比對]
 ```
 
 較短入口直接從已記錄的初始分割 CSV 開始。兩條入口查驗相同四個範例，不能當成更多獨立研究樣本。
+
+階梯狀圓柱、L型板、模型A的 JSON 以 children、subtractors 清單分組保存候選；盲孔六角座已採 left、right 巢狀二元格式。論文圖以二元樹展開。[表示對照](csg-representation.md) 說明既有檔案與圖示的關係，本輪未新增格式轉換功能。
 
 ## 確認的 C# 來源
 

@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-figures-2026-11-05",
+  "packaging_version": "portfolio-review-2026-11-05",
   "date": "2026-11-05",
   "timezone": "Asia/Taipei",
   "source_policy": "Original research algorithms and parameters unchanged. Four exact original build-metadata files restored; historical input bytes recovered solely by newline serialization. Local compilation and inference reproduction recorded separately.",
@@ -367,8 +367,8 @@
     "unconfirmed thesis full text",
     "unselected experimental variants and duplicate rerun directories"
   ],
-  "previous_packaging_version": "portfolio-2026-11-05",
-  "software_version": "0.1.1",
+  "previous_packaging_version": "portfolio-figures-2026-11-05",
+  "software_version": "0.1.2",
   "research_sources_unchanged_from": "v0.1.0",
   "thesis_gallery": {
     "index": "docs/figures/README.md",
@@ -377,5 +377,11 @@
     "original_image_count": 28,
     "candidate_table_count": 4,
     "scope": "Existing thesis figure publication and navigation only; research program/data/PDF bytes unchanged"
+  },
+  "representation_review": {
+    "documentation": "docs/csg-representation.md",
+    "review": "docs/portfolio-review.md",
+    "evidence": "validation/2026-11-05/csg-contract-review.json",
+    "scope": "Documentation correction only; preserved research sources, inputs, outputs and thesis assets"
   }
 }
