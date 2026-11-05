@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-measurements-2026-11-05",
+  "packaging_version": "portfolio-geometry-guards-2026-11-05",
   "date": "2026-11-05",
   "timezone": "Asia/Taipei",
   "source_policy": "Original research algorithms and parameters unchanged. Four exact original build-metadata files restored; historical input bytes recovered solely by newline serialization. Local compilation and inference reproduction recorded separately.",
@@ -367,8 +367,8 @@
     "unconfirmed thesis versions other than the explicitly recorded public snapshot",
     "unselected experimental variants and duplicate rerun directories"
   ],
-  "previous_packaging_version": "portfolio-interview-2026-11-05",
-  "software_version": "0.1.6",
+  "previous_packaging_version": "portfolio-measurements-2026-11-05",
+  "software_version": "0.1.7",
   "research_sources_unchanged_from": "v0.1.0",
   "thesis_gallery": {
     "index": "docs/figures/README.md",
@@ -432,5 +432,20 @@
     "protected_sources": 241,
     "unit_tests": 23,
     "diagnostics_are_not_all_success_claims": true
+  },
+  "geometry_guards": {
+    "plan": "docs/geometry-guard-plan.md",
+    "contract": "docs/geometry-guard.md",
+    "review": "docs/geometry-guard-review.md",
+    "observations": "validation/2026-11-05/geometry-guard-results.json",
+    "tests": "validation/2026-11-05/geometry-guard-tests.json",
+    "audit": "validation/2026-11-05/geometry-guard-audit.json",
+    "base_commit": "1489fb2f3ddeeb688b0370870cb3fee1df08a330",
+    "protected_sources": 241,
+    "unit_tests": 51,
+    "new_contract_tests": 28,
+    "actual_fixture_replays": 12,
+    "parameters_verified_by_api": false,
+    "scope": "Optional separate 2D wrapper only; original methods, parameters, four-case entrypoints, original measurements and expected outputs unchanged."
   }
 }

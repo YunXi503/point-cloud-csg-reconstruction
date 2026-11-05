@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-measurements-2026-11-05",
+  "packaging_version": "portfolio-geometry-guards-2026-11-05",
   "date": "2026-11-05",
   "manifest_excludes": [
     "provenance/release-manifest.json"
@@ -2397,8 +2397,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 4987,
-      "sha256": "7bdc462a153685a90179c0b2c0085ea38bb78317ab8ff33daf4b6cbb6dccda4d"
+      "bytes": 5623,
+      "sha256": "b643fe9b7341a8c676b5120942bfdf3cd59f9d31a5d8b86d1be82fdf73e28a68"
     },
     {
       "path": "data/recovered/README.md",
@@ -2412,8 +2412,8 @@
     },
     {
       "path": "docs/architecture.md",
-      "bytes": 3327,
-      "sha256": "d862c2143930c85e381779e1dc4be355207ae429deaceb6f7cd1972493665171"
+      "bytes": 3711,
+      "sha256": "6c05414cdca5d737d861108b7246b177276100a8eaf0b564ef3a81018379313c"
     },
     {
       "path": "docs/build-status.md",
@@ -2442,8 +2442,8 @@
     },
     {
       "path": "docs/development-notes.md",
-      "bytes": 924,
-      "sha256": "e68f103ac1d1bdd51be7835f9a311a5e61899e235599ce8ddbfd1c4b503acb1d"
+      "bytes": 1202,
+      "sha256": "cba05634f6d61e0cc0619412f46b817250f5f367e8a7f47b30b5c371d4819de3"
     },
     {
       "path": "docs/environment.md",
@@ -2487,8 +2487,23 @@
     },
     {
       "path": "docs/geometry-diagnostics.md",
-      "bytes": 5636,
-      "sha256": "832a694baa6620bdaaa058701819be22727ccfdd41ab0d3c1eca2e95c219939a"
+      "bytes": 5908,
+      "sha256": "c1a1706454269487b3a85d07c67f6adf617c1a4d0546b6f8eef2f506ea1c25ce"
+    },
+    {
+      "path": "docs/geometry-guard-plan.md",
+      "bytes": 3343,
+      "sha256": "df8d8e178d74657e98b672543d2cdb42fe90605a3e151c33406e65f39cdcc4f4"
+    },
+    {
+      "path": "docs/geometry-guard-review.md",
+      "bytes": 3737,
+      "sha256": "570f89302e1d79238bb97f5487ab8200fb2a439a2973f839dcecd3d94b7e9fd0"
+    },
+    {
+      "path": "docs/geometry-guard.md",
+      "bytes": 5949,
+      "sha256": "aaf5947ceae1ead9934abc67c82a8523e0596d4230d2019566278e2e384574d8"
     },
     {
       "path": "docs/interview-guide.md",
@@ -2497,8 +2512,8 @@
     },
     {
       "path": "docs/maintaining.md",
-      "bytes": 1808,
-      "sha256": "8fe035a6ab6f8ec06ebead44cd5ba4cb517d5f9da1d7d665f27a021f690167a8"
+      "bytes": 2478,
+      "sha256": "419c64c0cca4e8e7b78856b62ae86b1228d9a3e20f69b52013d5b47a5726dba0"
     },
     {
       "path": "docs/measurement-protocol.md",
@@ -2527,8 +2542,8 @@
     },
     {
       "path": "docs/missing-information.md",
-      "bytes": 3471,
-      "sha256": "f2bcc9567b6be53e7abe8376ab1a59d0a711cba6b0c491c73ef0160eec102ff9"
+      "bytes": 3845,
+      "sha256": "250f3d9bf4c72465a38afe1703b8adfd21d66eac61a429994ac3ad944c3a3515"
     },
     {
       "path": "docs/packaging-qa.md",
@@ -2736,14 +2751,54 @@
       "sha256": "86fd78b2bdc3a0e9fe1fadd68f9a7bcc650c453f775d728f5210b283d857b844"
     },
     {
+      "path": "examples/guarded-circle/arc_0.00001.csv",
+      "bytes": 2360,
+      "sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e"
+    },
+    {
+      "path": "examples/guarded-circle/arc_0.001.csv",
+      "bytes": 2484,
+      "sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61"
+    },
+    {
+      "path": "examples/guarded-circle/arc_10.csv",
+      "bytes": 2487,
+      "sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b"
+    },
+    {
+      "path": "examples/guarded-circle/arc_360.csv",
+      "bytes": 2407,
+      "sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070"
+    },
+    {
+      "path": "examples/guarded-circle/coincident.csv",
+      "bytes": 324,
+      "sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea"
+    },
+    {
+      "path": "examples/guarded-circle/collinear.csv",
+      "bytes": 1375,
+      "sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa"
+    },
+    {
+      "path": "examples/guarded-circle/manifest.json",
+      "bytes": 2412,
+      "sha256": "3d1578db9e6d1a7d0b087902ae39bb4a4a6c9efc1169a267be39547096a2f5a6"
+    },
+    {
+      "path": "examples/guarded-circle/README.md",
+      "bytes": 902,
+      "sha256": "830c1310e7ee46e016d7dacc2b2ea9f3be410f8293c1883c4f3aba8d1c99579f"
+    },
+    {
       "path": "examples/segmentation.json",
       "bytes": 2929,
       "sha256": "767724e71c784551b8434665f5f3e42a43a962c76867b5a9bbe0094595534175"
     },
     {
       "path": "EXPERIMENT_LOG.md",
-      "bytes": 12134,
-      "sha256": "d3b7cdda52aaee83bdc9e543111e170859ed46230974608356e238efdc7d66cc"
+      "bytes": 13110,
+      "sha256": "dad83b023c3e9fab3dcc5988a4c10cf4324e09937030c62eeb2b0e80f54ef845"
     },
     {
       "path": "LICENSE",
@@ -2826,6 +2881,11 @@
       "sha256": "05b5d8c4c14c13ecec472ceb895e73280f22e30a0c15a5beb3091cc5244fb391"
     },
     {
+      "path": "provenance/history/source-versions-portfolio-measurements-2026-11-05.json",
+      "bytes": 23136,
+      "sha256": "fe9e7c7f260e7560221308832c528527a11990f3c31dde2ea78db7f818cefd22"
+    },
+    {
       "path": "provenance/history/source-versions-portfolio-review-2026-11-05.json",
       "bytes": 20983,
       "sha256": "afbbe0bf3c9c8daa2cff5f11fcb0467f7a9d9720abd9b7f37d12c1acb77c0788"
@@ -2897,8 +2957,8 @@
     },
     {
       "path": "provenance/source-versions.json",
-      "bytes": 23136,
-      "sha256": "fe9e7c7f260e7560221308832c528527a11990f3c31dde2ea78db7f818cefd22"
+      "bytes": 23880,
+      "sha256": "edb8ce3c18589f07945d90fe15e284b597f1d8799f2086133883fb112cbcec34"
     },
     {
       "path": "provenance/thesis-figures.json",
@@ -2907,8 +2967,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9667,
-      "sha256": "93dfaead469c7342d789238f210d99dcc435354ad5c183adbb7767b96667b158"
+      "bytes": 10009,
+      "sha256": "d45ad43aa345537b3ea5994d9c9924dee60913b26faec7c95dd0b18ba3c314ff"
     },
     {
       "path": "requirements-observed.txt",
@@ -3801,6 +3861,11 @@
       "sha256": "e37dad76dd6563af60cf138b6f0cb829aace633d6f546ddc23318517d81dca43"
     },
     {
+      "path": "tests/test_geometry_guard.py",
+      "bytes": 11153,
+      "sha256": "b6744363d7fe6979813603db27d7a959b1b8de64193bf5a41bd58e19fc3a025f"
+    },
+    {
       "path": "tests/test_process_metrics.py",
       "bytes": 1789,
       "sha256": "4fa2493dc5db44dfd2baf7fd41ae3d313962285a77add8c1a76bf6d7a689e0b3"
@@ -3821,9 +3886,19 @@
       "sha256": "1cf4816358263703d34c39e7e7edff2b420dc6e0293097e66cb3550673a38e3d"
     },
     {
+      "path": "tools/check-circle-fit.py",
+      "bytes": 2288,
+      "sha256": "6694fb9a448918a23db45a4eac485ab60d8eccca9bcae6aec49bc3d2629198fe"
+    },
+    {
       "path": "tools/geometry_fixtures.py",
       "bytes": 2252,
       "sha256": "508cc5069d0738cba24bf8d053d0a237bb31a57f823f4d1ae85c58be678a5bd8"
+    },
+    {
+      "path": "tools/geometry_guard.py",
+      "bytes": 10150,
+      "sha256": "b3197513695c1e723eedeeb68a8fb9f57f68ed13605976aed2db9710a4b5bc3f"
     },
     {
       "path": "tools/inference_sources.py",
@@ -3934,6 +4009,36 @@
       "path": "validation/2026-11-05/geometry-circle-observations.csv",
       "bytes": 1985,
       "sha256": "360d3a9886a7258131be202a7e21af8cbdbdb0205191c14296fdccae7844b824"
+    },
+    {
+      "path": "validation/2026-11-05/geometry-guard-audit.json",
+      "bytes": 122302,
+      "sha256": "716ef946a3ab9dcd961e46e895b2e77d7c216f70012b489ab4cb0c1d030dccc0"
+    },
+    {
+      "path": "validation/2026-11-05/geometry-guard-observations.csv",
+      "bytes": 1322,
+      "sha256": "2f6a3ef47967cdc395a4496c4b1a7b0f5e56b99a14df64178b4a32f5192877b4"
+    },
+    {
+      "path": "validation/2026-11-05/geometry-guard-pipeline.json",
+      "bytes": 9528,
+      "sha256": "4656eef25735d67cd45ba67325524f44c8f89c94bdade80c819c8c509de4b644"
+    },
+    {
+      "path": "validation/2026-11-05/geometry-guard-reproduction.json",
+      "bytes": 11584,
+      "sha256": "e9a0386aefc45f2fd0a83dbc5bcd08d970037d32494fe76912dc859514bc3a90"
+    },
+    {
+      "path": "validation/2026-11-05/geometry-guard-results.json",
+      "bytes": 49091,
+      "sha256": "f4f4d7851d376602692adbf5b19984411a4371264a4e5e40ef9508f0957aed75"
+    },
+    {
+      "path": "validation/2026-11-05/geometry-guard-tests.json",
+      "bytes": 13042,
+      "sha256": "4ef6e047dd5cf6a46adbf654f6c29204e65780595fe29d0c5d8a999e4e0ee225"
     },
     {
       "path": "validation/2026-11-05/geometry-surface-observations.csv",

@@ -30,3 +30,9 @@ CI 使用只讀 repository 權限，執行步驟固定到已核對 commit SHA，
 ## 本地推論依賴
 
 研究入口若新增或改變本地匯入，須同步審查 provenance/inference-dependencies.json 與 cases.json，檢查閉包及來源 SHA；不可直接更新綁定讓未知變更通過。兩個入口都會保存 inference_programs 預檢結果。負向測試以軟體 fixture 驗證停止行為，數值研究測試需另依方法契約建立。
+
+## 二維圓擬合契約
+
+可選外層的兩份原始碼有固定SHA與AST停止條件核對，不能為讓新來源通過而靜默更新綁定。[事前計畫](geometry-guard-plan.md)與[契約](geometry-guard.md)說明數值秩、停止觀察及參數未驗證狀態。改動這些政策時，跑tests/test_geometry_guard.py及六份範例兩實作的重放；缺步長不可猜收斂，小殘差不可改成準確度通過。
+
+v0.1.6量測JSON、其事前協定、量測／彙整／製圖工具及圖件均保留原SHA；新增外層結果另存，不用新資料覆蓋原不利觀察。若要接入四案例或修改研究方法，先另立計畫及影響評估。

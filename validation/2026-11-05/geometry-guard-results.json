@@ -1,0 +1,1429 @@
+{
+  "schema_version": "1",
+  "date": "2026-11-05",
+  "base_commit": "1489fb2f3ddeeb688b0370870cb3fee1df08a330",
+  "scope": "Optional 2D guard, not a change to research methods, parameters, four-case pipelines, or historical measurements.",
+  "runtime": {
+    "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.1",
+    "platform": "Windows-11-10.0.26300-SP0"
+  },
+  "baseline": {
+    "path": "validation/2026-11-05/measurement-results.json",
+    "sha256": "5dae4578e29c3e51f59970357e58286286c04452bc7896e2c8463ba40be56cb6"
+  },
+  "bindings": [
+    {
+      "path": "tools/geometry_guard.py",
+      "sha256": "b3197513695c1e723eedeeb68a8fb9f57f68ed13605976aed2db9710a4b5bc3f"
+    },
+    {
+      "path": "tools/check-circle-fit.py",
+      "sha256": "6694fb9a448918a23db45a4eac485ab60d8eccca9bcae6aec49bc3d2629198fe"
+    },
+    {
+      "path": "tools/geometry_fixtures.py",
+      "sha256": "508cc5069d0738cba24bf8d053d0a237bb31a57f823f4d1ae85c58be678a5bd8"
+    },
+    {
+      "path": "docs/geometry-guard-plan.md",
+      "sha256": "df8d8e178d74657e98b672543d2cdb42fe90605a3e151c33406e65f39cdcc4f4"
+    },
+    {
+      "path": "tests/test_geometry_guard.py",
+      "sha256": "b6744363d7fe6979813603db27d7a959b1b8de64193bf5a41bd58e19fc3a025f"
+    }
+  ],
+  "fixtures": [
+    {
+      "path": "examples/guarded-circle/arc_360.csv",
+      "sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070",
+      "array_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8",
+      "points": 64,
+      "analytic_truth": {
+        "center": [
+          2.0,
+          -3.0
+        ],
+        "radius": 10.0
+      }
+    },
+    {
+      "path": "examples/guarded-circle/arc_10.csv",
+      "sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b",
+      "array_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411",
+      "points": 64,
+      "analytic_truth": {
+        "center": [
+          2.0,
+          -3.0
+        ],
+        "radius": 10.0
+      }
+    },
+    {
+      "path": "examples/guarded-circle/arc_0.001.csv",
+      "sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61",
+      "array_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29",
+      "points": 64,
+      "analytic_truth": {
+        "center": [
+          2.0,
+          -3.0
+        ],
+        "radius": 10.0
+      }
+    },
+    {
+      "path": "examples/guarded-circle/arc_0.00001.csv",
+      "sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e",
+      "array_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd",
+      "points": 64,
+      "analytic_truth": {
+        "center": [
+          2.0,
+          -3.0
+        ],
+        "radius": 10.0
+      }
+    },
+    {
+      "path": "examples/guarded-circle/collinear.csv",
+      "sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa",
+      "array_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88",
+      "points": 64,
+      "analytic_truth": null
+    },
+    {
+      "path": "examples/guarded-circle/coincident.csv",
+      "sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea",
+      "array_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c",
+      "points": 64,
+      "analytic_truth": null
+    }
+  ],
+  "records": [
+    {
+      "implementation": "stepped",
+      "fixture": "arc_360",
+      "input": {
+        "path": "examples/guarded-circle/arc_360.csv",
+        "sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070",
+        "array_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8",
+        "points": 64,
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "step_threshold_met",
+        "solver_called": true,
+        "estimate": {
+          "center": [
+            1.9999999999999996,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "raw_result": {
+          "center": [
+            1.9999999999999996,
+            -3.0
+          ],
+          "radius": 10.0,
+          "residual_max": 1.7763568394002505e-15,
+          "iterations": 1
+        },
+        "convergence": {
+          "status": "recorded_step_threshold_met",
+          "step_threshold_met": true,
+          "iterations": 1,
+          "last_step_norm": 3.745478245071823e-15,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            127.04821147280504,
+            113.1370849898476,
+            7.124041097678253
+          ],
+          "condition_number": 17.833728038740603,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": [],
+        "input_csv_sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070"
+      },
+      "cli_exit_code": 0,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/arc_360.csv --implementation stepped --output runs/your-new-report-stepped-arc_360.json",
+      "direct_original_return_equal": true,
+      "historical_observation": {
+        "pid": 20784,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "arc_360",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              1.9999999999999996,
+              -3.0
+            ],
+            "radius": 10.0,
+            "residual_max": 1.7763568394002505e-15,
+            "iterations": 1,
+            "last_step_norm": 3.745478245071823e-15,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 0.0,
+            "center_error": 4.440892098500626e-16
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "radius_error": 0.0,
+        "center_error": 4.440892098500626e-16,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "arc_360",
+      "input": {
+        "path": "examples/guarded-circle/arc_360.csv",
+        "sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070",
+        "array_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8",
+        "points": 64,
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "step_threshold_met",
+        "solver_called": true,
+        "estimate": {
+          "center": [
+            1.9999999999999996,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "raw_result": {
+          "center": [
+            1.9999999999999996,
+            -3.0
+          ],
+          "radius": 10.0,
+          "residual_max": 1.7763568394002505e-15,
+          "iterations": 1
+        },
+        "convergence": {
+          "status": "recorded_step_threshold_met",
+          "step_threshold_met": true,
+          "iterations": 1,
+          "last_step_norm": 3.745478245071823e-15,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            127.04821147280504,
+            113.1370849898476,
+            7.124041097678253
+          ],
+          "condition_number": 17.833728038740603,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": [],
+        "input_csv_sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070"
+      },
+      "cli_exit_code": 0,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/arc_360.csv --implementation lbracket --output runs/your-new-report-lbracket-arc_360.json",
+      "direct_original_return_equal": true,
+      "historical_observation": {
+        "pid": 3856,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "arc_360",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              1.9999999999999996,
+              -3.0
+            ],
+            "radius": 10.0,
+            "residual_max": 1.7763568394002505e-15,
+            "iterations": 1,
+            "last_step_norm": 3.745478245071823e-15,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 0.0,
+            "center_error": 4.440892098500626e-16
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "radius_error": 0.0,
+        "center_error": 4.440892098500626e-16,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "stepped",
+      "fixture": "arc_10",
+      "input": {
+        "path": "examples/guarded-circle/arc_10.csv",
+        "sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b",
+        "array_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411",
+        "points": 64,
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "step_threshold_met",
+        "solver_called": true,
+        "estimate": {
+          "center": [
+            2.0000000000000306,
+            -2.9999999999999996
+          ],
+          "radius": 9.99999999999997
+        },
+        "raw_result": {
+          "center": [
+            2.0000000000000306,
+            -2.9999999999999996
+          ],
+          "radius": 9.99999999999997,
+          "residual_max": 1.7763568394002505e-15,
+          "iterations": 2
+        },
+        "convergence": {
+          "status": "recorded_step_threshold_met",
+          "step_threshold_met": true,
+          "iterations": 2,
+          "last_step_norm": 1.725537996329829e-15,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            197.8777312295493,
+            7.937195635650266,
+            0.007802909365674233
+          ],
+          "condition_number": 25359.480926439173,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": [],
+        "input_csv_sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b"
+      },
+      "cli_exit_code": 0,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/arc_10.csv --implementation stepped --output runs/your-new-report-stepped-arc_10.json",
+      "direct_original_return_equal": true,
+      "historical_observation": {
+        "pid": 15076,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "arc_10",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              2.0000000000000306,
+              -2.9999999999999996
+            ],
+            "radius": 9.99999999999997,
+            "residual_max": 1.7763568394002505e-15,
+            "iterations": 2,
+            "last_step_norm": 1.725537996329829e-15,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 3.019806626980426e-14,
+            "center_error": 3.064537334844551e-14
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "radius_error": 3.019806626980426e-14,
+        "center_error": 3.064537334844551e-14,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "arc_10",
+      "input": {
+        "path": "examples/guarded-circle/arc_10.csv",
+        "sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b",
+        "array_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411",
+        "points": 64,
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "step_threshold_met",
+        "solver_called": true,
+        "estimate": {
+          "center": [
+            2.0000000000000306,
+            -2.9999999999999996
+          ],
+          "radius": 9.99999999999997
+        },
+        "raw_result": {
+          "center": [
+            2.0000000000000306,
+            -2.9999999999999996
+          ],
+          "radius": 9.99999999999997,
+          "residual_max": 1.7763568394002505e-15,
+          "iterations": 2
+        },
+        "convergence": {
+          "status": "recorded_step_threshold_met",
+          "step_threshold_met": true,
+          "iterations": 2,
+          "last_step_norm": 1.725537996329829e-15,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            197.8777312295493,
+            7.937195635650266,
+            0.007802909365674233
+          ],
+          "condition_number": 25359.480926439173,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": [],
+        "input_csv_sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b"
+      },
+      "cli_exit_code": 0,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/arc_10.csv --implementation lbracket --output runs/your-new-report-lbracket-arc_10.json",
+      "direct_original_return_equal": true,
+      "historical_observation": {
+        "pid": 29204,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "arc_10",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              2.0000000000000306,
+              -2.9999999999999996
+            ],
+            "radius": 9.99999999999997,
+            "residual_max": 1.7763568394002505e-15,
+            "iterations": 2,
+            "last_step_norm": 1.725537996329829e-15,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 3.019806626980426e-14,
+            "center_error": 3.064537334844551e-14
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "radius_error": 3.019806626980426e-14,
+        "center_error": 3.064537334844551e-14,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "stepped",
+      "fixture": "arc_0.001",
+      "input": {
+        "path": "examples/guarded-circle/arc_0.001.csv",
+        "sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61",
+        "array_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29",
+        "points": 64,
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "iteration_limit_without_step_threshold",
+        "solver_called": true,
+        "estimate": null,
+        "raw_result": {
+          "center": [
+            2.0000134973702,
+            -2.9999999999987157
+          ],
+          "radius": 9.9999865026298,
+          "residual_max": 3.552713678800501e-15,
+          "iterations": 100
+        },
+        "convergence": {
+          "status": "iteration_limit_without_step_threshold",
+          "step_threshold_met": false,
+          "iterations": 100,
+          "last_step_norm": 2.0442546018542205e-06,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            198.0706944483075,
+            0.0007944211540214425,
+            7.798928828477499e-11
+          ],
+          "condition_number": 2539716656024.0903,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": [],
+        "input_csv_sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61"
+      },
+      "cli_exit_code": 3,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/arc_0.001.csv --implementation stepped --output runs/your-new-report-stepped-arc_0.001.json",
+      "direct_original_return_equal": true,
+      "historical_observation": {
+        "pid": 16516,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "arc_0.001",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              2.0000134973702,
+              -2.9999999999987157
+            ],
+            "radius": 9.9999865026298,
+            "residual_max": 3.552713678800501e-15,
+            "iterations": 100,
+            "last_step_norm": 2.0442546018542205e-06,
+            "recorded_step_threshold_met": false,
+            "reached_iteration_limit": true,
+            "radius_error": 1.3497370199289094e-05,
+            "center_error": 1.3497370200177333e-05
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "radius_error": 1.3497370199289094e-05,
+        "center_error": 1.3497370200177333e-05,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "arc_0.001",
+      "input": {
+        "path": "examples/guarded-circle/arc_0.001.csv",
+        "sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61",
+        "array_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29",
+        "points": 64,
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "iteration_limit_without_step_threshold",
+        "solver_called": true,
+        "estimate": null,
+        "raw_result": {
+          "center": [
+            2.0000134973702,
+            -2.9999999999987157
+          ],
+          "radius": 9.9999865026298,
+          "residual_max": 3.552713678800501e-15,
+          "iterations": 100
+        },
+        "convergence": {
+          "status": "iteration_limit_without_step_threshold",
+          "step_threshold_met": false,
+          "iterations": 100,
+          "last_step_norm": 2.0442546018542205e-06,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            198.0706944483075,
+            0.0007944211540214425,
+            7.798928828477499e-11
+          ],
+          "condition_number": 2539716656024.0903,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": [],
+        "input_csv_sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61"
+      },
+      "cli_exit_code": 3,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/arc_0.001.csv --implementation lbracket --output runs/your-new-report-lbracket-arc_0.001.json",
+      "direct_original_return_equal": true,
+      "historical_observation": {
+        "pid": 1764,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "arc_0.001",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              2.0000134973702,
+              -2.9999999999987157
+            ],
+            "radius": 9.9999865026298,
+            "residual_max": 3.552713678800501e-15,
+            "iterations": 100,
+            "last_step_norm": 2.0442546018542205e-06,
+            "recorded_step_threshold_met": false,
+            "reached_iteration_limit": true,
+            "radius_error": 1.3497370199289094e-05,
+            "center_error": 1.3497370200177333e-05
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "radius_error": 1.3497370199289094e-05,
+        "center_error": 1.3497370200177333e-05,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "stepped",
+      "fixture": "arc_0.00001",
+      "input": {
+        "path": "examples/guarded-circle/arc_0.00001.csv",
+        "sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e",
+        "array_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd",
+        "points": 64,
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "insufficient_support",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd"
+        },
+        "numeric_support": {
+          "initializer_rank": 2,
+          "required_rank": 3,
+          "singular_values": [
+            198.07069445023896,
+            7.94421154185096e-06,
+            7.525189493967363e-15
+          ],
+          "condition_number": 2.6321024156139076e+16,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "reason": "initializer_numerical_rank_below_three",
+        "input_csv_sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e"
+      },
+      "cli_exit_code": 2,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/arc_0.00001.csv --implementation stepped --output runs/your-new-report-stepped-arc_0.00001.json",
+      "direct_original_return_equal": null,
+      "historical_observation": {
+        "pid": 31488,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "arc_0.00001",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              5.615251300961332,
+              -2.9999999999774953
+            ],
+            "radius": 6.384748699038675,
+            "residual_max": 1.509903313490213e-14,
+            "iterations": 2,
+            "last_step_norm": 2.747661802696544e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 3.615251300961325,
+            "center_error": 3.615251300961332
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "radius_error": null,
+        "center_error": null,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "arc_0.00001",
+      "input": {
+        "path": "examples/guarded-circle/arc_0.00001.csv",
+        "sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e",
+        "array_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd",
+        "points": 64,
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "insufficient_support",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd"
+        },
+        "numeric_support": {
+          "initializer_rank": 2,
+          "required_rank": 3,
+          "singular_values": [
+            198.07069445023896,
+            7.94421154185096e-06,
+            7.525189493967363e-15
+          ],
+          "condition_number": 2.6321024156139076e+16,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "reason": "initializer_numerical_rank_below_three",
+        "input_csv_sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e"
+      },
+      "cli_exit_code": 2,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/arc_0.00001.csv --implementation lbracket --output runs/your-new-report-lbracket-arc_0.00001.json",
+      "direct_original_return_equal": null,
+      "historical_observation": {
+        "pid": 21468,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "arc_0.00001",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd",
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              5.615251300961332,
+              -2.9999999999774953
+            ],
+            "radius": 6.384748699038675,
+            "residual_max": 1.509903313490213e-14,
+            "iterations": 2,
+            "last_step_norm": 2.747661802696544e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": 3.615251300961325,
+            "center_error": 3.615251300961332
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "radius_error": null,
+        "center_error": null,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "stepped",
+      "fixture": "collinear",
+      "input": {
+        "path": "examples/guarded-circle/collinear.csv",
+        "sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa",
+        "array_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88",
+        "points": 64,
+        "analytic_truth": null
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "insufficient_support",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88"
+        },
+        "numeric_support": {
+          "initializer_rank": 2,
+          "required_rank": 3,
+          "singular_values": [
+            18.766174681306577,
+            8.000000000000002,
+            0.0
+          ],
+          "condition_number": null,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "reason": "initializer_numerical_rank_below_three",
+        "input_csv_sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa"
+      },
+      "cli_exit_code": 2,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/collinear.csv --implementation stepped --output runs/your-new-report-stepped-collinear.json",
+      "direct_original_return_equal": null,
+      "historical_observation": {
+        "pid": 13144,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "collinear",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88",
+        "analytic_truth": null,
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              -3.7555860735183894e-17,
+              0.0
+            ],
+            "radius": 1.0158730158730158,
+            "residual_max": 0.9841269841269842,
+            "iterations": 2,
+            "last_step_norm": 1.2547499438650175e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": null,
+            "center_error": null
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": null,
+        "radius_error": null,
+        "center_error": null,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "collinear",
+      "input": {
+        "path": "examples/guarded-circle/collinear.csv",
+        "sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa",
+        "array_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88",
+        "points": 64,
+        "analytic_truth": null
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "insufficient_support",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88"
+        },
+        "numeric_support": {
+          "initializer_rank": 2,
+          "required_rank": 3,
+          "singular_values": [
+            18.766174681306577,
+            8.000000000000002,
+            0.0
+          ],
+          "condition_number": null,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "reason": "initializer_numerical_rank_below_three",
+        "input_csv_sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa"
+      },
+      "cli_exit_code": 2,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/collinear.csv --implementation lbracket --output runs/your-new-report-lbracket-collinear.json",
+      "direct_original_return_equal": null,
+      "historical_observation": {
+        "pid": 25280,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "collinear",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88",
+        "analytic_truth": null,
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              -3.7555860735183894e-17,
+              0.0
+            ],
+            "radius": 1.0158730158730158,
+            "residual_max": 0.9841269841269842,
+            "iterations": 2,
+            "last_step_norm": 1.2547499438650175e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": null,
+            "center_error": null
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": null,
+        "radius_error": null,
+        "center_error": null,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "stepped",
+      "fixture": "coincident",
+      "input": {
+        "path": "examples/guarded-circle/coincident.csv",
+        "sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea",
+        "array_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c",
+        "points": 64,
+        "analytic_truth": null
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "insufficient_support",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 1,
+          "array_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c"
+        },
+        "reason": "at_least_three_distinct_points_required",
+        "input_csv_sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea"
+      },
+      "cli_exit_code": 2,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/coincident.csv --implementation stepped --output runs/your-new-report-stepped-coincident.json",
+      "direct_original_return_equal": null,
+      "historical_observation": {
+        "pid": 7408,
+        "operation": "circle",
+        "module": "infer_stepped_cylinder_chapter3_method",
+        "fixture": "coincident",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c",
+        "analytic_truth": null,
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              0.981132075471698,
+              -1.4716981132075473
+            ],
+            "radius": 1.836790272406183,
+            "residual_max": 2.220446049250313e-16,
+            "iterations": 1,
+            "last_step_norm": 1.570092458683775e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": null,
+            "center_error": null
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": null,
+        "radius_error": null,
+        "center_error": null,
+        "used_to_qualify_estimate": false
+      }
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "coincident",
+      "input": {
+        "path": "examples/guarded-circle/coincident.csv",
+        "sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea",
+        "array_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c",
+        "points": 64,
+        "analytic_truth": null
+      },
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "insufficient_support",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 1,
+          "array_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c"
+        },
+        "reason": "at_least_three_distinct_points_required",
+        "input_csv_sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea"
+      },
+      "cli_exit_code": 2,
+      "reproduce_command": "python tools/check-circle-fit.py --input examples/guarded-circle/coincident.csv --implementation lbracket --output runs/your-new-report-lbracket-coincident.json",
+      "direct_original_return_equal": null,
+      "historical_observation": {
+        "pid": 28888,
+        "operation": "circle",
+        "module": "correct_stepped_cylinder_nls_v2",
+        "fixture": "coincident",
+        "nonfinite_encoding": "Nonfinite observed floats are strings, never fabricated numeric values",
+        "values_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c",
+        "analytic_truth": null,
+        "solver": {
+          "outcome": "returned",
+          "result": {
+            "center": [
+              0.981132075471698,
+              -1.4716981132075473
+            ],
+            "radius": 1.836790272406183,
+            "residual_max": 2.220446049250313e-16,
+            "iterations": 1,
+            "last_step_norm": 1.570092458683775e-16,
+            "recorded_step_threshold_met": true,
+            "reached_iteration_limit": false,
+            "radius_error": null,
+            "center_error": null
+          },
+          "warnings": []
+        }
+      },
+      "fixture_evaluation_separate_from_api": {
+        "analytic_truth": null,
+        "radius_error": null,
+        "center_error": null,
+        "used_to_qualify_estimate": false
+      }
+    }
+  ],
+  "status_counts": {
+    "step_threshold_met": 4,
+    "iteration_limit_without_step_threshold": 2,
+    "insufficient_support": 6
+  },
+  "input_arrays_match_historical": true,
+  "called_original_returns_unchanged": true,
+  "parameter_accuracy_certified_by_api": false
+}

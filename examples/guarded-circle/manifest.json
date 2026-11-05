@@ -1,0 +1,74 @@
+{
+  "generator": "tools/geometry_fixtures.py",
+  "generator_sha256": "508cc5069d0738cba24bf8d053d0a237bb31a57f823f4d1ae85c58be678a5bd8",
+  "serialization": "U,V header, %.17g float64 lossless roundtrip, LF",
+  "scope": "Engineering analytic fixtures, not thesis STL cases or scan evidence",
+  "fixtures": [
+    {
+      "path": "examples/guarded-circle/arc_360.csv",
+      "sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070",
+      "array_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8",
+      "points": 64,
+      "analytic_truth": {
+        "center": [
+          2.0,
+          -3.0
+        ],
+        "radius": 10.0
+      }
+    },
+    {
+      "path": "examples/guarded-circle/arc_10.csv",
+      "sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b",
+      "array_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411",
+      "points": 64,
+      "analytic_truth": {
+        "center": [
+          2.0,
+          -3.0
+        ],
+        "radius": 10.0
+      }
+    },
+    {
+      "path": "examples/guarded-circle/arc_0.001.csv",
+      "sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61",
+      "array_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29",
+      "points": 64,
+      "analytic_truth": {
+        "center": [
+          2.0,
+          -3.0
+        ],
+        "radius": 10.0
+      }
+    },
+    {
+      "path": "examples/guarded-circle/arc_0.00001.csv",
+      "sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e",
+      "array_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd",
+      "points": 64,
+      "analytic_truth": {
+        "center": [
+          2.0,
+          -3.0
+        ],
+        "radius": 10.0
+      }
+    },
+    {
+      "path": "examples/guarded-circle/collinear.csv",
+      "sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa",
+      "array_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88",
+      "points": 64,
+      "analytic_truth": null
+    },
+    {
+      "path": "examples/guarded-circle/coincident.csv",
+      "sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea",
+      "array_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c",
+      "points": 64,
+      "analytic_truth": null
+    }
+  ]
+}

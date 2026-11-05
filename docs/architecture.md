@@ -45,3 +45,7 @@ src/adapter/ 以來源連結編譯單一研究檔，尋找唯一公開 FeatureCl
 ## Python 依賴來源預檢
 
 兩個公開入口透過 tools/inference_sources.py，在研究執行／建置前檢查選定案例的主程式及 provenance/inference-dependencies.json 所列本地輔助程式。L型板的擬合輔助程式與模型A／盲孔共用的階梯狀圓柱模組分別綁定，不只檢查直接入口。檢查不匯入或執行研究程式；新增預檢不符時報告 blocked-inference-source-version-mismatch；CSV 入口原有的共用來源檢查仍保留，且不改寫期望 SHA。這是固定來源契約，不是任意 Python 程式的動態依賴分析。[面試審查與成本分析](interview-guide.md)
+
+## 可選二維診斷入口
+
+tools/check-circle-fit.py → tools/geometry_guard.py → 已固定SHA的原nonlinear_circle。這條[可選入口](geometry-guard.md)只接受明確U,V資料，補輸入檢查及只讀停止觀察，與上方兩條四案例流程分開。它不推定三維圓柱投影，不更換原求解方法，也不把停止門檻達成解讀為幾何已驗證。
