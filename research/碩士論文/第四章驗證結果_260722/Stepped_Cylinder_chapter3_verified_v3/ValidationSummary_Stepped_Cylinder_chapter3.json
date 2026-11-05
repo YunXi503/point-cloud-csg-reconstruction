@@ -1,0 +1,44 @@
+{
+  "schema_version": "3.0",
+  "case": "Stepped Cylinder",
+  "validation_scope": "method-only inference followed by independent truth validation",
+  "method_source_separation": {
+    "only_original_result_read": true,
+    "forbidden_inputs_read_is_empty": true,
+    "truth_or_mesh_used_for_inference": false,
+    "status": "PASS"
+  },
+  "counts": {
+    "total_points": 10000,
+    "valid_points": 10000,
+    "residual_points": 0,
+    "valid_clusters": 6,
+    "truth_surfaces": 6,
+    "truth_topology_edges": 6,
+    "observed_topology_edges": 6,
+    "truth_candidates": 3,
+    "observed_candidates": 3
+  },
+  "input_integrity": {
+    "original_result_vs_verified_coordinate_normal_max_difference": 0.0,
+    "point_cloud_vs_verified_coordinate_normal_max_difference": 4.831690603168681e-13,
+    "serialization_equivalence_tolerance": 1e-12,
+    "pass": true
+  },
+  "five_layer_validation": {
+    "segmentation": "PASS",
+    "geometry_semantics": "PASS",
+    "topology": "PASS",
+    "primitive_candidates": "PASS",
+    "csg_symbolic_tree": "PASS"
+  },
+  "independent_truth_validation": "PASS",
+  "two_run_reproducibility": "PASS",
+  "overall": "PASS",
+  "claim_control": "PASS authorizes reporting a reproducible symbolic inference chain for this STL-generated case only; it does not establish real-scan validation, full automation, or CAD solid export.",
+  "evidence": {
+    "MethodInferenceManifest_Stepped_Cylinder_chapter3.json": "b2c4bc4bd647d384f45524e0cd1ab9211e10a5d4b6dfc1a1481190858c6d4278",
+    "ValidationAgainstIndependentTruth_Stepped_Cylinder.json": "32a0934d7a5ba1751ae68b1c3a0d2fefd978ce935372bee6b2985919f9683d93",
+    "Reproducibility_Stepped_Cylinder_chapter3.json": "d04f563551f91d7f849bb4528c0b184f6466add2d7bb7ec16eb38ac96ac5ebcd"
+  }
+}

@@ -1,0 +1,3139 @@
+{
+  "packaging_version": "portfolio-2026-11-05",
+  "date": "2026-11-05",
+  "manifest_excludes": [
+    "provenance/release-manifest.json"
+  ],
+  "copied_sources": [
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/App.config",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/App.config",
+      "role": "csharp-thesis-backup",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/L-Bracket 幾何邏輯.cs",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/L-Bracket 幾何邏輯.cs",
+      "role": "csharp-thesis-backup",
+      "bytes": 30930,
+      "sha256": "8c89ab35afb89363bbd232d347a6ad0cc8d875fd906350ad0b01d854da255ddc"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/L_Bracket幾何邏輯.csproj",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/L_Bracket幾何邏輯.csproj",
+      "role": "csharp-thesis-backup",
+      "bytes": 2405,
+      "sha256": "0a5f2b7553e7cc7cbec40d3d17250871a9ea7a61c3e69687c45c3e3ca29439a4"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法.sln",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法.sln",
+      "role": "csharp-thesis-backup",
+      "bytes": 3603,
+      "sha256": "50fdd823d282df5579038016ba6ad20d91cdbb9bf0256edb8a3d388abb73afa5"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/App.config",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/App.config",
+      "role": "csharp-thesis-backup",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/packages.config",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/packages.config",
+      "role": "csharp-thesis-backup",
+      "bytes": 242,
+      "sha256": "feb516ca341670e3aaf2ec722c41c2b720865a62761c8c2ce55302fc30796b08"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base.cs",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base.cs",
+      "role": "csharp-thesis-backup",
+      "bytes": 6358,
+      "sha256": "3a92f0594057586d70db1ac57c5e6c7d9e28aa412682135ab71dad222b22d2f3"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base.csproj",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base.csproj",
+      "role": "csharp-thesis-backup",
+      "bytes": 3128,
+      "sha256": "2777b2d01953f18704534e8fadc10df086494f1fd266f19108763b53f821e2f8"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base_修正版.cs",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base_修正版.cs",
+      "role": "csharp-thesis-backup",
+      "bytes": 21992,
+      "sha256": "e9195504320c42a1b81e7ff79bd8038ac35b04d3521679eb346819cffdf8ef1e"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/App.config",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/App.config",
+      "role": "csharp-thesis-backup",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/Program.cs",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/Program.cs",
+      "role": "csharp-thesis-backup",
+      "bytes": 22844,
+      "sha256": "9c0bdabb6e05616fc8b07f564673387e68b8d8cbe4bfc16f9a6ee12fde73a293"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/Properties/AssemblyInfo.cs",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/Properties/AssemblyInfo.cs",
+      "role": "csharp-thesis-backup",
+      "bytes": 1382,
+      "sha256": "6ace847f8ae027845730e176f62137bf13fe8b9540435317191d4f60f52fd0c3"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/特徵辨識核心演算法Blind_Hole_Hex_Base.csproj",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/特徵辨識核心演算法Blind_Hole_Hex_Base.csproj",
+      "role": "csharp-thesis-backup",
+      "bytes": 2440,
+      "sha256": "a14c5f32b3ed59ad2a8615d2afa2a4daa36daea8e48a474a600e8ce521982ddf"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/App.config",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/App.config",
+      "role": "csharp-thesis-backup",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.cs",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.cs",
+      "role": "csharp-thesis-backup",
+      "bytes": 6761,
+      "sha256": "34558d9baf3818508f8958eb0e4c33521879a330c4e74998df2d6b4a5cb8bb34"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.csproj",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.csproj",
+      "role": "csharp-thesis-backup",
+      "bytes": 2449,
+      "sha256": "31e75725bde1b83333a2fbb15b29c8563e021de3b643c91b338c370993dee378"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/App.config",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/App.config",
+      "role": "csharp-thesis-backup",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.cs",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.cs",
+      "role": "csharp-thesis-backup",
+      "bytes": 34202,
+      "sha256": "3cf04caae8a58f187e24bab3f8caf6c668941b8371797457026d0753561a8095"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.csproj",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.csproj",
+      "role": "csharp-thesis-backup",
+      "bytes": 2443,
+      "sha256": "bd778ba1ab84d49979503f846f107394972b1078ae5b739983ef06ccc15f5d12"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/App.config",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/App.config",
+      "role": "csharp-thesis-backup",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.cs",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.cs",
+      "role": "csharp-thesis-backup",
+      "bytes": 5965,
+      "sha256": "a7cdd45d2269f955dbe51a1416dccf6d2c5a2287674a6da2a50259e3ca83ce58"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.csproj",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.csproj",
+      "role": "csharp-thesis-backup",
+      "bytes": 2402,
+      "sha256": "3504a63756490f32567f1ad9d4fd3eb1d07116e6d65aef92f1c1ccbf31a2d666"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/App.config",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/App.config",
+      "role": "csharp-thesis-backup",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/Program.cs",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/Program.cs",
+      "role": "csharp-thesis-backup",
+      "bytes": 6322,
+      "sha256": "3e57bb98a327bc184d4a4d1aa20dead1f42d295ab733430ff370d0d61acbcd57"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/Properties/AssemblyInfo.cs",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/Properties/AssemblyInfo.cs",
+      "role": "csharp-thesis-backup",
+      "bytes": 1374,
+      "sha256": "a516695eac3992b30e100d6873f7c5747ccdb625ae4fb17922a21e1c455ef0f0"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/特徵辨識核心演算法盲孔六角座.csproj",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/特徵辨識核心演算法盲孔六角座.csproj",
+      "role": "csharp-thesis-backup",
+      "bytes": 2432,
+      "sha256": "d1f25d3f0fe54251c663581385d330b015f36af30404ac9d180c62d2b4be8316"
+    },
+    {
+      "path": "archive/csharp-original-workspace/L_Bracket幾何邏輯/App.config",
+      "source_root": "original_csharp_workspace",
+      "source_path": "L_Bracket幾何邏輯/App.config",
+      "role": "csharp-original-workspace",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "archive/csharp-original-workspace/L_Bracket幾何邏輯/L-Bracket 幾何邏輯.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "L_Bracket幾何邏輯/L-Bracket 幾何邏輯.cs",
+      "role": "csharp-original-workspace",
+      "bytes": 30930,
+      "sha256": "8c89ab35afb89363bbd232d347a6ad0cc8d875fd906350ad0b01d854da255ddc"
+    },
+    {
+      "path": "archive/csharp-original-workspace/L_Bracket幾何邏輯/L_Bracket幾何邏輯.csproj",
+      "source_root": "original_csharp_workspace",
+      "source_path": "L_Bracket幾何邏輯/L_Bracket幾何邏輯.csproj",
+      "role": "csharp-original-workspace",
+      "bytes": 2405,
+      "sha256": "0a5f2b7553e7cc7cbec40d3d17250871a9ea7a61c3e69687c45c3e3ca29439a4"
+    },
+    {
+      "path": "archive/csharp-original-workspace/L_Bracket幾何邏輯/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "L_Bracket幾何邏輯/Properties/AssemblyInfo.cs",
+      "role": "csharp-original-workspace",
+      "bytes": 1332,
+      "sha256": "8257e8ccb3303bbc4b569491f2f1ca5564db7b6f3cf6ecb6b0276fbb72b548e3"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法.sln",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法.sln",
+      "role": "csharp-original-workspace",
+      "bytes": 3020,
+      "sha256": "7a86cb2f2907f4a5c721bb0d18ee68ccb26451b355e01f1b0111920e47df42f0"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Hex Base with Holed/App.config",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Hex Base with Holed/App.config",
+      "role": "csharp-original-workspace",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Hex Base with Holed/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Hex Base with Holed/Properties/AssemblyInfo.cs",
+      "role": "csharp-original-workspace",
+      "bytes": 1382,
+      "sha256": "aedbf8f813e54dc1c23060d44d012786dac0aafc09f4183821fc2c0ff2354c23"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Hex Base with Holed/特徵辨識核心演算法Hex Base with Holed.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Hex Base with Holed/特徵辨識核心演算法Hex Base with Holed.cs",
+      "role": "csharp-original-workspace",
+      "bytes": 6323,
+      "sha256": "7f2bf4bfc15a77f7839f331403f8000919a9290ec5d7cddd0f72cb1fa5c616d0"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Hex Base with Holed/特徵辨識核心演算法Hex Base with Holed.csproj",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Hex Base with Holed/特徵辨識核心演算法Hex Base with Holed.csproj",
+      "role": "csharp-original-workspace",
+      "bytes": 2479,
+      "sha256": "2fe69e755f433a565082eb064fb19936dcaf5dc283056a6a41911fb1225ce955"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法L-Bracket/App.config",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法L-Bracket/App.config",
+      "role": "csharp-original-workspace",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法L-Bracket/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法L-Bracket/Properties/AssemblyInfo.cs",
+      "role": "csharp-original-workspace",
+      "bytes": 1362,
+      "sha256": "0a748d2b3ee4ff4c6620890b996acb98508df911a9d2fea21fc8903e4293bf72"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.cs",
+      "role": "csharp-original-workspace",
+      "bytes": 6761,
+      "sha256": "34558d9baf3818508f8958eb0e4c33521879a330c4e74998df2d6b4a5cb8bb34"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.csproj",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.csproj",
+      "role": "csharp-original-workspace",
+      "bytes": 2449,
+      "sha256": "31e75725bde1b83333a2fbb15b29c8563e021de3b643c91b338c370993dee378"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Model A/App.config",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Model A/App.config",
+      "role": "csharp-original-workspace",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Model A/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Model A/Properties/AssemblyInfo.cs",
+      "role": "csharp-original-workspace",
+      "bytes": 1358,
+      "sha256": "d5916cd673a05b8ae56c13c538f5b7b0f8c957686918af27662d682229bddd38"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.cs",
+      "role": "csharp-original-workspace",
+      "bytes": 34202,
+      "sha256": "3cf04caae8a58f187e24bab3f8caf6c668941b8371797457026d0753561a8095"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.csproj",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.csproj",
+      "role": "csharp-original-workspace",
+      "bytes": 2443,
+      "sha256": "bd778ba1ab84d49979503f846f107394972b1078ae5b739983ef06ccc15f5d12"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Stepped Cylinder/App.config",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Stepped Cylinder/App.config",
+      "role": "csharp-original-workspace",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Stepped Cylinder/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Stepped Cylinder/Properties/AssemblyInfo.cs",
+      "role": "csharp-original-workspace",
+      "bytes": 1344,
+      "sha256": "f2421a69317ec3dc219c42e00094e8718a9ffc8f7e472022828f71a25fb91758"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.cs",
+      "role": "csharp-original-workspace",
+      "bytes": 5965,
+      "sha256": "a7cdd45d2269f955dbe51a1416dccf6d2c5a2287674a6da2a50259e3ca83ce58"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.csproj",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.csproj",
+      "role": "csharp-original-workspace",
+      "bytes": 2402,
+      "sha256": "3504a63756490f32567f1ad9d4fd3eb1d07116e6d65aef92f1c1ccbf31a2d666"
+    },
+    {
+      "path": "research/tools/audit_sampling_density_260731.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/audit_sampling_density_260731.py",
+      "role": "research-python-source",
+      "bytes": 4892,
+      "sha256": "c918e740c096453ea57bf113ded4fd44e5878afeb09af1b992d5bef9c069e163"
+    },
+    {
+      "path": "research/tools/build_lbracket_modela_independent_truth.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/build_lbracket_modela_independent_truth.py",
+      "role": "research-python-source",
+      "bytes": 36412,
+      "sha256": "57e9052bf99fcca6d9f4eb280a06e7f226d9c201b03b16805ca62feef9de6671"
+    },
+    {
+      "path": "research/tools/build_stepped_cylinder_independent_truth.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/build_stepped_cylinder_independent_truth.py",
+      "role": "research-python-source",
+      "bytes": 21565,
+      "sha256": "2aab8a861c110486080611e6462cf6a4ba67e9ed4c1ed0b0aa6b9b75e1b8aaea"
+    },
+    {
+      "path": "research/tools/compare_method_inference_reproducibility.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/compare_method_inference_reproducibility.py",
+      "role": "research-python-source",
+      "bytes": 2245,
+      "sha256": "3d9a2f2a242e8edf7ffadf4402cd5693bc6dc93c9a55c3d40994303d902b85fc"
+    },
+    {
+      "path": "research/tools/correct_lbracket_modela_verified_v2.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/correct_lbracket_modela_verified_v2.py",
+      "role": "research-python-source",
+      "bytes": 22832,
+      "sha256": "8a7ac16c174cb145310408c953b9793b46e4a1337e9f17ef88407906719f423d"
+    },
+    {
+      "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/correct_stepped_cylinder_nls_v2.py",
+      "role": "research-python-source",
+      "bytes": 15856,
+      "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d"
+    },
+    {
+      "path": "research/tools/export_blend_evaluated_mesh_for_truth.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/export_blend_evaluated_mesh_for_truth.py",
+      "role": "research-python-source",
+      "bytes": 2528,
+      "sha256": "6034e9ef430b087fd9d7bf7bc2c4ec88e2398773688dd49d70bc9ca221f25d94"
+    },
+    {
+      "path": "research/tools/generate_blind_hole_figure_4_11a_topology_matrix.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_blind_hole_figure_4_11a_topology_matrix.py",
+      "role": "research-python-source",
+      "bytes": 21806,
+      "sha256": "e065b1f0d36c4b8ba90766b10fe58ead335c012c381979788b30f76f27f4bf7c"
+    },
+    {
+      "path": "research/tools/generate_blind_hole_figure_4_11b_spatial.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_blind_hole_figure_4_11b_spatial.py",
+      "role": "research-python-source",
+      "bytes": 21363,
+      "sha256": "874770091c26f93545d9c910dba61152ef727b0ff0be070343cd361ab08c0e4e"
+    },
+    {
+      "path": "research/tools/generate_blind_hole_hex_base_figure_4_10_segmentation.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_blind_hole_hex_base_figure_4_10_segmentation.py",
+      "role": "research-python-source",
+      "bytes": 13041,
+      "sha256": "cf516aa328bdd1d590e162d220ea3a80e3307683d82d39fd64f96da6de9488d9"
+    },
+    {
+      "path": "research/tools/generate_lbracket_chapter3_matrix_and_visual.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_chapter3_matrix_and_visual.py",
+      "role": "research-python-source",
+      "bytes": 12307,
+      "sha256": "c14bab2774f0310b5636b1e3c43cf825b90499975ffac48ec1c179a39e1eb642"
+    },
+    {
+      "path": "research/tools/generate_lbracket_chapter3_topology_boundary_figure.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_chapter3_topology_boundary_figure.py",
+      "role": "research-python-source",
+      "bytes": 10727,
+      "sha256": "d893a1d604ce1e728ff134b627a3fd57206b32f392487fe00d2d38fbae7271e5"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5a_topology_matrix_v4.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_5a_topology_matrix_v4.py",
+      "role": "research-python-source",
+      "bytes": 14168,
+      "sha256": "633b5bc42cf199e2f6d4f22418f1c253850d873dd031e0a35ab1ea0cf018ce92"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_alternatives.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_5b_alternatives.py",
+      "role": "research-python-source",
+      "bytes": 11938,
+      "sha256": "73523efccbe39d0ad6454d25852481c2824c0ea604cf320521f1c71cf0ff0eff"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_spatial_v8.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_5b_spatial_v8.py",
+      "role": "research-python-source",
+      "bytes": 11774,
+      "sha256": "6b82c84286f36fc6ece7c961c7525d83b22c602eda36abf3735cd51d13b0c0a8"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v1.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_5b_topology_graph_v1.py",
+      "role": "research-python-source",
+      "bytes": 10995,
+      "sha256": "796eee9b374091459b06c238b56b695a9205bf4ee152255166050abbac639838"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v3.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_5b_topology_graph_v3.py",
+      "role": "research-python-source",
+      "bytes": 11290,
+      "sha256": "a9fef7f241a8638ddec4e27ddb15144abfd0758b3b562c17d21fe95c6b2066d4"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v4.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_5b_topology_graph_v4.py",
+      "role": "research-python-source",
+      "bytes": 11726,
+      "sha256": "baf4384c2b882fce68846f39dbd4f842919b275db7c3acde519d1dfc88fd700d"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v5.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_5b_topology_graph_v5.py",
+      "role": "research-python-source",
+      "bytes": 12612,
+      "sha256": "b7752be5f55c78dd7616f02454303ae3f108928ecb0e39dc33b4e4081f7b5fbe"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v6.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_5b_topology_graph_v6.py",
+      "role": "research-python-source",
+      "bytes": 12048,
+      "sha256": "1ec37e0137648c41bc468e6181e56641e2d5850205aeb77555b99d8bbc70fc57"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v7.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_5b_topology_graph_v7.py",
+      "role": "research-python-source",
+      "bytes": 12314,
+      "sha256": "a428a48028a8ab2db0d71a0c9f265d6f6084d93eeab155ebfa39ee32664789c6"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_spatial_v1.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_5b_topology_spatial_v1.py",
+      "role": "research-python-source",
+      "bytes": 12028,
+      "sha256": "c398d7aaeeb95c16cdfdec45eb1418c74facc97afe879e7421bda44e11fdc1a3"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_6_csg.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_figure_4_6_csg.py",
+      "role": "research-python-source",
+      "bytes": 8475,
+      "sha256": "8bb78f92e59701b65628c13d02f03aa1494957265a9f660668e6e54a77a2b324"
+    },
+    {
+      "path": "research/tools/generate_lbracket_v3_figure_4_4_segmentation.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_lbracket_v3_figure_4_4_segmentation.py",
+      "role": "research-python-source",
+      "bytes": 16869,
+      "sha256": "89f38e0ca762b8999e081bf25393dd01ea0ff4159d07c4f58f18751b8de4ba38"
+    },
+    {
+      "path": "research/tools/generate_model_a_v3_figure_4_7_segmentation.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_model_a_v3_figure_4_7_segmentation.py",
+      "role": "research-python-source",
+      "bytes": 29367,
+      "sha256": "7971e34f177fe31cbf3300784330070fcb105f06aac764d6812b075420d8e6c0"
+    },
+    {
+      "path": "research/tools/generate_sc_figure_4_2b_spatial.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_sc_figure_4_2b_spatial.py",
+      "role": "research-python-source",
+      "bytes": 11762,
+      "sha256": "7892aa2ad775f58623be99c33de51d75067a3943c203a51111386d58aff6176c"
+    },
+    {
+      "path": "research/tools/generate_sc_figure_4_3_csg_3d.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_sc_figure_4_3_csg_3d.py",
+      "role": "research-python-source",
+      "bytes": 7596,
+      "sha256": "bd921ed89b4b7dd2da273cd1a79ebe65b2ad55a7e2ab55b8d10043fc5a259c8e"
+    },
+    {
+      "path": "research/tools/generate_stepped_cylinder_v3_figure_4_1_segmentation.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_stepped_cylinder_v3_figure_4_1_segmentation.py",
+      "role": "research-python-source",
+      "bytes": 17123,
+      "sha256": "d8f98d54b9a0340a609c464a1ef36bb34b47d290f2256119fa055f5c4ab20ff7"
+    },
+    {
+      "path": "research/tools/generate_stepped_cylinder_v3_figure_4_2a_topology_matrix.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_stepped_cylinder_v3_figure_4_2a_topology_matrix.py",
+      "role": "research-python-source",
+      "bytes": 16668,
+      "sha256": "a66b66981a02e559828287c41dcd08ecf0d2182b26f0cc2a0f538a493f8a82a1"
+    },
+    {
+      "path": "research/tools/generate_stepped_cylinder_v3_figure_4_2b_topology_spatial.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_stepped_cylinder_v3_figure_4_2b_topology_spatial.py",
+      "role": "research-python-source",
+      "bytes": 21214,
+      "sha256": "88b52960e84ed6916b69a8912e4906c6a1ebd436a23dc1f3cda6abedced32ef0"
+    },
+    {
+      "path": "research/tools/generate_stepped_cylinder_v3_figure_4_3_csg_tree.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/generate_stepped_cylinder_v3_figure_4_3_csg_tree.py",
+      "role": "research-python-source",
+      "bytes": 20181,
+      "sha256": "51f65aaadb5da67a556482cfc6d5ce3c3c94fe2ec02ec13bcd065c7226082aba"
+    },
+    {
+      "path": "research/tools/infer_blind_hole_hex_base_chapter3_method.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/infer_blind_hole_hex_base_chapter3_method.py",
+      "role": "research-python-source",
+      "bytes": 24663,
+      "sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a"
+    },
+    {
+      "path": "research/tools/infer_lbracket_chapter3_method.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/infer_lbracket_chapter3_method.py",
+      "role": "research-python-source",
+      "bytes": 32441,
+      "sha256": "a4a728f94b805d0fcdf45eefe937aed55442bfff69e9aeff39184ba3d817d9ec"
+    },
+    {
+      "path": "research/tools/infer_model_a_chapter3_method.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/infer_model_a_chapter3_method.py",
+      "role": "research-python-source",
+      "bytes": 39341,
+      "sha256": "8d9dcaa64389dfdbe29124894ebc060badab71e710e49b22c025299e1c22efa0"
+    },
+    {
+      "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/infer_stepped_cylinder_chapter3_method.py",
+      "role": "research-python-source",
+      "bytes": 28408,
+      "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c"
+    },
+    {
+      "path": "research/tools/run_threshold_sensitivity_260731.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/run_threshold_sensitivity_260731.py",
+      "role": "research-python-source",
+      "bytes": 8947,
+      "sha256": "9183c257090365df1a95ec18e91c99b99349ad1093795f663c791f27bd505d10"
+    },
+    {
+      "path": "research/tools/validate_blind_hole_hex_base_chapter3_method.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/validate_blind_hole_hex_base_chapter3_method.py",
+      "role": "research-python-source",
+      "bytes": 2872,
+      "sha256": "f2f73dad0062be4a2bc9bbc33b00592523992fb75b6b26eaa98940c837ca16a5"
+    },
+    {
+      "path": "research/tools/validate_lbracket_chapter3_method.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/validate_lbracket_chapter3_method.py",
+      "role": "research-python-source",
+      "bytes": 15029,
+      "sha256": "055e06b11285667546d778c1e44945bafda7e613fce3d0a58711b8f29480fd31"
+    },
+    {
+      "path": "research/tools/validate_lbracket_modela_v2.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/validate_lbracket_modela_v2.py",
+      "role": "research-python-source",
+      "bytes": 17773,
+      "sha256": "b470ce9fcfee34ef89e94128ba5fc6672085a5712d19c29deef341dba0ef03d8"
+    },
+    {
+      "path": "research/tools/validate_model_a_chapter3_method.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/validate_model_a_chapter3_method.py",
+      "role": "research-python-source",
+      "bytes": 17857,
+      "sha256": "c7b2954321559d0835270714c71956332834540951dd375ad678d51e20f76ff9"
+    },
+    {
+      "path": "research/tools/validate_stepped_cylinder_against_independent_truth.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/validate_stepped_cylinder_against_independent_truth.py",
+      "role": "research-python-source",
+      "bytes": 34264,
+      "sha256": "2a415128018418fb8281630af84a763c9166b9935f89f83aaf49fd4ed3cbc641"
+    },
+    {
+      "path": "archive/python-legacy/generate_model_a_complete_chain.py",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/generate_model_a_complete_chain.py",
+      "role": "legacy-python-source",
+      "bytes": 18798,
+      "sha256": "c525534fef7d68dac5a7054591c6234516c0e57f9b522c5ea3bc7928f42e9fb1"
+    },
+    {
+      "path": "archive/python-legacy/generate_model_a_conference_style_visualizations.py",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/generate_model_a_conference_style_visualizations.py",
+      "role": "legacy-python-source",
+      "bytes": 9451,
+      "sha256": "7a28c0d81644052aadd6797a6933f8a84db5268060a464159f641b7e18a147fa"
+    },
+    {
+      "path": "archive/python-legacy/generate_model_a_visualizations.py",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/generate_model_a_visualizations.py",
+      "role": "legacy-python-source",
+      "bytes": 7286,
+      "sha256": "db053a0837f6c1faa6943ca70a5c2f1d687eac1aa406e2c0fa70397db1d9c739"
+    },
+    {
+      "path": "archive/python-legacy/generate_stepped_cylinder_complete_chain.py",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/generate_stepped_cylinder_complete_chain.py",
+      "role": "legacy-python-source",
+      "bytes": 12950,
+      "sha256": "cdc87061919bb20737292cb8683eec41600dfe1864bdc1fe0659e97a5dc958ce"
+    },
+    {
+      "path": "archive/python-legacy/plot_model_a_feature_type.py",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/plot_model_a_feature_type.py",
+      "role": "legacy-python-source",
+      "bytes": 7039,
+      "sha256": "d831b48291c14959fd49133e3906f5a91da4d2fb297365599260a04ee5743a93"
+    },
+    {
+      "path": "archive/python-legacy/plot_model_a_feature_type_before_cylinder_refine_20260615_190255.py",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/plot_model_a_feature_type_before_cylinder_refine_20260615_190255.py",
+      "role": "legacy-python-source",
+      "bytes": 2334,
+      "sha256": "03c299ad6b9e623d7970a147f9a8968e0b4db1405541f91f5cdbc596049a49a1"
+    },
+    {
+      "path": "archive/python-legacy/plot_model_a_feature_type_before_semantic_group_20260615.py",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/plot_model_a_feature_type_before_semantic_group_20260615.py",
+      "role": "legacy-python-source",
+      "bytes": 2375,
+      "sha256": "c1a6454117e2881949f9ca32d31da7cfea5786a7cb0706bbbaf5d2317dab871c"
+    },
+    {
+      "path": "research/零件/Stepped Cylinder.blend",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Stepped Cylinder.blend",
+      "role": "four-example-input-asset",
+      "bytes": 359730,
+      "sha256": "2448a7b8cf43864c0b052e7102d806d2eae034885717f06a7b06ae7e6b5149cd"
+    },
+    {
+      "path": "research/零件/Stepped Cylinder.stl",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Stepped Cylinder.stl",
+      "role": "four-example-input-asset",
+      "bytes": 159449,
+      "sha256": "3afd1e517cd6484a89a16615e163c0d580766f07e4025ba517921fd2e4adaf4d"
+    },
+    {
+      "path": "research/零件/Stepped Cylinder點雲.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Stepped Cylinder點雲.csv",
+      "role": "four-example-input-asset",
+      "bytes": 894717,
+      "sha256": "dc245b8c26324a63179f26dc9039c03639c48e9aa417bb7a5468bbb4ad3f10cc"
+    },
+    {
+      "path": "research/零件/L-Bracket.blend",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/L-Bracket.blend",
+      "role": "four-example-input-asset",
+      "bytes": 312976,
+      "sha256": "dcfcbe4cca484b8e9cfc2e11a3b011926a198b2a6f5ef136d6ccdf7af3de5772"
+    },
+    {
+      "path": "research/零件/L-Bracket.stl",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/L-Bracket.stl",
+      "role": "four-example-input-asset",
+      "bytes": 101921,
+      "sha256": "01a8b2eb37f9a2e1ddfa4f3f0ccf368ffe08fc001767990b5f32801ea25a1bc6"
+    },
+    {
+      "path": "research/零件/L-Bracket點雲.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/L-Bracket點雲.csv",
+      "role": "four-example-input-asset",
+      "bytes": 583522,
+      "sha256": "769d9cd8aaa25c41755944cdd2423e20a5747e9a31df9db6a03edd723c23e41c"
+    },
+    {
+      "path": "research/零件/Model A.blend",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Model A.blend",
+      "role": "four-example-input-asset",
+      "bytes": 353547,
+      "sha256": "20f65d8e9460900314354bba2aae1a0d15c5b4bc4572575adc3daf662c5aabed"
+    },
+    {
+      "path": "research/零件/Model A.stl",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Model A.stl",
+      "role": "four-example-input-asset",
+      "bytes": 234212,
+      "sha256": "bbe3d96fbbb2f8f7f0e56e619f085b1ef113df6e7eb084fb1c8ff7d845e8f742"
+    },
+    {
+      "path": "research/零件/Model A點雲.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Model A點雲.csv",
+      "role": "four-example-input-asset",
+      "bytes": 751288,
+      "sha256": "f10f952e4b2ba7f02d45011c2a8f35b32ae73553845b5bdd1ac07dc04db1b436"
+    },
+    {
+      "path": "research/零件/Blind-Hole Hex Base.blend",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Blind-Hole Hex Base.blend",
+      "role": "four-example-input-asset",
+      "bytes": 342645,
+      "sha256": "10340e577608d5024997b800a896ab348ef9e3b51bb798536133b16985339770"
+    },
+    {
+      "path": "research/零件/Blind-Hole Hex Base點雲.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Blind-Hole Hex Base點雲.csv",
+      "role": "four-example-input-asset",
+      "bytes": 751909,
+      "sha256": "7e757e2848a4f4ca0f123b2326a07716601bfdab1a962c3b020b418baccb7bc2"
+    },
+    {
+      "path": "research/零件/Stepped Cylinder-blend-code.txt",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Stepped Cylinder-blend-code.txt",
+      "role": "sampling-source-snapshot",
+      "bytes": 6565,
+      "sha256": "7992403db85f6408faef53d42b3670084c5fd0bd522cb7f4b87270cc39b063f3"
+    },
+    {
+      "path": "research/零件/L-Bracket-blend-code.txt",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/L-Bracket-blend-code.txt",
+      "role": "sampling-source-snapshot",
+      "bytes": 6558,
+      "sha256": "22058236eafe67990c2b0c8d732847ffaef0223724cfe21599f77a3c310bb8b1"
+    },
+    {
+      "path": "research/零件/Model A-blend-code.txt",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Model A-blend-code.txt",
+      "role": "sampling-source-snapshot",
+      "bytes": 6556,
+      "sha256": "fc7eb47cc09f99f8877ca419b416bf12c5f2cb9b58d75a89e2ab4efdc818277f"
+    },
+    {
+      "path": "research/零件/均勻點雲CODE.txt",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/均勻點雲CODE.txt",
+      "role": "sampling-source-snapshot",
+      "bytes": 6567,
+      "sha256": "a118c297696fc88d38365786c71185845c9c1c0280625a2f0794dbae24a80c71"
+    },
+    {
+      "path": "research/零件/網格點雲CODE.txt",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/網格點雲CODE.txt",
+      "role": "sampling-source-snapshot",
+      "bytes": 7989,
+      "sha256": "bb93f5cfe79887d11fd82c27c8a40768eb271d0803134cb3618bca78dbd74e3d"
+    },
+    {
+      "path": "research/零件/Result_Stepped Cylinder.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Result_Stepped Cylinder.csv",
+      "role": "initial-segmentation-input",
+      "bytes": 829240,
+      "sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25"
+    },
+    {
+      "path": "research/零件/Result_L Bracket.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Result_L Bracket.csv",
+      "role": "initial-segmentation-input",
+      "bytes": 553145,
+      "sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00"
+    },
+    {
+      "path": "research/零件/Result_Model A.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Result_Model A.csv",
+      "role": "initial-segmentation-input",
+      "bytes": 843907,
+      "sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d"
+    },
+    {
+      "path": "research/零件/Result_Blind-Hole Hex Base_fixed.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Result_Blind-Hole Hex Base_fixed.csv",
+      "role": "initial-segmentation-input",
+      "bytes": 852054,
+      "sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d"
+    },
+    {
+      "path": "research/零件/Result_Blind-Hole Hex Base.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Result_Blind-Hole Hex Base.csv",
+      "role": "initial-segmentation-input",
+      "bytes": 707753,
+      "sha256": "19d0162980fd330f66f1c01e3a2e6c32aca37041b729a427057a7f99ecce5590"
+    },
+    {
+      "path": "archive/root-derived-results/FaceSummary_LBracket.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/FaceSummary_LBracket.csv",
+      "role": "legacy-derived-output",
+      "bytes": 3118,
+      "sha256": "7a479ad37353c6c2084e38ea866956b43d7db8a3aebdd08bf138acfc9770c007"
+    },
+    {
+      "path": "archive/root-derived-results/FaceSummary_Model A.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/FaceSummary_Model A.csv",
+      "role": "legacy-derived-output",
+      "bytes": 5284,
+      "sha256": "f6d9afdb9c58c16126686c5223fcb2a3de21ab187c23ad9f6f34b0b4465758b4"
+    },
+    {
+      "path": "archive/root-derived-results/FaceSummary_Stepped Cylinder.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/FaceSummary_Stepped Cylinder.csv",
+      "role": "legacy-derived-output",
+      "bytes": 1339,
+      "sha256": "c8406adaf8d3cad57c46f0e2e64ee52c7d79e92f8726c024616ca7e5bb271374"
+    },
+    {
+      "path": "archive/root-derived-results/PrimitiveCandidates_LBracket.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/PrimitiveCandidates_LBracket.csv",
+      "role": "legacy-derived-output",
+      "bytes": 423,
+      "sha256": "42dd98da5ef63b19e5075b065ca81739c136aeafa2269ae5dd4800197f1cef25"
+    },
+    {
+      "path": "archive/root-derived-results/PrimitiveCandidates_Model A.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/PrimitiveCandidates_Model A.csv",
+      "role": "legacy-derived-output",
+      "bytes": 812,
+      "sha256": "8fb2b996c7fa54f09b07723754c8825be9d1401980a8202723ef85b58641adc2"
+    },
+    {
+      "path": "archive/root-derived-results/PrimitiveCandidates_Stepped Cylinder.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/PrimitiveCandidates_Stepped Cylinder.csv",
+      "role": "legacy-derived-output",
+      "bytes": 247,
+      "sha256": "e1dd1a7bff5007132f57a2e56c5a3a1b2a1f08e34e020de1e2bd0235f51129cf"
+    },
+    {
+      "path": "archive/root-derived-results/Result_Model A_before_axisx_merge_20260615_184106.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Result_Model A_before_axisx_merge_20260615_184106.csv",
+      "role": "legacy-derived-output",
+      "bytes": 857234,
+      "sha256": "2fdda75491e9e636357f7b62328fc8a7a875a6834a24b15323cfff79318f14a2"
+    },
+    {
+      "path": "archive/root-derived-results/Result_Model A_舊點雲結果.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Result_Model A_舊點雲結果.csv",
+      "role": "legacy-derived-output",
+      "bytes": 875049,
+      "sha256": "bca85d8ecf6d53c2175cd7a775b0e6898deafa02c7fd08594a84fdc0bfa7f9a7"
+    },
+    {
+      "path": "archive/root-derived-results/Result_Model A_重跑前備份.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Result_Model A_重跑前備份.csv",
+      "role": "legacy-derived-output",
+      "bytes": 875049,
+      "sha256": "bca85d8ecf6d53c2175cd7a775b0e6898deafa02c7fd08594a84fdc0bfa7f9a7"
+    },
+    {
+      "path": "archive/root-derived-results/TopologyEdges_LBracket.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/TopologyEdges_LBracket.csv",
+      "role": "legacy-derived-output",
+      "bytes": 1173,
+      "sha256": "d501e42deb906d5aad61e0aa0ebc14ee8c60ca27e578aaab565cee04a36e555a"
+    },
+    {
+      "path": "archive/root-derived-results/TopologyEdges_Model A.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/TopologyEdges_Model A.csv",
+      "role": "legacy-derived-output",
+      "bytes": 2191,
+      "sha256": "14e1431b2d6ae726030ea16f4c5fef6ba269707d856c3d9d02a6806d39ede549"
+    },
+    {
+      "path": "archive/root-derived-results/TopologyEdges_Stepped Cylinder.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/TopologyEdges_Stepped Cylinder.csv",
+      "role": "legacy-derived-output",
+      "bytes": 186,
+      "sha256": "2f8a72233b128c1d936fa94f0e9e8d5455cfe580ff789c0b4f010c2aafd39375"
+    },
+    {
+      "path": "archive/legacy-hex-base/Hex Base with Holed點雲.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Hex Base with Holed點雲.csv",
+      "role": "legacy-distinct-asset-not-blind-hole",
+      "bytes": 751909,
+      "sha256": "7e757e2848a4f4ca0f123b2326a07716601bfdab1a962c3b020b418baccb7bc2"
+    },
+    {
+      "path": "archive/legacy-hex-base/Hex Base with Holed-blend-code.txt",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Hex Base with Holed-blend-code.txt",
+      "role": "legacy-distinct-asset-not-blind-hole",
+      "bytes": 6568,
+      "sha256": "e0fded21cba8f7f58a87223ed76274e6287e570e0b8350e17e0f4f3913c07b81"
+    },
+    {
+      "path": "archive/legacy-hex-base/Result_Hex Base with Holed.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Result_Hex Base with Holed.csv",
+      "role": "legacy-distinct-asset-not-blind-hole",
+      "bytes": 740720,
+      "sha256": "564a10b7e82f1883a4314cffeec4882a1d0867a2fcab71da9bd719eb4d044e93"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CandidateMapping_Stepped_Cylinder.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CandidateMapping_Stepped_Cylinder.csv",
+      "role": "selected-historical-reference",
+      "bytes": 896,
+      "sha256": "a05cab621483b79a1bfb82dba2861c9eebbfb01c9002a27e22810685d1ed4ea6"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+      "role": "selected-historical-reference",
+      "bytes": 1204,
+      "sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CSGTree_Stepped_Cylinder_chapter3_verified.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CSGTree_Stepped_Cylinder_chapter3_verified.json",
+      "role": "selected-historical-reference",
+      "bytes": 528,
+      "sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 1953,
+      "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/IndependentTruthBuildManifest.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/IndependentTruthBuildManifest.json",
+      "role": "selected-historical-reference",
+      "bytes": 2152,
+      "sha256": "ca7899d0b5d41699e351e84827cfcdb265bcaf298079ee4fd66081577e35bd57"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "selected-historical-reference",
+      "bytes": 3462,
+      "sha256": "b2c4bc4bd647d384f45524e0cd1ab9211e10a5d4b6dfc1a1481190858c6d4278"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 497,
+      "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/Reproducibility_Stepped_Cylinder_chapter3.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/Reproducibility_Stepped_Cylinder_chapter3.json",
+      "role": "selected-historical-reference",
+      "bytes": 2309,
+      "sha256": "d04f563551f91d7f849bb4528c0b184f6466add2d7bb7ec16eb38ac96ac5ebcd"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/Result_Stepped_Cylinder_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/Result_Stepped_Cylinder_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 819239,
+      "sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/SurfaceMapping_Stepped_Cylinder.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/SurfaceMapping_Stepped_Cylinder.csv",
+      "role": "selected-historical-reference",
+      "bytes": 2499,
+      "sha256": "19fd0b7cb460e3bea4613c6e6b8b362a3d54eda49c9fa5dda5103bd38932279d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 761,
+      "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/ValidationAgainstIndependentTruth_Stepped_Cylinder.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/ValidationAgainstIndependentTruth_Stepped_Cylinder.json",
+      "role": "selected-historical-reference",
+      "bytes": 3408,
+      "sha256": "32a0934d7a5ba1751ae68b1c3a0d2fefd978ce935372bee6b2985919f9683d93"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/ValidationSummary_Stepped_Cylinder_chapter3.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/ValidationSummary_Stepped_Cylinder_chapter3.json",
+      "role": "selected-historical-reference",
+      "bytes": 1800,
+      "sha256": "951d3deb4cfeeee37b3778ea5d31144f53235a1d1f66a3fbaf510e28393dc54d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/BlendEvaluatedMeshManifest_L_Bracket.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/BlendEvaluatedMeshManifest_L_Bracket.json",
+      "role": "selected-historical-reference",
+      "bytes": 469,
+      "sha256": "13bde428aa030728bdebf27c93a36b6acac86d0f33d031e13efeff2c6a424fdf"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/BlendEvaluatedMesh_L_Bracket.stl",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/BlendEvaluatedMesh_L_Bracket.stl",
+      "role": "selected-historical-reference",
+      "bytes": 83099,
+      "sha256": "8b481d5b1e21662f3af8df33f0064ebcb828d92bb20c676682c2853765bc88d1"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/CorrectionTrace_L_Bracket_chapter3.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/CorrectionTrace_L_Bracket_chapter3.csv",
+      "role": "selected-historical-reference",
+      "bytes": 2804,
+      "sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/CSGTree_L_Bracket_chapter3_verified.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/CSGTree_L_Bracket_chapter3_verified.json",
+      "role": "selected-historical-reference",
+      "bytes": 620,
+      "sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/FaceSummary_L_Bracket_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/FaceSummary_L_Bracket_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 3811,
+      "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/GroundTruth_L_Bracket_independent.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/GroundTruth_L_Bracket_independent.json",
+      "role": "selected-historical-reference",
+      "bytes": 26488,
+      "sha256": "60cb1a13e1389d24d630a284474859025a8410d59cdfb8e326d77a72994e5e4c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/IndependentTruthBuildManifest_L_Bracket.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/IndependentTruthBuildManifest_L_Bracket.json",
+      "role": "selected-historical-reference",
+      "bytes": 660,
+      "sha256": "71604bb7c3e76f207bc01780cad5f44ec74ecead4f6addb457aa32bd9b939676"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "selected-historical-reference",
+      "bytes": 1747,
+      "sha256": "89c14010be012c93f6fd714e866cd3e72df290746ae39267de0e1f4da10e988b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 767,
+      "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/Reproducibility_L_Bracket_chapter3_v3.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/Reproducibility_L_Bracket_chapter3_v3.json",
+      "role": "selected-historical-reference",
+      "bytes": 3039,
+      "sha256": "ed5d5b92e3d477c2c0b7f322a0d4d3bea8706877e49cef3ba094c862c40ceada"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/Result_L_Bracket_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/Result_L_Bracket_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 621036,
+      "sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/TopologyEdges_L_Bracket_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/TopologyEdges_L_Bracket_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 2399,
+      "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/ValidationSummary_L_Bracket_chapter3.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/ValidationSummary_L_Bracket_chapter3.json",
+      "role": "selected-historical-reference",
+      "bytes": 8682,
+      "sha256": "7f2392929df702fde6722bbcd002c95fe45f9cff69fda8a02a5771bcb969e8da"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CandidateMapping_Model_A_chapter3.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CandidateMapping_Model_A_chapter3.csv",
+      "role": "selected-historical-reference",
+      "bytes": 931,
+      "sha256": "fa1708a784e0f85e32f926142d4c1236f1d297d5774caecda2812e5d50834c71"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CorrectionTrace_Model_A_chapter3.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CorrectionTrace_Model_A_chapter3.csv",
+      "role": "selected-historical-reference",
+      "bytes": 3028,
+      "sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CSGTree_Model_A_chapter3_verified.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CSGTree_Model_A_chapter3_verified.json",
+      "role": "selected-historical-reference",
+      "bytes": 672,
+      "sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/FaceSummary_Model_A_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/FaceSummary_Model_A_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 3795,
+      "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/MethodInferenceManifest_Model_A_chapter3.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "selected-historical-reference",
+      "bytes": 6068,
+      "sha256": "6ccb0aa5fd2d69ff788bf6103f0107b9a1a1a8667361e253c8391e6aa78813aa"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 1030,
+      "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/Reproducibility_Model_A_chapter3.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/Reproducibility_Model_A_chapter3.json",
+      "role": "selected-historical-reference",
+      "bytes": 2237,
+      "sha256": "d169e2ecf8638d4837938681814ed5da0e6369ccafe0d3e0cefd28d788ec1c5d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/Result_Model_A_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/Result_Model_A_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 833801,
+      "sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/SurfaceMapping_Model_A_chapter3.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/SurfaceMapping_Model_A_chapter3.csv",
+      "role": "selected-historical-reference",
+      "bytes": 1192,
+      "sha256": "a53c71bd0dac146f10dd860944caeb57aa620ed4e22ca5a066bae6ce4b5ebc3f"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/TopologyEdges_Model_A_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/TopologyEdges_Model_A_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 2898,
+      "sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/ValidationAgainstIndependentTruth_Model_A.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/ValidationAgainstIndependentTruth_Model_A.json",
+      "role": "selected-historical-reference",
+      "bytes": 2160,
+      "sha256": "d48bd649ab6a5e6458c132c83234eab898f12b7c38e56baf7378b58068563771"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CandidateMapping_Blind_Hole_Hex_Base_chapter3.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CandidateMapping_Blind_Hole_Hex_Base_chapter3.csv",
+      "role": "selected-historical-reference",
+      "bytes": 537,
+      "sha256": "e51d7beada619be1bc83fadecd42b15d0ea4087138c4f1bc3ad4eb4e643210cb"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+      "role": "selected-historical-reference",
+      "bytes": 838,
+      "sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+      "role": "selected-historical-reference",
+      "bytes": 519,
+      "sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 3419,
+      "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "selected-historical-reference",
+      "bytes": 4905,
+      "sha256": "ceaab04a23aeacfe66a087c92e0fe4c081517e0c37d28cb941a0ceef593f5f83"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 609,
+      "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 889401,
+      "sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/SurfaceMapping_Blind_Hole_Hex_Base_chapter3.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/SurfaceMapping_Blind_Hole_Hex_Base_chapter3.csv",
+      "role": "selected-historical-reference",
+      "bytes": 1053,
+      "sha256": "d0b04da2d65a5ca27c9f460822057c4a956252e33aacb5df73d1949e6cd4a61c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "role": "selected-historical-reference",
+      "bytes": 2454,
+      "sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/ValidationAgainstIndependentTruth_Blind_Hole_Hex_Base.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/ValidationAgainstIndependentTruth_Blind_Hole_Hex_Base.json",
+      "role": "selected-historical-reference",
+      "bytes": 2168,
+      "sha256": "1e98703b7065f27283fdca6fd62e9b042f395d868a4eb3cecda5770fd66a5833"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/CandidateMapping_Stepped_Cylinder.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/CandidateMapping_Stepped_Cylinder.csv",
+      "role": "independent-validation-resource",
+      "bytes": 826,
+      "sha256": "fc689016dababb0bf34c667499e607a40f28f042fca0ec7c92d0bf010f9d27dd"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/GroundTruth_Stepped_Cylinder_independent.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/GroundTruth_Stepped_Cylinder_independent.json",
+      "role": "independent-validation-resource",
+      "bytes": 11789,
+      "sha256": "9529b52379f3576f965caca71494feb81de01811007446b1d5f84a5e78352b0c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/IndependentTruthBuildManifest.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/IndependentTruthBuildManifest.json",
+      "role": "independent-validation-resource",
+      "bytes": 2107,
+      "sha256": "0370d24b919ea604affcb78c29391bbf76e14866916278af6415a407abe765ed"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/InputFreeze_Stepped_Cylinder.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/InputFreeze_Stepped_Cylinder.json",
+      "role": "independent-validation-resource",
+      "bytes": 955,
+      "sha256": "9595d5a15024f4de3d51a573fa394a17e754008541f0ffb016275b30b9b601af"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/Reproducibility_Stepped_Cylinder.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/Reproducibility_Stepped_Cylinder.json",
+      "role": "independent-validation-resource",
+      "bytes": 930,
+      "sha256": "4a7f9925fdf29f9d8a4718f1e8d673488ebf3a69907861751f23973673af78ee"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/SurfaceMapping_Stepped_Cylinder.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/SurfaceMapping_Stepped_Cylinder.csv",
+      "role": "independent-validation-resource",
+      "bytes": 2476,
+      "sha256": "e7f7501ade3cb87393db0f27c8b6ea4febc7e17e6e87b1a513eb8db545ad369f"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/ValidationAgainstIndependentTruth_Stepped_Cylinder.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/ValidationAgainstIndependentTruth_Stepped_Cylinder.json",
+      "role": "independent-validation-resource",
+      "bytes": 3499,
+      "sha256": "a0e4513037589c349f3fb8bc5e9d7f7f5edc1f95ad595e32a5a6e0af189a5a4b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/BlendEvaluatedMeshManifest_Model_A.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/BlendEvaluatedMeshManifest_Model_A.json",
+      "role": "independent-validation-resource",
+      "bytes": 483,
+      "sha256": "c68d89ef53e7d97c4b8bb819aab600365cb735a4ae37052a212940ee8f074652"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/BlendEvaluatedMesh_Model_A.stl",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/BlendEvaluatedMesh_Model_A.stl",
+      "role": "independent-validation-resource",
+      "bytes": 209332,
+      "sha256": "304cd84216052b0612d6486b34feefe91cc74e95fd763c6f451eb16bfdcbba7d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CandidateMapping_Model_A.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CandidateMapping_Model_A.csv",
+      "role": "independent-validation-resource",
+      "bytes": 420,
+      "sha256": "10f6ba4760ad4564ff934e340aef17802ccf522e2134352fcc148fa41f9ba65a"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CorrectionManifest_Model_A_v2.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CorrectionManifest_Model_A_v2.json",
+      "role": "independent-validation-resource",
+      "bytes": 2501,
+      "sha256": "c655ac2fb3c9ea248d8da617696ffa7c1823127e56c3189c49a52ae0cbabdf63"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CorrectionTrace_Model_A_v2.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CorrectionTrace_Model_A_v2.csv",
+      "role": "independent-validation-resource",
+      "bytes": 2889,
+      "sha256": "dfe2ef87c3e848d9e3e79b1ff545568aa5ecfdf6f1c4b0e4bec2ed6386f649d0"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CSGTree_Model_A_verified_v2.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CSGTree_Model_A_verified_v2.json",
+      "role": "independent-validation-resource",
+      "bytes": 606,
+      "sha256": "27b8307b061016e75a41481729d3d9d2ce8c6dc0d5162635ab1987ffe6b042b2"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/FaceSummary_Model_A_verified_v2.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/FaceSummary_Model_A_verified_v2.csv",
+      "role": "independent-validation-resource",
+      "bytes": 4234,
+      "sha256": "a84bffc50e55256ba901a85599c1a94e2b47adfb1898d1510ab12cf40c4af201"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/GroundTruth_Model_A_independent.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/GroundTruth_Model_A_independent.json",
+      "role": "independent-validation-resource",
+      "bytes": 35867,
+      "sha256": "8ba2848b63f96fe3a95289052118b805baa8db978ffc88b04929e899ff63f1d1"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/IndependentTruthBuildManifest_Model_A.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/IndependentTruthBuildManifest_Model_A.json",
+      "role": "independent-validation-resource",
+      "bytes": 654,
+      "sha256": "bc7c795ad9c81f5a754efa6f6ca0c9957d31af97c331b3dbb67fdb19287d803c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/PrimitiveCandidates_Model_A_verified_v2.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/PrimitiveCandidates_Model_A_verified_v2.csv",
+      "role": "independent-validation-resource",
+      "bytes": 685,
+      "sha256": "47911f398dc20a02a467ded96afe6eeb8064c51dba28e6375433e6ab7cd493bf"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/Result_Model_A_verified_v2.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/Result_Model_A_verified_v2.csv",
+      "role": "independent-validation-resource",
+      "bytes": 999920,
+      "sha256": "39df3c379bb5156b07b2e9eeb7f8a594cf8d12ee310f0c220c42d4e829b7fa2f"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/SurfaceMapping_Model_A.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/SurfaceMapping_Model_A.csv",
+      "role": "independent-validation-resource",
+      "bytes": 1015,
+      "sha256": "da84d3299fbf1e4b9cd98b5d2e272977af0418a40d789b3246f3066d70860091"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/TopologyEdges_Model_A_verified_v2.csv",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/TopologyEdges_Model_A_verified_v2.csv",
+      "role": "independent-validation-resource",
+      "bytes": 1409,
+      "sha256": "b54b95eb04a2d26998ea171e1a211e0d06df4d39d93538b4382bd7c585d7564b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/ValidationSummary_Model_A_v2.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260724/Model_A_verified_v2/ValidationSummary_Model_A_v2.json",
+      "role": "independent-validation-resource",
+      "bytes": 8856,
+      "sha256": "33bee75001c29fdc81e4034123778671324e0f26c89755de4a71683156b4a21b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/Blind_Hole_Hex_Base_blend_manifest.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/Blind_Hole_Hex_Base_blend_manifest.json",
+      "role": "independent-validation-resource",
+      "bytes": 491,
+      "sha256": "46c909a556ed9d4987364b8b633cebf71bea033c651d34e3b71c20ccf44e18f8"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/Blind_Hole_Hex_Base_evaluated.stl",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/Blind_Hole_Hex_Base_evaluated.stl",
+      "role": "independent-validation-resource",
+      "bytes": 102903,
+      "sha256": "976af76f3aab6b640295c72e66f6862fdefe5766b1ff9d8f67582b27cde9a552"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/GroundTruthManifest_Blind_Hole_Hex_Base.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/GroundTruthManifest_Blind_Hole_Hex_Base.json",
+      "role": "independent-validation-resource",
+      "bytes": 669,
+      "sha256": "2f4379696326c94bd529d60ebdbf34f0dee9e359b46f9b3adfea016634f3ddca"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/GroundTruth_Blind_Hole_Hex_Base.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/GroundTruth_Blind_Hole_Hex_Base.json",
+      "role": "independent-validation-resource",
+      "bytes": 26214,
+      "sha256": "62de5303de7cad5641f0740e5f4960f04ce5fe4e638f5ed0c946bdfe7f97278b"
+    },
+    {
+      "path": "research/碩士論文/審查報告/敏感度分析_260731/sampling_density_evidence.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/sampling_density_evidence.json",
+      "role": "historical-sensitivity-summary",
+      "bytes": 2768,
+      "sha256": "e12cf6fff7f47449936df20ee787596607031e4f6e70bb1f7d4585faa4e5ff65"
+    },
+    {
+      "path": "research/碩士論文/審查報告/敏感度分析_260731/sensitivity_results.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/sensitivity_results.json",
+      "role": "historical-sensitivity-summary",
+      "bytes": 51927,
+      "sha256": "e9a46e86a68fa88a1f5962c5b55b2617c9b079a8ba4f94609da964f51edba905"
+    },
+    {
+      "path": "research/碩士論文/審查報告/敏感度分析_260731/敏感度分析報告_260731.md",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/敏感度分析報告_260731.md",
+      "role": "historical-sensitivity-summary",
+      "bytes": 3800,
+      "sha256": "6d61b8f23d402b6ceb1b60b4ac01b79866b9813ab91a83d5fcec6cf92e08d6de"
+    },
+    {
+      "path": "research/碩士論文/審查報告/敏感度分析_260731/點雲密度與門檻依據_260731.md",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/點雲密度與門檻依據_260731.md",
+      "role": "historical-sensitivity-summary",
+      "bytes": 1259,
+      "sha256": "4a5613e5a6d45bb7fbd0c49b6cc0c744f4ff3093f74ef8eab6b3617b1cb0d067"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "L_Bracket幾何邏輯/Properties/AssemblyInfo.cs",
+      "role": "restored-original-build-metadata",
+      "bytes": 1332,
+      "sha256": "8257e8ccb3303bbc4b569491f2f1ca5564db7b6f3cf6ecb6b0276fbb72b548e3"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法L-Bracket/Properties/AssemblyInfo.cs",
+      "role": "restored-original-build-metadata",
+      "bytes": 1362,
+      "sha256": "0a748d2b3ee4ff4c6620890b996acb98508df911a9d2fea21fc8903e4293bf72"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Model A/Properties/AssemblyInfo.cs",
+      "role": "restored-original-build-metadata",
+      "bytes": 1358,
+      "sha256": "d5916cd673a05b8ae56c13c538f5b7b0f8c957686918af27662d682229bddd38"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Stepped Cylinder/Properties/AssemblyInfo.cs",
+      "role": "restored-original-build-metadata",
+      "bytes": 1344,
+      "sha256": "f2421a69317ec3dc219c42e00094e8718a9ffc8f7e472022828f71a25fb91758"
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 280,
+      "sha256": "e348dbd65a805943576924710bf7f56d786f34072c4f51d260b97ddc3e08c638"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 1755,
+      "sha256": "74db4908dd1f6d7052dfeedbe9877f46be341ae389b3c1276c0afab4dcb40dbe"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 215,
+      "sha256": "3a1d0ec6e6a3ea53fd68d53334b6bd3f38e7b45aeff78e367e31dfeed1588144"
+    },
+    {
+      "path": ".python-version",
+      "bytes": 7,
+      "sha256": "ca2e220d1fb92b2610d4b4dd20bde54d8d258f3e5ce89b8365612ffd415171ee"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1277,
+      "sha256": "45d7f856a23de5fa610343f34128182f1e515869d965d8e0d091c7d87f4c26df"
+    },
+    {
+      "path": "archive/csharp-original-workspace/L_Bracket幾何邏輯/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "archive/csharp-original-workspace/L_Bracket幾何邏輯/L_Bracket幾何邏輯.csproj",
+      "bytes": 2405,
+      "sha256": "0a5f2b7553e7cc7cbec40d3d17250871a9ea7a61c3e69687c45c3e3ca29439a4"
+    },
+    {
+      "path": "archive/csharp-original-workspace/L_Bracket幾何邏輯/L-Bracket 幾何邏輯.cs",
+      "bytes": 30930,
+      "sha256": "8c89ab35afb89363bbd232d347a6ad0cc8d875fd906350ad0b01d854da255ddc"
+    },
+    {
+      "path": "archive/csharp-original-workspace/L_Bracket幾何邏輯/Properties/AssemblyInfo.cs",
+      "bytes": 1332,
+      "sha256": "8257e8ccb3303bbc4b569491f2f1ca5564db7b6f3cf6ecb6b0276fbb72b548e3"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法.sln",
+      "bytes": 3020,
+      "sha256": "7a86cb2f2907f4a5c721bb0d18ee68ccb26451b355e01f1b0111920e47df42f0"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Hex Base with Holed/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Hex Base with Holed/Properties/AssemblyInfo.cs",
+      "bytes": 1382,
+      "sha256": "aedbf8f813e54dc1c23060d44d012786dac0aafc09f4183821fc2c0ff2354c23"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Hex Base with Holed/特徵辨識核心演算法Hex Base with Holed.cs",
+      "bytes": 6323,
+      "sha256": "7f2bf4bfc15a77f7839f331403f8000919a9290ec5d7cddd0f72cb1fa5c616d0"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Hex Base with Holed/特徵辨識核心演算法Hex Base with Holed.csproj",
+      "bytes": 2479,
+      "sha256": "2fe69e755f433a565082eb064fb19936dcaf5dc283056a6a41911fb1225ce955"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法L-Bracket/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法L-Bracket/Properties/AssemblyInfo.cs",
+      "bytes": 1362,
+      "sha256": "0a748d2b3ee4ff4c6620890b996acb98508df911a9d2fea21fc8903e4293bf72"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.cs",
+      "bytes": 6761,
+      "sha256": "34558d9baf3818508f8958eb0e4c33521879a330c4e74998df2d6b4a5cb8bb34"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.csproj",
+      "bytes": 2449,
+      "sha256": "31e75725bde1b83333a2fbb15b29c8563e021de3b643c91b338c370993dee378"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Model A/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Model A/Properties/AssemblyInfo.cs",
+      "bytes": 1358,
+      "sha256": "d5916cd673a05b8ae56c13c538f5b7b0f8c957686918af27662d682229bddd38"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.cs",
+      "bytes": 34202,
+      "sha256": "3cf04caae8a58f187e24bab3f8caf6c668941b8371797457026d0753561a8095"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.csproj",
+      "bytes": 2443,
+      "sha256": "bd778ba1ab84d49979503f846f107394972b1078ae5b739983ef06ccc15f5d12"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Stepped Cylinder/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Stepped Cylinder/Properties/AssemblyInfo.cs",
+      "bytes": 1344,
+      "sha256": "f2421a69317ec3dc219c42e00094e8718a9ffc8f7e472022828f71a25fb91758"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.cs",
+      "bytes": 5965,
+      "sha256": "a7cdd45d2269f955dbe51a1416dccf6d2c5a2287674a6da2a50259e3ca83ce58"
+    },
+    {
+      "path": "archive/csharp-original-workspace/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.csproj",
+      "bytes": 2402,
+      "sha256": "3504a63756490f32567f1ad9d4fd3eb1d07116e6d65aef92f1c1ccbf31a2d666"
+    },
+    {
+      "path": "archive/legacy-hex-base/Hex Base with Holed-blend-code.txt",
+      "bytes": 6568,
+      "sha256": "e0fded21cba8f7f58a87223ed76274e6287e570e0b8350e17e0f4f3913c07b81"
+    },
+    {
+      "path": "archive/legacy-hex-base/Hex Base with Holed點雲.csv",
+      "bytes": 751909,
+      "sha256": "7e757e2848a4f4ca0f123b2326a07716601bfdab1a962c3b020b418baccb7bc2"
+    },
+    {
+      "path": "archive/legacy-hex-base/Result_Hex Base with Holed.csv",
+      "bytes": 740720,
+      "sha256": "564a10b7e82f1883a4314cffeec4882a1d0867a2fcab71da9bd719eb4d044e93"
+    },
+    {
+      "path": "archive/python-legacy/generate_model_a_complete_chain.py",
+      "bytes": 18798,
+      "sha256": "c525534fef7d68dac5a7054591c6234516c0e57f9b522c5ea3bc7928f42e9fb1"
+    },
+    {
+      "path": "archive/python-legacy/generate_model_a_conference_style_visualizations.py",
+      "bytes": 9451,
+      "sha256": "7a28c0d81644052aadd6797a6933f8a84db5268060a464159f641b7e18a147fa"
+    },
+    {
+      "path": "archive/python-legacy/generate_model_a_visualizations.py",
+      "bytes": 7286,
+      "sha256": "db053a0837f6c1faa6943ca70a5c2f1d687eac1aa406e2c0fa70397db1d9c739"
+    },
+    {
+      "path": "archive/python-legacy/generate_stepped_cylinder_complete_chain.py",
+      "bytes": 12950,
+      "sha256": "cdc87061919bb20737292cb8683eec41600dfe1864bdc1fe0659e97a5dc958ce"
+    },
+    {
+      "path": "archive/python-legacy/plot_model_a_feature_type_before_cylinder_refine_20260615_190255.py",
+      "bytes": 2334,
+      "sha256": "03c299ad6b9e623d7970a147f9a8968e0b4db1405541f91f5cdbc596049a49a1"
+    },
+    {
+      "path": "archive/python-legacy/plot_model_a_feature_type_before_semantic_group_20260615.py",
+      "bytes": 2375,
+      "sha256": "c1a6454117e2881949f9ca32d31da7cfea5786a7cb0706bbbaf5d2317dab871c"
+    },
+    {
+      "path": "archive/python-legacy/plot_model_a_feature_type.py",
+      "bytes": 7039,
+      "sha256": "d831b48291c14959fd49133e3906f5a91da4d2fb297365599260a04ee5743a93"
+    },
+    {
+      "path": "archive/README.md",
+      "bytes": 596,
+      "sha256": "96df3483a1864d90fb8045a626b3f880daf261b954513a4875093af247f84b20"
+    },
+    {
+      "path": "archive/root-derived-results/FaceSummary_LBracket.csv",
+      "bytes": 3118,
+      "sha256": "7a479ad37353c6c2084e38ea866956b43d7db8a3aebdd08bf138acfc9770c007"
+    },
+    {
+      "path": "archive/root-derived-results/FaceSummary_Model A.csv",
+      "bytes": 5284,
+      "sha256": "f6d9afdb9c58c16126686c5223fcb2a3de21ab187c23ad9f6f34b0b4465758b4"
+    },
+    {
+      "path": "archive/root-derived-results/FaceSummary_Stepped Cylinder.csv",
+      "bytes": 1339,
+      "sha256": "c8406adaf8d3cad57c46f0e2e64ee52c7d79e92f8726c024616ca7e5bb271374"
+    },
+    {
+      "path": "archive/root-derived-results/PrimitiveCandidates_LBracket.csv",
+      "bytes": 423,
+      "sha256": "42dd98da5ef63b19e5075b065ca81739c136aeafa2269ae5dd4800197f1cef25"
+    },
+    {
+      "path": "archive/root-derived-results/PrimitiveCandidates_Model A.csv",
+      "bytes": 812,
+      "sha256": "8fb2b996c7fa54f09b07723754c8825be9d1401980a8202723ef85b58641adc2"
+    },
+    {
+      "path": "archive/root-derived-results/PrimitiveCandidates_Stepped Cylinder.csv",
+      "bytes": 247,
+      "sha256": "e1dd1a7bff5007132f57a2e56c5a3a1b2a1f08e34e020de1e2bd0235f51129cf"
+    },
+    {
+      "path": "archive/root-derived-results/Result_Model A_before_axisx_merge_20260615_184106.csv",
+      "bytes": 857234,
+      "sha256": "2fdda75491e9e636357f7b62328fc8a7a875a6834a24b15323cfff79318f14a2"
+    },
+    {
+      "path": "archive/root-derived-results/Result_Model A_舊點雲結果.csv",
+      "bytes": 875049,
+      "sha256": "bca85d8ecf6d53c2175cd7a775b0e6898deafa02c7fd08594a84fdc0bfa7f9a7"
+    },
+    {
+      "path": "archive/root-derived-results/Result_Model A_重跑前備份.csv",
+      "bytes": 875049,
+      "sha256": "bca85d8ecf6d53c2175cd7a775b0e6898deafa02c7fd08594a84fdc0bfa7f9a7"
+    },
+    {
+      "path": "archive/root-derived-results/TopologyEdges_LBracket.csv",
+      "bytes": 1173,
+      "sha256": "d501e42deb906d5aad61e0aa0ebc14ee8c60ca27e578aaab565cee04a36e555a"
+    },
+    {
+      "path": "archive/root-derived-results/TopologyEdges_Model A.csv",
+      "bytes": 2191,
+      "sha256": "14e1431b2d6ae726030ea16f4c5fef6ba269707d856c3d9d02a6806d39ede549"
+    },
+    {
+      "path": "archive/root-derived-results/TopologyEdges_Stepped Cylinder.csv",
+      "bytes": 186,
+      "sha256": "2f8a72233b128c1d936fa94f0e9e8d5455cfe580ff789c0b4f010c2aafd39375"
+    },
+    {
+      "path": "assets/blind-hole-hex-base.png",
+      "bytes": 217108,
+      "sha256": "776f841c94ccf5721d56794a09c62a80fc377f35d586599afd42b1be169a3dcd"
+    },
+    {
+      "path": "assets/data-manifest.json",
+      "bytes": 2230,
+      "sha256": "b747647323362154d758a3272411c79fd50d26e7202a333377ec5a46907e071e"
+    },
+    {
+      "path": "assets/l-bracket.png",
+      "bytes": 169240,
+      "sha256": "896c6425d9559afe6fdbb4bb199f7b3aa4c0ead7c7cea347e81a44c5ef043cd0"
+    },
+    {
+      "path": "assets/model-a.png",
+      "bytes": 175688,
+      "sha256": "2b06a3c4c75d9f82a7604b17fc4ed34e4872b43d72430f2800dffddf1800ef62"
+    },
+    {
+      "path": "assets/overview.png",
+      "bytes": 772357,
+      "sha256": "5f0ea012668fd11a637d3e9c16dd228cb3e270c0ef467d4446e27c65fdf7e083"
+    },
+    {
+      "path": "assets/stepped-cylinder.png",
+      "bytes": 204611,
+      "sha256": "f617d6592f2ce8cd4c2d0459bfb1290236cdfccac54483e6bd4ae690d4bad463"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1755,
+      "sha256": "db7b2d3a9e93f72b8c22a5aa8d025d33073379f91a46b76456df5c39a7e326e7"
+    },
+    {
+      "path": "data/recovered/README.md",
+      "bytes": 513,
+      "sha256": "29d7c9208c8aa8d28562f345e56341c9a2104fa88db2d918be6a0b3c47bba9dc"
+    },
+    {
+      "path": "data/recovered/Result_Blind-Hole Hex Base_fixed.csv",
+      "bytes": 899402,
+      "sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 2383,
+      "sha256": "ad3b92c2685d3ac20c61e2aa8ca4260bcd0aa0d8c41fb74300071febd5691855"
+    },
+    {
+      "path": "docs/build-status.md",
+      "bytes": 1222,
+      "sha256": "4dfcb59bcaa0799109e3bfa43248777942891b43c80637b778ac6aaea3faae92"
+    },
+    {
+      "path": "docs/development-notes.md",
+      "bytes": 631,
+      "sha256": "d0d6d3c63921b748cb2149c8eaee0cbbd523d77f62de9632135c54adce761f82"
+    },
+    {
+      "path": "docs/environment.md",
+      "bytes": 2243,
+      "sha256": "e29dc2e5915bbdadaca7110b42b1ea2870deb49fb8aeca4d83066270776c5bfd"
+    },
+    {
+      "path": "docs/maintaining.md",
+      "bytes": 1432,
+      "sha256": "8c8dff0cd304cdb6fcee3d67b92023f295af492780416b8fd18310515e024e94"
+    },
+    {
+      "path": "docs/packaging-qa.md",
+      "bytes": 1995,
+      "sha256": "d39a30027c76c587e9abc057a5a0561a1b4da48610cef47731d8d91463ad4709"
+    },
+    {
+      "path": "docs/second-pass-review.md",
+      "bytes": 2432,
+      "sha256": "47ce9fea63d7fcc1574d25e8a40e78f1bdf9450486738d05cc4e055e68ee0809"
+    },
+    {
+      "path": "docs/source-versions.md",
+      "bytes": 2511,
+      "sha256": "31c6ddab4e6ce36b42c5214a566e846210fb2dcff2e02d07d584c952bf51d38e"
+    },
+    {
+      "path": "docs/validation.md",
+      "bytes": 2069,
+      "sha256": "034d25bf57de6eefe8b497de5c841e4a7721fbd0633e4d98c2d4642181100ce6"
+    },
+    {
+      "path": "examples/cases.json",
+      "bytes": 12716,
+      "sha256": "86fd78b2bdc3a0e9fe1fadd68f9a7bcc650c453f775d728f5210b283d857b844"
+    },
+    {
+      "path": "examples/segmentation.json",
+      "bytes": 2929,
+      "sha256": "767724e71c784551b8434665f5f3e42a43a962c76867b5a9bbe0094595534175"
+    },
+    {
+      "path": "EXPERIMENT_LOG.md",
+      "bytes": 10873,
+      "sha256": "b52d55a1027ce5f81ae0c63e3d382da6a1e7c8469c37152be9a1aa78563be712"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1082,
+      "sha256": "4ca7ec6d18aee262da7f7a31ed54a595fd12dd3a4d20760a9304d82523b32e77"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 794,
+      "sha256": "f571a2408ad193e7ab969afdad83dc8e628e9c5e688fcb8d5400f7135a913132"
+    },
+    {
+      "path": "paper/README.md",
+      "bytes": 2237,
+      "sha256": "595452054fc5c5fcc0c26ce26b152e2e6528dbd9c9a8dbb81227ccb8cca7a858"
+    },
+    {
+      "path": "paper/thesis-public-snapshot-20261105.pdf",
+      "bytes": 2260993,
+      "sha256": "1f867bb8877e0a44207b37386719199ea63beff6778706378e663a0f603ae10c"
+    },
+    {
+      "path": "provenance/copied-sources.json",
+      "bytes": 85221,
+      "sha256": "3cd2f06cf1539d50ba75777f3fa0b1f3098ad4304441a6d3fb404eab39bf6340"
+    },
+    {
+      "path": "provenance/csharp-project-audit.json",
+      "bytes": 4860,
+      "sha256": "0726db4a66efa579f6cd16c96c4a920c6c871157c316b8c49a5720adbbd859c4"
+    },
+    {
+      "path": "provenance/file-manifest.csv",
+      "bytes": 63966,
+      "sha256": "4bae72515d0398136cd43b0a1c1940dd2ed4c956a1f100b4210b3841873650fd"
+    },
+    {
+      "path": "provenance/historical-json-notes.json",
+      "bytes": 281,
+      "sha256": "a3eeabe1d6506dff507cd72f60c67222573410dbb4e809c6e2632dae5770c11d"
+    },
+    {
+      "path": "provenance/history/csharp-project-audit-preparation-2026-11-05.json",
+      "bytes": 3952,
+      "sha256": "3a241fd5f781cd24d94122c273332c961bef1dd2c73a1e4901ee1c89ff77fdb9"
+    },
+    {
+      "path": "provenance/history/packaging-qa-preparation-2026-11-05.txt",
+      "bytes": 2449,
+      "sha256": "1e95bfa332d50c6e7dcb9016d529f97228e031bf7c9b7d33db4628af5e349ed9"
+    },
+    {
+      "path": "provenance/history/source-versions-preparation-2026-11-05.json",
+      "bytes": 17405,
+      "sha256": "5e1ee6d5eb162a0f54d801cc8fc8fa05fc4e5370ae40b6a22122116d8620d07b"
+    },
+    {
+      "path": "provenance/history/source-versions-verification-2026-11-05.json",
+      "bytes": 18644,
+      "sha256": "eaadca8e30fa10cb6a1b1825cae722bdb24c3ca3e41431e18f95a9a5df0a78db"
+    },
+    {
+      "path": "provenance/python-import-audit.json",
+      "bytes": 5202,
+      "sha256": "b6cc6887fd35243a61071b531f30ed1cec6d27077e831209ede6e2a9659d8410"
+    },
+    {
+      "path": "provenance/recovered-blind-input.json",
+      "bytes": 1166,
+      "sha256": "b4e929c706d4216857022b74bac50c685eac30de6b8fe786822caf03cac98e54"
+    },
+    {
+      "path": "provenance/restored-build-files.json",
+      "bytes": 2560,
+      "sha256": "0ba00ddf0e709893077d0de057df091ded740f34a747177117278d0d147f7a97"
+    },
+    {
+      "path": "provenance/source-versions.json",
+      "bytes": 19917,
+      "sha256": "7b664fe780b5f49e8a4cfbb7fddeb5e6bc8915bc10d23b4af94c390410e8bce7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5759,
+      "sha256": "0b6803569b75853de5c1b253d9afe98f0d3f0cd1111782d32aa64ec48bffc664"
+    },
+    {
+      "path": "requirements-observed.txt",
+      "bytes": 232,
+      "sha256": "d44a22bf001b51d16dd9528e3e622af507da947a830b5a70a0f983a61a3e5e3f"
+    },
+    {
+      "path": "requirements.lock.txt",
+      "bytes": 303,
+      "sha256": "fce921ef42e8c254c73fbc9f8d40cc65434c73d0500e4580a932d6720c71b26e"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 110,
+      "sha256": "c6d109b3ce607beb850443b70f1b840083b5c0871561f204716b2f30f7b5a084"
+    },
+    {
+      "path": "research/README.md",
+      "bytes": 1338,
+      "sha256": "95688689476ca3deb5760a4e2733261a7258b63ecce64ea88c7683560e592cde"
+    },
+    {
+      "path": "research/tools/audit_sampling_density_260731.py",
+      "bytes": 4892,
+      "sha256": "c918e740c096453ea57bf113ded4fd44e5878afeb09af1b992d5bef9c069e163"
+    },
+    {
+      "path": "research/tools/build_lbracket_modela_independent_truth.py",
+      "bytes": 36412,
+      "sha256": "57e9052bf99fcca6d9f4eb280a06e7f226d9c201b03b16805ca62feef9de6671"
+    },
+    {
+      "path": "research/tools/build_stepped_cylinder_independent_truth.py",
+      "bytes": 21565,
+      "sha256": "2aab8a861c110486080611e6462cf6a4ba67e9ed4c1ed0b0aa6b9b75e1b8aaea"
+    },
+    {
+      "path": "research/tools/compare_method_inference_reproducibility.py",
+      "bytes": 2245,
+      "sha256": "3d9a2f2a242e8edf7ffadf4402cd5693bc6dc93c9a55c3d40994303d902b85fc"
+    },
+    {
+      "path": "research/tools/correct_lbracket_modela_verified_v2.py",
+      "bytes": 22832,
+      "sha256": "8a7ac16c174cb145310408c953b9793b46e4a1337e9f17ef88407906719f423d"
+    },
+    {
+      "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+      "bytes": 15856,
+      "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d"
+    },
+    {
+      "path": "research/tools/export_blend_evaluated_mesh_for_truth.py",
+      "bytes": 2528,
+      "sha256": "6034e9ef430b087fd9d7bf7bc2c4ec88e2398773688dd49d70bc9ca221f25d94"
+    },
+    {
+      "path": "research/tools/generate_blind_hole_figure_4_11a_topology_matrix.py",
+      "bytes": 21806,
+      "sha256": "e065b1f0d36c4b8ba90766b10fe58ead335c012c381979788b30f76f27f4bf7c"
+    },
+    {
+      "path": "research/tools/generate_blind_hole_figure_4_11b_spatial.py",
+      "bytes": 21363,
+      "sha256": "874770091c26f93545d9c910dba61152ef727b0ff0be070343cd361ab08c0e4e"
+    },
+    {
+      "path": "research/tools/generate_blind_hole_hex_base_figure_4_10_segmentation.py",
+      "bytes": 13041,
+      "sha256": "cf516aa328bdd1d590e162d220ea3a80e3307683d82d39fd64f96da6de9488d9"
+    },
+    {
+      "path": "research/tools/generate_lbracket_chapter3_matrix_and_visual.py",
+      "bytes": 12307,
+      "sha256": "c14bab2774f0310b5636b1e3c43cf825b90499975ffac48ec1c179a39e1eb642"
+    },
+    {
+      "path": "research/tools/generate_lbracket_chapter3_topology_boundary_figure.py",
+      "bytes": 10727,
+      "sha256": "d893a1d604ce1e728ff134b627a3fd57206b32f392487fe00d2d38fbae7271e5"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5a_topology_matrix_v4.py",
+      "bytes": 14168,
+      "sha256": "633b5bc42cf199e2f6d4f22418f1c253850d873dd031e0a35ab1ea0cf018ce92"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_alternatives.py",
+      "bytes": 11938,
+      "sha256": "73523efccbe39d0ad6454d25852481c2824c0ea604cf320521f1c71cf0ff0eff"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_spatial_v8.py",
+      "bytes": 11774,
+      "sha256": "6b82c84286f36fc6ece7c961c7525d83b22c602eda36abf3735cd51d13b0c0a8"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v1.py",
+      "bytes": 10995,
+      "sha256": "796eee9b374091459b06c238b56b695a9205bf4ee152255166050abbac639838"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v3.py",
+      "bytes": 11290,
+      "sha256": "a9fef7f241a8638ddec4e27ddb15144abfd0758b3b562c17d21fe95c6b2066d4"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v4.py",
+      "bytes": 11726,
+      "sha256": "baf4384c2b882fce68846f39dbd4f842919b275db7c3acde519d1dfc88fd700d"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v5.py",
+      "bytes": 12612,
+      "sha256": "b7752be5f55c78dd7616f02454303ae3f108928ecb0e39dc33b4e4081f7b5fbe"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v6.py",
+      "bytes": 12048,
+      "sha256": "1ec37e0137648c41bc468e6181e56641e2d5850205aeb77555b99d8bbc70fc57"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_graph_v7.py",
+      "bytes": 12314,
+      "sha256": "a428a48028a8ab2db0d71a0c9f265d6f6084d93eeab155ebfa39ee32664789c6"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_5b_topology_spatial_v1.py",
+      "bytes": 12028,
+      "sha256": "c398d7aaeeb95c16cdfdec45eb1418c74facc97afe879e7421bda44e11fdc1a3"
+    },
+    {
+      "path": "research/tools/generate_lbracket_figure_4_6_csg.py",
+      "bytes": 8475,
+      "sha256": "8bb78f92e59701b65628c13d02f03aa1494957265a9f660668e6e54a77a2b324"
+    },
+    {
+      "path": "research/tools/generate_lbracket_v3_figure_4_4_segmentation.py",
+      "bytes": 16869,
+      "sha256": "89f38e0ca762b8999e081bf25393dd01ea0ff4159d07c4f58f18751b8de4ba38"
+    },
+    {
+      "path": "research/tools/generate_model_a_v3_figure_4_7_segmentation.py",
+      "bytes": 29367,
+      "sha256": "7971e34f177fe31cbf3300784330070fcb105f06aac764d6812b075420d8e6c0"
+    },
+    {
+      "path": "research/tools/generate_sc_figure_4_2b_spatial.py",
+      "bytes": 11762,
+      "sha256": "7892aa2ad775f58623be99c33de51d75067a3943c203a51111386d58aff6176c"
+    },
+    {
+      "path": "research/tools/generate_sc_figure_4_3_csg_3d.py",
+      "bytes": 7596,
+      "sha256": "bd921ed89b4b7dd2da273cd1a79ebe65b2ad55a7e2ab55b8d10043fc5a259c8e"
+    },
+    {
+      "path": "research/tools/generate_stepped_cylinder_v3_figure_4_1_segmentation.py",
+      "bytes": 17123,
+      "sha256": "d8f98d54b9a0340a609c464a1ef36bb34b47d290f2256119fa055f5c4ab20ff7"
+    },
+    {
+      "path": "research/tools/generate_stepped_cylinder_v3_figure_4_2a_topology_matrix.py",
+      "bytes": 16668,
+      "sha256": "a66b66981a02e559828287c41dcd08ecf0d2182b26f0cc2a0f538a493f8a82a1"
+    },
+    {
+      "path": "research/tools/generate_stepped_cylinder_v3_figure_4_2b_topology_spatial.py",
+      "bytes": 21214,
+      "sha256": "88b52960e84ed6916b69a8912e4906c6a1ebd436a23dc1f3cda6abedced32ef0"
+    },
+    {
+      "path": "research/tools/generate_stepped_cylinder_v3_figure_4_3_csg_tree.py",
+      "bytes": 20181,
+      "sha256": "51f65aaadb5da67a556482cfc6d5ce3c3c94fe2ec02ec13bcd065c7226082aba"
+    },
+    {
+      "path": "research/tools/infer_blind_hole_hex_base_chapter3_method.py",
+      "bytes": 24663,
+      "sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a"
+    },
+    {
+      "path": "research/tools/infer_lbracket_chapter3_method.py",
+      "bytes": 32441,
+      "sha256": "a4a728f94b805d0fcdf45eefe937aed55442bfff69e9aeff39184ba3d817d9ec"
+    },
+    {
+      "path": "research/tools/infer_model_a_chapter3_method.py",
+      "bytes": 39341,
+      "sha256": "8d9dcaa64389dfdbe29124894ebc060badab71e710e49b22c025299e1c22efa0"
+    },
+    {
+      "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+      "bytes": 28408,
+      "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c"
+    },
+    {
+      "path": "research/tools/run_threshold_sensitivity_260731.py",
+      "bytes": 8947,
+      "sha256": "9183c257090365df1a95ec18e91c99b99349ad1093795f663c791f27bd505d10"
+    },
+    {
+      "path": "research/tools/validate_blind_hole_hex_base_chapter3_method.py",
+      "bytes": 2872,
+      "sha256": "f2f73dad0062be4a2bc9bbc33b00592523992fb75b6b26eaa98940c837ca16a5"
+    },
+    {
+      "path": "research/tools/validate_lbracket_chapter3_method.py",
+      "bytes": 15029,
+      "sha256": "055e06b11285667546d778c1e44945bafda7e613fce3d0a58711b8f29480fd31"
+    },
+    {
+      "path": "research/tools/validate_lbracket_modela_v2.py",
+      "bytes": 17773,
+      "sha256": "b470ce9fcfee34ef89e94128ba5fc6672085a5712d19c29deef341dba0ef03d8"
+    },
+    {
+      "path": "research/tools/validate_model_a_chapter3_method.py",
+      "bytes": 17857,
+      "sha256": "c7b2954321559d0835270714c71956332834540951dd375ad678d51e20f76ff9"
+    },
+    {
+      "path": "research/tools/validate_stepped_cylinder_against_independent_truth.py",
+      "bytes": 34264,
+      "sha256": "2a415128018418fb8281630af84a763c9166b9935f89f83aaf49fd4ed3cbc641"
+    },
+    {
+      "path": "research/碩士論文/審查報告/敏感度分析_260731/sampling_density_evidence.json",
+      "bytes": 2768,
+      "sha256": "e12cf6fff7f47449936df20ee787596607031e4f6e70bb1f7d4585faa4e5ff65"
+    },
+    {
+      "path": "research/碩士論文/審查報告/敏感度分析_260731/sensitivity_results.json",
+      "bytes": 51927,
+      "sha256": "e9a46e86a68fa88a1f5962c5b55b2617c9b079a8ba4f94609da964f51edba905"
+    },
+    {
+      "path": "research/碩士論文/審查報告/敏感度分析_260731/敏感度分析報告_260731.md",
+      "bytes": 3800,
+      "sha256": "6d61b8f23d402b6ceb1b60b4ac01b79866b9813ab91a83d5fcec6cf92e08d6de"
+    },
+    {
+      "path": "research/碩士論文/審查報告/敏感度分析_260731/點雲密度與門檻依據_260731.md",
+      "bytes": 1259,
+      "sha256": "4a5613e5a6d45bb7fbd0c49b6cc0c744f4ff3093f74ef8eab6b3617b1cb0d067"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/L_Bracket幾何邏輯.csproj",
+      "bytes": 2405,
+      "sha256": "0a5f2b7553e7cc7cbec40d3d17250871a9ea7a61c3e69687c45c3e3ca29439a4"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/L-Bracket 幾何邏輯.cs",
+      "bytes": 30930,
+      "sha256": "8c89ab35afb89363bbd232d347a6ad0cc8d875fd906350ad0b01d854da255ddc"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/Properties/AssemblyInfo.cs",
+      "bytes": 1332,
+      "sha256": "8257e8ccb3303bbc4b569491f2f1ca5564db7b6f3cf6ecb6b0276fbb72b548e3"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法.sln",
+      "bytes": 3603,
+      "sha256": "50fdd823d282df5579038016ba6ad20d91cdbb9bf0256edb8a3d388abb73afa5"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/Program.cs",
+      "bytes": 22844,
+      "sha256": "9c0bdabb6e05616fc8b07f564673387e68b8d8cbe4bfc16f9a6ee12fde73a293"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/Properties/AssemblyInfo.cs",
+      "bytes": 1382,
+      "sha256": "6ace847f8ae027845730e176f62137bf13fe8b9540435317191d4f60f52fd0c3"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/特徵辨識核心演算法Blind_Hole_Hex_Base.csproj",
+      "bytes": 2440,
+      "sha256": "a14c5f32b3ed59ad2a8615d2afa2a4daa36daea8e48a474a600e8ce521982ddf"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/packages.config",
+      "bytes": 242,
+      "sha256": "feb516ca341670e3aaf2ec722c41c2b720865a62761c8c2ce55302fc30796b08"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base_修正版.cs",
+      "bytes": 21992,
+      "sha256": "e9195504320c42a1b81e7ff79bd8038ac35b04d3521679eb346819cffdf8ef1e"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base.cs",
+      "bytes": 6358,
+      "sha256": "3a92f0594057586d70db1ac57c5e6c7d9e28aa412682135ab71dad222b22d2f3"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base.csproj",
+      "bytes": 3128,
+      "sha256": "2777b2d01953f18704534e8fadc10df086494f1fd266f19108763b53f821e2f8"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/Properties/AssemblyInfo.cs",
+      "bytes": 1362,
+      "sha256": "0a748d2b3ee4ff4c6620890b996acb98508df911a9d2fea21fc8903e4293bf72"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.cs",
+      "bytes": 6761,
+      "sha256": "34558d9baf3818508f8958eb0e4c33521879a330c4e74998df2d6b4a5cb8bb34"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.csproj",
+      "bytes": 2449,
+      "sha256": "31e75725bde1b83333a2fbb15b29c8563e021de3b643c91b338c370993dee378"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/Properties/AssemblyInfo.cs",
+      "bytes": 1358,
+      "sha256": "d5916cd673a05b8ae56c13c538f5b7b0f8c957686918af27662d682229bddd38"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.cs",
+      "bytes": 34202,
+      "sha256": "3cf04caae8a58f187e24bab3f8caf6c668941b8371797457026d0753561a8095"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.csproj",
+      "bytes": 2443,
+      "sha256": "bd778ba1ab84d49979503f846f107394972b1078ae5b739983ef06ccc15f5d12"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/Properties/AssemblyInfo.cs",
+      "bytes": 1344,
+      "sha256": "f2421a69317ec3dc219c42e00094e8718a9ffc8f7e472022828f71a25fb91758"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.cs",
+      "bytes": 5965,
+      "sha256": "a7cdd45d2269f955dbe51a1416dccf6d2c5a2287674a6da2a50259e3ca83ce58"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.csproj",
+      "bytes": 2402,
+      "sha256": "3504a63756490f32567f1ad9d4fd3eb1d07116e6d65aef92f1c1ccbf31a2d666"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/App.config",
+      "bytes": 187,
+      "sha256": "f82338e8e9c746b5d95cd2ccc7bf94dd5de2b9b8982fffddf2118e475de50e15"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/Program.cs",
+      "bytes": 6322,
+      "sha256": "3e57bb98a327bc184d4a4d1aa20dead1f42d295ab733430ff370d0d61acbcd57"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/Properties/AssemblyInfo.cs",
+      "bytes": 1374,
+      "sha256": "a516695eac3992b30e100d6873f7c5747ccdb625ae4fb17922a21e1c455ef0f0"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/特徵辨識核心演算法盲孔六角座.csproj",
+      "bytes": 2432,
+      "sha256": "d1f25d3f0fe54251c663581385d330b015f36af30404ac9d180c62d2b4be8316"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/CandidateMapping_Stepped_Cylinder.csv",
+      "bytes": 826,
+      "sha256": "fc689016dababb0bf34c667499e607a40f28f042fca0ec7c92d0bf010f9d27dd"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/GroundTruth_Stepped_Cylinder_independent.json",
+      "bytes": 11789,
+      "sha256": "9529b52379f3576f965caca71494feb81de01811007446b1d5f84a5e78352b0c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/IndependentTruthBuildManifest.json",
+      "bytes": 2107,
+      "sha256": "0370d24b919ea604affcb78c29391bbf76e14866916278af6415a407abe765ed"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/InputFreeze_Stepped_Cylinder.json",
+      "bytes": 955,
+      "sha256": "9595d5a15024f4de3d51a573fa394a17e754008541f0ffb016275b30b9b601af"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/Reproducibility_Stepped_Cylinder.json",
+      "bytes": 930,
+      "sha256": "4a7f9925fdf29f9d8a4718f1e8d673488ebf3a69907861751f23973673af78ee"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/SurfaceMapping_Stepped_Cylinder.csv",
+      "bytes": 2476,
+      "sha256": "e7f7501ade3cb87393db0f27c8b6ea4febc7e17e6e87b1a513eb8db545ad369f"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent/ValidationAgainstIndependentTruth_Stepped_Cylinder.json",
+      "bytes": 3499,
+      "sha256": "a0e4513037589c349f3fb8bc5e9d7f7f5edc1f95ad595e32a5a6e0af189a5a4b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/BlendEvaluatedMesh_L_Bracket.stl",
+      "bytes": 83099,
+      "sha256": "8b481d5b1e21662f3af8df33f0064ebcb828d92bb20c676682c2853765bc88d1"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/BlendEvaluatedMeshManifest_L_Bracket.json",
+      "bytes": 469,
+      "sha256": "13bde428aa030728bdebf27c93a36b6acac86d0f33d031e13efeff2c6a424fdf"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/CorrectionTrace_L_Bracket_chapter3.csv",
+      "bytes": 2804,
+      "sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/CSGTree_L_Bracket_chapter3_verified.json",
+      "bytes": 620,
+      "sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/FaceSummary_L_Bracket_chapter3_verified.csv",
+      "bytes": 3811,
+      "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/GroundTruth_L_Bracket_independent.json",
+      "bytes": 26488,
+      "sha256": "60cb1a13e1389d24d630a284474859025a8410d59cdfb8e326d77a72994e5e4c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/IndependentTruthBuildManifest_L_Bracket.json",
+      "bytes": 660,
+      "sha256": "71604bb7c3e76f207bc01780cad5f44ec74ecead4f6addb457aa32bd9b939676"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "bytes": 1747,
+      "sha256": "89c14010be012c93f6fd714e866cd3e72df290746ae39267de0e1f4da10e988b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+      "bytes": 767,
+      "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/Reproducibility_L_Bracket_chapter3_v3.json",
+      "bytes": 3039,
+      "sha256": "ed5d5b92e3d477c2c0b7f322a0d4d3bea8706877e49cef3ba094c862c40ceada"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/Result_L_Bracket_chapter3_verified.csv",
+      "bytes": 621036,
+      "sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/TopologyEdges_L_Bracket_chapter3_verified.csv",
+      "bytes": 2399,
+      "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/ValidationSummary_L_Bracket_chapter3.json",
+      "bytes": 8682,
+      "sha256": "7f2392929df702fde6722bbcd002c95fe45f9cff69fda8a02a5771bcb969e8da"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CandidateMapping_Stepped_Cylinder.csv",
+      "bytes": 896,
+      "sha256": "a05cab621483b79a1bfb82dba2861c9eebbfb01c9002a27e22810685d1ed4ea6"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+      "bytes": 1204,
+      "sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CSGTree_Stepped_Cylinder_chapter3_verified.json",
+      "bytes": 528,
+      "sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+      "bytes": 1953,
+      "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/IndependentTruthBuildManifest.json",
+      "bytes": 2152,
+      "sha256": "ca7899d0b5d41699e351e84827cfcdb265bcaf298079ee4fd66081577e35bd57"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "bytes": 3462,
+      "sha256": "b2c4bc4bd647d384f45524e0cd1ab9211e10a5d4b6dfc1a1481190858c6d4278"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+      "bytes": 497,
+      "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/Reproducibility_Stepped_Cylinder_chapter3.json",
+      "bytes": 2309,
+      "sha256": "d04f563551f91d7f849bb4528c0b184f6466add2d7bb7ec16eb38ac96ac5ebcd"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/Result_Stepped_Cylinder_chapter3_verified.csv",
+      "bytes": 819239,
+      "sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/SurfaceMapping_Stepped_Cylinder.csv",
+      "bytes": 2499,
+      "sha256": "19fd0b7cb460e3bea4613c6e6b8b362a3d54eda49c9fa5dda5103bd38932279d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+      "bytes": 761,
+      "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/ValidationAgainstIndependentTruth_Stepped_Cylinder.json",
+      "bytes": 3408,
+      "sha256": "32a0934d7a5ba1751ae68b1c3a0d2fefd978ce935372bee6b2985919f9683d93"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/ValidationSummary_Stepped_Cylinder_chapter3.json",
+      "bytes": 1800,
+      "sha256": "951d3deb4cfeeee37b3778ea5d31144f53235a1d1f66a3fbaf510e28393dc54d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CandidateMapping_Model_A_chapter3.csv",
+      "bytes": 931,
+      "sha256": "fa1708a784e0f85e32f926142d4c1236f1d297d5774caecda2812e5d50834c71"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CorrectionTrace_Model_A_chapter3.csv",
+      "bytes": 3028,
+      "sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CSGTree_Model_A_chapter3_verified.json",
+      "bytes": 672,
+      "sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/FaceSummary_Model_A_chapter3_verified.csv",
+      "bytes": 3795,
+      "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/MethodInferenceManifest_Model_A_chapter3.json",
+      "bytes": 6068,
+      "sha256": "6ccb0aa5fd2d69ff788bf6103f0107b9a1a1a8667361e253c8391e6aa78813aa"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+      "bytes": 1030,
+      "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/Reproducibility_Model_A_chapter3.json",
+      "bytes": 2237,
+      "sha256": "d169e2ecf8638d4837938681814ed5da0e6369ccafe0d3e0cefd28d788ec1c5d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/Result_Model_A_chapter3_verified.csv",
+      "bytes": 833801,
+      "sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/SurfaceMapping_Model_A_chapter3.csv",
+      "bytes": 1192,
+      "sha256": "a53c71bd0dac146f10dd860944caeb57aa620ed4e22ca5a066bae6ce4b5ebc3f"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/TopologyEdges_Model_A_chapter3_verified.csv",
+      "bytes": 2898,
+      "sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/ValidationAgainstIndependentTruth_Model_A.json",
+      "bytes": 2160,
+      "sha256": "d48bd649ab6a5e6458c132c83234eab898f12b7c38e56baf7378b58068563771"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/BlendEvaluatedMesh_Model_A.stl",
+      "bytes": 209332,
+      "sha256": "304cd84216052b0612d6486b34feefe91cc74e95fd763c6f451eb16bfdcbba7d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/BlendEvaluatedMeshManifest_Model_A.json",
+      "bytes": 483,
+      "sha256": "c68d89ef53e7d97c4b8bb819aab600365cb735a4ae37052a212940ee8f074652"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CandidateMapping_Model_A.csv",
+      "bytes": 420,
+      "sha256": "10f6ba4760ad4564ff934e340aef17802ccf522e2134352fcc148fa41f9ba65a"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CorrectionManifest_Model_A_v2.json",
+      "bytes": 2501,
+      "sha256": "c655ac2fb3c9ea248d8da617696ffa7c1823127e56c3189c49a52ae0cbabdf63"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CorrectionTrace_Model_A_v2.csv",
+      "bytes": 2889,
+      "sha256": "dfe2ef87c3e848d9e3e79b1ff545568aa5ecfdf6f1c4b0e4bec2ed6386f649d0"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/CSGTree_Model_A_verified_v2.json",
+      "bytes": 606,
+      "sha256": "27b8307b061016e75a41481729d3d9d2ce8c6dc0d5162635ab1987ffe6b042b2"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/FaceSummary_Model_A_verified_v2.csv",
+      "bytes": 4234,
+      "sha256": "a84bffc50e55256ba901a85599c1a94e2b47adfb1898d1510ab12cf40c4af201"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/GroundTruth_Model_A_independent.json",
+      "bytes": 35867,
+      "sha256": "8ba2848b63f96fe3a95289052118b805baa8db978ffc88b04929e899ff63f1d1"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/IndependentTruthBuildManifest_Model_A.json",
+      "bytes": 654,
+      "sha256": "bc7c795ad9c81f5a754efa6f6ca0c9957d31af97c331b3dbb67fdb19287d803c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/PrimitiveCandidates_Model_A_verified_v2.csv",
+      "bytes": 685,
+      "sha256": "47911f398dc20a02a467ded96afe6eeb8064c51dba28e6375433e6ab7cd493bf"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/Result_Model_A_verified_v2.csv",
+      "bytes": 999920,
+      "sha256": "39df3c379bb5156b07b2e9eeb7f8a594cf8d12ee310f0c220c42d4e829b7fa2f"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/SurfaceMapping_Model_A.csv",
+      "bytes": 1015,
+      "sha256": "da84d3299fbf1e4b9cd98b5d2e272977af0418a40d789b3246f3066d70860091"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/TopologyEdges_Model_A_verified_v2.csv",
+      "bytes": 1409,
+      "sha256": "b54b95eb04a2d26998ea171e1a211e0d06df4d39d93538b4382bd7c585d7564b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_verified_v2/ValidationSummary_Model_A_v2.json",
+      "bytes": 8856,
+      "sha256": "33bee75001c29fdc81e4034123778671324e0f26c89755de4a71683156b4a21b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CandidateMapping_Blind_Hole_Hex_Base_chapter3.csv",
+      "bytes": 537,
+      "sha256": "e51d7beada619be1bc83fadecd42b15d0ea4087138c4f1bc3ad4eb4e643210cb"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+      "bytes": 838,
+      "sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+      "bytes": 519,
+      "sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "bytes": 3419,
+      "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "bytes": 4905,
+      "sha256": "ceaab04a23aeacfe66a087c92e0fe4c081517e0c37d28cb941a0ceef593f5f83"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "bytes": 609,
+      "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "bytes": 889401,
+      "sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/SurfaceMapping_Blind_Hole_Hex_Base_chapter3.csv",
+      "bytes": 1053,
+      "sha256": "d0b04da2d65a5ca27c9f460822057c4a956252e33aacb5df73d1949e6cd4a61c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "bytes": 2454,
+      "sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/ValidationAgainstIndependentTruth_Blind_Hole_Hex_Base.json",
+      "bytes": 2168,
+      "sha256": "1e98703b7065f27283fdca6fd62e9b042f395d868a4eb3cecda5770fd66a5833"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/Blind_Hole_Hex_Base_blend_manifest.json",
+      "bytes": 491,
+      "sha256": "46c909a556ed9d4987364b8b633cebf71bea033c651d34e3b71c20ccf44e18f8"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/Blind_Hole_Hex_Base_evaluated.stl",
+      "bytes": 102903,
+      "sha256": "976af76f3aab6b640295c72e66f6862fdefe5766b1ff9d8f67582b27cde9a552"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/GroundTruth_Blind_Hole_Hex_Base.json",
+      "bytes": 26214,
+      "sha256": "62de5303de7cad5641f0740e5f4960f04ce5fe4e638f5ed0c946bdfe7f97278b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_truth/GroundTruthManifest_Blind_Hole_Hex_Base.json",
+      "bytes": 669,
+      "sha256": "2f4379696326c94bd529d60ebdbf34f0dee9e359b46f9b3adfea016634f3ddca"
+    },
+    {
+      "path": "research/零件/Blind-Hole Hex Base.blend",
+      "bytes": 342645,
+      "sha256": "10340e577608d5024997b800a896ab348ef9e3b51bb798536133b16985339770"
+    },
+    {
+      "path": "research/零件/Blind-Hole Hex Base點雲.csv",
+      "bytes": 751909,
+      "sha256": "7e757e2848a4f4ca0f123b2326a07716601bfdab1a962c3b020b418baccb7bc2"
+    },
+    {
+      "path": "research/零件/L-Bracket-blend-code.txt",
+      "bytes": 6558,
+      "sha256": "22058236eafe67990c2b0c8d732847ffaef0223724cfe21599f77a3c310bb8b1"
+    },
+    {
+      "path": "research/零件/L-Bracket.blend",
+      "bytes": 312976,
+      "sha256": "dcfcbe4cca484b8e9cfc2e11a3b011926a198b2a6f5ef136d6ccdf7af3de5772"
+    },
+    {
+      "path": "research/零件/L-Bracket.stl",
+      "bytes": 101921,
+      "sha256": "01a8b2eb37f9a2e1ddfa4f3f0ccf368ffe08fc001767990b5f32801ea25a1bc6"
+    },
+    {
+      "path": "research/零件/L-Bracket點雲.csv",
+      "bytes": 583522,
+      "sha256": "769d9cd8aaa25c41755944cdd2423e20a5747e9a31df9db6a03edd723c23e41c"
+    },
+    {
+      "path": "research/零件/Model A-blend-code.txt",
+      "bytes": 6556,
+      "sha256": "fc7eb47cc09f99f8877ca419b416bf12c5f2cb9b58d75a89e2ab4efdc818277f"
+    },
+    {
+      "path": "research/零件/Model A.blend",
+      "bytes": 353547,
+      "sha256": "20f65d8e9460900314354bba2aae1a0d15c5b4bc4572575adc3daf662c5aabed"
+    },
+    {
+      "path": "research/零件/Model A.stl",
+      "bytes": 234212,
+      "sha256": "bbe3d96fbbb2f8f7f0e56e619f085b1ef113df6e7eb084fb1c8ff7d845e8f742"
+    },
+    {
+      "path": "research/零件/Model A點雲.csv",
+      "bytes": 751288,
+      "sha256": "f10f952e4b2ba7f02d45011c2a8f35b32ae73553845b5bdd1ac07dc04db1b436"
+    },
+    {
+      "path": "research/零件/Result_Blind-Hole Hex Base_fixed.csv",
+      "bytes": 852054,
+      "sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d"
+    },
+    {
+      "path": "research/零件/Result_Blind-Hole Hex Base.csv",
+      "bytes": 707753,
+      "sha256": "19d0162980fd330f66f1c01e3a2e6c32aca37041b729a427057a7f99ecce5590"
+    },
+    {
+      "path": "research/零件/Result_L Bracket.csv",
+      "bytes": 553145,
+      "sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00"
+    },
+    {
+      "path": "research/零件/Result_Model A.csv",
+      "bytes": 843907,
+      "sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d"
+    },
+    {
+      "path": "research/零件/Result_Stepped Cylinder.csv",
+      "bytes": 829240,
+      "sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25"
+    },
+    {
+      "path": "research/零件/Stepped Cylinder-blend-code.txt",
+      "bytes": 6565,
+      "sha256": "7992403db85f6408faef53d42b3670084c5fd0bd522cb7f4b87270cc39b063f3"
+    },
+    {
+      "path": "research/零件/Stepped Cylinder.blend",
+      "bytes": 359730,
+      "sha256": "2448a7b8cf43864c0b052e7102d806d2eae034885717f06a7b06ae7e6b5149cd"
+    },
+    {
+      "path": "research/零件/Stepped Cylinder.stl",
+      "bytes": 159449,
+      "sha256": "3afd1e517cd6484a89a16615e163c0d580766f07e4025ba517921fd2e4adaf4d"
+    },
+    {
+      "path": "research/零件/Stepped Cylinder點雲.csv",
+      "bytes": 894717,
+      "sha256": "dc245b8c26324a63179f26dc9039c03639c48e9aa417bb7a5468bbb4ad3f10cc"
+    },
+    {
+      "path": "research/零件/均勻點雲CODE.txt",
+      "bytes": 6567,
+      "sha256": "a118c297696fc88d38365786c71185845c9c1c0280625a2f0794dbae24a80c71"
+    },
+    {
+      "path": "research/零件/網格點雲CODE.txt",
+      "bytes": 7989,
+      "sha256": "bb93f5cfe79887d11fd82c27c8a40768eb271d0803134cb3618bca78dbd74e3d"
+    },
+    {
+      "path": "src/adapter/ClassifierLibrary.csproj",
+      "bytes": 861,
+      "sha256": "649a0f0de61bfc0da1c8ce74bbf57895ba400df5662d4a39f230b5d7faa4c51f"
+    },
+    {
+      "path": "src/adapter/ClassifierRunner.cs",
+      "bytes": 2652,
+      "sha256": "91f3f197ab99a96165ba227b8bf5ab922ddfa97b3d720ba610777d6761c41d9a"
+    },
+    {
+      "path": "src/adapter/ClassifierRunner.csproj",
+      "bytes": 647,
+      "sha256": "6d0c0b0553f1276b84c4aaa66079fb5b949be230ad6f87f5e53612b5bc88210a"
+    },
+    {
+      "path": "src/adapter/CoreClassifier.csproj",
+      "bytes": 400,
+      "sha256": "0625d2f1b0e5b1cea6785093b016282d7724a9e88f117a57f5eef984698659df"
+    },
+    {
+      "path": "src/adapter/CoreRunner.csproj",
+      "bytes": 395,
+      "sha256": "9545b74a939988929509da4b0cddc2ebcbbf8eb9f474101d59b8a34a0f1812aa"
+    },
+    {
+      "path": "tests/test_tool_guards.py",
+      "bytes": 7330,
+      "sha256": "46b7f291a122bc7c809380847d84dc6080c8c9b2d58e9c14d9b2f2ec4295cc21"
+    },
+    {
+      "path": "tools/bootstrap.ps1",
+      "bytes": 2720,
+      "sha256": "84612b8becbe63db9efda65ec197b82dd01e3d8ec0f4d42d7068c89e8decffff"
+    },
+    {
+      "path": "tools/build-csharp.ps1",
+      "bytes": 3842,
+      "sha256": "1cf4816358263703d34c39e7e7edff2b420dc6e0293097e66cb3550673a38e3d"
+    },
+    {
+      "path": "tools/render-gallery.py",
+      "bytes": 4032,
+      "sha256": "b40199350ac145790c997a6d65ed77ca10d7f1670fb16c5a45865ab0f977602b"
+    },
+    {
+      "path": "tools/run-from-point-cloud.py",
+      "bytes": 8914,
+      "sha256": "fc47a9810cf793ea96599053a43abea6943ff0a9632526ebd69b8c67d1ece094"
+    },
+    {
+      "path": "tools/seal-release.mjs",
+      "bytes": 2066,
+      "sha256": "da8593e399f2ea9d4bbba01593d7c1cad12f3b72c6fc78a49f3b277d45db6cef"
+    },
+    {
+      "path": "tools/verify-package.mjs",
+      "bytes": 2541,
+      "sha256": "9185be3a169d76becbda1e4f694912a6e351369a7fb920d03b7574717e05bc9b"
+    },
+    {
+      "path": "tools/verify-reproduction.py",
+      "bytes": 5248,
+      "sha256": "5f7deada051c272aaa8895f672a34e72b79244c3011668fcd275686e5d23bce6"
+    },
+    {
+      "path": "validation/2026-11-05/blind-historical-serialization-check.json",
+      "bytes": 684,
+      "sha256": "46bc6d2b584575641490ac4b9285b9900ac68eb860672a37a536d81374b3ad30"
+    },
+    {
+      "path": "validation/2026-11-05/blind-input-investigation.json",
+      "bytes": 360,
+      "sha256": "0cb799ed924b39b595634b9bea62dbb1c662828b0b817bf83dda0a6342d5a826"
+    },
+    {
+      "path": "validation/2026-11-05/build-results.json",
+      "bytes": 4468,
+      "sha256": "0f5285f699a47e2bc4a1efb67310690086efc878e89b87756aa5ec19654fe54e"
+    },
+    {
+      "path": "validation/2026-11-05/clean-environment-numpy240.json",
+      "bytes": 10110,
+      "sha256": "1ac14ad3f743789c790c316e5381087dd53a087160eb432acf9dd17e20c6067b"
+    },
+    {
+      "path": "validation/2026-11-05/clean-environment-numpy241.json",
+      "bytes": 10110,
+      "sha256": "318cd9eb621b347e5b397ddcba8e604ecac28006f067ed532f0f6592979d23a5"
+    },
+    {
+      "path": "validation/2026-11-05/environment-transition.json",
+      "bytes": 1047,
+      "sha256": "36ab20df2cde58d0f589612d646fe92c1c5bce26b7762eb5ca181bd4749b5d15"
+    },
+    {
+      "path": "validation/2026-11-05/environment.json",
+      "bytes": 464,
+      "sha256": "63f621720452c43fe62d248c6e10c19acbe4d2b550477fd85ae3f7384677e7e0"
+    },
+    {
+      "path": "validation/2026-11-05/initial-source-binding-attempt.json",
+      "bytes": 6885,
+      "sha256": "079212ede251f1ddbc8d30468a78133241607c041dfae07b74367e38334d4560"
+    },
+    {
+      "path": "validation/2026-11-05/relocated-inference-results.json",
+      "bytes": 10110,
+      "sha256": "318cd9eb621b347e5b397ddcba8e604ecac28006f067ed532f0f6592979d23a5"
+    },
+    {
+      "path": "validation/2026-11-05/relocated-pipeline-results.json",
+      "bytes": 8365,
+      "sha256": "e2fc317cea2b204face8e9be0f890ee6f79cd28344806625934cc0540f36f4f6"
+    },
+    {
+      "path": "validation/2026-11-05/reproduction-initial-results.json",
+      "bytes": 7986,
+      "sha256": "8900e3baad92c912fccb120003b7f0b9249930443e8d6695296c4404ddee4abc"
+    },
+    {
+      "path": "validation/2026-11-05/reproduction-recovered-blind-results.json",
+      "bytes": 2807,
+      "sha256": "5771fce7fa37f092b231b88d6e2e09ef8866ddbb8ac400dc7d094766f2612209"
+    },
+    {
+      "path": "validation/2026-11-05/reproduction-results.json",
+      "bytes": 10186,
+      "sha256": "cf79dbd58a9d2e7c02cf858c6dde8516d4db7529f7322504a1766fc0fd379417"
+    },
+    {
+      "path": "validation/2026-11-05/thesis-export.json",
+      "bytes": 830,
+      "sha256": "861c690d8efeb5415512abcf1d3c9d80f86b3e431866a360a56c8246aa033980"
+    },
+    {
+      "path": "validation/2026-11-05/thesis-render-checks.json",
+      "bytes": 852,
+      "sha256": "7815942577d91253acc5299069f6f58c4707bf3d3ff9e79a52800cccb5130950"
+    },
+    {
+      "path": "validation/2026-11-05/thesis-version-comparison.json",
+      "bytes": 555,
+      "sha256": "93f61bd701bcf5e2e3049552670a1e71a80442446266fd88e1f34d8352b628bb"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "case": "Model A",
+  "criterion": "two complete inference reruns must have identical filenames and SHA-256 hashes",
+  "run_1": "run1",
+  "run_2": "run2",
+  "filenames_match": true,
+  "files": [
+    {
+      "filename": "CSGTree_Model_A_chapter3_verified.json",
+      "run_1_sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+      "run_2_sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+      "match": true
+    },
+    {
+      "filename": "CorrectionTrace_Model_A_chapter3.csv",
+      "run_1_sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+      "run_2_sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+      "match": true
+    },
+    {
+      "filename": "FaceSummary_Model_A_chapter3_verified.csv",
+      "run_1_sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+      "run_2_sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+      "match": true
+    },
+    {
+      "filename": "MethodInferenceManifest_Model_A_chapter3.json",
+      "run_1_sha256": "6ccb0aa5fd2d69ff788bf6103f0107b9a1a1a8667361e253c8391e6aa78813aa",
+      "run_2_sha256": "6ccb0aa5fd2d69ff788bf6103f0107b9a1a1a8667361e253c8391e6aa78813aa",
+      "match": true
+    },
+    {
+      "filename": "PrimitiveCandidates_Model_A_chapter3_verified.csv",
+      "run_1_sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+      "run_2_sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+      "match": true
+    },
+    {
+      "filename": "Result_Model_A_chapter3_verified.csv",
+      "run_1_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+      "run_2_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+      "match": true
+    },
+    {
+      "filename": "TopologyEdges_Model_A_chapter3_verified.csv",
+      "run_1_sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+      "run_2_sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+      "match": true
+    }
+  ],
+  "overall": "PASS"
+}

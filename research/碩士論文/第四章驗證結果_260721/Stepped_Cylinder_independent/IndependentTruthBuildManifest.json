@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "case": "Stepped Cylinder",
+  "inputs": {
+    "truth": {
+      "filename": "GroundTruth_Stepped_Cylinder_independent.json",
+      "sha256": "9529b52379f3576f965caca71494feb81de01811007446b1d5f84a5e78352b0c"
+    },
+    "point_cloud": {
+      "filename": "Stepped Cylinder點雲.csv",
+      "sha256": "dc245b8c26324a63179f26dc9039c03639c48e9aa417bb7a5468bbb4ad3f10cc"
+    },
+    "original_result": {
+      "filename": "Result_Stepped Cylinder.csv",
+      "sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25"
+    },
+    "verified_result": {
+      "filename": "Result_Stepped_Cylinder_verified.csv",
+      "sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3"
+    },
+    "face_summary": {
+      "filename": "FaceSummary_Stepped_Cylinder_verified.csv",
+      "sha256": "e83d1bb910aa7437c40d049756696d53e4020e84479779c7dd77fcb48565f9f4"
+    },
+    "topology": {
+      "filename": "TopologyEdges_Stepped_Cylinder_verified.csv",
+      "sha256": "e812eb2a7fe2c4b8f2611381b2bdbf392538f6250d33eacd7c438831317aa4bb"
+    },
+    "candidates": {
+      "filename": "PrimitiveCandidates_Stepped_Cylinder_verified.csv",
+      "sha256": "f1704abab31a51b74d9e22ce6536f978d9f984cd52d98ec7001fbb886d05ab4b"
+    },
+    "csg": {
+      "filename": "CSGTree_Stepped_Cylinder_verified.json",
+      "sha256": "fa11232ddfba37092a63a8a91bde7d7bc436fa1c85dcb8b638718e45b701117d"
+    }
+  },
+  "programs": {
+    "truth_builder": {
+      "filename": "build_stepped_cylinder_independent_truth.py",
+      "sha256": "2aab8a861c110486080611e6462cf6a4ba67e9ed4c1ed0b0aa6b9b75e1b8aaea",
+      "permitted_runtime_input": "Stepped Cylinder.stl only"
+    },
+    "validator": {
+      "filename": "validate_stepped_cylinder_against_independent_truth.py",
+      "sha256": "2a415128018418fb8281630af84a763c9166b9935f89f83aaf49fd4ed3cbc641"
+    }
+  },
+  "forbidden_truth_builder_inputs": [
+    "point cloud",
+    "Result",
+    "FaceSummary",
+    "TopologyEdges",
+    "PrimitiveCandidates",
+    "prior GroundTruth"
+  ]
+}

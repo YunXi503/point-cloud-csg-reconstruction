@@ -1,0 +1,43 @@
+{
+  "purpose": "Portfolio preview, not a replacement for confirmed thesis figures",
+  "method": "All source rows shown without smoothing, geometry reconstruction, filtering or point subsampling",
+  "cases": [
+    {
+      "case": "stepped-cylinder",
+      "source": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/Result_Stepped_Cylinder_chapter3_verified.csv",
+      "source_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+      "point_rows": 10000,
+      "unassigned_rows": 0,
+      "output": "assets/stepped-cylinder.png",
+      "output_sha256": "f617d6592f2ce8cd4c2d0459bfb1290236cdfccac54483e6bd4ae690d4bad463"
+    },
+    {
+      "case": "l-bracket",
+      "source": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/Result_L_Bracket_chapter3_verified.csv",
+      "source_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+      "point_rows": 10000,
+      "unassigned_rows": 0,
+      "output": "assets/l-bracket.png",
+      "output_sha256": "896c6425d9559afe6fdbb4bb199f7b3aa4c0ead7c7cea347e81a44c5ef043cd0"
+    },
+    {
+      "case": "model-a",
+      "source": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/Result_Model_A_chapter3_verified.csv",
+      "source_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+      "point_rows": 10000,
+      "unassigned_rows": 0,
+      "output": "assets/model-a.png",
+      "output_sha256": "2b06a3c4c75d9f82a7604b17fc4ed34e4872b43d72430f2800dffddf1800ef62"
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "source": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "source_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+      "point_rows": 10000,
+      "unassigned_rows": 0,
+      "output": "assets/blind-hole-hex-base.png",
+      "output_sha256": "776f841c94ccf5721d56794a09c62a80fc377f35d586599afd42b1be169a3dcd"
+    }
+  ],
+  "overview_sha256": "5f0ea012668fd11a637d3e9c16dd228cb3e270c0ef467d4446e27c65fdf7e083"
+}

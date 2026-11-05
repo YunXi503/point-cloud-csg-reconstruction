@@ -1,0 +1,11 @@
+{
+  "blend_file": "C:\\Users\\Admin\\Desktop\\云析論文\\零件\\L-Bracket.blend",
+  "active_object": "L-Bracket",
+  "source_vertices": 196,
+  "source_polygons": 396,
+  "evaluated_vertices": 196,
+  "triangulated_faces": 396,
+  "output_mesh": "BlendEvaluatedMesh_L_Bracket.stl",
+  "output_sha256": "8b481d5b1e21662f3af8df33f0064ebcb828d92bb20c676682c2853765bc88d1",
+  "scope": "evaluated active mesh only; SamplePoints and NormalsLines are not exported"
+}

@@ -1,0 +1,23 @@
+﻿FromClusterID,ToClusterID,EdgeType,MinDistance,DirectionDot,DistanceThreshold,DirectionThreshold,RuleStatus,InferenceRule
+0,9,EndCap,0.096519062,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+0,10,EndCap,0.456908359,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+1,10,EndCap,0.675950373,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+1,11,EndCap,0.726819499,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+2,3,OrthogonalAdjacency,0.356866463,0.000000006,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+2,4,OrthogonalAdjacency,0.815154526,0.000000005,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+2,5,OrthogonalAdjacency,0.626690140,0.000000001,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+2,6,OrthogonalAdjacency,1.452852851,0.000000002,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+2,7,OrthogonalAdjacency,0.315104892,0.000000001,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+2,8,OrthogonalAdjacency,0.736272660,0.000000002,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+3,5,Adjacency,0.520761804,0.500000010,2.000000000,,PASS,finite-range contact
+3,8,Adjacency,0.303567473,0.499999982,2.000000000,,PASS,finite-range contact
+3,9,OrthogonalAdjacency,0.856199779,0.000000007,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+4,6,Adjacency,0.495395860,0.500000011,2.000000000,,PASS,finite-range contact
+4,7,Adjacency,1.003805281,0.499999980,2.000000000,,PASS,finite-range contact
+4,9,OrthogonalAdjacency,0.189669071,0.000000004,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+5,7,Adjacency,0.712967618,0.500000008,2.000000000,,PASS,finite-range contact
+5,9,OrthogonalAdjacency,0.482038175,0.000000002,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+6,8,Adjacency,0.237659310,0.500000009,2.000000000,,PASS,finite-range contact
+6,9,OrthogonalAdjacency,0.352192460,0.000000002,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+7,9,OrthogonalAdjacency,0.308247925,0.000000003,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+8,9,OrthogonalAdjacency,0.738369306,0.000000001,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2

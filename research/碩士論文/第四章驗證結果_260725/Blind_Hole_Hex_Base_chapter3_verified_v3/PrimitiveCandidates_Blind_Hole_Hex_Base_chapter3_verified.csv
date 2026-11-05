@@ -1,0 +1,4 @@
+﻿CandidateID,PrimitiveType,RelatedClusters,Length,Width,Height,Radius,Depth,BooleanType,InferenceRule,RuleStatus
+BH_D01,BlindHole,1;10;11,,,,22.467640162,50.000000000,Difference,cylinder side + two EndCap relations + radial normal sense; one EndCap plane is an interior disc covering the hole section,PASS
+BH_U01,HexagonalPrism,2;3;4;5;6;7;8;9,99.999999173,86.602539662,60.000000000,,,Union,six vertical planes at equal azimuth spacing bounded by the bottom and shelf planes,PASS
+BH_U02,OuterRingBoss,0;9;10,,,,34.969665407,15.000000000,Union,cylinder side + two EndCap relations + radial normal sense,PASS

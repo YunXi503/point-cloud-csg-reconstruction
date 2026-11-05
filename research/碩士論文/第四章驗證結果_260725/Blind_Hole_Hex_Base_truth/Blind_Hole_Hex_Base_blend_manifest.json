@@ -1,0 +1,11 @@
+{
+  "blend_file": "C:\\Users\\Admin\\Desktop\\云析論文\\零件\\Blind-Hole Hex Base.blend",
+  "active_object": "Hex Base with Hole A",
+  "source_vertices": 228,
+  "source_polygons": 452,
+  "evaluated_vertices": 228,
+  "triangulated_faces": 452,
+  "output_mesh": "Blind_Hole_Hex_Base_evaluated.stl",
+  "output_sha256": "976af76f3aab6b640295c72e66f6862fdefe5766b1ff9d8f67582b27cde9a552",
+  "scope": "evaluated active mesh only; SamplePoints and NormalsLines are not exported"
+}

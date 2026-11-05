@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "case": "Stepped Cylinder",
+  "policy": "Original evidence is read-only; corrected outputs must be versioned separately.",
+  "sha256": {
+    "零件/Stepped Cylinder.stl": "3afd1e517cd6484a89a16615e163c0d580766f07e4025ba517921fd2e4adaf4d",
+    "零件/Stepped Cylinder.blend": "2448a7b8cf43864c0b052e7102d806d2eae034885717f06a7b06ae7e6b5149cd",
+    "零件/Stepped Cylinder點雲.csv": "dc245b8c26324a63179f26dc9039c03639c48e9aa417bb7a5468bbb4ad3f10cc",
+    "零件/Result_Stepped Cylinder.csv": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+    "零件/FaceSummary_Stepped Cylinder.csv": "c8406adaf8d3cad57c46f0e2e64ee52c7d79e92f8726c024616ca7e5bb271374",
+    "零件/TopologyEdges_Stepped Cylinder.csv": "2f8a72233b128c1d936fa94f0e9e8d5455cfe580ff789c0b4f010c2aafd39375",
+    "零件/PrimitiveCandidates_Stepped Cylinder.csv": "e1dd1a7bff5007132f57a2e56c5a3a1b2a1f08e34e020de1e2bd0235f51129cf"
+  }
+}

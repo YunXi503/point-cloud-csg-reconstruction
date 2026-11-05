@@ -1,0 +1,20 @@
+{
+  "case": "Blind-Hole Hex Base",
+  "source": "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+  "canonicalization": "binary tree; Union candidates left-associated by CandidateID, then Difference subtractors applied in CandidateID order",
+  "tree": {
+    "op": "Difference",
+    "left": {
+      "op": "Union",
+      "left": {
+        "candidate": "BH_U01"
+      },
+      "right": {
+        "candidate": "BH_U02"
+      }
+    },
+    "right": {
+      "candidate": "BH_D01"
+    }
+  }
+}

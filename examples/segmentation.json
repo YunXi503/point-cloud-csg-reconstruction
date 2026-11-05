@@ -1,0 +1,51 @@
+[
+  {
+    "id": "stepped-cylinder",
+    "source": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.cs",
+    "source_sha256": "a7cdd45d2269f955dbe51a1416dccf6d2c5a2287674a6da2a50259e3ca83ce58",
+    "point_cloud": "research/零件/Stepped Cylinder點雲.csv",
+    "point_cloud_sha256": "dc245b8c26324a63179f26dc9039c03639c48e9aa417bb7a5468bbb4ad3f10cc",
+    "status": "validated-in-relocated-clean-environment",
+    "runtime": "net48",
+    "observed_runtime": "4.0.30319.42000",
+    "validation_report": "validation/2026-11-05/relocated-pipeline-results.json"
+  },
+  {
+    "id": "l-bracket",
+    "source": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/L-Bracket 幾何邏輯.cs",
+    "source_sha256": "8c89ab35afb89363bbd232d347a6ad0cc8d875fd906350ad0b01d854da255ddc",
+    "point_cloud": "research/零件/L-Bracket點雲.csv",
+    "point_cloud_sha256": "769d9cd8aaa25c41755944cdd2423e20a5747e9a31df9db6a03edd723c23e41c",
+    "status": "validated-in-relocated-clean-environment",
+    "previous_candidate": {
+      "source": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.cs",
+      "source_sha256": "34558d9baf3818508f8958eb0e4c33521879a330c4e74998df2d6b4a5cb8bb34",
+      "status": "298-cluster-label-cells-differ"
+    },
+    "runtime": "net48",
+    "observed_runtime": "4.0.30319.42000",
+    "validation_report": "validation/2026-11-05/relocated-pipeline-results.json"
+  },
+  {
+    "id": "model-a",
+    "source": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.cs",
+    "source_sha256": "3cf04caae8a58f187e24bab3f8caf6c668941b8371797457026d0753561a8095",
+    "point_cloud": "research/零件/Model A點雲.csv",
+    "point_cloud_sha256": "f10f952e4b2ba7f02d45011c2a8f35b32ae73553845b5bdd1ac07dc04db1b436",
+    "status": "validated-in-relocated-clean-environment",
+    "runtime": "net48",
+    "observed_runtime": "4.0.30319.42000",
+    "validation_report": "validation/2026-11-05/relocated-pipeline-results.json"
+  },
+  {
+    "id": "blind-hole-hex-base",
+    "source": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base_修正版.cs",
+    "source_sha256": "e9195504320c42a1b81e7ff79bd8038ac35b04d3521679eb346819cffdf8ef1e",
+    "point_cloud": "research/零件/Blind-Hole Hex Base點雲.csv",
+    "point_cloud_sha256": "7e757e2848a4f4ca0f123b2326a07716601bfdab1a962c3b020b418baccb7bc2",
+    "status": "validated-in-relocated-clean-environment",
+    "runtime": "net8.0",
+    "observed_runtime": "8.0.20",
+    "validation_report": "validation/2026-11-05/relocated-pipeline-results.json"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "word_sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+  "recorded_snapshot_source_sha256": "e09079dfb99af92aee5da8257fbbf3d8e1fcaab47bcb61db66d5c4797d498ae3",
+  "body_text_identical_to_recorded_snapshot": false,
+  "changed_hunks": 4,
+  "change_categories": [
+    "acknowledgment punctuation",
+    "table-of-contents page number",
+    "CSG terminology ordering",
+    "STL spacing",
+    "case/example wording"
+  ],
+  "word_omath": 97,
+  "source_inputs_unchanged": true,
+  "old_existing_pdf_not_used_as_final_source": true
+}

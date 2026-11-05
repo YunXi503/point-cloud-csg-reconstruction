@@ -1,0 +1,14 @@
+﻿TruthSurfaceID,ClusterID,SemanticRole,Geometry,PointCount,OriginalClusterDistribution,MappedTriangleCount,MappingStatus
+GT_MA_S00,0,web_rear,plane,990,"{""0"": 990}",33,PASS
+GT_MA_S01,1,main_ring_rear_end,plane,839,"{""1"": 839}",126,PASS
+GT_MA_S02,2,main_ring_front_end,plane,754,"{""2"": 754}",126,PASS
+GT_MA_S03,3,right_end,plane,731,"{""3"": 731}",65,PASS
+GT_MA_S04,4,body_bottom,plane,709,"{""4"": 600, ""9"": 53, ""14"": 56}",4,PASS
+GT_MA_S05,5,web_front,plane,648,"{""5"": 648}",34,PASS
+GT_MA_S06,6,web_oblique_top,plane,487,"{""6"": 424, ""9"": 63}",8,PASS
+GT_MA_S07,7,right_boss_base,plane,491,"{""7"": 491}",64,PASS
+GT_MA_S08,8,transition_top,plane,184,"{""8"": 135, ""14"": 49}",2,PASS
+GT_MA_S09,9,main_outer_ring_side,cylinder,1554,"{""9"": 1554}",202,PASS
+GT_MA_S10,10,main_ring_hole_side,cylinder,1642,"{""10"": 1642}",116,PASS
+GT_MA_S13,13,right_through_hole_side,cylinder,486,"{""11"": 19, ""13"": 467}",72,PASS
+GT_MA_S14,14,right_outer_boss_side,cylinder,485,"{""12"": 16, ""14"": 469}",50,PASS

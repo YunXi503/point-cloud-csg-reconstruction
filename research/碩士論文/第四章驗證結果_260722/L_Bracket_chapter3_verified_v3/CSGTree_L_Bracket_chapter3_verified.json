@@ -1,0 +1,30 @@
+{
+  "case": "L-Bracket",
+  "source": "PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+  "canonicalization": "Union children sorted by CandidateID; Difference subtractors sorted by CandidateID",
+  "tree": {
+    "op": "Difference",
+    "base": {
+      "op": "Union",
+      "children": [
+        {
+          "candidate": "LB_U01"
+        },
+        {
+          "candidate": "LB_U02"
+        },
+        {
+          "candidate": "LB_U03"
+        }
+      ]
+    },
+    "subtractors": [
+      {
+        "candidate": "LB_D01"
+      },
+      {
+        "candidate": "LB_D02"
+      }
+    ]
+  }
+}

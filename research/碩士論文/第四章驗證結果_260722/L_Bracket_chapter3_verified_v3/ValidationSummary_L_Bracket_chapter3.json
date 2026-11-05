@@ -1,0 +1,266 @@
+{
+  "schema_version": "3.0",
+  "case": "L-Bracket",
+  "display_name": "L型板",
+  "method_output_basis": "raw point-normal Result only; Chapter 3 formulas (3-3) through (3-7)",
+  "independent_truth_basis": "evaluated final Blend mesh; used only after inference for QA comparison",
+  "provenance_separation": "PASS",
+  "parameters": {
+    "DistanceThreshold": 2.0,
+    "NormalThreshold": 0.93,
+    "FitResidualThreshold": 1.5,
+    "TopologyEpsilon": 2.0,
+    "OrthogonalDotThreshold": 0.2,
+    "EndCapDistanceThreshold": 5.0,
+    "EndCapDotThreshold": 0.95
+  },
+  "counts": {
+    "total_points": 10000,
+    "initial_region_components": 20,
+    "accepted_points": 10000,
+    "residual_points": 0,
+    "accepted_faces": 12,
+    "topology_edges": 24,
+    "primitive_candidates": 5
+  },
+  "invariants": {
+    "coordinate_normal_max_difference": 0.0,
+    "point_assignment_exact_match_to_independent_truth": true,
+    "point_to_evaluated_mesh_projection_distance_max_mm": 7.6293945028282906e-06,
+    "ambiguous_exact_triangle_matches": 10
+  },
+  "original_stl_vs_blend_evaluated_mesh": {
+    "first_to_second_max_mm": 3.5563140754788325e-06,
+    "first_to_second_median_mm": 3.8360710926896905e-15,
+    "second_to_first_max_mm": 3.688064077665526e-06,
+    "second_to_first_median_mm": 7.32410687763558e-15,
+    "bidirectional_max_mm": 3.688064077665526e-06
+  },
+  "five_layer_validation": {
+    "segmentation": "PASS",
+    "geometry_semantics": "PASS",
+    "topology": "PASS",
+    "primitive_candidates": "PASS",
+    "csg_symbolic_tree": "PASS"
+  },
+  "details": {
+    "segmentation": {
+      "method_input_excludes_truth_and_mesh": true,
+      "initial_region_components": 20,
+      "final_semantic_faces": 12,
+      "point_assignment_exact_match": true
+    },
+    "geometry_semantics": [
+      {
+        "cluster_id": 0,
+        "geometry": "plane",
+        "fit_residual_max_mm": 0.0,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 1,
+        "geometry": "plane",
+        "fit_residual_max_mm": 0.0,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 2,
+        "geometry": "plane",
+        "fit_residual_max_mm": 4.93e-07,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 3,
+        "geometry": "plane",
+        "fit_residual_max_mm": 4.022e-06,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 4,
+        "geometry": "cylinder",
+        "fit_residual_max_mm": 0.032202412,
+        "normal_consistency_min": 0.995188351,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 5,
+        "geometry": "plane",
+        "fit_residual_max_mm": 1.993e-06,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 6,
+        "geometry": "plane",
+        "fit_residual_max_mm": 3.855e-06,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 7,
+        "geometry": "plane",
+        "fit_residual_max_mm": 4.96e-07,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 8,
+        "geometry": "plane",
+        "fit_residual_max_mm": 1.933e-06,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 9,
+        "geometry": "cylinder",
+        "fit_residual_max_mm": 0.029723396,
+        "normal_consistency_min": 0.994535514,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 10,
+        "geometry": "plane",
+        "fit_residual_max_mm": 8.258e-06,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 11,
+        "geometry": "cylinder",
+        "fit_residual_max_mm": 0.029389201,
+        "normal_consistency_min": 0.994515096,
+        "status": "PASS"
+      }
+    ],
+    "topology": {
+      "schema_pass": true,
+      "required_columns": [
+        "DirectionDot",
+        "DirectionThreshold",
+        "DistanceThreshold",
+        "EdgeType",
+        "FromClusterID",
+        "InferenceRule",
+        "MinDistance",
+        "RuleStatus",
+        "ToClusterID"
+      ],
+      "expected_edge_count": 24,
+      "actual_edge_count": 24,
+      "edge_type_counts": {
+        "EndCap": 6,
+        "OrthogonalAdjacency": 18
+      },
+      "missing": [],
+      "unexpected": [],
+      "edge_types_allowed": true,
+      "rule_failures": [],
+      "orthogonal_distance_max_mm": 1.772178533,
+      "orthogonal_direction_dot_max": 5.1e-08,
+      "endcap_distance_max_mm": 0.514264767,
+      "endcap_direction_dot_min": 1.0
+    },
+    "primitive_candidates": {
+      "expected_count": 5,
+      "actual_count": 5,
+      "details": [
+        {
+          "candidate_id": "LB_D01",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Radius": 0.029178182744399983,
+            "Depth": 6.999999691004177e-09
+          },
+          "parameter_tolerances_mm": {
+            "Radius": 0.05,
+            "Depth": 0.05
+          },
+          "status": "PASS"
+        },
+        {
+          "candidate_id": "LB_D02",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Radius": 0.0280147497442238,
+            "Depth": 2.0000010536591617e-09
+          },
+          "parameter_tolerances_mm": {
+            "Radius": 0.05,
+            "Depth": 0.05
+          },
+          "status": "PASS"
+        },
+        {
+          "candidate_id": "LB_U01",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Length": 3.814999999462998e-06,
+            "Width": 7.628999995290542e-06,
+            "Height": 6.999999691004177e-09
+          },
+          "parameter_tolerances_mm": {
+            "Length": 1e-05,
+            "Width": 1e-05,
+            "Height": 1e-05
+          },
+          "status": "PASS"
+        },
+        {
+          "candidate_id": "LB_U02",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Length": 3.814999999462998e-06,
+            "Width": 2.000000165480742e-09,
+            "Height": 1.0200000133409048e-07
+          },
+          "parameter_tolerances_mm": {
+            "Length": 1e-05,
+            "Width": 1e-05,
+            "Height": 1e-05
+          },
+          "status": "PASS"
+        },
+        {
+          "candidate_id": "LB_U03",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Radius": 0.03219468418853921,
+            "Depth": 2.1999998267574483e-08
+          },
+          "parameter_tolerances_mm": {
+            "Radius": 0.05,
+            "Depth": 0.05
+          },
+          "status": "PASS"
+        }
+      ]
+    },
+    "csg_exact_match": true
+  },
+  "overall": "PASS",
+  "input_sha256": {
+    "raw_result": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+    "original_stl": "01a8b2eb37f9a2e1ddfa4f3f0ccf368ffe08fc001767990b5f32801ea25a1bc6",
+    "evaluated_mesh": "8b481d5b1e21662f3af8df33f0064ebcb828d92bb20c676682c2853765bc88d1",
+    "independent_truth": "60cb1a13e1389d24d630a284474859025a8410d59cdfb8e326d77a72994e5e4c",
+    "method_manifest": "89c14010be012c93f6fd714e866cd3e72df290746ae39267de0e1f4da10e988b"
+  },
+  "output_sha256": {
+    "Result_L_Bracket_chapter3_verified.csv": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+    "FaceSummary_L_Bracket_chapter3_verified.csv": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+    "TopologyEdges_L_Bracket_chapter3_verified.csv": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+    "PrimitiveCandidates_L_Bracket_chapter3_verified.csv": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+    "CSGTree_L_Bracket_chapter3_verified.json": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+    "CorrectionTrace_L_Bracket_chapter3.csv": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6"
+  },
+  "limits": [
+    "STL-generated point-normal data only; no real-scan validation.",
+    "Only planar and cylindrical surfaces are evaluated.",
+    "Candidate inference includes transparent L-Bracket semantic-role rules and manual geometric verification; it is not claimed as fully automatic.",
+    "CSG validation ends at the canonical symbolic inference tree; no editable CAD solid is asserted."
+  ]
+}

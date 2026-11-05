@@ -1,0 +1,7 @@
+﻿CandidateID,TruthCandidateID,PrimitiveType,BooleanType,RelatedClusters,MappingStatus
+MA_U01,MA_U01,MainWebProfileExtrusion,Union,0;4;5;6,PASS
+MA_U02,MA_U02,MainAxisYOuterRing,Union,1;2;9,PASS
+MA_U03,MA_U03,RightTransitionBlock,Union,3;4;5;7;8,PASS
+MA_U04,MA_U04,RightAxisXOuterBoss,Union,3;7;14,PASS
+MA_D01,MA_D01,MainAxisYThroughHole,Difference,1;2;10,PASS
+MA_D02,MA_D02,RightAxisXThroughHole,Difference,3;7;13,PASS

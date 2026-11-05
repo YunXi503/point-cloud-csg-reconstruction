@@ -1,0 +1,133 @@
+{
+  "schema_version": "3.0",
+  "case": "Blind-Hole Hex Base",
+  "method_basis": "Chapter 3 formulas (3-3) through (3-7), with the 3.8 through-hole/blind-hole end-condition rule",
+  "inputs_read": {
+    "result": {
+      "filename": "Result_Blind-Hole Hex Base_fixed.csv",
+      "sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a"
+    }
+  },
+  "forbidden_inputs_read": [],
+  "truth_or_mesh_used_for_inference": false,
+  "parameters": {
+    "DistanceThreshold": 2.0,
+    "NormalThreshold": 0.93,
+    "FitResidualThreshold": 1.5,
+    "TopologyEpsilon": 2.0,
+    "OrthogonalDotThreshold": 0.2,
+    "EndCapDistanceThreshold": 5.0,
+    "EndCapDotThreshold": 0.95
+  },
+  "inference_rules": {
+    "seed_acceptance": "an original cluster must pass exactly one accepted plane/cylinder fit; plane is tested before cylinder",
+    "reassignment": "best finite-support surface satisfying residual <= 1.5 mm and normal agreement >= 0.93",
+    "semantics": "cylinder radial-normal sense for inner/outer; horizontal planes separated by radial support extent relative to the inferred bore and ring radii; six vertical planes ordered by normal azimuth",
+    "hole_end_condition": "blind when exactly one EndCap plane is an interior disc covering the hole section; through when both EndCap planes are annular openings",
+    "topology": "finite sampled support distance plus the Chapter 3 direction predicates",
+    "candidates": "hexagonal prism from six vertical planes bounded by bottom and shelf; each cylinder from one side plus exactly two EndCap relations",
+    "csg": "binary tree; Union candidates left-associated by CandidateID, then ordered Difference subtractors"
+  },
+  "initial_cluster_audit": [
+    {
+      "OriginalClusterID": 0,
+      "OriginalPointCount": 814,
+      "SeedAccepted": true,
+      "SeedGeometry": "cylinder"
+    },
+    {
+      "OriginalClusterID": 1,
+      "OriginalPointCount": 1754,
+      "SeedAccepted": true,
+      "SeedGeometry": "cylinder"
+    },
+    {
+      "OriginalClusterID": 2,
+      "OriginalPointCount": 1540,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 3,
+      "OriginalPointCount": 763,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 4,
+      "OriginalPointCount": 729,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 5,
+      "OriginalPointCount": 729,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 6,
+      "OriginalPointCount": 727,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 7,
+      "OriginalPointCount": 716,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 8,
+      "OriginalPointCount": 668,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 9,
+      "OriginalPointCount": 617,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 10,
+      "OriginalPointCount": 548,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 11,
+      "OriginalPointCount": 395,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    }
+  ],
+  "counts": {
+    "points": 10000,
+    "original_clusters": 12,
+    "accepted_faces": 12,
+    "accepted_points": 10000,
+    "residual_points": 0,
+    "topology_edges": 22,
+    "primitive_candidates": 3
+  },
+  "programs": {
+    "inference": {
+      "filename": "infer_blind_hole_hex_base_chapter3_method.py",
+      "sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a"
+    },
+    "geometry_helper": {
+      "filename": "infer_stepped_cylinder_chapter3_method.py",
+      "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c",
+      "scope": "method-only geometry functions; no truth input"
+    }
+  },
+  "outputs": {
+    "Result_Blind_Hole_Hex_Base_chapter3_verified.csv": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+    "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+    "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+    "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+    "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+    "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542"
+  }
+}

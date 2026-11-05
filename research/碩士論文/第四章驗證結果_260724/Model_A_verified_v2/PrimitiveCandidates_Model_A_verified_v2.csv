@@ -1,0 +1,7 @@
+﻿CandidateID,PrimitiveType,RelatedClusters,Length,Width,Height,Radius,Depth,BooleanType,ParameterErrorMax,ValidationStatus
+MA_U01,MainWebProfileExtrusion,0;4;5;6,96.000000000,20.000000000,85.394489290,,,Union,0.000000000,PASS
+MA_U02,MainAxisYOuterRing,1;2;9,,,,44.967894422,30.000025788,Union,0.031564550,PASS
+MA_U03,RightTransitionBlock,3;4;5;7;8,24.000000000,28.000000000,48.000000000,,,Union,0.000000000,PASS
+MA_U04,RightAxisXOuterBoss,3;7;14,,,,23.970267996,23.999999802,Union,0.029732004,PASS
+MA_D01,MainAxisYThroughHole,1;2;10,,,,32.967655672,29.999999963,Difference,0.032264741,PASS
+MA_D02,RightAxisXThroughHole,3;7;13,,,,11.969807591,23.999999802,Difference,0.030016951,PASS

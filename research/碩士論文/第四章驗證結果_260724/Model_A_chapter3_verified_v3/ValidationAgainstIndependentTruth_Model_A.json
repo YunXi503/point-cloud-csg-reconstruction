@@ -1,0 +1,56 @@
+{
+  "schema_version": "3.0",
+  "case": "Model A",
+  "validation_scope": "method-only Result inference compared after completion against independent evaluated-mesh truth",
+  "method_source_separation": {
+    "only_original_result_read": true,
+    "forbidden_inputs_read_is_empty": true,
+    "truth_or_mesh_used_for_inference": false,
+    "status": "PASS"
+  },
+  "counts": {
+    "total_points": 10000,
+    "accepted_points": 10000,
+    "residual_points": 0,
+    "accepted_faces": 13,
+    "residual_mesh_components": 0,
+    "topology_edges": 26,
+    "primitive_candidates": 6
+  },
+  "input_integrity": {
+    "coordinate_normal_max_difference": 0.0,
+    "raw_point_cloud_vs_result_max_difference": 7.105427357601002e-14,
+    "point_assignment_exact_match": true,
+    "point_to_evaluated_mesh_projection_distance_max_mm": 7.6293945028282906e-06,
+    "ambiguous_exact_triangle_matches": 5,
+    "pass": true
+  },
+  "five_layer_validation": {
+    "segmentation": "PASS",
+    "geometry_semantics": "PASS",
+    "topology": "PASS",
+    "primitive_candidates": "PASS",
+    "csg_symbolic_tree": "PASS"
+  },
+  "details": {
+    "failed_surface_clusters": [],
+    "topology_missing": [],
+    "topology_unexpected": [],
+    "failed_candidates": [],
+    "csg_exact_match": true,
+    "independent_truth_evidence_integrity": true
+  },
+  "overall": "PASS",
+  "limits": [
+    "STL-generated point-normal data only; no real-scan validation.",
+    "Only planar and cylindrical accepted surfaces are evaluated; explicit residuals are retained.",
+    "CSG validation ends at the canonical symbolic inference tree; no editable CAD solid is asserted."
+  ],
+  "input_sha256": {
+    "raw_result": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+    "point_cloud": "f10f952e4b2ba7f02d45011c2a8f35b32ae73553845b5bdd1ac07dc04db1b436",
+    "evaluated_mesh": "304cd84216052b0612d6486b34feefe91cc74e95fd763c6f451eb16bfdcbba7d",
+    "independent_truth": "8ba2848b63f96fe3a95289052118b805baa8db978ffc88b04929e899ff63f1d1",
+    "inference_manifest": "6ccb0aa5fd2d69ff788bf6103f0107b9a1a1a8667361e253c8391e6aa78813aa"
+  }
+}

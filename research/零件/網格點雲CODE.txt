@@ -1,0 +1,272 @@
+﻿import bpy
+import bmesh
+import random
+import csv
+import os
+from mathutils import Vector
+
+# =========================
+# 你要改的參數在這裡
+# =========================
+OBJ_NAME = None   # None = 用目前選取的物體；或填 "MyObject"
+SEED = 42
+
+# -------- 取樣控制 --------
+POINTS_PER_UNIT_AREA = 30.0
+# 每 1 Blender 面積單位要產生多少點
+# 數值越大，點越密
+
+MIN_POINTS_PER_FACE = 1
+# 每個三角面至少幾個點
+# 若你希望小面不要太稀，建議設 1 或 2
+
+FACE_AREA_EXPONENT = 0.8
+# 面積權重指數：
+# 1.0 = 純面積比例（原始概念）
+# <1.0 = 小面相對補點，建議 0.7 ~ 0.9
+# >1.0 = 更偏向大面（通常不建議）
+
+MAX_TOTAL_POINTS = 2000000
+# 保護用，避免點數爆掉
+
+NORMAL_LINE_LEN = 2.0
+OUT_CSV_PATH = r"C:\Users\Admin\Desktop\云析論文\零件\Model B點雲.csv"
+
+VIS_COLLECTION_NAME = "SamplePointsNormals"
+CLEAR_PREVIOUS = True
+
+SHOW_POINTS = True
+POINT_OBJECT_NAME = "SamplePoints"
+NORMAL_OBJECT_NAME = "NormalsLines"
+SHOW_NORMALS = True
+# =========================
+
+
+def get_target_object():
+    if OBJ_NAME:
+        obj = bpy.data.objects.get(OBJ_NAME)
+        if obj is None:
+            raise RuntimeError(f"找不到物體: {OBJ_NAME}")
+        return obj
+    obj = bpy.context.active_object
+    if obj is None:
+        raise RuntimeError("請先選取一個 Mesh 物體，或設定 OBJ_NAME。")
+    return obj
+
+def get_evaluated_mesh(obj):
+    depsgraph = bpy.context.evaluated_depsgraph_get()
+    obj_eval = obj.evaluated_get(depsgraph)
+    mesh = obj_eval.to_mesh()
+    return obj_eval, mesh
+
+
+def triangulate_to_bmesh(mesh):
+    bm = bmesh.new()
+    bm.from_mesh(mesh)
+    bmesh.ops.triangulate(bm, faces=bm.faces[:])
+    bm.faces.ensure_lookup_table()
+    return bm
+
+
+def random_point_on_triangle(v0, v1, v2):
+    # 均勻取樣三角形（barycentric）
+    r1 = random.random()
+    r2 = random.random()
+    sr1 = r1 ** 0.5
+    a = 1.0 - sr1
+    b = sr1 * (1.0 - r2)
+    c = sr1 * r2
+    return (v0 * a) + (v1 * b) + (v2 * c)
+
+
+def stochastic_round(x):
+    # 隨機四捨五入，讓平均密度更接近設定值
+    i = int(x)
+    frac = x - i
+    if random.random() < frac:
+        return i + 1
+    return i
+
+
+def ensure_collection(name, clear=False):
+    if name in bpy.data.collections and clear:
+        col = bpy.data.collections[name]
+        for o in list(col.objects):
+            bpy.data.objects.remove(o, do_unlink=True)
+        bpy.data.collections.remove(col)
+
+    if name in bpy.data.collections:
+        return bpy.data.collections[name]
+
+    col = bpy.data.collections.new(name)
+    bpy.context.scene.collection.children.link(col)
+    return col
+
+
+def create_point_cloud_mesh(name, points_world, collection):
+    verts = [(p.x, p.y, p.z) for p in points_world]
+
+    mesh = bpy.data.meshes.new(name + "_mesh")
+    mesh.from_pydata(verts, [], [])
+    mesh.update()
+
+    obj = bpy.data.objects.new(name, mesh)
+    collection.objects.link(obj)
+    obj.display_type = 'WIRE'
+    return obj
+
+
+def create_normal_lines_mesh(name, points_world, normals_world, line_len, collection):
+    verts = []
+    edges = []
+    idx = 0
+    for p, n in zip(points_world, normals_world):
+        p0 = p
+        p1 = p + (n * line_len)
+        verts.append((p0.x, p0.y, p0.z))
+        verts.append((p1.x, p1.y, p1.z))
+        edges.append((idx, idx + 1))
+        idx += 2
+
+    mesh = bpy.data.meshes.new(name + "_mesh")
+    mesh.from_pydata(verts, edges, [])
+    mesh.update()
+
+    obj = bpy.data.objects.new(name, mesh)
+    collection.objects.link(obj)
+    obj.display_type = 'WIRE'
+    return obj
+
+
+def export_csv(path, points_world, normals_world):
+    folder = os.path.dirname(path)
+    if folder:
+        os.makedirs(folder, exist_ok=True)
+
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["X", "Y", "Z", "NX", "NY", "NZ"])
+        for p, n in zip(points_world, normals_world):
+            w.writerow([
+                f"{p.x:.17g}", f"{p.y:.17g}", f"{p.z:.17g}",
+                f"{n.x:.17g}", f"{n.y:.17g}", f"{n.z:.17g}",
+            ])
+
+
+def build_face_point_plan(bm):
+    """
+    依照密度決定每個三角面要取幾個點。
+    回傳:
+        plans = [(face, count, area, eff_area), ...]
+    """
+    plans = []
+    total_points = 0
+    total_area = 0.0
+    total_eff_area = 0.0
+
+    for f in bm.faces:
+        area = f.calc_area()
+        if area <= 1e-15:
+            continue
+
+        total_area += area
+
+        # effective area: 可用 exponent 提升小面相對權重
+        eff_area = area ** FACE_AREA_EXPONENT
+        total_eff_area += eff_area
+
+        target = POINTS_PER_UNIT_AREA * eff_area
+        count = stochastic_round(target)
+
+        if MIN_POINTS_PER_FACE > 0:
+            count = max(count, MIN_POINTS_PER_FACE)
+
+        plans.append((f, count, area, eff_area))
+        total_points += count
+
+    if total_area <= 1e-12:
+        raise RuntimeError("物體表面總面積為 0，無法取樣。（請確認物體是 Mesh 且有面）")
+
+    if total_points > MAX_TOTAL_POINTS:
+        raise RuntimeError(
+            f"預估點數過大: {total_points} > MAX_TOTAL_POINTS={MAX_TOTAL_POINTS}\n"
+            f"請降低 POINTS_PER_UNIT_AREA 或 MIN_POINTS_PER_FACE。"
+        )
+
+    return plans, total_area, total_eff_area, total_points
+
+
+def main():
+    random.seed(SEED)
+
+    obj = get_target_object()
+    if obj.type != 'MESH':
+        raise RuntimeError("選到的物體不是 Mesh。")
+
+    obj_eval, mesh = get_evaluated_mesh(obj)
+    bm = triangulate_to_bmesh(mesh)
+
+    mw = obj_eval.matrix_world
+    nmat = mw.to_3x3().inverted().transposed()
+
+    face_plans, total_area, total_eff_area, estimated_points = build_face_point_plan(bm)
+
+    points_world = []
+    normals_world = []
+
+    for f, count, area, eff_area in face_plans:
+        v0 = f.verts[0].co
+        v1 = f.verts[1].co
+        v2 = f.verts[2].co
+
+        n_local = f.normal.copy()
+        if n_local.length > 1e-12:
+            n_local.normalize()
+
+        n_world = (nmat @ n_local).normalized()
+
+        for _ in range(count):
+            p_local = random_point_on_triangle(v0, v1, v2)
+            p_world = mw @ p_local
+            points_world.append(p_world)
+            normals_world.append(n_world)
+
+    col = ensure_collection(VIS_COLLECTION_NAME, clear=CLEAR_PREVIOUS)
+
+    if SHOW_POINTS:
+        create_point_cloud_mesh(
+            name=POINT_OBJECT_NAME,
+            points_world=points_world,
+            collection=col
+        )
+
+    if SHOW_NORMALS:
+        create_normal_lines_mesh(
+            name=NORMAL_OBJECT_NAME,
+            points_world=points_world,
+            normals_world=normals_world,
+            line_len=NORMAL_LINE_LEN,
+            collection=col
+        )
+
+    export_csv(OUT_CSV_PATH, points_world, normals_world)
+
+    obj_eval.to_mesh_clear()
+    bm.free()
+
+    print("========== Sampling Report ==========")
+    print(f"[OK] 總面積: {total_area:.6f}")
+    print(f"[OK] 有效面積總和: {total_eff_area:.6f}")
+    print(f"[OK] 密度參數 POINTS_PER_UNIT_AREA: {POINTS_PER_UNIT_AREA}")
+    print(f"[OK] MIN_POINTS_PER_FACE: {MIN_POINTS_PER_FACE}")
+    print(f"[OK] FACE_AREA_EXPONENT: {FACE_AREA_EXPONENT}")
+    print(f"[OK] 實際輸出點數: {len(points_world)}")
+    print(f"[OK] CSV 輸出: {OUT_CSV_PATH}")
+    print(f"[OK] 可視化 collection: {VIS_COLLECTION_NAME}")
+    print("[Tip] FACE_AREA_EXPONENT < 1.0 時，小面會相對得到更多點。")
+    print("[Tip] 如果點還是太稀，可提高 POINTS_PER_UNIT_AREA。")
+    print("[Tip] 如果小面細節仍不夠，可提高 MIN_POINTS_PER_FACE 或把 FACE_AREA_EXPONENT 調到 0.7~0.9。")
+
+
+if __name__ == "__main__":
+    main()

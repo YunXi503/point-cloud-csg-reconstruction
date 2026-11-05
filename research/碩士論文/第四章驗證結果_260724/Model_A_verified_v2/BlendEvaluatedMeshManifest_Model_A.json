@@ -1,0 +1,11 @@
+{
+  "blend_file": "C:\\Users\\Admin\\Desktop\\云析論文\\零件\\Model A_乾淨重建_260724.blend",
+  "active_object": "Model A",
+  "source_vertices": 449,
+  "source_polygons": 902,
+  "evaluated_vertices": 449,
+  "triangulated_faces": 902,
+  "output_mesh": "BlendEvaluatedMesh_Model_A.stl",
+  "output_sha256": "304cd84216052b0612d6486b34feefe91cc74e95fd763c6f451eb16bfdcbba7d",
+  "scope": "evaluated active mesh only; SamplePoints and NormalsLines are not exported"
+}

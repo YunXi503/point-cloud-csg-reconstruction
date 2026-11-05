@@ -1,0 +1,62 @@
+{
+  "schema_version": "1",
+  "scope": "unchanged inference output reproduction; no new accuracy claim",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.4.0",
+    "pandas": "3.0.3",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.8",
+    "Pillow": "12.1.0"
+  },
+  "cases": [
+    {
+      "id": "blind-hole-hex-base",
+      "recorded_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "actual_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "recorded_program_sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a",
+      "actual_program_sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a",
+      "exit_code": 0,
+      "outputs": [
+        {
+          "filename": "Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+          "actual_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "actual_sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "actual_sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "expected_sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "actual_sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "expected_sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "actual_sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "expected_sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "actual_sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "matches": true
+        }
+      ],
+      "status": "pass"
+    }
+  ],
+  "status": "pass"
+}

@@ -1,0 +1,39 @@
+{
+  "only_changed_package": [
+    {
+      "package": "numpy",
+      "before": "2.4.0",
+      "after": "2.4.1"
+    }
+  ],
+  "packages": {
+    "contourpy": "1.4.0",
+    "cycler": "0.12.1",
+    "fonttools": "4.68.0",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.1",
+    "packaging": "26.3",
+    "pandas": "3.0.3",
+    "pillow": "12.1.0",
+    "pip": "25.3",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "4.0.0",
+    "scipy": "1.16.3",
+    "tzdata": "2026.6"
+  },
+  "clean_venv_no_system_packages": true,
+  "requirements_lock": "requirements.lock.txt",
+  "point_cloud_pipeline_hashes": 24,
+  "inference_hashes": 24,
+  "relocation": "Different directory containing both spaces and Chinese characters",
+  "critical_driver_files_matched": [
+    "tools/run-from-point-cloud.py",
+    "tools/verify-reproduction.py",
+    "src/adapter/ClassifierRunner.cs",
+    "src/adapter/ClassifierLibrary.csproj",
+    "src/adapter/ClassifierRunner.csproj",
+    "src/adapter/CoreClassifier.csproj",
+    "src/adapter/CoreRunner.csproj"
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "schema_version": "1.0",
+  "case": "Stepped Cylinder",
+  "display_name": "階梯狀圓柱",
+  "truth_scope": "STL final triangle mesh only; no Result, FaceSummary, TopologyEdges, PrimitiveCandidates, point cloud, or prior GroundTruth was read",
+  "research_boundary": "STL-generated geometry; planar and cylindrical surfaces; symbolic CSG inference only",
+  "source": {
+    "filename": "Stepped Cylinder.stl",
+    "sha256": "3afd1e517cd6484a89a16615e163c0d580766f07e4025ba517921fd2e4adaf4d",
+    "triangle_count": 616,
+    "mesh_bounds_min": [
+      -40.0,
+      -40.0,
+      0.0
+    ],
+    "mesh_bounds_max": [
+      40.0,
+      40.0,
+      100.0
+    ],
+    "nonmanifold_or_open_edge_count": 0
+  },
+  "surface_segmentation": {
+    "method": "shared-edge connectivity plus the largest data-derived gap in adjacent triangle normal dot products",
+    "adjacent_normal_dot_levels": [
+      0.0,
+      0.987687663843,
+      0.987687841696,
+      0.987687987677,
+      0.987688184278,
+      0.987688793698,
+      0.987689155813,
+      0.992114423151,
+      0.992114474765,
+      0.992114541432,
+      0.992114580836,
+      0.99211462713,
+      0.992114633878,
+      0.992114648543,
+      0.992114685161,
+      0.992114758464,
+      0.992114898713,
+      0.992114966555,
+      0.992114973752,
+      0.992115003394,
+      0.995184490976,
+      0.995184648861,
+      0.995184671485,
+      0.995184744062,
+      0.995184774163,
+      0.995184774557,
+      0.995184811678,
+      0.995184837866,
+      0.99518486574,
+      1.0
+    ],
+    "derived_merge_dot_threshold": 0.4938438319215,
+    "surface_count": 6,
+    "reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "surfaces": [
+    {
+      "component_index": 3,
+      "triangle_count": 80,
+      "triangle_indices_sha256": "6077c140ae00b77e08087ead5c411b6c7b28185da0c972e13e00851baf01a1c5",
+      "mesh_connected_components": 1,
+      "area_mm2": 9415.090701927922,
+      "bounds_min": [
+        -15.0,
+        -15.0,
+        0.0
+      ],
+      "bounds_max": [
+        15.0,
+        15.0,
+        100.0
+      ],
+      "normal_resultant_length": 5.433731717980306e-17,
+      "geometry": "cylinder",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_line_midpoint": [
+        1.4979557382228574e-16,
+        -8.987734429337143e-16,
+        50.0
+      ],
+      "axis_min_mm": 0.0,
+      "axis_max_mm": 100.0,
+      "depth_mm": 100.0,
+      "radius_mm": 14.999998748659976,
+      "orientation": "inner",
+      "axis_orthogonality_max": 0.0,
+      "vertex_fit_residual_max_mm": 3.7908711920664473e-06,
+      "facet_sagitta_max_mm": 0.04624175250562601,
+      "radius_comparison_tolerance_mm": 0.04624275250562601,
+      "signed_normal_alignment_median": -0.9996560689332827,
+      "surface_id": "GT_S01",
+      "semantic_role": "through_hole_side",
+      "feature_type": "Cylinder_axisZ_inner (貫穿孔)"
+    },
+    {
+      "component_index": 0,
+      "triangle_count": 128,
+      "triangle_indices_sha256": "e374288e6fd77688ab0bf9c4f4da1c9310f37aa631ec818b593d9d22c3a25e4b",
+      "mesh_connected_components": 1,
+      "area_mm2": 10049.059752070638,
+      "bounds_min": [
+        -40.0,
+        -40.0,
+        0.0
+      ],
+      "bounds_max": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "normal_resultant_length": 3.283185705513446e-17,
+      "geometry": "cylinder",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_line_midpoint": [
+        -2.1316281967138723e-15,
+        7.105427322379575e-16,
+        20.0
+      ],
+      "axis_min_mm": 0.0,
+      "axis_max_mm": 40.0,
+      "depth_mm": 40.0,
+      "radius_mm": 40.00000019827902,
+      "orientation": "outer",
+      "axis_orthogonality_max": 0.0,
+      "vertex_fit_residual_max_mm": 4.758723171960355e-06,
+      "facet_sagitta_max_mm": 0.04818383515728186,
+      "radius_comparison_tolerance_mm": 0.04818483515728186,
+      "signed_normal_alignment_median": 0.9998659467055999,
+      "surface_id": "GT_S02",
+      "semantic_role": "lower_outer_cylinder",
+      "feature_type": "Cylinder_axisZ_outer (下階外圓柱)"
+    },
+    {
+      "component_index": 4,
+      "triangle_count": 104,
+      "triangle_indices_sha256": "4fcf2033fc160a025d16119749bff20d964a98a67965823149a81fec965edc89",
+      "mesh_connected_components": 1,
+      "area_mm2": 4314.52265939692,
+      "bounds_min": [
+        -40.0,
+        -40.0,
+        0.0
+      ],
+      "bounds_max": [
+        40.0,
+        40.0,
+        0.0
+      ],
+      "normal_resultant_length": 1.0,
+      "geometry": "plane",
+      "normal": [
+        1.159317434289512e-17,
+        0.0,
+        -1.0
+      ],
+      "plane_offset_mm": 0.0,
+      "center": [
+        -1.1767864806915772e-15,
+        -7.287368392632176e-16,
+        9.660978619079266e-17
+      ],
+      "vertex_fit_residual_max_mm": 4.6372697371580475e-16,
+      "surface_id": "GT_S03",
+      "semantic_role": "base_annular_plane",
+      "feature_type": "Plane_Horizontal (底面環)"
+    },
+    {
+      "component_index": 2,
+      "triangle_count": 114,
+      "triangle_indices_sha256": "83cd4c4752ef42a20b20e78bc53dea9aece06f5bff465542f1350c715c682c69",
+      "mesh_connected_components": 1,
+      "area_mm2": 3060.14570348366,
+      "bounds_min": [
+        -40.0,
+        -40.0,
+        40.0
+      ],
+      "bounds_max": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "normal_resultant_length": 0.9999999999999992,
+      "geometry": "plane",
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "plane_offset_mm": 40.0,
+      "center": [
+        -8.637559231308957e-16,
+        4.0587240689053915e-15,
+        40.000000000000014
+      ],
+      "vertex_fit_residual_max_mm": 0.0,
+      "surface_id": "GT_S04",
+      "semantic_role": "shoulder_annular_plane",
+      "feature_type": "Plane_Horizontal (階梯肩面)"
+    },
+    {
+      "component_index": 5,
+      "triangle_count": 90,
+      "triangle_indices_sha256": "e8bf08291038774e549dd17808119ff0fca1f3a0672def6d89398cf91bc94e7a",
+      "mesh_connected_components": 1,
+      "area_mm2": 1254.37695591326,
+      "bounds_min": [
+        -25.0,
+        -24.95067,
+        100.0
+      ],
+      "bounds_max": [
+        25.0,
+        24.95067,
+        100.0
+      ],
+      "normal_resultant_length": 0.9999999999999998,
+      "geometry": "plane",
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "plane_offset_mm": 100.0,
+      "center": [
+        -1.3594817393489823e-16,
+        -1.6087200582296291e-15,
+        100.0
+      ],
+      "vertex_fit_residual_max_mm": 0.0,
+      "surface_id": "GT_S05",
+      "semantic_role": "top_annular_plane",
+      "feature_type": "Plane_Horizontal (頂面環)"
+    },
+    {
+      "component_index": 1,
+      "triangle_count": 100,
+      "triangle_indices_sha256": "404025da8069ff39dc3a0f65ae8f92b7db8c85445c1ab3e0da4d87d943c2391b",
+      "mesh_connected_components": 1,
+      "area_mm2": 9418.578306225625,
+      "bounds_min": [
+        -25.0,
+        -24.95067,
+        40.0
+      ],
+      "bounds_max": [
+        25.0,
+        24.95067,
+        100.0
+      ],
+      "normal_resultant_length": 4.2030611370115773e-17,
+      "geometry": "cylinder",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_line_midpoint": [
+        1.7763568394002505e-15,
+        -1.6077746586279059e-15,
+        70.0
+      ],
+      "axis_min_mm": 40.0,
+      "axis_max_mm": 100.0,
+      "depth_mm": 60.0,
+      "radius_mm": 25.0000010002159,
+      "orientation": "outer",
+      "axis_orthogonality_max": 0.0,
+      "vertex_fit_residual_max_mm": 3.7547996498688008e-06,
+      "facet_sagitta_max_mm": 0.04933477739800196,
+      "radius_comparison_tolerance_mm": 0.04933577739800196,
+      "signed_normal_alignment_median": 0.9997801694623805,
+      "surface_id": "GT_S06",
+      "semantic_role": "upper_outer_cylinder",
+      "feature_type": "Cylinder_axisZ_outer (上階外圓柱)"
+    }
+  ],
+  "topology_edges": [
+    {
+      "from_surface_id": "GT_S01",
+      "to_surface_id": "GT_S03",
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 40,
+      "shared_boundary_length_mm": 94.15090701927923,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_S01",
+      "to_surface_id": "GT_S05",
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 40,
+      "shared_boundary_length_mm": 94.15090701927924,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_S02",
+      "to_surface_id": "GT_S03",
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 64,
+      "shared_boundary_length_mm": 251.2264938017659,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_S02",
+      "to_surface_id": "GT_S04",
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 64,
+      "shared_boundary_length_mm": 251.2264938017659,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_S04",
+      "to_surface_id": "GT_S06",
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 50,
+      "shared_boundary_length_mm": 156.97630510376052,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_S05",
+      "to_surface_id": "GT_S06",
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 50,
+      "shared_boundary_length_mm": 156.97630510376052,
+      "direction_dot": 1.0
+    }
+  ],
+  "primitive_candidates": [
+    {
+      "candidate_id": "GT_C01",
+      "primitive_type": "CylinderLower",
+      "boolean_type": "Union",
+      "side_surface_id": "GT_S02",
+      "end_surface_ids": [
+        "GT_S03",
+        "GT_S04"
+      ],
+      "related_surface_ids": [
+        "GT_S02",
+        "GT_S03",
+        "GT_S04"
+      ],
+      "radius_mm": 40.00000019827902,
+      "depth_mm": 40.0,
+      "radius_comparison_tolerance_mm": 0.04818483515728186,
+      "depth_comparison_tolerance_mm": 1e-06
+    },
+    {
+      "candidate_id": "GT_C02",
+      "primitive_type": "CylinderUpper",
+      "boolean_type": "Union",
+      "side_surface_id": "GT_S06",
+      "end_surface_ids": [
+        "GT_S04",
+        "GT_S05"
+      ],
+      "related_surface_ids": [
+        "GT_S04",
+        "GT_S05",
+        "GT_S06"
+      ],
+      "radius_mm": 25.0000010002159,
+      "depth_mm": 60.0,
+      "radius_comparison_tolerance_mm": 0.04933577739800196,
+      "depth_comparison_tolerance_mm": 1e-06
+    },
+    {
+      "candidate_id": "GT_C03",
+      "primitive_type": "ThroughHole",
+      "boolean_type": "Difference",
+      "side_surface_id": "GT_S01",
+      "end_surface_ids": [
+        "GT_S03",
+        "GT_S05"
+      ],
+      "related_surface_ids": [
+        "GT_S01",
+        "GT_S03",
+        "GT_S05"
+      ],
+      "radius_mm": 14.999998748659976,
+      "depth_mm": 100.0,
+      "radius_comparison_tolerance_mm": 0.04624275250562601,
+      "depth_comparison_tolerance_mm": 1e-06
+    }
+  ],
+  "canonical_csg_tree": {
+    "op": "Difference",
+    "base": {
+      "op": "Union",
+      "children": [
+        {
+          "candidate": "GT_C01"
+        },
+        {
+          "candidate": "GT_C02"
+        }
+      ]
+    },
+    "subtractors": [
+      {
+        "candidate": "GT_C03"
+      }
+    ]
+  },
+  "interpretation_limits": [
+    "The truth describes the supplied STL mesh and does not prove generalization to real scans.",
+    "Candidate solids and the CSG tree are symbolic inference targets; no STEP, IGES, B-rep, or editable CAD solid is asserted."
+  ]
+}

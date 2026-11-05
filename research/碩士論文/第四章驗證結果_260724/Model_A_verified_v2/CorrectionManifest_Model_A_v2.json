@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "case": "Model A",
+  "method": {
+    "point_assignment": "point-to-STL-triangle barycentric projection with face-normal agreement",
+    "plane": "PCA / least squares",
+    "cylinder_axis_initialization": "smallest right singular vector of the assigned point-normal matrix",
+    "cylinder_radius_center": "algebraic initialization followed by Gauss-Newton geometric nonlinear least squares",
+    "fit_residual_threshold_mm": 1.5,
+    "normal_threshold": 0.93
+  },
+  "inputs": {
+    "stl": {
+      "filename": "BlendEvaluatedMesh_Model_A.stl",
+      "sha256": "304cd84216052b0612d6486b34feefe91cc74e95fd763c6f451eb16bfdcbba7d"
+    },
+    "result": {
+      "filename": "Result_Model A.csv",
+      "sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d"
+    },
+    "truth": {
+      "filename": "GroundTruth_Model_A_independent.json",
+      "sha256": "8ba2848b63f96fe3a95289052118b805baa8db978ffc88b04929e899ff63f1d1"
+    }
+  },
+  "program": {
+    "filename": "correct_lbracket_modela_verified_v2.py",
+    "sha256": "8a7ac16c174cb145310408c953b9793b46e4a1337e9f17ef88407906719f423d"
+  },
+  "counts": {
+    "points": 10000,
+    "accepted_points": 10000,
+    "residual_points": 0,
+    "unmapped_points": 0,
+    "ambiguous_point_triangle_matches": 5,
+    "closest_triangle_fallback_points": 0,
+    "point_to_stl_projection_distance_max_mm": 7.6293945028282906e-06,
+    "surfaces": 13,
+    "topology_edges": 26,
+    "primitive_candidates": 6
+  },
+  "invariants": {
+    "coordinate_normal_max_difference": 0.0
+  },
+  "outputs": {
+    "Result_Model_A_verified_v2.csv": "39df3c379bb5156b07b2e9eeb7f8a594cf8d12ee310f0c220c42d4e829b7fa2f",
+    "FaceSummary_Model_A_verified_v2.csv": "a84bffc50e55256ba901a85599c1a94e2b47adfb1898d1510ab12cf40c4af201",
+    "TopologyEdges_Model_A_verified_v2.csv": "b54b95eb04a2d26998ea171e1a211e0d06df4d39d93538b4382bd7c585d7564b",
+    "PrimitiveCandidates_Model_A_verified_v2.csv": "47911f398dc20a02a467ded96afe6eeb8064c51dba28e6375433e6ab7cd493bf",
+    "CSGTree_Model_A_verified_v2.json": "27b8307b061016e75a41481729d3d9d2ce8c6dc0d5162635ab1987ffe6b042b2",
+    "CorrectionTrace_Model_A_v2.csv": "dfe2ef87c3e848d9e3e79b1ff545568aa5ecfdf6f1c4b0e4bec2ed6386f649d0",
+    "SurfaceMapping_Model_A.csv": "da84d3299fbf1e4b9cd98b5d2e272977af0418a40d789b3246f3066d70860091",
+    "CandidateMapping_Model_A.csv": "10f6ba4760ad4564ff934e340aef17802ccf522e2134352fcc148fa41f9ba65a"
+  }
+}

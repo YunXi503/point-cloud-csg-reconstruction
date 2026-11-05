@@ -1,0 +1,132 @@
+[
+  {
+    "project": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/L_Bracket幾何邏輯.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [],
+    "dependency_hint_paths": [],
+    "build_status": "pass",
+    "previous_missing_compile_items": [
+      "Properties\\AssemblyInfo.cs"
+    ],
+    "build_exit_code": 0
+  },
+  {
+    "project": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind-Hole Hex Base/特徵辨識核心演算法Blind_Hole_Hex_Base.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [
+      "Properties\\AssemblyInfo.cs"
+    ],
+    "dependency_hint_paths": [
+      "..\\packages\\DocumentFormat.OpenXml.3.5.1\\lib\\net46\\DocumentFormat.OpenXml.dll",
+      "..\\packages\\DocumentFormat.OpenXml.Framework.3.5.1\\lib\\net46\\DocumentFormat.OpenXml.Framework.dll"
+    ],
+    "build_status": "blocked-missing-source",
+    "previous_missing_compile_items": [
+      "Properties\\AssemblyInfo.cs"
+    ],
+    "build_exit_code": null
+  },
+  {
+    "project": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Blind_Hole_Hex_Base/特徵辨識核心演算法Blind_Hole_Hex_Base.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [],
+    "dependency_hint_paths": [],
+    "build_status": "pass",
+    "previous_missing_compile_items": [],
+    "build_exit_code": 0
+  },
+  {
+    "project": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [],
+    "dependency_hint_paths": [],
+    "build_status": "pass",
+    "previous_missing_compile_items": [
+      "Properties\\AssemblyInfo.cs"
+    ],
+    "build_exit_code": 0
+  },
+  {
+    "project": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [],
+    "dependency_hint_paths": [],
+    "build_status": "pass",
+    "previous_missing_compile_items": [
+      "Properties\\AssemblyInfo.cs"
+    ],
+    "build_exit_code": 0
+  },
+  {
+    "project": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [
+      "Program.cs"
+    ],
+    "dependency_hint_paths": [],
+    "build_status": "blocked-missing-source",
+    "previous_missing_compile_items": [
+      "Program.cs",
+      "Properties\\AssemblyInfo.cs"
+    ],
+    "build_exit_code": null
+  },
+  {
+    "project": "research/碩士論文/程式碼備份/特徵辨識核心演算法盲孔六角座/特徵辨識核心演算法盲孔六角座.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [],
+    "dependency_hint_paths": [],
+    "build_status": "pass",
+    "previous_missing_compile_items": [],
+    "build_exit_code": 0
+  },
+  {
+    "project": "archive/csharp-original-workspace/L_Bracket幾何邏輯/L_Bracket幾何邏輯.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [],
+    "dependency_hint_paths": [],
+    "build_status": "pass",
+    "previous_missing_compile_items": [],
+    "build_exit_code": 0
+  },
+  {
+    "project": "archive/csharp-original-workspace/特徵辨識核心演算法Hex Base with Holed/特徵辨識核心演算法Hex Base with Holed.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [],
+    "dependency_hint_paths": [],
+    "build_status": "pass",
+    "previous_missing_compile_items": [],
+    "build_exit_code": 0
+  },
+  {
+    "project": "archive/csharp-original-workspace/特徵辨識核心演算法L-Bracket/特徵辨識核心演算法L-Bracket.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [],
+    "dependency_hint_paths": [],
+    "build_status": "pass",
+    "previous_missing_compile_items": [],
+    "build_exit_code": 0
+  },
+  {
+    "project": "archive/csharp-original-workspace/特徵辨識核心演算法Model A/特徵辨識核心演算法Model A.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [],
+    "dependency_hint_paths": [],
+    "build_status": "pass",
+    "previous_missing_compile_items": [],
+    "build_exit_code": 0
+  },
+  {
+    "project": "archive/csharp-original-workspace/特徵辨識核心演算法Stepped Cylinder/特徵辨識核心演算法Stepped Cylinder.csproj",
+    "target_framework": "v4.8",
+    "missing_compile_items": [
+      "Program.cs"
+    ],
+    "dependency_hint_paths": [],
+    "build_status": "blocked-missing-source",
+    "previous_missing_compile_items": [
+      "Program.cs"
+    ],
+    "build_exit_code": null
+  }
+]

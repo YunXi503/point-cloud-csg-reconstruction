@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "case": "Model A",
+  "truth_builder": "build_lbracket_modela_independent_truth.py",
+  "truth_builder_sha256": "4488f5faacaa25e07dc4d7f5e94dc51aff566ededefc7ac67765935b16cb6b20",
+  "only_geometry_input": {
+    "filename": "BlendEvaluatedMesh_Model_A.stl",
+    "sha256": "304cd84216052b0612d6486b34feefe91cc74e95fd763c6f451eb16bfdcbba7d"
+  },
+  "forbidden_inputs_read": [],
+  "output": {
+    "filename": "GroundTruth_Model_A_independent.json",
+    "sha256": "8ba2848b63f96fe3a95289052118b805baa8db978ffc88b04929e899ff63f1d1"
+  },
+  "surface_count": 13,
+  "topology_edge_count": 26,
+  "candidate_count": 6
+}

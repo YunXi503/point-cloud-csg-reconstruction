@@ -1,0 +1,254 @@
+{
+  "schema_version": "2.0",
+  "case": "Model A",
+  "display_name": "Model A",
+  "truth_basis": "evaluated final mesh exported from the supplied Blend file; original STL retained and compared independently",
+  "parameters": {
+    "point_count": 10000,
+    "seed": 42,
+    "distance_threshold_mm": 2.0,
+    "normal_threshold": 0.93,
+    "fit_residual_threshold_mm": 1.5
+  },
+  "counts": {
+    "total_points": 10000,
+    "accepted_points": 10000,
+    "residual_points": 0,
+    "accepted_faces": 13,
+    "residual_mesh_components": 0,
+    "topology_edges": 26,
+    "primitive_candidates": 6
+  },
+  "invariants": {
+    "coordinate_normal_max_difference": 0.0,
+    "raw_point_cloud_vs_result_max_difference": 7.105427357601002e-14,
+    "point_assignment_exact_match": true,
+    "point_to_evaluated_mesh_projection_distance_max_mm": 7.6293945028282906e-06,
+    "ambiguous_exact_triangle_matches": 5
+  },
+  "original_stl_vs_blend_evaluated_mesh": {
+    "first_to_second_max_mm": 1.8162635083168884e-06,
+    "first_to_second_median_mm": 3.552713678800501e-15,
+    "second_to_first_max_mm": 1.5124883427713416e-06,
+    "second_to_first_median_mm": 7.336450030374798e-08,
+    "bidirectional_max_mm": 1.8162635083168884e-06,
+    "original_stl_sha256": "bbe3d96fbbb2f8f7f0e56e619f085b1ef113df6e7eb084fb1c8ff7d845e8f742",
+    "blend_sha256": "029a846ffbb45404ac854d1175a8b59fe35f09a262e017e78be6291426286627",
+    "evaluated_mesh_sha256": "304cd84216052b0612d6486b34feefe91cc74e95fd763c6f451eb16bfdcbba7d",
+    "interpretation": "The evaluated Blend mesh is used for point-level truth because the supplied points were generated from that mesh; the original STL is preserved as a separate comparison artifact."
+  },
+  "five_layer_validation": {
+    "segmentation": "PASS",
+    "geometry_semantics": "PASS",
+    "topology": "PASS",
+    "primitive_candidates": "PASS",
+    "csg_symbolic_tree": "PASS"
+  },
+  "details": {
+    "geometry_semantics": [
+      {
+        "cluster_id": 0,
+        "fit_residual_max_mm": 9.99e-07,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 1,
+        "fit_residual_max_mm": 1.92e-06,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 2,
+        "fit_residual_max_mm": 9.82e-07,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 3,
+        "fit_residual_max_mm": 7.902e-06,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 4,
+        "fit_residual_max_mm": 3.854e-06,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 5,
+        "fit_residual_max_mm": 9.94e-07,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 6,
+        "fit_residual_max_mm": 8.136e-06,
+        "normal_consistency_min": 0.999999987,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 7,
+        "fit_residual_max_mm": 7.803e-06,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 8,
+        "fit_residual_max_mm": 2.62e-07,
+        "normal_consistency_min": 1.0,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 9,
+        "fit_residual_max_mm": 0.032370271,
+        "normal_consistency_min": 0.998933683,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 10,
+        "fit_residual_max_mm": 0.032522162,
+        "normal_consistency_min": 0.998533788,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 13,
+        "fit_residual_max_mm": 0.029985009,
+        "normal_consistency_min": 0.996222262,
+        "status": "PASS"
+      },
+      {
+        "cluster_id": 14,
+        "fit_residual_max_mm": 0.0311903,
+        "normal_consistency_min": 0.998062457,
+        "status": "PASS"
+      }
+    ],
+    "topology": {
+      "expected_edge_count": 26,
+      "actual_edge_count": 26,
+      "missing": [],
+      "unexpected": [],
+      "edge_types_allowed": true
+    },
+    "primitive_candidates": {
+      "expected_count": 6,
+      "actual_count": 6,
+      "details": [
+        {
+          "candidate_id": "MA_D01",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Radius": 0.03226474021644066,
+            "Depth": 3.700000306139373e-08
+          },
+          "parameter_tolerances_mm": {
+            "Radius": 0.05,
+            "Depth": 0.05
+          },
+          "status": "PASS"
+        },
+        {
+          "candidate_id": "MA_D02",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Radius": 0.03001695098867252,
+            "Depth": 1.9800001282987978e-07
+          },
+          "parameter_tolerances_mm": {
+            "Radius": 0.05,
+            "Depth": 0.05
+          },
+          "status": "PASS"
+        },
+        {
+          "candidate_id": "MA_U01",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Length": 0.0,
+            "Width": 0.0,
+            "Height": 0.0
+          },
+          "parameter_tolerances_mm": {
+            "Length": 1e-06,
+            "Width": 1e-06,
+            "Height": 1e-06
+          },
+          "status": "PASS"
+        },
+        {
+          "candidate_id": "MA_U02",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Radius": 0.03156454925815666,
+            "Depth": 2.5787999994975053e-05
+          },
+          "parameter_tolerances_mm": {
+            "Radius": 0.05092077246895141,
+            "Depth": 0.05092077246895141
+          },
+          "status": "PASS"
+        },
+        {
+          "candidate_id": "MA_U03",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Length": 0.0,
+            "Width": 0.0,
+            "Height": 0.0
+          },
+          "parameter_tolerances_mm": {
+            "Length": 1e-06,
+            "Width": 1e-06,
+            "Height": 1e-06
+          },
+          "status": "PASS"
+        },
+        {
+          "candidate_id": "MA_U04",
+          "identity_pass": true,
+          "parameter_errors_mm": {
+            "Radius": 0.02973200401744336,
+            "Depth": 1.9800001282987978e-07
+          },
+          "parameter_tolerances_mm": {
+            "Radius": 0.05,
+            "Depth": 0.05
+          },
+          "status": "PASS"
+        }
+      ]
+    },
+    "csg_exact_match": true,
+    "evidence_integrity": true
+  },
+  "overall": "PASS",
+  "input_sha256": {
+    "blend": "029a846ffbb45404ac854d1175a8b59fe35f09a262e017e78be6291426286627",
+    "original_stl": "bbe3d96fbbb2f8f7f0e56e619f085b1ef113df6e7eb084fb1c8ff7d845e8f742",
+    "evaluated_mesh": "304cd84216052b0612d6486b34feefe91cc74e95fd763c6f451eb16bfdcbba7d",
+    "raw_result": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+    "point_cloud": "f10f952e4b2ba7f02d45011c2a8f35b32ae73553845b5bdd1ac07dc04db1b436",
+    "raw_face_summary": "f6d9afdb9c58c16126686c5223fcb2a3de21ab187c23ad9f6f34b0b4465758b4",
+    "raw_topology": "14e1431b2d6ae726030ea16f4c5fef6ba269707d856c3d9d02a6806d39ede549",
+    "raw_primitive_candidates": "8fb2b996c7fa54f09b07723754c8825be9d1401980a8202723ef85b58641adc2",
+    "independent_truth": "8ba2848b63f96fe3a95289052118b805baa8db978ffc88b04929e899ff63f1d1",
+    "blend_export_manifest": "c68d89ef53e7d97c4b8bb819aab600365cb735a4ae37052a212940ee8f074652",
+    "truth_build_manifest": "bc7c795ad9c81f5a754efa6f6ca0c9957d31af97c331b3dbb67fdb19287d803c"
+  },
+  "output_sha256": {
+    "Result_Model_A_verified_v2.csv": "39df3c379bb5156b07b2e9eeb7f8a594cf8d12ee310f0c220c42d4e829b7fa2f",
+    "FaceSummary_Model_A_verified_v2.csv": "a84bffc50e55256ba901a85599c1a94e2b47adfb1898d1510ab12cf40c4af201",
+    "TopologyEdges_Model_A_verified_v2.csv": "b54b95eb04a2d26998ea171e1a211e0d06df4d39d93538b4382bd7c585d7564b",
+    "PrimitiveCandidates_Model_A_verified_v2.csv": "47911f398dc20a02a467ded96afe6eeb8064c51dba28e6375433e6ab7cd493bf",
+    "CSGTree_Model_A_verified_v2.json": "27b8307b061016e75a41481729d3d9d2ce8c6dc0d5162635ab1987ffe6b042b2",
+    "SurfaceMapping_Model_A.csv": "da84d3299fbf1e4b9cd98b5d2e272977af0418a40d789b3246f3066d70860091",
+    "CandidateMapping_Model_A.csv": "10f6ba4760ad4564ff934e340aef17802ccf522e2134352fcc148fa41f9ba65a"
+  },
+  "limits": [
+    "STL-generated point-normal data only; no real-scan validation.",
+    "Only planar and cylindrical accepted surfaces are evaluated; explicit residuals are retained.",
+    "CSG validation ends at the canonical symbolic inference tree; no editable CAD solid is asserted."
+  ]
+}

@@ -1,0 +1,6 @@
+PrimitiveType,RelatedClusters,Length,Width,Height,Radius,Depth,BooleanType,Confidence,EvidenceNote
+ModelA_AdditiveShell,0;1;2;3;4;5;6;7;8;9;10;11;12;14;16;17;18;20,140.994698,77.327608,89.994762,,,Union,Medium,Union faces are planes and cylinders with outward radial normals.
+MainAxisYThroughHole,13,,,,32.967864,29.967102,Difference,High,Difference candidate inferred from inward radial normal alignment.
+SmallAxisYConcaveCylinder,15,,,,75.798177,4.016857,Difference,Low,Difference candidate inferred from inward radial normal alignment.
+RightAxisXThroughHole,19,,,,11.969086,23.850998,Difference,High,Difference candidate inferred from inward radial normal alignment.
+LeftAxisXConcaveCylinder,21,,,,28.193489,38.197845,Difference,Medium,Difference candidate inferred from inward radial normal alignment.

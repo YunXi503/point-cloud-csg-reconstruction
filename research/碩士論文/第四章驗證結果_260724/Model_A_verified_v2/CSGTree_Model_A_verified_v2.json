@@ -1,0 +1,32 @@
+{
+  "case": "Model A",
+  "canonicalization": "Union children sorted by CandidateID; Difference subtractors sorted by CandidateID",
+  "tree": {
+    "op": "Difference",
+    "base": {
+      "op": "Union",
+      "children": [
+        {
+          "candidate": "MA_U01"
+        },
+        {
+          "candidate": "MA_U02"
+        },
+        {
+          "candidate": "MA_U03"
+        },
+        {
+          "candidate": "MA_U04"
+        }
+      ]
+    },
+    "subtractors": [
+      {
+        "candidate": "MA_D01"
+      },
+      {
+        "candidate": "MA_D02"
+      }
+    ]
+  }
+}

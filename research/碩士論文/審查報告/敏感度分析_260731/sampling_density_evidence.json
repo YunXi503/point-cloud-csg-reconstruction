@@ -1,0 +1,71 @@
+{
+  "method": "STL triangle areas are summed; point density is A/N; characteristic spacing is sqrt(A/N); nearest-neighbor statistics are computed over the fixed sampled point cloud.",
+  "normal_thresholds": [
+    {
+      "dot_threshold": 0.9,
+      "angle_tolerance_degrees": 25.841932763167126
+    },
+    {
+      "dot_threshold": 0.93,
+      "angle_tolerance_degrees": 21.56518501524267
+    },
+    {
+      "dot_threshold": 0.96,
+      "angle_tolerance_degrees": 16.260204708311967
+    }
+  ],
+  "cases": [
+    {
+      "case": "階梯狀圓柱",
+      "stl": "零件/Stepped Cylinder.stl",
+      "point_csv": "零件/Stepped Cylinder點雲.csv",
+      "sample_count": 10000,
+      "surface_area_mm2": 37511.774079018025,
+      "area_per_point_mm2": 3.7511774079018023,
+      "characteristic_spacing_sqrt_area_per_point_mm": 1.9367956546579204,
+      "nearest_neighbor_mean_mm": 0.9623880024543341,
+      "nearest_neighbor_median_mm": 0.9006912864360607,
+      "nearest_neighbor_p95_mm": 1.8632547245591309,
+      "bounding_box_diagonal_mm": 150.99282141918255
+    },
+    {
+      "case": "L型板",
+      "stl": "零件/L-Bracket.stl",
+      "point_csv": "零件/L-Bracket點雲.csv",
+      "sample_count": 10000,
+      "surface_area_mm2": 12785.284996810999,
+      "area_per_point_mm2": 1.2785284996811,
+      "characteristic_spacing_sqrt_area_per_point_mm": 1.1307203454794204,
+      "nearest_neighbor_mean_mm": 0.5650584445591976,
+      "nearest_neighbor_median_mm": 0.5349507503119081,
+      "nearest_neighbor_p95_mm": 1.0825900915629443,
+      "bounding_box_diagonal_mm": 100.12493130685158
+    },
+    {
+      "case": "模型A",
+      "stl": "零件/Model A.stl",
+      "point_csv": "零件/Model A點雲.csv",
+      "sample_count": 10000,
+      "surface_area_mm2": 37450.9749816318,
+      "area_per_point_mm2": 3.74509749816318,
+      "characteristic_spacing_sqrt_area_per_point_mm": 1.9352254385893082,
+      "nearest_neighbor_mean_mm": 0.9634708340057783,
+      "nearest_neighbor_median_mm": 0.9105526968031397,
+      "nearest_neighbor_p95_mm": 1.8691391473020185,
+      "bounding_box_diagonal_mm": 184.12153222887147
+    },
+    {
+      "case": "盲孔六角座",
+      "stl": "零件/Hex Base with Hole A.stl",
+      "point_csv": "零件/Blind-Hole Hex Base點雲.csv",
+      "sample_count": 10000,
+      "surface_area_mm2": 41351.08390533282,
+      "area_per_point_mm2": 4.135108390533282,
+      "characteristic_spacing_sqrt_area_per_point_mm": 2.0334965922108847,
+      "nearest_neighbor_mean_mm": 1.00651191878531,
+      "nearest_neighbor_median_mm": 0.9565920558994946,
+      "nearest_neighbor_p95_mm": 1.9551845984494542,
+      "bounding_box_diagonal_mm": 152.05678699878163
+    }
+  ]
+}

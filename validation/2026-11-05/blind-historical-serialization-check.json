@@ -1,0 +1,16 @@
+{
+  "hypothesis": "historical verified CSV differs from recorded initial CSV only in BOM/newline serialization",
+  "source": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+  "source_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+  "recorded_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+  "variants_checked": 8,
+  "matches": [
+    {
+      "newline": "CRLF",
+      "trailing": true,
+      "bom": false,
+      "sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "matches": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+﻿CandidateID,PrimitiveType,RelatedClusters,Length,Width,Height,Radius,Depth,BooleanType,InferenceRule,RuleStatus
+SC_D01,ThroughHole,0;2;4,,,,14.969511127,100.000000134,Difference,cylinder side + two EndCap relations + radial normal sense,PASS
+SC_U01,CylinderLower,1;2;3,,,,39.967748299,40.000000080,Union,cylinder side + two EndCap relations + radial normal sense,PASS
+SC_U02,CylinderUpper,3;4;5,,,,24.967053136,60.000000054,Union,cylinder side + two EndCap relations + radial normal sense,PASS

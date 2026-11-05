@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "method": "formal output and two consecutive full reruns compared by SHA-256",
+  "file_count": 8,
+  "missing_files": {},
+  "all_match": true,
+  "files": {
+    "CSGTree_L_Bracket_chapter3_verified.json": {
+      "formal_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+      "run1_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+      "run2_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+      "match": true
+    },
+    "CorrectionTrace_L_Bracket_chapter3.csv": {
+      "formal_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+      "run1_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+      "run2_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+      "match": true
+    },
+    "FaceSummary_L_Bracket_chapter3_verified.csv": {
+      "formal_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+      "run1_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+      "run2_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+      "match": true
+    },
+    "MethodInferenceManifest_L_Bracket_chapter3.json": {
+      "formal_sha256": "89c14010be012c93f6fd714e866cd3e72df290746ae39267de0e1f4da10e988b",
+      "run1_sha256": "89c14010be012c93f6fd714e866cd3e72df290746ae39267de0e1f4da10e988b",
+      "run2_sha256": "89c14010be012c93f6fd714e866cd3e72df290746ae39267de0e1f4da10e988b",
+      "match": true
+    },
+    "PrimitiveCandidates_L_Bracket_chapter3_verified.csv": {
+      "formal_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+      "run1_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+      "run2_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+      "match": true
+    },
+    "Result_L_Bracket_chapter3_verified.csv": {
+      "formal_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+      "run1_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+      "run2_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+      "match": true
+    },
+    "TopologyEdges_L_Bracket_chapter3_verified.csv": {
+      "formal_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+      "run1_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+      "run2_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+      "match": true
+    },
+    "ValidationSummary_L_Bracket_chapter3.json": {
+      "formal_sha256": "7f2392929df702fde6722bbcd002c95fe45f9cff69fda8a02a5771bcb969e8da",
+      "run1_sha256": "7f2392929df702fde6722bbcd002c95fe45f9cff69fda8a02a5771bcb969e8da",
+      "run2_sha256": "7f2392929df702fde6722bbcd002c95fe45f9cff69fda8a02a5771bcb969e8da",
+      "match": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+﻿FromClusterID,ToClusterID,EdgeType,MinDistance,DirectionDot,DistanceThreshold,DirectionThreshold,RuleStatus,InferenceRule
+0,3,OrthogonalAdjacency,0.353578240,0.000000002,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+0,4,OrthogonalAdjacency,0.354460024,0.000000000,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+0,6,OrthogonalAdjacency,0.382214741,0.000000005,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+0,9,EndCap,0.417053857,0.999999999,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+1,9,EndCap,0.503151331,0.999999999,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+1,10,EndCap,0.089992558,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+2,9,EndCap,0.418912058,0.999999999,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+2,10,EndCap,0.284852606,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+3,4,OrthogonalAdjacency,0.772035452,0.000000008,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+3,6,Adjacency,1.211673929,0.440698270,2.000000000,,PASS,finite-range contact
+3,8,OrthogonalAdjacency,1.603431696,0.000000006,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+3,13,EndCap,0.620027633,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+3,14,EndCap,0.460120682,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+4,5,OrthogonalAdjacency,0.095380269,0.000000000,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+4,7,OrthogonalAdjacency,0.678147194,0.000000003,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+4,9,Adjacency,1.153482003,0.000021652,2.000000000,,PASS,finite-range contact
+4,14,Adjacency,0.786440438,0.000000001,2.000000000,,PASS,finite-range contact
+5,6,OrthogonalAdjacency,0.435356132,0.000000004,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+5,7,OrthogonalAdjacency,0.559407478,0.000000004,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+5,8,OrthogonalAdjacency,0.807245919,0.000000001,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+5,9,EndCap,0.666540043,0.999999999,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+6,9,Adjacency,1.305408231,0.000029683,2.000000000,,PASS,finite-range contact
+7,8,OrthogonalAdjacency,0.569409551,0.000000005,2.000000000,0.200000000,PASS,finite-range contact; |normal·normal|<0.2
+7,13,EndCap,0.433480137,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+7,14,EndCap,0.429616938,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+8,14,Adjacency,1.347179911,0.000000001,2.000000000,,PASS,finite-range contact

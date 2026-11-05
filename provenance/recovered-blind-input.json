@@ -1,0 +1,15 @@
+{
+  "source": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+  "source_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+  "recovered_path": "data/recovered/Result_Blind-Hole Hex Base_fixed.csv",
+  "recovered_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+  "recorded_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+  "transformation": "LF to CRLF; trailing CRLF; no BOM. Data tokens, columns and row order unchanged.",
+  "validation_scope": "Exact historical input-byte recovery, not an independent correctness dataset.",
+  "regenerated_from_point_normals": {
+    "source_binding": "examples/segmentation.json",
+    "report": "validation/2026-11-05/relocated-pipeline-results.json",
+    "initial_csv_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+    "note": "The same historical input bytes were also regenerated directly from the provided original point-normal CSV by the unchanged C# source, without reading historical verified output."
+  }
+}

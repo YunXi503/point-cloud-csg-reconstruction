@@ -1,0 +1,45 @@
+{
+  "criterion": "identical project, identical available algorithm sources, matching assembly GUID; copy exact original metadata",
+  "restored": [
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "L_Bracket幾何邏輯/Properties/AssemblyInfo.cs",
+      "role": "restored-original-build-metadata",
+      "bytes": 1332,
+      "sha256": "8257e8ccb3303bbc4b569491f2f1ca5564db7b6f3cf6ecb6b0276fbb72b548e3",
+      "project_sha256": "0a5f2b7553e7cc7cbec40d3d17250871a9ea7a61c3e69687c45c3e3ca29439a4",
+      "assembly_guid": "23571669-fec7-4ca9-b563-6e2175b40a5d"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法L-Bracket/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法L-Bracket/Properties/AssemblyInfo.cs",
+      "role": "restored-original-build-metadata",
+      "bytes": 1362,
+      "sha256": "0a748d2b3ee4ff4c6620890b996acb98508df911a9d2fea21fc8903e4293bf72",
+      "project_sha256": "31e75725bde1b83333a2fbb15b29c8563e021de3b643c91b338c370993dee378",
+      "assembly_guid": "be04dc0f-b4ce-4dfa-94ac-bba727c72ca9"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Model A/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Model A/Properties/AssemblyInfo.cs",
+      "role": "restored-original-build-metadata",
+      "bytes": 1358,
+      "sha256": "d5916cd673a05b8ae56c13c538f5b7b0f8c957686918af27662d682229bddd38",
+      "project_sha256": "bd778ba1ab84d49979503f846f107394972b1078ae5b739983ef06ccc15f5d12",
+      "assembly_guid": "96fea4a5-880c-4ae7-8110-fca198965d7f"
+    },
+    {
+      "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/特徵辨識核心演算法Stepped Cylinder/Properties/AssemblyInfo.cs",
+      "source_root": "original_csharp_workspace",
+      "source_path": "特徵辨識核心演算法Stepped Cylinder/Properties/AssemblyInfo.cs",
+      "role": "restored-original-build-metadata",
+      "bytes": 1344,
+      "sha256": "f2421a69317ec3dc219c42e00094e8718a9ffc8f7e472022828f71a25fb91758",
+      "project_sha256": "3504a63756490f32567f1ad9d4fd3eb1d07116e6d65aef92f1c1ccbf31a2d666",
+      "assembly_guid": "82d4ddb2-bf8c-4b19-b2c8-73c62fbe4ef1"
+    }
+  ]
+}

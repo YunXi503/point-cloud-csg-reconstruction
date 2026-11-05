@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "case": "Stepped Cylinder",
+  "runs_compared": [
+    "plan/qa/stepped_cylinder_independent_260721/run1",
+    "plan/qa/stepped_cylinder_independent_260721/run2",
+    "碩士論文/第四章驗證結果_260721/Stepped_Cylinder_independent"
+  ],
+  "all_hashes_identical": true,
+  "files": {
+    "GroundTruth_Stepped_Cylinder_independent.json": "9529b52379f3576f965caca71494feb81de01811007446b1d5f84a5e78352b0c",
+    "ValidationAgainstIndependentTruth_Stepped_Cylinder.json": "a0e4513037589c349f3fb8bc5e9d7f7f5edc1f95ad595e32a5a6e0af189a5a4b",
+    "IndependentTruthBuildManifest.json": "0370d24b919ea604affcb78c29391bbf76e14866916278af6415a407abe765ed",
+    "SurfaceMapping_Stepped_Cylinder.csv": "e7f7501ade3cb87393db0f27c8b6ea4febc7e17e6e87b1a513eb8db545ad369f",
+    "CandidateMapping_Stepped_Cylinder.csv": "fc689016dababb0bf34c667499e607a40f28f042fca0ec7c92d0bf010f9d27dd"
+  },
+  "result": "PASS"
+}

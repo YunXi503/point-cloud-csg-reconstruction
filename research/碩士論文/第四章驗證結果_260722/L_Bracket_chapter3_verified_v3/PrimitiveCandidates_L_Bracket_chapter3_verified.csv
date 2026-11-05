@@ -1,0 +1,6 @@
+﻿CandidateID,PrimitiveType,RelatedClusters,Length,Width,Height,Radius,Depth,BooleanType,InferenceRule,RuleStatus
+LB_D01,BasePlateHole,0;2;9,,,,7.970796954,4.999999993,Difference,cylinder side + two EndCap relations + radial normal sense,PASS
+LB_D02,UprightPlateHole,1;7;11,,,,7.971960387,5.000000002,Difference,cylinder side + two EndCap relations + radial normal sense,PASS
+LB_U01,BasePlate,0;1;2;5;8;10,40.000003815,80.000007629,4.999999993,,,Union,opposing planes + connected OrthogonalAdjacency shell,PASS
+LB_U02,UprightPlate,1;3;5;7;8,40.000003815,5.000000002,44.999999898,,,Union,opposing planes + connected OrthogonalAdjacency shell,PASS
+LB_U03,Cylinder,2;4;6,,,,9.967792777,30.000000022,Union,cylinder side + two EndCap relations + radial normal sense,PASS

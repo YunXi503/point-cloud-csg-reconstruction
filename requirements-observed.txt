@@ -1,0 +1,7 @@
+# Historical record of the first local environment, retained for traceability.
+# Not the default installation: NumPy 2.4.0 was yanked. Use requirements.txt.
+numpy==2.4.0
+pandas==3.0.3
+scipy==1.16.3
+matplotlib==3.10.8
+Pillow==12.1.0

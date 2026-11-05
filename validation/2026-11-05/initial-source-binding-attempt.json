@@ -1,0 +1,194 @@
+{
+  "scope": "Provided point-normal CSV to existing C# classifier and Python inference; no STL sampling",
+  "cases": [
+    {
+      "id": "stepped-cylinder",
+      "source_sha256": "a7cdd45d2269f955dbe51a1416dccf6d2c5a2287674a6da2a50259e3ca83ce58",
+      "point_cloud_sha256": "dc245b8c26324a63179f26dc9039c03639c48e9aa417bb7a5468bbb4ad3f10cc",
+      "classifier_exit_code": 0,
+      "initial_output_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "expected_initial_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "initial_bytes_match": true,
+      "initial_comparison": {
+        "parsed_exact": true,
+        "different_cells": 0,
+        "examples": []
+      },
+      "inference_exit_code": 0,
+      "outputs": [
+        {
+          "filename": "Result_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "matches": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "l-bracket",
+      "source_sha256": "34558d9baf3818508f8958eb0e4c33521879a330c4e74998df2d6b4a5cb8bb34",
+      "point_cloud_sha256": "769d9cd8aaa25c41755944cdd2423e20a5747e9a31df9db6a03edd723c23e41c",
+      "classifier_exit_code": 0,
+      "initial_output_sha256": "a477c4746745fe1defe2f1644f55a3c674f27b9cb75b5e293345f966aa6c75f9",
+      "expected_initial_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "initial_bytes_match": false,
+      "initial_comparison": {
+        "parsed_exact": false,
+        "different_cells": 298,
+        "examples": [
+          {
+            "row": 201,
+            "column": "ClusterID",
+            "actual": "5",
+            "expected": "12"
+          },
+          {
+            "row": 241,
+            "column": "ClusterID",
+            "actual": "5",
+            "expected": "12"
+          },
+          {
+            "row": 289,
+            "column": "ClusterID",
+            "actual": "8",
+            "expected": "13"
+          },
+          {
+            "row": 292,
+            "column": "ClusterID",
+            "actual": "5",
+            "expected": "12"
+          },
+          {
+            "row": 355,
+            "column": "ClusterID",
+            "actual": "5",
+            "expected": "12"
+          }
+        ]
+      },
+      "status": "initial-data-mismatch"
+    },
+    {
+      "id": "model-a",
+      "source_sha256": "3cf04caae8a58f187e24bab3f8caf6c668941b8371797457026d0753561a8095",
+      "point_cloud_sha256": "f10f952e4b2ba7f02d45011c2a8f35b32ae73553845b5bdd1ac07dc04db1b436",
+      "classifier_exit_code": 0,
+      "initial_output_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "expected_initial_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "initial_bytes_match": true,
+      "initial_comparison": {
+        "parsed_exact": true,
+        "different_cells": 0,
+        "examples": []
+      },
+      "inference_exit_code": 0,
+      "outputs": [
+        {
+          "filename": "Result_Model_A_chapter3_verified.csv",
+          "sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "matches": true
+        },
+        {
+          "filename": "FaceSummary_Model_A_chapter3_verified.csv",
+          "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "matches": true
+        },
+        {
+          "filename": "TopologyEdges_Model_A_chapter3_verified.csv",
+          "sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "matches": true
+        },
+        {
+          "filename": "PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "matches": true
+        },
+        {
+          "filename": "CSGTree_Model_A_chapter3_verified.json",
+          "sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "matches": true
+        },
+        {
+          "filename": "CorrectionTrace_Model_A_chapter3.csv",
+          "sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "matches": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "blind-hole-hex-base",
+      "source_sha256": "e9195504320c42a1b81e7ff79bd8038ac35b04d3521679eb346819cffdf8ef1e",
+      "point_cloud_sha256": "7e757e2848a4f4ca0f123b2326a07716601bfdab1a962c3b020b418baccb7bc2",
+      "classifier_exit_code": 0,
+      "initial_output_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "expected_initial_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "initial_bytes_match": false,
+      "initial_comparison": {
+        "parsed_exact": false,
+        "different_cells": 31729,
+        "examples": [
+          {
+            "row": 1,
+            "column": "X",
+            "actual": "30.2241058349609",
+            "expected": "30.224105834960938"
+          },
+          {
+            "row": 1,
+            "column": "Y",
+            "actual": "-17.633638381958",
+            "expected": "-17.633638381958008"
+          },
+          {
+            "row": 1,
+            "column": "Z",
+            "actual": "61.7197875976563",
+            "expected": "61.71978759765625"
+          },
+          {
+            "row": 1,
+            "column": "NX",
+            "actual": "0.838670611381531",
+            "expected": "0.8386706113815308"
+          },
+          {
+            "row": 1,
+            "column": "NY",
+            "actual": "-0.544638931751251",
+            "expected": "-0.5446389317512512"
+          }
+        ]
+      },
+      "status": "initial-data-mismatch"
+    }
+  ],
+  "status": "partial-or-failed"
+}

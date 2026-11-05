@@ -1,0 +1,221 @@
+import bpy
+import bmesh
+import random
+import csv
+from mathutils import Vector
+
+# =========================
+# 你要改的參數在這裡
+# =========================
+OBJ_NAME = None             # None = 用目前選取的物體；或填 "MyObject"
+POINT_COUNT = 10000         # 均勻取樣點數
+SEED = 42                   # 隨機種子（固定可重現）
+NORMAL_LINE_LEN = 2.0       # normal 視覺化線段長度（同 Blender 單位）
+OUT_CSV_PATH = r"C:\Users\Admin\Desktop\云析論文\零件\Model A點雲.csv"  # 輸出 CSV 路徑
+
+VIS_COLLECTION_NAME = "SamplePointsNormals"   # 放可視化物件的 collection 名稱
+CLEAR_PREVIOUS = True        # True 會先刪掉同名 collection（避免重複生成）
+
+SHOW_POINTS = True           # 新增：是否顯示點
+POINT_OBJECT_NAME = "SamplePoints"   # 新增：點雲物件名稱
+NORMAL_OBJECT_NAME = "NormalsLines"  # 法向線物件名稱
+# =========================
+
+
+def get_target_object():
+    if OBJ_NAME:
+        obj = bpy.data.objects.get(OBJ_NAME)
+        if obj is None:
+            raise RuntimeError(f"找不到物體: {OBJ_NAME}")
+        return obj
+    obj = bpy.context.active_object
+    if obj is None:
+        raise RuntimeError("請先選取一個 Mesh 物體，或設定 OBJ_NAME。")
+    return obj
+
+
+def get_evaluated_mesh(obj):
+    depsgraph = bpy.context.evaluated_depsgraph_get()
+    obj_eval = obj.evaluated_get(depsgraph)
+    mesh = obj_eval.to_mesh()
+    return obj_eval, mesh
+
+
+def triangulate_to_bmesh(mesh):
+    bm = bmesh.new()
+    bm.from_mesh(mesh)
+    bmesh.ops.triangulate(bm, faces=bm.faces[:])
+    bm.faces.ensure_lookup_table()
+    return bm
+
+
+def build_area_cdf(bm):
+    # 對每個三角形面計算面積，做累積分佈 (CDF)
+    cdf = []
+    total = 0.0
+    for f in bm.faces:
+        a = f.calc_area()
+        total += a
+        cdf.append(total)
+    if total <= 1e-12:
+        raise RuntimeError("物體表面總面積為 0，無法取樣。（請確認物體是 Mesh 且有面）")
+    return cdf, total
+
+
+def sample_face_by_cdf(bm, cdf, r):
+    # r in [0,total)
+    for i, v in enumerate(cdf):
+        if r <= v:
+            return bm.faces[i]
+    return bm.faces[-1]
+
+
+def random_point_on_triangle(v0, v1, v2):
+    # 均勻取樣三角形（barycentric）
+    r1 = random.random()
+    r2 = random.random()
+    sr1 = r1 ** 0.5
+    a = 1.0 - sr1
+    b = sr1 * (1.0 - r2)
+    c = sr1 * r2
+    return (v0 * a) + (v1 * b) + (v2 * c)
+
+
+def ensure_collection(name, clear=False):
+    if name in bpy.data.collections and clear:
+        col = bpy.data.collections[name]
+        for o in list(col.objects):
+            bpy.data.objects.remove(o, do_unlink=True)
+        bpy.data.collections.remove(col)
+
+    if name in bpy.data.collections:
+        return bpy.data.collections[name]
+
+    col = bpy.data.collections.new(name)
+    bpy.context.scene.collection.children.link(col)
+    return col
+
+
+def create_point_cloud_mesh(name, points_world, collection):
+    # 建一個只有 vertices 的 mesh 來顯示點雲
+    verts = [(p.x, p.y, p.z) for p in points_world]
+
+    mesh = bpy.data.meshes.new(name + "_mesh")
+    mesh.from_pydata(verts, [], [])
+    mesh.update()
+
+    obj = bpy.data.objects.new(name, mesh)
+    collection.objects.link(obj)
+
+    # 顯示設定：WIRE 比較好看清楚（也不會遮住）
+    obj.display_type = 'WIRE'
+    return obj
+
+
+def create_normal_lines_mesh(name, points_world, normals_world, line_len, collection):
+    verts = []
+    edges = []
+    idx = 0
+    for p, n in zip(points_world, normals_world):
+        p0 = p
+        p1 = p + (n * line_len)
+        verts.append((p0.x, p0.y, p0.z))
+        verts.append((p1.x, p1.y, p1.z))
+        edges.append((idx, idx + 1))
+        idx += 2
+
+    mesh = bpy.data.meshes.new(name + "_mesh")
+    mesh.from_pydata(verts, edges, [])
+    mesh.update()
+
+    obj = bpy.data.objects.new(name, mesh)
+    collection.objects.link(obj)
+    obj.display_type = 'WIRE'
+    return obj
+
+
+def export_csv(path, points_world, normals_world):
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["X", "Y", "Z", "NX", "NY", "NZ"])
+        for p, n in zip(points_world, normals_world):
+            w.writerow([
+                f"{p.x:.17g}", f"{p.y:.17g}", f"{p.z:.17g}",
+                f"{n.x:.17g}", f"{n.y:.17g}", f"{n.z:.17g}",
+            ])
+
+
+def main():
+    random.seed(SEED)
+
+    obj = get_target_object()
+    if obj.type != 'MESH':
+        raise RuntimeError("選到的物體不是 Mesh。")
+
+    # 取 evaluated mesh（包含 modifier 結果）
+    obj_eval, mesh = get_evaluated_mesh(obj)
+
+    bm = triangulate_to_bmesh(mesh)
+    cdf, total_area = build_area_cdf(bm)
+
+    mw = obj_eval.matrix_world
+    nmat = mw.to_3x3().inverted().transposed()
+
+    points_world = []
+    normals_world = []
+
+    for _ in range(POINT_COUNT):
+        r = random.random() * total_area
+        f = sample_face_by_cdf(bm, cdf, r)
+
+        v0 = f.verts[0].co
+        v1 = f.verts[1].co
+        v2 = f.verts[2].co
+
+        p_local = random_point_on_triangle(v0, v1, v2)
+
+        n_local = f.normal.copy()
+        if n_local.length > 1e-12:
+            n_local.normalize()
+
+        p_world = mw @ p_local
+        n_world = (nmat @ n_local).normalized()
+
+        points_world.append(p_world)
+        normals_world.append(n_world)
+
+    # 清理與建立可視化 collection
+    col = ensure_collection(VIS_COLLECTION_NAME, clear=CLEAR_PREVIOUS)
+
+    # 新增：顯示點雲
+    if SHOW_POINTS:
+        create_point_cloud_mesh(
+            name=POINT_OBJECT_NAME,
+            points_world=points_world,
+            collection=col
+        )
+
+    # 顯示所有 normal 線段
+    create_normal_lines_mesh(
+        name=NORMAL_OBJECT_NAME,
+        points_world=points_world,
+        normals_world=normals_world,
+        line_len=NORMAL_LINE_LEN,
+        collection=col
+    )
+
+    # 匯出 CSV
+    export_csv(OUT_CSV_PATH, points_world, normals_world)
+
+    # 釋放 evaluated mesh
+    obj_eval.to_mesh_clear()
+    bm.free()
+
+    print(f"[OK] 取樣點數: {POINT_COUNT}")
+    print(f"[OK] CSV 輸出: {OUT_CSV_PATH}")
+    print(f"[OK] 可視化 collection: {VIS_COLLECTION_NAME}")
+    print("[Tip] 如果點看起來很小：到 Viewport Overlays / 或 Blender 的點顯示設定調整 Point Size。")
+
+
+if __name__ == "__main__":
+    main()

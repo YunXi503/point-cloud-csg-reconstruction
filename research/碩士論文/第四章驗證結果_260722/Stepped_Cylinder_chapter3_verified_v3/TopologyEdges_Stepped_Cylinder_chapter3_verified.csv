@@ -1,0 +1,7 @@
+﻿FromClusterID,ToClusterID,EdgeType,MinDistance,DirectionDot,DistanceThreshold,DirectionThreshold,RuleStatus,InferenceRule
+0,2,EndCap,0.371601486,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+0,4,EndCap,0.752016069,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+1,2,EndCap,0.119620012,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+1,3,EndCap,0.090927925,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+3,5,EndCap,0.229221769,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95
+4,5,EndCap,0.294663599,1.000000000,5.000000000,0.950000000,PASS,finite-range contact; |axis·normal|>0.95

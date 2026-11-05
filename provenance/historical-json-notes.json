@@ -1,0 +1,7 @@
+[
+  {
+    "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/MethodInferenceManifest_Model_A_chapter3.json",
+    "issue": "Unexpected token 'N', ...\"derived\": NaN,\r\n    \"... is not valid JSON",
+    "preserved_without_changes": true
+  }
+]

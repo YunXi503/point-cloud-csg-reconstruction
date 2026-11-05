@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "case": "Stepped Cylinder",
+  "criterion": "two complete inference reruns must have identical filenames and SHA-256 hashes",
+  "run_1": "run1",
+  "run_2": "run2",
+  "filenames_match": true,
+  "files": [
+    {
+      "filename": "CSGTree_Stepped_Cylinder_chapter3_verified.json",
+      "run_1_sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+      "run_2_sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+      "match": true
+    },
+    {
+      "filename": "CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+      "run_1_sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+      "run_2_sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+      "match": true
+    },
+    {
+      "filename": "FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+      "run_1_sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+      "run_2_sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+      "match": true
+    },
+    {
+      "filename": "MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "run_1_sha256": "b2c4bc4bd647d384f45524e0cd1ab9211e10a5d4b6dfc1a1481190858c6d4278",
+      "run_2_sha256": "b2c4bc4bd647d384f45524e0cd1ab9211e10a5d4b6dfc1a1481190858c6d4278",
+      "match": true
+    },
+    {
+      "filename": "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+      "run_1_sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+      "run_2_sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+      "match": true
+    },
+    {
+      "filename": "Result_Stepped_Cylinder_chapter3_verified.csv",
+      "run_1_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+      "run_2_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+      "match": true
+    },
+    {
+      "filename": "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+      "run_1_sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+      "run_2_sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+      "match": true
+    }
+  ],
+  "overall": "PASS"
+}

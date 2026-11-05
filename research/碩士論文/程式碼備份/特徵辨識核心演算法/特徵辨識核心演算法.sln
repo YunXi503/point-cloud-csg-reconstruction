@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36422.26
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{82D8F99F-2EB7-459B-A395-FF8A0C8F2C43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "特徵辨識核心演算法L-Bracket", "特徵辨識核心演算法L-Bracket\特徵辨識核心演算法L-Bracket.csproj", "{BE04DC0F-B4CE-4DFA-94AC-BBA727C72CA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "特徵辨識核心演算法Model A", "特徵辨識核心演算法Model A\特徵辨識核心演算法Model A.csproj", "{96FEA4A5-880C-4AE7-8110-FCA198965D7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L_Bracket幾何邏輯", "L_Bracket幾何邏輯\L_Bracket幾何邏輯.csproj", "{23571669-FEC7-4CA9-B563-6E2175B40A5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "特徵辨識核心演算法盲孔六角座", "..\特徵辨識核心演算法盲孔六角座\特徵辨識核心演算法盲孔六角座.csproj", "{27D17645-49CA-4F24-88A2-A5708152EEB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "特徵辨識核心演算法Blind_Hole_Hex_Base", "特徵辨識核心演算法Blind_Hole_Hex_Base\特徵辨識核心演算法Blind_Hole_Hex_Base.csproj", "{B9CA5FBD-6E10-4AEC-A146-7F0491F76655}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE04DC0F-B4CE-4DFA-94AC-BBA727C72CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE04DC0F-B4CE-4DFA-94AC-BBA727C72CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE04DC0F-B4CE-4DFA-94AC-BBA727C72CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE04DC0F-B4CE-4DFA-94AC-BBA727C72CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96FEA4A5-880C-4AE7-8110-FCA198965D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96FEA4A5-880C-4AE7-8110-FCA198965D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96FEA4A5-880C-4AE7-8110-FCA198965D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96FEA4A5-880C-4AE7-8110-FCA198965D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23571669-FEC7-4CA9-B563-6E2175B40A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23571669-FEC7-4CA9-B563-6E2175B40A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23571669-FEC7-4CA9-B563-6E2175B40A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23571669-FEC7-4CA9-B563-6E2175B40A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D17645-49CA-4F24-88A2-A5708152EEB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D17645-49CA-4F24-88A2-A5708152EEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D17645-49CA-4F24-88A2-A5708152EEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D17645-49CA-4F24-88A2-A5708152EEB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9CA5FBD-6E10-4AEC-A146-7F0491F76655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9CA5FBD-6E10-4AEC-A146-7F0491F76655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9CA5FBD-6E10-4AEC-A146-7F0491F76655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9CA5FBD-6E10-4AEC-A146-7F0491F76655}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A418D19-ADC3-415B-A775-E37CF2D54842}
+	EndGlobalSection
+EndGlobal

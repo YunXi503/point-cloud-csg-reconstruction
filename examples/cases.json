@@ -1,0 +1,241 @@
+[
+  {
+    "id": "stepped-cylinder",
+    "display_name": "階梯狀圓柱",
+    "scope": "完整方法鏈",
+    "entrypoint": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+    "input": "research/零件/Result_Stepped Cylinder.csv",
+    "reference_directory": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3",
+    "input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+    "recorded_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+    "input_matches_historical_record": true,
+    "program_sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c",
+    "recorded_program_sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c",
+    "program_matches_historical_record": true,
+    "output_checks": [
+      {
+        "filename": "Result_Stepped_Cylinder_chapter3_verified.csv",
+        "recorded_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+        "observed_sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+        "matches": true
+      },
+      {
+        "filename": "FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+        "recorded_sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+        "observed_sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+        "matches": true
+      },
+      {
+        "filename": "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+        "recorded_sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+        "observed_sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+        "matches": true
+      },
+      {
+        "filename": "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+        "recorded_sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+        "observed_sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+        "matches": true
+      },
+      {
+        "filename": "CSGTree_Stepped_Cylinder_chapter3_verified.json",
+        "recorded_sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+        "observed_sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+        "matches": true
+      },
+      {
+        "filename": "CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+        "recorded_sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+        "observed_sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+        "matches": true
+      }
+    ],
+    "runtime_validation": "pass",
+    "command": "python research/tools/infer_stepped_cylinder_chapter3_method.py --result \"research/零件/Result_Stepped Cylinder.csv\" --output-dir \"runs/stepped-cylinder\"",
+    "validated_core_output_count": 6,
+    "validation_report": "validation/2026-11-05/reproduction-results.json",
+    "point_cloud_source_binding": "examples/segmentation.json",
+    "point_cloud_pipeline_validation": "pass"
+  },
+  {
+    "id": "l-bracket",
+    "display_name": "L型板",
+    "scope": "完整方法鏈",
+    "entrypoint": "research/tools/infer_lbracket_chapter3_method.py",
+    "input": "research/零件/Result_L Bracket.csv",
+    "reference_directory": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3",
+    "input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+    "recorded_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+    "input_matches_historical_record": true,
+    "program_sha256": "a4a728f94b805d0fcdf45eefe937aed55442bfff69e9aeff39184ba3d817d9ec",
+    "recorded_program_sha256": "a4a728f94b805d0fcdf45eefe937aed55442bfff69e9aeff39184ba3d817d9ec",
+    "program_matches_historical_record": true,
+    "output_checks": [
+      {
+        "filename": "Result_L_Bracket_chapter3_verified.csv",
+        "recorded_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+        "observed_sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+        "matches": true
+      },
+      {
+        "filename": "FaceSummary_L_Bracket_chapter3_verified.csv",
+        "recorded_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+        "observed_sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+        "matches": true
+      },
+      {
+        "filename": "TopologyEdges_L_Bracket_chapter3_verified.csv",
+        "recorded_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+        "observed_sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+        "matches": true
+      },
+      {
+        "filename": "PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+        "recorded_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+        "observed_sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+        "matches": true
+      },
+      {
+        "filename": "CSGTree_L_Bracket_chapter3_verified.json",
+        "recorded_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+        "observed_sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+        "matches": true
+      },
+      {
+        "filename": "CorrectionTrace_L_Bracket_chapter3.csv",
+        "recorded_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+        "observed_sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+        "matches": true
+      }
+    ],
+    "runtime_validation": "pass",
+    "command": "python research/tools/infer_lbracket_chapter3_method.py --result \"research/零件/Result_L Bracket.csv\" --output-dir \"runs/l-bracket\"",
+    "validated_core_output_count": 6,
+    "validation_report": "validation/2026-11-05/reproduction-results.json",
+    "point_cloud_source_binding": "examples/segmentation.json",
+    "point_cloud_pipeline_validation": "pass"
+  },
+  {
+    "id": "model-a",
+    "display_name": "模型A",
+    "scope": "完整方法鏈",
+    "entrypoint": "research/tools/infer_model_a_chapter3_method.py",
+    "input": "research/零件/Result_Model A.csv",
+    "reference_directory": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3",
+    "input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+    "recorded_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+    "input_matches_historical_record": true,
+    "program_sha256": "8d9dcaa64389dfdbe29124894ebc060badab71e710e49b22c025299e1c22efa0",
+    "recorded_program_sha256": "8d9dcaa64389dfdbe29124894ebc060badab71e710e49b22c025299e1c22efa0",
+    "program_matches_historical_record": true,
+    "output_checks": [
+      {
+        "filename": "Result_Model_A_chapter3_verified.csv",
+        "recorded_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+        "observed_sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+        "matches": true
+      },
+      {
+        "filename": "FaceSummary_Model_A_chapter3_verified.csv",
+        "recorded_sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+        "observed_sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+        "matches": true
+      },
+      {
+        "filename": "TopologyEdges_Model_A_chapter3_verified.csv",
+        "recorded_sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+        "observed_sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+        "matches": true
+      },
+      {
+        "filename": "PrimitiveCandidates_Model_A_chapter3_verified.csv",
+        "recorded_sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+        "observed_sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+        "matches": true
+      },
+      {
+        "filename": "CSGTree_Model_A_chapter3_verified.json",
+        "recorded_sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+        "observed_sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+        "matches": true
+      },
+      {
+        "filename": "CorrectionTrace_Model_A_chapter3.csv",
+        "recorded_sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+        "observed_sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+        "matches": true
+      }
+    ],
+    "runtime_validation": "pass",
+    "command": "python research/tools/infer_model_a_chapter3_method.py --result \"research/零件/Result_Model A.csv\" --output-dir \"runs/model-a\"",
+    "validated_core_output_count": 6,
+    "validation_report": "validation/2026-11-05/reproduction-results.json",
+    "point_cloud_source_binding": "examples/segmentation.json",
+    "point_cloud_pipeline_validation": "pass"
+  },
+  {
+    "id": "blind-hole-hex-base",
+    "display_name": "盲孔六角座",
+    "scope": "端面與有限深度查驗",
+    "entrypoint": "research/tools/infer_blind_hole_hex_base_chapter3_method.py",
+    "input": "data/recovered/Result_Blind-Hole Hex Base_fixed.csv",
+    "reference_directory": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3",
+    "input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+    "recorded_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+    "input_matches_historical_record": true,
+    "program_sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a",
+    "recorded_program_sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a",
+    "program_matches_historical_record": true,
+    "output_checks": [
+      {
+        "filename": "Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+        "recorded_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+        "observed_sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385",
+        "matches": true
+      },
+      {
+        "filename": "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+        "recorded_sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+        "observed_sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+        "matches": true
+      },
+      {
+        "filename": "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+        "recorded_sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+        "observed_sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+        "matches": true
+      },
+      {
+        "filename": "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+        "recorded_sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+        "observed_sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+        "matches": true
+      },
+      {
+        "filename": "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+        "recorded_sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+        "observed_sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+        "matches": true
+      },
+      {
+        "filename": "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+        "recorded_sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+        "observed_sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+        "matches": true
+      }
+    ],
+    "runtime_validation": "pass",
+    "command": "python research/tools/infer_blind_hole_hex_base_chapter3_method.py --result \"data/recovered/Result_Blind-Hole Hex Base_fixed.csv\" --output-dir \"runs/blind-hole-hex-base\"",
+    "previous_packaging_input": {
+      "path": "research/零件/Result_Blind-Hole Hex Base_fixed.csv",
+      "sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "matches_historical_record": false
+    },
+    "input_origin": "recovered-exact-serialization-of-historical-result",
+    "recovery_provenance": "provenance/recovered-blind-input.json",
+    "validated_core_output_count": 6,
+    "validation_report": "validation/2026-11-05/reproduction-results.json",
+    "point_cloud_source_binding": "examples/segmentation.json",
+    "point_cloud_pipeline_validation": "pass"
+  }
+]

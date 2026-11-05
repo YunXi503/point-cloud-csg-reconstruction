@@ -1,0 +1,33 @@
+{
+  "format_priority": "已優先對照 碩士論文/碩士論文格式-系上格式.pdf",
+  "department_pdf_sha256": "98761643cbdb3565ef530cb01c3146b0cd64a491dcdbbaa456b195dce9f8df82",
+  "public_pdf_pages": 75,
+  "a4_pages": 75,
+  "text_blocks_outside_page": [],
+  "all_pages_rendered_to_contact_sheets": true,
+  "detail_pages": [
+    1,
+    3,
+    18,
+    30,
+    44,
+    59,
+    75
+  ],
+  "contacts": [
+    "pages 1–25",
+    "pages 26–50",
+    "pages 51–75"
+  ],
+  "scope": "Read-only export and visual snapshot checks; existing thesis content/layout retained, not a new full institutional submission-format certification.",
+  "visually_reviewed_contact_pages": 75,
+  "visually_reviewed_detail_pages": [
+    26,
+    30,
+    40,
+    44,
+    59,
+    75
+  ],
+  "public_pdf_render_warnings": "none observed in a separate full-page render check"
+}

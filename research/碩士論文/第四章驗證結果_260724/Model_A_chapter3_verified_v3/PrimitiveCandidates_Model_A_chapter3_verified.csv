@@ -1,0 +1,7 @@
+﻿CandidateID,PrimitiveType,RelatedClusters,Length,Width,Height,Radius,Depth,BooleanType,InferenceRule,RuleStatus
+MA_D01,MainAxisYThroughHole,1;2;10,,,,32.967655672,30.000000000,Difference,cylinder side + extreme pair of EndCap relations + radial normal sense,PASS
+MA_D02,RightAxisXThroughHole,3;7;13,,,,11.969807591,24.000000000,Difference,cylinder side + extreme pair of EndCap relations + radial normal sense,PASS
+MA_U01,MainWebProfileExtrusion,0;4;5;6,96.000490331,20.000000000,85.394632506,,,Union,opposing web planes + bottom/oblique profile + main-axis cylinder datum,PASS
+MA_U02,MainAxisYOuterRing,1;2;9,,,,44.967894422,30.000000000,Union,cylinder side + extreme pair of EndCap relations + radial normal sense,PASS
+MA_U03,RightTransitionBlock,3;4;5;7;8,24.000000000,27.997604539,48.000000000,,,Union,opposing X planes + bottom/front/top shell + right-cylinder axis datum,PASS
+MA_U04,RightAxisXOuterBoss,3;7;14,,,,23.970267996,24.000000000,Union,cylinder side + extreme pair of EndCap relations + radial normal sense,PASS

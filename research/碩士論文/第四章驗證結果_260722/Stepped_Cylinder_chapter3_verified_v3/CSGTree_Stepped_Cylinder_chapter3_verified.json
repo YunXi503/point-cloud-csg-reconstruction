@@ -1,0 +1,24 @@
+{
+  "case": "Stepped Cylinder",
+  "source": "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+  "canonicalization": "Union children sorted by CandidateID; Difference subtractors sorted by CandidateID",
+  "tree": {
+    "op": "Difference",
+    "base": {
+      "op": "Union",
+      "children": [
+        {
+          "candidate": "SC_U01"
+        },
+        {
+          "candidate": "SC_U02"
+        }
+      ]
+    },
+    "subtractors": [
+      {
+        "candidate": "SC_D01"
+      }
+    ]
+  }
+}

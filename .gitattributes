@@ -1,0 +1,13 @@
+# Preserve research evidence and source snapshots byte-for-byte across Git checkouts.
+* -text
+*.md text eol=lf
+*.mjs text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.cs text eol=lf
+*.csproj text eol=lf
+*.yml text eol=lf
+*.csv -text
+*.json -text
+research/** -text
+archive/** -text

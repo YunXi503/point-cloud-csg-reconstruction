@@ -1,0 +1,13 @@
+{
+  "operating_system_family": "Windows",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.4.0",
+    "pandas": "3.0.3",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.8",
+    "Pillow": "12.1.0"
+  },
+  "msbuild_version": "17.14.23.42201",
+  "scope": "Observed local environment used for these checks; not a reconstructed historical environment or a clean-install validation."
+}

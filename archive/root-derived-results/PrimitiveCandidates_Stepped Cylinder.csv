@@ -1,0 +1,4 @@
+PrimitiveType,RelatedClusters,Length,Width,Height,Radius,Depth,BooleanType
+CylinderLower,1;2;3,,,39.983043,39.964093,39.983043,Union
+CylinderUpper,5;3;4,,,59.936859,24.963062,59.936859,Union
+ThroughHole,0;2;4,,,,14.965895,99.934704,Difference

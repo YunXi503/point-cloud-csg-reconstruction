@@ -1,0 +1,944 @@
+{
+  "date_utc": "2026-07-31T11:47:32.425857+00:00",
+  "design": {
+    "type": "one-factor-at-a-time",
+    "distance_mm": [
+      1.5,
+      2.0,
+      2.5
+    ],
+    "normal_dot": [
+      0.9,
+      0.93,
+      0.96
+    ],
+    "baseline": {
+      "distance_mm": 2.0,
+      "normal_dot": 0.93
+    },
+    "criterion": "A run is only labelled output-stable when all recorded inference-output hashes equal its same-factor baseline. This is not a correctness claim.",
+    "prediction": "Changing one threshold may alter segmentation, accepted faces, topology, candidate units, or the symbolic CSG output; unchanged output indicates local stability under the tested controlled inputs.",
+    "falsification": "Any failed run or any hash difference from the same-factor baseline falsifies output stability at that setting."
+  },
+  "runs": [
+    {
+      "case": "Stepped_Cylinder",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "a1814353548c5e92b4eff2ab8656f22e406b71024a64d4992e405268be6c3c48",
+        "infer_stepped_cylinder_chapter3_method.py": "a02ff8fed44eb1fd735f169752036bc6c4910587597bdbfc8e744d06d2b7e56c",
+        "infer_lbracket_chapter3_method.py": "489f90b44d8c6af84028aaf9fcc586c3bfcd751162acd9114695b1765f9dd848",
+        "infer_model_a_chapter3_method.py": "24b5b5a90396e0e01ae5b32ecabf9ab1d8ec41cd30ca143017ce314f4fe9b8ea",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Stepped Cylinder.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_1.50",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 7,
+        "accepted_faces": 6,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 6,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Stepped_Cylinder_chapter3_verified.csv": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+        "FaceSummary_Stepped_Cylinder_chapter3_verified.csv": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+        "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+        "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+        "CSGTree_Stepped_Cylinder_chapter3_verified.json": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+        "CorrectionTrace_Stepped_Cylinder_chapter3.csv": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121"
+      },
+      "matches_baseline": false
+    },
+    {
+      "case": "Stepped_Cylinder",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "b98d100e42a7d2630b35b8f31d0dbdb308cfc0b1149ab141a911ddefb6250549",
+        "infer_stepped_cylinder_chapter3_method.py": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+        "infer_lbracket_chapter3_method.py": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Stepped Cylinder.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.00",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 7,
+        "accepted_faces": 6,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 6,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Stepped_Cylinder_chapter3_verified.csv": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+        "FaceSummary_Stepped_Cylinder_chapter3_verified.csv": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+        "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+        "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+        "CSGTree_Stepped_Cylinder_chapter3_verified.json": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+        "CorrectionTrace_Stepped_Cylinder_chapter3.csv": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "Stepped_Cylinder",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "e8e2555ebc92c407bb1d06b96ad5ee1486fe94e074e8f17d61fa035fb819a0ec",
+        "infer_stepped_cylinder_chapter3_method.py": "01de91bafbdc373fcdb725121b60a0ad0a06adb8fc3cb6bd105f7fe2629a3fcc",
+        "infer_lbracket_chapter3_method.py": "668ac194d718903b0d607fd76fed5e9fbf20ab03fd3c257d57bfffbd9ac512ea",
+        "infer_model_a_chapter3_method.py": "1232fa032d6f69397617577ceb32faac3ee9096c6875d0b36cf7d3032305f918",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Stepped Cylinder.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.50",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 7,
+        "accepted_faces": 6,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 6,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Stepped_Cylinder_chapter3_verified.csv": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+        "FaceSummary_Stepped_Cylinder_chapter3_verified.csv": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+        "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+        "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+        "CSGTree_Stepped_Cylinder_chapter3_verified.json": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+        "CorrectionTrace_Stepped_Cylinder_chapter3.csv": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "Stepped_Cylinder",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "0a2ce7e716efe7713d29bd37f3c2c09fab33e74ed38d189e885d10c0ce8fc03f",
+        "infer_stepped_cylinder_chapter3_method.py": "492f2a73bb7ad4beb57ee5bfb364ac54a60ea53bf52bd6f4d0bc2055b1bf87ff",
+        "infer_lbracket_chapter3_method.py": "fdc58f8d6f9d8200669cf8c14d28de500af25f77a450a5ab87b5faf117edc443",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Stepped Cylinder.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.90",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 7,
+        "accepted_faces": 6,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 6,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Stepped_Cylinder_chapter3_verified.csv": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+        "FaceSummary_Stepped_Cylinder_chapter3_verified.csv": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+        "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+        "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+        "CSGTree_Stepped_Cylinder_chapter3_verified.json": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+        "CorrectionTrace_Stepped_Cylinder_chapter3.csv": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121"
+      },
+      "matches_baseline": false
+    },
+    {
+      "case": "Stepped_Cylinder",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "65fdd1a5555ecaddad76a2df4d61e41547755018f3e3d3d7479a04f760bc95f5",
+        "infer_stepped_cylinder_chapter3_method.py": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+        "infer_lbracket_chapter3_method.py": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Stepped Cylinder.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.93",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 7,
+        "accepted_faces": 6,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 6,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Stepped_Cylinder_chapter3_verified.csv": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+        "FaceSummary_Stepped_Cylinder_chapter3_verified.csv": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+        "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+        "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+        "CSGTree_Stepped_Cylinder_chapter3_verified.json": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+        "CorrectionTrace_Stepped_Cylinder_chapter3.csv": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "Stepped_Cylinder",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "cc9843bf03bf0a7f7c4d81016aab635a5db5385074df0fbcabd3ea26579f3224",
+        "infer_stepped_cylinder_chapter3_method.py": "362fc3972a38041a7b4937991cd4d02da26a35b654245c7e389b3cd806ec10e2",
+        "infer_lbracket_chapter3_method.py": "279a650a370ceedef3e731cc1da1f80f6ed26189852ef6563417c3abc71fef01",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Stepped Cylinder.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.96",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 7,
+        "accepted_faces": 6,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 6,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Stepped_Cylinder_chapter3_verified.csv": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+        "FaceSummary_Stepped_Cylinder_chapter3_verified.csv": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+        "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+        "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+        "CSGTree_Stepped_Cylinder_chapter3_verified.json": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+        "CorrectionTrace_Stepped_Cylinder_chapter3.csv": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "L_Bracket",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "a1814353548c5e92b4eff2ab8656f22e406b71024a64d4992e405268be6c3c48",
+        "infer_stepped_cylinder_chapter3_method.py": "a02ff8fed44eb1fd735f169752036bc6c4910587597bdbfc8e744d06d2b7e56c",
+        "infer_lbracket_chapter3_method.py": "489f90b44d8c6af84028aaf9fcc586c3bfcd751162acd9114695b1765f9dd848",
+        "infer_model_a_chapter3_method.py": "24b5b5a90396e0e01ae5b32ecabf9ab1d8ec41cd30ca143017ce314f4fe9b8ea",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_L Bracket.csv",
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\Admin\\Desktop\\云析論文\\碩士論文\\審查報告\\敏感度分析_260731\\variants\\L_Bracket__distance_mm_1.50\\infer_lbracket_chapter3_method.py\", line 683, in <module>\n    main()\n  File \"C:\\Users\\Admin\\Desktop\\云析論文\\碩士論文\\審查報告\\敏感度分析_260731\\variants\\L_Bracket__distance_mm_1.50\\infer_lbracket_chapter3_method.py\", line 679, in main\n    build_outputs(arguments.result.resolve(), arguments.output_dir.resolve())\n  File \"C:\\Users\\Admin\\Desktop\\云析論文\\碩士論文\\審查報告\\敏感度分析_260731\\variants\\L_Bracket__distance_mm_1.50\\infer_lbracket_chapter3_method.py\", line 529, in build_outputs\n    raise ValueError(f\"第三章方法得到 {len(surface_records)} 個有效面，預期 L 型板為 12 個。\")\nValueError: 第三章方法得到 28 個有效面，預期 L 型板為 12 個。",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_1.50",
+      "matches_baseline": null
+    },
+    {
+      "case": "L_Bracket",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "b98d100e42a7d2630b35b8f31d0dbdb308cfc0b1149ab141a911ddefb6250549",
+        "infer_stepped_cylinder_chapter3_method.py": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+        "infer_lbracket_chapter3_method.py": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_L Bracket.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.00",
+      "counts": {
+        "points": 10000,
+        "initial_region_components": 20,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 24,
+        "primitive_candidates": 5
+      },
+      "outputs": {
+        "Result_L_Bracket_chapter3_verified.csv": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+        "FaceSummary_L_Bracket_chapter3_verified.csv": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+        "TopologyEdges_L_Bracket_chapter3_verified.csv": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+        "PrimitiveCandidates_L_Bracket_chapter3_verified.csv": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+        "CSGTree_L_Bracket_chapter3_verified.json": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+        "CorrectionTrace_L_Bracket_chapter3.csv": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "L_Bracket",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "e8e2555ebc92c407bb1d06b96ad5ee1486fe94e074e8f17d61fa035fb819a0ec",
+        "infer_stepped_cylinder_chapter3_method.py": "01de91bafbdc373fcdb725121b60a0ad0a06adb8fc3cb6bd105f7fe2629a3fcc",
+        "infer_lbracket_chapter3_method.py": "668ac194d718903b0d607fd76fed5e9fbf20ab03fd3c257d57bfffbd9ac512ea",
+        "infer_model_a_chapter3_method.py": "1232fa032d6f69397617577ceb32faac3ee9096c6875d0b36cf7d3032305f918",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_L Bracket.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.50",
+      "counts": {
+        "points": 10000,
+        "initial_region_components": 13,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 24,
+        "primitive_candidates": 5
+      },
+      "outputs": {
+        "Result_L_Bracket_chapter3_verified.csv": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+        "FaceSummary_L_Bracket_chapter3_verified.csv": "946f2d01695f1560c7baf52bd4a7dc6619568f05fbf90d3a949d24413fe196a0",
+        "TopologyEdges_L_Bracket_chapter3_verified.csv": "c4a3dc96be31f440df181d100478d22f1fc6e2989d0f962d648615205b9d01c9",
+        "PrimitiveCandidates_L_Bracket_chapter3_verified.csv": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+        "CSGTree_L_Bracket_chapter3_verified.json": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+        "CorrectionTrace_L_Bracket_chapter3.csv": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6"
+      },
+      "matches_baseline": false
+    },
+    {
+      "case": "L_Bracket",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "0a2ce7e716efe7713d29bd37f3c2c09fab33e74ed38d189e885d10c0ce8fc03f",
+        "infer_stepped_cylinder_chapter3_method.py": "492f2a73bb7ad4beb57ee5bfb364ac54a60ea53bf52bd6f4d0bc2055b1bf87ff",
+        "infer_lbracket_chapter3_method.py": "fdc58f8d6f9d8200669cf8c14d28de500af25f77a450a5ab87b5faf117edc443",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_L Bracket.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.90",
+      "counts": {
+        "points": 10000,
+        "initial_region_components": 20,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 24,
+        "primitive_candidates": 5
+      },
+      "outputs": {
+        "Result_L_Bracket_chapter3_verified.csv": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+        "FaceSummary_L_Bracket_chapter3_verified.csv": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+        "TopologyEdges_L_Bracket_chapter3_verified.csv": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+        "PrimitiveCandidates_L_Bracket_chapter3_verified.csv": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+        "CSGTree_L_Bracket_chapter3_verified.json": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+        "CorrectionTrace_L_Bracket_chapter3.csv": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6"
+      },
+      "matches_baseline": false
+    },
+    {
+      "case": "L_Bracket",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "65fdd1a5555ecaddad76a2df4d61e41547755018f3e3d3d7479a04f760bc95f5",
+        "infer_stepped_cylinder_chapter3_method.py": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+        "infer_lbracket_chapter3_method.py": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_L Bracket.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.93",
+      "counts": {
+        "points": 10000,
+        "initial_region_components": 20,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 24,
+        "primitive_candidates": 5
+      },
+      "outputs": {
+        "Result_L_Bracket_chapter3_verified.csv": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+        "FaceSummary_L_Bracket_chapter3_verified.csv": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+        "TopologyEdges_L_Bracket_chapter3_verified.csv": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+        "PrimitiveCandidates_L_Bracket_chapter3_verified.csv": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+        "CSGTree_L_Bracket_chapter3_verified.json": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+        "CorrectionTrace_L_Bracket_chapter3.csv": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "L_Bracket",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "cc9843bf03bf0a7f7c4d81016aab635a5db5385074df0fbcabd3ea26579f3224",
+        "infer_stepped_cylinder_chapter3_method.py": "362fc3972a38041a7b4937991cd4d02da26a35b654245c7e389b3cd806ec10e2",
+        "infer_lbracket_chapter3_method.py": "279a650a370ceedef3e731cc1da1f80f6ed26189852ef6563417c3abc71fef01",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_L Bracket.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.96",
+      "counts": {
+        "points": 10000,
+        "initial_region_components": 20,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 24,
+        "primitive_candidates": 5
+      },
+      "outputs": {
+        "Result_L_Bracket_chapter3_verified.csv": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+        "FaceSummary_L_Bracket_chapter3_verified.csv": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+        "TopologyEdges_L_Bracket_chapter3_verified.csv": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+        "PrimitiveCandidates_L_Bracket_chapter3_verified.csv": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+        "CSGTree_L_Bracket_chapter3_verified.json": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+        "CorrectionTrace_L_Bracket_chapter3.csv": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "Model_A",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "a1814353548c5e92b4eff2ab8656f22e406b71024a64d4992e405268be6c3c48",
+        "infer_stepped_cylinder_chapter3_method.py": "a02ff8fed44eb1fd735f169752036bc6c4910587597bdbfc8e744d06d2b7e56c",
+        "infer_lbracket_chapter3_method.py": "489f90b44d8c6af84028aaf9fcc586c3bfcd751162acd9114695b1765f9dd848",
+        "infer_model_a_chapter3_method.py": "24b5b5a90396e0e01ae5b32ecabf9ab1d8ec41cd30ca143017ce314f4fe9b8ea",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Model A.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_1.50",
+      "counts": {
+        "points": 10000,
+        "original_clusters_including_residual": 15,
+        "accepted_faces": 13,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 25,
+        "primitive_candidates": 6
+      },
+      "outputs": {
+        "Result_Model_A_chapter3_verified.csv": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+        "FaceSummary_Model_A_chapter3_verified.csv": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+        "TopologyEdges_Model_A_chapter3_verified.csv": "b294e4e957fb98789cffd5a3377d37d9777dec207b6004aad654182b5d47b780",
+        "PrimitiveCandidates_Model_A_chapter3_verified.csv": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+        "CSGTree_Model_A_chapter3_verified.json": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+        "CorrectionTrace_Model_A_chapter3.csv": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378"
+      },
+      "matches_baseline": false
+    },
+    {
+      "case": "Model_A",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "b98d100e42a7d2630b35b8f31d0dbdb308cfc0b1149ab141a911ddefb6250549",
+        "infer_stepped_cylinder_chapter3_method.py": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+        "infer_lbracket_chapter3_method.py": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Model A.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.00",
+      "counts": {
+        "points": 10000,
+        "original_clusters_including_residual": 15,
+        "accepted_faces": 13,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 26,
+        "primitive_candidates": 6
+      },
+      "outputs": {
+        "Result_Model_A_chapter3_verified.csv": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+        "FaceSummary_Model_A_chapter3_verified.csv": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+        "TopologyEdges_Model_A_chapter3_verified.csv": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+        "PrimitiveCandidates_Model_A_chapter3_verified.csv": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+        "CSGTree_Model_A_chapter3_verified.json": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+        "CorrectionTrace_Model_A_chapter3.csv": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "Model_A",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "e8e2555ebc92c407bb1d06b96ad5ee1486fe94e074e8f17d61fa035fb819a0ec",
+        "infer_stepped_cylinder_chapter3_method.py": "01de91bafbdc373fcdb725121b60a0ad0a06adb8fc3cb6bd105f7fe2629a3fcc",
+        "infer_lbracket_chapter3_method.py": "668ac194d718903b0d607fd76fed5e9fbf20ab03fd3c257d57bfffbd9ac512ea",
+        "infer_model_a_chapter3_method.py": "1232fa032d6f69397617577ceb32faac3ee9096c6875d0b36cf7d3032305f918",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Model A.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.50",
+      "counts": {
+        "points": 10000,
+        "original_clusters_including_residual": 15,
+        "accepted_faces": 13,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 26,
+        "primitive_candidates": 6
+      },
+      "outputs": {
+        "Result_Model_A_chapter3_verified.csv": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+        "FaceSummary_Model_A_chapter3_verified.csv": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+        "TopologyEdges_Model_A_chapter3_verified.csv": "cb9d488adf7b3614fbee6f1ee01b93dbe47bdaf287111318b6782588bdc19bac",
+        "PrimitiveCandidates_Model_A_chapter3_verified.csv": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+        "CSGTree_Model_A_chapter3_verified.json": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+        "CorrectionTrace_Model_A_chapter3.csv": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378"
+      },
+      "matches_baseline": false
+    },
+    {
+      "case": "Model_A",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "0a2ce7e716efe7713d29bd37f3c2c09fab33e74ed38d189e885d10c0ce8fc03f",
+        "infer_stepped_cylinder_chapter3_method.py": "492f2a73bb7ad4beb57ee5bfb364ac54a60ea53bf52bd6f4d0bc2055b1bf87ff",
+        "infer_lbracket_chapter3_method.py": "fdc58f8d6f9d8200669cf8c14d28de500af25f77a450a5ab87b5faf117edc443",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Model A.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.90",
+      "counts": {
+        "points": 10000,
+        "original_clusters_including_residual": 15,
+        "accepted_faces": 13,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 26,
+        "primitive_candidates": 6
+      },
+      "outputs": {
+        "Result_Model_A_chapter3_verified.csv": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+        "FaceSummary_Model_A_chapter3_verified.csv": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+        "TopologyEdges_Model_A_chapter3_verified.csv": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+        "PrimitiveCandidates_Model_A_chapter3_verified.csv": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+        "CSGTree_Model_A_chapter3_verified.json": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+        "CorrectionTrace_Model_A_chapter3.csv": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378"
+      },
+      "matches_baseline": false
+    },
+    {
+      "case": "Model_A",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "65fdd1a5555ecaddad76a2df4d61e41547755018f3e3d3d7479a04f760bc95f5",
+        "infer_stepped_cylinder_chapter3_method.py": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+        "infer_lbracket_chapter3_method.py": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Model A.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.93",
+      "counts": {
+        "points": 10000,
+        "original_clusters_including_residual": 15,
+        "accepted_faces": 13,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 26,
+        "primitive_candidates": 6
+      },
+      "outputs": {
+        "Result_Model_A_chapter3_verified.csv": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+        "FaceSummary_Model_A_chapter3_verified.csv": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+        "TopologyEdges_Model_A_chapter3_verified.csv": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+        "PrimitiveCandidates_Model_A_chapter3_verified.csv": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+        "CSGTree_Model_A_chapter3_verified.json": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+        "CorrectionTrace_Model_A_chapter3.csv": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "Model_A",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "cc9843bf03bf0a7f7c4d81016aab635a5db5385074df0fbcabd3ea26579f3224",
+        "infer_stepped_cylinder_chapter3_method.py": "362fc3972a38041a7b4937991cd4d02da26a35b654245c7e389b3cd806ec10e2",
+        "infer_lbracket_chapter3_method.py": "279a650a370ceedef3e731cc1da1f80f6ed26189852ef6563417c3abc71fef01",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Model A.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.96",
+      "counts": {
+        "points": 10000,
+        "original_clusters_including_residual": 15,
+        "accepted_faces": 13,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 26,
+        "primitive_candidates": 6
+      },
+      "outputs": {
+        "Result_Model_A_chapter3_verified.csv": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+        "FaceSummary_Model_A_chapter3_verified.csv": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+        "TopologyEdges_Model_A_chapter3_verified.csv": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+        "PrimitiveCandidates_Model_A_chapter3_verified.csv": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+        "CSGTree_Model_A_chapter3_verified.json": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+        "CorrectionTrace_Model_A_chapter3.csv": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "a1814353548c5e92b4eff2ab8656f22e406b71024a64d4992e405268be6c3c48",
+        "infer_stepped_cylinder_chapter3_method.py": "a02ff8fed44eb1fd735f169752036bc6c4910587597bdbfc8e744d06d2b7e56c",
+        "infer_lbracket_chapter3_method.py": "489f90b44d8c6af84028aaf9fcc586c3bfcd751162acd9114695b1765f9dd848",
+        "infer_model_a_chapter3_method.py": "24b5b5a90396e0e01ae5b32ecabf9ab1d8ec41cd30ca143017ce314f4fe9b8ea",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Blind-Hole Hex Base_fixed.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_1.50",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 12,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 22,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Blind_Hole_Hex_Base_chapter3_verified.csv": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+        "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+        "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv": "898f4e17d977aa2dadba3c42b6dd27a776402c131c279981b148e967713b597e",
+        "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+        "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+        "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542"
+      },
+      "matches_baseline": false
+    },
+    {
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "b98d100e42a7d2630b35b8f31d0dbdb308cfc0b1149ab141a911ddefb6250549",
+        "infer_stepped_cylinder_chapter3_method.py": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+        "infer_lbracket_chapter3_method.py": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Blind-Hole Hex Base_fixed.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.00",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 12,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 22,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Blind_Hole_Hex_Base_chapter3_verified.csv": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+        "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+        "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+        "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+        "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+        "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "e8e2555ebc92c407bb1d06b96ad5ee1486fe94e074e8f17d61fa035fb819a0ec",
+        "infer_stepped_cylinder_chapter3_method.py": "01de91bafbdc373fcdb725121b60a0ad0a06adb8fc3cb6bd105f7fe2629a3fcc",
+        "infer_lbracket_chapter3_method.py": "668ac194d718903b0d607fd76fed5e9fbf20ab03fd3c257d57bfffbd9ac512ea",
+        "infer_model_a_chapter3_method.py": "1232fa032d6f69397617577ceb32faac3ee9096c6875d0b36cf7d3032305f918",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Blind-Hole Hex Base_fixed.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.50",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 12,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 22,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Blind_Hole_Hex_Base_chapter3_verified.csv": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+        "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+        "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv": "c081574548b91223ac22971c4c87546330deba5fc6b0ed29dba91640804cf18b",
+        "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+        "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+        "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542"
+      },
+      "matches_baseline": false
+    },
+    {
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "0a2ce7e716efe7713d29bd37f3c2c09fab33e74ed38d189e885d10c0ce8fc03f",
+        "infer_stepped_cylinder_chapter3_method.py": "492f2a73bb7ad4beb57ee5bfb364ac54a60ea53bf52bd6f4d0bc2055b1bf87ff",
+        "infer_lbracket_chapter3_method.py": "fdc58f8d6f9d8200669cf8c14d28de500af25f77a450a5ab87b5faf117edc443",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Blind-Hole Hex Base_fixed.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.90",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 12,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 22,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Blind_Hole_Hex_Base_chapter3_verified.csv": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+        "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+        "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+        "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+        "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+        "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542"
+      },
+      "matches_baseline": false
+    },
+    {
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "65fdd1a5555ecaddad76a2df4d61e41547755018f3e3d3d7479a04f760bc95f5",
+        "infer_stepped_cylinder_chapter3_method.py": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+        "infer_lbracket_chapter3_method.py": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Blind-Hole Hex Base_fixed.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.93",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 12,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 22,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Blind_Hole_Hex_Base_chapter3_verified.csv": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+        "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+        "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+        "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+        "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+        "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542"
+      },
+      "matches_baseline": true
+    },
+    {
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "fixed_parameters": {
+        "distance_mm": 2.0,
+        "normal_dot": 0.93
+      },
+      "variant_sha256": {
+        "correct_stepped_cylinder_nls_v2.py": "cc9843bf03bf0a7f7c4d81016aab635a5db5385074df0fbcabd3ea26579f3224",
+        "infer_stepped_cylinder_chapter3_method.py": "362fc3972a38041a7b4937991cd4d02da26a35b654245c7e389b3cd806ec10e2",
+        "infer_lbracket_chapter3_method.py": "279a650a370ceedef3e731cc1da1f80f6ed26189852ef6563417c3abc71fef01",
+        "infer_model_a_chapter3_method.py": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+        "infer_blind_hole_hex_base_chapter3_method.py": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec"
+      },
+      "source": "零件/Result_Blind-Hole Hex Base_fixed.csv",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "output_dir": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.96",
+      "counts": {
+        "points": 10000,
+        "original_clusters": 12,
+        "accepted_faces": 12,
+        "accepted_points": 10000,
+        "residual_points": 0,
+        "topology_edges": 22,
+        "primitive_candidates": 3
+      },
+      "outputs": {
+        "Result_Blind_Hole_Hex_Base_chapter3_verified.csv": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+        "FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+        "TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+        "PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+        "CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+        "CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542"
+      },
+      "matches_baseline": true
+    }
+  ]
+}

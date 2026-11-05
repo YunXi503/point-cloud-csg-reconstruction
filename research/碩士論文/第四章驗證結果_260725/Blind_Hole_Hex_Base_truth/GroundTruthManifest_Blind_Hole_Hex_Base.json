@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "case": "Blind-Hole Hex Base",
+  "truth_builder": "build_lbracket_modela_independent_truth.py",
+  "truth_builder_sha256": "57e9052bf99fcca6d9f4eb280a06e7f226d9c201b03b16805ca62feef9de6671",
+  "only_geometry_input": {
+    "filename": "Blind_Hole_Hex_Base_evaluated.stl",
+    "sha256": "976af76f3aab6b640295c72e66f6862fdefe5766b1ff9d8f67582b27cde9a552"
+  },
+  "forbidden_inputs_read": [],
+  "output": {
+    "filename": "GroundTruth_Blind_Hole_Hex_Base.json",
+    "sha256": "62de5303de7cad5641f0740e5f4960f04ce5fe4e638f5ed0c946bdfe7f97278b"
+  },
+  "surface_count": 12,
+  "topology_edge_count": 22,
+  "candidate_count": 3
+}

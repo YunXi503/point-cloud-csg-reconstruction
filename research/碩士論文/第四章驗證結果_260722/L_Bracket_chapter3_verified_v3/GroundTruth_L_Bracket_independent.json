@@ -1,0 +1,1234 @@
+{
+  "schema_version": "2.0",
+  "case_key": "l_bracket",
+  "case": "L-Bracket",
+  "display_name": "L型板",
+  "truth_scope": "STL final triangle mesh only; no point cloud, Result, FaceSummary, TopologyEdges, PrimitiveCandidates, or prior GroundTruth was read",
+  "research_boundary": "STL-generated geometry; planar and cylindrical surfaces; symbolic CSG inference only",
+  "source": {
+    "filename": "BlendEvaluatedMesh_L_Bracket.stl",
+    "sha256": "8b481d5b1e21662f3af8df33f0064ebcb828d92bb20c676682c2853765bc88d1",
+    "triangle_count": 396,
+    "mesh_bounds_min": [
+      -20.0,
+      0.0,
+      0.0
+    ],
+    "mesh_bounds_max": [
+      20.0,
+      80.0,
+      45.0
+    ],
+    "nonmanifold_or_open_edge_count": 0
+  },
+  "surface_segmentation": {
+    "method": "STL vertex-circle hypotheses for cylindrical patches, followed by shared-edge coplanar components for remaining triangles",
+    "circle_vertex_tolerance_mm": 0.002,
+    "cylinder_support_tolerance_mm": 0.2,
+    "surface_count": 12,
+    "cylinder_count": 3,
+    "plane_count": 9,
+    "residual_mesh_component_count": 0
+  },
+  "surfaces": [
+    {
+      "geometry": "plane",
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "plane_offset_mm": 0.0,
+      "center": [
+        -2.4628824703906687e-16,
+        40.66522736496128,
+        0.0
+      ],
+      "triangle_indices": [
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327
+      ],
+      "triangle_count": 34,
+      "mesh_connected_components": 1,
+      "vertex_fit_residual_max_mm": 0.0,
+      "triangle_normal_alignment_min": 1.0,
+      "area_mm2": 3000.4048267609287,
+      "bounds_min": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        20.0,
+        80.0,
+        0.0
+      ],
+      "cluster_id": 0,
+      "surface_id": "GT_LB_S00",
+      "semantic_role": "base_bottom",
+      "feature_type": "Plane_XY (底板下表面)"
+    },
+    {
+      "geometry": "plane",
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "plane_offset_mm": 0.0,
+      "center": [
+        1.7759075063730946e-17,
+        0.0,
+        22.188211212152147
+      ],
+      "triangle_indices": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "triangle_count": 34,
+      "mesh_connected_components": 1,
+      "vertex_fit_residual_max_mm": 0.0,
+      "triangle_normal_alignment_min": 1.0,
+      "area_mm2": 1600.404825612184,
+      "bounds_min": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        20.0,
+        0.0,
+        45.0
+      ],
+      "cluster_id": 1,
+      "surface_id": "GT_LB_S01",
+      "semantic_role": "combined_rear_side",
+      "feature_type": "Plane_XZ (底板與立板後側合併面)"
+    },
+    {
+      "geometry": "plane",
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "plane_offset_mm": 5.0,
+      "center": [
+        4.683151902177221e-16,
+        41.307363518602905,
+        5.0
+      ],
+      "triangle_indices": [
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395
+      ],
+      "triangle_count": 68,
+      "mesh_connected_components": 1,
+      "vertex_fit_residual_max_mm": 0.0,
+      "triangle_normal_alignment_min": 1.0,
+      "area_mm2": 2488.260280655887,
+      "bounds_min": [
+        -20.0,
+        5.0,
+        5.0
+      ],
+      "bounds_max": [
+        20.0,
+        80.0,
+        5.0
+      ],
+      "cluster_id": 2,
+      "surface_id": "GT_LB_S02",
+      "semantic_role": "base_top",
+      "feature_type": "Plane_XY (底板上表面)"
+    },
+    {
+      "geometry": "plane",
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "plane_offset_mm": 45.0,
+      "center": [
+        0.0,
+        2.5000000000000004,
+        45.0
+      ],
+      "triangle_indices": [
+        2,
+        3
+      ],
+      "triangle_count": 2,
+      "mesh_connected_components": 1,
+      "vertex_fit_residual_max_mm": 0.0,
+      "triangle_normal_alignment_min": 1.0,
+      "area_mm2": 200.0,
+      "bounds_min": [
+        -20.0,
+        0.0,
+        45.0
+      ],
+      "bounds_max": [
+        20.0,
+        5.0,
+        45.0
+      ],
+      "cluster_id": 3,
+      "surface_id": "GT_LB_S03",
+      "semantic_role": "upright_top",
+      "feature_type": "Plane_XY (立板頂面)"
+    },
+    {
+      "geometry": "cylinder",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_index": 2,
+      "circle_center_2d": [
+        -1.2538811460287452e-05,
+        59.99999999999997
+      ],
+      "radius_mm": 9.999987461188539,
+      "depth_mm": 30.0,
+      "axis_min_mm": 5.0,
+      "axis_max_mm": 35.0,
+      "orientation": "outer",
+      "triangle_indices": [
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233
+      ],
+      "triangle_count": 64,
+      "mesh_connected_components": 1,
+      "support_error_max_mm": 0.048152809509836914,
+      "signed_normal_alignment_median": 0.9994615152817857,
+      "circle_vertex_inliers": 32,
+      "bounds_min": [
+        -10.0,
+        50.0,
+        5.0
+      ],
+      "bounds_max": [
+        10.0,
+        70.0,
+        35.0
+      ],
+      "cluster_id": 4,
+      "surface_id": "GT_LB_S04",
+      "semantic_role": "added_outer_cylinder_side",
+      "feature_type": "Cylinder_axisZ_outer (外加圓柱面)"
+    },
+    {
+      "geometry": "plane",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "plane_offset_mm": 20.0,
+      "center": [
+        20.0,
+        27.5,
+        10.0
+      ],
+      "triangle_indices": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "triangle_count": 4,
+      "mesh_connected_components": 1,
+      "vertex_fit_residual_max_mm": 0.0,
+      "triangle_normal_alignment_min": 1.0,
+      "area_mm2": 600.0,
+      "bounds_min": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        20.0,
+        80.0,
+        45.0
+      ],
+      "cluster_id": 5,
+      "surface_id": "GT_LB_S05",
+      "semantic_role": "combined_right_side",
+      "feature_type": "Plane_YZ (底板與立板右側合併面)"
+    },
+    {
+      "geometry": "plane",
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "plane_offset_mm": 35.0,
+      "center": [
+        1.0646267434514046e-17,
+        59.99999922761517,
+        35.0
+      ],
+      "triangle_indices": [
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169
+      ],
+      "triangle_count": 30,
+      "mesh_connected_components": 1,
+      "vertex_fit_residual_max_mm": 0.0,
+      "triangle_normal_alignment_min": 1.0,
+      "area_mm2": 312.1445461050416,
+      "bounds_min": [
+        -10.0,
+        50.0,
+        35.0
+      ],
+      "bounds_max": [
+        10.0,
+        70.0,
+        35.0
+      ],
+      "cluster_id": 6,
+      "surface_id": "GT_LB_S06",
+      "semantic_role": "added_cylinder_top",
+      "feature_type": "Plane_XY (外加圓柱頂面)"
+    },
+    {
+      "geometry": "plane",
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "plane_offset_mm": 5.0,
+      "center": [
+        3.145779621108364e-16,
+        4.999999999999999,
+        24.9999997538755
+      ],
+      "triangle_indices": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139
+      ],
+      "triangle_count": 34,
+      "mesh_connected_components": 1,
+      "vertex_fit_residual_max_mm": 0.0,
+      "triangle_normal_alignment_min": 1.0,
+      "area_mm2": 1400.404825612184,
+      "bounds_min": [
+        -20.0,
+        5.0,
+        5.0
+      ],
+      "bounds_max": [
+        20.0,
+        5.0,
+        45.0
+      ],
+      "cluster_id": 7,
+      "surface_id": "GT_LB_S07",
+      "semantic_role": "upright_front",
+      "feature_type": "Plane_XZ (立板前側面)"
+    },
+    {
+      "geometry": "plane",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "plane_offset_mm": 20.0,
+      "center": [
+        -20.0,
+        27.5,
+        10.0
+      ],
+      "triangle_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "triangle_count": 4,
+      "mesh_connected_components": 1,
+      "vertex_fit_residual_max_mm": 0.0,
+      "triangle_normal_alignment_min": 1.0,
+      "area_mm2": 600.0,
+      "bounds_min": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        -20.0,
+        80.0,
+        45.0
+      ],
+      "cluster_id": 8,
+      "surface_id": "GT_LB_S08",
+      "semantic_role": "combined_left_side",
+      "feature_type": "Plane_YZ (底板與立板左側合併面)"
+    },
+    {
+      "geometry": "cylinder",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_index": 2,
+      "circle_center_2d": [
+        -2.4863255599701498e-05,
+        30.000000000000014
+      ],
+      "radius_mm": 7.9999751367444,
+      "depth_mm": 5.0,
+      "axis_min_mm": 0.0,
+      "axis_max_mm": 5.0,
+      "orientation": "inner",
+      "triangle_indices": [
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293
+      ],
+      "triangle_count": 60,
+      "mesh_connected_components": 1,
+      "support_error_max_mm": 0.04382502597923654,
+      "signed_normal_alignment_median": -0.9993868464601157,
+      "circle_vertex_inliers": 30,
+      "bounds_min": [
+        -8.0,
+        22.04383087158203,
+        0.0
+      ],
+      "bounds_max": [
+        8.0,
+        37.956180572509766,
+        5.0
+      ],
+      "cluster_id": 9,
+      "surface_id": "GT_LB_S09",
+      "semantic_role": "base_plate_hole_side",
+      "feature_type": "Cylinder_axisZ_inner (底板孔)"
+    },
+    {
+      "geometry": "plane",
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "plane_offset_mm": 80.0,
+      "center": [
+        0.0,
+        80.0,
+        2.5000000000000004
+      ],
+      "triangle_indices": [
+        0,
+        1
+      ],
+      "triangle_count": 2,
+      "mesh_connected_components": 1,
+      "vertex_fit_residual_max_mm": 0.0,
+      "triangle_normal_alignment_min": 1.0,
+      "area_mm2": 200.0,
+      "bounds_min": [
+        -20.0,
+        80.0,
+        0.0
+      ],
+      "bounds_max": [
+        20.0,
+        80.0,
+        5.0
+      ],
+      "cluster_id": 10,
+      "surface_id": "GT_LB_S10",
+      "semantic_role": "base_end",
+      "feature_type": "Plane_XZ (底板端面)"
+    },
+    {
+      "geometry": "cylinder",
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_index": 1,
+      "circle_center_2d": [
+        -2.486325577575896e-05,
+        25.00000000000001
+      ],
+      "radius_mm": 7.999975136744224,
+      "depth_mm": 5.0,
+      "axis_min_mm": 0.0,
+      "axis_max_mm": 5.0,
+      "orientation": "inner",
+      "triangle_indices": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "triangle_count": 60,
+      "mesh_connected_components": 1,
+      "support_error_max_mm": 0.043825025979234766,
+      "signed_normal_alignment_median": -0.9993868464601157,
+      "circle_vertex_inliers": 30,
+      "bounds_min": [
+        -8.0,
+        0.0,
+        17.04383087158203
+      ],
+      "bounds_max": [
+        8.0,
+        5.0,
+        32.956180572509766
+      ],
+      "cluster_id": 11,
+      "surface_id": "GT_LB_S11",
+      "semantic_role": "upright_plate_hole_side",
+      "feature_type": "Cylinder_axisY_inner (立板孔)"
+    }
+  ],
+  "residual_mesh_components": [],
+  "topology_edges": [
+    {
+      "from_surface_id": "GT_LB_S00",
+      "to_surface_id": "GT_LB_S01",
+      "from_cluster_id": 0,
+      "to_cluster_id": 1,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 40.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S00",
+      "to_surface_id": "GT_LB_S05",
+      "from_cluster_id": 0,
+      "to_cluster_id": 5,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 80.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S00",
+      "to_surface_id": "GT_LB_S08",
+      "from_cluster_id": 0,
+      "to_cluster_id": 8,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 80.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S00",
+      "to_surface_id": "GT_LB_S09",
+      "from_cluster_id": 0,
+      "to_cluster_id": 9,
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 30,
+      "shared_boundary_length_mm": 50.173656500999954,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_LB_S00",
+      "to_surface_id": "GT_LB_S10",
+      "from_cluster_id": 0,
+      "to_cluster_id": 10,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 40.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S01",
+      "to_surface_id": "GT_LB_S03",
+      "from_cluster_id": 1,
+      "to_cluster_id": 3,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 40.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S01",
+      "to_surface_id": "GT_LB_S05",
+      "from_cluster_id": 1,
+      "to_cluster_id": 5,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 45.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S01",
+      "to_surface_id": "GT_LB_S08",
+      "from_cluster_id": 1,
+      "to_cluster_id": 8,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 45.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S01",
+      "to_surface_id": "GT_LB_S11",
+      "from_cluster_id": 1,
+      "to_cluster_id": 11,
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 30,
+      "shared_boundary_length_mm": 50.17365665239509,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_LB_S02",
+      "to_surface_id": "GT_LB_S04",
+      "from_cluster_id": 2,
+      "to_cluster_id": 4,
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 32,
+      "shared_boundary_length_mm": 62.730972483693385,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_LB_S02",
+      "to_surface_id": "GT_LB_S05",
+      "from_cluster_id": 2,
+      "to_cluster_id": 5,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 75.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S02",
+      "to_surface_id": "GT_LB_S07",
+      "from_cluster_id": 2,
+      "to_cluster_id": 7,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 40.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S02",
+      "to_surface_id": "GT_LB_S08",
+      "from_cluster_id": 2,
+      "to_cluster_id": 8,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 75.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S02",
+      "to_surface_id": "GT_LB_S09",
+      "from_cluster_id": 2,
+      "to_cluster_id": 9,
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 30,
+      "shared_boundary_length_mm": 50.173656500999954,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_LB_S02",
+      "to_surface_id": "GT_LB_S10",
+      "from_cluster_id": 2,
+      "to_cluster_id": 10,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 40.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S03",
+      "to_surface_id": "GT_LB_S05",
+      "from_cluster_id": 3,
+      "to_cluster_id": 5,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 5.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S03",
+      "to_surface_id": "GT_LB_S07",
+      "from_cluster_id": 3,
+      "to_cluster_id": 7,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 40.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S03",
+      "to_surface_id": "GT_LB_S08",
+      "from_cluster_id": 3,
+      "to_cluster_id": 8,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 5.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S04",
+      "to_surface_id": "GT_LB_S06",
+      "from_cluster_id": 4,
+      "to_cluster_id": 6,
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 32,
+      "shared_boundary_length_mm": 62.730972483693385,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_LB_S05",
+      "to_surface_id": "GT_LB_S07",
+      "from_cluster_id": 5,
+      "to_cluster_id": 7,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 40.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S05",
+      "to_surface_id": "GT_LB_S10",
+      "from_cluster_id": 5,
+      "to_cluster_id": 10,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 5.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S07",
+      "to_surface_id": "GT_LB_S08",
+      "from_cluster_id": 7,
+      "to_cluster_id": 8,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 40.0,
+      "direction_dot": 0.0
+    },
+    {
+      "from_surface_id": "GT_LB_S07",
+      "to_surface_id": "GT_LB_S11",
+      "from_cluster_id": 7,
+      "to_cluster_id": 11,
+      "edge_type": "EndCap",
+      "shared_mesh_edge_count": 30,
+      "shared_boundary_length_mm": 50.17365665239509,
+      "direction_dot": 1.0
+    },
+    {
+      "from_surface_id": "GT_LB_S08",
+      "to_surface_id": "GT_LB_S10",
+      "from_cluster_id": 8,
+      "to_cluster_id": 10,
+      "edge_type": "OrthogonalAdjacency",
+      "shared_mesh_edge_count": 1,
+      "shared_boundary_length_mm": 5.0,
+      "direction_dot": 0.0
+    }
+  ],
+  "primitive_candidates": [
+    {
+      "candidate_id": "LB_U01",
+      "primitive_type": "BasePlate",
+      "boolean_type": "Union",
+      "related_cluster_ids": [
+        0,
+        1,
+        2,
+        5,
+        8,
+        10
+      ],
+      "related_surface_ids": [
+        "GT_LB_S00",
+        "GT_LB_S01",
+        "GT_LB_S02",
+        "GT_LB_S05",
+        "GT_LB_S08",
+        "GT_LB_S10"
+      ],
+      "length_mm": 40.0,
+      "width_mm": 80.0,
+      "height_mm": 5.0
+    },
+    {
+      "candidate_id": "LB_U02",
+      "primitive_type": "UprightPlate",
+      "boolean_type": "Union",
+      "related_cluster_ids": [
+        1,
+        3,
+        5,
+        7,
+        8
+      ],
+      "related_surface_ids": [
+        "GT_LB_S01",
+        "GT_LB_S03",
+        "GT_LB_S05",
+        "GT_LB_S07",
+        "GT_LB_S08"
+      ],
+      "length_mm": 40.0,
+      "width_mm": 5.0,
+      "height_mm": 45.0
+    },
+    {
+      "candidate_id": "LB_U03",
+      "primitive_type": "Cylinder",
+      "boolean_type": "Union",
+      "related_cluster_ids": [
+        2,
+        4,
+        6
+      ],
+      "related_surface_ids": [
+        "GT_LB_S02",
+        "GT_LB_S04",
+        "GT_LB_S06"
+      ],
+      "radius_mm": 9.999987461188539,
+      "depth_mm": 30.0
+    },
+    {
+      "candidate_id": "LB_D01",
+      "primitive_type": "BasePlateHole",
+      "boolean_type": "Difference",
+      "related_cluster_ids": [
+        0,
+        2,
+        9
+      ],
+      "related_surface_ids": [
+        "GT_LB_S00",
+        "GT_LB_S02",
+        "GT_LB_S09"
+      ],
+      "radius_mm": 7.9999751367444,
+      "depth_mm": 5.0
+    },
+    {
+      "candidate_id": "LB_D02",
+      "primitive_type": "UprightPlateHole",
+      "boolean_type": "Difference",
+      "related_cluster_ids": [
+        1,
+        7,
+        11
+      ],
+      "related_surface_ids": [
+        "GT_LB_S01",
+        "GT_LB_S07",
+        "GT_LB_S11"
+      ],
+      "radius_mm": 7.999975136744224,
+      "depth_mm": 4.999999999999999
+    }
+  ],
+  "canonical_csg_tree": {
+    "op": "Difference",
+    "base": {
+      "op": "Union",
+      "children": [
+        {
+          "candidate": "LB_U01"
+        },
+        {
+          "candidate": "LB_U02"
+        },
+        {
+          "candidate": "LB_U03"
+        }
+      ]
+    },
+    "subtractors": [
+      {
+        "candidate": "LB_D01"
+      },
+      {
+        "candidate": "LB_D02"
+      }
+    ]
+  },
+  "interpretation_limits": [
+    "The truth describes the supplied STL mesh and does not prove generalization to real scans.",
+    "The CSG decomposition is a deterministic CAD-oriented symbolic interpretation of the supplied surfaces; no STEP, IGES, B-rep, or editable CAD solid is asserted."
+  ]
+}

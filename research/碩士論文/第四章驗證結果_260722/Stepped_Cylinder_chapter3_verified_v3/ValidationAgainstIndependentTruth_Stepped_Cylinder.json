@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "case": "Stepped Cylinder",
+  "display_name": "階梯狀圓柱",
+  "validation_target": "existing verified outputs compared against an STL-only independent truth",
+  "parameters": {
+    "point_count": 10000,
+    "distance_threshold_mm": 2.0,
+    "normal_threshold": 0.93,
+    "fit_residual_threshold_mm": 1.5,
+    "endcap_dot_threshold": 0.95,
+    "orthogonal_dot_threshold": 0.2,
+    "numeric_output_tolerance_mm": 1e-06
+  },
+  "counts": {
+    "total_points": 10000,
+    "valid_points": 10000,
+    "residual_points": 0,
+    "valid_clusters": 6,
+    "truth_surfaces": 6,
+    "truth_topology_edges": 6,
+    "observed_topology_edges": 6,
+    "truth_candidates": 3,
+    "observed_candidates": 3
+  },
+  "input_integrity": {
+    "original_result_vs_verified_coordinate_normal_max_difference": 0.0,
+    "point_cloud_vs_verified_coordinate_normal_max_difference": 4.831690603168681e-13,
+    "serialization_equivalence_tolerance": 1e-12,
+    "pass": true
+  },
+  "segmentation_details": {
+    "one_cluster_per_truth_surface": true,
+    "unmatched_valid_point_count": 0,
+    "all_truth_surfaces_mesh_connected_components": [
+      {
+        "surface_id": "GT_S01",
+        "count": 1
+      },
+      {
+        "surface_id": "GT_S02",
+        "count": 1
+      },
+      {
+        "surface_id": "GT_S03",
+        "count": 1
+      },
+      {
+        "surface_id": "GT_S04",
+        "count": 1
+      },
+      {
+        "surface_id": "GT_S05",
+        "count": 1
+      },
+      {
+        "surface_id": "GT_S06",
+        "count": 1
+      }
+    ]
+  },
+  "geometry_semantics_details": {
+    "criterion": "independent plane PCA or geometric nonlinear least-squares circle fit; reported cylinder parameters must agree with that optimum",
+    "fit_residual_limit_mm": 1.5,
+    "failed_clusters": []
+  },
+  "topology_details": {
+    "truth_source": "all shared STL mesh edges between independently segmented surfaces",
+    "missing_edges": [],
+    "extra_edges": [],
+    "unmapped_output_rows": [],
+    "allowed_edge_types_only": true
+  },
+  "primitive_candidate_details": {
+    "failed_output_candidate_ids": []
+  },
+  "csg_details": {
+    "normalized_truth_tree": {
+      "op": "Difference",
+      "base": {
+        "op": "Union",
+        "children": [
+          {
+            "candidate": "GT_C01"
+          },
+          {
+            "candidate": "GT_C02"
+          }
+        ]
+      },
+      "subtractors": [
+        {
+          "candidate": "GT_C03"
+        }
+      ]
+    },
+    "normalized_output_tree": {
+      "op": "Difference",
+      "base": {
+        "op": "Union",
+        "children": [
+          {
+            "candidate": "GT_C01"
+          },
+          {
+            "candidate": "GT_C02"
+          }
+        ]
+      },
+      "subtractors": [
+        {
+          "candidate": "GT_C03"
+        }
+      ]
+    },
+    "scope": "symbolic CSG inference only"
+  },
+  "five_layer_validation": {
+    "segmentation": "PASS",
+    "geometry_semantics": "PASS",
+    "topology": "PASS",
+    "primitive_candidates": "PASS",
+    "csg_symbolic_tree": "PASS"
+  },
+  "overall": "PASS",
+  "claim_control": "Stepped Cylinder may be reported as independently validated only if overall is PASS. This result does not validate L-Bracket, Model A, real scans, or CAD solid export."
+}

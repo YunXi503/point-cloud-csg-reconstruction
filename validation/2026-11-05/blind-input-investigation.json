@@ -1,0 +1,8 @@
+{
+  "input": "research/零件/Result_Blind-Hole Hex Base_fixed.csv",
+  "actual_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+  "recorded_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+  "serialization_variants_checked": 8,
+  "matching_variants": [],
+  "status": "not-explained-by-BOM-or-newlines"
+}

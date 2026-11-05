@@ -1,0 +1,2 @@
+# Tested Windows / Python 3.14.2 environment. Blender supplies bpy/bmesh separately.
+-r requirements.lock.txt

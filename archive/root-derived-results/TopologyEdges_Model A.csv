@@ -1,0 +1,19 @@
+FromClusterID,ToClusterID,EdgeType,MinDistance,ContactA,ContactB,Confidence,RuleNote
+0,3,OrthogonalAdjacency,0.353578,25,26,Medium,Accepted: major plane-plane contact with sufficient boundary support.
+0,4,OrthogonalAdjacency,0.453880,40,39,High,Accepted: major plane-plane contact with sufficient boundary support.
+0,14,EndCap,0.418069,49,46,High,Accepted: cylinder axis aligns with plane normal and contact support is sufficient.
+1,13,EndCap,0.488418,94,81,High,Accepted: cylinder axis aligns with plane normal and contact support is sufficient.
+1,14,EndCap,0.383982,115,121,High,Accepted: cylinder axis aligns with plane normal and contact support is sufficient.
+2,13,EndCap,0.476335,118,117,High,Accepted: cylinder axis aligns with plane normal and contact support is sufficient.
+2,14,EndCap,0.279366,145,162,High,Accepted: cylinder axis aligns with plane normal and contact support is sufficient.
+3,4,OrthogonalAdjacency,0.772035,23,16,Medium,Accepted: major plane-plane contact with sufficient boundary support.
+3,19,EndCap,0.684567,31,31,High,Accepted: cylinder axis aligns with plane normal and contact support is sufficient.
+3,20,EndCap,0.461735,39,46,High,Accepted: cylinder axis aligns with plane normal and contact support is sufficient.
+4,5,OrthogonalAdjacency,0.615069,26,25,Medium,Accepted: major plane-plane contact with sufficient boundary support.
+5,6,OrthogonalAdjacency,0.559407,21,24,Medium,Accepted: major plane-plane contact with sufficient boundary support.
+5,14,EndCap,0.297107,35,46,High,Accepted: cylinder axis aligns with plane normal and contact support is sufficient.
+6,19,EndCap,0.433480,31,34,High,Accepted: cylinder axis aligns with plane normal and contact support is sufficient.
+6,20,EndCap,0.533155,46,37,High,Accepted: cylinder axis aligns with plane normal and contact support is sufficient.
+7,14,SideBoundary,0.540647,15,19,Medium,Accepted: cylinder side boundary contact with sufficient support.
+8,21,SideBoundary,0.381054,25,18,Medium,Accepted: cylinder side boundary contact with sufficient support.
+13,18,OrthogonalCylinderIntersection,0.389636,20,18,Medium,Accepted: major cylinder-cylinder intersection with sufficient support.

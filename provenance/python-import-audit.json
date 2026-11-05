@@ -1,0 +1,170 @@
+{
+  "method": "static import inspection; no Python execution",
+  "imports": [
+    "PIL",
+    "__future__",
+    "argparse",
+    "bmesh",
+    "bpy",
+    "build_stepped_cylinder_independent_truth",
+    "collections",
+    "correct_lbracket_modela_verified_v2",
+    "correct_stepped_cylinder_nls_v2",
+    "csv",
+    "datetime",
+    "generate_lbracket_chapter3_topology_boundary_figure",
+    "generate_model_a_v3_figure_4_7_segmentation",
+    "glob",
+    "hashlib",
+    "infer_stepped_cylinder_chapter3_method",
+    "itertools",
+    "json",
+    "math",
+    "matplotlib",
+    "matplotlib.cm",
+    "matplotlib.colors",
+    "matplotlib.font_manager",
+    "matplotlib.lines",
+    "matplotlib.patches",
+    "matplotlib.patheffects",
+    "matplotlib.pyplot",
+    "mpl_toolkits.mplot3d.art3d",
+    "numpy",
+    "pandas",
+    "pathlib",
+    "scipy.optimize",
+    "scipy.sparse",
+    "scipy.sparse.csgraph",
+    "scipy.spatial",
+    "shutil",
+    "struct",
+    "subprocess",
+    "sys",
+    "typing",
+    "validate_lbracket_modela_v2",
+    "validate_model_a_chapter3_method",
+    "xml.etree.ElementTree"
+  ],
+  "local_imports": [
+    {
+      "from": "build_lbracket_modela_independent_truth.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "correct_lbracket_modela_verified_v2.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "correct_lbracket_modela_verified_v2.py",
+      "module": "correct_stepped_cylinder_nls_v2.py"
+    },
+    {
+      "from": "generate_blind_hole_figure_4_11b_spatial.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_blind_hole_figure_4_11b_spatial.py",
+      "module": "generate_lbracket_chapter3_topology_boundary_figure.py"
+    },
+    {
+      "from": "generate_blind_hole_hex_base_figure_4_10_segmentation.py",
+      "module": "generate_model_a_v3_figure_4_7_segmentation.py"
+    },
+    {
+      "from": "generate_lbracket_chapter3_matrix_and_visual.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_lbracket_chapter3_matrix_and_visual.py",
+      "module": "generate_lbracket_chapter3_topology_boundary_figure.py"
+    },
+    {
+      "from": "generate_lbracket_chapter3_topology_boundary_figure.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_alternatives.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_alternatives.py",
+      "module": "generate_lbracket_chapter3_topology_boundary_figure.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_spatial_v8.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_spatial_v8.py",
+      "module": "generate_lbracket_chapter3_topology_boundary_figure.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_topology_graph_v1.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_topology_graph_v3.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_topology_graph_v4.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_topology_graph_v5.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_topology_graph_v7.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_topology_spatial_v1.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "generate_lbracket_figure_4_5b_topology_spatial_v1.py",
+      "module": "generate_lbracket_chapter3_topology_boundary_figure.py"
+    },
+    {
+      "from": "infer_blind_hole_hex_base_chapter3_method.py",
+      "module": "infer_stepped_cylinder_chapter3_method.py"
+    },
+    {
+      "from": "infer_lbracket_chapter3_method.py",
+      "module": "correct_stepped_cylinder_nls_v2.py"
+    },
+    {
+      "from": "infer_model_a_chapter3_method.py",
+      "module": "infer_stepped_cylinder_chapter3_method.py"
+    },
+    {
+      "from": "validate_blind_hole_hex_base_chapter3_method.py",
+      "module": "validate_model_a_chapter3_method.py"
+    },
+    {
+      "from": "validate_lbracket_chapter3_method.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "validate_lbracket_chapter3_method.py",
+      "module": "validate_lbracket_modela_v2.py"
+    },
+    {
+      "from": "validate_lbracket_modela_v2.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "validate_lbracket_modela_v2.py",
+      "module": "correct_lbracket_modela_verified_v2.py"
+    },
+    {
+      "from": "validate_model_a_chapter3_method.py",
+      "module": "build_stepped_cylinder_independent_truth.py"
+    },
+    {
+      "from": "validate_model_a_chapter3_method.py",
+      "module": "validate_lbracket_modela_v2.py"
+    }
+  ]
+}

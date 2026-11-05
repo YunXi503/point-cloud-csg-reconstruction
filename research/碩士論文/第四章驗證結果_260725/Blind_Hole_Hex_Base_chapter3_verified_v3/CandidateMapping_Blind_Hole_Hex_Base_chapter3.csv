@@ -1,0 +1,4 @@
+﻿CandidateID,PrimitiveType,BooleanType,RelatedClusters,ParameterErrorsMM,ParameterToleranceMM,ValidationStatus,Reason
+BH_D01,BlindHole,Difference,1;10;11,"{""Depth"": 2.842170943040401e-14, ""Radius"": 0.0322393430013328}",0.050000000,PASS,
+BH_U01,HexagonalPrism,Union,2;3;4;5;6;7;8;9,"{""Height"": 2.1316282072803006e-14, ""Length"": 4.4639803320478677e-07, ""Width"": 3.868329088163591e-07}",0.050000000,PASS,
+BH_U02,OuterRingBoss,Union,0;9;10,"{""Depth"": 7.105427357601002e-15, ""Radius"": 0.030018559141112178}",0.050000000,PASS,

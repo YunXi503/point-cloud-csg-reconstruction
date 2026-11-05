@@ -1,0 +1,7 @@
+﻿CandidateID,PrimitiveType,BooleanType,RelatedClusters,ParameterErrorsMM,ParameterToleranceMM,ValidationStatus,Reason
+MA_D01,MainAxisYThroughHole,Difference,1;2;10,"{""Depth"": 3.552713678800501e-15, ""Radius"": 0.03226474021644066}",0.050000000,PASS,
+MA_D02,RightAxisXThroughHole,Difference,3;7;13,"{""Depth"": 1.4210854715202004e-14, ""Radius"": 0.03001695098867252}",0.050000000,PASS,
+MA_U01,MainWebProfileExtrusion,Union,0;4;5;6,"{""Height"": 0.00014321599999789214, ""Length"": 0.0004903309999946259, ""Width"": 0.0}",0.050000000,PASS,
+MA_U02,MainAxisYOuterRing,Union,1;2;9,"{""Depth"": 3.552713678800501e-15, ""Radius"": 0.03156454925815666}",0.050000000,PASS,
+MA_U03,RightTransitionBlock,Union,3;4;5;7;8,"{""Height"": 0.0, ""Length"": 0.0, ""Width"": 0.0023954609999989884}",0.050000000,PASS,
+MA_U04,RightAxisXOuterBoss,Union,3;7;14,"{""Depth"": 1.4210854715202004e-14, ""Radius"": 0.02973200401744336}",0.050000000,PASS,
