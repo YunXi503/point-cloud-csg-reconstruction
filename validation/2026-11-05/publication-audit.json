@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-05",
+  "scope": "Publication package checks, not scientific accuracy validation",
+  "checkout_source_commit": "13275352524eb00f246abd8de4dba53c8bd6e432",
+  "checkout_autocrlf": true,
+  "checkout_path_contains_spaces_and_chinese": true,
+  "checkout_files": 289,
+  "checkout_manifest_sha256": "98ead42fe5429208d669a8ca60cfa23f7704eec0fd5b25b5b58392378c9d829c",
+  "checkout_integrity": "pass",
+  "text_files_signature_scanned": 268,
+  "signature_scan_scope": [
+    "github-token",
+    "private-key",
+    "aws-access-key",
+    "openai-token"
+  ],
+  "new_documentation_local_links_checked": 49,
+  "original_word_unchanged": true,
+  "failures": []
+}

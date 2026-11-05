@@ -2012,8 +2012,8 @@
     },
     {
       "path": "docs/packaging-qa.md",
-      "bytes": 1995,
-      "sha256": "d39a30027c76c587e9abc057a5a0561a1b4da48610cef47731d8d91463ad4709"
+      "bytes": 2303,
+      "sha256": "9063e354863f99b473f2453291b96ba1ca36265b057e4190fec8e1a401da5a55"
     },
     {
       "path": "docs/second-pass-review.md",
@@ -2127,8 +2127,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5759,
-      "sha256": "0b6803569b75853de5c1b253d9afe98f0d3f0cd1111782d32aa64ec48bffc664"
+      "bytes": 5982,
+      "sha256": "45ad897695617fb1866341054063808fea387b3ad88b588873f1ec81af9d246c"
     },
     {
       "path": "requirements-observed.txt",
@@ -3094,6 +3094,11 @@
       "path": "validation/2026-11-05/initial-source-binding-attempt.json",
       "bytes": 6885,
       "sha256": "079212ede251f1ddbc8d30468a78133241607c041dfae07b74367e38334d4560"
+    },
+    {
+      "path": "validation/2026-11-05/publication-audit.json",
+      "bytes": 665,
+      "sha256": "635510e9b51890c96344daa94d051c7f15742db50cf99b147ffc98e6ad4be57f"
     },
     {
       "path": "validation/2026-11-05/relocated-inference-results.json",

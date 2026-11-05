@@ -1,5 +1,7 @@
 # Point Cloud to CSG Inference
 
+[![Verify research reproduction](https://github.com/YunXi503/point-cloud-csg-reconstruction/actions/workflows/verify.yml/badge.svg)](https://github.com/YunXi503/point-cloud-csg-reconstruction/actions/workflows/verify.yml)
+
 以 **C# 與 Python** 實作的幾何重建研究專案：從零件點雲與曲面法向量，辨識平面／圓柱面、建立拓樸關係，產生可追溯的階層式 CSG 推論表示。
 
 Rule-based geometric inference from sampled point normals, with preserved research sources, reproducible examples, and explicit data provenance.
