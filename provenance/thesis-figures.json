@@ -1,0 +1,799 @@
+{
+  "date": "2026-11-05",
+  "source_word": "output/使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究-11379108-260811.docx",
+  "source_word_sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+  "source_pdf": "paper/thesis-public-snapshot-20261105.pdf",
+  "source_pdf_sha256": "1f867bb8877e0a44207b37386719199ea63beff6778706378e663a0f603ae10c",
+  "figure_count": 22,
+  "original_image_count": 28,
+  "candidate_table_count": 4,
+  "policy": "Images copied byte-for-byte from the exact published Word snapshot; PDF table regions rendered without rewriting. Existing Word layout crops are recorded, while native media is preserved in full. No algorithm, data or thesis content changes.",
+  "copyright": "Thesis figures and table images retain the thesis copyright; not relicensed by the code MIT license.",
+  "figures": [
+    {
+      "number": "3.1",
+      "caption": "圖 3.1 研究方法流程圖",
+      "images": [
+        {
+          "rid": "rId21",
+          "word_member": "word/media/image2.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-3-1.png",
+          "sha256": "6187fbdaec0be2e09f0340ea8f126fa18829750762f6b361e57e60329e0e44eb",
+          "bytes": 85293,
+          "pixels": [
+            2400,
+            419
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 25,
+      "body_page": 14
+    },
+    {
+      "number": "3.2",
+      "caption": "圖 3.2 點雲樣本與曲面法向量資料結構示意圖",
+      "images": [
+        {
+          "rid": "rId22",
+          "word_member": "word/media/image3.png",
+          "word_crop": {
+            "t": "1298",
+            "b": "23931"
+          },
+          "path": "assets/thesis/fig-3-2.png",
+          "sha256": "3075f04dc905e9b172c673d9d2ba6697f1528a563a7094837c85985b921c32aa",
+          "bytes": 21079,
+          "pixels": [
+            1048,
+            433
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 27,
+      "body_page": 16
+    },
+    {
+      "number": "3.3",
+      "caption": "圖 3.3 特徵分割概念示意圖",
+      "images": [
+        {
+          "rid": "rId23",
+          "word_member": "word/media/image4.png",
+          "word_crop": {
+            "t": "1145",
+            "b": "31160"
+          },
+          "path": "assets/thesis/fig-3-3.png",
+          "sha256": "082c2ef97b6d826dc784591636441c7f5c56f2f36cebf164eb1cdbb3a5e74b91",
+          "bytes": 46297,
+          "pixels": [
+            1188,
+            511
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 28,
+      "body_page": 17
+    },
+    {
+      "number": "3.4",
+      "caption": "圖 3.4 幾何特徵分割與幾何特徵面建構流程圖",
+      "images": [
+        {
+          "rid": "rId24",
+          "word_member": "word/media/image5.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-3-4.png",
+          "sha256": "72192e5d669a8d5618252c1becdb2f65a5b5b547a8c6ca065e0152d442eee24e",
+          "bytes": 173199,
+          "pixels": [
+            1174,
+            2519
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 30,
+      "body_page": 19
+    },
+    {
+      "number": "3.5",
+      "caption": "圖 3.5 三種拓樸關係概念示意圖",
+      "images": [
+        {
+          "rid": "rId25",
+          "word_member": "word/media/image6.png",
+          "word_crop": {
+            "t": "1194",
+            "b": "4023"
+          },
+          "path": "assets/thesis/fig-3-5.png",
+          "sha256": "3d75fa16148eca978d71dc8ca19413b2514b283b9150d49366e2f33e5c9099b3",
+          "bytes": 170681,
+          "pixels": [
+            3553,
+            1129
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 33,
+      "body_page": 22
+    },
+    {
+      "number": "3.6",
+      "caption": "圖 3.6 幾何特徵面拓樸關係建構流程圖",
+      "images": [
+        {
+          "rid": "rId26",
+          "word_member": "word/media/image7.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-3-6.png",
+          "sha256": "dad442f25adb28cfab72bce6e9b9c13ae5928261229175a668e1fe734f9c628f",
+          "bytes": 354515,
+          "pixels": [
+            1800,
+            2948
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 35,
+      "body_page": 24
+    },
+    {
+      "number": "3.7",
+      "caption": "圖 3.7 候選幾何單元推論概念示意圖",
+      "images": [
+        {
+          "rid": "rId27",
+          "word_member": "word/media/image8.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-3-7a.png",
+          "sha256": "7e5f0bcdaff3c01a5196bef55dd0e79eccb2c6d349f3a3b7495332542ddb330e",
+          "bytes": 7892,
+          "pixels": [
+            927,
+            230
+          ],
+          "byte_identical_to_word_media": true
+        },
+        {
+          "rid": "rId28",
+          "word_member": "word/media/image9.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-3-7b.png",
+          "sha256": "67ef1c90a7f1ae98c07c89c148bdab395b03e95d4f7efe43ff427981850557d8",
+          "bytes": 7276,
+          "pixels": [
+            927,
+            230
+          ],
+          "byte_identical_to_word_media": true
+        },
+        {
+          "rid": "rId29",
+          "word_member": "word/media/image10.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-3-7c.png",
+          "sha256": "5deb87332f7ca04c12c49d603a83acdc8b930e518351dffe994469b3163bd9e7",
+          "bytes": 6502,
+          "pixels": [
+            927,
+            190
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 36,
+      "body_page": 25
+    },
+    {
+      "number": "3.8",
+      "caption": "圖 3.8 候選幾何單元與階層式 CSG 推論流程圖",
+      "images": [
+        {
+          "rid": "rId30",
+          "word_member": "word/media/image11.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-3-8.png",
+          "sha256": "6e20e38c7d61e540124528d587460f53cb1d699cd4e4feaff7a83a8e69e69ac8",
+          "bytes": 360090,
+          "pixels": [
+            1398,
+            3168
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 38,
+      "body_page": 27
+    },
+    {
+      "number": "3.9",
+      "caption": "圖 3.9 階層式 CSG 推論概念示意圖",
+      "images": [
+        {
+          "rid": "rId31",
+          "word_member": "word/media/image12.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-3-9.png",
+          "sha256": "535ee5e06e75b39bdd225a468f7b5dbe1627f75463fb7a60a2c071ecc40acc14",
+          "bytes": 164908,
+          "pixels": [
+            3000,
+            897
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 39,
+      "body_page": 28
+    },
+    {
+      "number": "4.1",
+      "caption": "圖 4.1 本研究之實作範例示意圖",
+      "images": [
+        {
+          "rid": "rId33",
+          "word_member": "word/media/image13.png",
+          "word_crop": {
+            "l": "6055",
+            "t": "11260",
+            "r": "3486",
+            "b": "14922"
+          },
+          "path": "assets/thesis/fig-4-1.png",
+          "sha256": "ead8ec5c7d3b83956301884ce27f1b21bb9981ff8d3de431e050653f4fc779e6",
+          "bytes": 557923,
+          "pixels": [
+            3200,
+            860
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 42,
+      "body_page": 31
+    },
+    {
+      "number": "4.2",
+      "caption": "圖 4.2 階梯狀圓柱驗證後幾何特徵分割結果",
+      "images": [
+        {
+          "rid": "rId34",
+          "word_member": "word/media/image14.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-2.png",
+          "sha256": "8f883051530ebfd20f776d962b3ecc7b0664547f6795a670aeb411ff13a489ee",
+          "bytes": 1015434,
+          "pixels": [
+            2252,
+            1605
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 47,
+      "body_page": 36
+    },
+    {
+      "number": "4.3",
+      "caption": "圖 4.3 階梯狀圓柱拓樸關係",
+      "images": [
+        {
+          "rid": "rId35",
+          "word_member": "word/media/image15.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-3a.png",
+          "sha256": "214fdf7c8e4e3d0655209f8a5f3d0a73f6367abab83e7d06d6fcd78eca2ed6e3",
+          "bytes": 35679,
+          "pixels": [
+            747,
+            787
+          ],
+          "byte_identical_to_word_media": true
+        },
+        {
+          "rid": "rId36",
+          "word_member": "word/media/image16.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-3b.png",
+          "sha256": "a2f4aa470e2882b8c01c2c3e59c00896df6df3edea8d49bcd71fee274b415afd",
+          "bytes": 221383,
+          "pixels": [
+            2227,
+            1887
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 48,
+      "body_page": 37
+    },
+    {
+      "number": "4.4",
+      "caption": "圖 4.4 階梯狀圓柱階層式 CSG 推論",
+      "images": [
+        {
+          "rid": "rId37",
+          "word_member": "word/media/image17.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-4.png",
+          "sha256": "df53189faf3255818b0e20f46af4d41c881fe3f066a89b31577c55a496b34a49",
+          "bytes": 50569,
+          "pixels": [
+            666,
+            577
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 49,
+      "body_page": 38
+    },
+    {
+      "number": "4.5",
+      "caption": "圖 4.5 L型板驗證後幾何特徵分割結果",
+      "images": [
+        {
+          "rid": "rId38",
+          "word_member": "word/media/image18.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-5.png",
+          "sha256": "f307810e8feae432a13637f2875724e438d2a2401b270414ef54c96558ed0983",
+          "bytes": 1226472,
+          "pixels": [
+            2310,
+            1609
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 50,
+      "body_page": 39
+    },
+    {
+      "number": "4.6",
+      "caption": "圖 4.6 L型板拓樸關係",
+      "images": [
+        {
+          "rid": "rId39",
+          "word_member": "word/media/image19.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-6a.png",
+          "sha256": "d8f30970cfe5d3d79f5a2d8a97e209dce27dd57f3ddef0fcb338624247734a43",
+          "bytes": 37824,
+          "pixels": [
+            791,
+            810
+          ],
+          "byte_identical_to_word_media": true
+        },
+        {
+          "rid": "rId40",
+          "word_member": "word/media/image20.png",
+          "word_crop": {
+            "t": "10421"
+          },
+          "path": "assets/thesis/fig-4-6b.png",
+          "sha256": "8f96ec0eb93a7369eb4c64d521697e617a2b3635affdcd47dd0d772499957d1c",
+          "bytes": 241013,
+          "pixels": [
+            1422,
+            992
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 51,
+      "body_page": 40
+    },
+    {
+      "number": "4.7",
+      "caption": "圖 4.7 L型板階層式 CSG 推論",
+      "images": [
+        {
+          "rid": "rId41",
+          "word_member": "word/media/image21.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-7.png",
+          "sha256": "5c24f78adbe31aa9d91c765f7495b9dfa47279717095519fd8f12e5405c18021",
+          "bytes": 93378,
+          "pixels": [
+            528,
+            558
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 53,
+      "body_page": 42
+    },
+    {
+      "number": "4.8",
+      "caption": "圖 4.8 模型A驗證後幾何特徵分割結果",
+      "images": [
+        {
+          "rid": "rId42",
+          "word_member": "word/media/image22.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-8.png",
+          "sha256": "1c63887f56062de6eb3e58bd6a4ba23607d2d7c7759b302c55b750afa1cccda8",
+          "bytes": 1304284,
+          "pixels": [
+            2274,
+            1676
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 54,
+      "body_page": 43
+    },
+    {
+      "number": "4.9",
+      "caption": "圖 4.9 模型A拓樸關係",
+      "images": [
+        {
+          "rid": "rId43",
+          "word_member": "word/media/image23.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-9a.png",
+          "sha256": "d62321c241b461e498eb1a561e50496dc4d65a37d6dd6284d5f8dff2ecf04061",
+          "bytes": 26982,
+          "pixels": [
+            829,
+            868
+          ],
+          "byte_identical_to_word_media": true
+        },
+        {
+          "rid": "rId44",
+          "word_member": "word/media/image24.png",
+          "word_crop": {
+            "t": "19892"
+          },
+          "path": "assets/thesis/fig-4-9b.png",
+          "sha256": "aa955a063210f70792c762cd624435f8e4fe722ffa74828ae54209dd639a6b72",
+          "bytes": 210404,
+          "pixels": [
+            1158,
+            920
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 55,
+      "body_page": 44
+    },
+    {
+      "number": "4.10",
+      "caption": "圖 4.10 模型A階層式 CSG 推論",
+      "images": [
+        {
+          "rid": "rId45",
+          "word_member": "word/media/image25.png",
+          "word_crop": {
+            "l": "10127"
+          },
+          "path": "assets/thesis/fig-4-10.png",
+          "sha256": "785be7f67579f1548147e9ff7d387997c96e654638763f9b00aee165698c63cc",
+          "bytes": 84404,
+          "pixels": [
+            817,
+            522
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 57,
+      "body_page": 46
+    },
+    {
+      "number": "4.11",
+      "caption": "圖 4.11 盲孔六角座驗證後幾何特徵分割結果",
+      "images": [
+        {
+          "rid": "rId46",
+          "word_member": "word/media/image26.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-11.png",
+          "sha256": "dcfb13cb822ac55b4e26ae1ad917ed65d5776e9eb1b30d0f377c7a43f6df3f3b",
+          "bytes": 1163264,
+          "pixels": [
+            2271,
+            1957
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 58,
+      "body_page": 47
+    },
+    {
+      "number": "4.12",
+      "caption": "圖 4.12 盲孔六角座拓樸關係",
+      "images": [
+        {
+          "rid": "rId47",
+          "word_member": "word/media/image27.png",
+          "word_crop": {},
+          "path": "assets/thesis/fig-4-12a.png",
+          "sha256": "de32c777681c89c70d48d079167887770e7b070d0356a2b02b01dd6e62c4e09e",
+          "bytes": 34704,
+          "pixels": [
+            746,
+            806
+          ],
+          "byte_identical_to_word_media": true
+        },
+        {
+          "rid": "rId48",
+          "word_member": "word/media/image28.png",
+          "word_crop": {
+            "t": "12368"
+          },
+          "path": "assets/thesis/fig-4-12b.png",
+          "sha256": "f27b5084bbe8d44b154a1b109a5cf12f3d1e30387e2883be9b533038b23b43db",
+          "bytes": 220863,
+          "pixels": [
+            1242,
+            1003
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 59,
+      "body_page": 48
+    },
+    {
+      "number": "4.13",
+      "caption": "圖 4.13 盲孔六角座階層式 CSG 推論",
+      "images": [
+        {
+          "rid": "rId49",
+          "word_member": "word/media/image29.png",
+          "word_crop": {
+            "t": "2167",
+            "b": "-1"
+          },
+          "path": "assets/thesis/fig-4-13.png",
+          "sha256": "e19ce22d8686df088aac37951f3265cc1be00d044fc7c5ef0aef0cf19cc853b9",
+          "bytes": 34151,
+          "pixels": [
+            422,
+            517
+          ],
+          "byte_identical_to_word_media": true
+        }
+      ],
+      "pdf_page": 60,
+      "body_page": 49
+    }
+  ],
+  "candidate_tables": [
+    {
+      "number": "4.6",
+      "caption": "表 4.6 階梯狀圓柱候選幾何單元查驗結果",
+      "word_rows": [
+        [
+          "候選幾何單元",
+          "布林角色",
+          "型別",
+          "主要尺寸(mm)"
+        ],
+        [
+          "下階圓柱 SC_U01",
+          "聯集",
+          "圓柱",
+          "半徑 39.968、深度 40.000"
+        ],
+        [
+          "上階圓柱 SC_U02",
+          "聯集",
+          "圓柱",
+          "半徑 24.967、深度 60.000"
+        ],
+        [
+          "貫穿孔 SC_D01",
+          "差集",
+          "圓柱孔",
+          "半徑 14.970、深度 100.000"
+        ]
+      ],
+      "pdf_page": 49,
+      "body_page": 38,
+      "path": "assets/thesis/table-4-6-candidates.png",
+      "sha256": "08c874c9d7c3b404dc16eb69569ae707844a482af90039bd7354f1db2a9d3eba",
+      "bytes": 79272,
+      "pixels": [
+        1263,
+        420
+      ],
+      "pdf_clip_points": [
+        101.54000091552734,
+        65.56800842285156,
+        522.1799926757812,
+        205.14797973632812
+      ],
+      "render_scale": 3,
+      "scope": "Unedited region rendered from the existing public PDF, including the original table caption and values"
+    },
+    {
+      "number": "4.7",
+      "caption": "表 4.7 L型板候選幾何單元查驗結果",
+      "word_rows": [
+        [
+          "候選幾何單元",
+          "布林角色",
+          "型別",
+          "主要尺寸(mm)"
+        ],
+        [
+          "底板 LB_U01",
+          "聯集",
+          "板件",
+          "40.000 × 80.000 × 5.000"
+        ],
+        [
+          "立板 LB_U02",
+          "聯集",
+          "板件",
+          "40.000 × 5.000 × 45.000"
+        ],
+        [
+          "圓柱 LB_U03",
+          "聯集",
+          "圓柱",
+          "半徑 9.968、深度 30.000"
+        ],
+        [
+          "底板孔 LB_D01",
+          "差集",
+          "圓柱孔",
+          "半徑 7.971、深度 5.000"
+        ],
+        [
+          "立板孔 LB_D02",
+          "差集",
+          "圓柱孔",
+          "半徑 7.972、深度 5.000"
+        ]
+      ],
+      "pdf_page": 52,
+      "body_page": 41,
+      "path": "assets/thesis/table-4-7-candidates.png",
+      "sha256": "64a3607b3bb82c0066d56104f8e0b091315c676385e2bd07af584deca2948505",
+      "bytes": 126263,
+      "pixels": [
+        1181,
+        525
+      ],
+      "pdf_clip_points": [
+        115.22000122070312,
+        174.78797912597656,
+        508.5,
+        349.50799560546875
+      ],
+      "render_scale": 3,
+      "scope": "Unedited region rendered from the existing public PDF, including the original table caption and values"
+    },
+    {
+      "number": "4.8",
+      "caption": "表 4.8 模型A候選幾何單元查驗結果",
+      "word_rows": [
+        [
+          "候選幾何單元",
+          "布林角色",
+          "型別",
+          "主要尺寸(mm)"
+        ],
+        [
+          "主腹板 MA_U01",
+          "聯集",
+          "剖面擠出",
+          "96.000 × 20.000 × 85.395"
+        ],
+        [
+          "主軸圓環 MA_U02",
+          "聯集",
+          "圓柱 (Y 軸)",
+          "半徑 44.968、深度 30.000"
+        ],
+        [
+          "側向過渡塊MA_U03",
+          "聯集",
+          "板件",
+          "24.000 × 27.998 × 48.000"
+        ],
+        [
+          "側向凸台 MA_U04",
+          "聯集",
+          "圓柱 (X 軸)",
+          "半徑 23.970、深度 24.000"
+        ],
+        [
+          "主軸貫穿孔 MA_D01",
+          "差集",
+          "圓柱孔 (Y 軸)",
+          "半徑 32.968、深度 30.000"
+        ],
+        [
+          "側向貫穿孔 MA_D02",
+          "差集",
+          "圓柱孔 (X 軸)",
+          "半徑 11.970、深度 24.000"
+        ]
+      ],
+      "pdf_page": 56,
+      "body_page": 45,
+      "path": "assets/thesis/table-4-8-candidates.png",
+      "sha256": "0ef80b473bdfd9cb7066a56fefb7065c661a027adda7ef0b4970dcfaa1c70b94",
+      "bytes": 280090,
+      "pixels": [
+        1396,
+        834
+      ],
+      "pdf_clip_points": [
+        79.33999633789062,
+        218.4679718017578,
+        544.433349609375,
+        496.2279968261719
+      ],
+      "render_scale": 3,
+      "scope": "Unedited region rendered from the existing public PDF, including the original table caption and values"
+    },
+    {
+      "number": "4.9",
+      "caption": "表 4.9 盲孔六角座候選幾何單元查驗結果",
+      "word_rows": [
+        [
+          "候選幾何單元",
+          "布林角色",
+          "型別",
+          "主要尺寸(mm)"
+        ],
+        [
+          "六角基座 BH_U01",
+          "聯集",
+          "六角柱",
+          "對角 100.000 × 對邊 86.603 × 高 60.000"
+        ],
+        [
+          "環台 / BH_U02",
+          "聯集",
+          "圓柱 (Z 軸)",
+          "半徑 34.970、深度 15.000"
+        ],
+        [
+          "中央盲孔 BH_D01",
+          "差集",
+          "圓柱盲孔 / (Z 軸)",
+          "半徑 22.468、深度 50.000"
+        ]
+      ],
+      "pdf_page": 60,
+      "body_page": 49,
+      "path": "assets/thesis/table-4-9-candidates.png",
+      "sha256": "0a347998ce7980dd4943d8a0e6a92f83eb607a0590d9ab2ad7ffefce108899be",
+      "bytes": 173588,
+      "pixels": [
+        1396,
+        506
+      ],
+      "pdf_clip_points": [
+        79.33999633789062,
+        240.30799865722656,
+        544.4299926757812,
+        408.5479736328125
+      ],
+      "render_scale": 3,
+      "scope": "Unedited region rendered from the existing public PDF, including the original table caption and values"
+    }
+  ]
+}

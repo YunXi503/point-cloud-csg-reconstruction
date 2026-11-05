@@ -1,6 +1,6 @@
 # 發布封裝與公開論文 QA
 
-版本：0.1.0／portfolio-2026-11-05。原始來源、兩條執行路徑與研究證據邊界見 [查驗紀錄](validation.md)，第二輪的發現及改善見 [審查紀錄](second-pass-review.md)。
+版本：0.1.1／portfolio-figures-2026-11-05。原始來源、兩條執行路徑與研究證據邊界見 [查驗紀錄](validation.md)，第二輪的發現及改善見 [審查紀錄](second-pass-review.md)。
 
 ## 檔案與程式
 
@@ -19,6 +19,10 @@ Microsoft Word 實際以唯讀副本開啟，來源及副本關閉後 SHA-256 �
 已看過全部 75 頁縮略總覽，並詳檢 PDF 實體第 26、30、40、44、59、75 頁的公式、流程、圖表與文字。表 4.4 的表題及表格均在本文第 34 頁。公開 PDF 獨立渲染未出現解析警告。[匯出](../validation/2026-11-05/thesis-export.json) · [渲染](../validation/2026-11-05/thesis-render-checks.json)
 
 原稿 NIST 名稱勘誤及已辨識的版次差異列於 paper/README.md，未靜默改寫正文。論文保留原著作權，MIT 範圍為程式及新增說明。
+
+## 論文圖庫增補
+
+本輪沿用同一 Word／PDF，完整列出圖 3.1–3.9、圖 4.1–4.13，取出 28 張原位元 PNG 與四張候選表。已查看全部 32 張資產的總覽與模型A CSG 樹、候選表原尺寸，核對來源圖號及連結。候選表另提供直接取自 Word 儲存格的可搜尋文字，保留正文顯示精度。[圖件查驗](../validation/2026-11-05/thesis-figures-audit.json)
 
 ## 保留的限制
 

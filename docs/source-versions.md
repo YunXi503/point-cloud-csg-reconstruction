@@ -1,6 +1,6 @@
 # 原始碼與資料版本對照
 
-發布整理版本為 portfolio-2026-11-05，軟體版本 0.1.0。preparation 與 verification 前版封裝及機器可讀歷史紀錄保留供追溯。
+發布整理版本為 portfolio-figures-2026-11-05，版本 0.1.1。本輪增加論文圖庫；研究程式維持 0.1.0 的來源與行為。preparation、verification 與 portfolio 前版的機器可讀紀錄保留供追溯。
 
 ## 研究來源
 
@@ -31,5 +31,7 @@
 公開 PDF：1f867bb8877e0a44207b37386719199ea63beff6778706378e663a0f603ae10c；75 頁；Word oMath 97→97；來源及工作副本雜湊未改變。[版本與勘誤](../paper/README.md)
 
 ## 歷史資料
+
+圖庫依相同 Word／PDF 版本取出 22 個正式圖號與四張候選表，來源與 SHA-256 見 [thesis-figures.json](../provenance/thesis-figures.json)。圖庫使用正式論文現行圖號，不沿用工作資料夾的歷史編號。
 
 3 個歷史 csproj 缺件保留供追溯，現行來源連結入口不依賴其缺件。Hex Base with Holed 保持獨立歷史資產，不與盲孔模型靜默合併。1 個歷史 JSON 的 NaN 保留原位元並另列解析問題。

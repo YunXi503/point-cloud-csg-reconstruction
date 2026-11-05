@@ -12,6 +12,22 @@ Rule-based geometric inference from sampled point normals, with preserved resear
 
 作者：**黃云析 Yun-Hsi Huang**。本專案整理自碩士論文「使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究」。[閱讀論文 PDF](paper/thesis-public-snapshot-20261105.pdf) · [論文版本與勘誤](paper/README.md)
 
+## 從候選幾何單元到 CSG 樹
+
+圖 3.7 示意如何由相關表面整理成候選幾何單元：
+
+| 板件候選 | 圓柱候選 | 孔洞候選 |
+|---|---|---|
+| ![圖 3.7a 板件候選](assets/thesis/fig-3-7a.png) | ![圖 3.7b 圓柱候選](assets/thesis/fig-3-7b.png) | ![圖 3.7c 孔洞候選](assets/thesis/fig-3-7c.png) |
+
+圖 4.10 呈現模型A的階層式 CSG 推論。葉節點對應候選編號，∪ 與 − 分別表示聯集與差集。
+
+![圖 4.10 模型A階層式 CSG 推論](assets/thesis/fig-4-10.png)
+
+[完整論文圖庫](docs/figures/README.md) 收錄 **22 個正式圖號與四個候選單元表**，可依分割、拓樸、候選及 CSG 樹閱讀，並連到對應 CSV／JSON：
+
+[研究方法與概念圖](docs/figures/methods.md) · [階梯狀圓柱](docs/figures/stepped-cylinder.md) · [L型板](docs/figures/l-bracket.md) · [模型A](docs/figures/model-a.md) · [盲孔六角座](docs/figures/blind-hole-hex-base.md)
+
 ## 快速開始
 
 已測試平台：Windows x64、Python 3.14.2。以下命令於 PowerShell 執行；bootstrap 會尋找實際 Python 安裝，建立專案 `.venv` 並安裝鎖定套件。
@@ -97,6 +113,6 @@ node tools/verify-package.mjs
 
 ## 授權與論文
 
-原創程式與新增專案說明採 [MIT](LICENSE)。論文 PDF 保留原著作權；模型、資料及第三方套件的適用範圍見 [NOTICE](NOTICE.md)。
+原創程式與新增專案說明採 [MIT](LICENSE)。論文 PDF、原圖與候選表保留原著作權；模型、資料及第三方套件的適用範圍見 [NOTICE](NOTICE.md)。
 
 論文正式英文題名：*Constructing Solid Model from Point Cloud via Surface Normal and CSG Rules*。

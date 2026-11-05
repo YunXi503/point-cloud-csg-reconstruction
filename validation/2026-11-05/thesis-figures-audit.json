@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-05",
+  "release": "0.1.1",
+  "scope": "Existing thesis image publication and documentation navigation; no new research experiment",
+  "source_word_sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+  "source_pdf_sha256": "1f867bb8877e0a44207b37386719199ea63beff6778706378e663a0f603ae10c",
+  "source_word_unchanged": true,
+  "source_pdf_unchanged": true,
+  "source_omath_count": 97,
+  "figure_numbers_covered": [
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5",
+    "3.6",
+    "3.7",
+    "3.8",
+    "3.9",
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "4.5",
+    "4.6",
+    "4.7",
+    "4.8",
+    "4.9",
+    "4.10",
+    "4.11",
+    "4.12",
+    "4.13"
+  ],
+  "native_images_checked_against_word_bytes": 28,
+  "candidate_table_images_checked": 4,
+  "local_documentation_links_checked": 158,
+  "visual_review": {
+    "all_32_images_seen_in_contact_sheets": true,
+    "full_size_detail": [
+      "Model A CSG tree",
+      "Model A candidate table"
+    ],
+    "findings": "Preserved original diagrams and captions; PDF table watermark retained. Added searchable Word cell text for candidate-table readability and missing subfigure labels outside native images."
+  },
+  "research_sources": "Original research source, data, execution configurations and PDF retained; package verifier checks recorded sources separately",
+  "failures": []
+}
