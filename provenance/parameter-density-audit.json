@@ -1,0 +1,257 @@
+{
+  "date": "2026-11-05",
+  "scope": "Read-only recomputation of descriptors from existing STL/CSV; no sampling or reconstruction rerun",
+  "predeclared_plan": "validation/2026-11-05/gap-followup-plan.md",
+  "historical_source": "evidence/traceability-2026-11-05/sampling-density-original.json",
+  "historical_source_sha256": "e12cf6fff7f47449936df20ee787596607031e4f6e70bb1f7d4585faa4e5ff65",
+  "computation_source": "research/tools/audit_sampling_density_260731.py",
+  "computation_source_sha256": "c918e740c096453ea57bf113ded4fd44e5878afeb09af1b992d5bef9c069e163",
+  "historical_source_contains_input_hashes": false,
+  "current_input_hashes_are_not_historical_receipts": true,
+  "cases": [
+    {
+      "case": "階梯狀圓柱",
+      "historical_values": {
+        "sample_count": 10000,
+        "surface_area_mm2": 37511.774079018025,
+        "area_per_point_mm2": 3.7511774079018023,
+        "characteristic_spacing_sqrt_area_per_point_mm": 1.9367956546579204,
+        "nearest_neighbor_mean_mm": 0.9623880024543341,
+        "nearest_neighbor_median_mm": 0.9006912864360607,
+        "nearest_neighbor_p95_mm": 1.8632547245591309,
+        "bounding_box_diagonal_mm": 150.99282141918255
+      },
+      "recomputed_current_values": {
+        "sample_count": 10000,
+        "surface_area_mm2": 37511.774079018025,
+        "area_per_point_mm2": 3.7511774079018023,
+        "characteristic_spacing_sqrt_area_per_point_mm": 1.9367956546579204,
+        "nearest_neighbor_mean_mm": 0.9623880024543341,
+        "nearest_neighbor_median_mm": 0.9006912864360607,
+        "nearest_neighbor_p95_mm": 1.8632547245591309,
+        "bounding_box_diagonal_mm": 150.99282141918255
+      },
+      "exact_numeric_comparisons": {
+        "sample_count": true,
+        "surface_area_mm2": true,
+        "area_per_point_mm2": true,
+        "characteristic_spacing_sqrt_area_per_point_mm": true,
+        "nearest_neighbor_mean_mm": true,
+        "nearest_neighbor_median_mm": true,
+        "nearest_neighbor_p95_mm": true,
+        "bounding_box_diagonal_mm": true
+      },
+      "historical_display_precision_comparisons": {
+        "surface_area_mm2": true,
+        "area_per_point_mm2": true,
+        "characteristic_spacing_sqrt_area_per_point_mm": true,
+        "nearest_neighbor_median_mm": true,
+        "nearest_neighbor_p95_mm": true,
+        "bounding_box_diagonal_mm": true
+      },
+      "inputs": [
+        {
+          "original_path": "零件/Stepped Cylinder.stl",
+          "current_sha256": "3afd1e517cd6484a89a16615e163c0d580766f07e4025ba517921fd2e4adaf4d",
+          "public_path": "research/零件/Stepped Cylinder.stl",
+          "public_bytes_match_current": true
+        },
+        {
+          "original_path": "零件/Stepped Cylinder點雲.csv",
+          "current_sha256": "dc245b8c26324a63179f26dc9039c03639c48e9aa417bb7a5468bbb4ad3f10cc",
+          "public_path": "research/零件/Stepped Cylinder點雲.csv",
+          "public_bytes_match_current": true
+        }
+      ]
+    },
+    {
+      "case": "L型板",
+      "historical_values": {
+        "sample_count": 10000,
+        "surface_area_mm2": 12785.284996810999,
+        "area_per_point_mm2": 1.2785284996811,
+        "characteristic_spacing_sqrt_area_per_point_mm": 1.1307203454794204,
+        "nearest_neighbor_mean_mm": 0.5650584445591976,
+        "nearest_neighbor_median_mm": 0.5349507503119081,
+        "nearest_neighbor_p95_mm": 1.0825900915629443,
+        "bounding_box_diagonal_mm": 100.12493130685158
+      },
+      "recomputed_current_values": {
+        "sample_count": 10000,
+        "surface_area_mm2": 12785.284996810999,
+        "area_per_point_mm2": 1.2785284996811,
+        "characteristic_spacing_sqrt_area_per_point_mm": 1.1307203454794204,
+        "nearest_neighbor_mean_mm": 0.5650584445591976,
+        "nearest_neighbor_median_mm": 0.5349507503119081,
+        "nearest_neighbor_p95_mm": 1.0825900915629443,
+        "bounding_box_diagonal_mm": 100.12493130685158
+      },
+      "exact_numeric_comparisons": {
+        "sample_count": true,
+        "surface_area_mm2": true,
+        "area_per_point_mm2": true,
+        "characteristic_spacing_sqrt_area_per_point_mm": true,
+        "nearest_neighbor_mean_mm": true,
+        "nearest_neighbor_median_mm": true,
+        "nearest_neighbor_p95_mm": true,
+        "bounding_box_diagonal_mm": true
+      },
+      "historical_display_precision_comparisons": {
+        "surface_area_mm2": true,
+        "area_per_point_mm2": true,
+        "characteristic_spacing_sqrt_area_per_point_mm": true,
+        "nearest_neighbor_median_mm": true,
+        "nearest_neighbor_p95_mm": true,
+        "bounding_box_diagonal_mm": true
+      },
+      "inputs": [
+        {
+          "original_path": "零件/L-Bracket.stl",
+          "current_sha256": "01a8b2eb37f9a2e1ddfa4f3f0ccf368ffe08fc001767990b5f32801ea25a1bc6",
+          "public_path": "research/零件/L-Bracket.stl",
+          "public_bytes_match_current": true
+        },
+        {
+          "original_path": "零件/L-Bracket點雲.csv",
+          "current_sha256": "769d9cd8aaa25c41755944cdd2423e20a5747e9a31df9db6a03edd723c23e41c",
+          "public_path": "research/零件/L-Bracket點雲.csv",
+          "public_bytes_match_current": true
+        }
+      ]
+    },
+    {
+      "case": "模型A",
+      "historical_values": {
+        "sample_count": 10000,
+        "surface_area_mm2": 37450.9749816318,
+        "area_per_point_mm2": 3.74509749816318,
+        "characteristic_spacing_sqrt_area_per_point_mm": 1.9352254385893082,
+        "nearest_neighbor_mean_mm": 0.9634708340057783,
+        "nearest_neighbor_median_mm": 0.9105526968031397,
+        "nearest_neighbor_p95_mm": 1.8691391473020185,
+        "bounding_box_diagonal_mm": 184.12153222887147
+      },
+      "recomputed_current_values": {
+        "sample_count": 10000,
+        "surface_area_mm2": 37450.9749816318,
+        "area_per_point_mm2": 3.74509749816318,
+        "characteristic_spacing_sqrt_area_per_point_mm": 1.9352254385893082,
+        "nearest_neighbor_mean_mm": 0.9634708340057783,
+        "nearest_neighbor_median_mm": 0.9105526968031397,
+        "nearest_neighbor_p95_mm": 1.8691391473020185,
+        "bounding_box_diagonal_mm": 184.12153222887147
+      },
+      "exact_numeric_comparisons": {
+        "sample_count": true,
+        "surface_area_mm2": true,
+        "area_per_point_mm2": true,
+        "characteristic_spacing_sqrt_area_per_point_mm": true,
+        "nearest_neighbor_mean_mm": true,
+        "nearest_neighbor_median_mm": true,
+        "nearest_neighbor_p95_mm": true,
+        "bounding_box_diagonal_mm": true
+      },
+      "historical_display_precision_comparisons": {
+        "surface_area_mm2": true,
+        "area_per_point_mm2": true,
+        "characteristic_spacing_sqrt_area_per_point_mm": true,
+        "nearest_neighbor_median_mm": true,
+        "nearest_neighbor_p95_mm": true,
+        "bounding_box_diagonal_mm": true
+      },
+      "inputs": [
+        {
+          "original_path": "零件/Model A.stl",
+          "current_sha256": "bbe3d96fbbb2f8f7f0e56e619f085b1ef113df6e7eb084fb1c8ff7d845e8f742",
+          "public_path": "research/零件/Model A.stl",
+          "public_bytes_match_current": true
+        },
+        {
+          "original_path": "零件/Model A點雲.csv",
+          "current_sha256": "f10f952e4b2ba7f02d45011c2a8f35b32ae73553845b5bdd1ac07dc04db1b436",
+          "public_path": "research/零件/Model A點雲.csv",
+          "public_bytes_match_current": true
+        }
+      ]
+    },
+    {
+      "case": "盲孔六角座",
+      "historical_values": {
+        "sample_count": 10000,
+        "surface_area_mm2": 41351.08390533282,
+        "area_per_point_mm2": 4.135108390533282,
+        "characteristic_spacing_sqrt_area_per_point_mm": 2.0334965922108847,
+        "nearest_neighbor_mean_mm": 1.00651191878531,
+        "nearest_neighbor_median_mm": 0.9565920558994946,
+        "nearest_neighbor_p95_mm": 1.9551845984494542,
+        "bounding_box_diagonal_mm": 152.05678699878163
+      },
+      "recomputed_current_values": {
+        "sample_count": 10000,
+        "surface_area_mm2": 41351.08390533282,
+        "area_per_point_mm2": 4.135108390533282,
+        "characteristic_spacing_sqrt_area_per_point_mm": 2.0334965922108847,
+        "nearest_neighbor_mean_mm": 1.00651191878531,
+        "nearest_neighbor_median_mm": 0.9565920558994946,
+        "nearest_neighbor_p95_mm": 1.9551845984494542,
+        "bounding_box_diagonal_mm": 152.05678699878163
+      },
+      "exact_numeric_comparisons": {
+        "sample_count": true,
+        "surface_area_mm2": true,
+        "area_per_point_mm2": true,
+        "characteristic_spacing_sqrt_area_per_point_mm": true,
+        "nearest_neighbor_mean_mm": true,
+        "nearest_neighbor_median_mm": true,
+        "nearest_neighbor_p95_mm": true,
+        "bounding_box_diagonal_mm": true
+      },
+      "historical_display_precision_comparisons": {
+        "surface_area_mm2": true,
+        "area_per_point_mm2": true,
+        "characteristic_spacing_sqrt_area_per_point_mm": true,
+        "nearest_neighbor_median_mm": true,
+        "nearest_neighbor_p95_mm": true,
+        "bounding_box_diagonal_mm": true
+      },
+      "inputs": [
+        {
+          "original_path": "零件/Hex Base with Hole A.stl",
+          "current_sha256": "ccc66a0f8553cdd218822b816cc240f7207cabe69176b300c42949ac4fe23457",
+          "public_path": "evidence/traceability-2026-11-05/Hex Base with Hole A.stl",
+          "public_bytes_match_current": true
+        },
+        {
+          "original_path": "零件/Blind-Hole Hex Base點雲.csv",
+          "current_sha256": "7e757e2848a4f4ca0f123b2326a07716601bfdab1a962c3b020b418baccb7bc2",
+          "public_path": "research/零件/Blind-Hole Hex Base點雲.csv",
+          "public_bytes_match_current": true
+        }
+      ]
+    }
+  ],
+  "normal_angles": [
+    {
+      "threshold": 0.9,
+      "historical_degrees": 25.841932763167126,
+      "recomputed_degrees": 25.841932763167126,
+      "exact": true
+    },
+    {
+      "threshold": 0.93,
+      "historical_degrees": 21.56518501524267,
+      "recomputed_degrees": 21.56518501524267,
+      "exact": true
+    },
+    {
+      "threshold": 0.96,
+      "historical_degrees": 16.260204708311967,
+      "recomputed_degrees": 16.260204708311967,
+      "exact": true
+    }
+  ],
+  "all_original_precision_comparisons_match": true,
+  "all_historical_display_comparisons_match": true,
+  "bounding_box_scope": "Computed from sampled point positions, not the full STL vertex bounds",
+  "normalization_note": "Historical source unchanged; this separate audit binds current bytes only, not historical input receipts."
+}

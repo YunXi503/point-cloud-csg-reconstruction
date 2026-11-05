@@ -2,6 +2,8 @@
 
 [品質摘要](../../docs/results.md) · [逐次輸入與程式／輸出綁定](../../provenance/sensitivity-input-bindings.json)
 
+**閱讀時請一併參考[事後勘誤](../../docs/sensitivity-errata.md)**：原摘要有五筆 matches_baseline 標記與保存的六項輸出雜湊比較結果不一致。本版另附[逐筆複核](../../provenance/sensitivity-recheck.json)，沒有修改原報告、重新執行歷史敏感度或補造失敗輸入雜湊。
+
 本目錄保存 2026-07-31 的原始摘要 JSON、報告及 23 份完成執行的 MethodInferenceManifest，均由既有研究工作區逐位元複製，來源路徑與 SHA-256 列於 [file-manifest.csv](../../provenance/file-manifest.csv)。
 
 24 組紀錄中，L型板在距離 1.5 mm 的執行停止且未產出 manifest；其標準錯誤保留於摘要 JSON。本輪只找回與核對既有紀錄，未重跑敏感度分析。全部變體程式及逐次輸出仍在原工作區，未納入本版的一鍵重跑。

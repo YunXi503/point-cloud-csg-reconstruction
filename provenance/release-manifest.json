@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-evidence-2026-11-05",
+  "packaging_version": "portfolio-traceability-2026-11-05",
   "date": "2026-11-05",
   "manifest_excludes": [
     "provenance/release-manifest.json"
@@ -1892,6 +1892,46 @@
       "role": "historical-threshold-sensitivity-run-manifest",
       "bytes": 4905,
       "sha256": "e8310d61d0aa8c7534c66e0de48c00f5d95dea8b735b98a4f44c382fe932019a"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/sampling-density-original.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/sampling_density_evidence.json",
+      "role": "historical-density-evidence",
+      "bytes": 2768,
+      "sha256": "e12cf6fff7f47449936df20ee787596607031e4f6e70bb1f7d4585faa4e5ff65"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/sampling-density-original.md",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/點雲密度與門檻依據_260731.md",
+      "role": "historical-density-report",
+      "bytes": 1259,
+      "sha256": "4a5613e5a6d45bb7fbd0c49b6cc0c744f4ff3093f74ef8eab6b3617b1cb0d067"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/run_threshold_sensitivity_260731.py",
+      "source_root": "thesis_workspace",
+      "source_path": "tools/run_threshold_sensitivity_260731.py",
+      "role": "archival-controller-not-executed",
+      "bytes": 8947,
+      "sha256": "9183c257090365df1a95ec18e91c99b99349ad1093795f663c791f27bd505d10"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/flowchart-task-original.md",
+      "source_root": "thesis_workspace",
+      "source_path": "plan/task-packets/2026-08-07_第三章流程圖對應論文說明草稿.md",
+      "role": "historical-planning-only",
+      "bytes": 2349,
+      "sha256": "0d498812434dbf01619747de0bafbc891ee95e485896396eba4135766b002111"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/Hex Base with Hole A.stl",
+      "source_root": "thesis_workspace",
+      "source_path": "零件/Hex Base with Hole A.stl",
+      "role": "current-density-geometry-input",
+      "bytes": 116924,
+      "sha256": "ccc66a0f8553cdd218822b816cc240f7207cabe69176b300c42949ac4fe23457"
     }
   ],
   "files": [
@@ -2337,8 +2377,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3347,
-      "sha256": "83a0df2ca63855f5895cbdebfaf60a31c8f8a1f3972b4103fa170acdce0014fb"
+      "bytes": 3898,
+      "sha256": "712be057d3388bac5a4b21f35f788f82a3c0aa892ec24c0603372002f55d1069"
     },
     {
       "path": "data/recovered/README.md",
@@ -2416,34 +2456,49 @@
       "sha256": "297e470a20780855d94cfe635820887957955fe7f59dc23d956677bb93b7f2c9"
     },
     {
+      "path": "docs/gap-followup-review.md",
+      "bytes": 3025,
+      "sha256": "a6bf6e34c0122186bd73432911a0de9e035c74e1f1b3d547a856f7bb6b7084d3"
+    },
+    {
       "path": "docs/maintaining.md",
       "bytes": 1432,
       "sha256": "8c8dff0cd304cdb6fcee3d67b92023f295af492780416b8fd18310515e024e94"
     },
     {
       "path": "docs/method-scope.md",
-      "bytes": 6823,
-      "sha256": "fd5da1a2d3bf54bd01db037385434c6c599e7382950d1f90bb98a8606502a812"
+      "bytes": 6946,
+      "sha256": "0c88864f81456b65a5a24cc1080ee0fdc96f4bbb2ad190a440950be729f52e3a"
+    },
+    {
+      "path": "docs/method-traceability.md",
+      "bytes": 4067,
+      "sha256": "1cad98d16983b50c3f50399cba93cf68e35c8a9962d3b823714c51d62d7eb401"
     },
     {
       "path": "docs/missing-information.md",
-      "bytes": 2863,
-      "sha256": "472b4f2d3ad9c9ed30375893f32d5b025e58eb4f90b0e528f2fec786dc51f04b"
+      "bytes": 2946,
+      "sha256": "d062f5b10d3157c339bfc902de2ce5496a126b61646caac8d35c8d1321f1bea5"
     },
     {
       "path": "docs/packaging-qa.md",
-      "bytes": 3053,
-      "sha256": "b3ff0f3e8e1ff28b0b259eda9cf12c147e45957644fcfaaf29d68ac5f96f719b"
+      "bytes": 3402,
+      "sha256": "cdad41a8fce3d960e97dc63569b0746c3c0940e907c96ba445ce21e855564391"
+    },
+    {
+      "path": "docs/parameter-evidence.md",
+      "bytes": 2970,
+      "sha256": "d6856dae5209ef0fb76dd7a81e754b02f1e4ac0c61e2c1130d0fce4a60172b6b"
     },
     {
       "path": "docs/portfolio-review.md",
-      "bytes": 3627,
-      "sha256": "2ef32229e720e1511d7c67a7bd2fc80c6cfd06269d3cac260b6a04c00690c665"
+      "bytes": 3704,
+      "sha256": "7a7967c8b3d9e587dbe64c4d155fd85a1836eb80cc4da1c55b1b4e80f56e722a"
     },
     {
       "path": "docs/results.md",
-      "bytes": 10582,
-      "sha256": "cb409d1bcc5fdc3b140345436cbfb08becc10e954531261406fca8789650e1bc"
+      "bytes": 10816,
+      "sha256": "77ffa18dd2413935bf959b14a6481a13452e0cee33cd179467d92adc98b99f01"
     },
     {
       "path": "docs/second-pass-review.md",
@@ -2451,14 +2506,19 @@
       "sha256": "47ce9fea63d7fcc1574d25e8a40e78f1bdf9450486738d05cc4e055e68ee0809"
     },
     {
+      "path": "docs/sensitivity-errata.md",
+      "bytes": 2758,
+      "sha256": "da1e9f6a74fd2474ad10c040fdd25d4e6e465ddff8abdca26bfada0bcf2056bf"
+    },
+    {
       "path": "docs/source-versions.md",
-      "bytes": 3099,
-      "sha256": "d9ffa5def6d5f65ad87835136e2bc96d3b20c909f40c499d396ed5f58ca2af4c"
+      "bytes": 3227,
+      "sha256": "567fb38510d4b7b6b9e0e4603308c29a2d34f0dd7127a28f88bd32d45bc34baf"
     },
     {
       "path": "docs/validation.md",
-      "bytes": 2349,
-      "sha256": "10413075b7c0465e456feb86f5514fc6724ce4d3409e2f8b663fbf4eec9d1235"
+      "bytes": 2744,
+      "sha256": "f3f4b63328ac7006b1008a11f92fc93a1c8d5f0b9a7be4e76aac6330ca04f607"
     },
     {
       "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_1.50.json",
@@ -2577,8 +2637,8 @@
     },
     {
       "path": "evidence/sensitivity-2026-07-31/README.md",
-      "bytes": 1271,
-      "sha256": "55b01b3d52fd5f304a2113a7e19ab5a8d1023de437c3ca85c59fa38503c1102a"
+      "bytes": 1601,
+      "sha256": "927e2fc62991b2a1fb4f5f0f918b2c30f1c6ae05b36f438fe5fce72ca0b86250"
     },
     {
       "path": "evidence/sensitivity-2026-07-31/report.md",
@@ -2589,6 +2649,36 @@
       "path": "evidence/sensitivity-2026-07-31/sensitivity_results.json",
       "bytes": 51927,
       "sha256": "e9a46e86a68fa88a1f5962c5b55b2617c9b079a8ba4f94609da964f51edba905"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/flowchart-task-original.md",
+      "bytes": 2349,
+      "sha256": "0d498812434dbf01619747de0bafbc891ee95e485896396eba4135766b002111"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/Hex Base with Hole A.stl",
+      "bytes": 116924,
+      "sha256": "ccc66a0f8553cdd218822b816cc240f7207cabe69176b300c42949ac4fe23457"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/README.md",
+      "bytes": 1147,
+      "sha256": "2bd2a46e1ed7ec77278ba4f6333ab853f21c8f93f5f66de215bb40614a855cab"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/run_threshold_sensitivity_260731.py",
+      "bytes": 8947,
+      "sha256": "9183c257090365df1a95ec18e91c99b99349ad1093795f663c791f27bd505d10"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/sampling-density-original.json",
+      "bytes": 2768,
+      "sha256": "e12cf6fff7f47449936df20ee787596607031e4f6e70bb1f7d4585faa4e5ff65"
+    },
+    {
+      "path": "evidence/traceability-2026-11-05/sampling-density-original.md",
+      "bytes": 1259,
+      "sha256": "4a5613e5a6d45bb7fbd0c49b6cc0c744f4ff3093f74ef8eab6b3617b1cb0d067"
     },
     {
       "path": "examples/cases.json",
@@ -2632,8 +2722,8 @@
     },
     {
       "path": "provenance/copied-sources.json",
-      "bytes": 98469,
-      "sha256": "a9f8b5abee20c4fed52e57d9f6da55abdb694f8a6d4211aa001212d74c95081a"
+      "bytes": 100283,
+      "sha256": "1676f790a981f65a8b58d602789d6c8c53de5f5b676727f942fcfbba17acb8ad"
     },
     {
       "path": "provenance/csharp-project-audit.json",
@@ -2642,8 +2732,8 @@
     },
     {
       "path": "provenance/file-manifest.csv",
-      "bytes": 72799,
-      "sha256": "3286372b6d50ac123732ea88dbb70a6142a109abdd7a7ed0c3a297624589046f"
+      "bytes": 74068,
+      "sha256": "2077f8fde0d584f167b1573f13f0d17952ede77496673aa76c9cdab5720054d3"
     },
     {
       "path": "provenance/historical-json-notes.json",
@@ -2666,6 +2756,11 @@
       "sha256": "7b664fe780b5f49e8a4cfbb7fddeb5e6bc8915bc10d23b4af94c390410e8bce7"
     },
     {
+      "path": "provenance/history/source-versions-portfolio-evidence-2026-11-05.json",
+      "bytes": 21425,
+      "sha256": "d22a5b0fde5bec2da4e38cae020165503092a324ecb219f6599d6b8f2acfce83"
+    },
+    {
       "path": "provenance/history/source-versions-portfolio-figures-2026-11-05.json",
       "bytes": 20669,
       "sha256": "1aad46a14bde5ead65e1c3706be4a509c22fd6618c877eab7a6c78d36d3a6e6b"
@@ -2684,6 +2779,16 @@
       "path": "provenance/history/source-versions-verification-2026-11-05.json",
       "bytes": 18644,
       "sha256": "eaadca8e30fa10cb6a1b1825cae722bdb24c3ca3e41431e18f95a9a5df0a78db"
+    },
+    {
+      "path": "provenance/method-traceability.json",
+      "bytes": 22876,
+      "sha256": "e24f249076403edc4ba2cbf08db24127f01ae9bda6c5a3cbf51f3e3e98adf1f2"
+    },
+    {
+      "path": "provenance/parameter-density-audit.json",
+      "bytes": 10621,
+      "sha256": "a72385178c7a466dadf42a3580a18e9a6a371e24f40421f5f89f5f206bee7c62"
     },
     {
       "path": "provenance/python-import-audit.json",
@@ -2711,9 +2816,14 @@
       "sha256": "97944d44a3d7afa4ffbf79656288e181c75e1454d3daec9cb489e56101fbc0ba"
     },
     {
+      "path": "provenance/sensitivity-recheck.json",
+      "bytes": 88426,
+      "sha256": "1ef89c968774747a4dc2e94edf4f42af362edbf425629493f46495cdaad70d1b"
+    },
+    {
       "path": "provenance/source-versions.json",
-      "bytes": 21425,
-      "sha256": "d22a5b0fde5bec2da4e38cae020165503092a324ecb219f6599d6b8f2acfce83"
+      "bytes": 21983,
+      "sha256": "affd8173f5779bd1a05ea390174445624a09d2070b8dbfd8e302e189e4bf4d54"
     },
     {
       "path": "provenance/thesis-figures.json",
@@ -2722,8 +2832,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8748,
-      "sha256": "92ad66b473636920275703bd924174bd0d3681b8525b4268f8677e94be72e548"
+      "bytes": 8962,
+      "sha256": "f02d7faacba1ec4e3c7402d1cf5766f4918981d26cd1184e19211cc761051d60"
     },
     {
       "path": "requirements-observed.txt",
@@ -3689,6 +3799,16 @@
       "path": "validation/2026-11-05/environment.json",
       "bytes": 464,
       "sha256": "63f621720452c43fe62d248c6e10c19acbe4d2b550477fd85ae3f7384677e7e0"
+    },
+    {
+      "path": "validation/2026-11-05/gap-followup-audit.json",
+      "bytes": 1698,
+      "sha256": "0b3a743d29a29d0538ad9e5b194480d0929a7866609a385d52cf4e3eff61813a"
+    },
+    {
+      "path": "validation/2026-11-05/gap-followup-plan.md",
+      "bytes": 1429,
+      "sha256": "d335ffa22fab5fbdd693ff2c36f79e883ca63b4842199cd35973e9252ca28e15"
     },
     {
       "path": "validation/2026-11-05/initial-source-binding-attempt.json",

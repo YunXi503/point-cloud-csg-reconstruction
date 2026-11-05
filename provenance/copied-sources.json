@@ -1886,5 +1886,45 @@
     "role": "historical-threshold-sensitivity-run-manifest",
     "bytes": 4905,
     "sha256": "e8310d61d0aa8c7534c66e0de48c00f5d95dea8b735b98a4f44c382fe932019a"
+  },
+  {
+    "path": "evidence/traceability-2026-11-05/sampling-density-original.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/sampling_density_evidence.json",
+    "role": "historical-density-evidence",
+    "bytes": 2768,
+    "sha256": "e12cf6fff7f47449936df20ee787596607031e4f6e70bb1f7d4585faa4e5ff65"
+  },
+  {
+    "path": "evidence/traceability-2026-11-05/sampling-density-original.md",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/點雲密度與門檻依據_260731.md",
+    "role": "historical-density-report",
+    "bytes": 1259,
+    "sha256": "4a5613e5a6d45bb7fbd0c49b6cc0c744f4ff3093f74ef8eab6b3617b1cb0d067"
+  },
+  {
+    "path": "evidence/traceability-2026-11-05/run_threshold_sensitivity_260731.py",
+    "source_root": "thesis_workspace",
+    "source_path": "tools/run_threshold_sensitivity_260731.py",
+    "role": "archival-controller-not-executed",
+    "bytes": 8947,
+    "sha256": "9183c257090365df1a95ec18e91c99b99349ad1093795f663c791f27bd505d10"
+  },
+  {
+    "path": "evidence/traceability-2026-11-05/flowchart-task-original.md",
+    "source_root": "thesis_workspace",
+    "source_path": "plan/task-packets/2026-08-07_第三章流程圖對應論文說明草稿.md",
+    "role": "historical-planning-only",
+    "bytes": 2349,
+    "sha256": "0d498812434dbf01619747de0bafbc891ee95e485896396eba4135766b002111"
+  },
+  {
+    "path": "evidence/traceability-2026-11-05/Hex Base with Hole A.stl",
+    "source_root": "thesis_workspace",
+    "source_path": "零件/Hex Base with Hole A.stl",
+    "role": "current-density-geometry-input",
+    "bytes": 116924,
+    "sha256": "ccc66a0f8553cdd218822b816cc240f7207cabe69176b300c42949ac4fe23457"
   }
 ]

@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-05",
+  "release": "0.1.4",
+  "scope": "Read-only existing evidence audit, no sampling/reconstruction/sensitivity rerun",
+  "checks": 1056,
+  "protected_source_count": 241,
+  "previous_236_source_records_preserved": true,
+  "research_execution_data_assets_pdf_or_ci_changes": [],
+  "word_source_unchanged": true,
+  "word_omath": 97,
+  "sensitivity_counts": {
+    "planned": 24,
+    "completed": 23,
+    "failed": 1,
+    "baseline_self_comparisons": 8,
+    "nonbaseline_completed": 15,
+    "nonbaseline_same": 10,
+    "nonbaseline_different": 5,
+    "flag_discrepancies": 5,
+    "physical_output_files_verified": 138,
+    "physical_variant_files_verified": 120
+  },
+  "density_exact_descriptors_checked": 32,
+  "density_exact_angles_checked": 3,
+  "density_current_input_bindings": 8,
+  "remaining_failed_historical_input_sha_missing": 1,
+  "local_links_checked": 344,
+  "source_line_anchors_checked": 8,
+  "preserved_nonstandard_json": [
+    "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_1.50.json",
+    "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.00.json",
+    "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.50.json",
+    "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.90.json",
+    "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.93.json",
+    "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.96.json",
+    "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/MethodInferenceManifest_Model_A_chapter3.json"
+  ],
+  "new_or_changed_text_files_credential_signature_scanned": 29,
+  "review": "docs/gap-followup-review.md",
+  "failures": []
+}

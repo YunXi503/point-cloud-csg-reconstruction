@@ -1,10 +1,10 @@
 # 發布封裝與公開論文 QA
 
-版本：0.1.3／portfolio-evidence-2026-11-05。原始來源、兩條執行路徑與研究證據邊界見 [查驗紀錄](validation.md)，本輪三項補全的再次審查見 [completion-review.md](completion-review.md)。
+版本：0.1.4／portfolio-traceability-2026-11-05。原始來源、兩條執行路徑與研究證據邊界見 [查驗紀錄](validation.md)，本輪三項補全的再次審查見 [completion-review.md](completion-review.md)。
 
 ## 檔案與程式
 
-原有 211 個核心來源與新增 25 份歷史敏感度證據，共 236 個來源應與固定 SHA-256 一致；公開 seal 工具先驗證它們再建立全檔清單，verify 工具同時偵測位元變更與未列入的新檔。編譯產物、快取、私人環境、個人知識庫及第三方文獻 PDF 不納入。
+原有 211 個核心來源與新增 25 份歷史敏感度證據，再加五份追溯來源，共 241 個來源應與固定 SHA-256 一致；公開 seal 工具先驗證它們再建立全檔清單，verify 工具同時偵測位元變更與未列入的新檔。編譯產物、快取、私人環境、個人知識庫及第三方文獻 PDF 不納入。
 
 新程式與文件使用 LF，原研究與歷史資料保持原位元。已從本地 commit 實際 clone 至含空格與中文的新路徑，設定 core.autocrlf=true，當時全部 289 檔案通過雜湊檢查。新文件中的 49 個本地連結及 268 個文字檔的指定憑證格式掃描也通過，原 Word 雜湊不變。[發布檢查紀錄](../validation/2026-11-05/publication-audit.json)
 
@@ -29,3 +29,7 @@ Microsoft Word 實際以唯讀副本開啟，來源及副本關閉後 SHA-256 �
 本輪審查釐清了二元 CSG 圖示與分組式 JSON 的表示差異，修正首頁及架構措辭，未以格式說明宣稱已新增轉換器或 CAD 幾何執行。詳見 [CSG 表示對照](csg-representation.md) 與 [補全審查](portfolio-review.md)。
 
 歷史 3 個 csproj 缺件不強行補造，現行入口另以可核對來源建置。資料與模型未另行宣告新的再利用授權。未將本輪工程查驗宣稱為真實掃描、一般 CAD 輸出或方法優越性證據。
+
+## 本輪缺口追查
+
+[再次審查](gap-followup-review.md)及[查核 JSON](../validation/2026-11-05/gap-followup-audit.json)列出保存來源、敏感度勘誤與密度重算。原 Word、PDF、圖件及程式未變；舊版 QA 及執行紀錄仍保留原版本語境，沒有宣稱已重跑歷史研究實驗。

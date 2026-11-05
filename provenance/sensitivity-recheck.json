@@ -1,0 +1,1722 @@
+{
+  "date": "2026-11-05",
+  "scope": "Post hoc read-only comparison of saved output hashes; no reconstruction or sensitivity rerun",
+  "summary_source": "evidence/sensitivity-2026-07-31/sensitivity_results.json",
+  "summary_sha256": "e9a46e86a68fa88a1f5962c5b55b2617c9b079a8ba4f94609da964f51edba905",
+  "criterion": "Same case and factor, six saved output hashes equal baseline outputs (distance 2.0 mm or normal dot 0.93)",
+  "controller_snapshot": "evidence/traceability-2026-11-05/run_threshold_sensitivity_260731.py",
+  "controller_historical_execution_sha_recorded": false,
+  "physical_files_checked_in_original_workspace": true,
+  "physical_variants_and_run_outputs_fully_included_in_public_package": false,
+  "counts": {
+    "planned": 24,
+    "completed": 23,
+    "failed": 1,
+    "baseline_self_comparisons": 8,
+    "nonbaseline_completed": 15,
+    "nonbaseline_same": 10,
+    "nonbaseline_different": 5,
+    "flag_discrepancies": 5,
+    "physical_output_files_verified": 138,
+    "physical_variant_files_verified": 120
+  },
+  "runs": [
+    {
+      "summary_index": 0,
+      "run_id": "Stepped_Cylinder__distance_mm_1.50",
+      "case": "Stepped_Cylinder",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Stepped_Cylinder__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": false,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": true,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_1.50/Result_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_1.50/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_1.50/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_1.50/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_1.50/CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_1.50/CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_1.50/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "a1814353548c5e92b4eff2ab8656f22e406b71024a64d4992e405268be6c3c48",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_1.50/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "a02ff8fed44eb1fd735f169752036bc6c4910587597bdbfc8e744d06d2b7e56c",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_1.50/infer_lbracket_chapter3_method.py",
+          "sha256": "489f90b44d8c6af84028aaf9fcc586c3bfcd751162acd9114695b1765f9dd848",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_1.50/infer_model_a_chapter3_method.py",
+          "sha256": "24b5b5a90396e0e01ae5b32ecabf9ab1d8ec41cd30ca143017ce314f4fe9b8ea",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_1.50/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 1,
+      "run_id": "Stepped_Cylinder__distance_mm_2.00",
+      "case": "Stepped_Cylinder",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "is_baseline_self_comparison": true,
+      "baseline_run_id": "Stepped_Cylinder__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.00/Result_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.00/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.00/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.00/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.00/CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.00/CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_2.00/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "b98d100e42a7d2630b35b8f31d0dbdb308cfc0b1149ab141a911ddefb6250549",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_2.00/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_2.00/infer_lbracket_chapter3_method.py",
+          "sha256": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_2.00/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_2.00/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 2,
+      "run_id": "Stepped_Cylinder__distance_mm_2.50",
+      "case": "Stepped_Cylinder",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Stepped_Cylinder__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.50/Result_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.50/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.50/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.50/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.50/CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.50/CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_2.50/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "e8e2555ebc92c407bb1d06b96ad5ee1486fe94e074e8f17d61fa035fb819a0ec",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_2.50/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "01de91bafbdc373fcdb725121b60a0ad0a06adb8fc3cb6bd105f7fe2629a3fcc",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_2.50/infer_lbracket_chapter3_method.py",
+          "sha256": "668ac194d718903b0d607fd76fed5e9fbf20ab03fd3c257d57bfffbd9ac512ea",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_2.50/infer_model_a_chapter3_method.py",
+          "sha256": "1232fa032d6f69397617577ceb32faac3ee9096c6875d0b36cf7d3032305f918",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__distance_mm_2.50/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 3,
+      "run_id": "Stepped_Cylinder__normal_dot_0.90",
+      "case": "Stepped_Cylinder",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Stepped_Cylinder__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": false,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": true,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.90/Result_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.90/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.90/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.90/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.90/CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.90/CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.90/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "0a2ce7e716efe7713d29bd37f3c2c09fab33e74ed38d189e885d10c0ce8fc03f",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.90/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "492f2a73bb7ad4beb57ee5bfb364ac54a60ea53bf52bd6f4d0bc2055b1bf87ff",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.90/infer_lbracket_chapter3_method.py",
+          "sha256": "fdc58f8d6f9d8200669cf8c14d28de500af25f77a450a5ab87b5faf117edc443",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.90/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.90/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 4,
+      "run_id": "Stepped_Cylinder__normal_dot_0.93",
+      "case": "Stepped_Cylinder",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "is_baseline_self_comparison": true,
+      "baseline_run_id": "Stepped_Cylinder__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.93/Result_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.93/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.93/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.93/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.93/CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.93/CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.93/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "65fdd1a5555ecaddad76a2df4d61e41547755018f3e3d3d7479a04f760bc95f5",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.93/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.93/infer_lbracket_chapter3_method.py",
+          "sha256": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.93/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.93/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 5,
+      "run_id": "Stepped_Cylinder__normal_dot_0.96",
+      "case": "Stepped_Cylinder",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Stepped_Cylinder__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.96/Result_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.96/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.96/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.96/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.96/CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "sha256": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.96/CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "sha256": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.96/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "cc9843bf03bf0a7f7c4d81016aab635a5db5385074df0fbcabd3ea26579f3224",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.96/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "362fc3972a38041a7b4937991cd4d02da26a35b654245c7e389b3cd806ec10e2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.96/infer_lbracket_chapter3_method.py",
+          "sha256": "279a650a370ceedef3e731cc1da1f80f6ed26189852ef6563417c3abc71fef01",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.96/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Stepped_Cylinder__normal_dot_0.96/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 6,
+      "run_id": "L_Bracket__distance_mm_1.50",
+      "case": "L_Bracket",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "L_Bracket__distance_mm_2.00",
+      "returncode": 1,
+      "stored_matches_baseline": null,
+      "rechecked_matches_baseline": null,
+      "flag_discrepancy": false,
+      "output_file_checks": [],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_1.50/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "a1814353548c5e92b4eff2ab8656f22e406b71024a64d4992e405268be6c3c48",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_1.50/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "a02ff8fed44eb1fd735f169752036bc6c4910587597bdbfc8e744d06d2b7e56c",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_1.50/infer_lbracket_chapter3_method.py",
+          "sha256": "489f90b44d8c6af84028aaf9fcc586c3bfcd751162acd9114695b1765f9dd848",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_1.50/infer_model_a_chapter3_method.py",
+          "sha256": "24b5b5a90396e0e01ae5b32ecabf9ab1d8ec41cd30ca143017ce314f4fe9b8ea",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_1.50/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 7,
+      "run_id": "L_Bracket__distance_mm_2.00",
+      "case": "L_Bracket",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "is_baseline_self_comparison": true,
+      "baseline_run_id": "L_Bracket__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.00/Result_L_Bracket_chapter3_verified.csv",
+          "sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.00/FaceSummary_L_Bracket_chapter3_verified.csv",
+          "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.00/TopologyEdges_L_Bracket_chapter3_verified.csv",
+          "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.00/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+          "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.00/CSGTree_L_Bracket_chapter3_verified.json",
+          "sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.00/CorrectionTrace_L_Bracket_chapter3.csv",
+          "sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_2.00/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "b98d100e42a7d2630b35b8f31d0dbdb308cfc0b1149ab141a911ddefb6250549",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_2.00/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_2.00/infer_lbracket_chapter3_method.py",
+          "sha256": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_2.00/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_2.00/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 8,
+      "run_id": "L_Bracket__distance_mm_2.50",
+      "case": "L_Bracket",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "L_Bracket__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": false,
+      "rechecked_matches_baseline": false,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.50/Result_L_Bracket_chapter3_verified.csv",
+          "sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.50/FaceSummary_L_Bracket_chapter3_verified.csv",
+          "sha256": "946f2d01695f1560c7baf52bd4a7dc6619568f05fbf90d3a949d24413fe196a0",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.50/TopologyEdges_L_Bracket_chapter3_verified.csv",
+          "sha256": "c4a3dc96be31f440df181d100478d22f1fc6e2989d0f962d648615205b9d01c9",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.50/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+          "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.50/CSGTree_L_Bracket_chapter3_verified.json",
+          "sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.50/CorrectionTrace_L_Bracket_chapter3.csv",
+          "sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_2.50/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "e8e2555ebc92c407bb1d06b96ad5ee1486fe94e074e8f17d61fa035fb819a0ec",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_2.50/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "01de91bafbdc373fcdb725121b60a0ad0a06adb8fc3cb6bd105f7fe2629a3fcc",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_2.50/infer_lbracket_chapter3_method.py",
+          "sha256": "668ac194d718903b0d607fd76fed5e9fbf20ab03fd3c257d57bfffbd9ac512ea",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_2.50/infer_model_a_chapter3_method.py",
+          "sha256": "1232fa032d6f69397617577ceb32faac3ee9096c6875d0b36cf7d3032305f918",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__distance_mm_2.50/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 9,
+      "run_id": "L_Bracket__normal_dot_0.90",
+      "case": "L_Bracket",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "L_Bracket__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": false,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": true,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.90/Result_L_Bracket_chapter3_verified.csv",
+          "sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.90/FaceSummary_L_Bracket_chapter3_verified.csv",
+          "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.90/TopologyEdges_L_Bracket_chapter3_verified.csv",
+          "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.90/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+          "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.90/CSGTree_L_Bracket_chapter3_verified.json",
+          "sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.90/CorrectionTrace_L_Bracket_chapter3.csv",
+          "sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.90/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "0a2ce7e716efe7713d29bd37f3c2c09fab33e74ed38d189e885d10c0ce8fc03f",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.90/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "492f2a73bb7ad4beb57ee5bfb364ac54a60ea53bf52bd6f4d0bc2055b1bf87ff",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.90/infer_lbracket_chapter3_method.py",
+          "sha256": "fdc58f8d6f9d8200669cf8c14d28de500af25f77a450a5ab87b5faf117edc443",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.90/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.90/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 10,
+      "run_id": "L_Bracket__normal_dot_0.93",
+      "case": "L_Bracket",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "is_baseline_self_comparison": true,
+      "baseline_run_id": "L_Bracket__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.93/Result_L_Bracket_chapter3_verified.csv",
+          "sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.93/FaceSummary_L_Bracket_chapter3_verified.csv",
+          "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.93/TopologyEdges_L_Bracket_chapter3_verified.csv",
+          "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.93/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+          "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.93/CSGTree_L_Bracket_chapter3_verified.json",
+          "sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.93/CorrectionTrace_L_Bracket_chapter3.csv",
+          "sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.93/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "65fdd1a5555ecaddad76a2df4d61e41547755018f3e3d3d7479a04f760bc95f5",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.93/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.93/infer_lbracket_chapter3_method.py",
+          "sha256": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.93/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.93/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 11,
+      "run_id": "L_Bracket__normal_dot_0.96",
+      "case": "L_Bracket",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "L_Bracket__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.96/Result_L_Bracket_chapter3_verified.csv",
+          "sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.96/FaceSummary_L_Bracket_chapter3_verified.csv",
+          "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.96/TopologyEdges_L_Bracket_chapter3_verified.csv",
+          "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.96/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+          "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.96/CSGTree_L_Bracket_chapter3_verified.json",
+          "sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.96/CorrectionTrace_L_Bracket_chapter3.csv",
+          "sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.96/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "cc9843bf03bf0a7f7c4d81016aab635a5db5385074df0fbcabd3ea26579f3224",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.96/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "362fc3972a38041a7b4937991cd4d02da26a35b654245c7e389b3cd806ec10e2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.96/infer_lbracket_chapter3_method.py",
+          "sha256": "279a650a370ceedef3e731cc1da1f80f6ed26189852ef6563417c3abc71fef01",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.96/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/L_Bracket__normal_dot_0.96/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 12,
+      "run_id": "Model_A__distance_mm_1.50",
+      "case": "Model_A",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Model_A__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": false,
+      "rechecked_matches_baseline": false,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_1.50/Result_Model_A_chapter3_verified.csv",
+          "sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_1.50/FaceSummary_Model_A_chapter3_verified.csv",
+          "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_1.50/TopologyEdges_Model_A_chapter3_verified.csv",
+          "sha256": "b294e4e957fb98789cffd5a3377d37d9777dec207b6004aad654182b5d47b780",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_1.50/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_1.50/CSGTree_Model_A_chapter3_verified.json",
+          "sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_1.50/CorrectionTrace_Model_A_chapter3.csv",
+          "sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_1.50/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "a1814353548c5e92b4eff2ab8656f22e406b71024a64d4992e405268be6c3c48",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_1.50/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "a02ff8fed44eb1fd735f169752036bc6c4910587597bdbfc8e744d06d2b7e56c",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_1.50/infer_lbracket_chapter3_method.py",
+          "sha256": "489f90b44d8c6af84028aaf9fcc586c3bfcd751162acd9114695b1765f9dd848",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_1.50/infer_model_a_chapter3_method.py",
+          "sha256": "24b5b5a90396e0e01ae5b32ecabf9ab1d8ec41cd30ca143017ce314f4fe9b8ea",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_1.50/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 13,
+      "run_id": "Model_A__distance_mm_2.00",
+      "case": "Model_A",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "is_baseline_self_comparison": true,
+      "baseline_run_id": "Model_A__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.00/Result_Model_A_chapter3_verified.csv",
+          "sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.00/FaceSummary_Model_A_chapter3_verified.csv",
+          "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.00/TopologyEdges_Model_A_chapter3_verified.csv",
+          "sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.00/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.00/CSGTree_Model_A_chapter3_verified.json",
+          "sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.00/CorrectionTrace_Model_A_chapter3.csv",
+          "sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_2.00/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "b98d100e42a7d2630b35b8f31d0dbdb308cfc0b1149ab141a911ddefb6250549",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_2.00/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_2.00/infer_lbracket_chapter3_method.py",
+          "sha256": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_2.00/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_2.00/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 14,
+      "run_id": "Model_A__distance_mm_2.50",
+      "case": "Model_A",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Model_A__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": false,
+      "rechecked_matches_baseline": false,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.50/Result_Model_A_chapter3_verified.csv",
+          "sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.50/FaceSummary_Model_A_chapter3_verified.csv",
+          "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.50/TopologyEdges_Model_A_chapter3_verified.csv",
+          "sha256": "cb9d488adf7b3614fbee6f1ee01b93dbe47bdaf287111318b6782588bdc19bac",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.50/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.50/CSGTree_Model_A_chapter3_verified.json",
+          "sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.50/CorrectionTrace_Model_A_chapter3.csv",
+          "sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_2.50/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "e8e2555ebc92c407bb1d06b96ad5ee1486fe94e074e8f17d61fa035fb819a0ec",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_2.50/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "01de91bafbdc373fcdb725121b60a0ad0a06adb8fc3cb6bd105f7fe2629a3fcc",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_2.50/infer_lbracket_chapter3_method.py",
+          "sha256": "668ac194d718903b0d607fd76fed5e9fbf20ab03fd3c257d57bfffbd9ac512ea",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_2.50/infer_model_a_chapter3_method.py",
+          "sha256": "1232fa032d6f69397617577ceb32faac3ee9096c6875d0b36cf7d3032305f918",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__distance_mm_2.50/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 15,
+      "run_id": "Model_A__normal_dot_0.90",
+      "case": "Model_A",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Model_A__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": false,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": true,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.90/Result_Model_A_chapter3_verified.csv",
+          "sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.90/FaceSummary_Model_A_chapter3_verified.csv",
+          "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.90/TopologyEdges_Model_A_chapter3_verified.csv",
+          "sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.90/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.90/CSGTree_Model_A_chapter3_verified.json",
+          "sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.90/CorrectionTrace_Model_A_chapter3.csv",
+          "sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.90/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "0a2ce7e716efe7713d29bd37f3c2c09fab33e74ed38d189e885d10c0ce8fc03f",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.90/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "492f2a73bb7ad4beb57ee5bfb364ac54a60ea53bf52bd6f4d0bc2055b1bf87ff",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.90/infer_lbracket_chapter3_method.py",
+          "sha256": "fdc58f8d6f9d8200669cf8c14d28de500af25f77a450a5ab87b5faf117edc443",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.90/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.90/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 16,
+      "run_id": "Model_A__normal_dot_0.93",
+      "case": "Model_A",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "is_baseline_self_comparison": true,
+      "baseline_run_id": "Model_A__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.93/Result_Model_A_chapter3_verified.csv",
+          "sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.93/FaceSummary_Model_A_chapter3_verified.csv",
+          "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.93/TopologyEdges_Model_A_chapter3_verified.csv",
+          "sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.93/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.93/CSGTree_Model_A_chapter3_verified.json",
+          "sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.93/CorrectionTrace_Model_A_chapter3.csv",
+          "sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.93/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "65fdd1a5555ecaddad76a2df4d61e41547755018f3e3d3d7479a04f760bc95f5",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.93/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.93/infer_lbracket_chapter3_method.py",
+          "sha256": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.93/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.93/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 17,
+      "run_id": "Model_A__normal_dot_0.96",
+      "case": "Model_A",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Model_A__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.96/Result_Model_A_chapter3_verified.csv",
+          "sha256": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.96/FaceSummary_Model_A_chapter3_verified.csv",
+          "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.96/TopologyEdges_Model_A_chapter3_verified.csv",
+          "sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.96/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.96/CSGTree_Model_A_chapter3_verified.json",
+          "sha256": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.96/CorrectionTrace_Model_A_chapter3.csv",
+          "sha256": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.96/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "cc9843bf03bf0a7f7c4d81016aab635a5db5385074df0fbcabd3ea26579f3224",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.96/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "362fc3972a38041a7b4937991cd4d02da26a35b654245c7e389b3cd806ec10e2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.96/infer_lbracket_chapter3_method.py",
+          "sha256": "279a650a370ceedef3e731cc1da1f80f6ed26189852ef6563417c3abc71fef01",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.96/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Model_A__normal_dot_0.96/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 18,
+      "run_id": "Blind_Hole_Hex_Base__distance_mm_1.50",
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Blind_Hole_Hex_Base__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": false,
+      "rechecked_matches_baseline": false,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_1.50/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_1.50/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_1.50/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "898f4e17d977aa2dadba3c42b6dd27a776402c131c279981b148e967713b597e",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_1.50/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_1.50/CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_1.50/CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_1.50/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "a1814353548c5e92b4eff2ab8656f22e406b71024a64d4992e405268be6c3c48",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_1.50/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "a02ff8fed44eb1fd735f169752036bc6c4910587597bdbfc8e744d06d2b7e56c",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_1.50/infer_lbracket_chapter3_method.py",
+          "sha256": "489f90b44d8c6af84028aaf9fcc586c3bfcd751162acd9114695b1765f9dd848",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_1.50/infer_model_a_chapter3_method.py",
+          "sha256": "24b5b5a90396e0e01ae5b32ecabf9ab1d8ec41cd30ca143017ce314f4fe9b8ea",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_1.50/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 19,
+      "run_id": "Blind_Hole_Hex_Base__distance_mm_2.00",
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "is_baseline_self_comparison": true,
+      "baseline_run_id": "Blind_Hole_Hex_Base__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.00/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.00/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.00/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.00/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.00/CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.00/CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_2.00/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "b98d100e42a7d2630b35b8f31d0dbdb308cfc0b1149ab141a911ddefb6250549",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_2.00/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_2.00/infer_lbracket_chapter3_method.py",
+          "sha256": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_2.00/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_2.00/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 20,
+      "run_id": "Blind_Hole_Hex_Base__distance_mm_2.50",
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Blind_Hole_Hex_Base__distance_mm_2.00",
+      "returncode": 0,
+      "stored_matches_baseline": false,
+      "rechecked_matches_baseline": false,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.50/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.50/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.50/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "c081574548b91223ac22971c4c87546330deba5fc6b0ed29dba91640804cf18b",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.50/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.50/CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.50/CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_2.50/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "e8e2555ebc92c407bb1d06b96ad5ee1486fe94e074e8f17d61fa035fb819a0ec",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_2.50/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "01de91bafbdc373fcdb725121b60a0ad0a06adb8fc3cb6bd105f7fe2629a3fcc",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_2.50/infer_lbracket_chapter3_method.py",
+          "sha256": "668ac194d718903b0d607fd76fed5e9fbf20ab03fd3c257d57bfffbd9ac512ea",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_2.50/infer_model_a_chapter3_method.py",
+          "sha256": "1232fa032d6f69397617577ceb32faac3ee9096c6875d0b36cf7d3032305f918",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__distance_mm_2.50/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 21,
+      "run_id": "Blind_Hole_Hex_Base__normal_dot_0.90",
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Blind_Hole_Hex_Base__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": false,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": true,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.90/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.90/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.90/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.90/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.90/CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.90/CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.90/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "0a2ce7e716efe7713d29bd37f3c2c09fab33e74ed38d189e885d10c0ce8fc03f",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.90/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "492f2a73bb7ad4beb57ee5bfb364ac54a60ea53bf52bd6f4d0bc2055b1bf87ff",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.90/infer_lbracket_chapter3_method.py",
+          "sha256": "fdc58f8d6f9d8200669cf8c14d28de500af25f77a450a5ab87b5faf117edc443",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.90/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.90/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 22,
+      "run_id": "Blind_Hole_Hex_Base__normal_dot_0.93",
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "is_baseline_self_comparison": true,
+      "baseline_run_id": "Blind_Hole_Hex_Base__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.93/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.93/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.93/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.93/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.93/CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.93/CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.93/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "65fdd1a5555ecaddad76a2df4d61e41547755018f3e3d3d7479a04f760bc95f5",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.93/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.93/infer_lbracket_chapter3_method.py",
+          "sha256": "1c5fcf4077169a5b1238e9f6e754cc03c57fa02572e247b8d0525a22162ef0d1",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.93/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.93/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    },
+    {
+      "summary_index": 23,
+      "run_id": "Blind_Hole_Hex_Base__normal_dot_0.96",
+      "case": "Blind_Hole_Hex_Base",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "is_baseline_self_comparison": false,
+      "baseline_run_id": "Blind_Hole_Hex_Base__normal_dot_0.93",
+      "returncode": 0,
+      "stored_matches_baseline": true,
+      "rechecked_matches_baseline": true,
+      "flag_discrepancy": false,
+      "output_file_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.96/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "6f2425619b3d6e4e48904ba18876cae030606835d8e37233575656e248331fba",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.96/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.96/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.96/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.96/CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "sha256": "8b7fc7bab42868cd1917d68d42ec0cd68eb6c814ceb69df7952015cb0eec408d",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.96/CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "sha256": "912ead827568ef6bfaee622444eba69e816c314616e6a206b46c38cc1fbaa542",
+          "matches_record": true
+        }
+      ],
+      "variant_source_checks": [
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.96/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "cc9843bf03bf0a7f7c4d81016aab635a5db5385074df0fbcabd3ea26579f3224",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.96/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "362fc3972a38041a7b4937991cd4d02da26a35b654245c7e389b3cd806ec10e2",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.96/infer_lbracket_chapter3_method.py",
+          "sha256": "279a650a370ceedef3e731cc1da1f80f6ed26189852ef6563417c3abc71fef01",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.96/infer_model_a_chapter3_method.py",
+          "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf",
+          "matches_record": true
+        },
+        {
+          "path": "碩士論文/審查報告/敏感度分析_260731/variants/Blind_Hole_Hex_Base__normal_dot_0.96/infer_blind_hole_hex_base_chapter3_method.py",
+          "sha256": "cdcc6048ece03f5d38244906e83440ecd920ade3a8c47f8bc726d52babf634ec",
+          "matches_record": true
+        }
+      ]
+    }
+  ]
+}

@@ -10,6 +10,8 @@ Rule-based geometric inference from sampled point normals, with preserved resear
 
 [執行專案](#快速開始) · [品質證據](docs/results.md) · [共通規則與案例條件](docs/method-scope.md) · [論文圖庫](docs/figures/README.md) · [待補資訊](docs/missing-information.md)
 
+[論文公式到實作](docs/method-traceability.md) · [參數尺度依據](docs/parameter-evidence.md) · [敏感度標記勘誤](docs/sensitivity-errata.md) · [本輪追查審查](docs/gap-followup-review.md)
+
 ## 四個受控案例的既有品質結果
 
 | 案例 | 幾何特徵面 | 拓樸關係 | 候選單元 | 最大曲面殘差（mm） | 最大參數誤差（mm） |

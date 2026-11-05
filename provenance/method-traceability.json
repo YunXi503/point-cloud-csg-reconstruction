@@ -1,0 +1,657 @@
+{
+  "date": "2026-11-05",
+  "scope": "Current-source crosswalk, not a recovered historical development or execution chain",
+  "thesis": {
+    "source": "output/使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究-11379108-260811.docx",
+    "sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+    "paragraph_index_base": 0,
+    "paragraphs": [
+      {
+        "paragraph": 542,
+        "text": "本研究各階段的共同輸入為由 STL 網格模型生成、含位置與曲面法向量的點雲資料。每筆資料包含位置向量 x,y,z 與正規化法向量 nx,ny,nz，座標單位為 mm，法向量為無單位方向向量。公式 (3-1) 用以定義第 i 個點雲樣本的位置與法向量；此定義只界定本研究的資料結構，不據以宣稱真實掃描適用性。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 543,
+        "text": "pi=xi,yi,zi,⁠ ni=nx,i,ny,i,nz,i(3-1)",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 544,
+        "text": "公式 (3-2) 將所有點樣本組成點雲資料集 P；其中 pi 為第 i 個位置向量，ni 為與該位置對應的正規化法向量。N 表示資料集中的點數。各實作範例所採取的固定取樣點數及其資料筆數查驗，列於第四章 4.2 的實驗設計與資料依據。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 545,
+        "text": "P={(pi,ni)|i=1,…,N}(3-2)",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 562,
+        "text": "面域搜尋採區域成長方法，可依點的鄰近關係與區域表面方向一致性，逐步將點納入同一表面區域 (Rabbani et al., 2006)。本研究則依此概念建立分割群集：處理時從尚未指派ClusterID的點群中選取種子，逐步搜尋候選鄰近點；當候選點同時滿足空間鄰近性與法向量一致性時，才將其納入同一群集，其判定條件如公式 (3-3) 所示：",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 563,
+        "text": "dpi,pj≤Dt,⁠ ni⋅nj≥Tn(3-3)",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 565,
+        "text": "公式 (3-3) 對應圖 3.1 的幾何特徵分割階段，用於界定區域成長時納入新點的條件。式中的距離門檻與法向量內積門檻，均須配合模型尺度與取樣密度設定；其數值、設定依據與敏感度分析於第四章 4.2 說明。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 592,
+        "text": "本研究先以兩個幾何特徵面之間的最小距離建立相鄰關係，再依面向與幾何類型區分正交相鄰或端面關係；每一面組只指定一個最具體的關係，判定優先順序為先端面關係、次正交相鄰，其餘只符合相鄰條件者記為一般相鄰，三種類型互斥且不重複計數。公式(3-4)至(3-6)分別定義相鄰、正交相鄰與端面關係的判斷架構。其中數值門檻為本研究目前資料條件下採用的操作性參數，用於實作上述幾何關係判斷，並非方法本身的固定常數。當模型尺度或點雲取樣條件改變時，應依資料特性重新設定，其數值與查驗結果於第四章說明。相鄰關係的判斷如公式(3-4)所示：",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 593,
+        "text": "dminFi,Fj≤ε(3-4)",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 595,
+        "text": "若兩個已相鄰的面之代表法向量近似垂直，則將其標示為正交相鄰，如公式(3-5)所示：",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 596,
+        "text": "ni⋅nj<To(3-5)",
+        "math_delimiters": [
+          {
+            "element": "begChr",
+            "value": "|"
+          },
+          {
+            "element": "endChr",
+            "value": "|"
+          }
+        ]
+      },
+      {
+        "paragraph": 598,
+        "text": "對圓柱面與候選平面，本研究再以距離與方向條件判斷端面關係，如公式(3-6)所示：",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 599,
+        "text": "dminFc,Fp≤εe⁠ ∧⁠ ac⋅np>Ta(3-6)",
+        "math_delimiters": [
+          {
+            "element": "begChr",
+            "value": "|"
+          },
+          {
+            "element": "endChr",
+            "value": "|"
+          }
+        ]
+      },
+      {
+        "paragraph": 600,
+        "text": "其中Fc 為圓柱特徵面，Fp 為候選平面，ac 為圓柱軸向向量，np 為候選平面的代表法向量，εe為端面接觸的距離容許值，Ta 為軸向對齊門檻；後兩者的設定值於第四章 4.2 說明。第一項為限制兩面距離，第二項確認圓柱軸向與平面法向量近似平行；兩項同時成立時，才記錄為端面關係。此條件不單獨推論孔洞或最終實體模型。公式(3-4)至(3-6)均對應圖 3.1 的語義拓樸建構階段。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 640,
+        "text": "Du et al. (2018) 將 CSG 表示為由幾何基本造型與布林運算遞迴形成的樹狀結構，其中葉節點為具幾何參數的基本造型，內部節點則為聯集、交集或差集等布林運算。參考此遞迴結構，本研究依候選幾何單元資料所記錄的BooleanType，將目前推論使用的布林運算界定為Union與Difference。令 C 表示一個CSG 推論節點，Pi 表示第 i 個候選幾何單元，其共通遞迴表示如公式(3-7)所示：",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 641,
+        "text": "C⁠ ∷=⁠ Pi⁠ |Union(C1,C2⁠) |Difference(C1,C2⁠)(3-7)",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 642,
+        "text": "其中，符號 ∷⁠= 表示遞迴定義，| 表示可選的節點形式；Pi 為 CSG 符號樹的葉節點，C1 與 C2 為已形成的子結構；Union與Difference則為內部節點，分別表示加入與移除候選幾何單元。一般 CSG 文法可包含交集(Intersection)，但本研究的候選幾何單元僅以Union與Difference記錄布林角色，因此公式(3-7)僅保留本研究實際使用的兩類運算。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 643,
+        "text": "公式(3-7)界定本研究共用的遞迴表示方式，但不指定固定的幾何單元或布林樹。由於 Union 與 Difference 均為二元運算，規範化 CSG 符號樹的每個內部節點恰有兩個子節點；多個候選單元依 CandidateID 由小而大，以左結合順序兩兩展開。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 644,
+        "text": "公式(3-7)的展開方式，可用圖 3.9 的建構關係說明。設某零件推論所得的候選幾何單元共三個：P1 為板件、P2 為圓柱凸台，兩者的 BooleanType 均為 Union；P3 為貫穿孔，BooleanType 為 Difference。展開時先取編號最小的兩個聯集候選，建立 C1 = Union(P1, P2)，表示凸台加在板件上；再以已形成的基體與孔洞候選建立 C2 = Difference(C1, P3)，表示由基體切除孔洞。完整符號樹即寫為 C2 = Difference(Union(P1, P2), P3)：根節點為 C2，兩個內部節點各有兩個子節點，葉節點依序為 P1、P2 與 P3。左子節點恆為已形成的幾何，右子節點為該層加入或移除的候選，故樹的深度即反映建構先後。若該零件另有一個盲孔候選 P4，則續以 C3 = Difference(C2, P4) 展開，仍維持每個內部節點恰有兩個子節點。由於展開順序完全由 CandidateID 決定，相同的候選幾何單元集合必得相同的符號樹。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 645,
+        "text": "公式(3-7)的功能，是將 3.8 節的候選幾何單元與BooleanType轉換為具有父子節點及運算順序的建構邏輯，並對應圖 3.1 的第五階段。第四章可依此檢查候選單元、布林角色與CSG 推論表示是否相互一致。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 675,
+        "text": "C# (.NET Framework 4.8)",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 678,
+        "text": "Python 3.14.2",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 680,
+        "text": "主要 Python 套件",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 684,
+        "text": "初始特徵辨識：點雲先經 C# 程式處理，產生點級的分割群集與面型標記，作為方法推論的輸入。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 685,
+        "text": "方法推論與五層驗收：以 Python 完成，曲面擬合、特徵分割與拓樸分析主要使用 NumPy, pandas 與 SciPy，圖件由 Matplotlib 產生。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 814,
+        "text": "規範化的 CSG 符號樹為二元樹，每個內部節點恰有兩個子節點。先將下階圓柱SC_U01與上階圓柱SC_U02聯集為基體，再減去貫穿孔SC_D01。此結構依公式(3-7)的二元遞迴文法展開，可記為公式(4-1)。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 863,
+        "text": "為兼顧二元樹的表達與公式可讀性，先將三個聯集候選合併後的基體記為 BLB。接著由 BLB 依序減去底板孔LB_D01與立板孔LB_D02，得到最終 CSG 符號樹。此表示仍依公式(3-7)的二元遞迴文法展開，如公式(4-2)。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 917,
+        "text": "為兼顧二元樹的表達與公式可讀性，四個聯集候選採左結合順序合併。先將主腹板、主軸圓環與側向過渡塊合併為中間基體 B1，再與側向凸台合併為 B2；最後由 B2 依序減去主軸貫穿孔與側向貫穿孔。依公式(3-7)展開後，可記為公式(4-3)。",
+        "math_delimiters": []
+      },
+      {
+        "paragraph": 960,
+        "text": "規範化的 CSG 符號樹同為每個內部節點恰有兩個子節點的二元樹：先聯集六角基座BH_U01與環台BH_U02為基體，再減去中央盲孔BH_D01。依公式(3-7)展開後，可記為公式(4-4)。",
+        "math_delimiters": []
+      }
+    ],
+    "tables": [
+      {
+        "caption": "表 4.1 實作系統軟硬體設備規格",
+        "rows": [
+          [
+            "類別",
+            "項目",
+            "規格／版本"
+          ],
+          [
+            "硬體",
+            "作業系統",
+            "Microsoft Windows 11 專業工作站版 (64-bit, 版本 10.0.26200)"
+          ],
+          [
+            "硬體",
+            "處理器",
+            "Intel(R) Xeon(R) w3-2435"
+          ],
+          [
+            "硬體",
+            "顯示卡",
+            "NVIDIA RTX A4500"
+          ],
+          [
+            "硬體",
+            "記憶體",
+            "128 GB"
+          ],
+          [
+            "軟體",
+            "零件實體 CAD 建模",
+            "CATIA R2022x"
+          ],
+          [
+            "軟體",
+            "網格取樣與點雲生成",
+            "Blender 5.1.0"
+          ],
+          [
+            "軟體",
+            "初始特徵辨識程式",
+            "C# (.NET Framework 4.8)"
+          ],
+          [
+            "軟體",
+            "方法推論與驗證程式",
+            "Python 3.14.2"
+          ],
+          [
+            "軟體",
+            "主要 Python 套件",
+            "NumPy 2.4.0, pandas 3.0.3, SciPy 1.16.3, Matplotlib 3.10.8"
+          ]
+        ]
+      },
+      {
+        "caption": "表 4.5 四個實作範例的資料與查驗設定",
+        "rows": [
+          [
+            "項目",
+            "設定與用途"
+          ],
+          [
+            "點雲生成",
+            "每一實作範例 10000 點；隨機種子 42；保留座標與正規化法向量"
+          ],
+          [
+            "特徵分割",
+            "距離門檻 2.0、法向量門檻 0.93；殘留點記為 ClusterID = −1"
+          ],
+          [
+            "幾何與語義",
+            "最大曲面擬合殘差不超過 1.5 mm；最小法向量一致性不低於 0.93"
+          ],
+          [
+            "拓樸關係",
+            "容許值 2.0；每面組取單一最具體關係：端面關係（方向內積 > 0.95、距離 ≤ 5.0 mm）、正交相鄰（法向量內積 < 0.2）、其餘為一般相鄰"
+          ],
+          [
+            "候選幾何單元",
+            "查核完整來源面、幾何尺寸與 Union／Difference 角色；尺寸誤差與曲面殘差分開判讀"
+          ],
+          [
+            "階層式 CSG 推論",
+            "比較規範化葉節點、聯集、差集與完整階層；成果止於符號樹"
+          ]
+        ]
+      }
+    ]
+  },
+  "python_sources": [
+    {
+      "path": "research/tools/infer_blind_hole_hex_base_chapter3_method.py",
+      "sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a",
+      "functions": [
+        {
+          "name": "radial_extent",
+          "line": 56,
+          "end_line": 63
+        },
+        {
+          "name": "assign_semantic_roles",
+          "line": 66,
+          "end_line": 177
+        },
+        {
+          "name": "endcap_partners",
+          "line": 180,
+          "end_line": 192
+        },
+        {
+          "name": "classify_hole_end_condition",
+          "line": 195,
+          "end_line": 222
+        },
+        {
+          "name": "build_candidates",
+          "line": 225,
+          "end_line": 314
+        },
+        {
+          "name": "canonical_csg_tree",
+          "line": 317,
+          "end_line": 333
+        },
+        {
+          "name": "build_outputs",
+          "line": 336,
+          "end_line": 533
+        },
+        {
+          "name": "main",
+          "line": 536,
+          "end_line": 546
+        }
+      ]
+    },
+    {
+      "path": "research/tools/infer_lbracket_chapter3_method.py",
+      "sha256": "a4a728f94b805d0fcdf45eefe937aed55442bfff69e9aeff39184ba3d817d9ec",
+      "functions": [
+        {
+          "name": "sha256",
+          "line": 29,
+          "end_line": 30
+        },
+        {
+          "name": "write_json",
+          "line": 33,
+          "end_line": 34
+        },
+        {
+          "name": "write_csv",
+          "line": 37,
+          "end_line": 49
+        },
+        {
+          "name": "region_growing",
+          "line": 52,
+          "end_line": 66
+        },
+        {
+          "name": "fit_component",
+          "line": 69,
+          "end_line": 86
+        },
+        {
+          "name": "interval_gap",
+          "line": 89,
+          "end_line": 94
+        },
+        {
+          "name": "plane_support_gap",
+          "line": 97,
+          "end_line": 114
+        },
+        {
+          "name": "merge_surface_components",
+          "line": 117,
+          "end_line": 225
+        },
+        {
+          "name": "assign_cluster_ids",
+          "line": 228,
+          "end_line": 249
+        },
+        {
+          "name": "cylinder_surface_sense",
+          "line": 252,
+          "end_line": 257
+        },
+        {
+          "name": "semantic_roles",
+          "line": 260,
+          "end_line": 296
+        },
+        {
+          "name": "min_distance",
+          "line": 315,
+          "end_line": 318
+        },
+        {
+          "name": "build_topology",
+          "line": 321,
+          "end_line": 369
+        },
+        {
+          "name": "graph_connected",
+          "line": 372,
+          "end_line": 388
+        },
+        {
+          "name": "build_candidates",
+          "line": 391,
+          "end_line": 486
+        },
+        {
+          "name": "canonical_csg_tree",
+          "line": 489,
+          "end_line": 496
+        },
+        {
+          "name": "build_outputs",
+          "line": 499,
+          "end_line": 671
+        },
+        {
+          "name": "main",
+          "line": 674,
+          "end_line": 679
+        }
+      ]
+    },
+    {
+      "path": "research/tools/infer_model_a_chapter3_method.py",
+      "sha256": "8d9dcaa64389dfdbe29124894ebc060badab71e710e49b22c025299e1c22efa0",
+      "functions": [
+        {
+          "name": "min_point_distance",
+          "line": 52,
+          "end_line": 55
+        },
+        {
+          "name": "merge_plane_seeds",
+          "line": 58,
+          "end_line": 135
+        },
+        {
+          "name": "evaluate_model",
+          "line": 138,
+          "end_line": 159
+        },
+        {
+          "name": "robust_cylinder_seed",
+          "line": 162,
+          "end_line": 183
+        },
+        {
+          "name": "build_cylinder_seeds",
+          "line": 186,
+          "end_line": 208
+        },
+        {
+          "name": "snapped_axis",
+          "line": 211,
+          "end_line": 217
+        },
+        {
+          "name": "assign_semantic_roles",
+          "line": 220,
+          "end_line": 271
+        },
+        {
+          "name": "derive_exact_tolerances",
+          "line": 274,
+          "end_line": 278
+        },
+        {
+          "name": "robust_plane_coordinate",
+          "line": 281,
+          "end_line": 284
+        },
+        {
+          "name": "infer_point_assignments",
+          "line": 287,
+          "end_line": 514
+        },
+        {
+          "name": "candidate_endcaps",
+          "line": 517,
+          "end_line": 539
+        },
+        {
+          "name": "tangent_circle_plane_top",
+          "line": 542,
+          "end_line": 560
+        },
+        {
+          "name": "build_candidates",
+          "line": 563,
+          "end_line": 644
+        },
+        {
+          "name": "canonical_csg_tree",
+          "line": 647,
+          "end_line": 654
+        },
+        {
+          "name": "build_outputs",
+          "line": 657,
+          "end_line": 824
+        },
+        {
+          "name": "main",
+          "line": 827,
+          "end_line": 834
+        }
+      ]
+    },
+    {
+      "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+      "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c",
+      "functions": [
+        {
+          "name": "sha256",
+          "line": 25,
+          "end_line": 30
+        },
+        {
+          "name": "write_json",
+          "line": 33,
+          "end_line": 34
+        },
+        {
+          "name": "write_csv",
+          "line": 37,
+          "end_line": 49
+        },
+        {
+          "name": "write_result_preserving_values",
+          "line": 52,
+          "end_line": 66
+        },
+        {
+          "name": "canonical_direction",
+          "line": 69,
+          "end_line": 75
+        },
+        {
+          "name": "radial_basis",
+          "line": 78,
+          "end_line": 85
+        },
+        {
+          "name": "initial_circle",
+          "line": 88,
+          "end_line": 94
+        },
+        {
+          "name": "nonlinear_circle",
+          "line": 97,
+          "end_line": 113
+        },
+        {
+          "name": "fit_plane",
+          "line": 116,
+          "end_line": 136
+        },
+        {
+          "name": "fit_cylinder",
+          "line": 139,
+          "end_line": 163
+        },
+        {
+          "name": "model_passes",
+          "line": 166,
+          "end_line": 170
+        },
+        {
+          "name": "fit_single_surface",
+          "line": 173,
+          "end_line": 182
+        },
+        {
+          "name": "point_model_score",
+          "line": 185,
+          "end_line": 219
+        },
+        {
+          "name": "infer_surfaces",
+          "line": 222,
+          "end_line": 274
+        },
+        {
+          "name": "cylinder_surface_sense",
+          "line": 277,
+          "end_line": 282
+        },
+        {
+          "name": "assign_semantic_roles",
+          "line": 295,
+          "end_line": 320
+        },
+        {
+          "name": "min_distance",
+          "line": 323,
+          "end_line": 326
+        },
+        {
+          "name": "build_topology",
+          "line": 329,
+          "end_line": 388
+        },
+        {
+          "name": "build_candidates",
+          "line": 391,
+          "end_line": 438
+        },
+        {
+          "name": "canonical_csg_tree",
+          "line": 441,
+          "end_line": 448
+        },
+        {
+          "name": "build_outputs",
+          "line": 451,
+          "end_line": 607
+        },
+        {
+          "name": "main",
+          "line": 610,
+          "end_line": 617
+        }
+      ]
+    }
+  ],
+  "current_classifier_bindings": "examples/segmentation.json",
+  "current_pipeline_validation": "validation/2026-11-05/relocated-pipeline-results.json",
+  "planning_evidence": {
+    "path": "evidence/traceability-2026-11-05/flowchart-task-original.md",
+    "status": "Planning only; not execution proof or confirmed thesis text"
+  },
+  "missing_failed_input": {
+    "run_id": "L_Bracket__distance_mm_1.50",
+    "source_path_recorded": "零件/Result_L Bracket.csv",
+    "input_sha256": null,
+    "summary_keys": [
+      "case",
+      "factor",
+      "value",
+      "fixed_parameters",
+      "variant_sha256",
+      "source",
+      "returncode",
+      "stderr",
+      "stdout",
+      "output_dir",
+      "matches_baseline"
+    ],
+    "saved_output_files": [],
+    "alternate_directory": "plan/experiments/260731_sensitivity",
+    "alternate_files": [
+      "plan/experiments/260731_sensitivity/baseline_stepped_v2/CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+      "plan/experiments/260731_sensitivity/baseline_stepped_v2/CSGTree_Stepped_Cylinder_chapter3_verified.json",
+      "plan/experiments/260731_sensitivity/baseline_stepped_v2/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+      "plan/experiments/260731_sensitivity/baseline_stepped_v2/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "plan/experiments/260731_sensitivity/baseline_stepped_v2/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+      "plan/experiments/260731_sensitivity/baseline_stepped_v2/Result_Stepped_Cylinder_chapter3_verified.csv",
+      "plan/experiments/260731_sensitivity/baseline_stepped_v2/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv"
+    ],
+    "finding": "No failed-run input receipt recovered; neighboring successful hashes must not be substituted"
+  },
+  "language_choice_search": {
+    "scope": [
+      "current formal thesis table 4.1 and tool-use paragraphs",
+      "four preserved C# and Python case sources",
+      "plan/**/*.md",
+      "創作庫/**/*.md",
+      "碩士論文/第三章逐節初稿/**/*.md",
+      "碩士論文/審查報告/**/*.md"
+    ],
+    "finding": "Tool roles and a local threshold comment were found; no complete historical language-choice rationale was recovered. Search absence is not proof that no record exists."
+  }
+}
