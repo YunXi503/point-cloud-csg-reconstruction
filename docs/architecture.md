@@ -41,3 +41,7 @@ L型板既有分類器會寫出額外面與候選資料；本入口只將其初�
 src/adapter/ 以來源連結編譯單一研究檔，尋找唯一公開 FeatureClassifier.Execute(string, string)，只傳入輸入與輸出路徑。不設定分類器欄位或門檻，不呼叫固定桌面路徑的 Main，拒絕覆寫既有輸出。
 
 原始碼、編譯產物及輸出分離；產物位於指定的新 runs/ 目錄，模型與歷史參考維持原位元。
+
+## Python 依賴來源預檢
+
+兩個公開入口透過 tools/inference_sources.py，在研究執行／建置前檢查選定案例的主程式及 provenance/inference-dependencies.json 所列本地輔助程式。L型板的擬合輔助程式與模型A／盲孔共用的階梯狀圓柱模組分別綁定，不只檢查直接入口。檢查不匯入或執行研究程式；新增預檢不符時報告 blocked-inference-source-version-mismatch；CSV 入口原有的共用來源檢查仍保留，且不改寫期望 SHA。這是固定來源契約，不是任意 Python 程式的動態依賴分析。[面試審查與成本分析](interview-guide.md)

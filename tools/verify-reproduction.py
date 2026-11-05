@@ -10,6 +10,8 @@ from pathlib import Path
 import subprocess
 import sys
 
+from inference_sources import check_inference_programs
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -52,6 +54,11 @@ def main() -> int:
     }
     if report["shared_geometry_program"]["expected_sha256"] != report["shared_geometry_program"]["actual_sha256"]:
         report["status"] = "blocked-shared-program-version-mismatch"
+        save()
+        return 2
+    report["inference_programs"] = check_inference_programs(ROOT, selected)
+    if not all(program["matches"] for program in report["inference_programs"]):
+        report["status"] = "blocked-inference-source-version-mismatch"
         save()
         return 2
     save()

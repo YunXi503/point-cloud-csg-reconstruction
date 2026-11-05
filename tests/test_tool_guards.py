@@ -4,6 +4,7 @@ from __future__ import annotations
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -12,6 +13,7 @@ import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "tools"))
 
 
 def digest(data: bytes) -> str:
@@ -25,7 +27,9 @@ class ReproductionGuards(unittest.TestCase):
         self.root = Path(self.temp.name)
         (self.root / "tools").mkdir()
         (self.root / "examples").mkdir()
+        (self.root / "provenance").mkdir()
         shutil.copyfile(ROOT / "tools/verify-reproduction.py", self.root / "tools/verify-reproduction.py")
+        shutil.copyfile(ROOT / "tools/inference_sources.py", self.root / "tools/inference_sources.py")
         source = b"raise AssertionError('Guard failure: a research process must not run in this fixture')\n"
         (self.root / "shared.py").write_bytes(source)
         (self.root / "model.py").write_bytes(source)
@@ -33,6 +37,8 @@ class ReproductionGuards(unittest.TestCase):
         self.cases = [{"id": name, "entrypoint": file, "recorded_program_sha256": digest(source),
                        "input": "input.csv", "recorded_input_sha256": digest(b"software guard fixture\n"), "output_checks": []}
                       for name, file in [("stepped-cylinder", "shared.py"), ("model-a", "model.py")]]
+        (self.root / "provenance/inference-dependencies.json").write_text(
+            json.dumps({"case_support_programs": {case["id"]: [] for case in self.cases}}), encoding="utf-8")
 
     def run_guard(self):
         (self.root / "examples/cases.json").write_text(json.dumps(self.cases), encoding="utf-8")
@@ -105,6 +111,80 @@ class NumericComparisonGuards(unittest.TestCase):
         self.assertFalse(module.token_equal("1e309", "2e309"))
         self.assertTrue(module.token_equal("1.0", "1"))
         self.assertFalse(module.token_equal("1.0000000000000002", "1"))
+
+
+class InferenceDependencyGuards(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        for folder in ["tools", "examples", "provenance"]:
+            (self.root / folder).mkdir()
+        for name in ["verify-reproduction.py", "run-from-point-cloud.py", "inference_sources.py"]:
+            shutil.copyfile(ROOT / "tools" / name, self.root / "tools" / name)
+        source = b"raise AssertionError('No research process should run in a dependency failure fixture')\n"
+        for name in ["shared.py", "model.py", "support.py"]:
+            (self.root / name).write_bytes(source)
+        (self.root / "input.csv").write_bytes(b"software fixture\n")
+        self.cases = [{"id": name, "entrypoint": file, "recorded_program_sha256": digest(source),
+                       "input": "input.csv", "recorded_input_sha256": digest(b"software fixture\n"), "output_checks": []}
+                      for name, file in [("stepped-cylinder", "shared.py"), ("model-a", "model.py")]]
+        self.bindings = {"case_support_programs": {"stepped-cylinder": [], "model-a": [
+            {"path": "support.py", "sha256": digest(source)}]}}
+        (self.root / "examples/cases.json").write_text(json.dumps(self.cases), encoding="utf-8")
+        (self.root / "examples/segmentation.json").write_text(json.dumps([
+            {"id": "model-a", "source": "model.py", "point_cloud": "input.csv", "runtime": "net48"}]), encoding="utf-8")
+        self.save_bindings()
+
+    def save_bindings(self):
+        (self.root / "provenance/inference-dependencies.json").write_text(json.dumps(self.bindings), encoding="utf-8")
+
+    def run_entry(self, script):
+        command = [sys.executable, str(self.root / "tools" / script), "--case", "model-a", "--output-dir", str(self.root / "out")]
+        if script == "run-from-point-cloud.py":
+            command += ["--msbuild", str(self.root / "must-not-start.exe")]
+        return subprocess.run(command, capture_output=True, text=True, encoding="utf-8",
+                              env={**os.environ, "PYTHONIOENCODING": "utf-8"})
+
+    def assert_blocked(self, script, report_name):
+        result = self.run_entry(script)
+        self.assertEqual(result.returncode, 2, result.stderr)
+        report = json.loads((self.root / "out" / report_name).read_text(encoding="utf-8"))
+        self.assertEqual(report["status"], "blocked-inference-source-version-mismatch")
+        self.assertFalse((self.root / "out/runner").exists())
+        self.assertFalse((self.root / "out/model-a.stdout.log").exists())
+
+    def test_changed_support_program_blocks_csv_entry_before_execution(self):
+        (self.root / "support.py").write_bytes(b"changed helper\n")
+        self.assert_blocked("verify-reproduction.py", "reproduction-results.json")
+
+    def test_missing_support_program_blocks_csv_entry_before_execution(self):
+        (self.root / "support.py").unlink()
+        self.assert_blocked("verify-reproduction.py", "reproduction-results.json")
+
+    @unittest.skipUnless(sys.platform == "win32", "The C# pipeline is supported on Windows")
+    def test_support_drift_blocks_point_cloud_entry_before_build(self):
+        (self.root / "support.py").write_bytes(b"changed helper\n")
+        self.assert_blocked("run-from-point-cloud.py", "pipeline-results.json")
+
+    def test_intact_main_and_support_programs_pass_preflight(self):
+        from inference_sources import check_inference_programs
+        checks = check_inference_programs(self.root, self.cases)
+        self.assertEqual(len(checks), 3)
+        self.assertTrue(all(check["matches"] for check in checks))
+
+    def test_unselected_support_program_does_not_block_preflight(self):
+        from inference_sources import check_inference_programs
+        (self.root / "support.py").write_bytes(b"unused changed helper\n")
+        checks = check_inference_programs(self.root, [self.cases[0]])
+        self.assertTrue(all(check["matches"] for check in checks))
+
+    def test_dependency_path_cannot_escape_repository(self):
+        from inference_sources import check_inference_programs
+        self.bindings["case_support_programs"]["model-a"][0]["path"] = "../outside.py"
+        self.save_bindings()
+        with self.assertRaisesRegex(ValueError, "escaped"):
+            check_inference_programs(self.root, self.cases)
 
 
 @unittest.skipUnless(shutil.which("node"), "Node.js is required for release-sealing guard tests")

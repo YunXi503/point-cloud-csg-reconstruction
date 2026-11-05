@@ -1,0 +1,434 @@
+{
+  "date": "2026-11-05",
+  "scope": "Read-only analysis of existing outputs and source; static costs are not benchmark results",
+  "case": "l-bracket",
+  "sources": [
+    {
+      "path": "research/零件/Result_L Bracket.csv",
+      "sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/Result_L_Bracket_chapter3_verified.csv",
+      "sha256": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/FaceSummary_L_Bracket_chapter3_verified.csv",
+      "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/TopologyEdges_L_Bracket_chapter3_verified.csv",
+      "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+      "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/CSGTree_L_Bracket_chapter3_verified.json",
+      "sha256": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/CorrectionTrace_L_Bracket_chapter3.csv",
+      "sha256": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6"
+    }
+  ],
+  "counts": {
+    "input_points": 10000,
+    "initial_cluster_ids": 15,
+    "output_points": 10000,
+    "changed_cluster_label_rows": 298,
+    "faces": 12,
+    "face_point_count_sum": 10000,
+    "edge_types": {
+      "OrthogonalAdjacency": 18,
+      "EndCap": 6
+    },
+    "topology_edges": 24,
+    "candidate_units": 5,
+    "residual_points": 0
+  },
+  "faces": [
+    {
+      "ClusterID": "0",
+      "FeatureType": "Plane_XY (底板下表面)",
+      "SemanticRole": "base_bottom",
+      "PointCount": "2363"
+    },
+    {
+      "ClusterID": "1",
+      "FeatureType": "Plane_XZ (底板與立板後側合併面)",
+      "SemanticRole": "back",
+      "PointCount": "1255"
+    },
+    {
+      "ClusterID": "2",
+      "FeatureType": "Plane_XY (底板上表面)",
+      "SemanticRole": "base_top",
+      "PointCount": "1989"
+    },
+    {
+      "ClusterID": "3",
+      "FeatureType": "Plane_XY (立板頂面)",
+      "SemanticRole": "upright_top",
+      "PointCount": "150"
+    },
+    {
+      "ClusterID": "4",
+      "FeatureType": "Cylinder_axisZ_outer (外加圓柱面)",
+      "SemanticRole": "outer_boss",
+      "PointCount": "1470"
+    },
+    {
+      "ClusterID": "5",
+      "FeatureType": "Plane_YZ (底板與立板右側合併面)",
+      "SemanticRole": "right",
+      "PointCount": "459"
+    },
+    {
+      "ClusterID": "6",
+      "FeatureType": "Plane_XY (外加圓柱頂面)",
+      "SemanticRole": "boss_top",
+      "PointCount": "256"
+    },
+    {
+      "ClusterID": "7",
+      "FeatureType": "Plane_XZ (立板前側面)",
+      "SemanticRole": "upright_front",
+      "PointCount": "1089"
+    },
+    {
+      "ClusterID": "8",
+      "FeatureType": "Plane_YZ (底板與立板左側合併面)",
+      "SemanticRole": "left",
+      "PointCount": "425"
+    },
+    {
+      "ClusterID": "9",
+      "FeatureType": "Cylinder_axisZ_inner (底板孔)",
+      "SemanticRole": "base_hole",
+      "PointCount": "184"
+    },
+    {
+      "ClusterID": "10",
+      "FeatureType": "Plane_XZ (底板端面)",
+      "SemanticRole": "base_end",
+      "PointCount": "146"
+    },
+    {
+      "ClusterID": "11",
+      "FeatureType": "Cylinder_axisY_inner (立板孔)",
+      "SemanticRole": "upright_hole",
+      "PointCount": "214"
+    }
+  ],
+  "candidates": [
+    {
+      "CandidateID": "LB_D01",
+      "PrimitiveType": "BasePlateHole",
+      "RelatedClusters": "0;2;9",
+      "Length": "",
+      "Width": "",
+      "Height": "",
+      "Radius": "7.970796954",
+      "Depth": "4.999999993",
+      "BooleanType": "Difference",
+      "InferenceRule": "cylinder side + two EndCap relations + radial normal sense",
+      "RuleStatus": "PASS"
+    },
+    {
+      "CandidateID": "LB_D02",
+      "PrimitiveType": "UprightPlateHole",
+      "RelatedClusters": "1;7;11",
+      "Length": "",
+      "Width": "",
+      "Height": "",
+      "Radius": "7.971960387",
+      "Depth": "5.000000002",
+      "BooleanType": "Difference",
+      "InferenceRule": "cylinder side + two EndCap relations + radial normal sense",
+      "RuleStatus": "PASS"
+    },
+    {
+      "CandidateID": "LB_U01",
+      "PrimitiveType": "BasePlate",
+      "RelatedClusters": "0;1;2;5;8;10",
+      "Length": "40.000003815",
+      "Width": "80.000007629",
+      "Height": "4.999999993",
+      "Radius": "",
+      "Depth": "",
+      "BooleanType": "Union",
+      "InferenceRule": "opposing planes + connected OrthogonalAdjacency shell",
+      "RuleStatus": "PASS"
+    },
+    {
+      "CandidateID": "LB_U02",
+      "PrimitiveType": "UprightPlate",
+      "RelatedClusters": "1;3;5;7;8",
+      "Length": "40.000003815",
+      "Width": "5.000000002",
+      "Height": "44.999999898",
+      "Radius": "",
+      "Depth": "",
+      "BooleanType": "Union",
+      "InferenceRule": "opposing planes + connected OrthogonalAdjacency shell",
+      "RuleStatus": "PASS"
+    },
+    {
+      "CandidateID": "LB_U03",
+      "PrimitiveType": "Cylinder",
+      "RelatedClusters": "2;4;6",
+      "Length": "",
+      "Width": "",
+      "Height": "",
+      "Radius": "9.967792777",
+      "Depth": "30.000000022",
+      "BooleanType": "Union",
+      "InferenceRule": "cylinder side + two EndCap relations + radial normal sense",
+      "RuleStatus": "PASS"
+    }
+  ],
+  "example_hole": {
+    "CandidateID": "LB_D01",
+    "PrimitiveType": "BasePlateHole",
+    "RelatedClusters": "0;2;9",
+    "Length": "",
+    "Width": "",
+    "Height": "",
+    "Radius": "7.970796954",
+    "Depth": "4.999999993",
+    "BooleanType": "Difference",
+    "InferenceRule": "cylinder side + two EndCap relations + radial normal sense",
+    "RuleStatus": "PASS"
+  },
+  "example_hole_endcaps": [
+    {
+      "FromClusterID": "0",
+      "ToClusterID": "9",
+      "EdgeType": "EndCap",
+      "MinDistance": "0.514264767",
+      "DirectionDot": "1.000000000",
+      "DistanceThreshold": "5.000000000",
+      "DirectionThreshold": "0.950000000",
+      "RuleStatus": "PASS",
+      "InferenceRule": "|axis·normal|>0.95"
+    },
+    {
+      "FromClusterID": "2",
+      "ToClusterID": "9",
+      "EdgeType": "EndCap",
+      "MinDistance": "0.389632118",
+      "DirectionDot": "1.000000000",
+      "DistanceThreshold": "5.000000000",
+      "DirectionThreshold": "0.950000000",
+      "RuleStatus": "PASS",
+      "InferenceRule": "|axis·normal|>0.95"
+    }
+  ],
+  "canonical_grouped_tree": {
+    "case": "L-Bracket",
+    "source": "PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+    "canonicalization": "Union children sorted by CandidateID; Difference subtractors sorted by CandidateID",
+    "tree": {
+      "op": "Difference",
+      "base": {
+        "op": "Union",
+        "children": [
+          {
+            "candidate": "LB_U01"
+          },
+          {
+            "candidate": "LB_U02"
+          },
+          {
+            "candidate": "LB_U03"
+          }
+        ]
+      },
+      "subtractors": [
+        {
+          "candidate": "LB_D01"
+        },
+        {
+          "candidate": "LB_D02"
+        }
+      ]
+    }
+  },
+  "python_functions": [
+    {
+      "path": "research/tools/infer_lbracket_chapter3_method.py",
+      "sha256": "a4a728f94b805d0fcdf45eefe937aed55442bfff69e9aeff39184ba3d817d9ec",
+      "functions": {
+        "sha256": {
+          "line": 29,
+          "end_line": 30
+        },
+        "write_json": {
+          "line": 33,
+          "end_line": 34
+        },
+        "write_csv": {
+          "line": 37,
+          "end_line": 49
+        },
+        "region_growing": {
+          "line": 52,
+          "end_line": 66
+        },
+        "fit_component": {
+          "line": 69,
+          "end_line": 86
+        },
+        "interval_gap": {
+          "line": 89,
+          "end_line": 94
+        },
+        "plane_support_gap": {
+          "line": 97,
+          "end_line": 114
+        },
+        "merge_surface_components": {
+          "line": 117,
+          "end_line": 225
+        },
+        "assign_cluster_ids": {
+          "line": 228,
+          "end_line": 249
+        },
+        "cylinder_surface_sense": {
+          "line": 252,
+          "end_line": 257
+        },
+        "semantic_roles": {
+          "line": 260,
+          "end_line": 296
+        },
+        "min_distance": {
+          "line": 315,
+          "end_line": 318
+        },
+        "build_topology": {
+          "line": 321,
+          "end_line": 369
+        },
+        "graph_connected": {
+          "line": 372,
+          "end_line": 388
+        },
+        "build_candidates": {
+          "line": 391,
+          "end_line": 486
+        },
+        "canonical_csg_tree": {
+          "line": 489,
+          "end_line": 496
+        },
+        "build_outputs": {
+          "line": 499,
+          "end_line": 671
+        },
+        "main": {
+          "line": 674,
+          "end_line": 679
+        }
+      }
+    },
+    {
+      "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+      "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d",
+      "functions": {
+        "sha256": {
+          "line": 20,
+          "end_line": 25
+        },
+        "canonical_direction": {
+          "line": 28,
+          "end_line": 34
+        },
+        "radial_basis": {
+          "line": 37,
+          "end_line": 43
+        },
+        "initial_circle": {
+          "line": 46,
+          "end_line": 52
+        },
+        "nonlinear_circle": {
+          "line": 55,
+          "end_line": 73
+        },
+        "fit_plane": {
+          "line": 76,
+          "end_line": 96
+        },
+        "fit_cylinder": {
+          "line": 99,
+          "end_line": 123
+        },
+        "write_json": {
+          "line": 126,
+          "end_line": 127
+        },
+        "parse_related_clusters": {
+          "line": 130,
+          "end_line": 131
+        },
+        "build_outputs": {
+          "line": 134,
+          "end_line": 346
+        },
+        "main": {
+          "line": 349,
+          "end_line": 372
+        }
+      }
+    }
+  ],
+  "initial_classifier_source": {
+    "path": "research/碩士論文/程式碼備份/特徵辨識核心演算法/L_Bracket幾何邏輯/L-Bracket 幾何邏輯.cs",
+    "sha256": "8c89ab35afb89363bbd232d347a6ad0cc8d875fd906350ad0b01d854da255ddc"
+  },
+  "test_inventory": {
+    "ReproductionGuards": [
+      "test_input_drift_returns_nonzero_without_running_algorithm",
+      "test_helper_drift_is_blocked",
+      "test_main_program_drift_is_blocked",
+      "test_existing_output_is_preserved"
+    ],
+    "PackageGuards": [
+      "test_intact_package_passes",
+      "test_changed_file_is_detected",
+      "test_unlisted_file_is_detected",
+      "test_manifest_path_traversal_is_rejected"
+    ],
+    "NumericComparisonGuards": [
+      "test_overflow_is_not_mistaken_for_exact_numeric_equality"
+    ],
+    "InferenceDependencyGuards": [
+      "test_changed_support_program_blocks_csv_entry_before_execution",
+      "test_missing_support_program_blocks_csv_entry_before_execution",
+      "test_support_drift_blocks_point_cloud_entry_before_build",
+      "test_intact_main_and_support_programs_pass_preflight",
+      "test_unselected_support_program_does_not_block_preflight",
+      "test_dependency_path_cannot_escape_repository"
+    ],
+    "SealGuards": [
+      "test_intact_release_can_be_sealed",
+      "test_reseal_does_not_bless_changed_research_sources"
+    ]
+  },
+  "test_scope": "Software fixtures for driver guards, not numerical geometry unit tests or research samples",
+  "missing_measurements": [
+    "stage timing",
+    "peak RSS",
+    "point-count scaling",
+    "nonconvergence/rank-deficiency tests",
+    "unknown parts/rotations/scales",
+    "real noisy or incomplete scans",
+    "independent internal ablation",
+    "CAD kernel solid output"
+  ],
+  "author_contribution": "provenance/contribution-statement.json",
+  "counts_note": "changed_cluster_label_rows compares initial CSV to verified Python CSV; distinct from the older basic-vs-geometric C# source comparison, even though both happen to count 298 labels."
+}

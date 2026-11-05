@@ -1,0 +1,25 @@
+{
+  "schema_version": "1",
+  "scope": "Recorded local Python support imports for the four bundled inference entrypoints; not third-party dependency locking",
+  "case_support_programs": {
+    "stepped-cylinder": [],
+    "l-bracket": [
+      {
+        "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+        "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d"
+      }
+    ],
+    "model-a": [
+      {
+        "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+        "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c"
+      }
+    ],
+    "blind-hole-hex-base": [
+      {
+        "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+        "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c"
+      }
+    ]
+  }
+}

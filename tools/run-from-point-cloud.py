@@ -13,6 +13,8 @@ import struct
 import subprocess
 import sys
 
+from inference_sources import check_inference_programs
+
 ROOT = Path(__file__).resolve().parents[1]
 NUMBER = re.compile(r"^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?$")
 
@@ -63,6 +65,20 @@ def main() -> int:
         parser.error("Output directory already exists; choose a new directory.")
     mappings = json.loads((ROOT / "examples/segmentation.json").read_text(encoding="utf-8"))
     selected = [mapping for mapping in mappings if args.case in ("all", mapping["id"])]
+    cases = json.loads((ROOT / "examples/cases.json").read_text(encoding="utf-8"))
+    output.mkdir(parents=True)
+    report = {"scope": "Provided point-normal CSV to existing C# classifier and Python inference; no STL sampling", "cases": []}
+
+    def save() -> None:
+        (output / "pipeline-results.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    report["inference_programs"] = check_inference_programs(
+        ROOT, [case for case in cases if case["id"] in {mapping["id"] for mapping in selected}])
+    if not all(program["matches"] for program in report["inference_programs"]):
+        report["status"] = "blocked-inference-source-version-mismatch"
+        save()
+        return 2
+    save()
     framework_required = any(mapping.get("runtime", "net48") == "net48" for mapping in selected)
     msbuild = args.msbuild
     if msbuild is None and framework_required:
@@ -71,15 +87,6 @@ def main() -> int:
         if not found:
             parser.error("Specify --msbuild with a .NET Framework 4.8 MSBuild toolchain.")
         msbuild = Path(found[0])
-    output.mkdir(parents=True)
-    cases = json.loads((ROOT / "examples/cases.json").read_text(encoding="utf-8"))
-    report = {"scope": "Provided point-normal CSV to existing C# classifier and Python inference; no STL sampling", "cases": []}
-
-    def save() -> None:
-        (output / "pipeline-results.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    save()
-
     def build(project: str, folder: Path, extra: list[str] | None = None) -> None:
         folder.mkdir(parents=True)
         command = [str(msbuild), str(ROOT / project), "/t:Build", "/nologo", "/verbosity:minimal", "/p:Configuration=Release",

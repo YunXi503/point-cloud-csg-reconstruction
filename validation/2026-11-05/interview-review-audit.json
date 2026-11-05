@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-05",
+  "release": "0.1.5",
+  "scope": "Interview evidence, static complexity analysis and engineering preflight regression; no new research method or dataset",
+  "checks": 759,
+  "protected_source_count": 241,
+  "original_source_records_unchanged": true,
+  "protected_execution_data_or_assets_changes": [],
+  "word_sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+  "word_omath": 97,
+  "case_readonly_counts": {
+    "input_points": 10000,
+    "initial_cluster_ids": 15,
+    "output_points": 10000,
+    "changed_cluster_label_rows": 298,
+    "faces": 12,
+    "face_point_count_sum": 10000,
+    "edge_types": {
+      "OrthogonalAdjacency": 18,
+      "EndCap": 6
+    },
+    "topology_edges": 24,
+    "candidate_units": 5,
+    "residual_points": 0
+  },
+  "dependency_closure": [
+    {
+      "case": "stepped-cylinder",
+      "support_programs": [],
+      "matches": true
+    },
+    {
+      "case": "l-bracket",
+      "support_programs": [
+        "research/tools/correct_stepped_cylinder_nls_v2.py"
+      ],
+      "matches": true
+    },
+    {
+      "case": "model-a",
+      "support_programs": [
+        "research/tools/infer_stepped_cylinder_chapter3_method.py"
+      ],
+      "matches": true
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "support_programs": [
+        "research/tools/infer_stepped_cylinder_chapter3_method.py"
+      ],
+      "matches": true
+    }
+  ],
+  "local_software_guards": {
+    "command": "python -m unittest discover -s tests -v",
+    "python_version": "Python 3.14.2",
+    "exit_code": 0,
+    "test_count": 17,
+    "failures": 0,
+    "scope": "Software guard fixtures; no research datasets or numerical accuracy claim"
+  },
+  "regressions": [
+    {
+      "path": "validation/2026-11-05/interview-inference-results.json",
+      "status": "pass",
+      "core_outputs": 24,
+      "sha256": "e9a0386aefc45f2fd0a83dbc5bcd08d970037d32494fe76912dc859514bc3a90"
+    },
+    {
+      "path": "validation/2026-11-05/interview-pipeline-results.json",
+      "status": "pass",
+      "core_outputs": 24,
+      "sha256": "4656eef25735d67cd45ba67325524f44c8f89c94bdade80c819c8c509de4b644"
+    }
+  ],
+  "engineering_source_hashes": [
+    {
+      "path": "tools/verify-reproduction.py",
+      "sha256": "2167c9ca8cd580428fa8f08f1a7347770da401bfe4b9278a83383d781f057eab"
+    },
+    {
+      "path": "tools/run-from-point-cloud.py",
+      "sha256": "b49ecfff6aad6d28186194fb3a63f399c9e3dbc0ad446fa8cb6a2ebe47e37fcd"
+    },
+    {
+      "path": "tools/inference_sources.py",
+      "sha256": "ffaede79f66fd92e1fd2c805108da47256bf31f41af6e2b28f9b708dc06114a4"
+    },
+    {
+      "path": "tests/test_tool_guards.py",
+      "sha256": "69aaf09a1da247833875b73da66c1311d77572d33fccea81f68faa3e5bec8803"
+    },
+    {
+      "path": "provenance/inference-dependencies.json",
+      "sha256": "61bb83400ca337ef1d7953a64e6bb92457212c9f7ea57c6d0ad171765e61f253"
+    }
+  ],
+  "local_links_checked": 392,
+  "line_anchors_checked": 21,
+  "new_or_changed_text_credential_signature_scans": 22,
+  "missing_data": "docs/missing-information.md",
+  "review": "docs/interview-guide.md",
+  "failures": []
+}

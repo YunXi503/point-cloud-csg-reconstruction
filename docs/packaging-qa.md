@@ -1,6 +1,6 @@
 # 發布封裝與公開論文 QA
 
-版本：0.1.4／portfolio-traceability-2026-11-05。原始來源、兩條執行路徑與研究證據邊界見 [查驗紀錄](validation.md)，本輪三項補全的再次審查見 [completion-review.md](completion-review.md)。
+版本：0.1.5／portfolio-interview-2026-11-05。原始來源、兩條執行路徑與研究證據邊界見 [查驗紀錄](validation.md)，本輪三項補全的再次審查見 [completion-review.md](completion-review.md)。
 
 ## 檔案與程式
 
@@ -33,3 +33,7 @@ Microsoft Word 實際以唯讀副本開啟，來源及副本關閉後 SHA-256 �
 ## 本輪缺口追查
 
 [再次審查](gap-followup-review.md)及[查核 JSON](../validation/2026-11-05/gap-followup-audit.json)列出保存來源、敏感度勘誤與密度重算。原 Word、PDF、圖件及程式未變；舊版 QA 及執行紀錄仍保留原版本語境，沒有宣稱已重跑歷史研究實驗。
+
+## 面試審查補強
+
+[面試導讀](interview-guide.md)與[L型板資料流](case-walkthrough.md)只使用現有來源；預檢改動限於工程入口。原 241 份來源與幾何品質結果保留，17 項防護測試及本版兩種重現路徑的結果見[查核](../validation/2026-11-05/interview-review-audit.json)。

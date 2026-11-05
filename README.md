@@ -12,6 +12,10 @@ Rule-based geometric inference from sampled point normals, with preserved resear
 
 [論文公式到實作](docs/method-traceability.md) · [參數尺度依據](docs/parameter-evidence.md) · [敏感度標記勘誤](docs/sensitivity-errata.md) · [本輪追查審查](docs/gap-followup-review.md)
 
+## 面試官快速閱讀
+
+[演算法、成本與測試證據](docs/interview-guide.md) · [L型板逐層程式導讀](docs/case-walkthrough.md)。可從 LB_D01 回查來源面、端面關係、尺寸與布林角色；成本分析與尚缺量測分開呈現。
+
 ## 四個受控案例的既有品質結果
 
 | 案例 | 幾何特徵面 | 拓樸關係 | 候選單元 | 最大曲面殘差（mm） | 最大參數誤差（mm） |
@@ -110,12 +114,12 @@ flowchart LR
 | [src/adapter/](src/adapter) | 新增的輸入輸出轉接與來源連結建置入口 |
 | [tools/](tools) | 環境建立、執行、雜湊驗證、圖件及發布工具 |
 | [examples/](examples) | 各範例的來源、輸入、環境及參考輸出綁定 |
-| [tests/](tests) | 11 項錯誤偵測測試；使用軟體 fixture，非研究數據 |
+| [tests/](tests) | 17 項錯誤偵測測試；使用軟體 fixture，非研究數據 |
 | [provenance/](provenance) | 來源雜湊、版本差異、補件及輸入找回紀錄 |
 | [validation/](validation) | 乾淨安裝、搬移與實測結果 |
 | [archive/](archive/README.md) | 舊程式與歷史專案，供追溯使用 |
 
-研究核心維持原樣；工程整理新增可攜入口、版本綁定、完整依賴鎖定、自動查驗及 CI。歷史 csproj 缺件保留於紀錄，現行入口使用經輸出確認的來源檔。
+研究核心維持原樣；工程整理新增可攜入口、版本綁定、完整依賴鎖定、自動查驗及 CI。兩個執行入口會先核對選定案例的 Python 主程式與本地輔助程式，來源漂移或遺失時停止。歷史 csproj 缺件保留於紀錄，現行入口使用經輸出確認的來源檔。
 
 ## 查驗與維護
 

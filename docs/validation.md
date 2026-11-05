@@ -32,3 +32,9 @@ v0.1.3 的[品質摘要](results.md)另以既有 CSV／驗證報告彙整四例�
 ## v0.1.4 缺口追查
 
 只讀比對 138 個歷史輸出及 120 個變體來源；敏感度標記的五筆差異另列勘誤，基準與原檔不變。現有密度資料的 32 項描述值與三個角度重算一致，不是新增取樣或重建實驗。[本輪查核](../validation/2026-11-05/gap-followup-audit.json) · [再次審查](gap-followup-review.md)
+
+## v0.1.5 面試官角度補強
+
+本輪補上兩個工程入口的 Python 本地依賴來源預檢，17 項防護測試在 Python 3.14.2 通過。重新驗證既有四例，兩種入口的 24 個核心輸出均相符，完整路徑的四個初始 CSV 亦逐位元相同；這是入口改動的回歸查驗，沒有新增研究方法或案例。
+
+[工程查核](../validation/2026-11-05/interview-review-audit.json) · [既有分割 CSV 路徑](../validation/2026-11-05/interview-inference-results.json) · [點雲完整路徑](../validation/2026-11-05/interview-pipeline-results.json) · [面試導讀](interview-guide.md)
