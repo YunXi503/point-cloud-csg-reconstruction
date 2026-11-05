@@ -1,0 +1,917 @@
+{
+  "date": "2026-11-05",
+  "release": "0.1.3",
+  "scope": "Read-only aggregation and cross-check of existing thesis and archived research outputs; no new experiment",
+  "metric_definitions": {
+    "surface_residual_max_mm": "max(FaceSummary.FitResidualMax) over accepted faces",
+    "normal_consistency_min": "min(FaceSummary.NormalConsistencyMin) over accepted faces; dimensionless",
+    "parameter_error_max_mm": "maximum recorded absolute parameter error over all applicable candidate parameters, relative to the archived STL/evaluated-mesh reference",
+    "display_rounding": "4 decimal places, checked against authoritative Word table 4.10"
+  },
+  "thesis": {
+    "source": "output/使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究-11379108-260811.docx",
+    "sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+    "sha_matches_recorded": true,
+    "table": "4.10",
+    "table_rows": [
+      [
+        "項目",
+        "階梯狀圓柱",
+        "L型板",
+        "模型A",
+        "盲孔六角座"
+      ],
+      [
+        "難度",
+        "易",
+        "中",
+        "難",
+        "—"
+      ],
+      [
+        "孔洞型別",
+        "貫穿",
+        "貫穿",
+        "貫穿",
+        "盲孔"
+      ],
+      [
+        "取樣點數",
+        "10000",
+        "10000",
+        "10000",
+        "10000"
+      ],
+      [
+        "殘留點數",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "幾何特徵面數",
+        "6",
+        "12",
+        "13",
+        "12"
+      ],
+      [
+        "拓樸關係總數",
+        "6",
+        "24",
+        "26",
+        "22"
+      ],
+      [
+        "正交相鄰",
+        "0",
+        "18",
+        "11",
+        "12"
+      ],
+      [
+        "端面關係",
+        "6",
+        "6",
+        "10",
+        "4"
+      ],
+      [
+        "一般相鄰",
+        "0",
+        "0",
+        "5",
+        "6"
+      ],
+      [
+        "候選幾何單元數",
+        "3",
+        "5",
+        "6",
+        "3"
+      ],
+      [
+        "最大曲面擬合殘差(mm)",
+        "0.0333",
+        "0.0322",
+        "0.0325",
+        "0.0327"
+      ],
+      [
+        "最大參數誤差(mm)",
+        "0.0329",
+        "0.0322",
+        "0.0323",
+        "0.0322"
+      ],
+      [
+        "五層驗收",
+        "通過",
+        "通過",
+        "通過",
+        "通過"
+      ],
+      [
+        "輸入範圍查驗",
+        "通過",
+        "通過",
+        "通過",
+        "通過"
+      ]
+    ]
+  },
+  "cases": [
+    {
+      "id": "stepped-cylinder",
+      "display_name": "階梯狀圓柱",
+      "metrics": {
+        "point_count": 10000,
+        "residual_points": 0,
+        "accepted_faces": 6,
+        "topology_edges": 6,
+        "candidate_units": 3,
+        "topology_by_type": {
+          "EndCap": 6
+        },
+        "surface_residual_max_mm": "0.033317052",
+        "surface_residual_cluster_id": "5",
+        "normal_consistency_min": "0.996919826",
+        "normal_consistency_cluster_id": "0",
+        "parameter_error_max_mm": "0.0329478642158989",
+        "parameter_error_candidate_id": "SC_U02",
+        "parameter_error_name": "Radius"
+      },
+      "thesis_table_4_10_display": {
+        "難度": "易",
+        "孔洞型別": "貫穿",
+        "取樣點數": "10000",
+        "殘留點數": "0",
+        "幾何特徵面數": "6",
+        "拓樸關係總數": "6",
+        "正交相鄰": "0",
+        "端面關係": "6",
+        "一般相鄰": "0",
+        "候選幾何單元數": "3",
+        "最大曲面擬合殘差(mm)": "0.0333",
+        "最大參數誤差(mm)": "0.0329",
+        "五層驗收": "通過",
+        "輸入範圍查驗": "通過"
+      },
+      "thesis_display_checks": {
+        "取樣點數": true,
+        "殘留點數": true,
+        "幾何特徵面數": true,
+        "拓樸關係總數": true,
+        "候選幾何單元數": true,
+        "最大曲面擬合殘差(mm)": true,
+        "最大參數誤差(mm)": true,
+        "正交相鄰": true,
+        "端面關係": true,
+        "一般相鄰": true
+      },
+      "quality_report_status": "PASS",
+      "five_layer_validation": {
+        "segmentation": "PASS",
+        "geometry_semantics": "PASS",
+        "topology": "PASS",
+        "primitive_candidates": "PASS",
+        "csg_symbolic_tree": "PASS"
+      },
+      "parameter_error_source_field": "ReportedRadiusErrorFromSTLTruthMM, DepthDifferenceFromSTLTruthMM",
+      "input_output_binding_checks": [
+        {
+          "check": "raw input SHA equals recorded method input",
+          "pass": true
+        },
+        {
+          "check": "main program SHA matches recorded method",
+          "pass": true
+        },
+        {
+          "check": "output binding Result_Stepped_Cylinder_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding CSGTree_Stepped_Cylinder_chapter3_verified.json",
+          "pass": true
+        },
+        {
+          "check": "output binding CorrectionTrace_Stepped_Cylinder_chapter3.csv",
+          "pass": true
+        },
+        {
+          "check": "metrics agree with thesis table 4.10",
+          "pass": true
+        },
+        {
+          "check": "historical five-layer report records PASS",
+          "pass": true
+        }
+      ],
+      "report_manifest_checks": [],
+      "sources": [
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+          "scope": "surface residual and normal consistency"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+          "scope": "relation counts"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+          "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+          "scope": "candidate identities and Boolean roles"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CandidateMapping_Stepped_Cylinder.csv",
+          "sha256": "a05cab621483b79a1bfb82dba2861c9eebbfb01c9002a27e22810685d1ed4ea6",
+          "scope": "recorded per-parameter absolute errors"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/ValidationAgainstIndependentTruth_Stepped_Cylinder.json",
+          "sha256": "32a0934d7a5ba1751ae68b1c3a0d2fefd978ce935372bee6b2985919f9683d93",
+          "scope": "historical validation result"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+          "sha256": "b2c4bc4bd647d384f45524e0cd1ab9211e10a5d4b6dfc1a1481190858c6d4278",
+          "scope": "program/input/output SHA binding"
+        }
+      ]
+    },
+    {
+      "id": "l-bracket",
+      "display_name": "L型板",
+      "metrics": {
+        "point_count": 10000,
+        "residual_points": 0,
+        "accepted_faces": 12,
+        "topology_edges": 24,
+        "candidate_units": 5,
+        "topology_by_type": {
+          "EndCap": 6,
+          "OrthogonalAdjacency": 18
+        },
+        "surface_residual_max_mm": "0.032202412",
+        "surface_residual_cluster_id": "4",
+        "normal_consistency_min": "0.994515096",
+        "normal_consistency_cluster_id": "11",
+        "parameter_error_max_mm": "0.03219468418853921",
+        "parameter_error_candidate_id": "LB_U03",
+        "parameter_error_name": "Radius"
+      },
+      "thesis_table_4_10_display": {
+        "難度": "中",
+        "孔洞型別": "貫穿",
+        "取樣點數": "10000",
+        "殘留點數": "0",
+        "幾何特徵面數": "12",
+        "拓樸關係總數": "24",
+        "正交相鄰": "18",
+        "端面關係": "6",
+        "一般相鄰": "0",
+        "候選幾何單元數": "5",
+        "最大曲面擬合殘差(mm)": "0.0322",
+        "最大參數誤差(mm)": "0.0322",
+        "五層驗收": "通過",
+        "輸入範圍查驗": "通過"
+      },
+      "thesis_display_checks": {
+        "取樣點數": true,
+        "殘留點數": true,
+        "幾何特徵面數": true,
+        "拓樸關係總數": true,
+        "候選幾何單元數": true,
+        "最大曲面擬合殘差(mm)": true,
+        "最大參數誤差(mm)": true,
+        "正交相鄰": true,
+        "端面關係": true,
+        "一般相鄰": true
+      },
+      "quality_report_status": "PASS",
+      "five_layer_validation": {
+        "segmentation": "PASS",
+        "geometry_semantics": "PASS",
+        "topology": "PASS",
+        "primitive_candidates": "PASS",
+        "csg_symbolic_tree": "PASS"
+      },
+      "parameter_error_source_field": "details.primitive_candidates.details[].parameter_errors_mm",
+      "input_output_binding_checks": [
+        {
+          "check": "raw input SHA equals recorded method input",
+          "pass": true
+        },
+        {
+          "check": "main program SHA matches recorded method",
+          "pass": true
+        },
+        {
+          "check": "output binding Result_L_Bracket_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding FaceSummary_L_Bracket_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding TopologyEdges_L_Bracket_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding CSGTree_L_Bracket_chapter3_verified.json",
+          "pass": true
+        },
+        {
+          "check": "output binding CorrectionTrace_L_Bracket_chapter3.csv",
+          "pass": true
+        },
+        {
+          "check": "metrics agree with thesis table 4.10",
+          "pass": true
+        },
+        {
+          "check": "historical five-layer report records PASS",
+          "pass": true
+        },
+        {
+          "check": "report refers to recorded method manifest",
+          "pass": true
+        }
+      ],
+      "report_manifest_checks": [
+        {
+          "field": "input_sha256.method_manifest",
+          "pass": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/FaceSummary_L_Bracket_chapter3_verified.csv",
+          "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+          "scope": "surface residual and normal consistency"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/TopologyEdges_L_Bracket_chapter3_verified.csv",
+          "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+          "scope": "relation counts"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+          "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+          "scope": "candidate identities and Boolean roles"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/ValidationSummary_L_Bracket_chapter3.json",
+          "sha256": "7f2392929df702fde6722bbcd002c95fe45f9cff69fda8a02a5771bcb969e8da",
+          "scope": "recorded per-parameter absolute errors"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/ValidationSummary_L_Bracket_chapter3.json",
+          "sha256": "7f2392929df702fde6722bbcd002c95fe45f9cff69fda8a02a5771bcb969e8da",
+          "scope": "historical validation result"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/MethodInferenceManifest_L_Bracket_chapter3.json",
+          "sha256": "89c14010be012c93f6fd714e866cd3e72df290746ae39267de0e1f4da10e988b",
+          "scope": "program/input/output SHA binding"
+        }
+      ]
+    },
+    {
+      "id": "model-a",
+      "display_name": "模型A",
+      "metrics": {
+        "point_count": 10000,
+        "residual_points": 0,
+        "accepted_faces": 13,
+        "topology_edges": 26,
+        "candidate_units": 6,
+        "topology_by_type": {
+          "Adjacency": 5,
+          "EndCap": 10,
+          "OrthogonalAdjacency": 11
+        },
+        "surface_residual_max_mm": "0.032522162",
+        "surface_residual_cluster_id": "10",
+        "normal_consistency_min": "0.996222263",
+        "normal_consistency_cluster_id": "13",
+        "parameter_error_max_mm": "0.03226474021644066",
+        "parameter_error_candidate_id": "MA_D01",
+        "parameter_error_name": "Radius"
+      },
+      "thesis_table_4_10_display": {
+        "難度": "難",
+        "孔洞型別": "貫穿",
+        "取樣點數": "10000",
+        "殘留點數": "0",
+        "幾何特徵面數": "13",
+        "拓樸關係總數": "26",
+        "正交相鄰": "11",
+        "端面關係": "10",
+        "一般相鄰": "5",
+        "候選幾何單元數": "6",
+        "最大曲面擬合殘差(mm)": "0.0325",
+        "最大參數誤差(mm)": "0.0323",
+        "五層驗收": "通過",
+        "輸入範圍查驗": "通過"
+      },
+      "thesis_display_checks": {
+        "取樣點數": true,
+        "殘留點數": true,
+        "幾何特徵面數": true,
+        "拓樸關係總數": true,
+        "候選幾何單元數": true,
+        "最大曲面擬合殘差(mm)": true,
+        "最大參數誤差(mm)": true,
+        "正交相鄰": true,
+        "端面關係": true,
+        "一般相鄰": true
+      },
+      "quality_report_status": "PASS",
+      "five_layer_validation": {
+        "segmentation": "PASS",
+        "geometry_semantics": "PASS",
+        "topology": "PASS",
+        "primitive_candidates": "PASS",
+        "csg_symbolic_tree": "PASS"
+      },
+      "parameter_error_source_field": "ParameterErrorsMM",
+      "input_output_binding_checks": [
+        {
+          "check": "raw input SHA equals recorded method input",
+          "pass": true
+        },
+        {
+          "check": "main program SHA matches recorded method",
+          "pass": true
+        },
+        {
+          "check": "output binding Result_Model_A_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding FaceSummary_Model_A_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding TopologyEdges_Model_A_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding CSGTree_Model_A_chapter3_verified.json",
+          "pass": true
+        },
+        {
+          "check": "output binding CorrectionTrace_Model_A_chapter3.csv",
+          "pass": true
+        },
+        {
+          "check": "metrics agree with thesis table 4.10",
+          "pass": true
+        },
+        {
+          "check": "historical five-layer report records PASS",
+          "pass": true
+        },
+        {
+          "check": "report refers to recorded method manifest",
+          "pass": true
+        }
+      ],
+      "report_manifest_checks": [
+        {
+          "field": "input_sha256.inference_manifest",
+          "pass": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/FaceSummary_Model_A_chapter3_verified.csv",
+          "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+          "scope": "surface residual and normal consistency"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/TopologyEdges_Model_A_chapter3_verified.csv",
+          "sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+          "scope": "relation counts"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+          "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+          "scope": "candidate identities and Boolean roles"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CandidateMapping_Model_A_chapter3.csv",
+          "sha256": "fa1708a784e0f85e32f926142d4c1236f1d297d5774caecda2812e5d50834c71",
+          "scope": "recorded per-parameter absolute errors"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/ValidationAgainstIndependentTruth_Model_A.json",
+          "sha256": "d48bd649ab6a5e6458c132c83234eab898f12b7c38e56baf7378b58068563771",
+          "scope": "historical validation result"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/MethodInferenceManifest_Model_A_chapter3.json",
+          "sha256": "6ccb0aa5fd2d69ff788bf6103f0107b9a1a1a8667361e253c8391e6aa78813aa",
+          "scope": "program/input/output SHA binding"
+        }
+      ]
+    },
+    {
+      "id": "blind-hole-hex-base",
+      "display_name": "盲孔六角座",
+      "metrics": {
+        "point_count": 10000,
+        "residual_points": 0,
+        "accepted_faces": 12,
+        "topology_edges": 22,
+        "candidate_units": 3,
+        "topology_by_type": {
+          "Adjacency": 6,
+          "EndCap": 4,
+          "OrthogonalAdjacency": 12
+        },
+        "surface_residual_max_mm": "0.032736437",
+        "surface_residual_cluster_id": "1",
+        "normal_consistency_min": "0.997858917",
+        "normal_consistency_cluster_id": "1",
+        "parameter_error_max_mm": "0.0322393430013328",
+        "parameter_error_candidate_id": "BH_D01",
+        "parameter_error_name": "Radius"
+      },
+      "thesis_table_4_10_display": {
+        "難度": "—",
+        "孔洞型別": "盲孔",
+        "取樣點數": "10000",
+        "殘留點數": "0",
+        "幾何特徵面數": "12",
+        "拓樸關係總數": "22",
+        "正交相鄰": "12",
+        "端面關係": "4",
+        "一般相鄰": "6",
+        "候選幾何單元數": "3",
+        "最大曲面擬合殘差(mm)": "0.0327",
+        "最大參數誤差(mm)": "0.0322",
+        "五層驗收": "通過",
+        "輸入範圍查驗": "通過"
+      },
+      "thesis_display_checks": {
+        "取樣點數": true,
+        "殘留點數": true,
+        "幾何特徵面數": true,
+        "拓樸關係總數": true,
+        "候選幾何單元數": true,
+        "最大曲面擬合殘差(mm)": true,
+        "最大參數誤差(mm)": true,
+        "正交相鄰": true,
+        "端面關係": true,
+        "一般相鄰": true
+      },
+      "quality_report_status": "PASS",
+      "five_layer_validation": {
+        "segmentation": "PASS",
+        "geometry_semantics": "PASS",
+        "topology": "PASS",
+        "primitive_candidates": "PASS",
+        "csg_symbolic_tree": "PASS"
+      },
+      "parameter_error_source_field": "ParameterErrorsMM",
+      "input_output_binding_checks": [
+        {
+          "check": "raw input SHA equals recorded method input",
+          "pass": true
+        },
+        {
+          "check": "main program SHA matches recorded method",
+          "pass": true
+        },
+        {
+          "check": "output binding Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "pass": true
+        },
+        {
+          "check": "output binding CSGTree_Blind_Hole_Hex_Base_chapter3_verified.json",
+          "pass": true
+        },
+        {
+          "check": "output binding CorrectionTrace_Blind_Hole_Hex_Base_chapter3.csv",
+          "pass": true
+        },
+        {
+          "check": "metrics agree with thesis table 4.10",
+          "pass": true
+        },
+        {
+          "check": "historical five-layer report records PASS",
+          "pass": true
+        },
+        {
+          "check": "report refers to recorded method manifest",
+          "pass": true
+        }
+      ],
+      "report_manifest_checks": [
+        {
+          "field": "input_sha256.inference_manifest",
+          "pass": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a",
+          "scope": "surface residual and normal consistency"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3",
+          "scope": "relation counts"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+          "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0",
+          "scope": "candidate identities and Boolean roles"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CandidateMapping_Blind_Hole_Hex_Base_chapter3.csv",
+          "sha256": "e51d7beada619be1bc83fadecd42b15d0ea4087138c4f1bc3ad4eb4e643210cb",
+          "scope": "recorded per-parameter absolute errors"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/ValidationAgainstIndependentTruth_Blind_Hole_Hex_Base.json",
+          "sha256": "1e98703b7065f27283fdca6fd62e9b042f395d868a4eb3cecda5770fd66a5833",
+          "scope": "historical validation result"
+        },
+        {
+          "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+          "sha256": "ceaab04a23aeacfe66a087c92e0fe4c081517e0c37d28cb941a0ceef593f5f83",
+          "scope": "program/input/output SHA binding"
+        }
+      ]
+    }
+  ],
+  "historical_sensitivity": {
+    "source": "evidence/sensitivity-2026-07-31/sensitivity_results.json",
+    "sha256": "e9a46e86a68fa88a1f5962c5b55b2617c9b079a8ba4f94609da964f51edba905",
+    "historical_run_count": 24,
+    "completed_runs": 23,
+    "failed_runs": [
+      {
+        "case": "L_Bracket",
+        "factor": "distance_mm",
+        "value": 1.5,
+        "returncode": 1,
+        "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\Admin\\Desktop\\云析論文\\碩士論文\\審查報告\\敏感度分析_260731\\variants\\L_Bracket__distance_mm_1.50\\infer_lbracket_chapter3_method.py\", line 683, in <module>\n    main()\n  File \"C:\\Users\\Admin\\Desktop\\云析論文\\碩士論文\\審查報告\\敏感度分析_260731\\variants\\L_Bracket__distance_mm_1.50\\infer_lbracket_chapter3_method.py\", line 679, in main\n    build_outputs(arguments.result.resolve(), arguments.output_dir.resolve())\n  File \"C:\\Users\\Admin\\Desktop\\云析論文\\碩士論文\\審查報告\\敏感度分析_260731\\variants\\L_Bracket__distance_mm_1.50\\infer_lbracket_chapter3_method.py\", line 529, in build_outputs\n    raise ValueError(f\"第三章方法得到 {len(surface_records)} 個有效面，預期 L 型板為 12 個。\")\nValueError: 第三章方法得到 28 個有效面，預期 L 型板為 12 個。"
+      }
+    ],
+    "reexecuted_in_this_release": false,
+    "scope": "Recorded Python inference threshold variation from existing Result CSVs; excludes C# initial segmentation, performance and new-model validation",
+    "original_summary_records_per_run_input_sha256": false,
+    "historical_input_sha_recovered": 23,
+    "input_bindings": "provenance/sensitivity-input-bindings.json",
+    "remaining_missing_run_count": 1,
+    "known_input_version_difference_run_count": 6
+  },
+  "original_core_sources_preserved": 211,
+  "additional_archived_evidence_sources": [
+    {
+      "path": "evidence/sensitivity-2026-07-31/sensitivity_results.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/sensitivity_results.json",
+      "role": "historical-threshold-sensitivity-evidence",
+      "bytes": 51927,
+      "sha256": "e9a46e86a68fa88a1f5962c5b55b2617c9b079a8ba4f94609da964f51edba905"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/report.md",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/敏感度分析報告_260731.md",
+      "role": "historical-threshold-sensitivity-evidence",
+      "bytes": 3800,
+      "sha256": "6d61b8f23d402b6ceb1b60b4ac01b79866b9813ab91a83d5fcec6cf92e08d6de"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_1.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_1.50/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3462,
+      "sha256": "5b26079efff06e1dd1f219e095b9f44c89e37b661a0483149b5902a6a7e81c48"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_2.00.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.00/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3462,
+      "sha256": "c3309bad8a8dd8035af41d6aea954d74be57d207df14e1d2a4a6cb6d15ba909e"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_2.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.50/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3462,
+      "sha256": "e7495cf967e1706a8c8797891b342ff60aedeb79ba41115194fa37fd3c1ff1bd"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.90.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.90/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3461,
+      "sha256": "0728c858da63a4a3ba564b76b0178a85e7e2304797287e820a8ad8bb32cb8113"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.93.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.93/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3462,
+      "sha256": "c3309bad8a8dd8035af41d6aea954d74be57d207df14e1d2a4a6cb6d15ba909e"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.96.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.96/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3462,
+      "sha256": "b05040950714aac1066189a4eebcf856990be9675b819746a475e8a38ff2f168"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__distance_mm_2.00.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.00/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 1747,
+      "sha256": "003fac9ad984e44b4d9684ceec67ab8d816382cdec94c31b0f9dca5ca5fc9066"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__distance_mm_2.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.50/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 1747,
+      "sha256": "bbd7c2aa439eb98800bb6cb58eba8002997fb2dddb327f1825d18685efb82b2f"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.90.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.90/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 1746,
+      "sha256": "2cb4e93e2939b9dd3dab2251d0b8448aa1d17db182e51dfc98d55fce561fc16f"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.93.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.93/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 1747,
+      "sha256": "003fac9ad984e44b4d9684ceec67ab8d816382cdec94c31b0f9dca5ca5fc9066"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.96.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.96/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 1747,
+      "sha256": "cf8bbdbedf3eef53550c41d193030da4b1df1de3f3aa656994e0cd6e183a7665"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_1.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_1.50/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6068,
+      "sha256": "17a8762fb8688180e8c6101447b5e552025b0648328a8407a8046bcc623330fa"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.00.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.00/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6068,
+      "sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.50/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6068,
+      "sha256": "d7f09cee9b132e730de5820b727d939d0246fe22060e473cc57bce0cc9efc633"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.90.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.90/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6067,
+      "sha256": "82d7afa705d44642acd7cc00be2909948b7704626d5742fd75ab5a2a499b18a3"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.93.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.93/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6068,
+      "sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.96.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.96/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6068,
+      "sha256": "7ea8ddde74499fa9c2830f5be6cd4aa531ad3d89d8c18f8f0d0eedacc96e7039"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_1.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_1.50/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4905,
+      "sha256": "9a494713e45a4ef6aed573e0c153d680a0bdaa5ffd4dec794c647dfcb35c3707"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.00.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.00/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4905,
+      "sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.50/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4905,
+      "sha256": "c7a538b8169f230d07e88c910188ac3d1b6a5d5c9be2d0d40a32bcdcb78d7970"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.90.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.90/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4904,
+      "sha256": "b0b308743265a5dea95d041b9a087132ce39f365cdbf31c4495e717c4b270443"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.93.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.93/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4905,
+      "sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.96.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.96/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4905,
+      "sha256": "e8310d61d0aa8c7534c66e0de48c00f5d95dea8b735b98a4f44c382fe932019a"
+    }
+  ],
+  "protected_source_count": 236,
+  "failures": []
+}

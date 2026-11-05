@@ -1686,5 +1686,205 @@
     "role": "restored-original-build-metadata",
     "bytes": 1344,
     "sha256": "f2421a69317ec3dc219c42e00094e8718a9ffc8f7e472022828f71a25fb91758"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/sensitivity_results.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/sensitivity_results.json",
+    "role": "historical-threshold-sensitivity-evidence",
+    "bytes": 51927,
+    "sha256": "e9a46e86a68fa88a1f5962c5b55b2617c9b079a8ba4f94609da964f51edba905"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/report.md",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/敏感度分析報告_260731.md",
+    "role": "historical-threshold-sensitivity-evidence",
+    "bytes": 3800,
+    "sha256": "6d61b8f23d402b6ceb1b60b4ac01b79866b9813ab91a83d5fcec6cf92e08d6de"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_1.50.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_1.50/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 3462,
+    "sha256": "5b26079efff06e1dd1f219e095b9f44c89e37b661a0483149b5902a6a7e81c48"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_2.00.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.00/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 3462,
+    "sha256": "c3309bad8a8dd8035af41d6aea954d74be57d207df14e1d2a4a6cb6d15ba909e"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_2.50.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.50/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 3462,
+    "sha256": "e7495cf967e1706a8c8797891b342ff60aedeb79ba41115194fa37fd3c1ff1bd"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.90.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.90/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 3461,
+    "sha256": "0728c858da63a4a3ba564b76b0178a85e7e2304797287e820a8ad8bb32cb8113"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.93.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.93/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 3462,
+    "sha256": "c3309bad8a8dd8035af41d6aea954d74be57d207df14e1d2a4a6cb6d15ba909e"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.96.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.96/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 3462,
+    "sha256": "b05040950714aac1066189a4eebcf856990be9675b819746a475e8a38ff2f168"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__distance_mm_2.00.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.00/MethodInferenceManifest_L_Bracket_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 1747,
+    "sha256": "003fac9ad984e44b4d9684ceec67ab8d816382cdec94c31b0f9dca5ca5fc9066"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__distance_mm_2.50.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.50/MethodInferenceManifest_L_Bracket_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 1747,
+    "sha256": "bbd7c2aa439eb98800bb6cb58eba8002997fb2dddb327f1825d18685efb82b2f"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.90.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.90/MethodInferenceManifest_L_Bracket_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 1746,
+    "sha256": "2cb4e93e2939b9dd3dab2251d0b8448aa1d17db182e51dfc98d55fce561fc16f"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.93.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.93/MethodInferenceManifest_L_Bracket_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 1747,
+    "sha256": "003fac9ad984e44b4d9684ceec67ab8d816382cdec94c31b0f9dca5ca5fc9066"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.96.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.96/MethodInferenceManifest_L_Bracket_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 1747,
+    "sha256": "cf8bbdbedf3eef53550c41d193030da4b1df1de3f3aa656994e0cd6e183a7665"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_1.50.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_1.50/MethodInferenceManifest_Model_A_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 6068,
+    "sha256": "17a8762fb8688180e8c6101447b5e552025b0648328a8407a8046bcc623330fa"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.00.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.00/MethodInferenceManifest_Model_A_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 6068,
+    "sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.50.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.50/MethodInferenceManifest_Model_A_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 6068,
+    "sha256": "d7f09cee9b132e730de5820b727d939d0246fe22060e473cc57bce0cc9efc633"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.90.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.90/MethodInferenceManifest_Model_A_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 6067,
+    "sha256": "82d7afa705d44642acd7cc00be2909948b7704626d5742fd75ab5a2a499b18a3"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.93.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.93/MethodInferenceManifest_Model_A_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 6068,
+    "sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.96.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.96/MethodInferenceManifest_Model_A_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 6068,
+    "sha256": "7ea8ddde74499fa9c2830f5be6cd4aa531ad3d89d8c18f8f0d0eedacc96e7039"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_1.50.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_1.50/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 4905,
+    "sha256": "9a494713e45a4ef6aed573e0c153d680a0bdaa5ffd4dec794c647dfcb35c3707"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.00.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.00/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 4905,
+    "sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.50.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.50/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 4905,
+    "sha256": "c7a538b8169f230d07e88c910188ac3d1b6a5d5c9be2d0d40a32bcdcb78d7970"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.90.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.90/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 4904,
+    "sha256": "b0b308743265a5dea95d041b9a087132ce39f365cdbf31c4495e717c4b270443"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.93.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.93/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 4905,
+    "sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.96.json",
+    "source_root": "thesis_workspace",
+    "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.96/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+    "role": "historical-threshold-sensitivity-run-manifest",
+    "bytes": 4905,
+    "sha256": "e8310d61d0aa8c7534c66e0de48c00f5d95dea8b735b98a4f44c382fe932019a"
   }
 ]

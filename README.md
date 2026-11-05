@@ -6,11 +6,28 @@
 
 Rule-based geometric inference from sampled point normals, with preserved research sources, reproducible examples, and explicit data provenance.
 
+作者：**黃云析 Yun-Hsi Huang**。在指導教授鄭宗明提供的研究概念與題目方向下，我完成研究實作、零件與資料建立、程式開發、實驗驗證、圖件及論文撰寫。公開作品的工程整理使用 Codex 協助，範圍見[我的工作與技術取捨](docs/contributions.md)。
+
+[執行專案](#快速開始) · [品質證據](docs/results.md) · [共通規則與案例條件](docs/method-scope.md) · [論文圖庫](docs/figures/README.md) · [待補資訊](docs/missing-information.md)
+
+## 四個受控案例的既有品質結果
+
+| 案例 | 幾何特徵面 | 拓樸關係 | 候選單元 | 最大曲面殘差（mm） | 最大參數誤差（mm） |
+|---|---:|---:|---:|---:|---:|
+| 階梯狀圓柱 | 6 | 6 | 3 | 0.0333 | 0.0329 |
+| L型板 | 12 | 24 | 5 | 0.0322 | 0.0322 |
+| 模型A | 13 | 26 | 6 | 0.0325 | 0.0323 |
+| 盲孔六角座 | 12 | 22 | 3 | 0.0327 | 0.0322 |
+
+四例各為 10000 點的 STL 生成資料；數字由既有 CSV／驗證報告彙整，與論文表 4.10 核對一致。曲面殘差衡量點與擬合面的距離，參數誤差衡量候選尺寸相對既有 STL／評估網格參考的差異。[完整定義、來源及歷史敏感度結果](docs/results.md)
+
+目前入口重現四個指定案例，各例包含固定面型、角色或軸向條件；[方法範圍](docs/method-scope.md)列出共通處理、案例規則與拒絕條件。
+
 ![四個實作範例的幾何特徵分割結果](assets/overview.png)
 
 預覽直接讀取參考 CSV，四個範例各顯示全部 10000 點；顏色表示 ClusterID，灰色為未分類點。[圖件資料來源](assets/data-manifest.json)
 
-作者：**黃云析 Yun-Hsi Huang**。本專案整理自碩士論文「使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究」。[閱讀論文 PDF](paper/thesis-public-snapshot-20261105.pdf) · [論文版本與勘誤](paper/README.md)
+本專案整理自碩士論文「使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究」。[閱讀論文 PDF](paper/thesis-public-snapshot-20261105.pdf) · [論文版本與勘誤](paper/README.md)
 
 ## 從候選幾何單元到 CSG 樹
 
@@ -107,7 +124,7 @@ node tools/verify-package.mjs
 
 [GitHub Actions](https://github.com/YunXi503/point-cloud-csg-reconstruction/actions/workflows/verify.yml) 檢查封裝、錯誤防護及兩種重現路徑。[維護說明](docs/maintaining.md) · [第二輪審查與改善](docs/second-pass-review.md)
 
-[作品補全審查](docs/portfolio-review.md) 記錄個人分工、案例假設、品質摘要與效能量測等後續項目。
+[作品補全審查](docs/portfolio-review.md) 記錄本輪三項補全與後續工作；[再次審查紀錄](docs/completion-review.md)說明從招聘閱讀與維護者角度做的查核及改善。
 
 ## 研究範圍
 

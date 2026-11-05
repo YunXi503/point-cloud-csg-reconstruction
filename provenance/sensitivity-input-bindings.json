@@ -1,0 +1,522 @@
+{
+  "date": "2026-11-05",
+  "scope": "Read-only recovery of historical metadata, not a rerun or retrospective filling of the original summary",
+  "summary_source": "evidence/sensitivity-2026-07-31/sensitivity_results.json",
+  "run_count": 24,
+  "historical_input_sha_recovered": 23,
+  "runs": [
+    {
+      "case": "stepped-cylinder",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_1.50.json",
+      "manifest_sha256": "5b26079efff06e1dd1f219e095b9f44c89e37b661a0483149b5902a6a7e81c48",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Stepped Cylinder.csv"
+      ]
+    },
+    {
+      "case": "stepped-cylinder",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_2.00.json",
+      "manifest_sha256": "c3309bad8a8dd8035af41d6aea954d74be57d207df14e1d2a4a6cb6d15ba909e",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Stepped Cylinder.csv"
+      ]
+    },
+    {
+      "case": "stepped-cylinder",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_2.50.json",
+      "manifest_sha256": "e7495cf967e1706a8c8797891b342ff60aedeb79ba41115194fa37fd3c1ff1bd",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Stepped Cylinder.csv"
+      ]
+    },
+    {
+      "case": "stepped-cylinder",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.90.json",
+      "manifest_sha256": "0728c858da63a4a3ba564b76b0178a85e7e2304797287e820a8ad8bb32cb8113",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Stepped Cylinder.csv"
+      ]
+    },
+    {
+      "case": "stepped-cylinder",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.93.json",
+      "manifest_sha256": "c3309bad8a8dd8035af41d6aea954d74be57d207df14e1d2a4a6cb6d15ba909e",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Stepped Cylinder.csv"
+      ]
+    },
+    {
+      "case": "stepped-cylinder",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.96.json",
+      "manifest_sha256": "b05040950714aac1066189a4eebcf856990be9675b819746a475e8a38ff2f168",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Stepped Cylinder.csv"
+      ]
+    },
+    {
+      "case": "l-bracket",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "returncode": 1,
+      "input_sha_status": "not-recorded-for-failed-run",
+      "historical_input_sha256": null
+    },
+    {
+      "case": "l-bracket",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__distance_mm_2.00.json",
+      "manifest_sha256": "003fac9ad984e44b4d9684ceec67ab8d816382cdec94c31b0f9dca5ca5fc9066",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_L Bracket.csv"
+      ]
+    },
+    {
+      "case": "l-bracket",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__distance_mm_2.50.json",
+      "manifest_sha256": "bbd7c2aa439eb98800bb6cb58eba8002997fb2dddb327f1825d18685efb82b2f",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_L Bracket.csv"
+      ]
+    },
+    {
+      "case": "l-bracket",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.90.json",
+      "manifest_sha256": "2cb4e93e2939b9dd3dab2251d0b8448aa1d17db182e51dfc98d55fce561fc16f",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_L Bracket.csv"
+      ]
+    },
+    {
+      "case": "l-bracket",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.93.json",
+      "manifest_sha256": "003fac9ad984e44b4d9684ceec67ab8d816382cdec94c31b0f9dca5ca5fc9066",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_L Bracket.csv"
+      ]
+    },
+    {
+      "case": "l-bracket",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.96.json",
+      "manifest_sha256": "cf8bbdbedf3eef53550c41d193030da4b1df1de3f3aa656994e0cd6e183a7665",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_L Bracket.csv"
+      ]
+    },
+    {
+      "case": "model-a",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_1.50.json",
+      "manifest_sha256": "17a8762fb8688180e8c6101447b5e552025b0648328a8407a8046bcc623330fa",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Model A.csv"
+      ]
+    },
+    {
+      "case": "model-a",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.00.json",
+      "manifest_sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Model A.csv"
+      ]
+    },
+    {
+      "case": "model-a",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.50.json",
+      "manifest_sha256": "d7f09cee9b132e730de5820b727d939d0246fe22060e473cc57bce0cc9efc633",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Model A.csv"
+      ]
+    },
+    {
+      "case": "model-a",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.90.json",
+      "manifest_sha256": "82d7afa705d44642acd7cc00be2909948b7704626d5742fd75ab5a2a499b18a3",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Model A.csv"
+      ]
+    },
+    {
+      "case": "model-a",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.93.json",
+      "manifest_sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Model A.csv"
+      ]
+    },
+    {
+      "case": "model-a",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.96.json",
+      "manifest_sha256": "7ea8ddde74499fa9c2830f5be6cd4aa531ad3d89d8c18f8f0d0eedacc96e7039",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": true,
+      "current_recorded_case_input_sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Model A.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_1.50.json",
+      "manifest_sha256": "9a494713e45a4ef6aed573e0c153d680a0bdaa5ffd4dec794c647dfcb35c3707",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.00.json",
+      "manifest_sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.50.json",
+      "manifest_sha256": "c7a538b8169f230d07e88c910188ac3d1b6a5d5c9be2d0d40a32bcdcb78d7970",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.90.json",
+      "manifest_sha256": "b0b308743265a5dea95d041b9a087132ce39f365cdbf31c4495e717c4b270443",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.93.json",
+      "manifest_sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.96.json",
+      "manifest_sha256": "e8310d61d0aa8c7534c66e0de48c00f5d95dea8b735b98a4f44c382fe932019a",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    }
+  ],
+  "remaining_missing": [
+    {
+      "case": "l-bracket",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "returncode": 1,
+      "input_sha_status": "not-recorded-for-failed-run",
+      "historical_input_sha256": null
+    }
+  ],
+  "known_input_version_differences": [
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "distance_mm",
+      "value": 1.5,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_1.50.json",
+      "manifest_sha256": "9a494713e45a4ef6aed573e0c153d680a0bdaa5ffd4dec794c647dfcb35c3707",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "distance_mm",
+      "value": 2.0,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.00.json",
+      "manifest_sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "distance_mm",
+      "value": 2.5,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.50.json",
+      "manifest_sha256": "c7a538b8169f230d07e88c910188ac3d1b6a5d5c9be2d0d40a32bcdcb78d7970",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "normal_dot",
+      "value": 0.9,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.90.json",
+      "manifest_sha256": "b0b308743265a5dea95d041b9a087132ce39f365cdbf31c4495e717c4b270443",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "normal_dot",
+      "value": 0.93,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.93.json",
+      "manifest_sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    },
+    {
+      "case": "blind-hole-hex-base",
+      "factor": "normal_dot",
+      "value": 0.96,
+      "returncode": 0,
+      "input_sha_status": "recovered-from-historical-run-manifest",
+      "historical_input_sha256": "fdd5c384202edd65741448f111f54232034d64577cf93f8d77125857064e8c8d",
+      "manifest": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.96.json",
+      "manifest_sha256": "e8310d61d0aa8c7534c66e0de48c00f5d95dea8b735b98a4f44c382fe932019a",
+      "programs_match_recorded_variants": true,
+      "outputs_match_run_summary": true,
+      "matches_current_recorded_case_input": false,
+      "current_recorded_case_input_sha256": "0d69141f76de4fad5aba2d9be723c16bdd660cee17b99a9929e6309a7273a07a",
+      "preserved_input_paths_matching_historical_sha": [
+        "research/零件/Result_Blind-Hole Hex Base_fixed.csv"
+      ]
+    }
+  ]
+}

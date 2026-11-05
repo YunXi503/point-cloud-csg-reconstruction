@@ -1,0 +1,160 @@
+{
+  "schema_version": "3.0",
+  "case": "Model A",
+  "method_basis": "Chapter 3 formulas (3-3) through (3-7), with transparent Model A semantic interpretation",
+  "inputs_read": {
+    "result": {
+      "filename": "Result_Model A.csv",
+      "sha256": "8c51a78324f2aa3be0e2186e059c50b139e32c3e9b812185bd27967f8994509d"
+    }
+  },
+  "forbidden_inputs_read": [],
+  "truth_or_mesh_used_for_inference": false,
+  "parameters": {
+    "DistanceThreshold": 2.0,
+    "NormalThreshold": 0.93,
+    "FitResidualThreshold": 1.5,
+    "TopologyEpsilon": 2.0,
+    "OrthogonalDotThreshold": 0.2,
+    "EndCapDistanceThreshold": 5.0,
+    "EndCapDotThreshold": 0.95
+  },
+  "data_derived_not_fixed_thresholds": {
+    "float32_exact_distance_tolerance": 2.2888185412739397e-05,
+    "float32_exact_alignment_tolerance": 0.9999988079071045,
+    "oblique_axial_normal_gap_threshold_data_derived": NaN,
+    "outer_cylinder_axial_normal_gap_threshold_data_derived": NaN,
+    "outer_cylinder_transition_residual_points": 0
+  },
+  "inference_rules": {
+    "plane_merge": "two plane fragments merge only when their supports are within 2.0 mm and the combined fit still passes 1.5 mm / 0.93",
+    "cylinder_seed": "robust public-threshold fit accepted only when the same support is not already a valid plane",
+    "boundary_ownership": "original plane seeds are preserved; exact float32-resolution plane matches precede mixed-cylinder assignment",
+    "oblique_fragment": "largest high axial-normal subset that itself passes the public single-plane criteria within the inferred web slab",
+    "transition_residual": "largest multiplicative axial-normal gap whose low support is at least 0.93 and whose two cylinder fits differ beyond public fit criteria",
+    "ring_end_support": "finite annulus bounded by the inferred inner radius minus 1.5 mm and the inferred outer radius plus serialization tolerance",
+    "topology": "one most-specific relation per unordered face pair from finite support distance and Chapter 3 direction predicates",
+    "candidate_cylinders": "one cylinder side plus the extreme pair among its EndCap relations",
+    "csg": "Union additive candidates first, then ordered Difference subtractors"
+  },
+  "initial_cluster_audit": [
+    {
+      "OriginalClusterID": 0,
+      "OriginalPointCount": 990,
+      "DeclaredFeatureType": "Plane_XZ",
+      "PlaneSeedAccepted": true
+    },
+    {
+      "OriginalClusterID": 1,
+      "OriginalPointCount": 839,
+      "DeclaredFeatureType": "Plane_XZ",
+      "PlaneSeedAccepted": true
+    },
+    {
+      "OriginalClusterID": 2,
+      "OriginalPointCount": 754,
+      "DeclaredFeatureType": "Plane_XZ",
+      "PlaneSeedAccepted": true
+    },
+    {
+      "OriginalClusterID": 3,
+      "OriginalPointCount": 731,
+      "DeclaredFeatureType": "Plane_YZ",
+      "PlaneSeedAccepted": true
+    },
+    {
+      "OriginalClusterID": 4,
+      "OriginalPointCount": 600,
+      "DeclaredFeatureType": "Plane_XY",
+      "PlaneSeedAccepted": true
+    },
+    {
+      "OriginalClusterID": 5,
+      "OriginalPointCount": 648,
+      "DeclaredFeatureType": "Plane_XZ",
+      "PlaneSeedAccepted": true
+    },
+    {
+      "OriginalClusterID": 6,
+      "OriginalPointCount": 424,
+      "DeclaredFeatureType": "Plane_oblique",
+      "PlaneSeedAccepted": true
+    },
+    {
+      "OriginalClusterID": 7,
+      "OriginalPointCount": 491,
+      "DeclaredFeatureType": "Plane_YZ",
+      "PlaneSeedAccepted": true
+    },
+    {
+      "OriginalClusterID": 8,
+      "OriginalPointCount": 135,
+      "DeclaredFeatureType": "Plane_XY",
+      "PlaneSeedAccepted": true
+    },
+    {
+      "OriginalClusterID": 9,
+      "OriginalPointCount": 1670,
+      "DeclaredFeatureType": "Cylinder_axisY_outer",
+      "PlaneSeedAccepted": false
+    },
+    {
+      "OriginalClusterID": 10,
+      "OriginalPointCount": 1642,
+      "DeclaredFeatureType": "Cylinder_axisY_inner",
+      "PlaneSeedAccepted": false
+    },
+    {
+      "OriginalClusterID": 11,
+      "OriginalPointCount": 19,
+      "DeclaredFeatureType": "Cylinder_axisY_inner",
+      "PlaneSeedAccepted": false
+    },
+    {
+      "OriginalClusterID": 12,
+      "OriginalPointCount": 16,
+      "DeclaredFeatureType": "Cylinder_axisY_outer",
+      "PlaneSeedAccepted": false
+    },
+    {
+      "OriginalClusterID": 13,
+      "OriginalPointCount": 467,
+      "DeclaredFeatureType": "Cylinder_axisX",
+      "PlaneSeedAccepted": false
+    },
+    {
+      "OriginalClusterID": 14,
+      "OriginalPointCount": 574,
+      "DeclaredFeatureType": "Cylinder_axisX",
+      "PlaneSeedAccepted": false
+    }
+  ],
+  "counts": {
+    "points": 10000,
+    "original_clusters_including_residual": 15,
+    "accepted_faces": 13,
+    "accepted_points": 10000,
+    "residual_points": 0,
+    "topology_edges": 26,
+    "primitive_candidates": 6
+  },
+  "programs": {
+    "inference": {
+      "filename": "infer_model_a_chapter3_method.py",
+      "sha256": "cfc42bbf9f2f05a4d8a00ac5ba82cd5d575dc0403e995251b1249970b2a2f9cf"
+    },
+    "geometry_helper": {
+      "filename": "infer_stepped_cylinder_chapter3_method.py",
+      "sha256": "6278f77c9c7de5bc8085644ff236d98e4366b14f8feefbbc1586ef1c7bc83ce2",
+      "scope": "method-only geometry functions; no truth input"
+    }
+  },
+  "outputs": {
+    "Result_Model_A_chapter3_verified.csv": "007701414e6161f3c5cca360dbfaaf7bb2867ca40acdfeb67973a90d7dbb8e70",
+    "FaceSummary_Model_A_chapter3_verified.csv": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142",
+    "TopologyEdges_Model_A_chapter3_verified.csv": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969",
+    "PrimitiveCandidates_Model_A_chapter3_verified.csv": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d",
+    "CSGTree_Model_A_chapter3_verified.json": "eae31a1a5b6edaa9427cc7bebacf02cb1b680c602b2f32edf173ccf13d49f4c8",
+    "CorrectionTrace_Model_A_chapter3.csv": "7fa803ff622d47e82bdcaa5569817bdce4d7828bedc877b2cb4eae3215db5378"
+  }
+}

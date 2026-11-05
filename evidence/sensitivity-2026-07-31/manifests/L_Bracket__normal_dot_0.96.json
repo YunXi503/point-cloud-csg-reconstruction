@@ -1,0 +1,43 @@
+{
+  "schema_version": "3.0",
+  "case": "L-Bracket",
+  "method_basis": "Chapter 3 formulas (3-3) through (3-7)",
+  "inputs_read": {
+    "result": {
+      "filename": "Result_L Bracket.csv",
+      "sha256": "bdff141b9d98b9fb88531a34e02d4eb78571557f3e335b467dd7eceb2fb13d00"
+    }
+  },
+  "forbidden_inputs_read": [],
+  "truth_or_mesh_used_for_inference": false,
+  "parameters": {
+    "DistanceThreshold": 2.0,
+    "NormalThreshold": 0.96,
+    "FitResidualThreshold": 1.5,
+    "TopologyEpsilon": 2.0,
+    "OrthogonalDotThreshold": 0.2,
+    "EndCapDistanceThreshold": 5.0,
+    "EndCapDotThreshold": 0.95
+  },
+  "counts": {
+    "points": 10000,
+    "initial_region_components": 20,
+    "accepted_faces": 12,
+    "accepted_points": 10000,
+    "residual_points": 0,
+    "topology_edges": 24,
+    "primitive_candidates": 5
+  },
+  "program": {
+    "filename": "infer_lbracket_chapter3_method.py",
+    "sha256": "279a650a370ceedef3e731cc1da1f80f6ed26189852ef6563417c3abc71fef01"
+  },
+  "outputs": {
+    "Result_L_Bracket_chapter3_verified.csv": "8ade4e321fa91bb38752bfbb243093dd09c7cd01030e20bbe8a6bd6a71fdcf05",
+    "FaceSummary_L_Bracket_chapter3_verified.csv": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c",
+    "TopologyEdges_L_Bracket_chapter3_verified.csv": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558",
+    "PrimitiveCandidates_L_Bracket_chapter3_verified.csv": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569",
+    "CSGTree_L_Bracket_chapter3_verified.json": "5909f7465d3020bb8782c65bee30d5e1d12c81cc13463ae8d85ebcbdfbf30ecf",
+    "CorrectionTrace_L_Bracket_chapter3.csv": "e46b4d4a469552e53421f0f8ed0efa9bac8b46a5fa303255ea5677dbdaa440a6"
+  }
+}

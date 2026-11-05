@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-05",
+  "source": "Author confirmation in this project conversation",
+  "verbatim": "都我做的 老師提供概念及題目方向",
+  "author": "黃云析 Yun-Hsi Huang",
+  "advisor": "鄭宗明 Tzong-Ming Cheng",
+  "research_execution": "Author is responsible for research execution, models/data, implementation, experiments, validation, figures and thesis writing under the advisor-provided research concept and topic direction",
+  "public_portfolio_preparation": "Codex-assisted repository packaging, adapters, environment setup, tests, CI and documentation are recorded separately in docs/development-notes.md",
+  "evidence_type": "Author-confirmed responsibility statement; source artifacts document the work products"
+}

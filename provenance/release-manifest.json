@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-review-2026-11-05",
+  "packaging_version": "portfolio-evidence-2026-11-05",
   "date": "2026-11-05",
   "manifest_excludes": [
     "provenance/release-manifest.json"
@@ -1692,13 +1692,213 @@
       "role": "restored-original-build-metadata",
       "bytes": 1344,
       "sha256": "f2421a69317ec3dc219c42e00094e8718a9ffc8f7e472022828f71a25fb91758"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/sensitivity_results.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/sensitivity_results.json",
+      "role": "historical-threshold-sensitivity-evidence",
+      "bytes": 51927,
+      "sha256": "e9a46e86a68fa88a1f5962c5b55b2617c9b079a8ba4f94609da964f51edba905"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/report.md",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/敏感度分析報告_260731.md",
+      "role": "historical-threshold-sensitivity-evidence",
+      "bytes": 3800,
+      "sha256": "6d61b8f23d402b6ceb1b60b4ac01b79866b9813ab91a83d5fcec6cf92e08d6de"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_1.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_1.50/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3462,
+      "sha256": "5b26079efff06e1dd1f219e095b9f44c89e37b661a0483149b5902a6a7e81c48"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_2.00.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.00/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3462,
+      "sha256": "c3309bad8a8dd8035af41d6aea954d74be57d207df14e1d2a4a6cb6d15ba909e"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_2.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__distance_mm_2.50/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3462,
+      "sha256": "e7495cf967e1706a8c8797891b342ff60aedeb79ba41115194fa37fd3c1ff1bd"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.90.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.90/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3461,
+      "sha256": "0728c858da63a4a3ba564b76b0178a85e7e2304797287e820a8ad8bb32cb8113"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.93.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.93/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3462,
+      "sha256": "c3309bad8a8dd8035af41d6aea954d74be57d207df14e1d2a4a6cb6d15ba909e"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.96.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Stepped_Cylinder__normal_dot_0.96/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 3462,
+      "sha256": "b05040950714aac1066189a4eebcf856990be9675b819746a475e8a38ff2f168"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__distance_mm_2.00.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.00/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 1747,
+      "sha256": "003fac9ad984e44b4d9684ceec67ab8d816382cdec94c31b0f9dca5ca5fc9066"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__distance_mm_2.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__distance_mm_2.50/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 1747,
+      "sha256": "bbd7c2aa439eb98800bb6cb58eba8002997fb2dddb327f1825d18685efb82b2f"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.90.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.90/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 1746,
+      "sha256": "2cb4e93e2939b9dd3dab2251d0b8448aa1d17db182e51dfc98d55fce561fc16f"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.93.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.93/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 1747,
+      "sha256": "003fac9ad984e44b4d9684ceec67ab8d816382cdec94c31b0f9dca5ca5fc9066"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.96.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/L_Bracket__normal_dot_0.96/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 1747,
+      "sha256": "cf8bbdbedf3eef53550c41d193030da4b1df1de3f3aa656994e0cd6e183a7665"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_1.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_1.50/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6068,
+      "sha256": "17a8762fb8688180e8c6101447b5e552025b0648328a8407a8046bcc623330fa"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.00.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.00/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6068,
+      "sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__distance_mm_2.50/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6068,
+      "sha256": "d7f09cee9b132e730de5820b727d939d0246fe22060e473cc57bce0cc9efc633"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.90.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.90/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6067,
+      "sha256": "82d7afa705d44642acd7cc00be2909948b7704626d5742fd75ab5a2a499b18a3"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.93.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.93/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6068,
+      "sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.96.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Model_A__normal_dot_0.96/MethodInferenceManifest_Model_A_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 6068,
+      "sha256": "7ea8ddde74499fa9c2830f5be6cd4aa531ad3d89d8c18f8f0d0eedacc96e7039"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_1.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_1.50/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4905,
+      "sha256": "9a494713e45a4ef6aed573e0c153d680a0bdaa5ffd4dec794c647dfcb35c3707"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.00.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.00/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4905,
+      "sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.50.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__distance_mm_2.50/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4905,
+      "sha256": "c7a538b8169f230d07e88c910188ac3d1b6a5d5c9be2d0d40a32bcdcb78d7970"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.90.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.90/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4904,
+      "sha256": "b0b308743265a5dea95d041b9a087132ce39f365cdbf31c4495e717c4b270443"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.93.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.93/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4905,
+      "sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.96.json",
+      "source_root": "thesis_workspace",
+      "source_path": "碩士論文/審查報告/敏感度分析_260731/runs/Blind_Hole_Hex_Base__normal_dot_0.96/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "role": "historical-threshold-sensitivity-run-manifest",
+      "bytes": 4905,
+      "sha256": "e8310d61d0aa8c7534c66e0de48c00f5d95dea8b735b98a4f44c382fe932019a"
     }
   ],
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 280,
-      "sha256": "e348dbd65a805943576924710bf7f56d786f34072c4f51d260b97ddc3e08c638"
+      "bytes": 298,
+      "sha256": "0d8cc2a42bcedc5c0894321e51fd53c0bab8a9ad0e4093daea54fe8fb51e96c2"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -2137,8 +2337,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2606,
-      "sha256": "d7bb79658cac67e7906f61f0a9f08887525433e6e7c04133cda71ce399234a87"
+      "bytes": 3347,
+      "sha256": "83a0df2ca63855f5895cbdebfaf60a31c8f8a1f3972b4103fa170acdce0014fb"
     },
     {
       "path": "data/recovered/README.md",
@@ -2161,14 +2361,24 @@
       "sha256": "4dfcb59bcaa0799109e3bfa43248777942891b43c80637b778ac6aaea3faae92"
     },
     {
+      "path": "docs/completion-review.md",
+      "bytes": 3878,
+      "sha256": "e5ae219d0734172d2440253e0026c10b97d0ca93739286e17afc02d6be0384eb"
+    },
+    {
+      "path": "docs/contributions.md",
+      "bytes": 2584,
+      "sha256": "3731ee925a35c2cd6427c3deb116b84095d723d3eda5c7a2400e1e8ca257ac43"
+    },
+    {
       "path": "docs/csg-representation.md",
       "bytes": 3482,
       "sha256": "f746f4b717e1835f8a16fcc59c01b33c1ac4e8c1c46f3759aa60eeeae1c86419"
     },
     {
       "path": "docs/development-notes.md",
-      "bytes": 631,
-      "sha256": "d0d6d3c63921b748cb2149c8eaee0cbbd523d77f62de9632135c54adce761f82"
+      "bytes": 924,
+      "sha256": "e68f103ac1d1bdd51be7835f9a311a5e61899e235599ce8ddbfd1c4b503acb1d"
     },
     {
       "path": "docs/environment.md",
@@ -2211,14 +2421,29 @@
       "sha256": "8c8dff0cd304cdb6fcee3d67b92023f295af492780416b8fd18310515e024e94"
     },
     {
+      "path": "docs/method-scope.md",
+      "bytes": 6823,
+      "sha256": "fd5da1a2d3bf54bd01db037385434c6c599e7382950d1f90bb98a8606502a812"
+    },
+    {
+      "path": "docs/missing-information.md",
+      "bytes": 2863,
+      "sha256": "472b4f2d3ad9c9ed30375893f32d5b025e58eb4f90b0e528f2fec786dc51f04b"
+    },
+    {
       "path": "docs/packaging-qa.md",
-      "bytes": 2990,
-      "sha256": "7f66c57572c063185cde5887d4be4eb013ede2f28af53b98bfd15473af0dd015"
+      "bytes": 3053,
+      "sha256": "b3ff0f3e8e1ff28b0b259eda9cf12c147e45957644fcfaaf29d68ac5f96f719b"
     },
     {
       "path": "docs/portfolio-review.md",
-      "bytes": 3353,
-      "sha256": "9d5dcbbc51d395a8dbfdcd580752903527bfa23f9449c3ffbb13feecdb1540b4"
+      "bytes": 3627,
+      "sha256": "2ef32229e720e1511d7c67a7bd2fc80c6cfd06269d3cac260b6a04c00690c665"
+    },
+    {
+      "path": "docs/results.md",
+      "bytes": 10281,
+      "sha256": "56e6a1c841e7a0ac94c0deb190a14ccad2fb9b1a77dad4c323292de51b0cba78"
     },
     {
       "path": "docs/second-pass-review.md",
@@ -2227,13 +2452,143 @@
     },
     {
       "path": "docs/source-versions.md",
-      "bytes": 2827,
-      "sha256": "b918e25df7192ee5015101e967dbcb3b79d4a04b85b57a85228b8d39bd2ed963"
+      "bytes": 3011,
+      "sha256": "ee10c9bfb521e63483cbac2e93be37cd076f2b07deaaaec0fc4a8597affa6ea5"
     },
     {
       "path": "docs/validation.md",
-      "bytes": 2069,
-      "sha256": "034d25bf57de6eefe8b497de5c841e4a7721fbd0633e4d98c2d4642181100ce6"
+      "bytes": 2349,
+      "sha256": "10413075b7c0465e456feb86f5514fc6724ce4d3409e2f8b663fbf4eec9d1235"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_1.50.json",
+      "bytes": 4905,
+      "sha256": "9a494713e45a4ef6aed573e0c153d680a0bdaa5ffd4dec794c647dfcb35c3707"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.00.json",
+      "bytes": 4905,
+      "sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_2.50.json",
+      "bytes": 4905,
+      "sha256": "c7a538b8169f230d07e88c910188ac3d1b6a5d5c9be2d0d40a32bcdcb78d7970"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.90.json",
+      "bytes": 4904,
+      "sha256": "b0b308743265a5dea95d041b9a087132ce39f365cdbf31c4495e717c4b270443"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.93.json",
+      "bytes": 4905,
+      "sha256": "272e365e7e7473b39bcd7f6484a1064b7de792b8d3e313ee1f3b2af4678f6614"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__normal_dot_0.96.json",
+      "bytes": 4905,
+      "sha256": "e8310d61d0aa8c7534c66e0de48c00f5d95dea8b735b98a4f44c382fe932019a"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__distance_mm_2.00.json",
+      "bytes": 1747,
+      "sha256": "003fac9ad984e44b4d9684ceec67ab8d816382cdec94c31b0f9dca5ca5fc9066"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__distance_mm_2.50.json",
+      "bytes": 1747,
+      "sha256": "bbd7c2aa439eb98800bb6cb58eba8002997fb2dddb327f1825d18685efb82b2f"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.90.json",
+      "bytes": 1746,
+      "sha256": "2cb4e93e2939b9dd3dab2251d0b8448aa1d17db182e51dfc98d55fce561fc16f"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.93.json",
+      "bytes": 1747,
+      "sha256": "003fac9ad984e44b4d9684ceec67ab8d816382cdec94c31b0f9dca5ca5fc9066"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/L_Bracket__normal_dot_0.96.json",
+      "bytes": 1747,
+      "sha256": "cf8bbdbedf3eef53550c41d193030da4b1df1de3f3aa656994e0cd6e183a7665"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_1.50.json",
+      "bytes": 6068,
+      "sha256": "17a8762fb8688180e8c6101447b5e552025b0648328a8407a8046bcc623330fa"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.00.json",
+      "bytes": 6068,
+      "sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.50.json",
+      "bytes": 6068,
+      "sha256": "d7f09cee9b132e730de5820b727d939d0246fe22060e473cc57bce0cc9efc633"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.90.json",
+      "bytes": 6067,
+      "sha256": "82d7afa705d44642acd7cc00be2909948b7704626d5742fd75ab5a2a499b18a3"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.93.json",
+      "bytes": 6068,
+      "sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.96.json",
+      "bytes": 6068,
+      "sha256": "7ea8ddde74499fa9c2830f5be6cd4aa531ad3d89d8c18f8f0d0eedacc96e7039"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_1.50.json",
+      "bytes": 3462,
+      "sha256": "5b26079efff06e1dd1f219e095b9f44c89e37b661a0483149b5902a6a7e81c48"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_2.00.json",
+      "bytes": 3462,
+      "sha256": "c3309bad8a8dd8035af41d6aea954d74be57d207df14e1d2a4a6cb6d15ba909e"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__distance_mm_2.50.json",
+      "bytes": 3462,
+      "sha256": "e7495cf967e1706a8c8797891b342ff60aedeb79ba41115194fa37fd3c1ff1bd"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.90.json",
+      "bytes": 3461,
+      "sha256": "0728c858da63a4a3ba564b76b0178a85e7e2304797287e820a8ad8bb32cb8113"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.93.json",
+      "bytes": 3462,
+      "sha256": "c3309bad8a8dd8035af41d6aea954d74be57d207df14e1d2a4a6cb6d15ba909e"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/manifests/Stepped_Cylinder__normal_dot_0.96.json",
+      "bytes": 3462,
+      "sha256": "b05040950714aac1066189a4eebcf856990be9675b819746a475e8a38ff2f168"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/README.md",
+      "bytes": 1024,
+      "sha256": "84612f73dc6d4f5c81c1f09bbfc8306b26e3780fd18a0b47defee92b17679b11"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/report.md",
+      "bytes": 3800,
+      "sha256": "6d61b8f23d402b6ceb1b60b4ac01b79866b9813ab91a83d5fcec6cf92e08d6de"
+    },
+    {
+      "path": "evidence/sensitivity-2026-07-31/sensitivity_results.json",
+      "bytes": 51927,
+      "sha256": "e9a46e86a68fa88a1f5962c5b55b2617c9b079a8ba4f94609da964f51edba905"
     },
     {
       "path": "examples/cases.json",
@@ -2271,9 +2626,14 @@
       "sha256": "1f867bb8877e0a44207b37386719199ea63beff6778706378e663a0f603ae10c"
     },
     {
+      "path": "provenance/contribution-statement.json",
+      "bytes": 748,
+      "sha256": "5b68ca7082b6540ee6575648942e2dd211fb56abe3da7211df00233820b6ee51"
+    },
+    {
       "path": "provenance/copied-sources.json",
-      "bytes": 85221,
-      "sha256": "3cd2f06cf1539d50ba75777f3fa0b1f3098ad4304441a6d3fb404eab39bf6340"
+      "bytes": 98469,
+      "sha256": "a9f8b5abee20c4fed52e57d9f6da55abdb694f8a6d4211aa001212d74c95081a"
     },
     {
       "path": "provenance/csharp-project-audit.json",
@@ -2282,8 +2642,8 @@
     },
     {
       "path": "provenance/file-manifest.csv",
-      "bytes": 63966,
-      "sha256": "4bae72515d0398136cd43b0a1c1940dd2ed4c956a1f100b4210b3841873650fd"
+      "bytes": 72799,
+      "sha256": "3286372b6d50ac123732ea88dbb70a6142a109abdd7a7ed0c3a297624589046f"
     },
     {
       "path": "provenance/historical-json-notes.json",
@@ -2311,6 +2671,11 @@
       "sha256": "1aad46a14bde5ead65e1c3706be4a509c22fd6618c877eab7a6c78d36d3a6e6b"
     },
     {
+      "path": "provenance/history/source-versions-portfolio-review-2026-11-05.json",
+      "bytes": 20983,
+      "sha256": "afbbe0bf3c9c8daa2cff5f11fcb0467f7a9d9720abd9b7f37d12c1acb77c0788"
+    },
+    {
       "path": "provenance/history/source-versions-preparation-2026-11-05.json",
       "bytes": 17405,
       "sha256": "5e1ee6d5eb162a0f54d801cc8fc8fa05fc4e5370ae40b6a22122116d8620d07b"
@@ -2326,6 +2691,11 @@
       "sha256": "b6cc6887fd35243a61071b531f30ed1cec6d27077e831209ede6e2a9659d8410"
     },
     {
+      "path": "provenance/quality-summary.json",
+      "bytes": 38545,
+      "sha256": "c0de34a17a3d228c64a9faa2ee1c4d4b4ef7257b52a405294fd9387da0851bf2"
+    },
+    {
       "path": "provenance/recovered-blind-input.json",
       "bytes": 1166,
       "sha256": "b4e929c706d4216857022b74bac50c685eac30de6b8fe786822caf03cac98e54"
@@ -2336,9 +2706,14 @@
       "sha256": "0ba00ddf0e709893077d0de057df091ded740f34a747177117278d0d147f7a97"
     },
     {
+      "path": "provenance/sensitivity-input-bindings.json",
+      "bytes": 26070,
+      "sha256": "97944d44a3d7afa4ffbf79656288e181c75e1454d3daec9cb489e56101fbc0ba"
+    },
+    {
       "path": "provenance/source-versions.json",
-      "bytes": 20983,
-      "sha256": "afbbe0bf3c9c8daa2cff5f11fcb0467f7a9d9720abd9b7f37d12c1acb77c0788"
+      "bytes": 21425,
+      "sha256": "d22a5b0fde5bec2da4e38cae020165503092a324ecb219f6599d6b8f2acfce83"
     },
     {
       "path": "provenance/thesis-figures.json",
@@ -2347,8 +2722,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7311,
-      "sha256": "10d529b23ac105d80bac845a5504596c1b0956c81d8bca3720518b7313613a54"
+      "bytes": 8748,
+      "sha256": "92ad66b473636920275703bd924174bd0d3681b8525b4268f8677e94be72e548"
     },
     {
       "path": "requirements-observed.txt",
@@ -3319,6 +3694,11 @@
       "path": "validation/2026-11-05/initial-source-binding-attempt.json",
       "bytes": 6885,
       "sha256": "079212ede251f1ddbc8d30468a78133241607c041dfae07b74367e38334d4560"
+    },
+    {
+      "path": "validation/2026-11-05/portfolio-completion-audit.json",
+      "bytes": 890,
+      "sha256": "c75b12a562f6bb7bffe4d45625b753208b50a64ed5afd62d1fdb0fbda392aee9"
     },
     {
       "path": "validation/2026-11-05/publication-audit.json",

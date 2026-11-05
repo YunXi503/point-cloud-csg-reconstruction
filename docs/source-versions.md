@@ -1,10 +1,10 @@
 # 原始碼與資料版本對照
 
-發布整理版本為 portfolio-review-2026-11-05，版本 0.1.2。本輪釐清 CSG 格式契約及記錄補全審查；研究程式維持 0.1.0 的來源與行為。前版的機器可讀紀錄及 Git 標籤保留供追溯。
+發布整理版本為 portfolio-evidence-2026-11-05，版本 0.1.3。本輪補上作者分工、四例品質摘要、方法範圍與缺口，新增既有敏感度報告及 23 份逐次 manifest；研究程式維持 0.1.0 的來源與行為。前版的機器可讀紀錄及 Git 標籤保留供追溯。
 
 ## 研究來源
 
-211 個逐位元複製的來源檔列於 [file-manifest.csv](../provenance/file-manifest.csv)。包含原論文工作區、原 VS 工作區，以及從相同專案核對補回的 4 個 AssemblyInfo.cs。研究演算法與研究參數沒有改寫。
+236 個逐位元複製的來源檔列於 [file-manifest.csv](../provenance/file-manifest.csv)：原有 211 個核心來源維持原位元，包含原論文工作區、原 VS 工作區與 4 個補回的 AssemblyInfo.cs；另增加敏感度摘要 JSON、報告及 23 份逐次 manifest，共 25 份歷史證據。研究演算法與研究參數沒有改寫。
 
 目前來源與輸入綁定見 [cases.json](../examples/cases.json) 及 [segmentation.json](../examples/segmentation.json)。初始 C# 分類器按實際產出比對選定來源及 runtime，不由目錄名推定版本。
 

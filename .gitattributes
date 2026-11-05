@@ -11,3 +11,4 @@
 *.json -text
 research/** -text
 archive/** -text
+evidence/** -text

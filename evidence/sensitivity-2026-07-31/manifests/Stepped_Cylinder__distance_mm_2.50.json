@@ -1,0 +1,95 @@
+{
+  "schema_version": "3.0",
+  "case": "Stepped Cylinder",
+  "method_basis": "Chapter 3 formulas (3-3) through (3-7)",
+  "inputs_read": {
+    "result": {
+      "filename": "Result_Stepped Cylinder.csv",
+      "sha256": "3c4e9e3bf22831e0cbf4c6ba325675c5b70882f3cc015ff9cc005a8467ae3d25"
+    }
+  },
+  "forbidden_inputs_read": [],
+  "truth_or_mesh_used_for_inference": false,
+  "parameters": {
+    "DistanceThreshold": 2.5,
+    "NormalThreshold": 0.93,
+    "FitResidualThreshold": 1.5,
+    "TopologyEpsilon": 2.5,
+    "OrthogonalDotThreshold": 0.2,
+    "EndCapDistanceThreshold": 5.0,
+    "EndCapDotThreshold": 0.95
+  },
+  "inference_rules": {
+    "seed_acceptance": "an original cluster must pass exactly one accepted plane/cylinder fit; plane is tested before cylinder",
+    "reassignment": "best finite-support surface satisfying residual <= 1.5 mm and normal agreement >= 0.93",
+    "semantics": "plane axial order; cylinder radial-normal sense; outer-cylinder axial order",
+    "topology": "finite sampled support distance plus the Chapter 3 direction predicates",
+    "candidates": "one cylindrical side plus exactly two EndCap relations",
+    "csg": "Union additive candidates first, then ordered Difference subtractors"
+  },
+  "initial_cluster_audit": [
+    {
+      "OriginalClusterID": 0,
+      "OriginalPointCount": 2538,
+      "SeedAccepted": true,
+      "SeedGeometry": "cylinder"
+    },
+    {
+      "OriginalClusterID": 1,
+      "OriginalPointCount": 2627,
+      "SeedAccepted": true,
+      "SeedGeometry": "cylinder"
+    },
+    {
+      "OriginalClusterID": 2,
+      "OriginalPointCount": 1144,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 3,
+      "OriginalPointCount": 787,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 4,
+      "OriginalPointCount": 341,
+      "SeedAccepted": true,
+      "SeedGeometry": "plane"
+    },
+    {
+      "OriginalClusterID": 5,
+      "OriginalPointCount": 2511,
+      "SeedAccepted": true,
+      "SeedGeometry": "cylinder"
+    },
+    {
+      "OriginalClusterID": 6,
+      "OriginalPointCount": 52,
+      "SeedAccepted": false,
+      "SeedGeometry": "mixed_or_unresolved"
+    }
+  ],
+  "counts": {
+    "points": 10000,
+    "original_clusters": 7,
+    "accepted_faces": 6,
+    "accepted_points": 10000,
+    "residual_points": 0,
+    "topology_edges": 6,
+    "primitive_candidates": 3
+  },
+  "program": {
+    "filename": "infer_stepped_cylinder_chapter3_method.py",
+    "sha256": "01de91bafbdc373fcdb725121b60a0ad0a06adb8fc3cb6bd105f7fe2629a3fcc"
+  },
+  "outputs": {
+    "Result_Stepped_Cylinder_chapter3_verified.csv": "556c1f4b7123300f55bf81b065f25678a8b4d52e0cbc4dac201e1265fbb289c3",
+    "FaceSummary_Stepped_Cylinder_chapter3_verified.csv": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43",
+    "TopologyEdges_Stepped_Cylinder_chapter3_verified.csv": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e",
+    "PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be",
+    "CSGTree_Stepped_Cylinder_chapter3_verified.json": "17100ba5460797e40cddc02eb8bf17b42610e807d55c3de0aa5a023adeef14eb",
+    "CorrectionTrace_Stepped_Cylinder_chapter3.csv": "a91f4b369f4af3f7b8d695af149cc1b5b76eace205214c1cc84a7b40f136d121"
+  }
+}
