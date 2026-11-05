@@ -6,7 +6,7 @@ import hashlib
 import io
 import json
 
-from geometry_guard import guarded_circle_fit
+from geometry_guard import guarded_circle_fit, new_circle_report
 
 
 def main():
@@ -17,6 +17,7 @@ def main():
     args=parser.parse_args()
     if args.output.exists():
         parser.error("Output already exists; preserve it and choose a new report.")
+    raw=None
     try:
         values=[]
         raw=args.input.read_bytes()
@@ -30,11 +31,10 @@ def main():
                 try: values.append([float(row[0]),float(row[1])])
                 except ValueError: raise ValueError("Non-numeric value at row "+str(index)) from None
         report=guarded_circle_fit(values,args.implementation)
-        report["input_csv_sha256"]=hashlib.sha256(raw).hexdigest()
     except (OSError,UnicodeError,ValueError,csv.Error) as error:
-        report={"schema_version":"1","status":"invalid_input","reason":"csv_input_error","solver_called":False,"estimate":None,
-                "input_error":{"type":type(error).__name__,"message":str(error)},
-                "verification":{"status":"not_assessed","parameters_verified":False}}
+        report=new_circle_report(args.implementation)
+        report.update(reason="csv_input_error",input_error={"type":type(error).__name__,"message":str(error)})
+    report["input_csv_sha256"]=hashlib.sha256(raw).hexdigest() if raw is not None else None
     args.output.parent.mkdir(parents=True,exist_ok=True)
     with args.output.open("x",encoding="utf-8",newline="\n") as stream:
         json.dump(report,stream,ensure_ascii=False,indent=2,allow_nan=False);stream.write("\n")

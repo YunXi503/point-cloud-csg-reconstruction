@@ -1,6 +1,7 @@
 """Outer-policy fixtures; simulated solver outcomes are not research results."""
 from pathlib import Path
 import json
+import hashlib
 import subprocess
 import sys
 import tempfile
@@ -175,6 +176,34 @@ class GuardedCircleContracts(unittest.TestCase):
                 report=guard.guarded_circle_fit(self.points)
         self.assertEqual(report['status'],'blocked_source_version');invoke.assert_not_called()
 
+    def catalog_report(self,payload):
+        relative,_=guard.SOURCES['stepped']
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);source=root/relative;source.parent.mkdir(parents=True)
+            source.write_bytes((ROOT/relative).read_bytes())
+            (root/'provenance').mkdir();(root/'provenance/copied-sources.json').write_bytes(payload)
+            with patch.object(guard,'ROOT',root),patch.object(guard,'_observe_solver') as invoke:
+                report=guard.guarded_circle_fit(self.points)
+            invoke.assert_not_called()
+        self.assertEqual(report['status'],'blocked_source_version')
+        self.assertFalse(report['solver_called']);self.assertIsNone(report['estimate'])
+        json.dumps(report,allow_nan=False)
+        return report
+
+    def test_malformed_catalog_structure_is_blocked_without_solver(self):
+        path,pinned=guard.SOURCES['stepped']
+        for value in [None,{},[17],[{}],[{'path':[], 'sha256':pinned}],
+                      [{'path':'', 'sha256':pinned}],[{'path':path,'sha256':None}],
+                      [{'path':path,'sha256':'g'*64}]]:
+            with self.subTest(catalog=value):self.catalog_report(json.dumps(value).encode('utf-8'))
+
+    def test_malformed_catalog_json_is_blocked_without_solver(self):
+        self.catalog_report(b'[{broken JSON')
+
+    def test_duplicate_catalog_paths_are_blocked_without_solver(self):
+        path,pinned=guard.SOURCES['stepped'];record={'path':path,'sha256':pinned}
+        self.catalog_report(json.dumps([record,record]).encode('utf-8'))
+
 
 class CircleCliContracts(unittest.TestCase):
     def setUp(self):
@@ -207,3 +236,32 @@ class CircleCliContracts(unittest.TestCase):
     def test_existing_report_is_preserved(self):
         self.output.write_bytes(b'keep prior report');self.assertNotEqual(self.run_cli().returncode,0)
         self.assertEqual(self.output.read_bytes(),b'keep prior report')
+
+    def assert_common_fields(self,report):
+        required={'schema_version','implementation','status','reason','solver_called','estimate','raw_result',
+                  'input_csv_sha256','convergence','verification','runtime'}
+        self.assertTrue(required<=report.keys())
+        self.assertEqual(report['schema_version'],'1');self.assertEqual(report['implementation'],'stepped')
+        self.assertIsNone(report['estimate']);self.assertIsNone(report['raw_result'])
+        self.assertFalse(report['solver_called']);self.assertFalse(report['verification']['parameters_verified'])
+        self.assertIsNone(report['convergence']['step_threshold_met'])
+        self.assertTrue(report['runtime']['python']);self.assertTrue(report['runtime']['numpy'])
+        self.assertTrue(report['verification']['reason'])
+
+    def test_csv_and_numeric_failures_share_common_report_fields(self):
+        for name,text in [('bad_header','X,Y,Z\n1,2,3\n'),('nonfinite','U,V\nNaN,2\n1,0\n0,1\n')]:
+            with self.subTest(name=name):
+                self.output=self.folder/(name+'.json');self.source.write_bytes(text.encode('utf-8'))
+                self.assertEqual(self.run_cli().returncode,2)
+                self.assert_common_fields(json.loads(self.output.read_bytes()))
+
+    def test_unreadable_input_has_null_digest_and_common_report(self):
+        self.assertEqual(self.run_cli().returncode,2)
+        report=json.loads(self.output.read_bytes());self.assert_common_fields(report)
+        self.assertIsNone(report['input_csv_sha256'])
+
+    def test_parse_failure_binds_the_bytes_that_were_read(self):
+        raw=b'U,V\nnot-a-number,2\n';self.source.write_bytes(raw)
+        self.assertEqual(self.run_cli().returncode,2)
+        report=json.loads(self.output.read_bytes());self.assert_common_fields(report)
+        self.assertEqual(report['input_csv_sha256'],hashlib.sha256(raw).hexdigest())

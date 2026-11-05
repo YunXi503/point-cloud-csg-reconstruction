@@ -20,6 +20,8 @@ Rule-based geometric inference from sampled point normals, with preserved resear
 
 [可選圓擬合外層](docs/geometry-guard.md)補上二維輸入檢查、原步長停止狀態與未驗證旗標。短弧迭代未達標或初始化數值支撐不足時不提供合格估計；保留原誤差紀錄，[外層審查](docs/geometry-guard-review.md)說明拒絕與半徑修正的差別。
 
+v0.1.8另補來源清單格式防護與共同錯誤報告，將12項CLI重放納入CI，並修正導讀的歷史測試數量標記。[四項修正與再次審查](docs/geometry-guard-hardening-review.md)
+
 ## 四個受控案例的既有品質結果
 
 | 案例 | 幾何特徵面 | 拓樸關係 | 候選單元 | 最大曲面殘差（mm） | 最大參數誤差（mm） |
@@ -118,7 +120,7 @@ flowchart LR
 | [src/adapter/](src/adapter) | 新增的輸入輸出轉接與來源連結建置入口 |
 | [tools/](tools) | 環境建立、執行、雜湊驗證、圖件及發布工具 |
 | [examples/](examples) | 各範例的來源、輸入、環境及參考輸出綁定 |
-| [tests/](tests) | 51 項：17 項工程防護、4 項解析幾何基準、2 項量測工具及28項圓擬合外層／CLI測試；不將 fixture 當研究樣本 |
+| [tests/](tests) | 65 項：17 項工程防護、4 項解析幾何基準、2 項量測工具、34項圓擬合外層／CLI及8項重放檢查器測試；另有12項CLI集成重放，不將 fixture 當研究樣本 |
 | [provenance/](provenance) | 來源雜湊、版本差異、補件及輸入找回紀錄 |
 | [validation/](validation) | 乾淨安裝、搬移與實測結果 |
 | [archive/](archive/README.md) | 舊程式與歷史專案，供追溯使用 |
@@ -130,6 +132,7 @@ flowchart LR
 ```powershell
 node tools/verify-package.mjs
 ./.venv/Scripts/python.exe -m unittest discover -s tests -v
+./.venv/Scripts/python.exe tools/verify-circle-replays.py --output-dir runs/new-circle-replays
 ```
 
 [GitHub Actions](https://github.com/YunXi503/point-cloud-csg-reconstruction/actions/workflows/verify.yml) 檢查封裝、錯誤防護及兩種重現路徑。[維護說明](docs/maintaining.md) · [第二輪審查與改善](docs/second-pass-review.md)

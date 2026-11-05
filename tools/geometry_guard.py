@@ -23,6 +23,16 @@ class SourceContractError(RuntimeError):
     pass
 
 
+def new_circle_report(implementation="stepped"):
+    """Common schema for every written CLI/API report, including parse errors."""
+    return {"schema_version":"1","implementation":implementation,"status":"invalid_input","reason":None,
+            "solver_called":False,"estimate":None,"raw_result":None,"input_csv_sha256":None,
+            "convergence":{"status":"not_observed","step_threshold_met":None},
+            "verification":{"status":"not_assessed","parameters_verified":False,
+                            "reason":"No independent parameter reference or calibrated uncertainty bound was supplied."},
+            "runtime":{"python":sys.version.split()[0],"numpy":np.__version__}}
+
+
 def _safe(value):
     if isinstance(value, dict):
         return {str(k): _safe(v) for k, v in value.items()}
@@ -40,7 +50,21 @@ def _safe(value):
 def _load_original(implementation):
     path, pinned = SOURCES[implementation]
     raw = (ROOT/path).read_bytes()
-    catalog = {p["path"]: p["sha256"] for p in json.loads((ROOT/"provenance/copied-sources.json").read_text(encoding="utf-8"))}
+    records = json.loads((ROOT/"provenance/copied-sources.json").read_text(encoding="utf-8"))
+    if not isinstance(records,list):
+        raise SourceContractError("The source catalog must be a list of records.")
+    catalog = {}
+    for record in records:
+        if not isinstance(record,dict):
+            raise SourceContractError("Each source catalog record must be an object.")
+        recorded_path, digest = record.get("path"), record.get("sha256")
+        if not isinstance(recorded_path,str) or not recorded_path.strip():
+            raise SourceContractError("Each source record must have a nonempty path.")
+        if not isinstance(digest,str) or len(digest)!=64 or any(c not in "0123456789abcdef" for c in digest):
+            raise SourceContractError("Each source record must have a lowercase SHA-256 digest.")
+        if recorded_path in catalog:
+            raise SourceContractError("Duplicate paths make the source catalog ambiguous.")
+        catalog[recorded_path] = digest
     if hashlib.sha256(raw).hexdigest() != pinned or catalog.get(path) != pinned:
         raise SourceContractError("The original source differs from the reviewed v0.1.6 source.")
     text = raw.decode("utf-8-sig")
@@ -96,11 +120,7 @@ def guarded_circle_fit(values, implementation="stepped"):
     Only the original step stopping condition can qualify an estimate. Rank is
     the original initializer's float64 lstsq rank, not a physical accuracy test.
     """
-    result = {"schema_version":"1","implementation":implementation,"status":"invalid_input","solver_called":False,
-              "estimate":None,"raw_result":None,"convergence":{"status":"not_observed","step_threshold_met":None},
-              "verification":{"status":"not_assessed","parameters_verified":False,
-                              "reason":"No independent parameter reference or calibrated uncertainty bound was supplied."},
-              "runtime":{"python":sys.version.split()[0],"numpy":np.__version__}}
+    result = new_circle_report(implementation)
     def finish(status, reason=None):
         result["status"] = status
         if reason: result["reason"] = reason

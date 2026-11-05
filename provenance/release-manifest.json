@@ -1,6 +1,6 @@
 {
-  "packaging_version": "portfolio-geometry-guards-2026-11-05",
-  "date": "2026-11-05",
+  "packaging_version": "portfolio-guard-hardening-2026-11-06",
+  "date": "2026-11-06",
   "manifest_excludes": [
     "provenance/release-manifest.json"
   ],
@@ -1942,8 +1942,8 @@
     },
     {
       "path": ".github/workflows/verify.yml",
-      "bytes": 1755,
-      "sha256": "74db4908dd1f6d7052dfeedbe9877f46be341ae389b3c1276c0afab4dcb40dbe"
+      "bytes": 1937,
+      "sha256": "6e5f7e742b56baec1796dbbc477a3c032afe311731b918eb04aa0891ea42f680"
     },
     {
       "path": ".gitignore",
@@ -2397,8 +2397,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 5623,
-      "sha256": "b643fe9b7341a8c676b5120942bfdf3cd59f9d31a5d8b86d1be82fdf73e28a68"
+      "bytes": 6228,
+      "sha256": "da8ee217c0e3bd367de40d5727c8913f0c2fed100ef16bacf25bf13a7b73984d"
     },
     {
       "path": "data/recovered/README.md",
@@ -2442,8 +2442,8 @@
     },
     {
       "path": "docs/development-notes.md",
-      "bytes": 1202,
-      "sha256": "cba05634f6d61e0cc0619412f46b817250f5f367e8a7f47b30b5c371d4819de3"
+      "bytes": 1509,
+      "sha256": "99741a60c64ec8574a4e1666cb92fb13a8aa618cb3e18079694f5f26e9ca1c41"
     },
     {
       "path": "docs/environment.md",
@@ -2491,29 +2491,39 @@
       "sha256": "c1a1706454269487b3a85d07c67f6adf617c1a4d0546b6f8eef2f506ea1c25ce"
     },
     {
+      "path": "docs/geometry-guard-hardening-plan.md",
+      "bytes": 3123,
+      "sha256": "4d5b53f58b8b863701791aab490f2348ee20b4d6d68b5785739ccc57bcd09bb9"
+    },
+    {
+      "path": "docs/geometry-guard-hardening-review.md",
+      "bytes": 4175,
+      "sha256": "4527e8792340b2a5d407f71a7e9a203eecd5ced138e1440496480ec6e222e2c2"
+    },
+    {
       "path": "docs/geometry-guard-plan.md",
       "bytes": 3343,
       "sha256": "df8d8e178d74657e98b672543d2cdb42fe90605a3e151c33406e65f39cdcc4f4"
     },
     {
       "path": "docs/geometry-guard-review.md",
-      "bytes": 3737,
-      "sha256": "570f89302e1d79238bb97f5487ab8200fb2a439a2973f839dcecd3d94b7e9fd0"
+      "bytes": 3978,
+      "sha256": "58c17a5a8eabd9672a59b80346aa2f714708245359c5088671450b023912cd2d"
     },
     {
       "path": "docs/geometry-guard.md",
-      "bytes": 5949,
-      "sha256": "aaf5947ceae1ead9934abc67c82a8523e0596d4230d2019566278e2e384574d8"
+      "bytes": 8060,
+      "sha256": "55bb8a495cf41d1abfb0154d5c6e33858491bd0816b92c3746b3a01bb958f2ba"
     },
     {
       "path": "docs/interview-guide.md",
-      "bytes": 8901,
-      "sha256": "099afcee898eb030cf92e863cc4986219fd12bde8712d37200dbb13e7438560d"
+      "bytes": 9336,
+      "sha256": "7b9816e754b60ca7b64896effe697a399554ab598a6c33da987fbe6f69d83cdc"
     },
     {
       "path": "docs/maintaining.md",
-      "bytes": 2478,
-      "sha256": "419c64c0cca4e8e7b78856b62ae86b1228d9a3e20f69b52013d5b47a5726dba0"
+      "bytes": 2953,
+      "sha256": "6dbe34af9701349e8e328068c38d69054b8e04774656ca72b911afeade1822e9"
     },
     {
       "path": "docs/measurement-protocol.md",
@@ -2542,8 +2552,8 @@
     },
     {
       "path": "docs/missing-information.md",
-      "bytes": 3845,
-      "sha256": "250f3d9bf4c72465a38afe1703b8adfd21d66eac61a429994ac3ad944c3a3515"
+      "bytes": 4141,
+      "sha256": "cfb9814ca676a4bc8aa6e1dac928c6405538272bc007e5f65501c2bcd6381c09"
     },
     {
       "path": "docs/packaging-qa.md",
@@ -2787,8 +2797,8 @@
     },
     {
       "path": "examples/guarded-circle/README.md",
-      "bytes": 902,
-      "sha256": "830c1310e7ee46e016d7dacc2b2ea9f3be410f8293c1883c4f3aba8d1c99579f"
+      "bytes": 1254,
+      "sha256": "70f444b92f2dd71ad272b9841955fd7ac04f555e29c0fdd7f7f73ad340d6559a"
     },
     {
       "path": "examples/segmentation.json",
@@ -2797,8 +2807,8 @@
     },
     {
       "path": "EXPERIMENT_LOG.md",
-      "bytes": 13110,
-      "sha256": "dad83b023c3e9fab3dcc5988a4c10cf4324e09937030c62eeb2b0e80f54ef845"
+      "bytes": 14277,
+      "sha256": "6f1fb6d4203ded8fc56fdecc5c4356b23e37db5c2210bf97170b4ef74c2a311b"
     },
     {
       "path": "LICENSE",
@@ -2874,6 +2884,11 @@
       "path": "provenance/history/source-versions-portfolio-figures-2026-11-05.json",
       "bytes": 20669,
       "sha256": "1aad46a14bde5ead65e1c3706be4a509c22fd6618c877eab7a6c78d36d3a6e6b"
+    },
+    {
+      "path": "provenance/history/source-versions-portfolio-geometry-guards-2026-11-05.json",
+      "bytes": 23880,
+      "sha256": "edb8ce3c18589f07945d90fe15e284b597f1d8799f2086133883fb112cbcec34"
     },
     {
       "path": "provenance/history/source-versions-portfolio-interview-2026-11-05.json",
@@ -2957,8 +2972,8 @@
     },
     {
       "path": "provenance/source-versions.json",
-      "bytes": 23880,
-      "sha256": "edb8ce3c18589f07945d90fe15e284b597f1d8799f2086133883fb112cbcec34"
+      "bytes": 24664,
+      "sha256": "de649edada2244f10b676256eb377a0ac7dcc0ce12f10e37c57dbdda8bd06515"
     },
     {
       "path": "provenance/thesis-figures.json",
@@ -2967,8 +2982,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10009,
-      "sha256": "d45ad43aa345537b3ea5994d9c9924dee60913b26faec7c95dd0b18ba3c314ff"
+      "bytes": 10360,
+      "sha256": "e5f2ad4bcc4c11a4fd3f274b110537b4448bd54dde5d676df763b8077b1211e8"
     },
     {
       "path": "requirements-observed.txt",
@@ -3856,14 +3871,19 @@
       "sha256": "9545b74a939988929509da4b0cddc2ebcbbf8eb9f474101d59b8a34a0f1812aa"
     },
     {
+      "path": "tests/test_circle_replays.py",
+      "bytes": 3131,
+      "sha256": "de29b7299a158b5cc7f590fa46dc3049384ecce829ef99989e58a4b145a95ca2"
+    },
+    {
       "path": "tests/test_geometry_contracts.py",
       "bytes": 2432,
       "sha256": "e37dad76dd6563af60cf138b6f0cb829aace633d6f546ddc23318517d81dca43"
     },
     {
       "path": "tests/test_geometry_guard.py",
-      "bytes": 11153,
-      "sha256": "b6744363d7fe6979813603db27d7a959b1b8de64193bf5a41bd58e19fc3a025f"
+      "bytes": 14647,
+      "sha256": "c9183ae621ed62f200eaea3a10be8062ee68502c298655155780c45478a9bbd4"
     },
     {
       "path": "tests/test_process_metrics.py",
@@ -3887,8 +3907,8 @@
     },
     {
       "path": "tools/check-circle-fit.py",
-      "bytes": 2288,
-      "sha256": "6694fb9a448918a23db45a4eac485ab60d8eccca9bcae6aec49bc3d2629198fe"
+      "bytes": 2214,
+      "sha256": "dc5263d36c0473fdd571e01577bddbe001baa4458a837d966727985db688431d"
     },
     {
       "path": "tools/geometry_fixtures.py",
@@ -3897,8 +3917,8 @@
     },
     {
       "path": "tools/geometry_guard.py",
-      "bytes": 10150,
-      "sha256": "b3197513695c1e723eedeeb68a8fb9f57f68ed13605976aed2db9710a4b5bc3f"
+      "bytes": 11240,
+      "sha256": "b540f86b6ba1da0cb197ed9f322ece0ebdbeca393739ecb8a341f0e389afd580"
     },
     {
       "path": "tools/inference_sources.py",
@@ -3944,6 +3964,11 @@
       "path": "tools/summarize-measurements.py",
       "bytes": 5601,
       "sha256": "c6ae7efbec48cd4593847a7b21d774f8231bceeddc5f3169711628fb6edd68fd"
+    },
+    {
+      "path": "tools/verify-circle-replays.py",
+      "bytes": 10372,
+      "sha256": "e9c8307eabf150222c069896f5ffa3b58eac1ebe9bcde45ca0d2b0714c670dc2"
     },
     {
       "path": "tools/verify-package.mjs",
@@ -4159,6 +4184,31 @@
       "path": "validation/2026-11-05/thesis-version-comparison.json",
       "bytes": 555,
       "sha256": "93f61bd701bcf5e2e3049552670a1e71a80442446266fd88e1f34d8352b628bb"
+    },
+    {
+      "path": "validation/2026-11-06/circle-replay-results.json",
+      "bytes": 28519,
+      "sha256": "f243409ecaebdc6b0b3a7980eaa532a82263163318e0458a2c68f65d642032ed"
+    },
+    {
+      "path": "validation/2026-11-06/guard-hardening-audit.json",
+      "bytes": 80180,
+      "sha256": "1edabdb2abf5c94f35de6790ce465466106e6cf26f46b5153cafc020d6f03dde"
+    },
+    {
+      "path": "validation/2026-11-06/guard-hardening-pipeline.json",
+      "bytes": 9528,
+      "sha256": "4656eef25735d67cd45ba67325524f44c8f89c94bdade80c819c8c509de4b644"
+    },
+    {
+      "path": "validation/2026-11-06/guard-hardening-reproduction.json",
+      "bytes": 11584,
+      "sha256": "e9a0386aefc45f2fd0a83dbc5bcd08d970037d32494fe76912dc859514bc3a90"
+    },
+    {
+      "path": "validation/2026-11-06/guard-hardening-tests.json",
+      "bytes": 16580,
+      "sha256": "a225802ae500bd94317423417a9faa392204e9b9664bf83a5df0099d0846e9fa"
     }
   ]
 }

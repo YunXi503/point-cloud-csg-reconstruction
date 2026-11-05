@@ -4,6 +4,7 @@
 
 ```powershell
 ./.venv/Scripts/python.exe -m unittest discover -s tests -v
+./.venv/Scripts/python.exe tools/verify-circle-replays.py --output-dir runs/new-circle-replays
 ./.venv/Scripts/python.exe tools/verify-reproduction.py --case all --output-dir runs/new-inference-check
 ./.venv/Scripts/python.exe tools/run-from-point-cloud.py --case all --output-dir runs/new-pipeline-check
 ```
@@ -34,5 +35,7 @@ CI 使用只讀 repository 權限，執行步驟固定到已核對 commit SHA，
 ## 二維圓擬合契約
 
 可選外層的兩份原始碼有固定SHA與AST停止條件核對，不能為讓新來源通過而靜默更新綁定。[事前計畫](geometry-guard-plan.md)與[契約](geometry-guard.md)說明數值秩、停止觀察及參數未驗證狀態。改動這些政策時，跑tests/test_geometry_guard.py及六份範例兩實作的重放；缺步長不可猜收斂，小殘差不可改成準確度通過。
+
+v0.1.8以tools/verify-circle-replays.py執行12項CLI重放，已納入CI並保存報告／日誌。每份報告有共同欄位；來源清單格式錯誤或重複路徑須結構化拒絕，CSV讀取失敗不得捏造輸入SHA。tests/test_circle_replays.py以軟體fixture檢查重放器能抓出不利狀態被誤判或欄位錯誤，不能只執行工具而不檢查結果。
 
 v0.1.6量測JSON、其事前協定、量測／彙整／製圖工具及圖件均保留原SHA；新增外層結果另存，不用新資料覆蓋原不利觀察。若要接入四案例或修改研究方法，先另立計畫及影響評估。

@@ -1,0 +1,886 @@
+{
+  "schema_version": "1",
+  "status": "pass",
+  "scope": "Twelve CLI engineering replays; no research parameter changes or general accuracy claim.",
+  "runtime": {
+    "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.1"
+  },
+  "records": [
+    {
+      "implementation": "stepped",
+      "fixture": "arc_360",
+      "support": {
+        "name": "arc_360",
+        "points": 64,
+        "distinct_points": 64,
+        "rank": 3,
+        "array_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8",
+        "csv_sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070",
+        "truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "exit_code": 0,
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "step_threshold_met",
+        "reason": null,
+        "solver_called": true,
+        "estimate": {
+          "center": [
+            1.9999999999999996,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "raw_result": {
+          "center": [
+            1.9999999999999996,
+            -3.0
+          ],
+          "radius": 10.0,
+          "residual_max": 1.7763568394002505e-15,
+          "iterations": 1
+        },
+        "input_csv_sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070",
+        "convergence": {
+          "status": "recorded_step_threshold_met",
+          "step_threshold_met": true,
+          "iterations": 1,
+          "last_step_norm": 3.745478245071823e-15,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            127.04821147280504,
+            113.1370849898476,
+            7.124041097678253
+          ],
+          "condition_number": 17.833728038740603,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": []
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "arc_360",
+      "support": {
+        "name": "arc_360",
+        "points": 64,
+        "distinct_points": 64,
+        "rank": 3,
+        "array_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8",
+        "csv_sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070",
+        "truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "exit_code": 0,
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "step_threshold_met",
+        "reason": null,
+        "solver_called": true,
+        "estimate": {
+          "center": [
+            1.9999999999999996,
+            -3.0
+          ],
+          "radius": 10.0
+        },
+        "raw_result": {
+          "center": [
+            1.9999999999999996,
+            -3.0
+          ],
+          "radius": 10.0,
+          "residual_max": 1.7763568394002505e-15,
+          "iterations": 1
+        },
+        "input_csv_sha256": "254ad18a61909a0d111669b1ca65a7dffb944ffac79fe11107424f7546679070",
+        "convergence": {
+          "status": "recorded_step_threshold_met",
+          "step_threshold_met": true,
+          "iterations": 1,
+          "last_step_norm": 3.745478245071823e-15,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "4b30f761373b2f1c9fac83a30d4d253bf2eb3b62f365faef4007dad02695bec8"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            127.04821147280504,
+            113.1370849898476,
+            7.124041097678253
+          ],
+          "condition_number": 17.833728038740603,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": []
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "stepped",
+      "fixture": "arc_10",
+      "support": {
+        "name": "arc_10",
+        "points": 64,
+        "distinct_points": 64,
+        "rank": 3,
+        "array_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411",
+        "csv_sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b",
+        "truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "exit_code": 0,
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "step_threshold_met",
+        "reason": null,
+        "solver_called": true,
+        "estimate": {
+          "center": [
+            2.0000000000000306,
+            -2.9999999999999996
+          ],
+          "radius": 9.99999999999997
+        },
+        "raw_result": {
+          "center": [
+            2.0000000000000306,
+            -2.9999999999999996
+          ],
+          "radius": 9.99999999999997,
+          "residual_max": 1.7763568394002505e-15,
+          "iterations": 2
+        },
+        "input_csv_sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b",
+        "convergence": {
+          "status": "recorded_step_threshold_met",
+          "step_threshold_met": true,
+          "iterations": 2,
+          "last_step_norm": 1.725537996329829e-15,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            197.8777312295493,
+            7.937195635650266,
+            0.007802909365674233
+          ],
+          "condition_number": 25359.480926439173,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": []
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "arc_10",
+      "support": {
+        "name": "arc_10",
+        "points": 64,
+        "distinct_points": 64,
+        "rank": 3,
+        "array_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411",
+        "csv_sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b",
+        "truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "exit_code": 0,
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "step_threshold_met",
+        "reason": null,
+        "solver_called": true,
+        "estimate": {
+          "center": [
+            2.0000000000000306,
+            -2.9999999999999996
+          ],
+          "radius": 9.99999999999997
+        },
+        "raw_result": {
+          "center": [
+            2.0000000000000306,
+            -2.9999999999999996
+          ],
+          "radius": 9.99999999999997,
+          "residual_max": 1.7763568394002505e-15,
+          "iterations": 2
+        },
+        "input_csv_sha256": "380055b53a451fb95e13c979a43093ef5e188527de187fee822450dfbc264a2b",
+        "convergence": {
+          "status": "recorded_step_threshold_met",
+          "step_threshold_met": true,
+          "iterations": 2,
+          "last_step_norm": 1.725537996329829e-15,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "0aa7e82a1d4e96f39f84db65102bb9f2abeb7492524854ed448433a067fe3411"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            197.8777312295493,
+            7.937195635650266,
+            0.007802909365674233
+          ],
+          "condition_number": 25359.480926439173,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": []
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "stepped",
+      "fixture": "arc_0.001",
+      "support": {
+        "name": "arc_0.001",
+        "points": 64,
+        "distinct_points": 64,
+        "rank": 3,
+        "array_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29",
+        "csv_sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61",
+        "truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "exit_code": 3,
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "iteration_limit_without_step_threshold",
+        "reason": null,
+        "solver_called": true,
+        "estimate": null,
+        "raw_result": {
+          "center": [
+            2.0000134973702,
+            -2.9999999999987157
+          ],
+          "radius": 9.9999865026298,
+          "residual_max": 3.552713678800501e-15,
+          "iterations": 100
+        },
+        "input_csv_sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61",
+        "convergence": {
+          "status": "iteration_limit_without_step_threshold",
+          "step_threshold_met": false,
+          "iterations": 100,
+          "last_step_norm": 2.0442546018542205e-06,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            198.0706944483075,
+            0.0007944211540214425,
+            7.798928828477499e-11
+          ],
+          "condition_number": 2539716656024.0903,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+          "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": []
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "arc_0.001",
+      "support": {
+        "name": "arc_0.001",
+        "points": 64,
+        "distinct_points": 64,
+        "rank": 3,
+        "array_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29",
+        "csv_sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61",
+        "truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "exit_code": 3,
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "iteration_limit_without_step_threshold",
+        "reason": null,
+        "solver_called": true,
+        "estimate": null,
+        "raw_result": {
+          "center": [
+            2.0000134973702,
+            -2.9999999999987157
+          ],
+          "radius": 9.9999865026298,
+          "residual_max": 3.552713678800501e-15,
+          "iterations": 100
+        },
+        "input_csv_sha256": "999ced8c869069a523c0e9853036f6e660c83e392bf5534f8809f824b09e6d61",
+        "convergence": {
+          "status": "iteration_limit_without_step_threshold",
+          "step_threshold_met": false,
+          "iterations": 100,
+          "last_step_norm": 2.0442546018542205e-06,
+          "step_threshold": 1e-13,
+          "iteration_limit": 100,
+          "observation_error": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "6606371f1c46adb0a3c8a878e11ceae73f262d0da1cd11a551357c1f7f52cc29"
+        },
+        "numeric_support": {
+          "initializer_rank": 3,
+          "required_rank": 3,
+          "singular_values": [
+            198.0706944483075,
+            0.0007944211540214425,
+            7.798928828477499e-11
+          ],
+          "condition_number": 2539716656024.0903,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        },
+        "source": {
+          "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+          "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d",
+          "iteration_limit": 100,
+          "step_threshold": 1e-13
+        },
+        "warnings": []
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "stepped",
+      "fixture": "arc_0.00001",
+      "support": {
+        "name": "arc_0.00001",
+        "points": 64,
+        "distinct_points": 64,
+        "rank": 2,
+        "array_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd",
+        "csv_sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e",
+        "truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "exit_code": 2,
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "insufficient_support",
+        "reason": "initializer_numerical_rank_below_three",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "input_csv_sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e",
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd"
+        },
+        "numeric_support": {
+          "initializer_rank": 2,
+          "required_rank": 3,
+          "singular_values": [
+            198.07069445023896,
+            7.94421154185096e-06,
+            7.525189493967363e-15
+          ],
+          "condition_number": 2.6321024156139076e+16,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        }
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "arc_0.00001",
+      "support": {
+        "name": "arc_0.00001",
+        "points": 64,
+        "distinct_points": 64,
+        "rank": 2,
+        "array_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd",
+        "csv_sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e",
+        "truth": {
+          "center": [
+            2.0,
+            -3.0
+          ],
+          "radius": 10.0
+        }
+      },
+      "exit_code": 2,
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "insufficient_support",
+        "reason": "initializer_numerical_rank_below_three",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "input_csv_sha256": "978bb57c68c36948b5cac77d5ffe4fc09f450c81cb85fee849d99cde5867699e",
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "786e5bccbf6c9f8ff9bdd40e39150ab1e20b0de4681dc830e40c6041e3d732fd"
+        },
+        "numeric_support": {
+          "initializer_rank": 2,
+          "required_rank": 3,
+          "singular_values": [
+            198.07069445023896,
+            7.94421154185096e-06,
+            7.525189493967363e-15
+          ],
+          "condition_number": 2.6321024156139076e+16,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        }
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "stepped",
+      "fixture": "collinear",
+      "support": {
+        "name": "collinear",
+        "points": 64,
+        "distinct_points": 64,
+        "rank": 2,
+        "array_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88",
+        "csv_sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa",
+        "truth": null
+      },
+      "exit_code": 2,
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "insufficient_support",
+        "reason": "initializer_numerical_rank_below_three",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "input_csv_sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa",
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88"
+        },
+        "numeric_support": {
+          "initializer_rank": 2,
+          "required_rank": 3,
+          "singular_values": [
+            18.766174681306577,
+            8.000000000000002,
+            0.0
+          ],
+          "condition_number": null,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        }
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "collinear",
+      "support": {
+        "name": "collinear",
+        "points": 64,
+        "distinct_points": 64,
+        "rank": 2,
+        "array_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88",
+        "csv_sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa",
+        "truth": null
+      },
+      "exit_code": 2,
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "insufficient_support",
+        "reason": "initializer_numerical_rank_below_three",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "input_csv_sha256": "00a62a74365291b9f877f132188786aa09abc861fcbc36f0f706b3d6776312fa",
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 64,
+          "array_sha256": "de6bbf0635306f42f8821d91e311c80126a0a9b956f7275d85a0d7695aa3ac88"
+        },
+        "numeric_support": {
+          "initializer_rank": 2,
+          "required_rank": 3,
+          "singular_values": [
+            18.766174681306577,
+            8.000000000000002,
+            0.0
+          ],
+          "condition_number": null,
+          "condition_number_used_as_cutoff": false,
+          "rank_rule": "original initializer basis and numpy.linalg.lstsq(rcond=None)"
+        }
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "stepped",
+      "fixture": "coincident",
+      "support": {
+        "name": "coincident",
+        "points": 64,
+        "distinct_points": 1,
+        "rank": 1,
+        "array_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c",
+        "csv_sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea",
+        "truth": null
+      },
+      "exit_code": 2,
+      "report": {
+        "schema_version": "1",
+        "implementation": "stepped",
+        "status": "insufficient_support",
+        "reason": "at_least_three_distinct_points_required",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "input_csv_sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea",
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 1,
+          "array_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c"
+        }
+      },
+      "checks": "pass",
+      "errors": []
+    },
+    {
+      "implementation": "lbracket",
+      "fixture": "coincident",
+      "support": {
+        "name": "coincident",
+        "points": 64,
+        "distinct_points": 1,
+        "rank": 1,
+        "array_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c",
+        "csv_sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea",
+        "truth": null
+      },
+      "exit_code": 2,
+      "report": {
+        "schema_version": "1",
+        "implementation": "lbracket",
+        "status": "insufficient_support",
+        "reason": "at_least_three_distinct_points_required",
+        "solver_called": false,
+        "estimate": null,
+        "raw_result": null,
+        "input_csv_sha256": "910f59b66916eda5105e82f3e6e0769aaff9634d62b20a12a27c3020c2283dea",
+        "convergence": {
+          "status": "not_observed",
+          "step_threshold_met": null
+        },
+        "verification": {
+          "status": "not_assessed",
+          "parameters_verified": false,
+          "reason": "No independent parameter reference or calibrated uncertainty bound was supplied."
+        },
+        "runtime": {
+          "python": "3.14.2",
+          "numpy": "2.4.1"
+        },
+        "input": {
+          "points": 64,
+          "computation_dtype": "float64",
+          "distinct_points": 1,
+          "array_sha256": "27fa1caf5119d3e653bbc045bdf59a70827b9b0d3605ba49b2886e7432b7c91c"
+        }
+      },
+      "checks": "pass",
+      "errors": []
+    }
+  ],
+  "bindings": [
+    {
+      "path": "tools/geometry_guard.py",
+      "sha256": "b540f86b6ba1da0cb197ed9f322ece0ebdbeca393739ecb8a341f0e389afd580"
+    },
+    {
+      "path": "tools/check-circle-fit.py",
+      "sha256": "dc5263d36c0473fdd571e01577bddbe001baa4458a837d966727985db688431d"
+    },
+    {
+      "path": "tools/verify-circle-replays.py",
+      "sha256": "e9c8307eabf150222c069896f5ffa3b58eac1ebe9bcde45ca0d2b0714c670dc2"
+    },
+    {
+      "path": "examples/guarded-circle/manifest.json",
+      "sha256": "3d1578db9e6d1a7d0b087902ae39bb4a4a6c9efc1169a267be39547096a2f5a6"
+    }
+  ],
+  "status_counts": {
+    "step_threshold_met": 4,
+    "iteration_limit_without_step_threshold": 2,
+    "insufficient_support": 6
+  }
+}

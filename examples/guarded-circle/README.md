@@ -9,3 +9,5 @@
 ```
 
 在記錄環境此命令回傳代碼2，報告為初始化數值支撐不足，不是要求修改參數重試。[完整契約、其他狀態與未知項目](../../docs/geometry-guard.md)
+
+v0.1.8起可用 `python tools/verify-circle-replays.py --output-dir runs/new-circle-replays` 一次實際執行全部六份CSV×兩份實作。CI也執行此入口，核對每份報告的狀態／退出碼及未驗證旗標；所有契約檢查正確才是重放器成功，不代表12次原求解皆成功。六份CSV與manifest維持v0.1.7位元。

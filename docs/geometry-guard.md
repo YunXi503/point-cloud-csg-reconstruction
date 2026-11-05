@@ -2,6 +2,8 @@
 
 [首頁](../README.md) · [事前計畫](geometry-guard-plan.md) · [原函式診斷](geometry-diagnostics.md) · [再次審查](geometry-guard-review.md) · [12項實際重放](../validation/2026-11-05/geometry-guard-results.json)
 
+v0.1.8的[四項收尾計畫](geometry-guard-hardening-plan.md)、[現行CLI重放](../validation/2026-11-06/circle-replay-results.json)及[修正後審查](geometry-guard-hardening-review.md)另存，v0.1.7原始重放紀錄保留。
+
 這個外層讓呼叫端知道輸入為何被拒絕，以及原求解器有沒有達到原步長停止門檻。它沒有修正原半徑、換求解器或改研究參數；達到步長門檻仍不代表參數準確。四案例的既有入口維持原流程，未自動套用本外層。
 
 ## 執行與輸入
@@ -22,7 +24,7 @@ Python 呼叫可使用 `tools/geometry_guard.py` 的 `guarded_circle_fit(values,
 1. 要求 N×2 實數數值，拒絕布林、複數、字串及 object 陣列；使用 float64，拒絕 NaN／Infinity。
 2. 要求至少三個不同點，檢查原初始化的 `[2U,2V,1]` 與 `U²+V²` 是否有限。只計算不同點數，不刪除重複列、不改順序或權重。
 3. 使用原初始化同一矩陣及 `numpy.linalg.lstsq(rcond=None)` 的回報秩；小於3時拒絕。這是該float64初始化的數值支撐契約，不是物理可識別性的充分必要證明。條件數只列診斷，沒有新增角度或條件數切點。
-4. 非線性執行前核對兩份原始碼的固定SHA及保護來源目錄，再由AST讀取100輪與1e−13停止門檻。來源漂移不會更新期望SHA來放行。
+4. 非線性執行前核對兩份原始碼的固定SHA及保護來源目錄，再由AST讀取100輪與1e−13停止門檻。來源清單必須為list，每筆為有非空path與64字元小寫sha256的object，路徑不能重複；格式損壞或來源漂移均回報blocked_source_version，不更新期望SHA來放行。
 5. 外部只讀 trace 觀察原函式最後 step；不修改函式或重新求解。已有 debugger／trace 時不覆蓋，回報無法觀察。正常及例外路徑都恢復先前trace。此診斷介面適合單執行緒呼叫，不作並行服務、完整coverage環境或效能量測承諾。
 6. 檢查原回傳結構、有限值、正半徑及迭代範圍。只有可靠觀察到最後步長≤原門檻，才提供 `estimate`。第100輪恰好達標也按步長判斷，不只看輪數。
 
@@ -44,6 +46,18 @@ Python 呼叫可使用 `tools/geometry_guard.py` 的 `guarded_circle_fit(values,
 `solver_called` 指是否呼叫原非線性求解器；輸入預檢本身會執行初始化矩陣的線性秩檢查。`raw_result` 是原回傳供診斷的參數、最大殘差與輪數，不能拿它繞過狀態當作合格估計。`convergence.step_threshold_met` 未觀察時為 null，不用小殘差或輪數填成 true。
 
 **所有報告均為 `verification.parameters_verified=false`**。本API沒有接受獨立參數參考或經校準的不確定度界線，也不設小殘差即可通過的準確度規則。JSON的非有限診斷值以字串保留，不產生非標準NaN數字或捏造0。
+
+v0.1.8統一每份API／CLI寫出報告的共同欄位：`schema_version`、`implementation`、`status`、`reason`、`solver_called`、`estimate`、`raw_result`、`convergence`、`verification`、`runtime`及`input_csv_sha256`。來源錯誤與CSV解析失敗也保留這些欄位；不適用的reason／幾何／SHA為null，尚未觀察到的停止條件為null。CLI只讀一次輸入，讀到位元即記SHA；無法讀取則SHA為null。API直接接陣列時沒有CSV，該欄同為null。錯誤細節、input與numeric_support等依實際狀態附加，不捏造缺失資料。命令列參數錯誤、輸出路徑無法建立或既有輸出保護屬CLI使用／寫檔錯誤，不保證另有可寫出的JSON報告。此為schema_version=1的相容欄位補齊，既有狀態與退出碼不變。
+
+## 自動重放與CI
+
+```powershell
+./.venv/Scripts/python.exe tools/verify-circle-replays.py --output-dir runs/new-circle-replays
+```
+
+重放器固定核對原六份CSV與manifest SHA，逐筆實際呼叫兩份實作，保存12份報告、stdout／stderr及circle-replay-results.json。它依當次數值秩、最後步長、原停止條件與退出碼查驗，不要求跨硬體固定4／2／6分類或完全相同的迭代數。整圓／10度既有良態fixture仍以1e−6解析參數誤差查驗；短弧只保留實際狀態，不新增角度／條件數或準確度切點。
+
+單一CLI的退出碼2／3可以是預期拒絕；重放器檢查分類正確才回傳0。缺欄位、來源／資料漂移、退出碼不一致、未達門檻卻有estimate或宣告參數已驗證，會讓重放器及CI失敗。CI保留全部重放報告與日誌，與65項單元測試及原四案例兩條回歸路徑分開呈現。
 
 ## 同資料重放：拒絕與修正不可混稱
 
