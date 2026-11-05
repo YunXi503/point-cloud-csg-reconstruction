@@ -13,8 +13,8 @@
   "same_input_sha_as_current_case": 17,
   "known_historical_input_byte_version_differences": 6,
   "failed_run_missing_historical_input_sha": 1,
-  "local_documentation_links_checked": 278,
-  "new_text_files_credential_signature_scanned": 36,
+  "local_documentation_links_checked": 281,
+  "changed_or_new_text_files_credential_signature_scanned": 47,
   "review_documents": [
     "docs/contributions.md",
     "docs/results.md",

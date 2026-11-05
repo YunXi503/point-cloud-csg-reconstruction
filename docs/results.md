@@ -91,3 +91,5 @@
 原摘要 JSON 沒有逐次列出原始輸入 SHA，但本輪從原工作區找回 23 組已完成執行的歷史 MethodInferenceManifest，輸入 SHA、變體程式與輸出雜湊均可對上。[逐次綁定紀錄](../provenance/sensitivity-input-bindings.json)保留來源與核對結果；未完成的 L型板 1.5 mm 執行沒有留下對應 manifest，其輸入雜湊仍列為[待補資訊](missing-information.md)。
 
 其中 17 組完成執行的輸入 SHA 與現行案例綁定相同；盲孔六角座的 6 組敏感度執行使用 fdd5c384… 輸入位元版本，對應本庫保留的原 _fixed.csv。現行品質與重現路徑使用 0d69141f… 的已找回版本。這兩組位元版本分開記錄，敏感度結果依其當時的輸入與基準解讀，不當成現行輸入版本已重新實測的證據。
+
+原方法 manifest 與模型A的六份敏感度 manifest 含非標準 NaN 記號，來源位元保持不變，位置列於[歷史 JSON 解析備註](../provenance/historical-json-notes.json)。本頁品質摘要及逐次綁定另以嚴格 JSON 提供，NaN 欄位不被解讀或填成數值結果。

@@ -707,7 +707,9 @@
     "historical_input_sha_recovered": 23,
     "input_bindings": "provenance/sensitivity-input-bindings.json",
     "remaining_missing_run_count": 1,
-    "known_input_version_difference_run_count": 6
+    "known_input_version_difference_run_count": 6,
+    "historical_nonstandard_json_manifests": 6,
+    "json_parser_notes": "provenance/historical-json-notes.json"
   },
   "original_core_sources_preserved": 211,
   "additional_archived_evidence_sources": [

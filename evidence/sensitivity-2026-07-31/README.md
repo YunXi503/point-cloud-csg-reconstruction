@@ -8,6 +8,8 @@
 
 盲孔六角座的 6 組歷史輸入為 fdd5c384…，與現行核心重現綁定的 0d69141f… 位元版本不同；逐次紀錄保留此差異，不將它改寫為相符。其他 17 組完成執行與現行案例輸入 SHA 相同。
 
+模型A的 6 份方法 manifest 含非標準 NaN 記號，原檔保留供追溯；用嚴格 JSON 解析前請參照[解析備註](../../provenance/historical-json-notes.json)。逐次輸入、程式與輸出綁定另有可嚴格解析的 JSON。
+
 - [原始報告](report.md)
 - [原始摘要 JSON](sensitivity_results.json)
 - [逐次 manifest](manifests)

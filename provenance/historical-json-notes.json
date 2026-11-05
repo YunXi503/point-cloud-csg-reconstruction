@@ -3,5 +3,101 @@
     "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/MethodInferenceManifest_Model_A_chapter3.json",
     "issue": "Unexpected token 'N', ...\"derived\": NaN,\r\n    \"... is not valid JSON",
     "preserved_without_changes": true
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_1.50.json",
+    "issue": "Historical non-standard NaN/Infinity token; not directly parseable as strict JSON",
+    "fields": [
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.oblique_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      },
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.outer_cylinder_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      }
+    ],
+    "preserved_without_changes": true,
+    "sha256": "17a8762fb8688180e8c6101447b5e552025b0648328a8407a8046bcc623330fa"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.00.json",
+    "issue": "Historical non-standard NaN/Infinity token; not directly parseable as strict JSON",
+    "fields": [
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.oblique_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      },
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.outer_cylinder_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      }
+    ],
+    "preserved_without_changes": true,
+    "sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__distance_mm_2.50.json",
+    "issue": "Historical non-standard NaN/Infinity token; not directly parseable as strict JSON",
+    "fields": [
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.oblique_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      },
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.outer_cylinder_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      }
+    ],
+    "preserved_without_changes": true,
+    "sha256": "d7f09cee9b132e730de5820b727d939d0246fe22060e473cc57bce0cc9efc633"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.90.json",
+    "issue": "Historical non-standard NaN/Infinity token; not directly parseable as strict JSON",
+    "fields": [
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.oblique_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      },
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.outer_cylinder_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      }
+    ],
+    "preserved_without_changes": true,
+    "sha256": "82d7afa705d44642acd7cc00be2909948b7704626d5742fd75ab5a2a499b18a3"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.93.json",
+    "issue": "Historical non-standard NaN/Infinity token; not directly parseable as strict JSON",
+    "fields": [
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.oblique_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      },
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.outer_cylinder_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      }
+    ],
+    "preserved_without_changes": true,
+    "sha256": "cd146a2143ca8f3814038be999fd34794b764d1a5536592035cec3c60af786cc"
+  },
+  {
+    "path": "evidence/sensitivity-2026-07-31/manifests/Model_A__normal_dot_0.96.json",
+    "issue": "Historical non-standard NaN/Infinity token; not directly parseable as strict JSON",
+    "fields": [
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.oblique_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      },
+      {
+        "json_path": "$.data_derived_not_fixed_thresholds.outer_cylinder_axial_normal_gap_threshold_data_derived",
+        "literal": "NaN"
+      }
+    ],
+    "preserved_without_changes": true,
+    "sha256": "7ea8ddde74499fa9c2830f5be6cd4aa531ad3d89d8c18f8f0d0eedacc96e7039"
   }
 ]

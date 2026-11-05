@@ -23,6 +23,7 @@
 | 三項補全是否引入研究程式變更？ | 原有 211 個核心來源、資料、既有輸出、圖件與論文保留；新增 25 份歷史證據也納入來源雜湊保護 | [來源清單](../provenance/file-manifest.csv)及[本輪查核](../validation/2026-11-05/portfolio-completion-audit.json) |
 | 原始資料與文件入口是否易讀？ | 原始識別字、數值與 SHA 留在機器可讀資料，連結用途改為中文，首頁提供四個新文件入口 | [結果來源](results.md)與 README |
 | 新增的歷史報告會不會被 Git 改換行？ | evidence/ 與 research/、archive/ 同樣停用文字換行轉換，保留來源位元；新撰說明仍使用 LF | [.gitattributes](../.gitattributes)及發布前 checkout 查核 |
+| 歷史 JSON 是否可被嚴格解析器直接讀取？ | 找出模型A六份歷史敏感度 manifest 的 NaN 記號，保留原檔並補上欄位位置；品質摘要與輸入綁定使用嚴格 JSON | [解析備註](../provenance/historical-json-notes.json) |
 
 ## 完成判準與保留項目
 

@@ -34,4 +34,4 @@
 
 圖庫依相同 Word／PDF 版本取出 22 個正式圖號與四張候選表，來源與 SHA-256 見 [thesis-figures.json](../provenance/thesis-figures.json)。圖庫使用正式論文現行圖號，不沿用工作資料夾的歷史編號。
 
-3 個歷史 csproj 缺件保留供追溯，現行來源連結入口不依賴其缺件。Hex Base with Holed 保持獨立歷史資產，不與盲孔模型靜默合併。1 個歷史 JSON 的 NaN 保留原位元並另列解析問題。
+3 個歷史 csproj 缺件保留供追溯，現行來源連結入口不依賴其缺件。Hex Base with Holed 保持獨立歷史資產，不與盲孔模型靜默合併。1 份原方法 manifest 與新收錄的 6 份敏感度 manifest 含 NaN，原位元保留，欄位及解析問題另列於 historical-json-notes.json。

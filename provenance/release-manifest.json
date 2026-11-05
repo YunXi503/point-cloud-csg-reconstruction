@@ -2362,8 +2362,8 @@
     },
     {
       "path": "docs/completion-review.md",
-      "bytes": 3878,
-      "sha256": "e5ae219d0734172d2440253e0026c10b97d0ca93739286e17afc02d6be0384eb"
+      "bytes": 4140,
+      "sha256": "32bcb0427b78868517b86f2c959933166b46113494bd1472c9e4433400440873"
     },
     {
       "path": "docs/contributions.md",
@@ -2442,8 +2442,8 @@
     },
     {
       "path": "docs/results.md",
-      "bytes": 10281,
-      "sha256": "56e6a1c841e7a0ac94c0deb190a14ccad2fb9b1a77dad4c323292de51b0cba78"
+      "bytes": 10582,
+      "sha256": "cb409d1bcc5fdc3b140345436cbfb08becc10e954531261406fca8789650e1bc"
     },
     {
       "path": "docs/second-pass-review.md",
@@ -2452,8 +2452,8 @@
     },
     {
       "path": "docs/source-versions.md",
-      "bytes": 3011,
-      "sha256": "ee10c9bfb521e63483cbac2e93be37cd076f2b07deaaaec0fc4a8597affa6ea5"
+      "bytes": 3099,
+      "sha256": "d9ffa5def6d5f65ad87835136e2bc96d3b20c909f40c499d396ed5f58ca2af4c"
     },
     {
       "path": "docs/validation.md",
@@ -2577,8 +2577,8 @@
     },
     {
       "path": "evidence/sensitivity-2026-07-31/README.md",
-      "bytes": 1024,
-      "sha256": "84612f73dc6d4f5c81c1f09bbfc8306b26e3780fd18a0b47defee92b17679b11"
+      "bytes": 1271,
+      "sha256": "55b01b3d52fd5f304a2113a7e19ab5a8d1023de437c3ca85c59fa38503c1102a"
     },
     {
       "path": "evidence/sensitivity-2026-07-31/report.md",
@@ -2647,8 +2647,8 @@
     },
     {
       "path": "provenance/historical-json-notes.json",
-      "bytes": 281,
-      "sha256": "a3eeabe1d6506dff507cd72f60c67222573410dbb4e809c6e2632dae5770c11d"
+      "bytes": 4245,
+      "sha256": "90185cef0d0a329069cffcc4ca767f6749210ca81f786687fe3622cb733e06e9"
     },
     {
       "path": "provenance/history/csharp-project-audit-preparation-2026-11-05.json",
@@ -2692,8 +2692,8 @@
     },
     {
       "path": "provenance/quality-summary.json",
-      "bytes": 38545,
-      "sha256": "c0de34a17a3d228c64a9faa2ee1c4d4b4ef7257b52a405294fd9387da0851bf2"
+      "bytes": 38661,
+      "sha256": "9ec5423cb7aa89c9f325df4bc3e4ace198ebee4492389935f2ed2aff4641dbf3"
     },
     {
       "path": "provenance/recovered-blind-input.json",
@@ -3697,8 +3697,8 @@
     },
     {
       "path": "validation/2026-11-05/portfolio-completion-audit.json",
-      "bytes": 890,
-      "sha256": "c75b12a562f6bb7bffe4d45625b753208b50a64ed5afd62d1fdb0fbda392aee9"
+      "bytes": 901,
+      "sha256": "ad454bc9894788290eeb16e2194cfb6240d667a99e74ddb98202c7c11d837356"
     },
     {
       "path": "validation/2026-11-05/publication-audit.json",
