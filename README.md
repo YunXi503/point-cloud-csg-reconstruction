@@ -6,25 +6,27 @@
 
 Rule-based geometric inference from sampled point normals, with preserved research sources, reproducible examples, and explicit data provenance.
 
-作者：**黃云析 Yun-Hsi Huang**。在指導教授鄭宗明提供的研究概念與題目方向下，我完成研究實作、零件與資料建立、程式開發、實驗驗證、圖件及論文撰寫。公開作品的工程整理使用 Codex 協助，範圍見[我的工作與技術取捨](docs/contributions.md)。
+作者：**黃云析 Yun-Hsi Huang**；指導教授：**鄭宗明 Tzong-Ming Cheng**。作者完成研究實作、資料建立、程式開發、實驗驗證、圖件及論文撰寫，指導教授提供研究概念與題目方向。[研究分工與技術取捨](docs/contributions.md)
 
 [執行專案](#快速開始) · [品質證據](docs/results.md) · [共通規則與案例條件](docs/method-scope.md) · [論文圖庫](docs/figures/README.md) · [待補資訊](docs/missing-information.md)
 
-[論文公式到實作](docs/method-traceability.md) · [參數尺度依據](docs/parameter-evidence.md) · [敏感度標記勘誤](docs/sensitivity-errata.md) · [本輪追查審查](docs/gap-followup-review.md)
+[論文公式到實作](docs/method-traceability.md) · [參數尺度依據](docs/parameter-evidence.md) · [敏感度標記勘誤](docs/sensitivity-errata.md) · [文件一致性查驗](docs/documentation-validation.md)
 
-## 面試官快速閱讀
+## 研究導讀
 
-[研究問題與三項貢獻](docs/research-overview.md) · [貫穿孔／盲孔判別導讀](docs/hole-end-conditions.md) · [三類拓樸關係例解](docs/topology-rules.md)。依定稿論文與現存程式／CSV整理，列明實作差異及缺少的驗證；[來源與再次審查](docs/research-guides-review.md)。
+| 導讀 | 可查內容 |
+|---|---|
+| [研究問題與三項貢獻](docs/research-overview.md) | 研究目標、處理階段、現存成果及證據邊界 |
+| [貫穿孔／盲孔判別](docs/hole-end-conditions.md) | 端面關係、封底代理、深度計算及兩份案例實作的差異 |
+| [三類拓樸關係](docs/topology-rules.md) | 距離／方向條件、分支順序、保存面組與未涵蓋區間 |
+| [四個案例各自驗證什麼](docs/case-validation-map.md) | 幾何情境、面／邊／候選組成與不能外推的結論 |
+| [擬合殘差與STL網格](docs/residuals-and-stl.md) | 面級殘差讀回、可能機制及尚缺的因果對照 |
 
-[四個案例各自驗證什麼](docs/case-validation-map.md) · [擬合殘差與STL網格](docs/residuals-and-stl.md)。補充案例目的及面級殘差讀回，將觀察、可能解釋與未驗證歸因分開；[本輪再次審查](docs/case-residual-review.md)。
+[演算法、成本與測試證據](docs/interview-guide.md) · [L型板逐層程式導讀](docs/case-walkthrough.md)。可從 LB_D01 回查來源面、端面關係、尺寸與布林角色。
 
-[演算法、成本與測試證據](docs/interview-guide.md) · [L型板逐層程式導讀](docs/case-walkthrough.md)。可從 LB_D01 回查來源面、端面關係、尺寸與布林角色；成本分析與尚缺量測分開呈現。
+[本機時間／記憶體與函式規模量測](docs/measurements.md) · [退化與收斂診斷](docs/geometry-diagnostics.md)。解析 fixture 中短弧未達停止條件及小殘差卻有半徑誤差的結果均保留，量測範圍與限制分別列明。
 
-[本機時間／記憶體與函式規模量測](docs/measurements.md) · [退化與收斂診斷](docs/geometry-diagnostics.md)。解析 fixture 中短弧未達停止條件及小殘差卻有半徑誤差的結果均保留，[再次審查](docs/measurement-review.md)說明量測邊界。
-
-[可選圓擬合外層](docs/geometry-guard.md)補上二維輸入檢查、原步長停止狀態與未驗證旗標。短弧迭代未達標或初始化數值支撐不足時不提供合格估計；保留原誤差紀錄，[外層審查](docs/geometry-guard-review.md)說明拒絕與半徑修正的差別。
-
-v0.1.8另補來源清單格式防護與共同錯誤報告，將12項CLI重放納入CI，並修正導讀的歷史測試數量標記。[四項修正與再次審查](docs/geometry-guard-hardening-review.md)
+[可選圓擬合外層](docs/geometry-guard.md)提供二維輸入檢查、原步長停止狀態與參數未驗證旗標。迭代未達標或初始化數值支撐不足時拒絕提供合格估計；此外層不接管四案例流程，也不修正原半徑估計。
 
 ## 四個受控案例的既有品質結果
 
@@ -98,7 +100,7 @@ flowchart LR
     D --> E[階層式 CSG 推論]
 ```
 
-本次入口從已生成的點雲與法向量 CSV 開始，涵蓋分割至推論；STL／Blender 取樣來源一併保留，尚未納入此次自動重跑。
+自動入口從已生成的點雲與法向量 CSV 開始，涵蓋分割至推論；STL／Blender 取樣來源一併保留，尚未納入自動重跑。
 
 | 階段 | 可檢查的輸出 |
 |---|---|
@@ -139,9 +141,7 @@ node tools/verify-package.mjs
 ./.venv/Scripts/python.exe tools/verify-circle-replays.py --output-dir runs/new-circle-replays
 ```
 
-[GitHub Actions](https://github.com/YunXi503/point-cloud-csg-reconstruction/actions/workflows/verify.yml) 檢查封裝、錯誤防護及兩種重現路徑。[維護說明](docs/maintaining.md) · [第二輪審查與改善](docs/second-pass-review.md)
-
-[作品補全審查](docs/portfolio-review.md) 記錄本輪三項補全與後續工作；[再次審查紀錄](docs/completion-review.md)說明從招聘閱讀與維護者角度做的查核及改善。
+[GitHub Actions](https://github.com/YunXi503/point-cloud-csg-reconstruction/actions/workflows/verify.yml) 檢查封裝、65項單元測試、12項圓擬合CLI重放及兩種四案例重現路徑。[查驗判準與證據](docs/validation.md) · [維護說明](docs/maintaining.md)
 
 ## 研究範圍
 

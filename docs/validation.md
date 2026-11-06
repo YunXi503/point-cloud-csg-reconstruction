@@ -1,44 +1,34 @@
-# 查驗判準與實測
+# 查驗判準與證據
 
-執行前的預測與證偽條件見 [EXPERIMENT_LOG.md](../EXPERIMENT_LOG.md)。本輪原研究演算法及門檻未改寫。
+[首頁](../README.md) · [文件一致性](documentation-validation.md) · [研究品質](results.md) · [資料缺口](missing-information.md)
 
-| 項目 | 判準 | 實測與依據 |
+輸出回歸、幾何品質與軟體契約是不同層次的證據。公開入口保存原研究來源與參數，使用固定輸入及參考輸出；各版執行報告記錄當時實際結果。[GitHub Actions](https://github.com/YunXi503/point-cloud-csg-reconstruction/actions/workflows/verify.yml)提供每個提交的現行查驗結果。
+
+## 現行檢查範圍
+
+| 項目 | 判準 | 保存證據與限制 |
 |---|---|---|
-| 原研究來源保存 | 複本與固定來源 SHA-256 相同 | 原有 211 個核心來源與新增 25 份歷史敏感度證據，加上本輪五份追溯來源，共 241 檔受保護 |
-| 既有分割 CSV→Python | 四範例各 6 項核心 SHA-256 相符 | 搬移環境 24／24，相符紀錄可逐檔查對 |
-| 點雲 CSV→C#→Python | 初始 CSV 與所有核心輸出相符 | 搬移環境 4 個初始檔＋24／24 核心輸出相符 |
-| NumPy 修補變更 | 只改一個套件，核心輸出不變 | 僅 2.4.0→2.4.1，其餘版本不變，各 24 項相符 |
-| 乾淨安裝 | 不繼承系統套件，完整 lock 安裝成功 | 新目錄新建 venv，13 項套件及 pip check 通過 |
-| 錯誤偵測 | 漂移、越界、未知檔及覆寫須被阻擋 | 11 個軟體防護測試通過，不用研究假數據 |
-| 論文快照 | 實際 Word 唯讀開啟，來源及公式保留 | 75 頁，oMath 97→97，來源及副本雜湊未改變 |
+| 原研究來源 | 241份保護來源逐檔SHA-256相符 | [來源清單](../provenance/copied-sources.json)；不可改參考雜湊來接受來源漂移 |
+| 整包內容 | 所有列入封裝的檔案與發布manifest相符 | [封裝清單](../provenance/release-manifest.json)與verify-package.mjs；未知檔或內容漂移須報錯 |
+| 單元測試 | 65項，失敗數為0 | [v0.1.8報告](../validation/2026-11-06/guard-hardening-tests.json)；17防護、4解析基準、2量測工具、34圓擬合外層／CLI、8重放檢查器 |
+| CLI集成重放 | 六份CSV×兩實作，共12項契約檢查 | [v0.1.8報告](../validation/2026-11-06/circle-replay-results.json)；含預期拒絕，參數仍未驗證；與65項單元測試分開計數 |
+| 既有分割CSV→Python | 四例各6項核心輸出SHA相符，共24項 | [v0.1.8推論報告](../validation/2026-11-06/guard-hardening-reproduction.json) |
+| 點雲CSV→C#→Python | 四個初始CSV及24項核心輸出相符 | [v0.1.8完整路徑報告](../validation/2026-11-06/guard-hardening-pipeline.json)；初始內容比較與位元SHA分欄，保存結果兩者均相符 |
 
-## 原始紀錄
+65項為v0.1.8起的單元測試合計，沒有因新增研究導讀增加。歷史v0.1.5／v0.1.6／v0.1.7分別為17／23／51項；CI對目前提交重新執行現行檢查，歷史報告保留其版本意義。
 
-- [搬移後 Python 推論](../validation/2026-11-05/relocated-inference-results.json)
-- [搬移後點雲至推論](../validation/2026-11-05/relocated-pipeline-results.json)
-- [環境單一變動](../validation/2026-11-05/environment-transition.json)
-- [初次未相符來源／runtime](../validation/2026-11-05/initial-source-binding-attempt.json)
-- [盲孔輸入來源及直接重生證據](../provenance/recovered-blind-input.json)
-- [論文匯出](../validation/2026-11-05/thesis-export.json)
+## 研究品質與工程量測
 
-## 結論範圍
+四例各10000點，曲面殘差與候選參數誤差由[品質總表](results.md)及保存CSV／幾何參考報告支持。公開重現入口比對既有輸出，未重新建立獨立網格參考或執行歷史五層幾何驗收。兩條入口使用相同四例，不能合併為八個研究模型或辨識準確率。
 
-v0.1.3 的[品質摘要](results.md)另以既有 CSV／驗證報告彙整四例指標，與指定 Word 表 4.10 核對。這是現存資料的統計與來源查核，歷史敏感度及獨立網格驗證沒有在本輪重新執行。
+[時間與工作集量測](measurements.md)保存四例兩階段各三次，共24次執行，84項初始／核心輸出SHA全符；函式規模量測只涵蓋region_growing。峰值工作集是單程序的Windows原生指標，不是程序樹總記憶體。20項曲面行為及12項圓收斂觀察包含退化與未達原停止條件的結果，詳見[幾何診斷](geometry-diagnostics.md)，不能寫成全部求解成功。
 
-兩種入口使用相同四個範例，不能合併為更多獨立實驗或準確率。比對證明指定來源、資料及環境的輸出一致，不等同重新驗證全文每個方法敘述、所有舊註解或任意新模型的能力。
+## 環境、論文與歷史來源
 
-初始分類來源各有既有規則，來源版本不同的輸出差異未經內部消融歸因。runtime 比對亦不推定當年使用何者。STL 重取樣、真實掃描及一般 CAD 實體輸出不屬已驗證範圍。
+- [搬移後推論](../validation/2026-11-05/relocated-inference-results.json)及[完整路徑](../validation/2026-11-05/relocated-pipeline-results.json)：含空格及中文的新目錄中重新安裝13項鎖定套件後查驗。
+- [環境單一變動](../validation/2026-11-05/environment-transition.json)：NumPy 2.4.0→2.4.1，其餘版本不變，兩側核心輸出各24項相符。
+- [初次來源／runtime未相符紀錄](../validation/2026-11-05/initial-source-binding-attempt.json)及[盲孔輸入追溯](../provenance/recovered-blind-input.json)：區分歷史來源、現行來源及輸入位元版本。
+- [論文匯出紀錄](../validation/2026-11-05/thesis-export.json)：當時Word唯讀開啟為75頁，oMath為97；公開PDF為另記雜湊的閱讀快照。[版本說明](../paper/README.md)
+- [敏感度勘誤](sensitivity-errata.md)：原標記與保存SHA的差異另列，舊紀錄不回寫；未重跑全部24組敏感度或補造失敗收據。
 
-## v0.1.4 缺口追查
-
-只讀比對 138 個歷史輸出及 120 個變體來源；敏感度標記的五筆差異另列勘誤，基準與原檔不變。現有密度資料的 32 項描述值與三個角度重算一致，不是新增取樣或重建實驗。[本輪查核](../validation/2026-11-05/gap-followup-audit.json) · [再次審查](gap-followup-review.md)
-
-## v0.1.5 面試官角度補強
-
-本輪補上兩個工程入口的 Python 本地依賴來源預檢，17 項防護測試在 Python 3.14.2 通過。重新驗證既有四例，兩種入口的 24 個核心輸出均相符，完整路徑的四個初始 CSV 亦逐位元相同；這是入口改動的回歸查驗，沒有新增研究方法或案例。
-
-[工程查核](../validation/2026-11-05/interview-review-audit.json) · [既有分割 CSV 路徑](../validation/2026-11-05/interview-inference-results.json) · [點雲完整路徑](../validation/2026-11-05/interview-pipeline-results.json) · [面試導讀](interview-guide.md)
-
-## v0.1.6 工程實測
-
-23項單元測試（17防護、4解析幾何、2量測工具）；四例兩階段各三次，共24次，84項輸出SHA全符；region_growing四種N各三次；20項曲面與12項圓收斂行為觀察。後者不是全部成功的數值測試。原241份來源保持不變。[實測](measurements.md) · [診斷](geometry-diagnostics.md) · [再次審查](measurement-review.md)
+輸出位元一致只支持指定來源、資料及環境下的回歸，不能代替真實掃描、未知零件泛化、STL重新取樣、文獻優越性或CAD實體布林驗證。小殘差與步長達標也不保證參數準確。

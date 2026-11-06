@@ -1,6 +1,6 @@
 # 研究問題與貢獻：從點雲到可追溯的結構資訊
 
-[首頁](../README.md) · [孔洞端部判別](hole-end-conditions.md) · [拓樸規則例解](topology-rules.md) · [本輪來源與數值](../provenance/research-guides-evidence.json)
+[首頁](../README.md) · [孔洞端部判別](hole-end-conditions.md) · [拓樸規則例解](topology-rules.md) · [來源與數值](../provenance/research-guides-evidence.json)
 
 另可沿[四案例驗證目的](case-validation-map.md)與[殘差／STL解讀](residuals-and-stl.md)查各例能支撐的結論，以及仍需對照驗證的解釋。
 
@@ -27,7 +27,7 @@ flowchart LR
     D --> E[階層式 CSG 推論]
 ```
 
-這是論文的五階段閱讀順序；目前自動入口從已提供的點雲／法向量CSV開始，STL／Blender重新取樣未納入本輪重跑。
+這是論文的五階段閱讀順序；目前自動入口從已提供的點雲／法向量CSV開始，未包含STL／Blender重新取樣。
 
 ## 三項研究貢獻與可核對的成果
 
@@ -39,10 +39,10 @@ flowchart LR
 | 整合面型、面間關係與孔洞端部條件為可檢核規則 | 平面／圓柱擬合、三類拓樸關係、內外法向量及端部支撐規則 | 看[拓樸例解](topology-rules.md)及[BH_D01盲孔判定](hole-end-conditions.md)；共通概念與案例程式差異分開說明 |
 | 提供缺少CAD圖檔時的前期結構資訊整理方式 | 四個受控案例能保存構件、孔洞、尺寸及布林角色，供後續建模閱讀 | [既有品質報告](results.md)與[論文圖庫](figures/README.md)可查結果；下游建模效率、CAD實體及製造應用仍未實測 |
 
-研究實作由黃云析完成，指導教授鄭宗明提供研究概念及題目方向；[作者分工](contributions.md)與研究貢獻是不同問題。近期可攜入口、測試、CI與本頁導讀屬作者授權以Codex協助的公開工程整理，沒有回溯宣稱為原論文成果。
+研究實作由黃云析完成，指導教授鄭宗明提供研究概念及題目方向；[研究分工與技術取捨](contributions.md)另列可查成果。可攜入口、測試、CI及GitHub導讀屬研究完成後的工程整理，與原論文成果分開記錄。
 
 ## 已有證據能支撐到哪裡
 
-四個STL生成案例涵蓋共軸圓柱、正交板件、多軸特徵與盲孔端部條件。四例的輸出重現、既有研究品質及工程單元測試分別見[查驗](validation.md)、[品質](results.md)及[面試導讀](interview-guide.md)，用途分開：位元一致不等於對任意零件的辨識正確率，軟體fixture也不增加研究案例數。
+四個STL生成案例涵蓋共軸圓柱、正交板件、多軸特徵與盲孔端部條件。四例的輸出重現、既有研究品質及工程單元測試分別見[查驗](validation.md)、[品質](results.md)及[演算法與驗證](interview-guide.md)，用途分開：位元一致不等於對任意零件的辨識正確率，軟體fixture也不增加研究案例數。
 
 尚缺的資料：文獻或同資料基準下的優越性證據、真實掃描／未知零件驗證、實際CAD建模與工業效益紀錄，以及部分原始開發決策。這些內容沒有由研究目的或四個指定案例推定為已完成。[完整缺口](missing-information.md)

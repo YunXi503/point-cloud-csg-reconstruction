@@ -1,6 +1,6 @@
 # L型板：從點雲到候選與 CSG 的程式導讀
 
-[面試官閱讀入口](interview-guide.md) · [機器可讀數值與 SHA](../provenance/interview-evidence.json) · [L型板論文圖件](figures/l-bracket.md)
+[演算法與驗證](interview-guide.md) · [機器可讀數值與 SHA](../provenance/interview-evidence.json) · [L型板論文圖件](figures/l-bracket.md)
 
 LB_D01與BH_D01的端部、深度及兩份實作差異，另見[貫穿孔／盲孔判別導讀](hole-end-conditions.md)。
 
@@ -73,7 +73,7 @@ T  = Difference(C1, LB_D02)
 
 以上 B1 等名稱只是閱讀用中間名稱，沒有宣稱 JSON 已輸出這些二元節點，也沒有宣稱已完成可編輯 CAD 實體。[表示契約](csg-representation.md)詳列格式差異。
 
-## 5. 面試時如何證明這段說明
+## 5. 來源與結果核對
 
 從本頁的候選 ID 回查 RelatedClusters，再查 FaceSummary 與 TopologyEdges；檔案 SHA、數值及來源位置都在 interview-evidence.json。若執行原方法，使用 README 的既有入口與新 runs/ 目錄，逐檔核對六項核心輸出。
 

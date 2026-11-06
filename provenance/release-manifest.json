@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-case-residual-guides-2026-11-06",
+  "packaging_version": "documentation-consistency-2026-11-06",
   "date": "2026-11-06",
   "manifest_excludes": [
     "provenance/release-manifest.json"
@@ -2397,8 +2397,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 7311,
-      "sha256": "2a4eafa91e04ba671a0a14aecc6c1227e77bf8d63e2bc07b03d0b09e86b5f39a"
+      "bytes": 7941,
+      "sha256": "35598c42fc9ba8c56634d864b64949c2f6e27e451da3ef67ab2ff98e08d2a57e"
     },
     {
       "path": "data/recovered/README.md",
@@ -2428,12 +2428,12 @@
     {
       "path": "docs/case-validation-map.md",
       "bytes": 4580,
-      "sha256": "4ac33e5d7909cfc4a5d6be067af3f60e6fbb0744d121a16adba33bb82baf8893"
+      "sha256": "cf5a2035fdfa1c4ae73983cef14b4f0ca728feff210a8b7eed4b1c04c66fc163"
     },
     {
       "path": "docs/case-walkthrough.md",
-      "bytes": 6906,
-      "sha256": "6196103f4e533f3df9854993d44212f8de3116ac063ebfb46c1b5656ff7e6ec5"
+      "bytes": 6891,
+      "sha256": "493f3a54285071319ebcd71f651a15c8b9490a9b98692987308e51431327a9e5"
     },
     {
       "path": "docs/completion-review.md",
@@ -2442,8 +2442,8 @@
     },
     {
       "path": "docs/contributions.md",
-      "bytes": 2739,
-      "sha256": "833d8d656edbd555e603cc6cf5bf39815fc353fe467df19aca2a39c5e1fabe06"
+      "bytes": 2655,
+      "sha256": "d97c2dd8fb40274c9050372eb9049d2c33cd880700eeeae9155a57a225c4a2d8"
     },
     {
       "path": "docs/csg-representation.md",
@@ -2454,6 +2454,11 @@
       "path": "docs/development-notes.md",
       "bytes": 2090,
       "sha256": "0dd95304d077f13501c3744274b672ac3d8932dad93118a17042c57e2b7d3a92"
+    },
+    {
+      "path": "docs/documentation-validation.md",
+      "bytes": 3149,
+      "sha256": "331ce166ce74da68bfacf4ac13102e0329e2b696df3923703ca4a87e5c88cf87"
     },
     {
       "path": "docs/environment.md",
@@ -2532,8 +2537,8 @@
     },
     {
       "path": "docs/interview-guide.md",
-      "bytes": 9855,
-      "sha256": "35fb1f3e6947d15352253407c7652c8e88fd1361f7d4690eaa35188e1d487012"
+      "bytes": 7999,
+      "sha256": "9df0c43016a1810f378d79cf4a2f4f938d8e9c5214d91f17b26da49e45cafbd3"
     },
     {
       "path": "docs/maintaining.md",
@@ -2567,8 +2572,8 @@
     },
     {
       "path": "docs/missing-information.md",
-      "bytes": 5127,
-      "sha256": "de7d2821a12ed1b1242daf8c6bb3066c9d22995cca474472e76e825eefb6a79a"
+      "bytes": 5038,
+      "sha256": "0b2715db88ee9e505e419ff9edbf9740f58cc749fc2d1dda32db99f40a0cbacb"
     },
     {
       "path": "docs/packaging-qa.md",
@@ -2592,13 +2597,13 @@
     },
     {
       "path": "docs/research-overview.md",
-      "bytes": 4874,
-      "sha256": "ecb0d8a5999a0f85e3a6a486b1a2946a707d1a3483a6eba0edb25f4b289a6cfd"
+      "bytes": 4836,
+      "sha256": "40b321c5486bd92992fbea2737ef70d12f06b4e9a1658ff4af79511ba33be37b"
     },
     {
       "path": "docs/residuals-and-stl.md",
-      "bytes": 6252,
-      "sha256": "545211d272fac775decc3739633c3618f8c1a6a76572b2b95c4ef12bf32845a6"
+      "bytes": 6182,
+      "sha256": "d76d31d4ccc664b6d803ad8665ee9f0599fc592b660a8ebd69b6fcc9d9aea04c"
     },
     {
       "path": "docs/results.md",
@@ -2622,13 +2627,13 @@
     },
     {
       "path": "docs/topology-rules.md",
-      "bytes": 4424,
-      "sha256": "f9da274c7b08f59701105dd2bb9a3629b25463c67f70e1dbc9271c19b8f1acba"
+      "bytes": 4518,
+      "sha256": "473b420beeb5b65ef1d0d248e10490a5ba13d2c8d9b6ccf508df3e7eadbc3e1b"
     },
     {
       "path": "docs/validation.md",
-      "bytes": 3772,
-      "sha256": "114affe7cd1a559ced8ee83722e7fc0fd3189f3127c9a213e3252a0f69be08b3"
+      "bytes": 3965,
+      "sha256": "f6087827cb1e5b2abd5e01e684e876a3baa80ce6bfc9e55aeef548f5531c1b51"
     },
     {
       "path": "evidence/sensitivity-2026-07-31/manifests/Blind_Hole_Hex_Base__distance_mm_1.50.json",
@@ -2916,6 +2921,11 @@
       "sha256": "7b664fe780b5f49e8a4cfbb7fddeb5e6bc8915bc10d23b4af94c390410e8bce7"
     },
     {
+      "path": "provenance/history/source-versions-portfolio-case-residual-guides-2026-11-06.json",
+      "bytes": 26041,
+      "sha256": "7ae585cc603b42411c40f1ec3a0b97d142444d4e723a15cd435660c5572cc084"
+    },
+    {
       "path": "provenance/history/source-versions-portfolio-evidence-2026-11-05.json",
       "bytes": 21425,
       "sha256": "d22a5b0fde5bec2da4e38cae020165503092a324ecb219f6599d6b8f2acfce83"
@@ -3027,8 +3037,8 @@
     },
     {
       "path": "provenance/source-versions.json",
-      "bytes": 26041,
-      "sha256": "7ae585cc603b42411c40f1ec3a0b97d142444d4e723a15cd435660c5572cc084"
+      "bytes": 26937,
+      "sha256": "2aa98ab985970844f3387e365d83ad19a30bdf5868e21dc014f8d3579e05f3c1"
     },
     {
       "path": "provenance/thesis-figures.json",
@@ -3037,8 +3047,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10951,
-      "sha256": "78c527ec2c77b9500deb6185ec738a6e15cfeb565f45022d29e391e20c4267d6"
+      "bytes": 10495,
+      "sha256": "395a14c56a64247141f7912bba88b25f5b14555b82f566f26e69b0a6f5e84967"
     },
     {
       "path": "requirements-observed.txt",
@@ -4249,6 +4259,11 @@
       "path": "validation/2026-11-06/circle-replay-results.json",
       "bytes": 28519,
       "sha256": "f243409ecaebdc6b0b3a7980eaa532a82263163318e0458a2c68f65d642032ed"
+    },
+    {
+      "path": "validation/2026-11-06/documentation-audit.json",
+      "bytes": 10623,
+      "sha256": "82ec3ebcad757beb84be0b0f908f3a69c91daed56b143aeba2469b6ce4af0fef"
     },
     {
       "path": "validation/2026-11-06/guard-hardening-audit.json",

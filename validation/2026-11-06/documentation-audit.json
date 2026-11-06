@@ -1,0 +1,240 @@
+{
+  "schema_version": "1",
+  "status": "pass",
+  "date": "2026-11-06",
+  "base_commit": "6bc5ed06f746903abfb3e748e0590996fae813c4",
+  "documents": [
+    "README.md",
+    "docs/research-overview.md",
+    "docs/hole-end-conditions.md",
+    "docs/topology-rules.md",
+    "docs/case-validation-map.md",
+    "docs/residuals-and-stl.md",
+    "docs/interview-guide.md",
+    "docs/case-walkthrough.md",
+    "docs/contributions.md",
+    "docs/missing-information.md",
+    "docs/validation.md",
+    "docs/documentation-validation.md"
+  ],
+  "protected_sources_checked": 241,
+  "baseline_files_frozen": 455,
+  "all_frozen_hashes_match": true,
+  "all_code_tests_inputs_parameters_assets_prior_evidence_unchanged": true,
+  "source_bindings": [
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+      "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/FaceSummary_L_Bracket_chapter3_verified.csv",
+      "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/TopologyEdges_L_Bracket_chapter3_verified.csv",
+      "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385"
+    },
+    {
+      "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+      "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c"
+    },
+    {
+      "path": "research/tools/infer_lbracket_chapter3_method.py",
+      "sha256": "a4a728f94b805d0fcdf45eefe937aed55442bfff69e9aeff39184ba3d817d9ec"
+    },
+    {
+      "path": "research/tools/infer_blind_hole_hex_base_chapter3_method.py",
+      "sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a"
+    },
+    {
+      "path": "research/tools/infer_model_a_chapter3_method.py",
+      "sha256": "8d9dcaa64389dfdbe29124894ebc060badab71e710e49b22c025299e1c22efa0"
+    },
+    {
+      "path": "examples/cases.json",
+      "sha256": "86fd78b2bdc3a0e9fe1fadd68f9a7bcc650c453f775d728f5210b283d857b844"
+    },
+    {
+      "path": "provenance/quality-summary.json",
+      "sha256": "9ec5423cb7aa89c9f325df4bc3e4ace198ebee4492389935f2ed2aff4641dbf3"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+      "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+      "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+      "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "sha256": "b2c4bc4bd647d384f45524e0cd1ab9211e10a5d4b6dfc1a1481190858c6d4278"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "sha256": "89c14010be012c93f6fd714e866cd3e72df290746ae39267de0e1f4da10e988b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/FaceSummary_Model_A_chapter3_verified.csv",
+      "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/TopologyEdges_Model_A_chapter3_verified.csv",
+      "sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+      "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/MethodInferenceManifest_Model_A_chapter3.json",
+      "sha256": "6ccb0aa5fd2d69ff788bf6103f0107b9a1a1a8667361e253c8391e6aa78813aa"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "sha256": "ceaab04a23aeacfe66a087c92e0fe4c081517e0c37d28cb941a0ceef593f5f83"
+    },
+    {
+      "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+      "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d"
+    },
+    {
+      "path": "research/零件/均勻點雲CODE.txt",
+      "sha256": "a118c297696fc88d38365786c71185845c9c1c0280625a2f0794dbae24a80c71"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/CandidateMapping_Stepped_Cylinder.csv",
+      "sha256": "a05cab621483b79a1bfb82dba2861c9eebbfb01c9002a27e22810685d1ed4ea6"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/ValidationAgainstIndependentTruth_Stepped_Cylinder.json",
+      "sha256": "32a0934d7a5ba1751ae68b1c3a0d2fefd978ce935372bee6b2985919f9683d93"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/ValidationSummary_L_Bracket_chapter3.json",
+      "sha256": "7f2392929df702fde6722bbcd002c95fe45f9cff69fda8a02a5771bcb969e8da"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/CandidateMapping_Model_A_chapter3.csv",
+      "sha256": "fa1708a784e0f85e32f926142d4c1236f1d297d5774caecda2812e5d50834c71"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/ValidationAgainstIndependentTruth_Model_A.json",
+      "sha256": "d48bd649ab6a5e6458c132c83234eab898f12b7c38e56baf7378b58068563771"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/CandidateMapping_Blind_Hole_Hex_Base_chapter3.csv",
+      "sha256": "e51d7beada619be1bc83fadecd42b15d0ea4087138c4f1bc3ad4eb4e643210cb"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/ValidationAgainstIndependentTruth_Blind_Hole_Hex_Base.json",
+      "sha256": "1e98703b7065f27283fdca6fd62e9b042f395d868a4eb3cecda5770fd66a5833"
+    }
+  ],
+  "word_sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+  "formal_pdf_sha256": "84ce6bfa90fd8b91f7a2a9bb7831f955eba462624e459f226dc05fee2ae57d21",
+  "word_omath": 97,
+  "thesis_excerpt_paragraphs_matched": 184,
+  "case_readback": [
+    {
+      "id": "stepped-cylinder",
+      "points": 10000,
+      "faces": 6,
+      "edges": 6,
+      "candidates": 3,
+      "endcap_count": 6,
+      "endcap_min_distance_mm": "0.090927925",
+      "endcap_max_distance_mm": "0.752016069",
+      "endcaps_between_2_and_5_mm": 0,
+      "parameter_error_max_mm": "0.0329478642158989",
+      "tables_match": true
+    },
+    {
+      "id": "l-bracket",
+      "points": 10000,
+      "faces": 12,
+      "edges": 24,
+      "candidates": 5,
+      "endcap_count": 6,
+      "endcap_min_distance_mm": "0.185197354",
+      "endcap_max_distance_mm": "0.514264767",
+      "endcaps_between_2_and_5_mm": 0,
+      "parameter_error_max_mm": "0.03219468418853921",
+      "tables_match": true
+    },
+    {
+      "id": "model-a",
+      "points": 10000,
+      "faces": 13,
+      "edges": 26,
+      "candidates": 6,
+      "endcap_count": 10,
+      "endcap_min_distance_mm": "0.089992558",
+      "endcap_max_distance_mm": "0.666540043",
+      "endcaps_between_2_and_5_mm": 0,
+      "parameter_error_max_mm": "0.03226474021644066",
+      "tables_match": true
+    },
+    {
+      "id": "blind-hole-hex-base",
+      "points": 10000,
+      "faces": 12,
+      "edges": 22,
+      "candidates": 3,
+      "endcap_count": 4,
+      "endcap_min_distance_mm": "0.096519062",
+      "endcap_max_distance_mm": "0.726819499",
+      "endcaps_between_2_and_5_mm": 0,
+      "parameter_error_max_mm": "0.0322393430013328",
+      "tables_match": true
+    }
+  ],
+  "face_counts": {
+    "plane": 31,
+    "cylinder": 12
+  },
+  "endcap_count": 26,
+  "endcaps_between_2_and_5_mm": 0,
+  "hole_candidates_and_saved_cap_support_match": true,
+  "function_locations_and_recorded_constants_match": true,
+  "test_source_counts": {
+    "test_circle_replays.py": 8,
+    "test_geometry_contracts.py": 4,
+    "test_geometry_guard.py": 34,
+    "test_process_metrics.py": 2,
+    "test_tool_guards.py": 17
+  },
+  "unit_tests": 65,
+  "cli_replays": 12,
+  "tests_added": 0,
+  "local_link_targets_checked": 249,
+  "code_line_anchors_checked": 29,
+  "markdown_fragments_checked": 1,
+  "external_urls": [
+    "https://github.com/YunXi503/point-cloud-csg-reconstruction/actions/workflows/verify.yml",
+    "https://github.com/YunXi503/point-cloud-csg-reconstruction/actions/workflows/verify.yml/badge.svg"
+  ],
+  "reader_documentation_language_check": "pass",
+  "no_new_research_experiment": true,
+  "issues": []
+}

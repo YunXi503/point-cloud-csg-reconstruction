@@ -36,7 +36,7 @@
 | 面間關係 | TopologyEdges | 逐面組核對距離、方向與關係型別，見[拓樸例解](topology-rules.md) |
 | 候選與布林角色 | PrimitiveCandidates | 核對來源面、尺寸及Union／Difference；以LB_D01與BH_D01作[具體對照](hole-end-conditions.md) |
 | CSG表示 | 各例JSON與論文圖 | 對照候選葉節點及組合；前三例分組JSON與盲孔二元JSON的差異見[表示契約](csg-representation.md) |
-| 歷史獨立參考品質 | 保存的五層驗收與候選參數誤差報告 | 既有報告均記錄PASS，本輪只核對來源與內容，未重跑建立參考或幾何驗收 |
+| 歷史獨立參考品質 | 保存的五層驗收與候選參數誤差報告 | 既有報告均記錄PASS；公開重現入口未重新建立獨立參考或執行該幾何驗收 |
 | 工程輸出回歸 | 兩條公開入口及CI | 確認固定來源／輸入／環境下的輸出SHA相符；兩入口查同四例，不是八個研究模型 |
 
 各案例圖件與資料可由[階梯狀圓柱](figures/stepped-cylinder.md)、[L型板](figures/l-bracket.md)、[模型A](figures/model-a.md)、[盲孔六角座](figures/blind-hole-hex-base.md)進入；[機器可讀對照](../provenance/case-residual-evidence.json)列出本頁計數、候選、方法紀錄及來源SHA。
