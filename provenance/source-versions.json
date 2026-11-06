@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-research-guides-2026-11-06",
+  "packaging_version": "portfolio-case-residual-guides-2026-11-06",
   "date": "2026-11-06",
   "timezone": "Asia/Taipei",
   "source_policy": "Original research algorithms and parameters unchanged. Four exact original build-metadata files restored; historical input bytes recovered solely by newline serialization. Local compilation and inference reproduction recorded separately.",
@@ -367,8 +367,8 @@
     "unconfirmed thesis versions other than the explicitly recorded public snapshot",
     "unselected experimental variants and duplicate rerun directories"
   ],
-  "previous_packaging_version": "portfolio-guard-hardening-2026-11-06",
-  "software_version": "0.1.9",
+  "previous_packaging_version": "portfolio-research-guides-2026-11-06",
+  "software_version": "0.1.10",
   "research_sources_unchanged_from": "v0.1.0",
   "thesis_gallery": {
     "index": "docs/figures/README.md",
@@ -479,5 +479,20 @@
     "existing_unit_tests_preserved": 65,
     "existing_cli_replays_preserved": 12,
     "scope": "Documentation and existing-data readback only; final Word/PDF, all code/tests, research parameters, inputs, assets and prior results unchanged."
+  },
+  "case_residual_guides": {
+    "documents": [
+      "docs/case-validation-map.md",
+      "docs/residuals-and-stl.md"
+    ],
+    "evidence": "provenance/case-residual-evidence.json",
+    "review": "docs/case-residual-review.md",
+    "audit": "validation/2026-11-06/case-residual-audit.json",
+    "base_commit": "812fd2b6f3431697eb743abcb5c668eb0dccd994",
+    "scope": "Documentation and saved face-summary readback only; no new sampling, fit, inference, mesh-resolution experiment or causal attribution.",
+    "protected_sources": 241,
+    "tests_added": 0,
+    "existing_unit_tests_preserved": 65,
+    "existing_cli_replays_preserved": 12
   }
 }

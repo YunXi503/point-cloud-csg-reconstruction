@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-research-guides-2026-11-06",
+  "packaging_version": "portfolio-case-residual-guides-2026-11-06",
   "date": "2026-11-06",
   "manifest_excludes": [
     "provenance/release-manifest.json"
@@ -2397,8 +2397,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 6750,
-      "sha256": "192be05dfc6ac8fcd803b7b0b5369b5a598aac7bbc6cfed75b95c1f62b342862"
+      "bytes": 7311,
+      "sha256": "2a4eafa91e04ba671a0a14aecc6c1227e77bf8d63e2bc07b03d0b09e86b5f39a"
     },
     {
       "path": "data/recovered/README.md",
@@ -2419,6 +2419,16 @@
       "path": "docs/build-status.md",
       "bytes": 1222,
       "sha256": "4dfcb59bcaa0799109e3bfa43248777942891b43c80637b778ac6aaea3faae92"
+    },
+    {
+      "path": "docs/case-residual-review.md",
+      "bytes": 2914,
+      "sha256": "bfec80dd93d98aa85234305f0ea5302779151a56394232f741aa7bf0d0cedbc2"
+    },
+    {
+      "path": "docs/case-validation-map.md",
+      "bytes": 4580,
+      "sha256": "4ac33e5d7909cfc4a5d6be067af3f60e6fbb0744d121a16adba33bb82baf8893"
     },
     {
       "path": "docs/case-walkthrough.md",
@@ -2442,8 +2452,8 @@
     },
     {
       "path": "docs/development-notes.md",
-      "bytes": 1798,
-      "sha256": "df15ed04c4ca950a264563b8f2e827021c90b7d448c6f14ec47e8d3f108b5e3c"
+      "bytes": 2090,
+      "sha256": "0dd95304d077f13501c3744274b672ac3d8932dad93118a17042c57e2b7d3a92"
     },
     {
       "path": "docs/environment.md",
@@ -2522,8 +2532,8 @@
     },
     {
       "path": "docs/interview-guide.md",
-      "bytes": 9607,
-      "sha256": "2b1999d83ebcef2d625ab3e997395066b1822b84d2c59dc90b2c861be9ff4996"
+      "bytes": 9855,
+      "sha256": "35fb1f3e6947d15352253407c7652c8e88fd1361f7d4690eaa35188e1d487012"
     },
     {
       "path": "docs/maintaining.md",
@@ -2557,8 +2567,8 @@
     },
     {
       "path": "docs/missing-information.md",
-      "bytes": 4763,
-      "sha256": "2ca80ab3dadbe514355454c8a33649960c2320ef47a09cc066f3e388767d610a"
+      "bytes": 5127,
+      "sha256": "de7d2821a12ed1b1242daf8c6bb3066c9d22995cca474472e76e825eefb6a79a"
     },
     {
       "path": "docs/packaging-qa.md",
@@ -2582,13 +2592,18 @@
     },
     {
       "path": "docs/research-overview.md",
-      "bytes": 4705,
-      "sha256": "95d7eed602fce7d9b006210b91ab128e6c4797d0b001e33018a50d0a6c5d73b9"
+      "bytes": 4874,
+      "sha256": "ecb0d8a5999a0f85e3a6a486b1a2946a707d1a3483a6eba0edb25f4b289a6cfd"
+    },
+    {
+      "path": "docs/residuals-and-stl.md",
+      "bytes": 6252,
+      "sha256": "545211d272fac775decc3739633c3618f8c1a6a76572b2b95c4ef12bf32845a6"
     },
     {
       "path": "docs/results.md",
-      "bytes": 10816,
-      "sha256": "77ffa18dd2413935bf959b14a6481a13452e0cee33cd179467d92adc98b99f01"
+      "bytes": 11039,
+      "sha256": "5e828b850de1b171da5759e34042a1c5bd281586f68b6024370719ed9ca00ed6"
     },
     {
       "path": "docs/second-pass-review.md",
@@ -2851,6 +2866,11 @@
       "sha256": "1f867bb8877e0a44207b37386719199ea63beff6778706378e663a0f603ae10c"
     },
     {
+      "path": "provenance/case-residual-evidence.json",
+      "bytes": 60770,
+      "sha256": "693f07d1e708e87baf93364a0e59634890ae704d8c3e7d6e93fef9b1d12bc07c"
+    },
+    {
       "path": "provenance/contribution-statement.json",
       "bytes": 748,
       "sha256": "5b68ca7082b6540ee6575648942e2dd211fb56abe3da7211df00233820b6ee51"
@@ -2924,6 +2944,11 @@
       "path": "provenance/history/source-versions-portfolio-measurements-2026-11-05.json",
       "bytes": 23136,
       "sha256": "fe9e7c7f260e7560221308832c528527a11990f3c31dde2ea78db7f818cefd22"
+    },
+    {
+      "path": "provenance/history/source-versions-portfolio-research-guides-2026-11-06.json",
+      "bytes": 25390,
+      "sha256": "e982a20035437a69f72a7b635d5c5cff47f492f5dcf0fb954faaa3ebf0448784"
     },
     {
       "path": "provenance/history/source-versions-portfolio-review-2026-11-05.json",
@@ -3002,8 +3027,8 @@
     },
     {
       "path": "provenance/source-versions.json",
-      "bytes": 25390,
-      "sha256": "e982a20035437a69f72a7b635d5c5cff47f492f5dcf0fb954faaa3ebf0448784"
+      "bytes": 26041,
+      "sha256": "7ae585cc603b42411c40f1ec3a0b97d142444d4e723a15cd435660c5572cc084"
     },
     {
       "path": "provenance/thesis-figures.json",
@@ -3012,8 +3037,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10682,
-      "sha256": "a94f4d8083ae55eb3e7c5728732e5949d10253534a65ada357111338a35712e2"
+      "bytes": 10951,
+      "sha256": "78c527ec2c77b9500deb6185ec738a6e15cfeb565f45022d29e391e20c4267d6"
     },
     {
       "path": "requirements-observed.txt",
@@ -4214,6 +4239,11 @@
       "path": "validation/2026-11-05/thesis-version-comparison.json",
       "bytes": 555,
       "sha256": "93f61bd701bcf5e2e3049552670a1e71a80442446266fd88e1f34d8352b628bb"
+    },
+    {
+      "path": "validation/2026-11-06/case-residual-audit.json",
+      "bytes": 1522,
+      "sha256": "76a420a978fc37221c4fc64357d058f80001b09af744201be4c1a519ee3a2ce0"
     },
     {
       "path": "validation/2026-11-06/circle-replay-results.json",

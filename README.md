@@ -16,6 +16,8 @@ Rule-based geometric inference from sampled point normals, with preserved resear
 
 [研究問題與三項貢獻](docs/research-overview.md) · [貫穿孔／盲孔判別導讀](docs/hole-end-conditions.md) · [三類拓樸關係例解](docs/topology-rules.md)。依定稿論文與現存程式／CSV整理，列明實作差異及缺少的驗證；[來源與再次審查](docs/research-guides-review.md)。
 
+[四個案例各自驗證什麼](docs/case-validation-map.md) · [擬合殘差與STL網格](docs/residuals-and-stl.md)。補充案例目的及面級殘差讀回，將觀察、可能解釋與未驗證歸因分開；[本輪再次審查](docs/case-residual-review.md)。
+
 [演算法、成本與測試證據](docs/interview-guide.md) · [L型板逐層程式導讀](docs/case-walkthrough.md)。可從 LB_D01 回查來源面、端面關係、尺寸與布林角色；成本分析與尚缺量測分開呈現。
 
 [本機時間／記憶體與函式規模量測](docs/measurements.md) · [退化與收斂診斷](docs/geometry-diagnostics.md)。解析 fixture 中短弧未達停止條件及小殘差卻有半徑誤差的結果均保留，[再次審查](docs/measurement-review.md)說明量測邊界。

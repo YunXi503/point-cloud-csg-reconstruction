@@ -2,6 +2,8 @@
 
 [首頁](../README.md) · [孔洞端部判別](hole-end-conditions.md) · [拓樸規則例解](topology-rules.md) · [本輪來源與數值](../provenance/research-guides-evidence.json)
 
+另可沿[四案例驗證目的](case-validation-map.md)與[殘差／STL解讀](residuals-and-stl.md)查各例能支撐的結論，以及仍需對照驗證的解釋。
+
 本頁依定稿論文第一章、5.2節與現存程式／CSV整理，不增寫論文或研究結果。正式題名為「使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究」。研究使用STL生成的點雲與法向量，現行公開成果為CSG推論表示。
 
 ## 使用情境與要解決的問題

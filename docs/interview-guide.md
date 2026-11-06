@@ -1,5 +1,7 @@
 # 軟體／演算法面試官閱讀與審查
 
+回答「為何選這四個模型」或「約0.03 mm殘差能說明什麼」時，可查[案例目的對照](case-validation-map.md)與[殘差證據邊界](residuals-and-stl.md)，避免將案例描述或可能歸因說成泛化／因果結論。
+
 [首頁](../README.md) · [L型板逐層導讀](case-walkthrough.md) · [來源與數值](../provenance/interview-evidence.json) · [仍缺資料](missing-information.md)
 
 研究內容可先讀[問題與貢獻總覽](research-overview.md)，再沿[孔洞端部判別](hole-end-conditions.md)與[拓樸規則例解](topology-rules.md)查實際面組、來源與判斷限制。這三頁整理既有論文／程式，沒有新增研究實驗。

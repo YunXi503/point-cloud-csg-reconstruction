@@ -1,0 +1,1636 @@
+{
+  "schema_version": "1",
+  "date": "2026-11-06",
+  "base_commit": "812fd2b6f3431697eb743abcb5c668eb0dccd994",
+  "scope": "Existing face-summary readback only; no new sampling, fit, inference, controlled mesh-resolution experiment, or causal attribution.",
+  "thesis": {
+    "word_workspace_path": "output/使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究-11379108-260811.docx",
+    "word_sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+    "formal_pdf_workspace_path": "output/使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究-11379108-260811.pdf",
+    "formal_pdf_sha256": "84ce6bfa90fd8b91f7a2a9bb7831f955eba462624e459f226dc05fee2ae57d21",
+    "omath": 97,
+    "extraction_note": "w:t paragraph text only; OMML formulas not transcribed; body paragraph indexes are zero-based, not page numbers."
+  },
+  "thesis_excerpts": {
+    "3.3": {
+      "heading": "3.3 點雲生成與法向量資料",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 549,
+          "text": "本研究以STL網格模型生成點雲與法向量資料。首先將模型表面處理為三角形網格，依各三角形面積建立累積分布；再依面積權重挑選取樣面，並以三頂點之隨機權重線性組合於三角形內產生取樣點。此作法使取樣點分布於模型表面，並保留各點所屬三角形面的幾何方向。"
+        },
+        {
+          "body_paragraph_index_zero_based": 550,
+          "text": "每個取樣點均先配對其所屬三角形小面的曲面法向量，法向量經正規化後，再以 三個分量與位置  一併輸出。後續幾何特徵分割將同時參考點的位置與法向量方向，其中位置用以判斷相鄰空間關係，法向量用以比較表面方向的一致性。平面與曲面之點雲法向量排列概念如圖 3.2 所示。"
+        },
+        {
+          "body_paragraph_index_zero_based": 552,
+          "text": "(a) 平面取樣點與法向量(b) 曲面取樣點與法向量"
+        },
+        {
+          "body_paragraph_index_zero_based": 553,
+          "text": "圖 3.2 點雲樣本與曲面法向量資料結構示意圖"
+        },
+        {
+          "body_paragraph_index_zero_based": 554,
+          "text": "圖 3.2(a) 表示平面上不同取樣點的法向量方向近乎一致；3.2(b) 表示曲面上的法向量隨區域表面方向會改變。圖中圓點與箭頭分別表示取樣點位置與正規化法向量。"
+        }
+      ]
+    },
+    "4.3.3": {
+      "heading": "4.3.3 CSG 符號樹推論",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 795,
+          "text": "候選幾何單元共 3 個：下階圓柱與上階圓柱為聯集，貫穿孔為差集，型別與主要尺寸列於表 4.6。各候選單元相對STL 參考幾何的最大參數誤差為 0.0329 mm，出現在上階圓柱半徑。"
+        },
+        {
+          "body_paragraph_index_zero_based": 796,
+          "text": "表 4.6 階梯狀圓柱候選幾何單元查驗結果"
+        },
+        {
+          "body_paragraph_index_zero_based": 797,
+          "text": "候選幾何單元"
+        },
+        {
+          "body_paragraph_index_zero_based": 798,
+          "text": "布林角色"
+        },
+        {
+          "body_paragraph_index_zero_based": 799,
+          "text": "型別"
+        },
+        {
+          "body_paragraph_index_zero_based": 800,
+          "text": "主要尺寸(mm)"
+        },
+        {
+          "body_paragraph_index_zero_based": 801,
+          "text": "下階圓柱 SC_U01"
+        },
+        {
+          "body_paragraph_index_zero_based": 802,
+          "text": "聯集"
+        },
+        {
+          "body_paragraph_index_zero_based": 803,
+          "text": "圓柱"
+        },
+        {
+          "body_paragraph_index_zero_based": 804,
+          "text": "半徑 39.968、深度 40.000"
+        },
+        {
+          "body_paragraph_index_zero_based": 805,
+          "text": "上階圓柱 SC_U02"
+        },
+        {
+          "body_paragraph_index_zero_based": 806,
+          "text": "聯集"
+        },
+        {
+          "body_paragraph_index_zero_based": 807,
+          "text": "圓柱"
+        },
+        {
+          "body_paragraph_index_zero_based": 808,
+          "text": "半徑 24.967、深度 60.000"
+        },
+        {
+          "body_paragraph_index_zero_based": 809,
+          "text": "貫穿孔 SC_D01"
+        },
+        {
+          "body_paragraph_index_zero_based": 810,
+          "text": "差集"
+        },
+        {
+          "body_paragraph_index_zero_based": 811,
+          "text": "圓柱孔"
+        },
+        {
+          "body_paragraph_index_zero_based": 812,
+          "text": "半徑 14.970、深度 100.000"
+        },
+        {
+          "body_paragraph_index_zero_based": 814,
+          "text": "規範化的 CSG 符號樹為二元樹，每個內部節點恰有兩個子節點。先將下階圓柱SC_U01與上階圓柱SC_U02聯集為基體，再減去貫穿孔SC_D01。此結構依公式(3-7)的二元遞迴文法展開，可記為公式(4-1)。"
+        },
+        {
+          "body_paragraph_index_zero_based": 815,
+          "text": "(4-1)"
+        },
+        {
+          "body_paragraph_index_zero_based": 816,
+          "text": "推論過程如圖 4.4，與STL 參考幾何的規範化 CSG 完全一致。"
+        },
+        {
+          "body_paragraph_index_zero_based": 818,
+          "text": "圖 4.4 階梯狀圓柱階層式 CSG 推論"
+        },
+        {
+          "body_paragraph_index_zero_based": 819,
+          "text": "本範例之意義在於建立基線：當工件僅由共軸圓柱與水平端面構成時，面型辨識、端面關係與布林角色可由規則直接對應，方法即得以完整推得階層式 CSG 符號樹。"
+        }
+      ]
+    },
+    "4.4.3": {
+      "heading": "4.4.3 CSG 符號樹推論",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 835,
+          "text": "候選幾何單元共 5 個：底板、立板與圓柱為聯集，底板孔與立板孔為差集。型別與主要尺寸列於表 4.7，其中兩個孔的深度等於各自所在板件的厚度，反映貫穿孔的端部條件。"
+        },
+        {
+          "body_paragraph_index_zero_based": 836,
+          "text": "表 4.7 L型板候選幾何單元查驗結果"
+        },
+        {
+          "body_paragraph_index_zero_based": 837,
+          "text": "候選幾何單元"
+        },
+        {
+          "body_paragraph_index_zero_based": 838,
+          "text": "布林角色"
+        },
+        {
+          "body_paragraph_index_zero_based": 839,
+          "text": "型別"
+        },
+        {
+          "body_paragraph_index_zero_based": 840,
+          "text": "主要尺寸(mm)"
+        },
+        {
+          "body_paragraph_index_zero_based": 841,
+          "text": "底板 LB_U01"
+        },
+        {
+          "body_paragraph_index_zero_based": 842,
+          "text": "聯集"
+        },
+        {
+          "body_paragraph_index_zero_based": 843,
+          "text": "板件"
+        }
+      ]
+    },
+    "4.5.3": {
+      "heading": "4.5.3 CSG 符號樹推論",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 886,
+          "text": "本例共推得 6 個候選幾何單元。主腹板、主軸圓環、側向過渡塊與側向凸台為聯集候選；主軸貫穿孔與側向貫穿孔為差集候選，型別與主要尺寸列於表 4.8。主腹板以剖面擠出表示，斜面與過渡區併入其外形輪廓，未強制擬合為曲面基本造型。各候選單元相對STL 參考幾何的最大參數誤差為 0.0323 mm，出現在主軸貫穿孔半徑。"
+        },
+        {
+          "body_paragraph_index_zero_based": 887,
+          "text": "表 4.8 模型A候選幾何單元查驗結果"
+        },
+        {
+          "body_paragraph_index_zero_based": 888,
+          "text": "候選幾何單元"
+        },
+        {
+          "body_paragraph_index_zero_based": 889,
+          "text": "布林角色"
+        },
+        {
+          "body_paragraph_index_zero_based": 890,
+          "text": "型別"
+        },
+        {
+          "body_paragraph_index_zero_based": 891,
+          "text": "主要尺寸(mm)"
+        },
+        {
+          "body_paragraph_index_zero_based": 892,
+          "text": "主腹板 MA_U01"
+        },
+        {
+          "body_paragraph_index_zero_based": 893,
+          "text": "聯集"
+        },
+        {
+          "body_paragraph_index_zero_based": 894,
+          "text": "剖面擠出"
+        }
+      ]
+    },
+    "4.6.3": {
+      "heading": "4.6.3 CSG 符號樹推論",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 940,
+          "text": "本例共推得 3 個候選幾何單元：六角基座與環台為聯集，中央盲孔為差集，型別與主要尺寸列於表 4.9。孔的端部條件由方法依 3.8 節規則自行判定。盲孔內壁的兩個端面關係中，環台頂面為環狀開口，盲孔底面則為覆蓋孔截面的內部圓盤，因此判為盲孔，並以 Depth 記錄自開口至底面的有限深度 50.000 mm。此判定依端面關係完成；各候選單元相對STL 參考幾何的最大參數誤差為 0.0322 mm，出現在盲孔半徑。"
+        },
+        {
+          "body_paragraph_index_zero_based": 941,
+          "text": "表 4.9 盲孔六角座候選幾何單元查驗結果"
+        },
+        {
+          "body_paragraph_index_zero_based": 942,
+          "text": "候選幾何單元"
+        },
+        {
+          "body_paragraph_index_zero_based": 943,
+          "text": "布林角色"
+        },
+        {
+          "body_paragraph_index_zero_based": 944,
+          "text": "型別"
+        },
+        {
+          "body_paragraph_index_zero_based": 945,
+          "text": "主要尺寸(mm)"
+        },
+        {
+          "body_paragraph_index_zero_based": 946,
+          "text": "六角基座 BH_U01"
+        },
+        {
+          "body_paragraph_index_zero_based": 947,
+          "text": "聯集"
+        },
+        {
+          "body_paragraph_index_zero_based": 948,
+          "text": "六角柱"
+        },
+        {
+          "body_paragraph_index_zero_based": 949,
+          "text": "對角 100.000 × 對邊 86.603 × 高 60.000"
+        },
+        {
+          "body_paragraph_index_zero_based": 950,
+          "text": "環台 "
+        },
+        {
+          "body_paragraph_index_zero_based": 951,
+          "text": "BH_U02"
+        },
+        {
+          "body_paragraph_index_zero_based": 952,
+          "text": "聯集"
+        },
+        {
+          "body_paragraph_index_zero_based": 953,
+          "text": "圓柱 (Z 軸)"
+        },
+        {
+          "body_paragraph_index_zero_based": 954,
+          "text": "半徑 34.970、深度 15.000"
+        },
+        {
+          "body_paragraph_index_zero_based": 955,
+          "text": "中央盲孔 BH_D01"
+        },
+        {
+          "body_paragraph_index_zero_based": 956,
+          "text": "差集"
+        },
+        {
+          "body_paragraph_index_zero_based": 957,
+          "text": "圓柱盲孔 "
+        },
+        {
+          "body_paragraph_index_zero_based": 958,
+          "text": "(Z 軸)"
+        },
+        {
+          "body_paragraph_index_zero_based": 959,
+          "text": "半徑 22.468、深度 50.000"
+        },
+        {
+          "body_paragraph_index_zero_based": 960,
+          "text": "規範化的 CSG 符號樹同為每個內部節點恰有兩個子節點的二元樹：先聯集六角基座BH_U01與環台BH_U02為基體，再減去中央盲孔BH_D01。依公式(3-7)展開後，可記為公式(4-4)。"
+        },
+        {
+          "body_paragraph_index_zero_based": 961,
+          "text": "(4-4)"
+        },
+        {
+          "body_paragraph_index_zero_based": 962,
+          "text": "推論過程如圖 4.13，與STL 參考幾何的規範化 CSG 完全一致。"
+        },
+        {
+          "body_paragraph_index_zero_based": 964,
+          "text": "圖 4.13 盲孔六角座階層式 CSG 推論"
+        },
+        {
+          "body_paragraph_index_zero_based": 965,
+          "text": "本範例之意義在於孔的端部條件。其與前三個範例採用相同的面型、拓樸關係與布林運算，差別僅在於其中一個孔的一端由內部平面封閉；方法無須新增基本造型或第四種拓樸關係，即可將該孔判為盲孔並取得有限深度。"
+        }
+      ]
+    },
+    "4.7": {
+      "heading": "4.7 四個範例結果比較與討論",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 967,
+          "text": "四個範例的五層結果主要統計列於表 4.10。表中的難度僅適用於三個貫穿孔範例；盲孔六角座用於查驗孔的端部條件，不列入難度階梯。四個範例的 10000 個取樣點均完整歸入幾何特徵面，沒有殘留點，且五層驗收與輸入範圍查驗均通過。"
+        },
+        {
+          "body_paragraph_index_zero_based": 968,
+          "text": "表 4.10 四個實作範例結果比較"
+        },
+        {
+          "body_paragraph_index_zero_based": 969,
+          "text": "項目"
+        },
+        {
+          "body_paragraph_index_zero_based": 970,
+          "text": "階梯狀圓柱"
+        },
+        {
+          "body_paragraph_index_zero_based": 971,
+          "text": "L型板"
+        },
+        {
+          "body_paragraph_index_zero_based": 972,
+          "text": "模型A"
+        },
+        {
+          "body_paragraph_index_zero_based": 973,
+          "text": "盲孔六角座"
+        },
+        {
+          "body_paragraph_index_zero_based": 974,
+          "text": "難度"
+        },
+        {
+          "body_paragraph_index_zero_based": 975,
+          "text": "易"
+        },
+        {
+          "body_paragraph_index_zero_based": 976,
+          "text": "中"
+        },
+        {
+          "body_paragraph_index_zero_based": 977,
+          "text": "難"
+        },
+        {
+          "body_paragraph_index_zero_based": 978,
+          "text": "—"
+        },
+        {
+          "body_paragraph_index_zero_based": 979,
+          "text": "孔洞型別"
+        },
+        {
+          "body_paragraph_index_zero_based": 980,
+          "text": "貫穿"
+        },
+        {
+          "body_paragraph_index_zero_based": 981,
+          "text": "貫穿"
+        },
+        {
+          "body_paragraph_index_zero_based": 982,
+          "text": "貫穿"
+        },
+        {
+          "body_paragraph_index_zero_based": 983,
+          "text": "盲孔"
+        },
+        {
+          "body_paragraph_index_zero_based": 984,
+          "text": "取樣點數"
+        },
+        {
+          "body_paragraph_index_zero_based": 985,
+          "text": "10000"
+        },
+        {
+          "body_paragraph_index_zero_based": 986,
+          "text": "10000"
+        },
+        {
+          "body_paragraph_index_zero_based": 987,
+          "text": "10000"
+        },
+        {
+          "body_paragraph_index_zero_based": 988,
+          "text": "10000"
+        },
+        {
+          "body_paragraph_index_zero_based": 989,
+          "text": "殘留點數"
+        },
+        {
+          "body_paragraph_index_zero_based": 990,
+          "text": "0"
+        },
+        {
+          "body_paragraph_index_zero_based": 991,
+          "text": "0"
+        },
+        {
+          "body_paragraph_index_zero_based": 992,
+          "text": "0"
+        },
+        {
+          "body_paragraph_index_zero_based": 993,
+          "text": "0"
+        },
+        {
+          "body_paragraph_index_zero_based": 994,
+          "text": "幾何特徵面數"
+        },
+        {
+          "body_paragraph_index_zero_based": 995,
+          "text": "6"
+        },
+        {
+          "body_paragraph_index_zero_based": 996,
+          "text": "12"
+        },
+        {
+          "body_paragraph_index_zero_based": 997,
+          "text": "13"
+        },
+        {
+          "body_paragraph_index_zero_based": 998,
+          "text": "12"
+        },
+        {
+          "body_paragraph_index_zero_based": 999,
+          "text": "拓樸關係總數"
+        },
+        {
+          "body_paragraph_index_zero_based": 1000,
+          "text": "6"
+        },
+        {
+          "body_paragraph_index_zero_based": 1001,
+          "text": "24"
+        },
+        {
+          "body_paragraph_index_zero_based": 1002,
+          "text": "26"
+        },
+        {
+          "body_paragraph_index_zero_based": 1003,
+          "text": "22"
+        },
+        {
+          "body_paragraph_index_zero_based": 1004,
+          "text": "正交相鄰"
+        },
+        {
+          "body_paragraph_index_zero_based": 1005,
+          "text": "0"
+        },
+        {
+          "body_paragraph_index_zero_based": 1006,
+          "text": "18"
+        },
+        {
+          "body_paragraph_index_zero_based": 1007,
+          "text": "11"
+        },
+        {
+          "body_paragraph_index_zero_based": 1008,
+          "text": "12"
+        },
+        {
+          "body_paragraph_index_zero_based": 1009,
+          "text": "端面關係"
+        },
+        {
+          "body_paragraph_index_zero_based": 1010,
+          "text": "6"
+        },
+        {
+          "body_paragraph_index_zero_based": 1011,
+          "text": "6"
+        },
+        {
+          "body_paragraph_index_zero_based": 1012,
+          "text": "10"
+        },
+        {
+          "body_paragraph_index_zero_based": 1013,
+          "text": "4"
+        },
+        {
+          "body_paragraph_index_zero_based": 1014,
+          "text": "一般相鄰"
+        },
+        {
+          "body_paragraph_index_zero_based": 1015,
+          "text": "0"
+        },
+        {
+          "body_paragraph_index_zero_based": 1016,
+          "text": "0"
+        },
+        {
+          "body_paragraph_index_zero_based": 1017,
+          "text": "5"
+        },
+        {
+          "body_paragraph_index_zero_based": 1018,
+          "text": "6"
+        },
+        {
+          "body_paragraph_index_zero_based": 1019,
+          "text": "候選幾何單元數"
+        },
+        {
+          "body_paragraph_index_zero_based": 1020,
+          "text": "3"
+        },
+        {
+          "body_paragraph_index_zero_based": 1021,
+          "text": "5"
+        },
+        {
+          "body_paragraph_index_zero_based": 1022,
+          "text": "6"
+        },
+        {
+          "body_paragraph_index_zero_based": 1023,
+          "text": "3"
+        },
+        {
+          "body_paragraph_index_zero_based": 1024,
+          "text": "最大曲面擬合殘差(mm)"
+        }
+      ]
+    },
+    "4.7.2": {
+      "heading": "4.7.2 網格化造成的固有擬合殘差",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 1049,
+          "text": "四個範例的最大殘差集中在 0.03 mm 附近，且全部落在圓柱面而非平面，與零件複雜度沒有明顯關聯。這指向單一原因：STL 以多面體鑲嵌近似圓柱曲面，取樣點落在鑲嵌面片上而非真實曲面，因此圓柱面的擬合必然帶有網格化誤差。盲孔六角座的對比最為直接：10 個平面的最大殘差僅  mm，兩個圓柱面則約 0.03 mm。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1050,
+          "text": "此誤差屬輸入資料的性質，不是方法的擬合能力上限。四個範例的最小法向量一致性都在 0.99 以上，遠優於 0.93 的門檻，亦支持此判斷。"
+        }
+      ]
+    },
+    "4.7.3": {
+      "heading": "4.7.3 貫穿孔與盲孔的統一處理",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 1052,
+          "text": "貫穿孔與盲孔使用同一套推論機制，包括相同的圓柱面與平面面型、端面關係及差集運算。兩者只在孔的端部條件上不同：貫穿孔兩端皆為開口，盲孔的一端則由位於工件內部的圓盤封閉。此差異依 3.8 節規則判定，並以 Depth 記錄有限深度，無須新增基本造型類型或拓樸關係型別。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1053,
+          "text": "盲孔六角座的判定過程提供了具體佐證。方法由端面關係的支撐形狀辨識內部封底圓盤，據此將該孔判為盲孔，並取得深度 50.000 mm。"
+        }
+      ]
+    },
+    "4.7.4": {
+      "heading": "4.7.4 CSG 符號層一致性與其邊界",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 1055,
+          "text": "四個範例的規範化 CSG 符號樹都是每個內部節點恰有兩個子節點的二元樹，分別以公式(4-1)至(4-4)表示；四者在符號層面，依葉節點集合、布林角色與階層結構比對後，均與STL 參考幾何完全一致。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1056,
+          "text": "此一致性僅限於符號結構，將符號樹以幾何核心求值為實體後，可再與原 STL 比對體積或表面距離。於此範圍內，第三章提出之方法可在由易至難的幾何上，並於含盲孔的情形下，由原始點雲完成階層式 CSG 推論。"
+        }
+      ]
+    },
+    "4.8": {
+      "heading": "4.8 討論",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 1058,
+          "text": "四個範例均通過輸入範圍查驗與五層驗收；相同輸入連續兩次重跑的輸出亦逐位元一致。此結果表示方法可在目前的 STL 生成資料、操作性門檻與候選單元定義下穩定執行，而非已證明對任意點雲或真實掃描資料均適用。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1059,
+          "text": "幾何組成愈複雜，幾何特徵面、拓樸關係與候選幾何單元的數量隨之增加，推論結果卻未失去穩定性。即使模型A同時具有多軸圓柱、斜面與多個孔洞，並須經小群集合併修正，方法仍維持門檻內的擬合品質，並取得與 STL 參考幾何一致的規範化 CSG 符號樹。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1060,
+          "text": "孔洞是否貫穿可由既有端面關係與有限深度判定，無須擴充基本造型或關係型別。整體而言，以曲面法向量特性與建構式實體幾何法則為基礎的方法鏈，可處理本研究資料範圍內不同的平面、圓柱組合，以及貫穿孔與盲孔兩種端部條件。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1061,
+          "text": "本章成果有明確邊界。所用資料為 STL 網格模型生成的點雲與法向量資料集，而非真實掃描資料。前述結論以本研究四個實作範例為限，尚未推廣為對任意幾何複雜度的一般性宣稱。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1062,
+          "text": "第五章 結論與未來工作"
+        }
+      ]
+    }
+  },
+  "source_bindings": [
+    {
+      "path": "examples/cases.json",
+      "sha256": "86fd78b2bdc3a0e9fe1fadd68f9a7bcc650c453f775d728f5210b283d857b844"
+    },
+    {
+      "path": "provenance/quality-summary.json",
+      "sha256": "9ec5423cb7aa89c9f325df4bc3e4ace198ebee4492389935f2ed2aff4641dbf3"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+      "sha256": "1f27c0bc5203b0d84284e7c9b01796173f77ed92684593b2718b8050d192ac43"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+      "sha256": "6b3c20ab142eb62c6326e7520c6b83856930382e4a008665459cecab66024d5e"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+      "sha256": "cc1328a685b2a8bffd9fed349ec9e88e71520ab14ef328a70ef3ef11898181be"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/MethodInferenceManifest_Stepped_Cylinder_chapter3.json",
+      "sha256": "b2c4bc4bd647d384f45524e0cd1ab9211e10a5d4b6dfc1a1481190858c6d4278"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/FaceSummary_L_Bracket_chapter3_verified.csv",
+      "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/TopologyEdges_L_Bracket_chapter3_verified.csv",
+      "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+      "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/MethodInferenceManifest_L_Bracket_chapter3.json",
+      "sha256": "89c14010be012c93f6fd714e866cd3e72df290746ae39267de0e1f4da10e988b"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/FaceSummary_Model_A_chapter3_verified.csv",
+      "sha256": "27e51dd1c02fc0728b032bf5ef4ffaab4f95470630d95afd7a454fb93d149142"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/TopologyEdges_Model_A_chapter3_verified.csv",
+      "sha256": "b7ce387b57cfe23ddb1460dfab345a0e0539af2f58c061ee08a67d663a191969"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+      "sha256": "491ba6ad6975fc17525de84c6c98e38afacdf26529677b49eac5b1c2ccc3012d"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/MethodInferenceManifest_Model_A_chapter3.json",
+      "sha256": "6ccb0aa5fd2d69ff788bf6103f0107b9a1a1a8667361e253c8391e6aa78813aa"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json",
+      "sha256": "ceaab04a23aeacfe66a087c92e0fe4c081517e0c37d28cb941a0ceef593f5f83"
+    },
+    {
+      "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+      "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c"
+    },
+    {
+      "path": "research/tools/correct_stepped_cylinder_nls_v2.py",
+      "sha256": "a9ad922f812d21c974bdbf6e20c2d0d79352a15992551f221b292d2fe22dda6d"
+    },
+    {
+      "path": "research/tools/infer_lbracket_chapter3_method.py",
+      "sha256": "a4a728f94b805d0fcdf45eefe937aed55442bfff69e9aeff39184ba3d817d9ec"
+    },
+    {
+      "path": "research/tools/infer_model_a_chapter3_method.py",
+      "sha256": "8d9dcaa64389dfdbe29124894ebc060badab71e710e49b22c025299e1c22efa0"
+    },
+    {
+      "path": "research/tools/infer_blind_hole_hex_base_chapter3_method.py",
+      "sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a"
+    },
+    {
+      "path": "research/零件/均勻點雲CODE.txt",
+      "sha256": "a118c297696fc88d38365786c71185845c9c1c0280625a2f0794dbae24a80c71"
+    }
+  ],
+  "functions": {
+    "research/tools/infer_stepped_cylinder_chapter3_method.py": {
+      "nonlinear_circle": {
+        "first_line": 97,
+        "last_line": 113
+      },
+      "fit_plane": {
+        "first_line": 116,
+        "last_line": 136
+      },
+      "fit_cylinder": {
+        "first_line": 139,
+        "last_line": 163
+      },
+      "model_passes": {
+        "first_line": 166,
+        "last_line": 170
+      },
+      "main": {
+        "first_line": 610,
+        "last_line": 617
+      }
+    },
+    "research/tools/correct_stepped_cylinder_nls_v2.py": {
+      "nonlinear_circle": {
+        "first_line": 55,
+        "last_line": 73
+      },
+      "fit_plane": {
+        "first_line": 76,
+        "last_line": 96
+      },
+      "fit_cylinder": {
+        "first_line": 99,
+        "last_line": 123
+      },
+      "main": {
+        "first_line": 349,
+        "last_line": 372
+      }
+    },
+    "research/tools/infer_lbracket_chapter3_method.py": {
+      "fit_component": {
+        "first_line": 69,
+        "last_line": 86
+      },
+      "main": {
+        "first_line": 674,
+        "last_line": 679
+      }
+    },
+    "research/tools/infer_model_a_chapter3_method.py": {
+      "main": {
+        "first_line": 827,
+        "last_line": 834
+      }
+    },
+    "research/tools/infer_blind_hole_hex_base_chapter3_method.py": {
+      "main": {
+        "first_line": 536,
+        "last_line": 546
+      }
+    },
+    "research/零件/均勻點雲CODE.txt": {
+      "triangulate_to_bmesh": {
+        "first_line": 44,
+        "last_line": 49
+      },
+      "build_area_cdf": {
+        "first_line": 52,
+        "last_line": 62
+      },
+      "random_point_on_triangle": {
+        "first_line": 73,
+        "last_line": 81
+      },
+      "main": {
+        "first_line": 148,
+        "last_line": 217
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "stepped-cylinder",
+      "display_name": "階梯狀圓柱",
+      "files": {
+        "faces": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/FaceSummary_Stepped_Cylinder_chapter3_verified.csv",
+        "edges": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/TopologyEdges_Stepped_Cylinder_chapter3_verified.csv",
+        "candidates": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/PrimitiveCandidates_Stepped_Cylinder_chapter3_verified.csv",
+        "manifest": "research/碩士論文/第四章驗證結果_260722/Stepped_Cylinder_chapter3_verified_v3/MethodInferenceManifest_Stepped_Cylinder_chapter3.json"
+      },
+      "groups": {
+        "plane": {
+          "face_count": 3,
+          "point_count": 2301,
+          "max_of_face_maxima_mm": "0.000007965",
+          "maximum_cluster_id": "4",
+          "maximum_semantic_role": "top_annulus",
+          "min_of_face_maxima_mm": "0.000000000",
+          "faces": [
+            {
+              "ClusterID": "2",
+              "FeatureType": "Plane_Horizontal (底面環)",
+              "SemanticRole": "bottom_annulus",
+              "PointCount": "1152",
+              "FitResidualMax": "0.000000000",
+              "FitResidualMedian": "0.000000000",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "3",
+              "FeatureType": "Plane_Horizontal (階梯肩面)",
+              "SemanticRole": "shoulder_annulus",
+              "PointCount": "808",
+              "FitResidualMax": "0.000003994",
+              "FitResidualMedian": "0.000000092",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "4",
+              "FeatureType": "Plane_Horizontal (頂面環)",
+              "SemanticRole": "top_annulus",
+              "PointCount": "341",
+              "FitResidualMax": "0.000007965",
+              "FitResidualMedian": "0.000000191",
+              "NormalConsistencyMin": "1.000000000"
+            }
+          ]
+        },
+        "cylinder": {
+          "face_count": 3,
+          "point_count": 7699,
+          "max_of_face_maxima_mm": "0.033317052",
+          "maximum_cluster_id": "5",
+          "maximum_semantic_role": "upper_outer_side",
+          "min_of_face_maxima_mm": "0.030780106",
+          "faces": [
+            {
+              "ClusterID": "0",
+              "FeatureType": "Cylinder_axisZ_inner (貫穿孔)",
+              "SemanticRole": "through_hole_side",
+              "PointCount": "2547",
+              "FitResidualMax": "0.030780106",
+              "FitResidualMedian": "0.011972641",
+              "NormalConsistencyMin": "0.996919826"
+            },
+            {
+              "ClusterID": "1",
+              "FeatureType": "Cylinder_axisZ_outer (下階外圓柱)",
+              "SemanticRole": "lower_outer_side",
+              "PointCount": "2630",
+              "FitResidualMax": "0.032781436",
+              "FitResidualMedian": "0.012269612",
+              "NormalConsistencyMin": "0.998797354"
+            },
+            {
+              "ClusterID": "5",
+              "FeatureType": "Cylinder_axisZ_outer (上階外圓柱)",
+              "SemanticRole": "upper_outer_side",
+              "PointCount": "2522",
+              "FitResidualMax": "0.033317052",
+              "FitResidualMedian": "0.012832744",
+              "NormalConsistencyMin": "0.998035346"
+            }
+          ]
+        }
+      },
+      "topology_counts": {
+        "Adjacency": 0,
+        "OrthogonalAdjacency": 0,
+        "EndCap": 6
+      },
+      "candidate_counts": {
+        "Union": 2,
+        "Difference": 1
+      },
+      "candidates": [
+        {
+          "CandidateID": "SC_D01",
+          "PrimitiveType": "ThroughHole",
+          "RelatedClusters": "0;2;4",
+          "BooleanType": "Difference"
+        },
+        {
+          "CandidateID": "SC_U01",
+          "PrimitiveType": "CylinderLower",
+          "RelatedClusters": "1;2;3",
+          "BooleanType": "Union"
+        },
+        {
+          "CandidateID": "SC_U02",
+          "PrimitiveType": "CylinderUpper",
+          "RelatedClusters": "3;4;5",
+          "BooleanType": "Union"
+        }
+      ],
+      "saved_method_parameters": {
+        "DistanceThreshold": 2.0,
+        "NormalThreshold": 0.93,
+        "FitResidualThreshold": 1.5,
+        "TopologyEpsilon": 2.0,
+        "OrthogonalDotThreshold": 0.2,
+        "EndCapDistanceThreshold": 5.0,
+        "EndCapDotThreshold": 0.95
+      },
+      "historical_quality_status": "PASS",
+      "historical_five_layer_status": {
+        "segmentation": "PASS",
+        "geometry_semantics": "PASS",
+        "topology": "PASS",
+        "primitive_candidates": "PASS",
+        "csg_symbolic_tree": "PASS"
+      },
+      "parameter_error_summary_from_existing_evidence": {
+        "parameter_error_max_mm": "0.0329478642158989",
+        "parameter_error_candidate_id": "SC_U02",
+        "parameter_error_name": "Radius"
+      },
+      "thesis_table_4_10_display": {
+        "難度": "易",
+        "孔洞型別": "貫穿",
+        "取樣點數": "10000",
+        "殘留點數": "0",
+        "幾何特徵面數": "6",
+        "拓樸關係總數": "6",
+        "正交相鄰": "0",
+        "端面關係": "6",
+        "一般相鄰": "0",
+        "候選幾何單元數": "3",
+        "最大曲面擬合殘差(mm)": "0.0333",
+        "最大參數誤差(mm)": "0.0329",
+        "五層驗收": "通過",
+        "輸入範圍查驗": "通過"
+      }
+    },
+    {
+      "id": "l-bracket",
+      "display_name": "L型板",
+      "files": {
+        "faces": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/FaceSummary_L_Bracket_chapter3_verified.csv",
+        "edges": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/TopologyEdges_L_Bracket_chapter3_verified.csv",
+        "candidates": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+        "manifest": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/MethodInferenceManifest_L_Bracket_chapter3.json"
+      },
+      "groups": {
+        "plane": {
+          "face_count": 9,
+          "point_count": 8132,
+          "max_of_face_maxima_mm": "0.000008258",
+          "maximum_cluster_id": "10",
+          "maximum_semantic_role": "base_end",
+          "min_of_face_maxima_mm": "0.000000000",
+          "faces": [
+            {
+              "ClusterID": "0",
+              "FeatureType": "Plane_XY (底板下表面)",
+              "SemanticRole": "base_bottom",
+              "PointCount": "2363",
+              "FitResidualMax": "0.000000000",
+              "FitResidualMedian": "0.000000000",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "1",
+              "FeatureType": "Plane_XZ (底板與立板後側合併面)",
+              "SemanticRole": "back",
+              "PointCount": "1255",
+              "FitResidualMax": "0.000000000",
+              "FitResidualMedian": "0.000000000",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "2",
+              "FeatureType": "Plane_XY (底板上表面)",
+              "SemanticRole": "base_top",
+              "PointCount": "1989",
+              "FitResidualMax": "0.000000493",
+              "FitResidualMedian": "0.000000007",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "3",
+              "FeatureType": "Plane_XY (立板頂面)",
+              "SemanticRole": "upright_top",
+              "PointCount": "150",
+              "FitResidualMax": "0.000004022",
+              "FitResidualMedian": "0.000000129",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "5",
+              "FeatureType": "Plane_YZ (底板與立板右側合併面)",
+              "SemanticRole": "right",
+              "PointCount": "459",
+              "FitResidualMax": "0.000001993",
+              "FitResidualMedian": "0.000000025",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "6",
+              "FeatureType": "Plane_XY (外加圓柱頂面)",
+              "SemanticRole": "boss_top",
+              "PointCount": "256",
+              "FitResidualMax": "0.000003855",
+              "FitResidualMedian": "0.000000023",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "7",
+              "FeatureType": "Plane_XZ (立板前側面)",
+              "SemanticRole": "upright_front",
+              "PointCount": "1089",
+              "FitResidualMax": "0.000000496",
+              "FitResidualMedian": "0.000000008",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "8",
+              "FeatureType": "Plane_YZ (底板與立板左側合併面)",
+              "SemanticRole": "left",
+              "PointCount": "425",
+              "FitResidualMax": "0.000001933",
+              "FitResidualMedian": "0.000000024",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "10",
+              "FeatureType": "Plane_XZ (底板端面)",
+              "SemanticRole": "base_end",
+              "PointCount": "146",
+              "FitResidualMax": "0.000008258",
+              "FitResidualMedian": "0.000000262",
+              "NormalConsistencyMin": "1.000000000"
+            }
+          ]
+        },
+        "cylinder": {
+          "face_count": 3,
+          "point_count": 1868,
+          "max_of_face_maxima_mm": "0.032202412",
+          "maximum_cluster_id": "4",
+          "maximum_semantic_role": "outer_boss",
+          "min_of_face_maxima_mm": "0.029389201",
+          "faces": [
+            {
+              "ClusterID": "4",
+              "FeatureType": "Cylinder_axisZ_outer (外加圓柱面)",
+              "SemanticRole": "outer_boss",
+              "PointCount": "1470",
+              "FitResidualMax": "0.032202412",
+              "FitResidualMedian": "0.012401553",
+              "NormalConsistencyMin": "0.995188351"
+            },
+            {
+              "ClusterID": "9",
+              "FeatureType": "Cylinder_axisZ_inner (底板孔)",
+              "SemanticRole": "base_hole",
+              "PointCount": "184",
+              "FitResidualMax": "0.029723396",
+              "FitResidualMedian": "0.010983037",
+              "NormalConsistencyMin": "0.994535514"
+            },
+            {
+              "ClusterID": "11",
+              "FeatureType": "Cylinder_axisY_inner (立板孔)",
+              "SemanticRole": "upright_hole",
+              "PointCount": "214",
+              "FitResidualMax": "0.029389201",
+              "FitResidualMedian": "0.012385324",
+              "NormalConsistencyMin": "0.994515096"
+            }
+          ]
+        }
+      },
+      "topology_counts": {
+        "Adjacency": 0,
+        "OrthogonalAdjacency": 18,
+        "EndCap": 6
+      },
+      "candidate_counts": {
+        "Union": 3,
+        "Difference": 2
+      },
+      "candidates": [
+        {
+          "CandidateID": "LB_D01",
+          "PrimitiveType": "BasePlateHole",
+          "RelatedClusters": "0;2;9",
+          "BooleanType": "Difference"
+        },
+        {
+          "CandidateID": "LB_D02",
+          "PrimitiveType": "UprightPlateHole",
+          "RelatedClusters": "1;7;11",
+          "BooleanType": "Difference"
+        },
+        {
+          "CandidateID": "LB_U01",
+          "PrimitiveType": "BasePlate",
+          "RelatedClusters": "0;1;2;5;8;10",
+          "BooleanType": "Union"
+        },
+        {
+          "CandidateID": "LB_U02",
+          "PrimitiveType": "UprightPlate",
+          "RelatedClusters": "1;3;5;7;8",
+          "BooleanType": "Union"
+        },
+        {
+          "CandidateID": "LB_U03",
+          "PrimitiveType": "Cylinder",
+          "RelatedClusters": "2;4;6",
+          "BooleanType": "Union"
+        }
+      ],
+      "saved_method_parameters": {
+        "DistanceThreshold": 2.0,
+        "NormalThreshold": 0.93,
+        "FitResidualThreshold": 1.5,
+        "TopologyEpsilon": 2.0,
+        "OrthogonalDotThreshold": 0.2,
+        "EndCapDistanceThreshold": 5.0,
+        "EndCapDotThreshold": 0.95
+      },
+      "historical_quality_status": "PASS",
+      "historical_five_layer_status": {
+        "segmentation": "PASS",
+        "geometry_semantics": "PASS",
+        "topology": "PASS",
+        "primitive_candidates": "PASS",
+        "csg_symbolic_tree": "PASS"
+      },
+      "parameter_error_summary_from_existing_evidence": {
+        "parameter_error_max_mm": "0.03219468418853921",
+        "parameter_error_candidate_id": "LB_U03",
+        "parameter_error_name": "Radius"
+      },
+      "thesis_table_4_10_display": {
+        "難度": "中",
+        "孔洞型別": "貫穿",
+        "取樣點數": "10000",
+        "殘留點數": "0",
+        "幾何特徵面數": "12",
+        "拓樸關係總數": "24",
+        "正交相鄰": "18",
+        "端面關係": "6",
+        "一般相鄰": "0",
+        "候選幾何單元數": "5",
+        "最大曲面擬合殘差(mm)": "0.0322",
+        "最大參數誤差(mm)": "0.0322",
+        "五層驗收": "通過",
+        "輸入範圍查驗": "通過"
+      }
+    },
+    {
+      "id": "model-a",
+      "display_name": "模型A",
+      "files": {
+        "faces": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/FaceSummary_Model_A_chapter3_verified.csv",
+        "edges": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/TopologyEdges_Model_A_chapter3_verified.csv",
+        "candidates": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/PrimitiveCandidates_Model_A_chapter3_verified.csv",
+        "manifest": "research/碩士論文/第四章驗證結果_260724/Model_A_chapter3_verified_v3/MethodInferenceManifest_Model_A_chapter3.json"
+      },
+      "groups": {
+        "plane": {
+          "face_count": 9,
+          "point_count": 5833,
+          "max_of_face_maxima_mm": "0.000008136",
+          "maximum_cluster_id": "6",
+          "maximum_semantic_role": "web_oblique_top",
+          "min_of_face_maxima_mm": "0.000000262",
+          "faces": [
+            {
+              "ClusterID": "0",
+              "FeatureType": "Plane_XZ (主體後側面)",
+              "SemanticRole": "web_rear",
+              "PointCount": "990",
+              "FitResidualMax": "0.000000999",
+              "FitResidualMedian": "0.000000017",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "1",
+              "FeatureType": "Plane_XZ (主環後端面)",
+              "SemanticRole": "main_ring_rear_end",
+              "PointCount": "839",
+              "FitResidualMax": "0.000001920",
+              "FitResidualMedian": "0.000000032",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "2",
+              "FeatureType": "Plane_XZ (主環前端面)",
+              "SemanticRole": "main_ring_front_end",
+              "PointCount": "754",
+              "FitResidualMax": "0.000000982",
+              "FitResidualMedian": "0.000000021",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "3",
+              "FeatureType": "Plane_YZ (右端面)",
+              "SemanticRole": "right_end",
+              "PointCount": "731",
+              "FitResidualMax": "0.000007902",
+              "FitResidualMedian": "0.000000123",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "4",
+              "FeatureType": "Plane_XY (主體底面)",
+              "SemanticRole": "body_bottom",
+              "PointCount": "709",
+              "FitResidualMax": "0.000003854",
+              "FitResidualMedian": "0.000000025",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "5",
+              "FeatureType": "Plane_XZ (主體前側面)",
+              "SemanticRole": "web_front",
+              "PointCount": "648",
+              "FitResidualMax": "0.000000994",
+              "FitResidualMedian": "0.000000011",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "6",
+              "FeatureType": "Plane_oblique (主體上斜面)",
+              "SemanticRole": "web_oblique_top",
+              "PointCount": "487",
+              "FitResidualMax": "0.000008136",
+              "FitResidualMedian": "0.000001208",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "7",
+              "FeatureType": "Plane_YZ (右側凸台基準面)",
+              "SemanticRole": "right_boss_base",
+              "PointCount": "491",
+              "FitResidualMax": "0.000007803",
+              "FitResidualMedian": "0.000000107",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "8",
+              "FeatureType": "Plane_XY (轉接區頂面)",
+              "SemanticRole": "transition_top",
+              "PointCount": "184",
+              "FitResidualMax": "0.000000262",
+              "FitResidualMedian": "0.000000010",
+              "NormalConsistencyMin": "1.000000000"
+            }
+          ]
+        },
+        "cylinder": {
+          "face_count": 4,
+          "point_count": 4167,
+          "max_of_face_maxima_mm": "0.032522162",
+          "maximum_cluster_id": "10",
+          "maximum_semantic_role": "main_ring_hole_side",
+          "min_of_face_maxima_mm": "0.029985009",
+          "faces": [
+            {
+              "ClusterID": "9",
+              "FeatureType": "Cylinder_axisY_outer (主環外圓柱)",
+              "SemanticRole": "main_outer_ring_side",
+              "PointCount": "1554",
+              "FitResidualMax": "0.032370271",
+              "FitResidualMedian": "0.011996997",
+              "NormalConsistencyMin": "0.998933730"
+            },
+            {
+              "ClusterID": "10",
+              "FeatureType": "Cylinder_axisY_inner (主環孔)",
+              "SemanticRole": "main_ring_hole_side",
+              "PointCount": "1642",
+              "FitResidualMax": "0.032522162",
+              "FitResidualMedian": "0.012501848",
+              "NormalConsistencyMin": "0.998533818"
+            },
+            {
+              "ClusterID": "13",
+              "FeatureType": "Cylinder_axisX_inner (右側孔)",
+              "SemanticRole": "right_through_hole_side",
+              "PointCount": "486",
+              "FitResidualMax": "0.029985009",
+              "FitResidualMedian": "0.011958297",
+              "NormalConsistencyMin": "0.996222263"
+            },
+            {
+              "ClusterID": "14",
+              "FeatureType": "Cylinder_axisX_outer (右側凸台)",
+              "SemanticRole": "right_outer_boss_side",
+              "PointCount": "485",
+              "FitResidualMax": "0.031190300",
+              "FitResidualMedian": "0.011656766",
+              "NormalConsistencyMin": "0.998062394"
+            }
+          ]
+        }
+      },
+      "topology_counts": {
+        "Adjacency": 5,
+        "OrthogonalAdjacency": 11,
+        "EndCap": 10
+      },
+      "candidate_counts": {
+        "Union": 4,
+        "Difference": 2
+      },
+      "candidates": [
+        {
+          "CandidateID": "MA_D01",
+          "PrimitiveType": "MainAxisYThroughHole",
+          "RelatedClusters": "1;2;10",
+          "BooleanType": "Difference"
+        },
+        {
+          "CandidateID": "MA_D02",
+          "PrimitiveType": "RightAxisXThroughHole",
+          "RelatedClusters": "3;7;13",
+          "BooleanType": "Difference"
+        },
+        {
+          "CandidateID": "MA_U01",
+          "PrimitiveType": "MainWebProfileExtrusion",
+          "RelatedClusters": "0;4;5;6",
+          "BooleanType": "Union"
+        },
+        {
+          "CandidateID": "MA_U02",
+          "PrimitiveType": "MainAxisYOuterRing",
+          "RelatedClusters": "1;2;9",
+          "BooleanType": "Union"
+        },
+        {
+          "CandidateID": "MA_U03",
+          "PrimitiveType": "RightTransitionBlock",
+          "RelatedClusters": "3;4;5;7;8",
+          "BooleanType": "Union"
+        },
+        {
+          "CandidateID": "MA_U04",
+          "PrimitiveType": "RightAxisXOuterBoss",
+          "RelatedClusters": "3;7;14",
+          "BooleanType": "Union"
+        }
+      ],
+      "saved_method_parameters": {
+        "DistanceThreshold": 2.0,
+        "NormalThreshold": 0.93,
+        "FitResidualThreshold": 1.5,
+        "TopologyEpsilon": 2.0,
+        "OrthogonalDotThreshold": 0.2,
+        "EndCapDistanceThreshold": 5.0,
+        "EndCapDotThreshold": 0.95
+      },
+      "historical_quality_status": "PASS",
+      "historical_five_layer_status": {
+        "segmentation": "PASS",
+        "geometry_semantics": "PASS",
+        "topology": "PASS",
+        "primitive_candidates": "PASS",
+        "csg_symbolic_tree": "PASS"
+      },
+      "parameter_error_summary_from_existing_evidence": {
+        "parameter_error_max_mm": "0.03226474021644066",
+        "parameter_error_candidate_id": "MA_D01",
+        "parameter_error_name": "Radius"
+      },
+      "thesis_table_4_10_display": {
+        "難度": "難",
+        "孔洞型別": "貫穿",
+        "取樣點數": "10000",
+        "殘留點數": "0",
+        "幾何特徵面數": "13",
+        "拓樸關係總數": "26",
+        "正交相鄰": "11",
+        "端面關係": "10",
+        "一般相鄰": "5",
+        "候選幾何單元數": "6",
+        "最大曲面擬合殘差(mm)": "0.0325",
+        "最大參數誤差(mm)": "0.0323",
+        "五層驗收": "通過",
+        "輸入範圍查驗": "通過"
+      }
+    },
+    {
+      "id": "blind-hole-hex-base",
+      "display_name": "盲孔六角座",
+      "files": {
+        "faces": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+        "edges": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+        "candidates": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+        "manifest": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/MethodInferenceManifest_Blind_Hole_Hex_Base_chapter3.json"
+      },
+      "groups": {
+        "plane": {
+          "face_count": 10,
+          "point_count": 7432,
+          "max_of_face_maxima_mm": "0.000007832",
+          "maximum_cluster_id": "10",
+          "maximum_semantic_role": "ring_top",
+          "min_of_face_maxima_mm": "0.000000000",
+          "faces": [
+            {
+              "ClusterID": "2",
+              "FeatureType": "Plane_Horizontal (六角底面)",
+              "SemanticRole": "hex_bottom",
+              "PointCount": "1540",
+              "FitResidualMax": "0.000000000",
+              "FitResidualMedian": "0.000000000",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "3",
+              "FeatureType": "Plane_Vertical (六角側面6)",
+              "SemanticRole": "hex_side_6",
+              "PointCount": "763",
+              "FitResidualMax": "0.000005148",
+              "FitResidualMedian": "0.000001000",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "4",
+              "FeatureType": "Plane_Vertical (六角側面3)",
+              "SemanticRole": "hex_side_3",
+              "PointCount": "729",
+              "FitResidualMax": "0.000004351",
+              "FitResidualMedian": "0.000001058",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "5",
+              "FeatureType": "Plane_Vertical (六角側面5)",
+              "SemanticRole": "hex_side_5",
+              "PointCount": "729",
+              "FitResidualMax": "0.000003895",
+              "FitResidualMedian": "0.000000026",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "6",
+              "FeatureType": "Plane_Vertical (六角側面2)",
+              "SemanticRole": "hex_side_2",
+              "PointCount": "727",
+              "FitResidualMax": "0.000003900",
+              "FitResidualMedian": "0.000000033",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "7",
+              "FeatureType": "Plane_Vertical (六角側面4)",
+              "SemanticRole": "hex_side_4",
+              "PointCount": "716",
+              "FitResidualMax": "0.000006031",
+              "FitResidualMedian": "0.000001058",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "8",
+              "FeatureType": "Plane_Vertical (六角側面1)",
+              "SemanticRole": "hex_side_1",
+              "PointCount": "668",
+              "FitResidualMax": "0.000004904",
+              "FitResidualMedian": "0.000001030",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "9",
+              "FeatureType": "Plane_Horizontal (六角肩面)",
+              "SemanticRole": "hex_shelf",
+              "PointCount": "617",
+              "FitResidualMax": "0.000003957",
+              "FitResidualMedian": "0.000000101",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "10",
+              "FeatureType": "Plane_Horizontal (環台頂面)",
+              "SemanticRole": "ring_top",
+              "PointCount": "548",
+              "FitResidualMax": "0.000007832",
+              "FitResidualMedian": "0.000000088",
+              "NormalConsistencyMin": "1.000000000"
+            },
+            {
+              "ClusterID": "11",
+              "FeatureType": "Plane_Horizontal (盲孔底面)",
+              "SemanticRole": "blind_hole_floor",
+              "PointCount": "395",
+              "FitResidualMax": "0.000002009",
+              "FitResidualMedian": "0.000000046",
+              "NormalConsistencyMin": "1.000000000"
+            }
+          ]
+        },
+        "cylinder": {
+          "face_count": 2,
+          "point_count": 2568,
+          "max_of_face_maxima_mm": "0.032736437",
+          "maximum_cluster_id": "1",
+          "maximum_semantic_role": "blind_hole_side",
+          "min_of_face_maxima_mm": "0.030694057",
+          "faces": [
+            {
+              "ClusterID": "0",
+              "FeatureType": "Cylinder_axisZ_outer (環台外圓柱)",
+              "SemanticRole": "ring_outer_side",
+              "PointCount": "814",
+              "FitResidualMax": "0.030694057",
+              "FitResidualMedian": "0.013235839",
+              "NormalConsistencyMin": "0.998632717"
+            },
+            {
+              "ClusterID": "1",
+              "FeatureType": "Cylinder_axisZ_inner (盲孔內壁)",
+              "SemanticRole": "blind_hole_side",
+              "PointCount": "1754",
+              "FitResidualMax": "0.032736437",
+              "FitResidualMedian": "0.012194053",
+              "NormalConsistencyMin": "0.997858917"
+            }
+          ]
+        }
+      },
+      "topology_counts": {
+        "Adjacency": 6,
+        "OrthogonalAdjacency": 12,
+        "EndCap": 4
+      },
+      "candidate_counts": {
+        "Union": 2,
+        "Difference": 1
+      },
+      "candidates": [
+        {
+          "CandidateID": "BH_D01",
+          "PrimitiveType": "BlindHole",
+          "RelatedClusters": "1;10;11",
+          "BooleanType": "Difference"
+        },
+        {
+          "CandidateID": "BH_U01",
+          "PrimitiveType": "HexagonalPrism",
+          "RelatedClusters": "2;3;4;5;6;7;8;9",
+          "BooleanType": "Union"
+        },
+        {
+          "CandidateID": "BH_U02",
+          "PrimitiveType": "OuterRingBoss",
+          "RelatedClusters": "0;9;10",
+          "BooleanType": "Union"
+        }
+      ],
+      "saved_method_parameters": {
+        "DistanceThreshold": 2.0,
+        "NormalThreshold": 0.93,
+        "FitResidualThreshold": 1.5,
+        "TopologyEpsilon": 2.0,
+        "OrthogonalDotThreshold": 0.2,
+        "EndCapDistanceThreshold": 5.0,
+        "EndCapDotThreshold": 0.95
+      },
+      "historical_quality_status": "PASS",
+      "historical_five_layer_status": {
+        "segmentation": "PASS",
+        "geometry_semantics": "PASS",
+        "topology": "PASS",
+        "primitive_candidates": "PASS",
+        "csg_symbolic_tree": "PASS"
+      },
+      "parameter_error_summary_from_existing_evidence": {
+        "parameter_error_max_mm": "0.0322393430013328",
+        "parameter_error_candidate_id": "BH_D01",
+        "parameter_error_name": "Radius"
+      },
+      "thesis_table_4_10_display": {
+        "難度": "—",
+        "孔洞型別": "盲孔",
+        "取樣點數": "10000",
+        "殘留點數": "0",
+        "幾何特徵面數": "12",
+        "拓樸關係總數": "22",
+        "正交相鄰": "12",
+        "端面關係": "4",
+        "一般相鄰": "6",
+        "候選幾何單元數": "3",
+        "最大曲面擬合殘差(mm)": "0.0327",
+        "最大參數誤差(mm)": "0.0322",
+        "五層驗收": "通過",
+        "輸入範圍查驗": "通過"
+      }
+    }
+  ],
+  "aggregate": {
+    "plane_faces": 31,
+    "cylinder_faces": 12,
+    "total_faces": 43,
+    "plane_max_of_face_maxima_mm": "0.000008258",
+    "cylinder_min_of_face_maxima_mm": "0.029389201",
+    "cylinder_max_of_face_maxima_mm": "0.033317052"
+  },
+  "interpretation_limits": [
+    "Face-level maxima, not a pooled point residual distribution or per-point RMSE.",
+    "CSV precision retained; displayed zero is not proof of exact zero.",
+    "A facet-sampling snapshot is not a per-case historical generation receipt.",
+    "No unique-cause, no correlation-independence, and no irreducible error-floor conclusion.",
+    "Blind-hole example is not a fourth difficulty level."
+  ]
+}

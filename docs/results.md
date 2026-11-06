@@ -2,6 +2,8 @@
 
 [專案首頁](../README.md) · [機器可讀結果與來源](../provenance/quality-summary.json) · [論文表 4.10](../paper/thesis-public-snapshot-20261105.pdf)
 
+[各案例的驗證目的](case-validation-map.md)與[平面／圓柱殘差及STL解讀](residuals-and-stl.md)另作導讀；後者只整理面級最大值與可能機制，不把網格化寫成已證實的唯一原因。
+
 本頁整理既有研究結果，沒有新增實驗。四個案例各含 10000 個 STL 生成的點雲與法向量樣本，現存結果的殘留點均為 0。這些數字描述指定資料、程式及參考幾何下的結果。
 
 ## 品質總表
