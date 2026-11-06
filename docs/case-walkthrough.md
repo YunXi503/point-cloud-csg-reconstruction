@@ -2,6 +2,8 @@
 
 [面試官閱讀入口](interview-guide.md) · [機器可讀數值與 SHA](../provenance/interview-evidence.json) · [L型板論文圖件](figures/l-bracket.md)
 
+LB_D01與BH_D01的端部、深度及兩份實作差異，另見[貫穿孔／盲孔判別導讀](hole-end-conditions.md)。
+
 這是一個保存資料的逐層導讀，沒有新增研究實驗。以下數值直接取自本庫初始 CSV、已驗證輸出與原程式，不把指定零件的規則當成通用辨識器。
 
 ```mermaid

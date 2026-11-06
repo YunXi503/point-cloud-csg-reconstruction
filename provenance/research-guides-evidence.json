@@ -1,0 +1,791 @@
+{
+  "schema_version": "1",
+  "date": "2026-11-06",
+  "base_commit": "63493e30fd385540e7cb976f9fdeafafeffd195b",
+  "scope": "Documentation evidence only; existing source/CSV readback, no research execution or parameter change.",
+  "thesis": {
+    "word_workspace_path": "output/使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究-11379108-260811.docx",
+    "word_sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+    "formal_pdf_workspace_path": "output/使用曲面法向量特性與建構式實體幾何法則重塑點雲資料成為實體模型之研究-11379108-260811.pdf",
+    "formal_pdf_sha256": "84ce6bfa90fd8b91f7a2a9bb7831f955eba462624e459f226dc05fee2ae57d21",
+    "omath": 97,
+    "public_pdf_path": "paper/thesis-public-snapshot-20261105.pdf",
+    "public_pdf_sha256": "1f867bb8877e0a44207b37386719199ea63beff6778706378e663a0f603ae10c",
+    "extraction_note": "Paragraph text is w:t only; OMML formulas are not transcribed. Paragraph indexes are zero-based document.xml body p order, not page numbers."
+  },
+  "thesis_excerpts": {
+    "1.1": {
+      "heading": "1.1 研究背景與動機",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 237,
+          "text": "在機械工件的維護、再製與改設計過程中，常須面對缺少原始圖面或 CAD 檔案的情形。逆向工程即以既有物件為起點，藉由量測、幾何分析與模型重建，取得可供後續設計或製造使用的數位資料。其中點雲以大量離散點記錄物體表面位置，故成為幾何重建的重要輸入形式。既有研究已指出，由量測資料恢復幾何模型並非單純的資料格式轉換，而須同時處理幾何辨識、曲面表示與設計資訊回復等問題 (Várady et al., 1997)。現行點雲處理工具與特徵描述方法雖可支援法向量估測、分割及局部幾何分析 (Rusu et al., 2009; Rusu & Cousins, 2011)，所得資料仍不等同具有工程建模意義的 CAD 模型。"
+        },
+        {
+          "body_paragraph_index_zero_based": 238,
+          "text": "表面重建與 CAD 導向重建的目標並不相同。傳統上多以表面重建為主要輸出，著重由點雲形成連續曲面或三角網格，以呈現物體外觀；CAD 導向重建則須進一步辨識平面、圓柱面、孔洞與構件等可解析特徵，並恢復特徵之間的連接及建構邏輯。然而點雲表面重建仍受雜訊、離群值、非均勻取樣與缺漏資料影響 (Sulzer et al., 2025)；若欲由非結構化資料轉換為建構式實體幾何 (Constructive Solid Geometry, CSG) 模型，還須面對候選幾何基本造型選擇、參數估測與建構樹搜尋等問題 (Fayolle & Friedrich, 2024)。故僅輸出外觀相近的網格，雖可保存形狀，仍不足以說明該工件如何由工程上有意義的幾何單元構成。"
+        },
+        {
+          "body_paragraph_index_zero_based": 239,
+          "text": "機械零件常包含互相正交的平面、圓柱凸台、貫穿孔及局部切除。幾何基本造型辨識可藉由點位置、法向量及參數擬合建立局部面型 (Schnabel et al., 2007; Raffo et al., 2022; Romanengo et al., 2023)，但局部面型仍須結合相鄰、正交相鄰與端面關係，才能進而推論構件與孔洞。既有加工特徵辨識研究顯示，面鄰接圖、幾何提示與規則推論可用以解釋實體模型中的特徵組成 (Joshi & Chang, 1988; Vandenbrande & Requicha, 1993; Han et al., 2000; Rahmani & Arezoo, 2007)。惟上述方法多以已具備幾何與拓樸資訊的實體模型或 B-rep 為輸入，而原始點雲並不具有此類結構化資訊。因此，若由點雲分割與幾何擬合結果建立面型及面間關係，作為連接低階點雲資料與高階工程特徵推論的中介表示，將有利於運用CSG方法之資料轉換。"
+        },
+        {
+          "body_paragraph_index_zero_based": 240,
+          "text": "建構式實體幾何(CSG)以幾何基本造型及聯集、差集、交集等布林運算描述實體建構歷程 (Requicha, 1980; Mäntylä, 1988)。若研究關注的問題不僅是由點雲取得局部平面或圓柱面型，而是如何將點級幾何資料逐步轉換為可追溯的語義特徵面、拓樸關係與候選幾何單元，以支持符號化的 CSG 推論表示。單一平面或圓柱面僅反映局部面型；盲孔、階梯、凸台或穿孔等具工程意義的結構，則須由多個語義特徵面及其關係共同判斷。因此，有必要建立一套由點級資料通往符號建構邏輯的規則式流程，以補足點雲幾何分析與工程建模表示之間的轉換缺口。"
+        },
+        {
+          "body_paragraph_index_zero_based": 241,
+          "text": "採用CSG方法的情境是當既有機械零件因 CAD 圖檔遺失、再製或設計變更而需要重新整理結構資料的前期作業。工程人員取得工件的點雲後，若能先辨識底板、立板、圓柱、孔洞及其面間關係，即可據此核對零件結構並準備後續的參數化建模。階梯狀圓柱、L型板、模型A 與盲孔六角座分別對應共軸圓柱、正交板件、多軸特徵與不貫穿孔洞等常見的機械構型，用以檢查本研究規則在這些情境中的處理方式。"
+        }
+      ]
+    },
+    "1.2": {
+      "heading": "1.2 研究問題",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 243,
+          "text": "      本研究將探討四項問題：問題一，如何由含曲面法向量的點雲資料形成穩定的平面與圓柱面群集。處理時須保留無法可靠歸屬的殘留點，以免將邊界點或轉接曲面錯併入有效面。問題二，如何將已區分面域歸屬之點群轉換為具面型、方向、中心與幾何參數的幾何特徵面；單一幾何特徵面不預先等同於孔洞、階梯或凸台等工程特徵。問題三，如何依幾何特徵面之間的最小距離、代表方向及幾何類型，建立相鄰、正交相鄰與端面關係，並以一致的資料結構保存。問題四，如何由幾何特徵面與拓樸關係形成候選幾何單元，判定其聯集或差集角色，進而建立可重現比較的階層式 CSG 符號樹。"
+        },
+        {
+          "body_paragraph_index_zero_based": 244,
+          "text": "      上述問題均須由原始點雲、驗證後 CSV、幾何參數及圖表相互對照，不以外觀判讀或未經查核的結果數字替代。"
+        }
+      ]
+    },
+    "1.3": {
+      "heading": "1.3 研究目的",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 246,
+          "text": "本研究目的為建立一套由 STL 網格模型生成的點雲與曲面法向量資料，逐步形成階層式 CSG 推論表示的可解析方法。具體而言，第一，將點雲資料整理為可辨識的平面與圓柱面幾何特徵面；第二，建立面間拓樸關係與候選幾何單元的推論規則，使來源面與布林角色可被追溯；第三，以四個實作範例查驗候選單元可否組成符合既有資料的階層式 CSG 推論表示。"
+        }
+      ]
+    },
+    "1.4": {
+      "heading": "1.4 研究限制",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 248,
+          "text": "本研究資料來自 STL 網格模型生成的點雲與法向量，不屬於真實掃描驗證。受控資料可先排除掃描設備誤差、遮蔽、非均勻密度及法向量估測不穩定等因素，使結果得以聚焦於幾何分割、拓樸及 CSG 規則本身；相對地，本研究結果亦不能直接推廣至含雜訊、缺漏或多重反射的實測點雲。"
+        },
+        {
+          "body_paragraph_index_zero_based": 249,
+          "text": "面型辨識範圍限於平面與圓柱面。圓錐、球面、圓角、倒角、自由曲面及轉接曲面尚未建立專屬的辨識與候選單元規則；此類幾何目前僅能以相鄰關係與既有平面、圓柱候選近似表示，或在無法穩定符合面型時保留為殘留標示。幾何殘差與法向量門檻亦屬目前模型尺度與取樣條件下的操作性設定，資料尺度或取樣方式改變時須重新檢查。"
+        },
+        {
+          "body_paragraph_index_zero_based": 250,
+          "text": "本研究的輸出範圍止於幾何特徵面、拓樸關係、候選幾何單元及階層式 CSG 符號推論。研究中所稱的完整方法鏈，是指五個階段均具可追溯資料，不等同通用的點雲至 CAD 自動重建系統。"
+        }
+      ]
+    },
+    "3.7": {
+      "heading": "3.7 語義拓樸：拓樸關係建構",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 586,
+          "text": "拓樸關係建構以 3.6 節的幾何特徵面為節點，判斷兩面之間是否形成一般相鄰、正交相鄰或端面關係；以下將任兩個幾何特徵面的組合稱為面組。拓樸關係只描述面與面的連接方式，不決定板件、凸台、孔洞或布林運算角色。"
+        },
+        {
+          "body_paragraph_index_zero_based": 587,
+          "text": "圖 3.5 以等角實體示意本研究使用的三種拓樸關係。圖 3.5(a) 為一般相鄰，表示兩面距離符合容許值，但不符合後述較具體條件；3.5(b) 為正交相鄰，表示兩個相鄰平面的法向量近似垂直；3.5(c) 為端面關係，表示圓柱面與位於其軸向端部的平面相接。孔洞邊界不是第四種關係類型，僅在候選幾何單元推論時作為判斷圓柱形孔洞的邊界證據。"
+        },
+        {
+          "body_paragraph_index_zero_based": 589,
+          "text": "(a) 一般相鄰(b) 正交相鄰(c) 端面關係"
+        },
+        {
+          "body_paragraph_index_zero_based": 590,
+          "text": "圖 3.5 三種拓樸關係概念示意圖"
+        },
+        {
+          "body_paragraph_index_zero_based": 591,
+          "text": "本研究以 TopologyEdges 記錄拓樸關係。每一筆關係至少記錄所連接的兩個幾何特徵面(FromClusterID、ToClusterID)、關係類型(EdgeType)，以及兩面之間的最小距離(MinDistance)。此資料不決定構件或孔洞角色，而是提供後續規則判斷所需的面與面連接資訊。"
+        },
+        {
+          "body_paragraph_index_zero_based": 592,
+          "text": "本研究先以兩個幾何特徵面之間的最小距離建立相鄰關係，再依面向與幾何類型區分正交相鄰或端面關係；每一面組只指定一個最具體的關係，判定優先順序為先端面關係、次正交相鄰，其餘只符合相鄰條件者記為一般相鄰，三種類型互斥且不重複計數。公式(3-4)至(3-6)分別定義相鄰、正交相鄰與端面關係的判斷架構。其中數值門檻為本研究目前資料條件下採用的操作性參數，用於實作上述幾何關係判斷，並非方法本身的固定常數。當模型尺度或點雲取樣條件改變時，應依資料特性重新設定，其數值與查驗結果於第四章說明。相鄰關係的判斷如公式(3-4)所示："
+        }
+      ]
+    },
+    "3.8": {
+      "heading": "3.8 節已將面型與拓樸關係整理為候選幾何單元，並以 BooleanType 指定其加成或減成角色。階層式 CSG 推論即依此角色建立：先以 Union 組成主要幾何，再以 Difference 從主要幾何移除孔洞或凹入等候選單元。本文所稱可解析性，是指候選單元、布林角色與父子節點提供足以說明完整 CSG 架構的資訊；可追溯性則指每一筆資料均可回查至來源群集、面級參數及判斷條件，兩者不可混用。",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 636,
+          "text": "圖 3.9 中以方體、圓柱與孔洞切除體等中性圖符，示意基本造型經聯集形成主體，再以差集移除代表孔洞的基本造型，形成階層式 CSG 推論表示。此圖用於說明布林建構的概念關係。"
+        },
+        {
+          "body_paragraph_index_zero_based": 638,
+          "text": "圖 3.9 階層式 CSG 推論概念示意圖"
+        },
+        {
+          "body_paragraph_index_zero_based": 639,
+          "text": "拓樸關係本身不直接等同布林運算；它與面型及幾何參數共同構成候選幾何單元的推論依據。轉換時，先由具有一般相鄰或正交相鄰關係的平面集合，依其來源群集與幾何範圍形成板件、剖面擠出或多邊形柱等候選；再由圓柱面、端面關係與軸向範圍形成圓柱或孔洞候選。候選單元建立後，以 BooleanType 記錄其聯集或差集角色；端面關係僅作為圓柱候選及孔洞端部條件的證據，並不新增拓樸關係型別。最後，所有 Union 候選依 CandidateID 以左結合順序兩兩組成基體，再依相同順序由 Difference 候選逐一切除，形成每個內部節點均有兩個子節點的規範化 CSG 符號樹。因此，每一個葉節點、布林角色與父子節點皆可回查至其候選單元、來源幾何特徵面與拓樸證據。"
+        },
+        {
+          "body_paragraph_index_zero_based": 640,
+          "text": "Du et al. (2018) 將 CSG 表示為由幾何基本造型與布林運算遞迴形成的樹狀結構，其中葉節點為具幾何參數的基本造型，內部節點則為聯集、交集或差集等布林運算。參考此遞迴結構，本研究依候選幾何單元資料所記錄的BooleanType，將目前推論使用的布林運算界定為Union與Difference。令  表示一個CSG 推論節點， 表示第  個候選幾何單元，其共通遞迴表示如公式(3-7)所示："
+        },
+        {
+          "body_paragraph_index_zero_based": 641,
+          "text": "⁠ ⁠ ⁠ |Union(⁠) |Difference(⁠)(3-7)"
+        },
+        {
+          "body_paragraph_index_zero_based": 642,
+          "text": "其中，符號 ⁠ 表示遞迴定義， 表示可選的節點形式； 為 CSG 符號樹的葉節點， 與  為已形成的子結構；Union與Difference則為內部節點，分別表示加入與移除候選幾何單元。一般 CSG 文法可包含交集(Intersection)，但本研究的候選幾何單元僅以Union與Difference記錄布林角色，因此公式(3-7)僅保留本研究實際使用的兩類運算。"
+        }
+      ]
+    },
+    "4.6.3": {
+      "heading": "4.6.3 CSG 符號樹推論",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 940,
+          "text": "本例共推得 3 個候選幾何單元：六角基座與環台為聯集，中央盲孔為差集，型別與主要尺寸列於表 4.9。孔的端部條件由方法依 3.8 節規則自行判定。盲孔內壁的兩個端面關係中，環台頂面為環狀開口，盲孔底面則為覆蓋孔截面的內部圓盤，因此判為盲孔，並以 Depth 記錄自開口至底面的有限深度 50.000 mm。此判定依端面關係完成；各候選單元相對STL 參考幾何的最大參數誤差為 0.0322 mm，出現在盲孔半徑。"
+        },
+        {
+          "body_paragraph_index_zero_based": 941,
+          "text": "表 4.9 盲孔六角座候選幾何單元查驗結果"
+        },
+        {
+          "body_paragraph_index_zero_based": 942,
+          "text": "候選幾何單元"
+        },
+        {
+          "body_paragraph_index_zero_based": 943,
+          "text": "布林角色"
+        },
+        {
+          "body_paragraph_index_zero_based": 944,
+          "text": "型別"
+        },
+        {
+          "body_paragraph_index_zero_based": 945,
+          "text": "主要尺寸(mm)"
+        },
+        {
+          "body_paragraph_index_zero_based": 946,
+          "text": "六角基座 BH_U01"
+        }
+      ]
+    },
+    "4.7.1": {
+      "heading": "4.7.1 拓樸關係型別隨幾何複雜度演變",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 1046,
+          "text": "三類拓樸關係的出現取決於零件的面型組合與面間幾何條件，並不隨零件規模或特徵數量呈線性增加。階梯狀圓柱主要由共軸圓柱面及其端面構成，因此僅判定出端面關係；L型板加入彼此正交的板件後，開始出現正交相鄰；模型A與盲孔六角座的面向及構件組成較為多樣，因此同時包含一般相鄰、正交相鄰及端面關係。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1047,
+          "text": "各範例的拓樸關係組成亦反映其主要幾何特徵。L型板以相互正交的板件為主，因此共有18條正交相鄰；模型A包含多組不同軸向的圓柱面與端面，因此共有10條端面關係；盲孔六角座的6條一般相鄰，則分別對應六組相鄰六角側面。相鄰側面的法向量夾角為60度，所形成的內部二面角為120度，因此不符合正交相鄰或端面關係的判定條件，而歸類為一般相鄰。上述結果顯示，採用「互斥並取最具體關係型別」的判定方式，可依面間幾何條件區分不同接合形式，無須針對個別零件另外增設拓樸關係型別。"
+        }
+      ]
+    },
+    "4.7.3": {
+      "heading": "4.7.3 貫穿孔與盲孔的統一處理",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 1052,
+          "text": "貫穿孔與盲孔使用同一套推論機制，包括相同的圓柱面與平面面型、端面關係及差集運算。兩者只在孔的端部條件上不同：貫穿孔兩端皆為開口，盲孔的一端則由位於工件內部的圓盤封閉。此差異依 3.8 節規則判定，並以 Depth 記錄有限深度，無須新增基本造型類型或拓樸關係型別。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1053,
+          "text": "盲孔六角座的判定過程提供了具體佐證。方法由端面關係的支撐形狀辨識內部封底圓盤，據此將該孔判為盲孔，並取得深度 50.000 mm。"
+        }
+      ]
+    },
+    "5.2": {
+      "heading": "5.2 研究貢獻",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 1067,
+          "text": "本研究的第一項貢獻，是將點級分割、幾何特徵面、拓樸關係、候選幾何單元與 CSG 符號樹連接為可追溯資料鏈。各階段以 ClusterID、FaceSummary、TopologyEdges 及 PrimitiveCandidates 保存來源，使最終葉節點與布林角色可回溯至原始點雲群集。工程人員因而能由候選單元回查其來源面與判定關係，而非只依模型外觀進行判讀。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1068,
+          "text": "第二項貢獻，是將平面、圓柱面、面間關係與孔洞端部條件整合為可檢核的規則。面型辨識以幾何殘差與法向量一致性檢查群集品質；拓樸關係以一般相鄰、正交相鄰與端面關係描述面間接觸；圓柱候選再結合圓柱面、端面與軸向深度判定其幾何角色。四個範例顯示，共軸圓柱、正交板件、多軸特徵與盲孔可在同一方法鏈中形成對應的候選單元與布林關係。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1069,
+          "text": "第三項貢獻，是提供缺少原始 CAD 圖檔之機械零件的前期資料整理方式。以 L型板為例，流程可將點雲中的底板、立板、圓柱與孔洞及其關係整理為可核對的結構資訊，供工程人員接續建立參數化模型；盲孔六角座則顯示孔洞是否貫穿及其有限深度可由端面關係判定。此方法適合支援以平面與圓柱為主之零件再製、設計變更前的結構確認，以及治具或工裝建模前的特徵整理。"
+        }
+      ]
+    },
+    "5.3": {
+      "heading": "5.3 未來工作",
+      "paragraphs": [
+        {
+          "body_paragraph_index_zero_based": 1071,
+          "text": "後續研究可先導入具有已知雜訊與缺漏程度的合成資料，再逐步納入真實掃描點雲，以檢查距離、法向量與幾何殘差門檻對資料品質的敏感性。分割階段亦可評估多尺度鄰域、邊界保護與局部密度調整，作為面對取樣不均條件的延伸方向。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1072,
+          "text": "面型方面可擴充圓錐、環面、圓角、倒角與轉接曲面，使斜面與過渡區能以相應的曲面特性辨識，而非僅以一般相鄰與板件候選近似。候選幾何單元推論亦可進一步檢查共軸、共面、對稱與重複特徵等關係。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1073,
+          "text": "在 CSG 驗證方面，可將目前的規範化符號樹輸入幾何核心實際執行聯集與差集，再與來源 STL 比較表面距離、體積差、連通元件與拓樸結構。當符號表示與實體幾何皆完成查驗後，才適合進一步研究與 CAD 系統銜接的參數化編輯與製造特徵應用。"
+        },
+        {
+          "body_paragraph_index_zero_based": 1074,
+          "text": "參考文獻"
+        },
+        {
+          "body_paragraph_index_zero_based": 1075,
+          "text": "Besl, P. J. & McKay, N. D. (1992). A method for registration of 3-D shapes. IEEE Transactions on Pattern Analysis and Machine Intelligence, 14(2), 239–256. https://doi.org/10.1109/34.121791"
+        },
+        {
+          "body_paragraph_index_zero_based": 1076,
+          "text": "Du, T., Inala, J. P., Pu, Y., Spielberg, A., Schulz, A., Rus, D., Solar-Lezama, A. & Matusik, W. (2018). InverseCSG: Automatic conversion of 3D models to CSG trees. ACM Transactions on Graphics, 37(6), Article 213. https://doi.org/10.1145/3272127.3275006"
+        },
+        {
+          "body_paragraph_index_zero_based": 1077,
+          "text": "Ester, M., Kriegel, H.-P., Sander, J. & Xu, X. (1996). A density-based algorithm for discovering clusters in large spatial databases with noise. In Proceedings of the Second International Conference on Knowledge Discovery and Data Mining (KDD-96) (pp. 226–231). AAAI Press."
+        }
+      ]
+    }
+  },
+  "source_bindings": [
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+      "sha256": "b5f916c6a7caa02e32ee40f65527b9a4185a13d18264e13409c653da72ee7569"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/FaceSummary_L_Bracket_chapter3_verified.csv",
+      "sha256": "9653daad2b2413dcaaf61a4c0d2fb7809c56f1a57d7d4083077a68030ce31b1c"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/TopologyEdges_L_Bracket_chapter3_verified.csv",
+      "sha256": "76f9a79d31c7458c8ed0a81d5a28a9b4bb64f5090aa8c679e7b4b41406cb7558"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "de2ef13b26bf3a9a2ccb42b55a0729d8116b13dcf62cb9a7ed8f253477b2b6c0"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "4486c0fe5e81163c6fb416f2046da4413e98c193dcdaeae006fd56a6c268be2a"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "2f3e2484bfe6793f82aca8f19529dd6a10d3e8c92cf4d8fb7df99a595bf3e6b3"
+    },
+    {
+      "path": "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/Result_Blind_Hole_Hex_Base_chapter3_verified.csv",
+      "sha256": "ee6bd08703e8b55a12100816005e960bd3d195581e38a349d139214e466a2385"
+    },
+    {
+      "path": "research/tools/infer_stepped_cylinder_chapter3_method.py",
+      "sha256": "1bd6365fec4d056b991293c2f2a7d839e194349bc596c1705b482a1a36f2645c"
+    },
+    {
+      "path": "research/tools/infer_lbracket_chapter3_method.py",
+      "sha256": "a4a728f94b805d0fcdf45eefe937aed55442bfff69e9aeff39184ba3d817d9ec"
+    },
+    {
+      "path": "research/tools/infer_blind_hole_hex_base_chapter3_method.py",
+      "sha256": "cab3bce292203d3e6e85278094af8123dd7a853a27bc633a4991b0dccaa6699a"
+    },
+    {
+      "path": "research/tools/infer_model_a_chapter3_method.py",
+      "sha256": "8d9dcaa64389dfdbe29124894ebc060badab71e710e49b22c025299e1c22efa0"
+    }
+  ],
+  "functions": {
+    "research/tools/infer_stepped_cylinder_chapter3_method.py": {
+      "cylinder_surface_sense": {
+        "first_line": 277,
+        "last_line": 282
+      },
+      "assign_semantic_roles": {
+        "first_line": 295,
+        "last_line": 320
+      },
+      "min_distance": {
+        "first_line": 323,
+        "last_line": 326
+      },
+      "build_topology": {
+        "first_line": 329,
+        "last_line": 388
+      },
+      "build_candidates": {
+        "first_line": 391,
+        "last_line": 438
+      },
+      "recorded_constants": {
+        "DISTANCE_THRESHOLD_MM": 2.0,
+        "FIT_RESIDUAL_THRESHOLD_MM": 1.5,
+        "ORTHOGONAL_DOT_THRESHOLD": 0.2,
+        "ENDCAP_DISTANCE_THRESHOLD_MM": 5.0,
+        "ENDCAP_DOT_THRESHOLD": 0.95
+      }
+    },
+    "research/tools/infer_lbracket_chapter3_method.py": {
+      "cylinder_surface_sense": {
+        "first_line": 252,
+        "last_line": 257
+      },
+      "semantic_roles": {
+        "first_line": 260,
+        "last_line": 296
+      },
+      "min_distance": {
+        "first_line": 315,
+        "last_line": 318
+      },
+      "build_topology": {
+        "first_line": 321,
+        "last_line": 369
+      },
+      "build_candidates": {
+        "first_line": 391,
+        "last_line": 486
+      },
+      "recorded_constants": {
+        "DISTANCE_THRESHOLD_MM": 2.0,
+        "FIT_RESIDUAL_THRESHOLD_MM": 1.5,
+        "ORTHOGONAL_DOT_THRESHOLD": 0.2,
+        "ENDCAP_DISTANCE_THRESHOLD_MM": 5.0,
+        "ENDCAP_DOT_THRESHOLD": 0.95
+      }
+    },
+    "research/tools/infer_blind_hole_hex_base_chapter3_method.py": {
+      "radial_extent": {
+        "first_line": 56,
+        "last_line": 63
+      },
+      "assign_semantic_roles": {
+        "first_line": 66,
+        "last_line": 177
+      },
+      "endcap_partners": {
+        "first_line": 180,
+        "last_line": 192
+      },
+      "classify_hole_end_condition": {
+        "first_line": 195,
+        "last_line": 222
+      },
+      "build_candidates": {
+        "first_line": 225,
+        "last_line": 314
+      },
+      "recorded_constants": {}
+    },
+    "research/tools/infer_model_a_chapter3_method.py": {
+      "assign_semantic_roles": {
+        "first_line": 220,
+        "last_line": 271
+      },
+      "build_candidates": {
+        "first_line": 563,
+        "last_line": 644
+      },
+      "recorded_constants": {
+        "DISTANCE_THRESHOLD_MM": 2.0,
+        "ORTHOGONAL_DOT_THRESHOLD": 0.2,
+        "ENDCAP_DISTANCE_THRESHOLD_MM": 5.0,
+        "ENDCAP_DOT_THRESHOLD": 0.95
+      }
+    }
+  },
+  "case_readback": {
+    "l-bracket": {
+      "candidate": {
+        "CandidateID": "LB_D01",
+        "PrimitiveType": "BasePlateHole",
+        "RelatedClusters": "0;2;9",
+        "Length": "",
+        "Width": "",
+        "Height": "",
+        "Radius": "7.970796954",
+        "Depth": "4.999999993",
+        "BooleanType": "Difference",
+        "InferenceRule": "cylinder side + two EndCap relations + radial normal sense",
+        "RuleStatus": "PASS"
+      },
+      "faces": [
+        {
+          "ClusterID": "0",
+          "FeatureType": "Plane_XY (底板下表面)",
+          "SemanticRole": "base_bottom",
+          "PointCount": "2363",
+          "BoundaryPointCount": "395",
+          "CenterX": "0.626753971",
+          "CenterY": "40.493187333",
+          "CenterZ": "0.000000000",
+          "NX": "-0.000000000",
+          "NY": "-0.000000000",
+          "NZ": "-1.000000000",
+          "AxisX": "0.000000000",
+          "AxisY": "0.000000000",
+          "AxisZ": "0.000000000",
+          "MinX": "-19.999855042",
+          "MaxX": "19.992118835",
+          "MinY": "0.045607030",
+          "MaxY": "79.970428467",
+          "MinZ": "0.000000000",
+          "MaxZ": "0.000000000",
+          "Radius": "",
+          "AxisMin": "",
+          "AxisMax": "",
+          "SurfaceSense": "",
+          "FitResidualMax": "0.000000000",
+          "FitResidualMedian": "0.000000000",
+          "NormalConsistencyMin": "1.000000000",
+          "ValidationStatus": "PASS"
+        },
+        {
+          "ClusterID": "2",
+          "FeatureType": "Plane_XY (底板上表面)",
+          "SemanticRole": "base_top",
+          "PointCount": "1989",
+          "BoundaryPointCount": "515",
+          "CenterX": "-0.037853475",
+          "CenterY": "41.676631875",
+          "CenterZ": "4.999999993",
+          "NX": "-0.000000000",
+          "NY": "0.000000000",
+          "NZ": "1.000000000",
+          "AxisX": "0.000000000",
+          "AxisY": "0.000000000",
+          "AxisZ": "0.000000000",
+          "MinX": "-19.981889725",
+          "MaxX": "19.986505508",
+          "MinY": "5.006468296",
+          "MaxY": "79.995170593",
+          "MinZ": "4.999999523",
+          "MaxZ": "5.000000477",
+          "Radius": "",
+          "AxisMin": "",
+          "AxisMax": "",
+          "SurfaceSense": "",
+          "FitResidualMax": "0.000000493",
+          "FitResidualMedian": "0.000000007",
+          "NormalConsistencyMin": "1.000000000",
+          "ValidationStatus": "PASS"
+        },
+        {
+          "ClusterID": "9",
+          "FeatureType": "Cylinder_axisZ_inner (底板孔)",
+          "SemanticRole": "base_hole",
+          "PointCount": "184",
+          "BoundaryPointCount": "135",
+          "CenterX": "-0.001483781",
+          "CenterY": "29.998416102",
+          "CenterZ": "2.308930306",
+          "NX": "0.000000000",
+          "NY": "0.000000000",
+          "NZ": "0.000000000",
+          "AxisX": "0.000000000",
+          "AxisY": "0.000000000",
+          "AxisZ": "1.000000000",
+          "MinX": "-7.985157967",
+          "MaxX": "7.990040302",
+          "MinY": "22.043830872",
+          "MaxY": "37.956184387",
+          "MinZ": "0.005252477",
+          "MaxZ": "4.988277435",
+          "Radius": "7.970796954",
+          "AxisMin": "0.005252477",
+          "AxisMax": "4.988277435",
+          "SurfaceSense": "-0.998652720",
+          "FitResidualMax": "0.029723396",
+          "FitResidualMedian": "0.010983037",
+          "NormalConsistencyMin": "0.994535514",
+          "ValidationStatus": "PASS"
+        }
+      ],
+      "endcap_edges": [
+        {
+          "FromClusterID": "0",
+          "ToClusterID": "9",
+          "EdgeType": "EndCap",
+          "MinDistance": "0.514264767",
+          "DirectionDot": "1.000000000",
+          "DistanceThreshold": "5.000000000",
+          "DirectionThreshold": "0.950000000",
+          "RuleStatus": "PASS",
+          "InferenceRule": "|axis·normal|>0.95"
+        },
+        {
+          "FromClusterID": "2",
+          "ToClusterID": "9",
+          "EdgeType": "EndCap",
+          "MinDistance": "0.389632118",
+          "DirectionDot": "1.000000000",
+          "DistanceThreshold": "5.000000000",
+          "DirectionThreshold": "0.950000000",
+          "RuleStatus": "PASS",
+          "InferenceRule": "|axis·normal|>0.95"
+        }
+      ],
+      "files": [
+        "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/PrimitiveCandidates_L_Bracket_chapter3_verified.csv",
+        "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/FaceSummary_L_Bracket_chapter3_verified.csv",
+        "research/碩士論文/第四章驗證結果_260722/L_Bracket_chapter3_verified_v3/TopologyEdges_L_Bracket_chapter3_verified.csv"
+      ],
+      "depth_readback": {
+        "basis": "Saved FaceSummary center/axis precision, not a new fit",
+        "cap_axis_coordinates": [
+          0.0,
+          4.999999993
+        ],
+        "difference": 4.999999993
+      },
+      "orthogonal_example": {
+        "FromClusterID": "0",
+        "ToClusterID": "1",
+        "EdgeType": "OrthogonalAdjacency",
+        "MinDistance": "0.425821353",
+        "DirectionDot": "0.000000000",
+        "DistanceThreshold": "2.000000000",
+        "DirectionThreshold": "0.200000000",
+        "RuleStatus": "PASS",
+        "InferenceRule": "|normal·normal|<0.2"
+      },
+      "orthogonal_faces": [
+        {
+          "ClusterID": "0",
+          "FeatureType": "Plane_XY (底板下表面)",
+          "SemanticRole": "base_bottom",
+          "PointCount": "2363",
+          "BoundaryPointCount": "395",
+          "CenterX": "0.626753971",
+          "CenterY": "40.493187333",
+          "CenterZ": "0.000000000",
+          "NX": "-0.000000000",
+          "NY": "-0.000000000",
+          "NZ": "-1.000000000",
+          "AxisX": "0.000000000",
+          "AxisY": "0.000000000",
+          "AxisZ": "0.000000000",
+          "MinX": "-19.999855042",
+          "MaxX": "19.992118835",
+          "MinY": "0.045607030",
+          "MaxY": "79.970428467",
+          "MinZ": "0.000000000",
+          "MaxZ": "0.000000000",
+          "Radius": "",
+          "AxisMin": "",
+          "AxisMax": "",
+          "SurfaceSense": "",
+          "FitResidualMax": "0.000000000",
+          "FitResidualMedian": "0.000000000",
+          "NormalConsistencyMin": "1.000000000",
+          "ValidationStatus": "PASS"
+        },
+        {
+          "ClusterID": "1",
+          "FeatureType": "Plane_XZ (底板與立板後側合併面)",
+          "SemanticRole": "back",
+          "PointCount": "1255",
+          "BoundaryPointCount": "294",
+          "CenterX": "-0.050624345",
+          "CenterY": "0.000000000",
+          "CenterZ": "22.196992181",
+          "NX": "-0.000000000",
+          "NY": "-1.000000000",
+          "NZ": "-0.000000000",
+          "AxisX": "0.000000000",
+          "AxisY": "0.000000000",
+          "AxisZ": "0.000000000",
+          "MinX": "-19.989233017",
+          "MaxX": "19.932147980",
+          "MinY": "0.000000000",
+          "MaxY": "0.000000000",
+          "MinZ": "0.027450969",
+          "MaxZ": "44.892513275",
+          "Radius": "",
+          "AxisMin": "",
+          "AxisMax": "",
+          "SurfaceSense": "",
+          "FitResidualMax": "0.000000000",
+          "FitResidualMedian": "0.000000000",
+          "NormalConsistencyMin": "1.000000000",
+          "ValidationStatus": "PASS"
+        }
+      ]
+    },
+    "blind-hole-hex-base": {
+      "candidate": {
+        "CandidateID": "BH_D01",
+        "PrimitiveType": "BlindHole",
+        "RelatedClusters": "1;10;11",
+        "Length": "",
+        "Width": "",
+        "Height": "",
+        "Radius": "22.467640162",
+        "Depth": "50.000000000",
+        "BooleanType": "Difference",
+        "InferenceRule": "cylinder side + two EndCap relations + radial normal sense; one EndCap plane is an interior disc covering the hole section",
+        "RuleStatus": "PASS"
+      },
+      "faces": [
+        {
+          "ClusterID": "1",
+          "FeatureType": "Cylinder_axisZ_inner (盲孔內壁)",
+          "SemanticRole": "blind_hole_side",
+          "PointCount": "1754",
+          "FittedPatchCount": "1",
+          "CenterX": "-0.000441485",
+          "CenterY": "-0.000191236",
+          "CenterZ": "50.114969940",
+          "NX": "",
+          "NY": "",
+          "NZ": "",
+          "AxisX": "0.000000000",
+          "AxisY": "0.000000000",
+          "AxisZ": "1.000000000",
+          "MinX": "-22.499813080",
+          "MaxX": "22.499511719",
+          "MinY": "-22.499971390",
+          "MaxY": "22.498699188",
+          "MinZ": "25.053394318",
+          "MaxZ": "74.954704285",
+          "Radius": "22.467640162",
+          "AxisMin": "25.053394318",
+          "AxisMax": "74.954704285",
+          "SurfaceSense": "-0.999484138",
+          "FitResidualMax": "0.032736437",
+          "FitResidualMedian": "0.012194053",
+          "NormalConsistencyMin": "0.997858917",
+          "ValidationStatus": "PASS"
+        },
+        {
+          "ClusterID": "10",
+          "FeatureType": "Plane_Horizontal (環台頂面)",
+          "SemanticRole": "ring_top",
+          "PointCount": "548",
+          "FittedPatchCount": "1",
+          "CenterX": "1.487072424",
+          "CenterY": "-0.000691329",
+          "CenterZ": "75.000000070",
+          "NX": "0.000000005",
+          "NY": "0.000000002",
+          "NZ": "1.000000000",
+          "AxisX": "",
+          "AxisY": "",
+          "AxisZ": "",
+          "MinX": "-33.982376099",
+          "MaxX": "34.747261047",
+          "MinY": "-34.215320587",
+          "MaxY": "34.607810974",
+          "MinZ": "74.999992371",
+          "MaxZ": "75.000007629",
+          "Radius": "",
+          "AxisMin": "",
+          "AxisMax": "",
+          "SurfaceSense": "",
+          "FitResidualMax": "0.000007832",
+          "FitResidualMedian": "0.000000088",
+          "NormalConsistencyMin": "1.000000000",
+          "ValidationStatus": "PASS"
+        },
+        {
+          "ClusterID": "11",
+          "FeatureType": "Plane_Horizontal (盲孔底面)",
+          "SemanticRole": "blind_hole_floor",
+          "PointCount": "395",
+          "FittedPatchCount": "1",
+          "CenterX": "-0.426582246",
+          "CenterY": "-0.270297748",
+          "CenterZ": "24.999999981",
+          "NX": "-0.000000003",
+          "NY": "0.000000002",
+          "NZ": "1.000000000",
+          "AxisX": "",
+          "AxisY": "",
+          "AxisZ": "",
+          "MinX": "-22.325214386",
+          "MaxX": "22.234851837",
+          "MinY": "-22.296941757",
+          "MaxY": "21.393299103",
+          "MinZ": "24.999998093",
+          "MaxZ": "25.000001907",
+          "Radius": "",
+          "AxisMin": "",
+          "AxisMax": "",
+          "SurfaceSense": "",
+          "FitResidualMax": "0.000002009",
+          "FitResidualMedian": "0.000000046",
+          "NormalConsistencyMin": "1.000000000",
+          "ValidationStatus": "PASS"
+        }
+      ],
+      "endcap_edges": [
+        {
+          "FromClusterID": "1",
+          "ToClusterID": "10",
+          "EdgeType": "EndCap",
+          "MinDistance": "0.675950373",
+          "DirectionDot": "1.000000000",
+          "DistanceThreshold": "5.000000000",
+          "DirectionThreshold": "0.950000000",
+          "RuleStatus": "PASS",
+          "InferenceRule": "finite-range contact; |axis·normal|>0.95"
+        },
+        {
+          "FromClusterID": "1",
+          "ToClusterID": "11",
+          "EdgeType": "EndCap",
+          "MinDistance": "0.726819499",
+          "DirectionDot": "1.000000000",
+          "DistanceThreshold": "5.000000000",
+          "DirectionThreshold": "0.950000000",
+          "RuleStatus": "PASS",
+          "InferenceRule": "finite-range contact; |axis·normal|>0.95"
+        }
+      ],
+      "files": [
+        "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/PrimitiveCandidates_Blind_Hole_Hex_Base_chapter3_verified.csv",
+        "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/FaceSummary_Blind_Hole_Hex_Base_chapter3_verified.csv",
+        "research/碩士論文/第四章驗證結果_260725/Blind_Hole_Hex_Base_chapter3_verified_v3/TopologyEdges_Blind_Hole_Hex_Base_chapter3_verified.csv"
+      ],
+      "cap_support_readback": {
+        "basis": "Read-only calculation from saved Result coordinates and rounded FaceSummary parameters; not archived full-precision internal rho values or a new inference run.",
+        "radial_threshold_mm": 1.5,
+        "radius_from_csv": 22.467640162,
+        "radius_plus_threshold": 23.967640162,
+        "caps": [
+          {
+            "cluster_id": 10,
+            "point_count": 548,
+            "radial_min": 22.493706082434628,
+            "radial_max": 34.960874661809825,
+            "cap_projection_median": 75.0,
+            "closed_by_recorded_radial_proxy": false
+          },
+          {
+            "cluster_id": 11,
+            "point_count": 395,
+            "radial_min": 1.3770344071020353,
+            "radial_max": 22.393477547174697,
+            "cap_projection_median": 25.0,
+            "closed_by_recorded_radial_proxy": true
+          }
+        ],
+        "depth_from_saved_axis_projection_medians": 50.0
+      },
+      "general_adjacency_example": {
+        "FromClusterID": "3",
+        "ToClusterID": "5",
+        "EdgeType": "Adjacency",
+        "MinDistance": "0.520761804",
+        "DirectionDot": "0.500000010",
+        "DistanceThreshold": "2.000000000",
+        "DirectionThreshold": "",
+        "RuleStatus": "PASS",
+        "InferenceRule": "finite-range contact"
+      }
+    }
+  },
+  "limitations": [
+    "L-Bracket role mapping does not call the blind-case end classifier.",
+    "Radial extrema are an operational proxy, not proof of complete disk coverage.",
+    "Two-closed-end and arbitrary partial-coverage cases lack dedicated stored validation evidence.",
+    "No literature novelty/performance superiority or industrial deployment is demonstrated by these guides."
+  ]
+}

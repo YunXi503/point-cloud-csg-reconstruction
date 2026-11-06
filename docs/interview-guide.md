@@ -2,6 +2,8 @@
 
 [首頁](../README.md) · [L型板逐層導讀](case-walkthrough.md) · [來源與數值](../provenance/interview-evidence.json) · [仍缺資料](missing-information.md)
 
+研究內容可先讀[問題與貢獻總覽](research-overview.md)，再沿[孔洞端部判別](hole-end-conditions.md)與[拓樸規則例解](topology-rules.md)查實際面組、來源與判斷限制。這三頁整理既有論文／程式，沒有新增研究實驗。
+
 日期：2026-11-05；版本：0.1.6。此處是依現存論文、程式、結果與測試所做的工程審查，不是實際面試評分。審查判斷為：目前能展示指定案例的幾何計算、圖關係推論、追溯與重現；未知模型泛化、規模效能及完整數值邊界仍缺直接驗證。
 
 ## 建議的程式閱讀順序

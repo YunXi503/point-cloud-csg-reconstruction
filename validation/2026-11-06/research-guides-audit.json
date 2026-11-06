@@ -1,0 +1,38 @@
+{
+  "schema_version": "1",
+  "status": "pass",
+  "date": "2026-11-06",
+  "base_commit": "63493e30fd385540e7cb976f9fdeafafeffd195b",
+  "scope": "Documentation-only review; no local research inference or new experiment executed.",
+  "guides": [
+    "docs/research-overview.md",
+    "docs/hole-end-conditions.md",
+    "docs/topology-rules.md"
+  ],
+  "protected_sources_checked": 241,
+  "all_protected_sources_unchanged": true,
+  "v018_files_frozen": 445,
+  "all_frozen_hashes_match": true,
+  "all_code_tests_inputs_parameters_figures_and_prior_evidence_unchanged": true,
+  "word_sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+  "formal_pdf_sha256": "84ce6bfa90fd8b91f7a2a9bb7831f955eba462624e459f226dc05fee2ae57d21",
+  "word_omath_before": 97,
+  "word_omath_after": 97,
+  "source_bindings_checked": 11,
+  "csv_values_and_radial_readback_match_guides": true,
+  "local_markdown_targets_checked": 232,
+  "new_guide_function_anchors_checked": 7,
+  "issues": [],
+  "missing_record_search_scope": [
+    "repository research/tools, tools and tests",
+    "workspace tools and plan",
+    "workspace blind-hole chapter 4 verification directory"
+  ],
+  "gaps_are_not_proof_of_nonexistence": true,
+  "source_evidence_sha256": "66a0434693f56429fd354b1c64898d2d9461f67d5ed921c2bcc9b768da164215",
+  "local_research_execution_performed": false,
+  "tests_added": 0,
+  "existing_unit_tests_preserved": 65,
+  "existing_cli_replays_preserved": 12,
+  "review": "Same-agent second review, not external independent review."
+}

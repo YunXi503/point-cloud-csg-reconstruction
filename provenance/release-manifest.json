@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-guard-hardening-2026-11-06",
+  "packaging_version": "portfolio-research-guides-2026-11-06",
   "date": "2026-11-06",
   "manifest_excludes": [
     "provenance/release-manifest.json"
@@ -2397,8 +2397,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 6228,
-      "sha256": "da8ee217c0e3bd367de40d5727c8913f0c2fed100ef16bacf25bf13a7b73984d"
+      "bytes": 6750,
+      "sha256": "192be05dfc6ac8fcd803b7b0b5369b5a598aac7bbc6cfed75b95c1f62b342862"
     },
     {
       "path": "data/recovered/README.md",
@@ -2422,8 +2422,8 @@
     },
     {
       "path": "docs/case-walkthrough.md",
-      "bytes": 6782,
-      "sha256": "0ac9d54052a8ce5a3b4da68fca8c782ed07526f59075ef20a4689449946a1b16"
+      "bytes": 6906,
+      "sha256": "6196103f4e533f3df9854993d44212f8de3116ac063ebfb46c1b5656ff7e6ec5"
     },
     {
       "path": "docs/completion-review.md",
@@ -2432,8 +2432,8 @@
     },
     {
       "path": "docs/contributions.md",
-      "bytes": 2584,
-      "sha256": "3731ee925a35c2cd6427c3deb116b84095d723d3eda5c7a2400e1e8ca257ac43"
+      "bytes": 2739,
+      "sha256": "833d8d656edbd555e603cc6cf5bf39815fc353fe467df19aca2a39c5e1fabe06"
     },
     {
       "path": "docs/csg-representation.md",
@@ -2442,8 +2442,8 @@
     },
     {
       "path": "docs/development-notes.md",
-      "bytes": 1509,
-      "sha256": "99741a60c64ec8574a4e1666cb92fb13a8aa618cb3e18079694f5f26e9ca1c41"
+      "bytes": 1798,
+      "sha256": "df15ed04c4ca950a264563b8f2e827021c90b7d448c6f14ec47e8d3f108b5e3c"
     },
     {
       "path": "docs/environment.md",
@@ -2452,8 +2452,8 @@
     },
     {
       "path": "docs/figures/blind-hole-hex-base.md",
-      "bytes": 3264,
-      "sha256": "3e95d8c98092a86ab718916919bb0d4087cf7ef828c6a3f64a6ac0b18c4697e8"
+      "bytes": 3418,
+      "sha256": "45a2a74a34535e4773ead48f9594acbd6f95ddded9ded51f004aaa9e091d446f"
     },
     {
       "path": "docs/figures/l-bracket.md",
@@ -2462,8 +2462,8 @@
     },
     {
       "path": "docs/figures/methods.md",
-      "bytes": 3078,
-      "sha256": "8f6689db8280344a745fdd30a12eb0a41bdb4ff9706a01db4110d56b267be966"
+      "bytes": 3206,
+      "sha256": "53b633b6362447412b38b4e95831445839e6c43cff2b4e0743574448232fa411"
     },
     {
       "path": "docs/figures/model-a.md",
@@ -2516,9 +2516,14 @@
       "sha256": "55bb8a495cf41d1abfb0154d5c6e33858491bd0816b92c3746b3a01bb958f2ba"
     },
     {
+      "path": "docs/hole-end-conditions.md",
+      "bytes": 5206,
+      "sha256": "bc0fbe78166bad702253e4c4bfa655c9138f635248696d00488797e603a903f4"
+    },
+    {
       "path": "docs/interview-guide.md",
-      "bytes": 9336,
-      "sha256": "7b9816e754b60ca7b64896effe697a399554ab598a6c33da987fbe6f69d83cdc"
+      "bytes": 9607,
+      "sha256": "2b1999d83ebcef2d625ab3e997395066b1822b84d2c59dc90b2c861be9ff4996"
     },
     {
       "path": "docs/maintaining.md",
@@ -2552,8 +2557,8 @@
     },
     {
       "path": "docs/missing-information.md",
-      "bytes": 4141,
-      "sha256": "cfb9814ca676a4bc8aa6e1dac928c6405538272bc007e5f65501c2bcd6381c09"
+      "bytes": 4763,
+      "sha256": "2ca80ab3dadbe514355454c8a33649960c2320ef47a09cc066f3e388767d610a"
     },
     {
       "path": "docs/packaging-qa.md",
@@ -2569,6 +2574,16 @@
       "path": "docs/portfolio-review.md",
       "bytes": 3704,
       "sha256": "7a7967c8b3d9e587dbe64c4d155fd85a1836eb80cc4da1c55b1b4e80f56e722a"
+    },
+    {
+      "path": "docs/research-guides-review.md",
+      "bytes": 3502,
+      "sha256": "0cd469dba1c42f98eaa6876ec4be06dc9dfbafe24ee2f09478e2f18bdd946ee9"
+    },
+    {
+      "path": "docs/research-overview.md",
+      "bytes": 4705,
+      "sha256": "95d7eed602fce7d9b006210b91ab128e6c4797d0b001e33018a50d0a6c5d73b9"
     },
     {
       "path": "docs/results.md",
@@ -2589,6 +2604,11 @@
       "path": "docs/source-versions.md",
       "bytes": 3272,
       "sha256": "701ae0599961ae8b98291d69086866e2bf20a1a6982fa5fcf0f9bc2b004fe4a7"
+    },
+    {
+      "path": "docs/topology-rules.md",
+      "bytes": 4424,
+      "sha256": "f9da274c7b08f59701105dd2bb9a3629b25463c67f70e1dbc9271c19b8f1acba"
     },
     {
       "path": "docs/validation.md",
@@ -2891,6 +2911,11 @@
       "sha256": "edb8ce3c18589f07945d90fe15e284b597f1d8799f2086133883fb112cbcec34"
     },
     {
+      "path": "provenance/history/source-versions-portfolio-guard-hardening-2026-11-06.json",
+      "bytes": 24664,
+      "sha256": "de649edada2244f10b676256eb377a0ac7dcc0ce12f10e37c57dbdda8bd06515"
+    },
+    {
       "path": "provenance/history/source-versions-portfolio-interview-2026-11-05.json",
       "bytes": 22518,
       "sha256": "05b5d8c4c14c13ecec472ceb895e73280f22e30a0c15a5beb3091cc5244fb391"
@@ -2956,6 +2981,11 @@
       "sha256": "b4e929c706d4216857022b74bac50c685eac30de6b8fe786822caf03cac98e54"
     },
     {
+      "path": "provenance/research-guides-evidence.json",
+      "bytes": 41230,
+      "sha256": "66a0434693f56429fd354b1c64898d2d9461f67d5ed921c2bcc9b768da164215"
+    },
+    {
       "path": "provenance/restored-build-files.json",
       "bytes": 2560,
       "sha256": "0ba00ddf0e709893077d0de057df091ded740f34a747177117278d0d147f7a97"
@@ -2972,8 +3002,8 @@
     },
     {
       "path": "provenance/source-versions.json",
-      "bytes": 24664,
-      "sha256": "de649edada2244f10b676256eb377a0ac7dcc0ce12f10e37c57dbdda8bd06515"
+      "bytes": 25390,
+      "sha256": "e982a20035437a69f72a7b635d5c5cff47f492f5dcf0fb954faaa3ebf0448784"
     },
     {
       "path": "provenance/thesis-figures.json",
@@ -2982,8 +3012,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10360,
-      "sha256": "e5f2ad4bcc4c11a4fd3f274b110537b4448bd54dde5d676df763b8077b1211e8"
+      "bytes": 10682,
+      "sha256": "a94f4d8083ae55eb3e7c5728732e5949d10253534a65ada357111338a35712e2"
     },
     {
       "path": "requirements-observed.txt",
@@ -4209,6 +4239,11 @@
       "path": "validation/2026-11-06/guard-hardening-tests.json",
       "bytes": 16580,
       "sha256": "a225802ae500bd94317423417a9faa392204e9b9664bf83a5df0099d0846e9fa"
+    },
+    {
+      "path": "validation/2026-11-06/research-guides-audit.json",
+      "bytes": 1530,
+      "sha256": "0ccb243c51358313c2654a6cf6760a927965768546078e2ef30f55f5117de661"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "packaging_version": "portfolio-guard-hardening-2026-11-06",
+  "packaging_version": "portfolio-research-guides-2026-11-06",
   "date": "2026-11-06",
   "timezone": "Asia/Taipei",
   "source_policy": "Original research algorithms and parameters unchanged. Four exact original build-metadata files restored; historical input bytes recovered solely by newline serialization. Local compilation and inference reproduction recorded separately.",
@@ -367,8 +367,8 @@
     "unconfirmed thesis versions other than the explicitly recorded public snapshot",
     "unselected experimental variants and duplicate rerun directories"
   ],
-  "previous_packaging_version": "portfolio-geometry-guards-2026-11-05",
-  "software_version": "0.1.8",
+  "previous_packaging_version": "portfolio-guard-hardening-2026-11-06",
+  "software_version": "0.1.9",
   "research_sources_unchanged_from": "v0.1.0",
   "thesis_gallery": {
     "index": "docs/figures/README.md",
@@ -462,5 +462,22 @@
     "cli_replays_in_ci": true,
     "report_schema_version": "1",
     "scope": "Engineering error handling, additive common report fields, CI replays and version-labelled documentation. Original research methods, parameters, fixtures, measurements and expected outputs unchanged."
+  },
+  "research_guides": {
+    "documents": [
+      "docs/research-overview.md",
+      "docs/hole-end-conditions.md",
+      "docs/topology-rules.md"
+    ],
+    "evidence": "provenance/research-guides-evidence.json",
+    "review": "docs/research-guides-review.md",
+    "audit": "validation/2026-11-06/research-guides-audit.json",
+    "base_commit": "63493e30fd385540e7cb976f9fdeafafeffd195b",
+    "protected_sources": 241,
+    "new_research_experiments": false,
+    "tests_added": 0,
+    "existing_unit_tests_preserved": 65,
+    "existing_cli_replays_preserved": 12,
+    "scope": "Documentation and existing-data readback only; final Word/PDF, all code/tests, research parameters, inputs, assets and prior results unchanged."
   }
 }
