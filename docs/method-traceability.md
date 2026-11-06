@@ -8,7 +8,7 @@
 
 | 論文位置 | 實際實作位置 | 可確認的對應與界線 |
 |---|---|---|
-| 點雲生成；公式 3-1、3-2 | 各例 build_outputs 讀取 X/Y/Z、NX/NY/NZ 及既有初始分割欄位 | 現行入口使用已生成的 10000 點 CSV；保留取樣來源，不代表本輪重新執行 Blender 取樣 |
+| 點雲生成；公式 3-1、3-2 | 各例 build_outputs 讀取 X/Y/Z、NX/NY/NZ 及既有初始分割欄位 | 現行入口使用已生成的 10000 點 CSV；保留取樣來源，不代表該版重新執行 Blender 取樣 |
 | 幾何特徵分割；公式 3-3 | [L型板 region_growing](../research/tools/infer_lbracket_chapter3_method.py#L52) | 在距離鄰近點對中保留有向法向量內積達門檻者，再取連通分量；此處可直接對到距離／法向量條件 |
 | 幾何特徵分割及語義特徵面 | [階梯狀圓柱 infer_surfaces](../research/tools/infer_stepped_cylinder_chapter3_method.py#L222)、[模型A infer_point_assignments](../research/tools/infer_model_a_chapter3_method.py#L287)、[盲孔 build_outputs](../research/tools/infer_blind_hole_hex_base_chapter3_method.py#L336) | 使用既有群集、擬合與案例修正；不能將這些流程都稱為 L型板的 region_growing 或公式 3-3 的逐行相同實作 |
 | 語義拓樸；公式 3-4 | [共用 min_distance／build_topology](../research/tools/infer_stepped_cylinder_chapter3_method.py#L323)、[L型板 build_topology](../research/tools/infer_lbracket_chapter3_method.py#L321) | 以有限取樣點支撐的最小距離判定；不是連續解析曲面邊界距離 |

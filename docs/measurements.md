@@ -14,7 +14,7 @@
 - 記憶體為 Windows 原生 PeakWorkingSetSize，除以 1048576 顯示 MiB；包含 runtime／套件與資料，沒有扣掉起始值，不是函式獨占配置量或程序樹峰值。[Microsoft 欄位定義](https://learn.microsoft.com/en-us/windows/win32/api/psapi/ns-psapi-process_memory_counters)
 - 每組三個新程序。表中為中位數（最小–最大），不是信賴區間，不用三次試驗宣稱效能優越性，也不將不同工作量的 C#／Python 階段當成語言效能比較。
 
-Windows venv 啟動器可能另開真正的 runtime。本工具直接啟動 `sys._base_executable`，用 `__PYVENV_LAUNCHER__` 保留原虛擬環境，先驗證 PID、prefix、套件與 64 MiB 配置探針。事前協定保持收集時的原位元；其中該識別字在 Markdown 顯示為粗體，完整前後雙底線以本段程式識別字及[工具來源](../tools/process_metrics.py)為準。
+Windows venv 啟動器可能另開真正的 runtime。本工具直接啟動 `sys._base_executable`，用 `__PYVENV_LAUNCHER__` 保留原虛擬環境，先驗證 PID、prefix、套件與 64 MiB 配置探針。原始量測報告保留收集時協定的SHA；現行文件的編輯版本見[文件版本對照](../provenance/documentation-editions.json)。其中該識別字在 Markdown 顯示為粗體，完整前後雙底線以本段程式識別字及[工具來源](../tools/process_metrics.py)為準。
 
 ## 四案例的兩個階段
 

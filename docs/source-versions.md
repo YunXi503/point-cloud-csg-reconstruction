@@ -1,10 +1,10 @@
 # 原始碼與資料版本對照
 
-發布整理版本為 portfolio-measurements-2026-11-05，版本 0.1.6。本輪量測既有案例時間／工作集、函式N曲線與退化／收斂行為，只新增外部工具、fixture、測試與結果；研究程式維持 0.1.0 的來源與行為。前版的機器可讀紀錄及 Git 標籤保留供追溯。
+發布整理版本為 portfolio-measurements-2026-11-05，版本 0.1.6。該版量測既有案例時間／工作集、函式N曲線與退化／收斂行為，只新增外部工具、fixture、測試與結果；研究程式維持 0.1.0 的來源與行為。前版的機器可讀紀錄及 Git 標籤保留供追溯。
 
 ## 研究來源
 
-241 個逐位元複製的來源檔列於 [file-manifest.csv](../provenance/file-manifest.csv)：原有 211 個核心來源維持原位元，包含原論文工作區、原 VS 工作區與 4 個補回的 AssemblyInfo.cs；另增加敏感度摘要 JSON、報告及 23 份逐次 manifest，共 25 份歷史證據。本輪再加原密度 JSON／報告、控制程式快照、規劃任務包及密度所用幾何檔五份；共 241 份，原 236 份及其來源資料不變。研究演算法與研究參數沒有改寫。
+241 個逐位元複製的來源檔列於 [file-manifest.csv](../provenance/file-manifest.csv)：原有 211 個核心來源維持原位元，包含原論文工作區、原 VS 工作區與 4 個補回的 AssemblyInfo.cs；另增加敏感度摘要 JSON、報告及 23 份逐次 manifest，共 25 份歷史證據。該版再加原密度 JSON／報告、控制程式快照、規劃任務包及密度所用幾何檔五份；共 241 份，原 236 份及其來源資料不變。研究演算法與研究參數沒有改寫。
 
 目前來源與輸入綁定見 [cases.json](../examples/cases.json) 及 [segmentation.json](../examples/segmentation.json)。初始 C# 分類器按實際產出比對選定來源及 runtime，不由目錄名推定版本。
 

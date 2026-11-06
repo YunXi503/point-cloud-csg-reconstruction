@@ -1,0 +1,22 @@
+{
+  "schema_version": "1",
+  "status": "pass",
+  "date": "2026-11-06",
+  "source_commit": "7108848ef42373cc81045b97ca102d2d5730d2a7",
+  "editorial_documents": 31,
+  "all_existing_numeric_tokens_preserved": true,
+  "protected_sources_checked": 241,
+  "baseline_files_frozen": 439,
+  "all_code_parameters_inputs_outputs_assets_historical_execution_reports_unchanged": true,
+  "word_sha256": "6f3a5df703ffe2669d0957d17c253e257a941a6a1f9700cd7a896536883c4b5e",
+  "formal_pdf_sha256": "84ce6bfa90fd8b91f7a2a9bb7831f955eba462624e459f226dc05fee2ae57d21",
+  "tracked_public_text_files_checked": 218,
+  "local_link_targets_checked": 237,
+  "code_line_anchors_checked": 7,
+  "publication_language_check": "pass",
+  "editions": "provenance/documentation-editions.json",
+  "tests_added": 0,
+  "existing_unit_tests": 65,
+  "existing_cli_replays": 12,
+  "issues": []
+}

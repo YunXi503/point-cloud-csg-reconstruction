@@ -1,5 +1,5 @@
 {
-  "packaging_version": "documentation-consistency-2026-11-06",
+  "packaging_version": "technical-documentation-2026-11-06",
   "date": "2026-11-06",
   "timezone": "Asia/Taipei",
   "source_policy": "Original research algorithms and parameters unchanged. Four exact original build-metadata files restored; historical input bytes recovered solely by newline serialization. Local compilation and inference reproduction recorded separately.",
@@ -367,8 +367,8 @@
     "unconfirmed thesis versions other than the explicitly recorded public snapshot",
     "unselected experimental variants and duplicate rerun directories"
   ],
-  "previous_packaging_version": "portfolio-case-residual-guides-2026-11-06",
-  "software_version": "0.1.11",
+  "previous_packaging_version": "documentation-consistency-2026-11-06",
+  "software_version": "0.1.12",
   "research_sources_unchanged_from": "v0.1.0",
   "thesis_gallery": {
     "index": "docs/figures/README.md",
@@ -518,5 +518,11 @@
     "existing_unit_tests": 65,
     "existing_cli_replays": 12,
     "scope": "Reader documentation and saved-data consistency; no code, parameter, input, expected-output, thesis or prior-evidence changes."
+  },
+  "documentation_publication": {
+    "editions": "provenance/documentation-editions.json",
+    "audit": "validation/2026-11-06/publication-audit.json",
+    "base_commit": "7108848ef42373cc81045b97ca102d2d5730d2a7",
+    "scope": "Technical documentation wording only; code, numerical observations, parameters and historical execution reports unchanged."
   }
 }

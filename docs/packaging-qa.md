@@ -1,6 +1,6 @@
 # 發布封裝與公開論文 QA
 
-版本：0.1.6／portfolio-measurements-2026-11-05。原始來源、兩條執行路徑與研究證據邊界見 [查驗紀錄](validation.md)，本輪三項補全的再次審查見 [completion-review.md](completion-review.md)。
+版本：0.1.6／portfolio-measurements-2026-11-05。原始來源、兩條執行路徑與研究證據邊界見 [查驗紀錄](validation.md)，該版三項補全的再次審查見 [completion-review.md](completion-review.md)。
 
 ## 檔案與程式
 
@@ -22,22 +22,22 @@ Microsoft Word 實際以唯讀副本開啟，來源及副本關閉後 SHA-256 �
 
 ## 論文圖庫增補
 
-本輪沿用同一 Word／PDF，完整列出圖 3.1–3.9、圖 4.1–4.13，取出 28 張原位元 PNG 與四張候選表。已查看全部 32 張資產的總覽與模型A CSG 樹、候選表原尺寸，核對來源圖號及連結。候選表另提供直接取自 Word 儲存格的可搜尋文字，保留正文顯示精度。[圖件查驗](../validation/2026-11-05/thesis-figures-audit.json)
+該版沿用同一 Word／PDF，完整列出圖 3.1–3.9、圖 4.1–4.13，取出 28 張原位元 PNG 與四張候選表。已查看全部 32 張資產的總覽與模型A CSG 樹、候選表原尺寸，核對來源圖號及連結。候選表另提供直接取自 Word 儲存格的可搜尋文字，保留正文顯示精度。[圖件查驗](../validation/2026-11-05/thesis-figures-audit.json)
 
 ## 保留的限制
 
-本輪審查釐清了二元 CSG 圖示與分組式 JSON 的表示差異，修正首頁及架構措辭，未以格式說明宣稱已新增轉換器或 CAD 幾何執行。詳見 [CSG 表示對照](csg-representation.md) 與 [補全審查](portfolio-review.md)。
+該版審查釐清了二元 CSG 圖示與分組式 JSON 的表示差異，修正首頁及架構措辭，未以格式說明宣稱已新增轉換器或 CAD 幾何執行。詳見 [CSG 表示對照](csg-representation.md) 與 [補全審查](portfolio-review.md)。
 
-歷史 3 個 csproj 缺件不強行補造，現行入口另以可核對來源建置。資料與模型未另行宣告新的再利用授權。未將本輪工程查驗宣稱為真實掃描、一般 CAD 輸出或方法優越性證據。
+歷史 3 個 csproj 缺件不強行補造，現行入口另以可核對來源建置。資料與模型未另行宣告新的再利用授權。未將該版工程查驗宣稱為真實掃描、一般 CAD 輸出或方法優越性證據。
 
-## 本輪缺口追查
+## 該版缺口追查
 
 [再次審查](gap-followup-review.md)及[查核 JSON](../validation/2026-11-05/gap-followup-audit.json)列出保存來源、敏感度勘誤與密度重算。原 Word、PDF、圖件及程式未變；舊版 QA 及執行紀錄仍保留原版本語境，沒有宣稱已重跑歷史研究實驗。
 
-## 面試審查補強
+## 演算法與來源查核
 
-[面試導讀](interview-guide.md)與[L型板資料流](case-walkthrough.md)只使用現有來源；預檢改動限於工程入口。原 241 份來源與幾何品質結果保留，17 項防護測試及本版兩種重現路徑的結果見[查核](../validation/2026-11-05/interview-review-audit.json)。
+[演算法導讀](interview-guide.md)與[L型板資料流](case-walkthrough.md)只使用現有來源；預檢改動限於工程入口。原 241 份來源與幾何品質結果保留，17 項防護測試及本版兩種重現路徑的結果見[查核](../validation/2026-11-05/interview-review-audit.json)。
 
 ## 效能與數值診斷
 
-本輪新增量測工具、解析fixture、原始觀察、統計與圖表。原研究、參數、期望輸出與論文圖件不變；原生峰值計數先驗PID與64 MiB配置探針，排除錯誤啟動器數字。圖表使用實測數據，450 DPI PNG／SVG與來源manifest均保留。[量測審查](measurement-review.md)
+該版新增量測工具、解析fixture、原始觀察、統計與圖表。原研究、參數、期望輸出與論文圖件不變；原生峰值計數先驗PID與64 MiB配置探針，排除錯誤啟動器數字。圖表使用實測數據，450 DPI PNG／SVG與來源manifest均保留。[量測審查](measurement-review.md)

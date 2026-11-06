@@ -2,7 +2,7 @@
 
 [首頁](../README.md) · [方法對照](method-traceability.md) · [敏感度勘誤](sensitivity-errata.md) · [完整數值與當前來源 SHA](../provenance/parameter-density-audit.json)
 
-本輪找回[原密度報告](../evidence/traceability-2026-11-05/sampling-density-original.md)及[原數值 JSON](../evidence/traceability-2026-11-05/sampling-density-original.json)，使用已公開的 [audit_sampling_density_260731.py](../research/tools/audit_sampling_density_260731.py)唯讀函式重算現存 STL／CSV。四例共 32 項描述值及三個角度均與保存的原精度數值相同；沒有重新取樣或執行重建實驗。
+該版找回[原密度報告](../evidence/traceability-2026-11-05/sampling-density-original.md)及[原數值 JSON](../evidence/traceability-2026-11-05/sampling-density-original.json)，使用已公開的 [audit_sampling_density_260731.py](../research/tools/audit_sampling_density_260731.py)唯讀函式重算現存 STL／CSV。四例共 32 項描述值及三個角度均與保存的原精度數值相同；沒有重新取樣或執行重建實驗。
 
 ## 可以補上的尺度依據
 
@@ -17,7 +17,7 @@
 
 法向量內積 0.90／0.93／0.96 的 arccos 角度分別為 25.8419°／21.5652°／16.2602°，只說明方向容許尺度；不能推出哪個設定對未知模型最好。初始 C# 分類器有不同的有效判準，不能用這張表改寫它們的參數。
 
-密度原報告沒有輸入 SHA；本輪八個 STL／CSV 的 SHA 是對**當前保存位元**建立的綁定，不能冒充 7 月執行收據。補入的幾何檔保留原名 [Hex Base with Hole A.stl](../evidence/traceability-2026-11-05/Hex%20Base%20with%20Hole%20A.stl)，供既有盲孔密度計算追溯；它不被改名或合併為舊資產 Hex Base with Holed。
+密度原報告沒有輸入 SHA；該版八個 STL／CSV 的 SHA 是對**當前保存位元**建立的綁定，不能冒充 7 月執行收據。補入的幾何檔保留原名 [Hex Base with Hole A.stl](../evidence/traceability-2026-11-05/Hex%20Base%20with%20Hole%20A.stl)，供既有盲孔密度計算追溯；它不被改名或合併為舊資產 Hex Base with Holed。
 
 ## 語言選用：已知分工與尚缺動機
 

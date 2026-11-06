@@ -1,8 +1,8 @@
 # 三項缺口追查與再次審查
 
-日期：2026-11-05；版本：0.1.4；前版：v0.1.3。本輪只讀現有論文、程式與保存資料，補上可追溯證據。此處是同一執行者改用方法審查與維護者準則的再次審查。
+日期：2026-11-05；版本：0.1.4；前版：v0.1.3。該版只讀現有論文、程式與保存資料，補上可追溯證據。此處是同一執行者改用方法審查與維護者準則的再次審查。
 
-## 本輪補全結果
+## 該版補全結果
 
 | 項目 | 已補 | 仍缺 |
 |---|---|---|
@@ -25,6 +25,6 @@
 
 ## 驗收依據
 
-[事前計畫](../validation/2026-11-05/gap-followup-plan.md)要求只讀、零猜填、舊版位元不回寫。實測紀錄見[本輪查核](../validation/2026-11-05/gap-followup-audit.json)、[密度核對](../provenance/parameter-density-audit.json)及[逐筆敏感度複核](../provenance/sensitivity-recheck.json)。封裝與搬移 checkout 查核需實際通過，GitHub Actions 以本版提交的遠端結果為準。
+[事前計畫](../validation/2026-11-05/gap-followup-plan.md)要求只讀、零猜填、舊版位元不回寫。實測紀錄見[該版查核](../validation/2026-11-05/gap-followup-audit.json)、[密度核對](../provenance/parameter-density-audit.json)及[逐筆敏感度複核](../provenance/sensitivity-recheck.json)。封裝與搬移 checkout 查核需實際通過，GitHub Actions 以本版提交的遠端結果為準。
 
 資料缺口沒有宣稱全數消失。若日後找到原始決策紀錄或失敗輸入收據，應新增來源版本；若另做實驗，須依研究計畫建立新紀錄，不能回填成歷史結果。

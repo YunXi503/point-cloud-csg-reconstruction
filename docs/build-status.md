@@ -14,4 +14,4 @@
 
 Python 3.14.2 重新建立隔離 venv、安裝完整 13 個鎖定套件及 pip check 通過。NumPy 單獨由 2.4.0 改 2.4.1 的前後紀錄保留；目前預設使用後者。完整環境與手動安裝見 [environment.md](environment.md)。
 
-STL／Blender 重新取樣、其他作業系統、任意新模型及 CAD 幾何核心輸出未在本輪驗證。
+STL／Blender 重新取樣、其他作業系統、任意新模型及 CAD 幾何核心輸出未在該版驗證。

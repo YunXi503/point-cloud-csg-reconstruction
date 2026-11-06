@@ -20,7 +20,7 @@ python -m venv .venv
 
 requirements.lock.txt 鎖定這次乾淨環境的全部 13 個執行套件。requirements.txt 指向該清單；requirements-observed.txt 只保留初次環境紀錄。
 
-初次環境的 NumPy 2.4.0 已被 PyPI 撤回。本輪先確認該版本乾淨安裝可重現 24 項輸出，再只換為 2.4.1；其他套件版本相同，24 項仍逐位元相符。[環境紀錄](../validation/2026-11-05/environment-transition.json) · [官方修補說明](https://numpy.org/devdocs/release/2.4.1-notes.html)
+初次環境的 NumPy 2.4.0 已被 PyPI 撤回。該版先確認該版本乾淨安裝可重現 24 項輸出，再只換為 2.4.1；其他套件版本相同，24 項仍逐位元相符。[環境紀錄](../validation/2026-11-05/environment-transition.json) · [官方修補說明](https://numpy.org/devdocs/release/2.4.1-notes.html)
 
 這不是歷史環境的完整復原，未主張其他 Python、作業系統或 CPU 上必然逐位元一致。
 
@@ -31,6 +31,6 @@ requirements.lock.txt 鎖定這次乾淨環境的全部 13 個執行套件。req
 | 階梯狀圓柱、L型板、模型A | .NET Framework 4.8，Visual Studio MSBuild |
 | 盲孔六角座修正版 | .NET 8；實測 runtime 8.0.20，建置 SDK 9.0.305 |
 
-盲孔同一來源在 .NET Framework 4.8 無法符合歷史 CSV，在 .NET 8 下則相符。Microsoft 說明不同 .NET 世代的浮點解析／一般格式有差異；本輪記錄可重現環境，不推定當年使用何者，也未逐項隔離解析、運算與格式化的貢獻。[Microsoft 說明](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)
+盲孔同一來源在 .NET Framework 4.8 無法符合歷史 CSV，在 .NET 8 下則相符。Microsoft 說明不同 .NET 世代的浮點解析／一般格式有差異；該版記錄可重現環境，不推定當年使用何者，也未逐項隔離解析、運算與格式化的貢獻。[Microsoft 說明](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)
 
 保留的 CSV 演算法使用小數點。轉接器拒絕小數分隔符號不是 . 的文化設定，不靜默變更研究計算的文化設定。

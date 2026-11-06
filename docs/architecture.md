@@ -15,7 +15,7 @@ flowchart TD
 
 較短入口直接從已記錄的初始分割 CSV 開始。兩條入口查驗相同四個範例，不能當成更多獨立研究樣本。
 
-階梯狀圓柱、L型板、模型A的 JSON 以 children、subtractors 清單分組保存候選；盲孔六角座已採 left、right 巢狀二元格式。論文圖以二元樹展開。[表示對照](csg-representation.md) 說明既有檔案與圖示的關係，本輪未新增格式轉換功能。
+階梯狀圓柱、L型板、模型A的 JSON 以 children、subtractors 清單分組保存候選；盲孔六角座已採 left、right 巢狀二元格式。論文圖以二元樹展開。[表示對照](csg-representation.md) 說明既有檔案與圖示的關係，該版未新增格式轉換功能。
 
 ## 確認的 C# 來源
 
@@ -34,7 +34,7 @@ L型板既有分類器會寫出額外面與候選資料；本入口只將其初�
 
 初始 C# 分類器包含各範例既有規則及常數，Python 做後續面型查驗、拓樸與 CSG 推論。檔案重現不等同證明舊分類器的內部規則均與論文共通敘述逐條一致，亦不建立新泛化主張。
 
-本輪未做內部參數消融，不將整個來源版本的輸出差異歸因到單一門檻。研究方法若修改，仍須另行對照研究計畫與紀錄。
+該版未做內部參數消融，不將整個來源版本的輸出差異歸因到單一門檻。研究方法若修改，仍須另行對照研究計畫與紀錄。
 
 ## 轉接器
 
@@ -44,7 +44,7 @@ src/adapter/ 以來源連結編譯單一研究檔，尋找唯一公開 FeatureCl
 
 ## Python 依賴來源預檢
 
-兩個公開入口透過 tools/inference_sources.py，在研究執行／建置前檢查選定案例的主程式及 provenance/inference-dependencies.json 所列本地輔助程式。L型板的擬合輔助程式與模型A／盲孔共用的階梯狀圓柱模組分別綁定，不只檢查直接入口。檢查不匯入或執行研究程式；新增預檢不符時報告 blocked-inference-source-version-mismatch；CSV 入口原有的共用來源檢查仍保留，且不改寫期望 SHA。這是固定來源契約，不是任意 Python 程式的動態依賴分析。[面試審查與成本分析](interview-guide.md)
+兩個公開入口透過 tools/inference_sources.py，在研究執行／建置前檢查選定案例的主程式及 provenance/inference-dependencies.json 所列本地輔助程式。L型板的擬合輔助程式與模型A／盲孔共用的階梯狀圓柱模組分別綁定，不只檢查直接入口。檢查不匯入或執行研究程式；新增預檢不符時報告 blocked-inference-source-version-mismatch；CSV 入口原有的共用來源檢查仍保留，且不改寫期望 SHA。這是固定來源契約，不是任意 Python 程式的動態依賴分析。[演算法與成本分析](interview-guide.md)
 
 ## 可選二維診斷入口
 

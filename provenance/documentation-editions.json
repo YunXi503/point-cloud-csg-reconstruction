@@ -1,0 +1,194 @@
+{
+  "schema_version": "1",
+  "date": "2026-11-06",
+  "source_commit": "7108848ef42373cc81045b97ca102d2d5730d2a7",
+  "scope": "Editorial changes to documentation and responsibility metadata only. Historical execution reports retain hashes of their source-commit documents; numerical observations, code and method parameters are unchanged.",
+  "documents": [
+    {
+      "path": "CHANGELOG.md",
+      "before_sha256": "35598c42fc9ba8c56634d864b64949c2f6e27e451da3ef67ab2ff98e08d2a57e",
+      "after_sha256": "3e0353de4d2fc1f9e77148b23d256cb1035987196ebbe3382c6c514da3d1d0d1",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "EXPERIMENT_LOG.md",
+      "before_sha256": "6f1fb6d4203ded8fc56fdecc5c4356b23e37db5c2210bf97170b4ef74c2a311b",
+      "after_sha256": "31f858e1646e7fea721a61127c1920eba1ca6a5b7ebf592d6bbef1019489aa3c",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "NOTICE.md",
+      "before_sha256": "e5bb4f5367788e7eacbd3210c8cc6fbfeb597ea90649789d6cdfd87040840bf0",
+      "after_sha256": "79eac0451164e205ab66df939251af7ccaa230f0ca787953b2324c2339633d5f",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/architecture.md",
+      "before_sha256": "6c05414cdca5d737d861108b7246b177276100a8eaf0b564ef3a81018379313c",
+      "after_sha256": "4b76d6e8ff839995f2848f19f16619d65ab3c27533139f28badd40892db98e1c",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/build-status.md",
+      "before_sha256": "4dfcb59bcaa0799109e3bfa43248777942891b43c80637b778ac6aaea3faae92",
+      "after_sha256": "1b7c0a6022f553a89bd49941ed0914949cc3fb0120bf86fcb51d6cfc3cf084d2",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/case-residual-review.md",
+      "before_sha256": "bfec80dd93d98aa85234305f0ea5302779151a56394232f741aa7bf0d0cedbc2",
+      "after_sha256": "b5d2a8cd3098bd69d179f49cdd6d48d2322ec7d37c58b6b65fe0b7167a1b9fd4",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/completion-review.md",
+      "before_sha256": "32bcb0427b78868517b86f2c959933166b46113494bd1472c9e4433400440873",
+      "after_sha256": "82ecfdbc74f1a8aa57818ee5a030084fa21fb44d3e4a78cf53146a4a1570c32b",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/csg-representation.md",
+      "before_sha256": "f746f4b717e1835f8a16fcc59c01b33c1ac4e8c1c46f3759aa60eeeae1c86419",
+      "after_sha256": "ddcd6631bc43fa87aeffc6e0708fd6699727c7df931e0f642d9c44fad62c1018",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/development-notes.md",
+      "before_sha256": "0dd95304d077f13501c3744274b672ac3d8932dad93118a17042c57e2b7d3a92",
+      "after_sha256": "76daa45e7d4e4ac8fb892d917d835c2a3975de99649da93258438e12f6712e04",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/environment.md",
+      "before_sha256": "e29dc2e5915bbdadaca7110b42b1ea2870deb49fb8aeca4d83066270776c5bfd",
+      "after_sha256": "f5236903bcf9b11e4940ac99c96bf465668232a3ae66839ef24ee5c220bf91e5",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/figures/README.md",
+      "before_sha256": "299af46b2ba95649eaee7fa55e073b67b2f2101052b3690c67d0d21cdf723dc2",
+      "after_sha256": "6089767a15b123a99f989fb20f20ddd38b97d1b9d3a68c97dcc4a42f4db64155",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/gap-followup-review.md",
+      "before_sha256": "a6bf6e34c0122186bd73432911a0de9e035c74e1f1b3d547a856f7bb6b7084d3",
+      "after_sha256": "f4aaf0bef4d8580e83eaefc1c2c5d8120426859f6d658b5a9095de888c9d0fee",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/geometry-diagnostics.md",
+      "before_sha256": "c1a1706454269487b3a85d07c67f6adf617c1a4d0546b6f8eef2f506ea1c25ce",
+      "after_sha256": "33c98c76ed61395c011be646faabbd685675b718797d026d54ceb5f1f7e5d0d5",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/geometry-guard-hardening-plan.md",
+      "before_sha256": "4d5b53f58b8b863701791aab490f2348ee20b4d6d68b5785739ccc57bcd09bb9",
+      "after_sha256": "b479b7a1516905aafaa7b40caab28d1bdf15b2eb1fd78de44f9518fdd81757ab",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/geometry-guard-hardening-review.md",
+      "before_sha256": "4527e8792340b2a5d407f71a7e9a203eecd5ced138e1440496480ec6e222e2c2",
+      "after_sha256": "16ebbbe6fb12e50a5d277fa5fe92244f0b455d39795e9c322dba318c050e6c9e",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/geometry-guard-plan.md",
+      "before_sha256": "df8d8e178d74657e98b672543d2cdb42fe90605a3e151c33406e65f39cdcc4f4",
+      "after_sha256": "7c9a6576754d54ae7285def31f228c26ca20865a9e55afc9c9b3eb9512a5b2bb",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/geometry-guard-review.md",
+      "before_sha256": "58c17a5a8eabd9672a59b80346aa2f714708245359c5088671450b023912cd2d",
+      "after_sha256": "03d1717202ab6c4b3a09f5eb71599659da302d76b519184b80a4ff62b81dac6b",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/measurement-protocol.md",
+      "before_sha256": "eee14fc5a44665007c884acf47f2c00d4d2c28c816c18530a1b6e64d02165fc9",
+      "after_sha256": "272fe4e8fd5dc49710460679a5754ef159f538574040e715cd0b3f343098fa79",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/measurement-review.md",
+      "before_sha256": "8f137529db919e4a18173fd75dc0ae0786d8128c28f25a69ba0d01a17c8fa590",
+      "after_sha256": "56ec1b833e4bf74fc42841cb6a8a03d6bd480d14ef87108a53890ff9967bb97c",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/measurements.md",
+      "before_sha256": "34c394c45173349a92b529b529e33ffef5e6f4b8958a6056a3d468b25aaa41f7",
+      "after_sha256": "18e4e82356adecc12ee5ba6fa843c70d92beb431150330add01e751d405314cb",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/method-scope.md",
+      "before_sha256": "0c88864f81456b65a5a24cc1080ee0fdc96f4bbb2ad190a440950be729f52e3a",
+      "after_sha256": "7400b0744444d9e76da3c30bbe05fda25e4594bec5b8c45247c0fc7ec6930916",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/method-traceability.md",
+      "before_sha256": "1cad98d16983b50c3f50399cba93cf68e35c8a9962d3b823714c51d62d7eb401",
+      "after_sha256": "52dc04360b0ee127f5b0c68dcc77d65d44c60040ebcbaaf0e7dfd6add62520b6",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/packaging-qa.md",
+      "before_sha256": "838cfc63e8a815bc45455db376fce1219b6b82f4f2a02807dc5db4304b688ef5",
+      "after_sha256": "e6753a24ce4ee1800cdc534adf6310a2fff2a6b2a53131851e398866c3f65369",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/parameter-evidence.md",
+      "before_sha256": "d6856dae5209ef0fb76dd7a81e754b02f1e4ac0c61e2c1130d0fce4a60172b6b",
+      "after_sha256": "84b90bc099b98f7282d1a26fd1e0bc6074d1bfa20e899b25707366e99189e323",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/portfolio-review.md",
+      "before_sha256": "7a7967c8b3d9e587dbe64c4d155fd85a1836eb80cc4da1c55b1b4e80f56e722a",
+      "after_sha256": "e33669bddd824eebfac0a8f7e84c913ae120099d608bacdc26b228f22ec7cc92",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/research-guides-review.md",
+      "before_sha256": "0cd469dba1c42f98eaa6876ec4be06dc9dfbafe24ee2f09478e2f18bdd946ee9",
+      "after_sha256": "de848a3243f210fb3ef92e6a81d741dcbd914bd0b2a3a7afa680295174d3a03a",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/results.md",
+      "before_sha256": "5e828b850de1b171da5759e34042a1c5bd281586f68b6024370719ed9ca00ed6",
+      "after_sha256": "b0858cae06006c966478f220b2a0bb36637061ecfc7aa95a085d646a685b5911",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/second-pass-review.md",
+      "before_sha256": "47ce9fea63d7fcc1574d25e8a40e78f1bdf9450486738d05cc4e055e68ee0809",
+      "after_sha256": "386b03ef7c7d27745b106bc6cd4e94f1ed366361772ce580811c6f988c7f26df",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "docs/source-versions.md",
+      "before_sha256": "701ae0599961ae8b98291d69086866e2bf20a1a6982fa5fcf0f9bc2b004fe4a7",
+      "after_sha256": "2f00480bc166c636c89879d59985bb3d4eeb25654784f8194701d61345039b61",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "provenance/contribution-statement.json",
+      "before_sha256": "5b68ca7082b6540ee6575648942e2dd211fb56abe3da7211df00233820b6ee51",
+      "after_sha256": "fd95b13b804c143ad0c1b6625dd12aed7182f259a797f811e7527b3b5f5ba560",
+      "numeric_tokens_preserved": true
+    },
+    {
+      "path": "validation/2026-11-05/interview-review-plan.md",
+      "before_sha256": "d938e28b07b4d453de2cc37c87ad95d87e9ef1d0a8674797f8beca604c1e21f4",
+      "after_sha256": "632e510916a23dcac3b74a5c48b9c614c9d41c924110dbc75584771826453348",
+      "numeric_tokens_preserved": true
+    }
+  ]
+}
